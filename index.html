@@ -3,34 +3,71 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#123b32">
-  <meta name="description" content="SoninkeGPT — dictionnaire soninké-français, recherche bilingue et ressources audio vérifiées.">
-  <title>SoninkeGPT — Dictionnaire soninké-français</title>
+  <meta name="theme-color" content="#171717">
+  <meta name="description" content="SoninkeGPT — dictionnaire soninké-français, variantes et prononciations de référence.">
+  <title>SoninkeGPT — La voix de notre héritage</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="./" aria-label="Accueil SoninkeGPT"><span class="brand-mark">S</span><span>SoninkeGPT<small>Le patrimoine soninké, vivant et accessible</small></span></a>
-    <span class="status" id="corpus-status">Chargement du lexique…</span>
-  </header>
-  <main>
-    <section class="hero">
-      <p class="eyebrow">SONINKÉ · FRANÇAIS</p>
-      <h1>Les mots nous rapprochent.</h1>
-      <p class="intro">Explorez le lexique soninké-français, retrouvez les variantes et préparez l’écoute des enregistrements de référence.</p>
-      <label class="search-label" for="search">Rechercher un mot ou une traduction</label>
-      <div class="search-row"><input id="search" type="search" placeholder="Ex. daga, partir…" autocomplete="off"><button id="clear" type="button" aria-label="Effacer la recherche">Effacer</button></div>
-      <div class="filters" role="group" aria-label="Sens de recherche">
-        <button class="filter active" data-direction="all" type="button">Tout</button>
-        <button class="filter" data-direction="snk" type="button">Soninké</button>
-        <button class="filter" data-direction="fr" type="button">Français</button>
-      </div>
-    </section>
-    <section class="results-head"><h2>Résultats du dictionnaire</h2><span id="result-count">0 entrée</span></section>
-    <section id="results" class="results" aria-live="polite"><div class="empty">Chargement des données…</div></section>
-    <section class="notice"><strong>Un corpus qui respecte la langue.</strong><p>Les graphies, variantes, sources et statuts de validation sont conservés. Les nouvelles propositions restent distinctes des entrées confirmées. Les 577 enregistrements de référence ont été validés par le locuteur. Le premier transfert a récupéré 576 fichiers WAV ; le dictionnaire relie automatiquement les prononciations uniquement lorsqu'une correspondance exacte est établie et que l'audit confirme la présence du fichier.</p></section>
+<div class="app-shell">
+  <aside class="sidebar">
+    <a class="brand" href="./" aria-label="Accueil SoninkeGPT"><span class="brand-mark">S</span><span class="brand-name">SoninkeGPT<small>La voix de notre héritage</small></span></a>
+    <p class="nav-label">ESPACE PRINCIPAL</p>
+    <nav class="side-nav" aria-label="Navigation principale">
+      <a class="nav-item active" href="#accueil"><span>⌂</span>Accueil</a>
+      <a class="nav-item" href="#dictionnaire"><span>⌕</span>Lexique & traduction</a>
+      <a class="nav-item" href="#apprendre"><span>▤</span>Apprentissage</a>
+      <a class="nav-item" href="#culture"><span>✺</span>Culture & histoire</a>
+      <a class="nav-item" href="#prononciation"><span>♫</span>Prononciation audio</a>
+    </nav>
+    <p class="nav-label resource-label">RESSOURCES</p>
+    <nav class="side-nav">
+      <a class="nav-item" href="docs/EXTERNAL-LEXICON-SOURCES.md"><span>↗</span>Sources lexicales</a>
+      <a class="nav-item" href="docs/TRANSFER-PLAN.md"><span>◎</span>Méthodologie</a>
+    </nav>
+    <div class="sidebar-note"><span class="note-star">✦</span><strong>Un patrimoine vivant.</strong><p>Apprendre, transmettre et faire vivre la langue soninké, un mot à la fois.</p><span class="language-pill">SONINKÉ · FRANÇAIS</span></div>
+    <div class="sidebar-footer">SONINKEGPT · PROJET COMMUNAUTAIRE</div>
+  </aside>
+  <main class="main-area">
+    <header class="topbar"><div class="breadcrumb">Votre espace <span>/</span> <strong id="current-page">Accueil</strong></div><div class="top-actions"><span class="status" id="corpus-status">Chargement du lexique…</span><span class="avatar">S</span></div></header>
+    <div class="page-content">
+      <section class="hero" id="accueil">
+        <div class="hero-copy"><span class="eyebrow"><span class="eyebrow-dot"></span> BIENVENUE DANS SONINKEGPT</span>
+          <h1>A jaara 👋<br><span>Apprenons le soninké ensemble.</span></h1>
+          <p class="intro">Explorez la langue soninké, retrouvez les mots et leurs traductions, écoutez les enregistrements de référence et découvrez une culture riche de transmission.</p>
+          <div class="hero-actions"><a class="button primary" href="#dictionnaire">✦ Explorer le lexique</a><a class="button secondary" href="#prononciation">♫ Découvrir les audios</a></div>
+        </div>
+        <div class="hero-art" aria-label="Carte illustrée du mot soninké A jaara"><div class="sun"></div><div class="vocab-card"><span class="vocab-label">MOT À DÉCOUVRIR</span><span class="vocab-word">A jaara</span><span class="vocab-translation">Bonjour · Salutation</span><div class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="vocab-foot">SONINKÉ · TRANSMISSION</span></div><span class="art-spark">✦</span></div>
+      </section>
+      <section class="feature-section" id="apprendre"><div class="section-heading"><div><h2>Que souhaitez-vous découvrir ?</h2><p>Choisissez un espace pour commencer votre exploration.</p></div></div>
+        <div class="feature-grid">
+          <a class="feature-card" href="#dictionnaire"><span class="feature-icon">⇄</span><strong>Lexique & traduction</strong><span>Recherchez un mot en soninké ou en français.</span><b>Rechercher un mot ↗</b></a>
+          <a class="feature-card" href="#prononciation"><span class="feature-icon">♫</span><strong>Prononciation audio</strong><span>Écoutez les enregistrements disponibles dans le corpus.</span><b>Écouter les mots ↗</b></a>
+          <a class="feature-card" href="#culture"><span class="feature-icon">✺</span><strong>Culture & histoire</strong><span>Découvrez les usages, les variantes et les sources lexicales.</span><b>Explorer les ressources ↗</b></a>
+        </div>
+      </section>
+      <section class="dictionary-section" id="dictionnaire">
+        <div class="section-heading dictionary-heading"><div><span class="section-kicker">LE CORPUS</span><h2>Le dictionnaire soninké–français</h2><p>Recherche bilingue, variantes et statuts de validation conservés.</p></div><span class="database-mark">📚 Lexique vivant</span></div>
+        <label class="search-label" for="search">Rechercher un mot ou une traduction</label>
+        <div class="search-row"><span class="search-symbol">⌕</span><input id="search" type="search" placeholder="Ex. : daga, partir…" autocomplete="off"><button id="clear" type="button" aria-label="Effacer la recherche">Effacer</button></div>
+        <div class="filters" role="group" aria-label="Sens de recherche"><button class="filter active" data-direction="all" type="button">Tout</button><button class="filter" data-direction="snk" type="button">Soninké</button><button class="filter" data-direction="fr" type="button">Français</button></div>
+        <section class="results-head"><h3>Résultats du dictionnaire</h3><span id="result-count">Chargement…</span></section>
+        <section id="results" class="results" aria-live="polite"><div class="empty">Chargement des données…</div></section>
+      </section>
+      <section class="notice" id="prononciation"><div class="notice-symbol">♫</div><div><strong>La prononciation compte.</strong><p>Les enregistrements de référence sont reliés aux mots uniquement lorsque la correspondance est établie et que l’audit confirme la présence du fichier. Les validations linguistiques restent distinctes des contrôles techniques.</p></div></section>
+      <section class="culture-strip" id="culture"><span class="culture-mark">✦</span><div><strong>Préserver les mots, respecter leurs nuances.</strong><p>Graphies originales, variantes, sens multiples, traductions et provenance : chaque détail compte pour transmettre le soninké fidèlement.</p></div><a href="docs/EXTERNAL-LEXICON-SOURCES.md">Consulter les sources ↗</a></section>
+      <footer><span>SoninkeGPT · Le patrimoine soninké, vivant et accessible</span><a href="docs/EXTERNAL-LEXICON-SOURCES.md">Sources lexicales</a><a href="docs/TRANSFER-PLAN.md">Méthode de transfert</a></footer>
+    </div>
   </main>
-  <footer><span>SoninkeGPT · Projet communautaire</span><a href="docs/EXTERNAL-LEXICON-SOURCES.md">Sources lexicales</a><a href="docs/TRANSFER-PLAN.md">Méthode de transfert</a></footer>
-  <script src="app.js" defer></script>
+</div>
+<script src="app.js" defer></script>
+<script>
+document.querySelectorAll('.side-nav a[href^="#"]').forEach(link => link.addEventListener('click', () => {
+  document.querySelectorAll('.nav-item').forEach(item => item.classList.toggle('active', item === link));
+  const label = link.textContent.trim().replace(/^[⌂⌕▤✺♫↗◎]\s*/, '');
+  const current = document.getElementById('current-page');
+  if (current) current.textContent = label;
+}));
+</script>
 </body>
 </html>
