@@ -37,6 +37,12 @@ La file `data/source/head-face-audio-recording-queue.csv` prépare un identifian
 | gorge | xanné |
 | gorge (variante) | xorré |
 
+## Notebook prêt pour la génération avec la voix de référence
+
+Un notebook Colab dédié est disponible : [OmniVoice-Tete-Visage-Voix-Referent.ipynb](../notebooks/OmniVoice-Tete-Visage-Voix-Referent.ipynb). Il charge les 20 formes depuis `data/source/head-face-tts-wordlist.csv`, utilise `reference_soninke.wav` et sa transcription `Daga goli. Li taxu.` dans le dossier Google Drive `SONINKE_TTS_LIBRE`, puis écrit les WAV et un manifeste avec durées, empreintes SHA-256 et statuts de validation. Il s'arrête si aucun GPU n'est disponible et n'envoie aucun WAV automatiquement vers GitHub.
+
+[Ouvrir le notebook directement dans Google Colab](https://colab.research.google.com/github/aydiarra-star/soninkeGPT/blob/main/notebooks/OmniVoice-Tete-Visage-Voix-Referent.ipynb)
+
 ## Prochaine étape audio
 
 Enregistrer séparément chaque forme soninkée, dans un environnement calme, sans musique ni voix en arrière-plan. Conserver le fichier original, associer son identifiant de file, puis vérifier l'écoute et le SHA-256 avant de l'ajouter au dépôt. Le statut de prononciation humaine ne devra passer à validé qu'après écoute/confirmation réelle.
