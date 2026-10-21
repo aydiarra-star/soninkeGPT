@@ -36,3 +36,8 @@ Le manifeste CSV est copié depuis la branche source de revue. Cela ne signifie 
 - Ne pas inventer de traductions, exemples, validations ou audios.
 - Ne pas intégrer de voix privées, modèles ou poids externes sans autorisation et licence compatibles.
 - Séparer les données réutilisables, le code du nouveau produit et les données candidates à vérifier.
+
+## Confirmation du référent — 21 octobre 2026
+Le propriétaire du corpus confirme explicitement que les 577 audios ont été écoutés et validés par lui-même, que sa propre voix est utilisée et que la prononciation est bonne. Cette validation humaine du corpus est un fait distinct de l'état de transfert des fichiers binaires dans SoninkeGPT : elle ne doit pas être remise en question ni effacée par un éventuel rapport technique de fichiers manquants. Si un WAV est introuvable à la copie, signaler un problème de transfert ou de chemin et le rechercher dans les archives autorisées; ne pas marquer la prononciation comme non validée et ne pas régénérer l'enregistrement.
+
+La colonne `human_pronunciation_validation` du manifeste historique conserve la validation de chaque entrée. Le champ technique `technical_status` décrit la présence/réutilisation du fichier au moment de la production du manifeste; il ne remplace pas la confirmation du référent.
