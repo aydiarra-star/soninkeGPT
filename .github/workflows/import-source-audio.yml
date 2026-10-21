@@ -6,7 +6,7 @@ on:
       target_branch:
         description: "SoninkeGPT branch receiving the copied WAV files"
         required: true
-        default: "transfer/source-corpus-inventory"
+        default: "main"
 
 permissions:
   contents: write
