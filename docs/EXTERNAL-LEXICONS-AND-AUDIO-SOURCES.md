@@ -38,3 +38,13 @@ Le fichier `data/source/peace-corps-soninke-audio-lexicon-candidates.csv` contie
 ## Statut
 
 Ce lot est une **proposition de recherche**, pas un ajout au lexique de production. Aucune entrée existante n'a été modifiée.
+
+
+## Comparaison initiale avec le lexique de production
+
+Comparaison exacte après normalisation Unicode NFC et passage en minuscules entre les 133 lignes candidates et les 325 entrées de `data/source/lexique-soninke-fr-base.csv` sur `main` : **8 formes candidates ont déjà une correspondance exacte**. Elles sont annotées dans le CSV avec l'identifiant existant et un statut de revue.
+
+- Pronoms déjà présents : `N`, `An`, `A`, `O`, `Xa`, `I`.
+- `Baane` : correspondance exacte avec une entrée existante dont les sens sont multiples; ne pas écraser la fiche.
+- `Xaso` : correspondance exacte avec une entrée existante traduite notamment par « vieillir »; il faut examiner les sens et la catégorie grammaticale avant toute décision.
+- Le CSV conserve ces candidats et leur provenance; aucun doublon n'a été supprimé et aucune entrée de production n'a été modifiée.
