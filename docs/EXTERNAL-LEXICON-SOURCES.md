@@ -4,7 +4,7 @@ Date de première recherche : 21 octobre 2026. Ces ressources servent à repére
 
 | Ressource | Usage prévu | État |
 |---|---|---|
-| [Asawan — lexique Soninké–Français–Anglais](https://www.asawan.org/fr/lexique_soninke) | Source prioritaire à examiner pour un lexique trilingue téléchargeable | Téléchargement annoncé; licence et redistribution à vérifier |
+| [Asawan — lexique Soninké–Français–Anglais](https://www.asawan.org/fr/lexique_soninke) | Source prioritaire à examiner pour un lexique trilingue téléchargeable | Téléchargement annoncé (17,25 Mo, exécutable Windows `.exe`); format exploitable, licence et redistribution à vérifier avant toute extraction ou réutilisation |
 | [CNRS / LGIDF — Soninké](https://lgidf.cnrs.fr/node/25) | Grammaire, lexique, phonologie et description linguistique | Source académique; vérifier les droits de chaque ressource liée |
 | [CNRS / LGIDF — Soninké : lexique des noms](https://lgidf.cnrs.fr/node/680) | Repérer des noms avec transcription tonale et traduction française | 9 candidats ajoutés avec forme source conservée; description basée sur le soninké du Kingui; droits à vérifier |
 | [CNRS / LGIDF — Soninké : lexique des verbes](https://lgidf.cnrs.fr/node/682) | Comparer les verbes et les variantes transcrites | 3 candidats ajoutés avec marques tonales conservées; droits à vérifier |
