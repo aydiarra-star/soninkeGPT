@@ -11,6 +11,9 @@ Date de première recherche : 21 octobre 2026. Ces ressources servent à repére
 | [Glosbe — Soninké vers Français](https://fr.glosbe.com/snk/fr) | Comparaison secondaire de sens et exemples en contexte | Contributions et sources hétérogènes; vérifier chaque entrée et les conditions d'usage |
 | [Glosbe — Français vers Soninké](https://fr.glosbe.com/fr/snk) | Repérage dans le sens inverse | Contributions et sources hétérogènes; vérifier chaque entrée et les conditions d'usage |
 
+
+- [Soninkara — Glossaire de mots Soninké–Français](https://www.soninkara.com/langue/apprendre-le-soninke/glossaire-de-mots.html) : glossaire attribué à Hadiya Wagué, à utiliser pour repérer des candidats, en conservant attribution et en vérifiant les conditions de réutilisation.
+
 ## Méthode d'enrichissement
 1. Relever un candidat et l'URL exacte de sa source.
 2. Comparer avec le lexique source transféré avant d'ajouter une nouvelle entrée.
