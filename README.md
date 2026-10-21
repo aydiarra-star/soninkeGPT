@@ -17,6 +17,12 @@ Le propriétaire du corpus confirme que les 577 enregistrements ont été écout
 4. N'intégrer les données externes qu'avec provenance et droits de réutilisation vérifiés.
 5. Construire ensuite l'application : recherche Soninké→Français et Français→Soninké, fiches lexicales, écoute audio, suggestions/corrections et outils d'administration.
 
+## Nouveau lot lexical — tête et visage
+- [20 entrées ajoutées et procédure audio avec la voix du référent](docs/HEAD-FACE-LEXICON-AUDIO.md)
+- [File des 20 enregistrements à réaliser](data/source/head-face-audio-recording-queue.csv)
+
+Les nouvelles formes sont conservées dans le lexique avec le statut `fourni_par_referent_a_verifier`. Aucun WAV correspondant n'a été trouvé parmi les 577 audios historiques; les enregistrements doivent être réellement fournis et validés avant d'être liés aux fiches.
+
 ## Ressources externes à examiner
 - [Asawan — lexique Soninké–Français–Anglais](https://www.asawan.org/fr/lexique_soninke)
 - [CNRS / LGIDF — ressources sur le soninké](https://lgidf.cnrs.fr/node/25)
