@@ -82,7 +82,8 @@ Promise.all([
   loadAudioIndex().catch(() => {})
 ]).then(([csv]) => {
   state.entries = parseCSV(csv, ";").filter(row => row.soninke || row.francais);
-  $("#corpus-status").textContent = state.entries.length + " entrées chargées" + (state.audioByWord.size ? " · " + state.audioByWord.size + " prononciations reliées" : "");
+  const linkedAudioCount = state.entries.filter(entry => state.audioByWord.has(normalizeWord(entry.soninke))).length;
+  $("#corpus-status").textContent = state.entries.length + " entrées chargées" + (linkedAudioCount ? " · " + linkedAudioCount + " prononciations reliées" : "");
   render();
 }).catch(() => {
   $("#corpus-status").textContent = "Données non chargées";
