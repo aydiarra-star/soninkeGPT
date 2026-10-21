@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123b32">
+  <meta name="description" content="SoninkeGPT — dictionnaire soninké-français, recherche bilingue et ressources audio vérifiées.">
+  <title>SoninkeGPT — Dictionnaire soninké-français</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Accueil SoninkeGPT"><span class="brand-mark">S</span><span>SoninkeGPT<small>Le patrimoine soninké, vivant et accessible</small></span></a>
+    <span class="status" id="corpus-status">Chargement du lexique…</span>
+  </header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">SONINKÉ · FRANÇAIS</p>
+      <h1>Les mots nous rapprochent.</h1>
+      <p class="intro">Explorez le lexique soninké-français, retrouvez les variantes et préparez l’écoute des enregistrements de référence.</p>
+      <label class="search-label" for="search">Rechercher un mot ou une traduction</label>
+      <div class="search-row"><input id="search" type="search" placeholder="Ex. daga, partir…" autocomplete="off"><button id="clear" type="button" aria-label="Effacer la recherche">Effacer</button></div>
+      <div class="filters" role="group" aria-label="Sens de recherche">
+        <button class="filter active" data-direction="all" type="button">Tout</button>
+        <button class="filter" data-direction="snk" type="button">Soninké</button>
+        <button class="filter" data-direction="fr" type="button">Français</button>
+      </div>
+    </section>
+    <section class="results-head"><h2>Résultats du dictionnaire</h2><span id="result-count">0 entrée</span></section>
+    <section id="results" class="results" aria-live="polite"><div class="empty">Chargement des données…</div></section>
+    <section class="notice"><strong>Un corpus qui respecte la langue.</strong><p>Les graphies, variantes, sources et statuts de validation sont conservés. Les nouvelles propositions restent distinctes des entrées confirmées. Les 577 enregistrements de référence ont été validés par le locuteur ; les fichiers doivent encore être reliés et contrôlés lors du transfert.</p></section>
+  </main>
+  <footer><span>SoninkeGPT · Projet communautaire</span><a href="docs/EXTERNAL-LEXICON-SOURCES.md">Sources lexicales</a><a href="docs/TRANSFER-PLAN.md">Méthode de transfert</a></footer>
+  <script src="app.js" defer></script>
+</body>
+</html>
