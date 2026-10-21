@@ -5,6 +5,8 @@ SoninkeGPT est un nouveau projet consacré au dictionnaire et à l'assistance li
 ## Priorité immédiate : transfert sans perte
 - Manifeste historique de 577 entrées : [copie source](data/source/manifest-577-review.csv)
 - [Plan de transfert, provenance et contrôle des licences](docs/TRANSFER-PLAN.md)
+- [Rapport du premier transfert audio](reports/audio-transfer-summary.md)
+- [Audit détaillé des fichiers WAV et empreintes SHA-256](reports/audio-transfer-audit.csv)
 
 Le propriétaire du corpus confirme que les 577 enregistrements ont été écoutés et validés par lui-même, dans sa propre voix, avec une prononciation correcte. Cette validation humaine est distincte de la présence technique des fichiers WAV dans ce dépôt. L'ancien état du manifeste indiquait 576 WAV accessibles et un fichier introuvable pour `snk-00308` (« n ») ; cette incohérence doit être réconciliée en recherchant l'original, sans remettre en cause la validation humaine et sans régénérer artificiellement l'audio. Le workflow d'import produit un audit des fichiers effectivement copiés.
 
