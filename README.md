@@ -6,7 +6,7 @@ SoninkeGPT est un nouveau projet consacré au dictionnaire et à l'assistance li
 - Manifeste historique de 577 entrées : [copie source](data/source/manifest-577-review.csv)
 - [Plan de transfert, provenance et contrôle des licences](docs/TRANSFER-PLAN.md)
 
-Le manifeste est une métadonnée de corpus; il ne prouve pas que tous les WAV sont présents dans ce dépôt. Les fichiers audio doivent être transférés depuis l'archive réelle et vérifiés. L'état historique connu est de 576 WAV distincts et un audio manquant pour snk-00308 (« n »). Aucun audio ne sera régénéré pour dissimuler un manque.
+Le propriétaire du corpus confirme que les 577 enregistrements ont été écoutés et validés par lui-même, dans sa propre voix, avec une prononciation correcte. Cette validation humaine est distincte de la présence technique des fichiers WAV dans ce dépôt. L'ancien état du manifeste indiquait 576 WAV accessibles et un fichier introuvable pour `snk-00308` (« n ») ; cette incohérence doit être réconciliée en recherchant l'original, sans remettre en cause la validation humaine et sans régénérer artificiellement l'audio. Le workflow d'import produit un audit des fichiers effectivement copiés.
 
 ## Principes
 1. Préserver les graphies, variantes, sens multiples, exemples et provenance.
