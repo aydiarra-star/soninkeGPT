@@ -1,0 +1,306 @@
+id;soninke;francais;categorie;source;statut
+SNK-LEX-0001;daga;partir;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0002;ri;venir;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0003;faye;regarder;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0004;sefe;parler;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0005;yige;manger;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0006;mini;boire;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0007;wori;voir;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0008;safa;écrire;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0009;wutu;prendre;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0010;goli;travailler;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0011;wuru;courir;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0012;diambe;abandonner;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0013;duŋe;accepter;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0014;tuntchi;accompagner;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0015;tifin;accuser;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0016;kafuma;additionner;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0017;dema;aider;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0018;xanu;aimer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0019;kumu;allumer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0020;dantaxi;annoncer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0021;xiri;appeler;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0022;riti;apporter;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0023;tinto;approcher;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0024;fatampantchi;argumenter;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0025;dioofe;arriver;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0026;tewe;assister;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0027;xenni;attaquer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0028;raga;attraper;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0029;xanemaxawara;autoriser;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0030;gongo;avertir;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0031;sooti;brancher;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0032;biyi;brûler;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0033;taga;bâtir;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0034;muxu;cacher;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0035;mooso;caresser;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0036;kara;casser;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0037;faraxu;changer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0038;suge;chanter;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0039;muru;chercher;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0040;sugandi;choisir;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0041;siyi;coiffer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0042;tuka;coller;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0043;yinkutundi;commander;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0044;diopandi;commencer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0045;contan;compter;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0046;me-wutu;coordonner;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0047;saqe;coucher;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0048;dioxi;couler;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0049;xaru;crier;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0050;xadiafi;critiquer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0051;tagandi;créer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0052;sore;cuisiner;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0053;tari;célébrer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0054;rege;danser;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0055;kanewutu;devancer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0056;kaanemaxawutu;diriger;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0057;fiwarame;disputer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0058;bakuman;distinguer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0059;boxu;déchirer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0060;finsaanindi;décider;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0061;wunii;déverrouiller;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0062;konun;effrayer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0063;yagu;embarrasser;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0064;fixorondi;empirer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0065;tuyi;informer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0066;suxe;jalouser;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0067;fita;jeter;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0068;wara;laisser;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0069;fitta;lancer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0070;fanqe;lutter;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0071;waran;lâcher;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0072;yexi;marier;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0073;xentie;mesurer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0074;sege;monter;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0075;koyin;montrer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0076;xenyi;nager;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0077;waqi;nettoyer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0078;batu;obéir;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0079;mungu;oublier;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0080;yampa;pardonner;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0081;simme;penser;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0082;wu;pleurer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0083;gunudi;plier;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0084;dufintandi;plonger;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0085;wutundi;porter;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0086;yonto;pousser;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0087;fimaxagomundi;préparer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0088;finkoyindi;présenter;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0089;roxo;prêter;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0090;maxankutondi;raconter;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0091;si;raser;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0092;fallanyille;reculer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0093;bara;refuser;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0094;mekitandi;relier;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0095;tambotuga;rembourser;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0096;tuma;reposer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0097;doron;respecter;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0098;fufe;respirer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0099;baano;ressembler;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0100;finsirondi;réconcilier;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0101;gomundi;réparer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0102;yaxawunyi-yen xedie;réveiller;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0103;kuyi;rêver;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0104;mexindi;salir;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0105;kunyi;saluer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0106;bonte;sauter;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0107;xithi;serrer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0108;tuyindi;signaler;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0109;korosin;surveiller;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0110;boguman;séparer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0111;duguta;terminer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0112;fuutu;tirer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0113;sonundi;tisser;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0114;xenu;tomber;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0115;keti;toucher;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0116;niaŋundi;transformer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0117;koroosa;tricoter;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0118;wari;trouver;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0119;kari;tuer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0120;kofuma;unir;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0121;soxondi;verrouiller;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0122;xaso;vieillir;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0123;xenne;violer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0124;tarandi;visiter;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0125;sakundi;égarer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0126;laaton;éloigner;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0127;maaman;énerver;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0128;kawafi;étonner;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0129;bante;absenter;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0130;xemparadangi;abuser;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0131;xoraxu;affranchir;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0132;suruba;aspirer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0133;sangalu;clôturer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0134;sukandi;cocher;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0135;sameti;confier;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0136;maxage;cordonner;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0137;misso;saboter;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0138;bulxa;effacer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0139;simandi;en rappeler;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0140;mulondi;froidir;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0141;besin;frotter;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0142;mugni;impatienter;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0143;sumba;souquer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0144;sigi;stopper;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0145;tilifi;torturer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0146;filinka;tourner;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0147;noni;tracer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0148;diamba;trahir;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0149;tulu;tresser;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0150;bexin;zipper;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0151;dufuutu;étirer;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0152;bisimilahi;accueillir;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0153;sane;apparaître;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0154;taxu;asseoir;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0155;dugu;attendre;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0156;katu;battre;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0157;gadia;combattre;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0158;faamu;comprendre;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0159;tu;connaître;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0160;xandio;convaincre;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0161;lifi;coudre;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0162;yanqa;descendre;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0163;nia;devenir;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0164;ko;dire;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0165;sanku;disparaître;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0166;djikeranxoso;décevoir;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0167;kaban;interdire;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0168;gara;mentir;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0169;rondi;mettre;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0170;saare;naître;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0171;ku;offrir;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0172;wunyi;ouvrir;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0173;konti;perdre;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0174;laydurangandi;promettre;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0175;soyi;rire;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0176;diabi;répondre;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0177;kanalaga;sentir;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0178;bagu;sortir;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0179;gage;vendre;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0180;bire;vivre;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0181;kerin;éteindre;verbe;liste_referent;fourni_par_referent
+SNK-LEX-0182;wurebandi;traduire;verbe;liste_referent;fourni_par_referent
+SNK-GRM-0001;nke;je;pronom_personnel_serie_longue;liste_referent;fourni_par_referent
+SNK-GRM-0002;anke;tu;pronom_personnel_serie_longue;liste_referent;fourni_par_referent
+SNK-GRM-0003;ake;il / elle;pronom_personnel_serie_longue;liste_referent;fourni_par_referent
+SNK-GRM-0004;oku;nous;pronom_personnel_serie_longue;liste_referent;fourni_par_referent
+SNK-GRM-0005;xaku;vous;pronom_personnel_serie_longue;liste_referent;fourni_par_referent
+SNK-GRM-0006;iku;ils / elles;pronom_personnel_serie_longue;liste_referent;fourni_par_referent
+SNK-GRM-0007;n;je;pronom_personnel_serie_diminutive;liste_referent;fourni_par_referent
+SNK-GRM-0008;an;tu;pronom_personnel_serie_diminutive;liste_referent;fourni_par_referent
+SNK-GRM-0009;a;il / elle;pronom_personnel_serie_diminutive;liste_referent;fourni_par_referent
+SNK-GRM-0010;o;nous;pronom_personnel_serie_diminutive;liste_referent;fourni_par_referent
+SNK-GRM-0011;xa;vous;pronom_personnel_serie_diminutive;liste_referent;fourni_par_referent
+SNK-GRM-0012;i;ils / elles;pronom_personnel_serie_diminutive;liste_referent;fourni_par_referent
+SNK-GRM-0013;fayi rini;sur le point de;marqueur_aspectuel;liste_referent;fourni_par_referent
+SNK-GRM-0014;fayi;en train de;marqueur_aspectuel;liste_referent;fourni_par_referent
+SNK-GRM-0015;rini;futur lointain / à venir;marqueur_temporel;liste_referent;fourni_par_referent
+SNK-GRM-0016;yi rini;futur proche;marqueur_temporel;liste_referent;fourni_par_referent
+SNK-GRM-0017;na;demande / qu'il;marqueur_grammatical;liste_referent;fourni_par_referent
+SNK-GRM-0018;di;passé avec objet;marqueur_grammatical;liste_referent;fourni_par_referent
+SNK-GRM-0019;wa;action en cours;marqueur_aspectuel;liste_referent;fourni_par_referent
+SNK-GRM-0020;da;passé avec objet (variante de di);marqueur_grammatical;liste_referent;fourni_par_referent
+SNK-GRM-0021;yi;action en cours;marqueur_aspectuel;liste_referent;fourni_par_referent
+SNK-GRM-0022;do;action en cours;marqueur_aspectuel;liste_referent;fourni_par_referent
+SNK-GRM-0023;ni ya me;suffixe de l'action en cours (avec do);marqueur_grammatical;liste_referent;fourni_par_referent
+SNK-GRM-0024;maxa;ne... pas (impératif négatif / négation du passé);marqueur_negation;liste_referent;fourni_par_referent
+SNK-GRM-0025;n'ti rini;négation du futur proche;marqueur_negation;liste_referent;fourni_par_referent
+SNK-GRM-0026;n'taxa rini;négation du futur proche (variante);marqueur_negation;liste_referent;fourni_par_referent
+SNK-GRM-0027;yeli / yere;viens ici (impératif de venir);expression;liste_referent;fourni_par_referent
+SNK-GRM-0028;m';particule devant b, f, m;particule;liste_referent;fourni_par_referent
+SNK-GRM-0029;l';particule devant r;particule;liste_referent;fourni_par_referent
+SNK-GRM-0030;ŋ';particule devant w;particule;liste_referent;fourni_par_referent
+SNK-GRM-0031;n';particule par défaut;particule;liste_referent;fourni_par_referent
+SNK-LEX-0183;baaba;père, papa (nom d'appel familier);nom;"Dictionnaire soninké.docx; segments=4";valide_par_referent
+SNK-LEX-0184;baabo;"mousse, écume ; gardien des circoncis";nom;"Dictionnaire soninké.docx; segments=6,8; variantes=baawo";valide_par_referent
+SNK-LEX-0185;baade;"lieu où l'on reçoit les condoléances ; tombeau, deuil";nom;"Dictionnaire soninké.docx; segments=11,12";valide_par_referent
+SNK-LEX-0186;baafe;battant de porte;nom;"Dictionnaire soninké.docx; segments=13";valide_par_referent
+SNK-LEX-0187;baalixu;pubère, qui a atteint l'âge de la puberté;nom;"Dictionnaire soninké.docx; segments=19";valide_par_referent
+SNK-LEX-0188;baana;"Tabaski, le douzième mois lunaire ; ressembler, être uni, être un";nom/verbe;"Dictionnaire soninké.docx; segments=22,23";valide_par_referent
+SNK-LEX-0189;baara;variété de paille pour faire les toits;nom;"Dictionnaire soninké.docx; segments=42";valide_par_referent
+SNK-LEX-0190;baase;repas d'accueil, plat offert à un hôte;nom;"Dictionnaire soninké.docx; segments=47";valide_par_referent
+SNK-LEX-0191;baasunde;action d'offrir un plat à un hôte;nom;"Dictionnaire soninké.docx; segments=52";valide_par_referent
+SNK-LEX-0192;baata;favori(e), préféré(e);adjectif;"Dictionnaire soninké.docx; segments=55";valide_par_referent
+SNK-LEX-0193;baaxa;"ceinture de gris-gris ; margouillat";nom;"Dictionnaire soninké.docx; segments=60,61; variantes=balaxa";valide_par_referent
+SNK-LEX-0194;baaye;"tante ; orphelin ; planer";nom;"Dictionnaire soninké.docx; segments=65,66,67";valide_par_referent
+SNK-LEX-0195;badaane;variole;nom;"Dictionnaire soninké.docx; segments=70";valide_par_referent
+SNK-LEX-0196;badage;"hadage ; buisson";nom;"Dictionnaire soninké.docx; segments=71,72; variantes=bedege";valide_par_referent
+SNK-LEX-0197;badarawulle;variété de lynx à robe fauve, caracal;nom;"Dictionnaire soninké.docx; segments=73";valide_par_referent
+SNK-LEX-0198;bado;"variété de longue herbe utilisée à fabriquer les seccos ; robe multicolore à dominante rouge (ex: chèvre, cheval) ; femme aux grossesses très rapprochées";nom;"Dictionnaire soninké.docx; segments=75,76,77; variantes=bajo";valide_par_referent
+SNK-LEX-0199;bafe;antichambre, vestibule;nom;"Dictionnaire soninké.docx; segments=80; variantes=bahe";valide_par_referent
+SNK-LEX-0200;bafido;tapis de selle;nom;"Dictionnaire soninké.docx; segments=82; variantes=bahido";valide_par_referent
+SNK-LEX-0201;bagandaare;rançon;nom;"Dictionnaire soninké.docx; segments=85";valide_par_referent
+SNK-LEX-0202;bage;variété d'acacia épineux;nom;"Dictionnaire soninké.docx; segments=91";valide_par_referent
+SNK-LEX-0203;bagi;variété de tissu européen, percale;nom;"Dictionnaire soninké.docx; segments=92";valide_par_referent
+SNK-LEX-0204;bajo;"couverture en laine ; fils unique";nom;"Dictionnaire soninké.docx; segments=100,101; variantes=bajjo";valide_par_referent
+SNK-LEX-0205;bajungu;mil ou maïs bouilli;nom;"Dictionnaire soninké.docx; segments=103";valide_par_referent
+SNK-LEX-0206;bakkata;"colombe, variété de tourterelle ; variété de poisson";nom;"Dictionnaire soninké.docx; segments=107,108";valide_par_referent
+SNK-LEX-0207;bakke;sortie;nom;"Dictionnaire soninké.docx; segments=109";valide_par_referent
+SNK-LEX-0208;bakkubakku;crapaud;nom;"Dictionnaire soninké.docx; segments=110";valide_par_referent
+SNK-LEX-0209;balafata;string, cache-sexe (féminin);nom;"Dictionnaire soninké.docx; segments=117; variantes=belifata";valide_par_referent
+SNK-LEX-0210;ballaade;"poutre, traverse ; clavicule";nom;"Dictionnaire soninké.docx; segments=127,128";valide_par_referent
+SNK-LEX-0211;banŋe;"chez, vers ; côté, parti";nom;"Dictionnaire soninké.docx; segments=170,171";valide_par_referent
+SNK-LEX-0212;bape;"piège ; terre soulevée par les plantes en germination";nom;"Dictionnaire soninké.docx; segments=179,180";valide_par_referent
+SNK-LEX-0213;baraji;"bénir, récompenser ; récompense divine, grâce divine, bénédiction, offrande";nom;"Dictionnaire soninké.docx; segments=211,212";valide_par_referent
+SNK-LEX-0214;barake;"bénédiction, prospérité, protection ; force";nom;"Dictionnaire soninké.docx; segments=215,216; variantes=bariki";valide_par_referent
+SNK-LEX-0215;baraxatoye;"grosseur ; fierté, hautain";nom;"Dictionnaire soninké.docx; segments=231,232";valide_par_referent
+SNK-LEX-0216;bisi;"pêcher le fretin (petits poissons) ; filet à fretin";nom;"Dictionnaire soninké.docx; segments=441,442";valide_par_referent
+SNK-LEX-0217;biyaade;"fer à marquer, moule en métal pour l'impression du cuir ou pour marquer les vaches ; grillage à griller";nom;"Dictionnaire soninké.docx; segments=461,462,467; variantes=buyaade";valide_par_referent
+SNK-LEX-0218;bologaaɲe;"plage au bord du fleuve, lieu de baignade ; lieu de réunion pour régler des affaires (sens figuré)";nom;"Dictionnaire soninké.docx; segments=494,495; variantes=bologaaɲi";valide_par_referent
+SNK-LEX-0219;bolonŋe;"bulunŋe ; vestibule";nom;"Dictionnaire soninké.docx; segments=497,498; variantes=bolontonŋe";valide_par_referent
+SNK-LEX-0220;bonne;"décès ; le fait d'être gâté, d'être tombé en panne";nom;"Dictionnaire soninké.docx; segments=510,511";valide_par_referent
+SNK-LEX-0221;bononte;"gâté (être) ; un malade mental";nom;"Dictionnaire soninké.docx; segments=516,517,521,522";valide_par_referent
+SNK-LEX-0222;bookine;"variété d'oiseau ; biche, cochon";nom;"Dictionnaire soninké.docx; segments=535,536";valide_par_referent
+SNK-LEX-0223;bulle;"tas de banco ; fétiche enterré lors d'une construction";nom;"Dictionnaire soninké.docx; segments=629,630";valide_par_referent
+SNK-LEX-0224;buusi;"uriner ; urine";nom/verbe;"Dictionnaire soninké.docx; segments=725,726";valide_par_referent
+SNK-LEX-0225;banboxo;"sud ; nom traditionnel pour la région au sud du haut Sénégal (fleuve)";nom;"Dictionnaire soninké.docx; paragraphes source : 159, 160; variantes : banbuxu; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0226;baxu;"être démodé, être dépassé ; agresser, gêner, provoquer, taquiner";verbe intransitif;"Dictionnaire soninké.docx; paragraphes source : 313, 314; variantes : baqa, baqe, bexu; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0227;bifi;"se coucher à plat ventre ; faire renverser";verbe intransitif;"Dictionnaire soninké.docx; paragraphes source : 410, 411; variantes : bipi; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0228;bogu;"pousser ; se réaliser ; sortir, (faire) ; faire sortir, enlever, soustraire";verbe;"Dictionnaire soninké.docx; paragraphes source : 506, 507, 508, 509, 510, 511; variantes : baga, bagu, bugu, bukku; 6 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0229;bono;"s'abîmer, se gâter ; détruire, gâter";verbe;"Dictionnaire soninké.docx; paragraphes source : 552, 553; variantes : bonno; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0230;buruta;"rendre au vendeur un objet acheté ; mettre de côté une partie d'un plat, diminuer, découdre";verbe;"Dictionnaire soninké.docx; paragraphes source : 727, 728, 729; variantes : boroto; 3 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0231;buruxa;"effacer, exterminer, détruire, éliminer, rayer ; semer";nom/verbe;"Dictionnaire soninké.docx; paragraphes source : 737, 738, 739; variantes : burunqu, buruxu; 3 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0232;ba;"""Est-ce que ; appelation honorifique donné à un homme, appelation donnée à un inconnu, monsieur ; diminutif de ""faaba"" ; en ce qui concerne (X),Alla ɲaamarindun ba, axa da kun";nom;"Dictionnaire soninké.docx; paragraphes source : 4, 5, 6, 7; variantes : aucune détectée; 4 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0233;balaawu;"épidémie ; accident, incident";nom;"Dictionnaire soninké.docx; paragraphes source : 123, 124; variantes : balawu; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0234;barajagu;"émonder, tailler ; sculpter, préparer le matériel pour un travail";verbe transitif;"Dictionnaire soninké.docx; paragraphes source : 226, 227; variantes : aucune détectée; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0235;betexe;salir;nom/verbe;"Dictionnaire soninké.docx; paragraphes source : 387, 388; variantes : bataxi, betexi; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0236;billa;"au lieu de, avant que ; marque de subordination temporelle";adverbe;"Dictionnaire soninké.docx; paragraphes source : 431, 432; variantes : bulla; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0237;bisimilla;"bienvenue, bonne arrivée ; accueillir";verbe transitif;"Dictionnaire soninké.docx; paragraphes source : 472, 473; variantes : aucune détectée; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0238;bitta;"serrer, embarrasser, coincer, Leminun da xiisen bitta baafen di ; gêner (moralement)";verbe;"Dictionnaire soninké.docx; paragraphes source : 486, 487; variantes : aucune détectée; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0239;boona;"variété de poisson avec mamelles ; mollet";nom;"Dictionnaire soninké.docx; paragraphes source : 582, 583; variantes : aucune détectée; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0240;boora;"déshabiller ; enlever les poils de la queue du cheval ; se déshabiller ; se changer en habit de travail";verbe;"Dictionnaire soninké.docx; paragraphes source : 584, 585, 586, 587; variantes : aucune détectée; 4 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0241;boosi;"arracher (de quelqu'un) ; enlever l'épiderme";verbe transitif;"Dictionnaire soninké.docx; paragraphes source : 591, 592; variantes : aucune détectée; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0242;booxo;"diviser en deux, déchirer, fendre ; traverser";verbe transitif;"Dictionnaire soninké.docx; paragraphes source : 595, 596; variantes : aucune détectée; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0243;bosi;"sucer qqch ; être sucé ; sucer";verbe;"Dictionnaire soninké.docx; paragraphes source : 618, 619, 620; variantes : boco; 3 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0244;buda;"se troubler (un liquide) - forme passive ; faire du bruit (dans l'eau) ; fâcher";verbe transitif;"Dictionnaire soninké.docx; paragraphes source : 655, 656, 657; variantes : aucune détectée; 3 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0245;burututu;"sans fin, sans arrête ; sans arrêt";verbe intransitif;"Dictionnaire soninké.docx; paragraphes source : 735, 736; variantes : aucune détectée; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0246;baane;"valeur quantitative, associé à des déterminants quantifieurs: yogo, tana, 0) ; seul (valeur qualifcatif) ; le même (en fonction épithète, pas en fonction attribut ; dans un contexte où le nom qualifié par baane s'oppose à une première occurrence de même valeur ; chacun ; un peu ; one ; un à un, un par un";nom;"Dictionnaire soninké.docx; paragraphes source : 38, 39, 40, 41, 42, 43, 44, 47; variantes : aucune détectée; 8 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0247;baari;dégagé (d'une obligation, d'un serment);verbe intransitif;"Dictionnaire soninké.docx; paragraphes source : 52, 53; variantes : aucune détectée; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0248;bagande;"sortie ; soustraction";nom;"Dictionnaire soninké.docx; paragraphes source : 96, 97; variantes : bakkande, bugunde; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0249;bapore;variété de poisson, capitaine;nom;"Dictionnaire soninké.docx; paragraphes source : 198; variantes : bapoore; 1 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0250;baratu;"croisé ; carrefour";nom;"Dictionnaire soninké.docx; paragraphes source : 243, 244; variantes : aucune détectée; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0251;batte;"trace ; place";nom;"Dictionnaire soninké.docx; paragraphes source : 278, 279; variantes : aucune détectée; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0252;bawuya;"manger le repas de la veille ; petit déjeuner composé des restes du supé";nom;"Dictionnaire soninké.docx; paragraphes source : 295, 296; variantes : aucune détectée; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0253;beexi;"fermer, colmater ; rendre inflexible le coeur de quelqu'un, endurcir le coeur de quelqu'un ; cracher";verbe;"Dictionnaire soninké.docx; paragraphes source : 339, 340, 341; variantes : aucune détectée; 3 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0254;bereta;"cotiser ; cotisation";nom;"Dictionnaire soninké.docx; paragraphes source : 374, 375; variantes : aucune détectée; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0255;bette;"reste de branche coupée ; pluvier";nom;"Dictionnaire soninké.docx; paragraphes source : 392, 393; variantes : aucune détectée; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0256;betu;"complètement rempli ; tailler, couper";verbe;"Dictionnaire soninké.docx; paragraphes source : 394, 395; variantes : aucune détectée; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0257;biibi;"rattraper, renvoyer, pourchasser ; s'enfuir, fuir";verbe transitif;"Dictionnaire soninké.docx; paragraphes source : 413, 414; variantes : aucune détectée; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0258;biraado;"faire vivre ; nourriture, vivres";nom/verbe;"Dictionnaire soninké.docx; paragraphes source : 453, 454; variantes : aucune détectée; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0259;birinbiri;"rouler (faire) (un pneu, une barrique) ; se rouler ; faire l'amour";verbe;"Dictionnaire soninké.docx; paragraphes source : 467, 468, 469; variantes : bilinbili; 3 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0260;bone;"malheur, mal ; gâté(e), empêché(e)";nom/verbe;"Dictionnaire soninké.docx; paragraphes source : 544, 545, 546, 547; variantes : aucune détectée; 4 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0261;boobo;"jaune ; désherber à la main";verbe transitif;"Dictionnaire soninké.docx; paragraphes source : 574, 575; variantes : aucune détectée; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0262;boxoti;arracher, déraciner;verbe transitif;"Dictionnaire soninké.docx; paragraphes source : 635; variantes : buxuti; 1 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0263;boyi;source souterraine;nom/verbe;"Dictionnaire soninké.docx; paragraphes source : 643, 647; variantes : bafi, bahi, bayi; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0264;bucine;"petit, peu ; jeune";adjectif;"Dictionnaire soninké.docx; paragraphes source : 653, 654; variantes : aucune détectée; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0265;bununbuna;guêpe qui fait des nids en banco aux murs;nom;"Dictionnaire soninké.docx; paragraphes source : 698; variantes : bunanbuna; 1 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0266;bure;mauvais, méchant;adjectif;"Dictionnaire soninké.docx; paragraphes source : 707, 708; variantes : aucune détectée; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0267;burutande;"partie d'un plat mis de côté ; diminution ; annulation d'un accord";nom;"Dictionnaire soninké.docx; paragraphes source : 730, 731, 732; variantes : aucune détectée; 3 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0268;butte;"foie ; émotion, colère ; fidélité, fiabilité, courage";nom;"Dictionnaire soninké.docx; paragraphes source : 748, 749, 750; variantes : aucune détectée; 3 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0269;butu;"se facher ; percer (un abcès) ; fâcher quelqu'un";verbe;"Dictionnaire soninké.docx; paragraphes source : 756, 759; variantes : buttu; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0270;buuda;"fondu ; décomposer ; chauffer jusqu'à dissolution, fondu";verbe;"Dictionnaire soninké.docx; paragraphes source : 762, 763; variantes : aucune détectée; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0271;buusu;"brûler légèrement ; retirer";verbe transitif;"Dictionnaire soninké.docx; paragraphes source : 778, 779; variantes : aucune détectée; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0272;ceero;"youyou, perruche sénégalaise ; scie";nom;"Dictionnaire soninké.docx; paragraphes source : 807, 808; variantes : aucune détectée; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0273;coolo;"errer, vagabonder ; vagabond, personne qui ne fait rien, au chômage";nom/verbe;"Dictionnaire soninké.docx; paragraphes source : 830, 831; variantes : aucune détectée; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent
+SNK-LEX-0274;baaraago;course de chevaux;nom;"Dictionnaire soninké.docx; paragraphes source : 51; variantes : barabo; 1 segments conservés dans la fiche de validation du lot 2";valide_par_referent
