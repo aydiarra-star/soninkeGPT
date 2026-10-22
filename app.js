@@ -2096,10 +2096,32 @@ async function loadAllData() {
     state.audioList = audioList;
   }
 
+  // 8. Audios générés : dès qu'un WAV est présent dans le manifeste de mémoire,
+  // il est intégré à l'index de lecture et à la liste Lexique & Audios.
   try {
     const response = await fetch("data/voice-memory.json");
-    if (response.ok) for (const item of (await response.json()).audio) {
-      if (!state.audioByWord.has(normalizeWord(item.text))) state.audioByWord.set(normalizeWord(item.text), item);
+    if (response.ok) {
+      const memory = await response.json();
+      for (const item of (Array.isArray(memory.audio) ? memory.audio : [])) {
+        if (!item || !item.text || !item.url) continue;
+        const key = normalizeWord(item.text);
+        const ortho = normalizeSoninkeOrtho(item.text);
+        if (!key || state.audioByWord.has(key)) continue; // conserve toujours l'audio déjà présent
+        const matchedEntry = state.entries.find((entry) => normalizeWord(entry.soninke) === key);
+        const info = {
+          ...item,
+          francais: item.francais || (matchedEntry ? matchedEntry.francais : ""),
+          generated: String(item.url).startsWith("audio/generated/"),
+        };
+        state.audioByWord.set(key, info);
+        if (ortho && !state.audioByOrtho.has(ortho)) state.audioByOrtho.set(ortho, info);
+        state.audioList.push(info);
+        const stem = key.replace(/-(nde|ye|ŋe)$/, "").split(/\\s+/)[0];
+        if (stem && stem !== key) {
+          if (!state.relatedAudioByStem.has(stem)) state.relatedAudioByStem.set(stem, []);
+          state.relatedAudioByStem.get(stem).push(info);
+        }
+      }
     }
   } catch { /* Le corpus original reste disponible hors ligne. */ }
   updateCorpusStatus();
