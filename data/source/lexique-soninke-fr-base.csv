@@ -324,7 +324,7 @@ SNK-LEX-0291;yesso;cou;partie_du_corps;liste_referent_tete_visage_2026-10-21;fou
 SNK-LEX-0292;sinke;cou;partie_du_corps;liste_referent_tete_visage_2026-10-21;fourni_par_referent_a_verifier;;
 SNK-LEX-0293;xanné;gorge;partie_du_corps;liste_referent_tete_visage_2026-10-21;fourni_par_referent_a_verifier;;
 SNK-LEX-0294;xorré;gorge;partie_du_corps;liste_referent_tete_visage_2026-10-21;fourni_par_referent_a_verifier;;
-SNK-LEX-0295;nawaari;merci;interjection;Peace_Corps_Soninke_Language_Lessons_Mauritania;source_externe_a_verifier;;
+SNK-LEX-0295;nawari;merci;interjection;validation_referent_utilisateur;fourni_par_referent;nawaari;
 SNK-LEX-0296;baabondi;mousser (faire);verbe;Dictionnaire soninké.docx;candidat_dictionnaire_a_verifier;;"baabondi summary-definition: foam; mousser (faire). See main entry: baabo1, -ndi3. Verbe transitif. foam, make foamy; faire mousser. Alu da hatayen baabondi. Alou foamed the tea. Alou a fait moussé le thé. Gram: 6 Note: D2"
 SNK-LEX-0297;baabu;secourir avec de l'argent;verbe;Dictionnaire soninké.docx;candidat_dictionnaire_a_verifier;;"baabu Verbe transitif. aid by means of money; secourir avec de l'argent. Tanpille baabu in ŋa. N baabu tanpille yi. Help me with 100 francs CFA. Prête-moi 100 francs CFA. Tanpille baabe. 100 francs CFA were loaned. 100 francs CFA ont été prêté.Gram: Le 'patient' et le 'bénéficiaire', tous les deux peuvent fonctionner comme objet direct et circonstant. Néanmoins, seul le syntagme nominal du 'patient' peut être le sujet de la forme passive du verbe.; The patient and beneficiary can equally bear the direct object and oblique grammatical relation. However, only the noun phrase functioning as the patient can be the suject of the passive form of the verb. Gram: 3 Note: D2"
 SNK-LEX-0298;baafinlenme;cadenas, serrure;nom;Dictionnaire soninké.docx;candidat_dictionnaire_a_verifier;;"baafinlenme summary-definition: lock; cadenas, serrure. See main entry: baafe, n4, -lenme. Nom . lock; cadenas, serrure. synonyme: kannaara."
@@ -897,7 +897,7 @@ SNK-LEX-0864;so;maison, concession familiale;nom;Targumi vocabulaire soninké;so
 SNK-LEX-0865;jago;marché;nom;Targumi vocabulaire soninké;source_externe_a_verifier;;
 SNK-LEX-0866;sutura;discrétion, intimité, dignité;nom;Targumi vocabulaire soninké;source_externe_a_verifier;;
 SNK-LEX-0867;faba;père;nom;Soninké structure et corpus;source_externe_a_verifier;;
-SNK-LEX-0868;ka;maison;nom;Soninké structure et corpus;source_externe_a_verifier;;
+SNK-LEX-0868;ka;maison;nom;validation_referent_utilisateur;fourni_par_referent;;
 SNK-LEX-0869;kitabe;livre;nom;Soninké structure et corpus;source_externe_a_verifier;;
 SNK-LEX-0870;kaye;cahier;nom;LGIDF CNRS interactions de base;source_externe_a_verifier;;
 SNK-LEX-0871;koota;jour;nom;Soninké structure et corpus;source_externe_a_verifier;;
@@ -928,3 +928,12 @@ SNK-LEX-0895;kaba;nuage;nom;LGIDF CNRS lexique des noms;source_externe_a_verifie
 SNK-LEX-0896;tabulle;nuage;nom;LGIDF CNRS lexique des noms;source_externe_a_verifier;;
 SNK-LEX-0897;minaaxe;brouillard;nom;LGIDF CNRS lexique des noms;source_externe_a_verifier;;
 SNK-LEX-0898;kanpe;aile;nom;LGIDF CNRS lexique des noms;source_externe_a_verifier;;
+SNK-LEX-0899;an wouydiom;bonjour;expression;validation_referent_utilisateur;fourni_par_referent;;
+SNK-LEX-0900;oyi waxati;au revoir;expression;validation_referent_utilisateur;fourni_par_referent;;
+SNK-LEX-0901;kori;famille;nom;validation_referent_utilisateur;fourni_par_referent;;
+SNK-LEX-0902;yaxaré;femme;nom;validation_referent_utilisateur;fourni_par_referent;yaxare;
+SNK-LEX-0903;yaké;épouse;nom;validation_referent_utilisateur;fourni_par_referent;;
+SNK-LEX-0904;kissima;grand-père;nom;validation_referent_utilisateur;fourni_par_referent;;
+SNK-LEX-0905;yigandé;alimentation, nourriture;nom;validation_referent_utilisateur;fourni_par_referent;;
+SNK-LEX-0906;debé;village;nom;validation_referent_utilisateur;fourni_par_referent;debe;
+SNK-LEX-0907;saxa;marché;nom;validation_referent_utilisateur;fourni_par_referent;;
