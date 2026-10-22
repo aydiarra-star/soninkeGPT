@@ -151,6 +151,21 @@ function findDictionaryMatches(query) {
 }
 
 function extractSearchTerms(message) {
+  // Prioritize explicit translation questions so the whole phrase is not
+  // mistaken for a dictionary term (e.g. "Comment dit-on « merci » en soninké ?").
+  const translationPatterns = [
+    /comment\\s+dit(?:-on)?\\s+[«"“]?(.+?)[»"”]?\\s+en\\s+sonink[ée]\\s*[?!.]*$/i,
+    /(?:traduis|traduire|traduit|traduction de)\\s+[«"“]?(.+?)[»"”]?\\s+en\\s+sonink[ée]\\s*[?!.]*$/i,
+    /(?:comment\\s+dit-on|comment\\s+dire)\\s+[«"“]?(.+?)[»"”]?\\s*[?!.]*$/i,
+  ];
+  for (const pattern of translationPatterns) {
+    const match = message.match(pattern);
+    if (match && match[1]) {
+      const term = match[1].replace(/[»"”?.!]+$/, "").trim();
+      if (term) return [term];
+    }
+  }
+
   // Try to extract meaningful words from the message
   const lower = message.toLowerCase();
 
@@ -216,8 +231,9 @@ function generateResponse(message) {
     return response;
   }
 
-  // Culture
-  if (/culture|histoire|sonink[ée]|malink[ée]|ghana|wagadu/i.test(lower)) {
+  // Culture: keep this intent specific. Matching every occurrence of "soninké"
+  // used to intercept translation questions before the dictionary search.
+  if (/culture|histoire|peuple sonink|empire du ghana|ghana|wagadu|tradition orale|griot|geseru|cérémonie|castes traditionnelles/i.test(lower)) {
     return `**La culture soninké** ✺\n\nLe peuple soninké (aussi appelé Sarakolé, Marka ou Wakore) possède une riche histoire et une langue fascinante.\n\n**Points clés :**\n- Les Soninké sont historiquement liés à l'Empire du Ghana (Wagadu)\n- Leur langue fait partie de la famille mandé\n- La tradition orale est centrale dans la transmission du savoir\n- Le soninké est parlé au Mali, Sénégal, Mauritanie, Gambie et dans la diaspora\n\n**Traditions importantes :**\n- Le système de castes traditionnels\n- Les griots (geseru) et la transmission orale\n- Les cérémonies (mariages, baptêmes, etc.)\n\nCe lexique contient **${state.entries.length} entrées** collectées auprès de référents linguistiques. N'hésitez pas à me demander la traduction de mots spécifiques !`;
   }
 
