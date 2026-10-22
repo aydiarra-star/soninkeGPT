@@ -7,6 +7,7 @@ import csv
 import hashlib
 import json
 import re
+import wave
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -17,6 +18,13 @@ def rows(path):
 
 def key(text):
     return ' '.join(text.lower().split())
+
+def valid_wav(path):
+    try:
+        with wave.open(str(path), 'rb') as handle:
+            return handle.getnframes() > 0 and handle.getframerate() > 0
+    except (wave.Error, EOFError, OSError):
+        return False
 
 def build(generate=False, limit=100):
     vocabulary = {}
@@ -36,14 +44,18 @@ def build(generate=False, limit=100):
     audio = {}
     for row in rows(ROOT / 'data/source/manifest-577-review.csv'):
         path = ROOT / 'audio' / f"{row['id']}.wav"
-        if path.exists():
+        if path.exists() and valid_wav(path):
             audio[key(row['text'])] = {'text': row['text'], 'url': str(path.relative_to(ROOT)), 'kind': 'recorded'}
     generated_dir = ROOT / 'audio/generated'
     for item in vocabulary.values():
         digest = hashlib.sha256(item['text'].encode()).hexdigest()[:24]
         item['url'] = f'audio/generated/{digest}.wav'
-        if (ROOT / item['url']).exists():
-            audio.setdefault(key(item['text']), {**item, 'kind': 'voice_clone_unreviewed'})
+        path = ROOT / item['url']
+        if path.exists():
+            if valid_wav(path):
+                audio.setdefault(key(item['text']), {**item, 'kind': 'voice_clone_unreviewed'})
+            else:
+                path.unlink()
     pending = [v for k, v in sorted(vocabulary.items()) if k not in audio]
     if generate and pending:
         import numpy as np
@@ -68,8 +80,10 @@ def build(generate=False, limit=100):
         print(f'Génération du lot : {len(batch)} mots ; {max(0, len(pending) - len(batch))} mots resteront en attente.')
         for item in batch:
             output_path = ROOT / item['url']
-            if output_path.exists():
+            if output_path.exists() and valid_wav(output_path):
                 continue
+            if output_path.exists():
+                output_path.unlink()
             result = model.generate(text=item['text'], language='soninke', ref_audio=str(reference), ref_text='Daga goli. Li taxu.', num_step=32)
             samples = np.asarray(result[0]).squeeze()
             if samples.ndim != 1 or not samples.size or not np.isfinite(samples).all():
