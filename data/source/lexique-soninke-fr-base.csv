@@ -991,3 +991,6 @@ SNK-LEX-0958;an kayen koy i nga;montre-moi ton cahier;expression;"LGIDF CNRS int
 SNK-LEX-0959;an kitaaben qa;où est ton livre ?;expression;"LGIDF CNRS interactions de base;validation_referent_utilisateur";valide_par_referent;;
 SNK-LEX-0960;haraanci linŋo an da ba;es-tu content d’être en France ?;expression;"LGIDF CNRS interactions de base;validation_referent_utilisateur";valide_par_referent;;
 SNK-LEX-0961;tahi;droite (direction);direction;validation_referent_utilisateur;valide_par_referent;;
+SNK-LEX-0962;alahadi;dimanche;nom;Dictionnaire Soninké–Français en ligne (Dicosoninke);source_externe_a_verifier;;
+SNK-LEX-0963;munda;aimer;verbe;Dictionnaire Soninké–Français en ligne (Dicosoninke);source_externe_a_verifier;;
+SNK-LEX-0964;xana;amoureux;adjectif;Dictionnaire Soninké–Français en ligne (Dicosoninke);source_externe_a_verifier;;
