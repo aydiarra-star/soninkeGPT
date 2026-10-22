@@ -37,6 +37,5 @@ Ces références sont des sources d'audit et de découverte, pas une autorisatio
 ## Lecture sans voix robotique
 
 La lecture emploie uniquement les WAV de la voix du référent, sans synthèse du
-navigateur. Voir [le fonctionnement, les limites de couverture et l’activation
-GPU d’OmniVoice](docs/AUTHENTIC-VOICE.md). Une forme sans WAV n’est jamais remplacée
+navigateur. Voir [le fonctionnement et les limites de couverture](docs/AUTHENTIC-VOICE.md), ainsi que le [guide de génération locale sur CPU](docs/LOCAL-CPU-VOICE.md). Une forme sans WAV n’est jamais remplacée
 par une voix standard.
