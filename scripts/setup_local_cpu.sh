@@ -16,8 +16,21 @@ fi
 
 # Installer d'abord PyTorch CPU. Sur Mac Apple Silicon, PyTorch peut utiliser MPS
 # si disponible ; le script de génération choisira automatiquement le périphérique.
-.venv/bin/python -m pip install --index-url https://download.pytorch.org/whl/cpu torch
-.venv/bin/python -m pip install --upgrade omnivoice soundfile numpy
+.venv/bin/python - <<'PY'
+import platform, subprocess, sys
+if platform.system() == "Darwin":
+    # Official macOS PyTorch wheel enables MPS on supported Apple Silicon machines.
+    cmd = [sys.executable, "-m", "pip", "install", "--upgrade", "torch"]
+else:
+    cmd = [sys.executable, "-m", "pip", "install", "--upgrade", "--index-url", "https://download.pytorch.org/whl/cpu", "torch"]
+subprocess.run(cmd, check=True)
+PY
+
+.venv/bin/python -m pip install --upgrade soundfile numpy
+if ! .venv/bin/python -m pip install --upgrade omnivoice; then
+  echo "PyPI install failed; trying the official OmniVoice Git repository..."
+  .venv/bin/python -m pip install --upgrade "git+https://github.com/k2-fsa/OmniVoice.git"
+fi
 
 .venv/bin/python - <<'PY'
 import sys, torch
@@ -29,7 +42,7 @@ try:
     from omnivoice import OmniVoice
     print("Import OmniVoice réussi.")
 except Exception as exc:
-    raise SystemExit(f"Échec de l'import OmniVoice : {type(exc).__name__}: {exc}")
+    raise SystemExit(f"Échec de l'import OmniVoice dans {sys.executable}: {type(exc).__name__}: {exc}")
 PY
 
 echo
