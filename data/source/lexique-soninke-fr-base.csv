@@ -1,10 +1,10 @@
 id;soninke;francais;categorie;source;statut;variantes;exemple_original
 SNK-LEX-0001;daga;partir;verbe;liste_referent;fourni_par_referent;;
-SNK-LEX-0002;ri;venir;verbe;liste_referent;fourni_par_referent;;
+SNK-LEX-0002;ri;venir;verbe;liste_referent;fourni_par_referent;rí;
 SNK-LEX-0003;faye;regarder;verbe;liste_referent;fourni_par_referent;;
 SNK-LEX-0004;sefe;parler;verbe;liste_referent;fourni_par_referent;;
 SNK-LEX-0005;yige;manger;verbe;liste_referent;fourni_par_referent;;
-SNK-LEX-0006;mini;boire;verbe;liste_referent;fourni_par_referent;;
+SNK-LEX-0006;mini;boire;verbe;liste_referent;fourni_par_referent;mìní;
 SNK-LEX-0007;wori;voir;verbe;liste_referent;fourni_par_referent;;
 SNK-LEX-0008;safa;écrire;verbe;liste_referent;fourni_par_referent;;
 SNK-LEX-0009;wutu;prendre;verbe;liste_referent;fourni_par_referent;;
@@ -43,7 +43,7 @@ SNK-LEX-0041;siyi;coiffer;verbe;liste_referent;fourni_par_referent;;
 SNK-LEX-0042;tuka;coller;verbe;liste_referent;fourni_par_referent;;
 SNK-LEX-0043;yinkutundi;commander;verbe;liste_referent;fourni_par_referent;;
 SNK-LEX-0044;diopandi;commencer;verbe;liste_referent;fourni_par_referent;;
-SNK-LEX-0045;contan;compter;verbe;liste_referent;fourni_par_referent;;
+SNK-LEX-0045;contan;compter;verbe;liste_referent;fourni_par_referent;conten;
 SNK-LEX-0046;me-wutu;coordonner;verbe;liste_referent;fourni_par_referent;;
 SNK-LEX-0047;saqe;coucher;verbe;liste_referent;fourni_par_referent;;
 SNK-LEX-0048;dioxi;couler;verbe;liste_referent;fourni_par_referent;;
@@ -57,12 +57,12 @@ SNK-LEX-0055;kanewutu;devancer;verbe;liste_referent;fourni_par_referent;;
 SNK-LEX-0056;kaanemaxawutu;diriger;verbe;liste_referent;fourni_par_referent;;
 SNK-LEX-0057;fiwarame;disputer;verbe;liste_referent;fourni_par_referent;;
 SNK-LEX-0058;bakuman;distinguer;verbe;liste_referent;fourni_par_referent;;
-SNK-LEX-0059;boxu;déchirer / Un groupe de souris;verbe;liste_referent;"fourni_par_referent;candidat_dictionnaire_a_verifier";;"boxu Nom . group of mice; Un groupe de souris.Category: Animal. Note: Sue Plural suffix: -nu."
+SNK-LEX-0059;boxu;déchirer / Un groupe de souris;verbe;liste_referent;"fourni_par_referent;candidat_dictionnaire_a_verifier";bohu;"boxu Nom . group of mice; Un groupe de souris.Category: Animal. Note: Sue Plural suffix: -nu."
 SNK-LEX-0060;finsaanindi;décider;verbe;liste_referent;fourni_par_referent;;
 SNK-LEX-0061;wunii;déverrouiller;verbe;liste_referent;fourni_par_referent;;
 SNK-LEX-0062;konun;effrayer;verbe;liste_referent;fourni_par_referent;;
 SNK-LEX-0063;yagu;embarrasser;verbe;liste_referent;fourni_par_referent;;
-SNK-LEX-0064;fixorondi;empirer;verbe;liste_referent;fourni_par_referent;;
+SNK-LEX-0064;fixorondi;empirer;verbe;liste_referent;fourni_par_referent;fisorondi;
 SNK-LEX-0065;tuyi;informer;verbe;liste_referent;fourni_par_referent;;
 SNK-LEX-0066;suxe;jalouser;verbe;liste_referent;fourni_par_referent;;
 SNK-LEX-0067;fita;jeter;verbe;liste_referent;fourni_par_referent;;
@@ -136,7 +136,7 @@ SNK-LEX-0134;sukandi;cocher;verbe;liste_referent;fourni_par_referent;;
 SNK-LEX-0135;sameti;confier;verbe;liste_referent;fourni_par_referent;;
 SNK-LEX-0136;maxage;cordonner;verbe;liste_referent;fourni_par_referent;;
 SNK-LEX-0137;misso;saboter;verbe;liste_referent;fourni_par_referent;;
-SNK-LEX-0138;bulxa;effacer;verbe;liste_referent;fourni_par_referent;;
+SNK-LEX-0138;bulxa;effacer;verbe;liste_referent;fourni_par_referent;bulha;
 SNK-LEX-0139;simandi;en rappeler;verbe;liste_referent;fourni_par_referent;;
 SNK-LEX-0140;mulondi;froidir;verbe;liste_referent;fourni_par_referent;;
 SNK-LEX-0141;besin;frotter;verbe;liste_referent;fourni_par_referent;;
@@ -733,35 +733,35 @@ SNK-LEX-0700;yaage;honte;nom;Soninkara glossaire T-Z;source_externe_a_verifier;;
 SNK-LEX-0701;yaala;se promener;verbe;Soninkara glossaire T-Z;source_externe_a_verifier;;
 SNK-LEX-0702;yaaxe;œil;nom;Soninkara glossaire T-Z;source_externe_a_verifier;;
 SNK-LEX-0703;yaqqe;épouse;nom;Soninkara glossaire T-Z;source_externe_a_verifier;;
-SNK-LEX-0704;yaxare;femme;nom;Soninkara glossaire T-Z;source_externe_a_verifier;;
+SNK-LEX-0704;yaxare;femme;nom;"Soninkara glossaire T-Z;validation_referent_utilisateur";fourni_par_referent;yaxaré, yàxàrê;
 SNK-LEX-0705;yelle;œuf;nom;Soninkara glossaire T-Z;source_externe_a_verifier;;
 SNK-LEX-0706;yille;mil, céréale;nom;Soninkara glossaire T-Z;source_externe_a_verifier;;
 SNK-LEX-0707;yinme;tête;nom;Soninkara glossaire T-Z;source_externe_a_verifier;;
-SNK-LEX-0708;yitte;arbre, médicament;nom;Soninkara glossaire T-Z;source_externe_a_verifier;;
+SNK-LEX-0708;yitte;arbre, médicament;nom;Soninkara glossaire T-Z;source_externe_a_verifier;yíttè;
 SNK-LEX-0709;yugo;homme;nom;Soninkara glossaire T-Z;source_externe_a_verifier;;
-SNK-LEX-0710;toxo;nom individuel;nom;CNRS lexique des noms;source_externe_a_verifier;;
-SNK-LEX-0711;janmu;nom de famille;nom;CNRS lexique des noms;source_externe_a_verifier;;
-SNK-LEX-0712;lemine;enfant;nom;CNRS lexique des noms;source_externe_a_verifier;;
+SNK-LEX-0710;toxo;nom individuel;nom;CNRS lexique des noms;source_externe_a_verifier;tóxò;
+SNK-LEX-0711;janmu;nom de famille;nom;CNRS lexique des noms;source_externe_a_verifier;jànmû;
+SNK-LEX-0712;lemine;enfant;nom;CNRS lexique des noms;source_externe_a_verifier;lémínè;
 SNK-LEX-0713;kiine;mari;nom;CNRS lexique des noms;source_externe_a_verifier;;
-SNK-LEX-0714;saaxe;mère;nom;CNRS lexique des noms;source_externe_a_verifier;;
-SNK-LEX-0715;haabe;père;nom;CNRS lexique des noms;source_externe_a_verifier;;
+SNK-LEX-0714;saaxe;mère;nom;CNRS lexique des noms;source_externe_a_verifier;sàaxê;
+SNK-LEX-0715;haabe;père;nom;CNRS lexique des noms;source_externe_a_verifier;hàabê;
 SNK-LEX-0716;nexe;poisson;nom;CNRS lexique des noms;source_externe_a_verifier;;
 SNK-LEX-0717;qinyi;mordre;verbe;CNRS lexique des verbes;source_externe_a_verifier;;
 SNK-LEX-0718;tuha;cracher;verbe;CNRS lexique des verbes;source_externe_a_verifier;;
 SNK-LEX-0719;hicca;vomir;verbe;CNRS lexique des verbes;source_externe_a_verifier;;
 SNK-LEX-0720;yonki;respirer, vivre;verbe;CNRS lexique des verbes;source_externe_a_verifier;;
-SNK-LEX-0721;ngari;voir;verbe;CNRS lexique des verbes;source_externe_a_verifier;;
+SNK-LEX-0721;ŋari;voir;verbe;"CNRS lexique des verbes;CNRS LGIDF lexique";source_externe_a_verifier;ngari;
 SNK-LEX-0722;mugu;entendre, sentir;verbe;CNRS lexique des verbes;source_externe_a_verifier;;
 SNK-LEX-0723;sinma;penser;verbe;CNRS lexique des verbes;source_externe_a_verifier;;
 SNK-LEX-0724;kini;donner;verbe;CNRS lexique des verbes;source_externe_a_verifier;;
-SNK-LEX-0725;daaba;animal;nom;CNRS lexique des noms;source_externe_a_verifier;;
+SNK-LEX-0725;daaba;animal;nom;CNRS lexique des noms;source_externe_a_verifier;dáabà;
 SNK-LEX-0726;gunduho;animal sauvage;nom;CNRS lexique des noms;source_externe_a_verifier;;
-SNK-LEX-0727;yelinge;oiseau;nom;CNRS lexique des noms;source_externe_a_verifier;;
+SNK-LEX-0727;yelinŋe;oiseau;nom;"CNRS lexique des noms;CNRS LGIDF lexique";source_externe_a_verifier;yelinge;
 SNK-LEX-0728;wulle;chien;nom;CNRS lexique des noms;source_externe_a_verifier;;
 SNK-LEX-0729;duune;pou;nom;CNRS lexique des noms;valide_par_referent;duñe;
 SNK-LEX-0730;samaqqe;serpent;nom;CNRS lexique des noms;source_externe_a_verifier;;
 SNK-LEX-0731;quudo;ver, larve;nom;CNRS lexique des noms;source_externe_a_verifier;;
-SNK-LEX-0732;diga;forêt;nom;CNRS lexique des noms;valide_par_referent;diiga;
+SNK-LEX-0732;diga;forêt;nom;"CNRS lexique des noms;CNRS/LGIDF — Lexique des noms";valide_par_referent;diiga, digaa;
 SNK-LEX-0733;gunne;brousse;nom;CNRS lexique des noms;source_externe_a_verifier;;
 SNK-LEX-0734;guma;bâton;nom;"CNRS lexique des noms;CNRS/LGIDF lexique des noms";source_externe_a_verifier;;
 SNK-LEX-0735;yittirenme;fruit;nom;CNRS lexique des noms;source_externe_a_verifier;;
@@ -777,12 +777,12 @@ SNK-LEX-0744;tiye;viande;nom;CNRS lexique des noms;source_externe_a_verifier;;
 SNK-LEX-0745;hore;sang;nom;CNRS lexique des noms;source_externe_a_verifier;;
 SNK-LEX-0746;qotte;os;nom;CNRS lexique des noms;source_externe_a_verifier;;
 SNK-LEX-0747;katoye;graisse;nom;CNRS lexique des noms;source_externe_a_verifier;;
-SNK-LEX-0748;qoqqe;queue;nom;"CNRS lexique des noms;CNRS/LGIDF lexique des noms";source_externe_a_verifier;;
+SNK-LEX-0748;qoqqe;queue;nom;"CNRS lexique des noms;CNRS/LGIDF lexique des noms;CNRS LGIDF lexique";source_externe_a_verifier;;
 SNK-LEX-0749;taro;oreille;nom;CNRS lexique des noms;source_externe_a_verifier;;
 SNK-LEX-0750;nuxunne;nez;nom;CNRS lexique des noms;source_externe_a_verifier;;
 SNK-LEX-0751;laqqe;bouche;nom;"CNRS lexique des noms;CNRS/LGIDF lexique des noms";source_externe_a_verifier;;
 SNK-LEX-0752;neene;langue (organe);nom;CNRS lexique des noms;source_externe_a_verifier;;
-SNK-LEX-0753;segene;ongle;nom;CNRS lexique des noms;source_externe_a_verifier;;
+SNK-LEX-0753;segeñe;ongle;nom;"CNRS lexique des noms;CNRS LGIDF lexique";source_externe_a_verifier;;
 SNK-LEX-0754;ta;pied, jambe;nom;CNRS lexique des noms;source_externe_a_verifier;;
 SNK-LEX-0755;qurungo;genou;nom;CNRS lexique des noms;source_externe_a_verifier;;
 SNK-LEX-0756;kitte;main;nom;CNRS lexique des noms;source_externe_a_verifier;;
@@ -794,7 +794,7 @@ SNK-LEX-0761;gijinme;poitrine;nom;CNRS lexique des noms;source_externe_a_verifie
 SNK-LEX-0762;kiye;soleil;nom;CNRS lexique des noms;source_externe_a_verifier;;
 SNK-LEX-0763;qaso;lune;nom;CNRS lexique des noms;source_externe_a_verifier;;
 SNK-LEX-0764;saane;étoile;nom;CNRS lexique des noms;source_externe_a_verifier;;
-SNK-LEX-0765;ji;eau;nom;CNRS lexique des noms;source_externe_a_verifier;;
+SNK-LEX-0765;ji;eau;nom;CNRS lexique des noms;source_externe_a_verifier;jî;
 SNK-LEX-0766;kanme;pluie, ciel;nom;CNRS lexique des noms;source_externe_a_verifier;;
 SNK-LEX-0767;lanbe;rivière;nom;CNRS lexique des noms;source_externe_a_verifier;;
 SNK-LEX-0768;hanŋe;fleuve;nom;CNRS lexique des noms;source_externe_a_verifier;;
@@ -824,7 +824,7 @@ SNK-LEX-0791;quuse;tourner;verbe;CNRS lexique des verbes;source_externe_a_verifi
 SNK-LEX-0792;qenu;tomber;verbe;CNRS lexique des verbes;source_externe_a_verifier;;
 SNK-LEX-0793;yanqi;laver;verbe;CNRS lexique des verbes;source_externe_a_verifier;;
 SNK-LEX-0794;huutu;tirer;verbe;CNRS lexique des verbes;source_externe_a_verifier;;
-SNK-LEX-0795;ñonto;pousser;verbe;CNRS lexique des verbes;source_externe_a_verifier;;
+SNK-LEX-0795;ñonto;pousser;verbe;"CNRS lexique des verbes;CNRS/LGIDF — Lexique des verbes";source_externe_a_verifier;nyonto;
 SNK-LEX-0796;lihi;coudre;verbe;CNRS lexique des verbes;source_externe_a_verifier;;
 SNK-LEX-0797;jaate;compter;verbe;CNRS lexique des verbes;source_externe_a_verifier;;
 SNK-LEX-0798;suugu;chanter;verbe;CNRS lexique des verbes;source_externe_a_verifier;;
@@ -833,7 +833,7 @@ SNK-LEX-0800;fillo;deux;nombre;CNRS lexique des quantitatifs et numéraux;source
 SNK-LEX-0801;naxato;quatre;nombre;CNRS lexique des quantitatifs et numéraux;source_externe_a_verifier;;
 SNK-LEX-0802;karago;cinq;nombre;CNRS lexique des quantitatifs et numéraux;source_externe_a_verifier;;
 SNK-LEX-0803;tumu;six;nombre;CNRS lexique des quantitatifs et numéraux;source_externe_a_verifier;;
-SNK-LEX-0804;nieru;sept;nombre;CNRS lexique des quantitatifs et numéraux;source_externe_a_verifier;;
+SNK-LEX-0804;ñeru;sept;nombre;"CNRS lexique des quantitatifs et numéraux;CNRS LGIDF lexique;CNRS/LGIDF — Lexique des quantitatifs et numéraux";source_externe_a_verifier;nieru, nyeru;
 SNK-LEX-0805;seegu;huit;nombre;CNRS lexique des quantitatifs et numéraux;source_externe_a_verifier;;
 SNK-LEX-0806;koobu;neuf;nombre;CNRS lexique des quantitatifs et numéraux;source_externe_a_verifier;;
 SNK-LEX-0807;tamu;dix;nombre;CNRS lexique des quantitatifs et numéraux;source_externe_a_verifier;;
@@ -843,7 +843,7 @@ SNK-LEX-0810;yogonu;quelques;quantitatif;CNRS lexique des quantitatifs et numér
 SNK-LEX-0811;tana;autre;adjectif;CNRS lexique des adjectifs;source_externe_a_verifier;;
 SNK-LEX-0812;qoore;grand;adjectif;CNRS lexique des adjectifs;source_externe_a_verifier;;
 SNK-LEX-0813;giile;long;adjectif;CNRS lexique des adjectifs;source_externe_a_verifier;;
-SNK-LEX-0814;tehete;large, épais;adjectif;CNRS lexique des adjectifs;source_externe_a_verifier;;
+SNK-LEX-0814;tehete;large, épais;adjectif;"CNRS lexique des adjectifs;CNRS/LGIDF — Lexique des adjectifs";source_externe_a_verifier;tehetee;
 SNK-LEX-0815;qote;lourd;adjectif;CNRS lexique des adjectifs;source_externe_a_verifier;;
 SNK-LEX-0816;loxe;petit;adjectif;CNRS lexique des adjectifs;source_externe_a_verifier;;
 SNK-LEX-0817;deppe;court;adjectif;CNRS lexique des adjectifs;source_externe_a_verifier;;
@@ -913,7 +913,7 @@ SNK-LEX-0880;koosi;gratter;verbe;LGIDF CNRS lexique des verbes;source_externe_a_
 SNK-LEX-0881;qooxo;gratter;verbe;LGIDF CNRS lexique des verbes;source_externe_a_verifier;;
 SNK-LEX-0882;jaaba;creuser;verbe;LGIDF CNRS lexique des verbes;source_externe_a_verifier;;
 SNK-LEX-0883;jaga;creuser;verbe;LGIDF CNRS lexique des verbes;source_externe_a_verifier;;
-SNK-LEX-0884;saaxu;s’étendre;verbe;LGIDF CNRS lexique des verbes;valide_par_referent;saxu;
+SNK-LEX-0884;saaxu;s’étendre;verbe;"LGIDF CNRS lexique des verbes;CNRS LGIDF lexique";valide_par_referent;saxu;
 SNK-LEX-0885;liixi;serrer, presser;verbe;LGIDF CNRS lexique des verbes;source_externe_a_verifier;;
 SNK-LEX-0886;tiigi;serrer, presser;verbe;LGIDF CNRS lexique des verbes;source_externe_a_verifier;;
 SNK-LEX-0887;suusa;frotter, essuyer;verbe;LGIDF CNRS lexique des verbes;source_externe_a_verifier;;
@@ -931,25 +931,22 @@ SNK-LEX-0898;kanpe;aile;nom;LGIDF CNRS lexique des noms;source_externe_a_verifie
 SNK-LEX-0899;an wouydiom;bonjour;expression;validation_referent_utilisateur;fourni_par_referent;;
 SNK-LEX-0900;oyi waxati;au revoir;expression;validation_referent_utilisateur;fourni_par_referent;;
 SNK-LEX-0901;koré;famille;nom;validation_referent_utilisateur;fourni_par_referent;kore;
-SNK-LEX-0902;yaxaré;femme;nom;validation_referent_utilisateur;fourni_par_referent;yaxare;
 SNK-LEX-0903;yaké;épouse;nom;validation_referent_utilisateur;fourni_par_referent;;
 SNK-LEX-0904;kissima;grand-père;nom;validation_referent_utilisateur;fourni_par_referent;;
 SNK-LEX-0905;yigandé;alimentation, nourriture;nom;validation_referent_utilisateur;fourni_par_referent;;
 SNK-LEX-0906;debé;village;nom;validation_referent_utilisateur;fourni_par_referent;debe;
-SNK-LEX-0907;saxa;marché;nom;validation_referent_utilisateur;fourni_par_referent;;
+SNK-LEX-0907;saxa;marché;nom;validation_referent_utilisateur;fourni_par_referent;sakha;
 SNK-LEX-0908;sere;homme (être masculin);nom;CNRS LGIDF lexique;source_externe_a_verifier;;
 SNK-LEX-0909;ñeexe;poisson;nom;CNRS LGIDF lexique;source_externe_a_verifier;;
-SNK-LEX-0910;yelinŋe;oiseau;nom;CNRS LGIDF lexique;source_externe_a_verifier;;
 SNK-LEX-0911;kanbe;dent;nom;CNRS LGIDF lexique;source_externe_a_verifier;;
 SNK-LEX-0912;miini;boire;verbe;CNRS LGIDF lexique;source_externe_a_verifier;;
-SNK-LEX-0913;yiga;manger;verbe;CNRS LGIDF lexique;source_externe_a_verifier;;
+SNK-LEX-0913;yiga;manger;verbe;CNRS LGIDF lexique;source_externe_a_verifier;yígá;
 SNK-LEX-0914;hakka;plein;adjectif;CNRS LGIDF lexique;source_externe_a_verifier;;
 SNK-LEX-0915;mexeŋte;sale;adjectif;CNRS LGIDF lexique;source_externe_a_verifier;;
 SNK-LEX-0916;su;tout, tous;quantificateur;CNRS LGIDF lexique;source_externe_a_verifier;;
 SNK-LEX-0917;gabe;beaucoup;quantificateur;CNRS LGIDF lexique;source_externe_a_verifier;;
 SNK-LEX-0918;hillo;deux;numéral;CNRS LGIDF lexique;source_externe_a_verifier;;
 SNK-LEX-0919;tunmu;six;numéral;CNRS LGIDF lexique;source_externe_a_verifier;;
-SNK-LEX-0920;ñeru;sept;numéral;CNRS LGIDF lexique;source_externe_a_verifier;;
 SNK-LEX-0921;segu;huit;numéral;CNRS LGIDF lexique;source_externe_a_verifier;;
 SNK-LEX-0922;kabu;neuf;numéral;CNRS LGIDF lexique;source_externe_a_verifier;;
 SNK-LEX-0923;tanmu;dix;numéral;CNRS LGIDF lexique;source_externe_a_verifier;;
@@ -958,16 +955,14 @@ SNK-LEX-0925;tanjikke;trente;numéral;CNRS LGIDF lexique;source_externe_a_verifi
 SNK-LEX-0926;tanmaxate;quarante;numéral;CNRS LGIDF lexique;source_externe_a_verifier;;
 SNK-LEX-0927;tankarage;cinquante;numéral;CNRS LGIDF lexique;source_externe_a_verifier;;
 SNK-LEX-0928;tandume;soixante;numéral;CNRS LGIDF lexique;source_externe_a_verifier;;
-SNK-LEX-0929;tannere;soixante-dix;numéral;CNRS LGIDF lexique;source_externe_a_verifier;;
+SNK-LEX-0929;tannere;soixante-dix;numéral;"CNRS LGIDF lexique;CNRS/LGIDF — Lexique des quantitatifs et numéraux";source_externe_a_verifier;tanyere;
 SNK-LEX-0930;tancege;quatre-vingts;numéral;CNRS LGIDF lexique;source_externe_a_verifier;;
 SNK-LEX-0931;tankabe;quatre-vingt-dix;numéral;CNRS LGIDF lexique;source_externe_a_verifier;;
 SNK-LEX-0932;kame;cent;numéral;CNRS LGIDF lexique;source_externe_a_verifier;;
 SNK-LEX-0933;wujine;mille;numéral;CNRS LGIDF lexique;source_externe_a_verifier;;
 SNK-LEX-0934;mollodarejinma;vert;adjectif;CNRS LGIDF lexique;source_externe_a_verifier;;
-SNK-LEX-0935;qoqqe;queue;nom;CNRS LGIDF lexique;source_externe_a_verifier;;
-SNK-LEX-0936;segeñe;ongle;nom;CNRS LGIDF lexique;source_externe_a_verifier;;
-SNK-LEX-0937;motiinte;pourri;adjectif;CNRS LGIDF lexique;source_externe_a_verifier;;
-SNK-LEX-0938;telenŋonte;droit, juste, correct;adjectif;CNRS LGIDF lexique;source_externe_a_verifier;;
+SNK-LEX-0937;motiinte;pourri;adjectif;"CNRS LGIDF lexique;CNRS/LGIDF — Lexique des adjectifs";source_externe_a_verifier;motinte;
+SNK-LEX-0938;telenŋonte;droit, juste, correct;adjectif;"CNRS LGIDF lexique;CNRS/LGIDF — Lexique des adjectifs";source_externe_a_verifier;telenngonte;
 SNK-LEX-0939;koorinte;rond;adjectif;CNRS LGIDF lexique;source_externe_a_verifier;;
 SNK-LEX-0940;linŋe;tranchant;adjectif;CNRS LGIDF lexique;source_externe_a_verifier;;
 SNK-LEX-0941;bexecce;émoussé;adjectif;CNRS LGIDF lexique;source_externe_a_verifier;;
@@ -975,8 +970,6 @@ SNK-LEX-0942;salaqqe;lisse;adjectif;CNRS LGIDF lexique;source_externe_a_verifier
 SNK-LEX-0943;sahinte;mouillé;adjectif;CNRS LGIDF lexique;source_externe_a_verifier;;
 SNK-LEX-0944;kaante;sec;adjectif;CNRS LGIDF lexique;source_externe_a_verifier;;
 SNK-LEX-0945;nooge;gauche;adjectif;CNRS LGIDF lexique;source_externe_a_verifier;;
-SNK-LEX-0946;saxu;s'étendre;verbe;CNRS LGIDF lexique;source_externe_a_verifier;;
-SNK-LEX-0947;ŋari;voir;verbe;CNRS LGIDF lexique;source_externe_a_verifier;;
 SNK-LEX-0948;tannaxate;quarante;numéral;CNRS LGIDF lexique;source_externe_a_verifier;;
 SNK-LEX-0949;guuma;bâton;nom;validation_referent;valide_par_referent;;
 SNK-LEX-0950;makkajinma;jaune;adjectif;validation_referent;valide_par_referent;;
@@ -994,10 +987,377 @@ SNK-LEX-0961;tahi;droite (direction);direction;validation_referent_utilisateur;v
 SNK-LEX-0962;alahadi;dimanche;nom;Dictionnaire Soninké–Français en ligne (Dicosoninke);source_externe_a_verifier;;
 SNK-LEX-0963;munda;aimer;verbe;Dictionnaire Soninké–Français en ligne (Dicosoninke);source_externe_a_verifier;;
 SNK-LEX-0964;xana;amoureux;adjectif;Dictionnaire Soninké–Français en ligne (Dicosoninke);source_externe_a_verifier;;
-SNK-LEX-0965;digaa;forêt;nom;CNRS/LGIDF — Lexique des noms;source_externe_a_verifier;;
-SNK-LEX-0970;nyonto;pousser;verbe;CNRS/LGIDF — Lexique des verbes;source_externe_a_verifier;;
-SNK-LEX-0971;tehetee;large, épais;adjectif;CNRS/LGIDF — Lexique des adjectifs;source_externe_a_verifier;;
-SNK-LEX-0972;motinte;pourri;adjectif;CNRS/LGIDF — Lexique des adjectifs;source_externe_a_verifier;;
-SNK-LEX-0973;telenngonte;droit, juste, correct;adjectif;CNRS/LGIDF — Lexique des adjectifs;source_externe_a_verifier;;
-SNK-LEX-0974;nyeru;sept;nombre;CNRS/LGIDF — Lexique des quantitatifs et numéraux;source_externe_a_verifier;;
-SNK-LEX-0975;tanyere;soixante-dix;nombre;CNRS/LGIDF — Lexique des quantitatifs et numéraux;source_externe_a_verifier;;
+SNK-LEX-0965;baano-ye;ressembler (nom d'action de baano);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00006";valide_par_referent;;Nom d'action / forme de citation du verbe « baano » (ressembler) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0966;baanono;ressembler (gérondif / inaccompli de baano);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00007";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « baano » (ressembler) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0967;bagu-ye;sortir (nom d'action de bagu);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00009";valide_par_referent;;Nom d'action / forme de citation du verbe « bagu » (sortir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0968;bagunu;sortir (gérondif / inaccompli de bagu);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00010";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « bagu » (sortir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0969;bakuman-nde;distinguer (nom d'action de bakuman);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00012";valide_par_referent;;Nom d'action / forme de citation du verbe « bakuman » (distinguer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0970;bakumanni;distinguer (gérondif / inaccompli de bakuman);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00013";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « bakuman » (distinguer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0971;bante-ye;absenter (nom d'action de bante);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00015";valide_par_referent;;Nom d'action / forme de citation du verbe « bante » (absenter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0972;bantene;absenter (gérondif / inaccompli de bante);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00016";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « bante » (absenter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0973;bara-ye;refuser (nom d'action de bara);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00018";valide_par_referent;;Nom d'action / forme de citation du verbe « bara » (refuser) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0974;barana;refuser (gérondif / inaccompli de bara);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00019";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « bara » (refuser) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0975;batu-nde;obéir (nom d'action de batu);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00021";valide_par_referent;;Nom d'action / forme de citation du verbe « batu » (obéir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0976;batunu;obéir (gérondif / inaccompli de batu);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00022";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « batu » (obéir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0977;besin-nde;frotter (nom d'action de besin);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00024";valide_par_referent;;Nom d'action / forme de citation du verbe « besin » (frotter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0978;besinni;frotter (gérondif / inaccompli de besin);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00025";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « besin » (frotter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0979;bexin-nde;zipper (nom d'action de bexin);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00027";valide_par_referent;;Nom d'action / forme de citation du verbe « bexin » (zipper) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0980;bexinni;zipper (gérondif / inaccompli de bexin);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00028";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « bexin » (zipper) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0981;bire-ye;vivre (nom d'action de bire);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00030";valide_par_referent;;Nom d'action / forme de citation du verbe « bire » (vivre) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0982;birene;vivre (gérondif / inaccompli de bire);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00031";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « bire » (vivre) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0983;bisimilahi-nde;accueillir (nom d'action de bisimilahi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00033";valide_par_referent;;Nom d'action / forme de citation du verbe « bisimilahi » (accueillir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0984;bisimilahini;accueillir (gérondif / inaccompli de bisimilahi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00034";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « bisimilahi » (accueillir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0985;biyi-nde;brûler (nom d'action de biyi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00036";valide_par_referent;;Nom d'action / forme de citation du verbe « biyi » (brûler) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0986;biyini;brûler (gérondif / inaccompli de biyi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00037";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « biyi » (brûler) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0987;boguman-nde;séparer (nom d'action de boguman);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00039";valide_par_referent;;Nom d'action / forme de citation du verbe « boguman » (séparer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0988;bogumanni;séparer (gérondif / inaccompli de boguman);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00040";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « boguman » (séparer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0989;bonte-ye;sauter (nom d'action de bonte);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00042";valide_par_referent;;Nom d'action / forme de citation du verbe « bonte » (sauter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0990;bontene;sauter (gérondif / inaccompli de bonte);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00043";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « bonte » (sauter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0991;boxu-nde;déchirer (nom d'action de boxu);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00045";valide_par_referent;bohu-nde;Nom d'action / forme de citation du verbe « boxu » (déchirer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0992;boxunu;déchirer (gérondif / inaccompli de boxu);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00046";valide_par_referent;bohunu;Forme en -ni (gérondif / inaccompli) du verbe « boxu » (déchirer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0993;bulxa-nde;effacer (nom d'action de bulxa);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00048";valide_par_referent;;Nom d'action / forme de citation du verbe « bulxa » (effacer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0994;bulxana;effacer (gérondif / inaccompli de bulxa);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00049";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « bulxa » (effacer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0995;contan-nde;compter (nom d'action de contan);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00051";valide_par_referent;;Nom d'action / forme de citation du verbe « contan » (compter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0996;contanni;compter (gérondif / inaccompli de contan);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00052";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « contan » (compter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0997;dagana;partir (gérondif / inaccompli de daga);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00057";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « daga » (partir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0998;dagaye;partir (nom d'action de daga);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00058";valide_par_referent;;Nom d'action / forme de citation du verbe « daga » (partir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-0999;dantaxi-nde;annoncer (nom d'action de dantaxi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00060";valide_par_referent;;Nom d'action / forme de citation du verbe « dantaxi » (annoncer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1000;dantaxini;annoncer (gérondif / inaccompli de dantaxi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00061";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « dantaxi » (annoncer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1001;daru;hier;adverbe;"snk_engine (CC BY 4.0) ; manifest snk-00062";valide_par_referent;;Forme attestée (complements) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1002;dema-nde;aider (nom d'action de dema);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00064";valide_par_referent;;Nom d'action / forme de citation du verbe « dema » (aider) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1003;demana;aider (gérondif / inaccompli de dema);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00065";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « dema » (aider) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1004;diabi-nde;répondre (nom d'action de diabi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00067";valide_par_referent;;Nom d'action / forme de citation du verbe « diabi » (répondre) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1005;diabini;répondre (gérondif / inaccompli de diabi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00068";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « diabi » (répondre) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1006;diamba-nde;trahir (nom d'action de diamba);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00070";valide_par_referent;;Nom d'action / forme de citation du verbe « diamba » (trahir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1007;diambana;trahir (gérondif / inaccompli de diamba);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00071";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « diamba » (trahir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1008;diambe-ye;abandonner (nom d'action de diambe);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00073";valide_par_referent;;Nom d'action / forme de citation du verbe « diambe » (abandonner) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1009;diambene;abandonner (gérondif / inaccompli de diambe);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00074";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « diambe » (abandonner) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1010;dioofe-ye;arriver (nom d'action de dioofe);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00076";valide_par_referent;;Nom d'action / forme de citation du verbe « dioofe » (arriver) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1011;dioofene;arriver (gérondif / inaccompli de dioofe);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00077";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « dioofe » (arriver) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1012;diopandi-nde;commencer (nom d'action de diopandi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00079";valide_par_referent;;Nom d'action / forme de citation du verbe « diopandi » (commencer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1013;diopandini;commencer (gérondif / inaccompli de diopandi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00080";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « diopandi » (commencer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1014;dioxi-ye;couler (nom d'action de dioxi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00082";valide_par_referent;;Nom d'action / forme de citation du verbe « dioxi » (couler) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1015;dioxini;couler (gérondif / inaccompli de dioxi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00083";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « dioxi » (couler) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1016;djikeranxoso-nde;décevoir (nom d'action de djikeranxoso);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00085";valide_par_referent;;Nom d'action / forme de citation du verbe « djikeranxoso » (décevoir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1017;djikeranxosono;décevoir (gérondif / inaccompli de djikeranxoso);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00086";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « djikeranxoso » (décevoir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1018;doron-nde;respecter (nom d'action de doron);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00088";valide_par_referent;;Nom d'action / forme de citation du verbe « doron » (respecter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1019;doronni;respecter (gérondif / inaccompli de doron);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00089";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « doron » (respecter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1020;dufintandi-nde;plonger (nom d'action de dufintandi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00091";valide_par_referent;;Nom d'action / forme de citation du verbe « dufintandi » (plonger) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1021;dufintandini;plonger (gérondif / inaccompli de dufintandi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00092";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « dufintandi » (plonger) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1022;dufuutu-nde;étirer (nom d'action de dufuutu);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00094";valide_par_referent;;Nom d'action / forme de citation du verbe « dufuutu » (étirer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1023;dufuutunu;étirer (gérondif / inaccompli de dufuutu);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00095";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « dufuutu » (étirer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1024;dugu-nde;attendre (nom d'action de dugu);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00097";valide_par_referent;;Nom d'action / forme de citation du verbe « dugu » (attendre) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1025;dugunu;attendre (gérondif / inaccompli de dugu);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00098";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « dugu » (attendre) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1026;duguta-ye;terminer (nom d'action de duguta);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00100";valide_par_referent;;Nom d'action / forme de citation du verbe « duguta » (terminer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1027;dugutana;terminer (gérondif / inaccompli de duguta);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00101";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « duguta » (terminer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1028;duŋe-ye;accepter (nom d'action de duŋe);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00103";valide_par_referent;;Nom d'action / forme de citation du verbe « duŋe » (accepter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1029;duŋene;accepter (gérondif / inaccompli de duŋe);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00104";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « duŋe » (accepter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1030;faamu-nde;comprendre (nom d'action de faamu);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00106";valide_par_referent;;Nom d'action / forme de citation du verbe « faamu » (comprendre) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1031;faamunu;comprendre (gérondif / inaccompli de faamu);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00107";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « faamu » (comprendre) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1032;fallanyille-ye;reculer (nom d'action de fallanyille);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00109";valide_par_referent;;Nom d'action / forme de citation du verbe « fallanyille » (reculer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1033;fallanyillene;reculer (gérondif / inaccompli de fallanyille);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00110";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « fallanyille » (reculer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1034;fanqe-ye;lutter (nom d'action de fanqe);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00112";valide_par_referent;;Nom d'action / forme de citation du verbe « fanqe » (lutter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1035;fanqene;lutter (gérondif / inaccompli de fanqe);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00113";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « fanqe » (lutter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1036;faraxu-nde;changer (nom d'action de faraxu);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00115";valide_par_referent;;Nom d'action / forme de citation du verbe « faraxu » (changer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1037;faraxunu;changer (gérondif / inaccompli de faraxu);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00116";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « faraxu » (changer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1038;fatampantchi-nde;argumenter (nom d'action de fatampantchi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00118";valide_par_referent;;Nom d'action / forme de citation du verbe « fatampantchi » (argumenter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1039;fatampantchini;argumenter (gérondif / inaccompli de fatampantchi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00119";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « fatampantchi » (argumenter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1040;fayeni;regarder (gérondif / inaccompli de faye);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00121";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « faye » (regarder) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1041;fayinde;regarder (nom d'action de faye);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00122";valide_par_referent;;Nom d'action / forme de citation du verbe « faye » (regarder) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1042;filinka-nde;tourner (nom d'action de filinka);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00124";valide_par_referent;;Nom d'action / forme de citation du verbe « filinka » (tourner) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1043;filinkana;tourner (gérondif / inaccompli de filinka);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00125";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « filinka » (tourner) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1044;fimaxagomundi-nde;préparer (nom d'action de fimaxagomundi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00127";valide_par_referent;;Nom d'action / forme de citation du verbe « fimaxagomundi » (préparer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1045;fimaxagomundini;préparer (gérondif / inaccompli de fimaxagomundi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00128";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « fimaxagomundi » (préparer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1046;finkoyindi-nde;présenter (nom d'action de finkoyindi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00130";valide_par_referent;;Nom d'action / forme de citation du verbe « finkoyindi » (présenter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1047;finkoyindini;présenter (gérondif / inaccompli de finkoyindi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00131";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « finkoyindi » (présenter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1048;finsaanindi-nde;décider (nom d'action de finsaanindi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00133";valide_par_referent;;Nom d'action / forme de citation du verbe « finsaanindi » (décider) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1049;finsaanindini;décider (gérondif / inaccompli de finsaanindi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00134";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « finsaanindi » (décider) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1050;finsirondi-nde;réconcilier (nom d'action de finsirondi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00136";valide_par_referent;;Nom d'action / forme de citation du verbe « finsirondi » (réconcilier) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1051;finsirondini;réconcilier (gérondif / inaccompli de finsirondi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00137";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « finsirondi » (réconcilier) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1052;fita-nde;jeter (nom d'action de fita);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00139";valide_par_referent;;Nom d'action / forme de citation du verbe « fita » (jeter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1053;fitana;jeter (gérondif / inaccompli de fita);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00140";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « fita » (jeter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1054;fitta-nde;lancer (nom d'action de fitta);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00142";valide_par_referent;;Nom d'action / forme de citation du verbe « fitta » (lancer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1055;fittana;lancer (gérondif / inaccompli de fitta);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00143";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « fitta » (lancer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1056;fiwarame-nde;disputer (nom d'action de fiwarame);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00145";valide_par_referent;;Nom d'action / forme de citation du verbe « fiwarame » (disputer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1057;fiwaramene;disputer (gérondif / inaccompli de fiwarame);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00146";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « fiwarame » (disputer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1058;fixorondi-nde;empirer (nom d'action de fixorondi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00148";valide_par_referent;fisorondi-nde;Nom d'action / forme de citation du verbe « fixorondi » (empirer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1059;fixorondini;empirer (gérondif / inaccompli de fixorondi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00149";valide_par_referent;fisorondini;Forme en -ni (gérondif / inaccompli) du verbe « fixorondi » (empirer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1060;fufe-ye;respirer (nom d'action de fufe);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00151";valide_par_referent;;Nom d'action / forme de citation du verbe « fufe » (respirer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1061;fufene;respirer (gérondif / inaccompli de fufe);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00152";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « fufe » (respirer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1062;fuutu-nde;tirer (nom d'action de fuutu);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00154";valide_par_referent;;Nom d'action / forme de citation du verbe « fuutu » (tirer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1063;fuutunu;tirer (gérondif / inaccompli de fuutu);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00155";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « fuutu » (tirer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1064;gadia-ŋe;combattre (nom d'action de gadia);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00157";valide_par_referent;;Nom d'action / forme de citation du verbe « gadia » (combattre) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1065;gadiana;combattre (gérondif / inaccompli de gadia);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00158";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « gadia » (combattre) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1066;gage-ye;vendre (nom d'action de gage);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00160";valide_par_referent;;Nom d'action / forme de citation du verbe « gage » (vendre) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1067;gagene;vendre (gérondif / inaccompli de gage);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00161";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « gage » (vendre) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1068;gara-nde;mentir (nom d'action de gara);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00163";valide_par_referent;;Nom d'action / forme de citation du verbe « gara » (mentir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1069;garana;mentir (gérondif / inaccompli de gara);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00164";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « gara » (mentir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1070;golini;travailler (gérondif / inaccompli de goli);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00166";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « goli » (travailler) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1071;goliye;travailler (nom d'action de goli);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00167";valide_par_referent;;Nom d'action / forme de citation du verbe « goli » (travailler) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1072;gomundi-nde;réparer (nom d'action de gomundi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00169";valide_par_referent;;Nom d'action / forme de citation du verbe « gomundi » (réparer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1073;gomundini;réparer (gérondif / inaccompli de gomundi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00170";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « gomundi » (réparer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1074;gongo-nde;avertir (nom d'action de gongo);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00172";valide_par_referent;;Nom d'action / forme de citation du verbe « gongo » (avertir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1075;gongono;avertir (gérondif / inaccompli de gongo);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00173";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « gongo » (avertir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1076;gunudi-nde;plier (nom d'action de gunudi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00175";valide_par_referent;;Nom d'action / forme de citation du verbe « gunudi » (plier) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1077;gunudini;plier (gérondif / inaccompli de gunudi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00176";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « gunudi » (plier) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1078;kaanemaxawutu-nde;diriger (nom d'action de kaanemaxawutu);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00180";valide_par_referent;;Nom d'action / forme de citation du verbe « kaanemaxawutu » (diriger) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1079;kaanemaxawutunu;diriger (gérondif / inaccompli de kaanemaxawutu);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00181";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « kaanemaxawutu » (diriger) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1080;kaban-nde;interdire (nom d'action de kaban);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00183";valide_par_referent;;Nom d'action / forme de citation du verbe « kaban » (interdire) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1081;kabanni;interdire (gérondif / inaccompli de kaban);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00184";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « kaban » (interdire) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1082;kafuma-nde;additionner (nom d'action de kafuma);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00186";valide_par_referent;;Nom d'action / forme de citation du verbe « kafuma » (additionner) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1083;kafumana;additionner (gérondif / inaccompli de kafuma);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00187";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « kafuma » (additionner) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1084;kanalaga-nde;sentir (nom d'action de kanalaga);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00189";valide_par_referent;;Nom d'action / forme de citation du verbe « kanalaga » (sentir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1085;kanalagana;sentir (gérondif / inaccompli de kanalaga);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00190";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « kanalaga » (sentir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1086;kanewutu-nde;devancer (nom d'action de kanewutu);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00192";valide_par_referent;;Nom d'action / forme de citation du verbe « kanewutu » (devancer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1087;kanewutunu;devancer (gérondif / inaccompli de kanewutu);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00193";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « kanewutu » (devancer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1088;kara-nde;casser (nom d'action de kara);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00195";valide_par_referent;;Nom d'action / forme de citation du verbe « kara » (casser) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1089;karana;casser (gérondif / inaccompli de kara);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00196";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « kara » (casser) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1090;kari-nde;tuer (nom d'action de kari);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00198";valide_par_referent;;Nom d'action / forme de citation du verbe « kari » (tuer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1091;karini;tuer (gérondif / inaccompli de kari);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00199";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « kari » (tuer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1092;katu-nde;battre (nom d'action de katu);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00201";valide_par_referent;;Nom d'action / forme de citation du verbe « katu » (battre) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1093;katunu;battre (gérondif / inaccompli de katu);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00202";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « katu » (battre) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1094;kawafi-nde;étonner (nom d'action de kawafi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00204";valide_par_referent;;Nom d'action / forme de citation du verbe « kawafi » (étonner) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1095;kawafini;étonner (gérondif / inaccompli de kawafi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00205";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « kawafi » (étonner) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1096;kerin-nde;éteindre (nom d'action de kerin);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00207";valide_par_referent;;Nom d'action / forme de citation du verbe « kerin » (éteindre) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1097;kerinni;éteindre (gérondif / inaccompli de kerin);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00208";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « kerin » (éteindre) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1098;keti-ye;toucher (nom d'action de keti);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00210";valide_par_referent;;Nom d'action / forme de citation du verbe « keti » (toucher) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1099;ketini;toucher (gérondif / inaccompli de keti);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00211";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « keti » (toucher) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1100;ko-ŋe;dire (nom d'action de ko);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00213";valide_par_referent;;Nom d'action / forme de citation du verbe « ko » (dire) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1101;kofuma-nde;unir (nom d'action de kofuma);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00215";valide_par_referent;;Nom d'action / forme de citation du verbe « kofuma » (unir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1102;kofumana;unir (gérondif / inaccompli de kofuma);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00216";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « kofuma » (unir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1103;kono;dire (gérondif / inaccompli de ko);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00217";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « ko » (dire) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1104;konti-ye;perdre (nom d'action de konti);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00219";valide_par_referent;;Nom d'action / forme de citation du verbe « konti » (perdre) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1105;kontini;perdre (gérondif / inaccompli de konti);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00220";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « konti » (perdre) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1106;konun-nde;effrayer (nom d'action de konun);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00222";valide_par_referent;;Nom d'action / forme de citation du verbe « konun » (effrayer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1107;konunni;effrayer (gérondif / inaccompli de konun);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00223";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « konun » (effrayer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1108;koota su;"tous les jours ; chaque jour";expression;"snk_engine (CC BY 4.0) ; manifest snk-00224";valide_par_referent;;Forme attestée (complements) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1109;koroosa-nde;tricoter (nom d'action de koroosa);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00226";valide_par_referent;;Nom d'action / forme de citation du verbe « koroosa » (tricoter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1110;koroosana;tricoter (gérondif / inaccompli de koroosa);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00227";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « koroosa » (tricoter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1111;korosin-nde;surveiller (nom d'action de korosin);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00229";valide_par_referent;;Nom d'action / forme de citation du verbe « korosin » (surveiller) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1112;korosinni;surveiller (gérondif / inaccompli de korosin);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00230";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « korosin » (surveiller) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1113;koyin-nde;montrer (nom d'action de koyin);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00232";valide_par_referent;;Nom d'action / forme de citation du verbe « koyin » (montrer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1114;koyinni;montrer (gérondif / inaccompli de koyin);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00233";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « koyin » (montrer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1115;ku-ye;offrir (nom d'action de ku);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00235";valide_par_referent;;Nom d'action / forme de citation du verbe « ku » (offrir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1116;kumbene;demain;adverbe;"snk_engine (CC BY 4.0) ; manifest snk-00236";valide_par_referent;;Forme attestée (complements) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1117;kumu-nde;allumer (nom d'action de kumu);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00238";valide_par_referent;;Nom d'action / forme de citation du verbe « kumu » (allumer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1118;kumunu;allumer (gérondif / inaccompli de kumu);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00239";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « kumu » (allumer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1119;kunu;offrir (gérondif / inaccompli de ku);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00240";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « ku » (offrir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1120;kunyi-nde;saluer (nom d'action de kunyi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00242";valide_par_referent;;Nom d'action / forme de citation du verbe « kunyi » (saluer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1121;kunyini;saluer (gérondif / inaccompli de kunyi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00243";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « kunyi » (saluer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1122;kuyi-ye;rêver (nom d'action de kuyi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00245";valide_par_referent;;Nom d'action / forme de citation du verbe « kuyi » (rêver) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1123;kuyini;rêver (gérondif / inaccompli de kuyi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00246";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « kuyi » (rêver) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1124;laaton-nde;éloigner (nom d'action de laaton);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00248";valide_par_referent;;Nom d'action / forme de citation du verbe « laaton » (éloigner) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1125;laatonni;éloigner (gérondif / inaccompli de laaton);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00249";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « laaton » (éloigner) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1126;laydurangandi-nde;promettre (nom d'action de laydurangandi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00251";valide_par_referent;;Nom d'action / forme de citation du verbe « laydurangandi » (promettre) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1127;laydurangandini;promettre (gérondif / inaccompli de laydurangandi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00252";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « laydurangandi » (promettre) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1128;lemine ke;l'enfant;syntagme_nominal;"snk_engine (CC BY 4.0) ; manifest snk-00254";valide_par_referent;;Forme attestée (objets) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1129;lettra;"lettre ; une lettre";nom;"snk_engine (CC BY 4.0) ; manifest snk-00256";valide_par_referent;;Forme attestée (objets) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1130;lettra ke;la lettre;syntagme_nominal;"snk_engine (CC BY 4.0) ; manifest snk-00257";valide_par_referent;;Forme attestée (objets) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1131;lifi-nde;coudre (nom d'action de lifi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00260";valide_par_referent;;Nom d'action / forme de citation du verbe « lifi » (coudre) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1132;lifini;coudre (gérondif / inaccompli de lifi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00261";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « lifi » (coudre) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1133;maaman-de;énerver (nom d'action de maaman);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00263";valide_par_referent;;Nom d'action / forme de citation du verbe « maaman » (énerver) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1134;maamanni;énerver (gérondif / inaccompli de maaman);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00264";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « maaman » (énerver) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1135;maro ke;le riz;syntagme_nominal;"snk_engine (CC BY 4.0) ; manifest snk-00266";valide_par_referent;;Forme attestée (objets) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1136;maxage-me;cordonner (nom d'action de maxage);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00268";valide_par_referent;;Nom d'action / forme de citation du verbe « maxage » (cordonner) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1137;maxagene;cordonner (gérondif / inaccompli de maxage);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00269";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « maxage » (cordonner) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1138;maxankutondi-nde;raconter (nom d'action de maxankutondi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00271";valide_par_referent;;Nom d'action / forme de citation du verbe « maxankutondi » (raconter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1139;maxankutondini;raconter (gérondif / inaccompli de maxankutondi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00272";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « maxankutondi » (raconter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1140;me-wutu-nde;coordonner (nom d'action de me-wutu);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00274";valide_par_referent;;Nom d'action / forme de citation du verbe « me-wutu » (coordonner) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1141;me-wutunu;coordonner (gérondif / inaccompli de me-wutu);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00275";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « me-wutu » (coordonner) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1142;mekitandi-nde;relier (nom d'action de mekitandi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00277";valide_par_referent;;Nom d'action / forme de citation du verbe « mekitandi » (relier) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1143;mekitandini;relier (gérondif / inaccompli de mekitandi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00278";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « mekitandi » (relier) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1144;mexindi-nde;salir (nom d'action de mexindi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00280";valide_par_referent;;Nom d'action / forme de citation du verbe « mexindi » (salir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1145;mexindini;salir (gérondif / inaccompli de mexindi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00281";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « mexindi » (salir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1146;mine;boire (nom d'action de mini);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00282";valide_par_referent;;Nom d'action / forme de citation du verbe « mini » (boire) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1147;minini;boire (gérondif / inaccompli de mini);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00284";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « mini » (boire) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1148;misso-ye;saboter (nom d'action de misso);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00286";valide_par_referent;;Nom d'action / forme de citation du verbe « misso » (saboter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1149;missono;saboter (gérondif / inaccompli de misso);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00287";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « misso » (saboter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1150;mooso-nde;caresser (nom d'action de mooso);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00289";valide_par_referent;;Nom d'action / forme de citation du verbe « mooso » (caresser) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1151;moosono;caresser (gérondif / inaccompli de mooso);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00290";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « mooso » (caresser) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1152;mugni-ye;impatienter (nom d'action de mugni);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00294";valide_par_referent;;Nom d'action / forme de citation du verbe « mugni » (impatienter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1153;mugnini;impatienter (gérondif / inaccompli de mugni);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00295";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « mugni » (impatienter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1154;mulondi-nde;froidir (nom d'action de mulondi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00297";valide_par_referent;;Nom d'action / forme de citation du verbe « mulondi » (froidir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1155;mulondini;froidir (gérondif / inaccompli de mulondi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00298";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « mulondi » (froidir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1156;mungu-ye;oublier (nom d'action de mungu);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00300";valide_par_referent;;Nom d'action / forme de citation du verbe « mungu » (oublier) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1157;mungunu;oublier (gérondif / inaccompli de mungu);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00301";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « mungu » (oublier) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1158;muru-nde;chercher (nom d'action de muru);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00303";valide_par_referent;;Nom d'action / forme de citation du verbe « muru » (chercher) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1159;murunu;chercher (gérondif / inaccompli de muru);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00304";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « muru » (chercher) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1160;muxu-nde;cacher (nom d'action de muxu);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00306";valide_par_referent;;Nom d'action / forme de citation du verbe « muxu » (cacher) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1161;muxunu;cacher (gérondif / inaccompli de muxu);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00307";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « muxu » (cacher) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1162;nia-ŋe;devenir (nom d'action de nia);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00310";valide_par_referent;;Nom d'action / forme de citation du verbe « nia » (devenir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1163;niana;devenir (gérondif / inaccompli de nia);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00311";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « nia » (devenir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1164;niaŋundi-nde;transformer (nom d'action de niaŋundi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00313";valide_par_referent;;Nom d'action / forme de citation du verbe « niaŋundi » (transformer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1165;niaŋundini;transformer (gérondif / inaccompli de niaŋundi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00314";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « niaŋundi » (transformer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1166;noni-nde;tracer (nom d'action de noni);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00317";valide_par_referent;;Nom d'action / forme de citation du verbe « noni » (tracer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1167;nonini;tracer (gérondif / inaccompli de noni);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00318";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « noni » (tracer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1168;raga-nde;attraper (nom d'action de raga);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00322";valide_par_referent;;Nom d'action / forme de citation du verbe « raga » (attraper) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1169;ragana;attraper (gérondif / inaccompli de raga);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00323";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « raga » (attraper) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1170;rege-ye;danser (nom d'action de rege);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00325";valide_par_referent;;Nom d'action / forme de citation du verbe « rege » (danser) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1171;regene;danser (gérondif / inaccompli de rege);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00326";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « rege » (danser) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1172;riti-nde;apporter (nom d'action de riti);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00330";valide_par_referent;;Nom d'action / forme de citation du verbe « riti » (apporter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1173;ritini;apporter (gérondif / inaccompli de riti);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00331";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « riti » (apporter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1174;riye;venir (nom d'action de ri);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00332";valide_par_referent;;Nom d'action / forme de citation du verbe « ri » (venir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1175;rondi-nde;mettre (nom d'action de rondi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00334";valide_par_referent;;Nom d'action / forme de citation du verbe « rondi » (mettre) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1176;rondini;mettre (gérondif / inaccompli de rondi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00335";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « rondi » (mettre) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1177;roxo-nde;prêter (nom d'action de roxo);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00337";valide_par_referent;;Nom d'action / forme de citation du verbe « roxo » (prêter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1178;roxono;prêter (gérondif / inaccompli de roxo);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00338";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « roxo » (prêter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1179;saare-ye;naître (nom d'action de saare);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00340";valide_par_referent;;Nom d'action / forme de citation du verbe « saare » (naître) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1180;saarene;naître (gérondif / inaccompli de saare);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00341";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « saare » (naître) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1181;safana;écrire (gérondif / inaccompli de safa);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00343";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « safa » (écrire) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1182;safande;écrire (nom d'action de safa);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00344";valide_par_referent;;Nom d'action / forme de citation du verbe « safa » (écrire) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1183;sakundi-nde;égarer (nom d'action de sakundi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00346";valide_par_referent;;Nom d'action / forme de citation du verbe « sakundi » (égarer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1184;sakundini;égarer (gérondif / inaccompli de sakundi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00347";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « sakundi » (égarer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1185;sameti-nde;confier (nom d'action de sameti);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00349";valide_par_referent;;Nom d'action / forme de citation du verbe « sameti » (confier) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1186;sametini;confier (gérondif / inaccompli de sameti);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00350";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « sameti » (confier) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1187;sane-ye;apparaître (nom d'action de sane);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00352";valide_par_referent;;Nom d'action / forme de citation du verbe « sane » (apparaître) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1188;sanene;apparaître (gérondif / inaccompli de sane);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00353";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « sane » (apparaître) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1189;sangalu-nde;clôturer (nom d'action de sangalu);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00355";valide_par_referent;;Nom d'action / forme de citation du verbe « sangalu » (clôturer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1190;sangalunu;clôturer (gérondif / inaccompli de sangalu);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00356";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « sangalu » (clôturer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1191;sanku-ye;disparaître (nom d'action de sanku);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00358";valide_par_referent;;Nom d'action / forme de citation du verbe « sanku » (disparaître) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1192;sankunu;disparaître (gérondif / inaccompli de sanku);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00359";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « sanku » (disparaître) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1193;saqe-ye;coucher (nom d'action de saqe);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00361";valide_par_referent;;Nom d'action / forme de citation du verbe « saqe » (coucher) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1194;saqene;coucher (gérondif / inaccompli de saqe);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00362";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « saqe » (coucher) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1195;sefene;parler (gérondif / inaccompli de sefe);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00365";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « sefe » (parler) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1196;sefeye;parler (nom d'action de sefe);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00366";valide_par_referent;;Nom d'action / forme de citation du verbe « sefe » (parler) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1197;sege-ye;monter (nom d'action de sege);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00368";valide_par_referent;;Nom d'action / forme de citation du verbe « sege » (monter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1198;segene;monter (gérondif / inaccompli de sege);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00369";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « sege » (monter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1199;si-ye;raser (nom d'action de si);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00371";valide_par_referent;;Nom d'action / forme de citation du verbe « si » (raser) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1200;sigi-nde;stopper (nom d'action de sigi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00373";valide_par_referent;;Nom d'action / forme de citation du verbe « sigi » (stopper) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1201;sigini;stopper (gérondif / inaccompli de sigi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00374";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « sigi » (stopper) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1202;simandi-nde;en rappeler (nom d'action de simandi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00376";valide_par_referent;;Nom d'action / forme de citation du verbe « simandi » (en rappeler) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1203;simandini;en rappeler (gérondif / inaccompli de simandi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00377";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « simandi » (en rappeler) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1204;simme-ye;penser (nom d'action de simme);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00379";valide_par_referent;;Nom d'action / forme de citation du verbe « simme » (penser) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1205;simmene;penser (gérondif / inaccompli de simme);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00380";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « simme » (penser) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1206;sini;raser (gérondif / inaccompli de si);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00381";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « si » (raser) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1207;siyi-ye;coiffer (nom d'action de siyi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00383";valide_par_referent;;Nom d'action / forme de citation du verbe « siyi » (coiffer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1208;siyini;coiffer (gérondif / inaccompli de siyi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00384";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « siyi » (coiffer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1209;sonundi-nde;tisser (nom d'action de sonundi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00386";valide_par_referent;;Nom d'action / forme de citation du verbe « sonundi » (tisser) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1210;sonundini;tisser (gérondif / inaccompli de sonundi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00387";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « sonundi » (tisser) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1211;sooti-nde;brancher (nom d'action de sooti);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00389";valide_par_referent;;Nom d'action / forme de citation du verbe « sooti » (brancher) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1212;sootini;brancher (gérondif / inaccompli de sooti);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00390";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « sooti » (brancher) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1213;sore-ye;cuisiner (nom d'action de sore);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00392";valide_par_referent;;Nom d'action / forme de citation du verbe « sore » (cuisiner) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1214;sorene;cuisiner (gérondif / inaccompli de sore);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00393";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « sore » (cuisiner) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1215;soxondi-nde;verrouiller (nom d'action de soxondi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00395";valide_par_referent;;Nom d'action / forme de citation du verbe « soxondi » (verrouiller) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1216;soxondini;verrouiller (gérondif / inaccompli de soxondi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00396";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « soxondi » (verrouiller) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1217;soyi-ye;rire (nom d'action de soyi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00398";valide_par_referent;;Nom d'action / forme de citation du verbe « soyi » (rire) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1218;soyini;rire (gérondif / inaccompli de soyi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00399";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « soyi » (rire) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1219;sugandi-nde;choisir (nom d'action de sugandi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00401";valide_par_referent;;Nom d'action / forme de citation du verbe « sugandi » (choisir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1220;sugandini;choisir (gérondif / inaccompli de sugandi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00402";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « sugandi » (choisir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1221;suge-ye;chanter (nom d'action de suge);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00404";valide_par_referent;;Nom d'action / forme de citation du verbe « suge » (chanter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1222;sugene;chanter (gérondif / inaccompli de suge);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00405";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « suge » (chanter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1223;sukandi-nde;cocher (nom d'action de sukandi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00407";valide_par_referent;;Nom d'action / forme de citation du verbe « sukandi » (cocher) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1224;sukandini;cocher (gérondif / inaccompli de sukandi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00408";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « sukandi » (cocher) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1225;sumba-nde;souquer (nom d'action de sumba);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00410";valide_par_referent;;Nom d'action / forme de citation du verbe « sumba » (souquer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1226;sumbana;souquer (gérondif / inaccompli de sumba);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00411";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « sumba » (souquer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1227;suruba-nde;aspirer (nom d'action de suruba);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00413";valide_par_referent;;Nom d'action / forme de citation du verbe « suruba » (aspirer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1228;surubana;aspirer (gérondif / inaccompli de suruba);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00414";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « suruba » (aspirer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1229;suxe-ye;jalouser (nom d'action de suxe);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00416";valide_par_referent;;Nom d'action / forme de citation du verbe « suxe » (jalouser) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1230;suxene;jalouser (gérondif / inaccompli de suxe);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00417";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « suxe » (jalouser) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1231;taga-nde;bâtir (nom d'action de taga);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00419";valide_par_referent;;Nom d'action / forme de citation du verbe « taga » (bâtir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1232;tagana;bâtir (gérondif / inaccompli de taga);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00420";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « taga » (bâtir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1233;tagandi-nde;créer (nom d'action de tagandi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00422";valide_par_referent;;Nom d'action / forme de citation du verbe « tagandi » (créer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1234;tagandini;créer (gérondif / inaccompli de tagandi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00423";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « tagandi » (créer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1235;tambotuga-nde;rembourser (nom d'action de tambotuga);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00425";valide_par_referent;;Nom d'action / forme de citation du verbe « tambotuga » (rembourser) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1236;tambotugana;rembourser (gérondif / inaccompli de tambotuga);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00426";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « tambotuga » (rembourser) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1237;tarandi-nde;visiter (nom d'action de tarandi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00428";valide_par_referent;;Nom d'action / forme de citation du verbe « tarandi » (visiter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1238;tarandini;visiter (gérondif / inaccompli de tarandi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00429";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « tarandi » (visiter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1239;tari-nde;célébrer (nom d'action de tari);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00431";valide_par_referent;;Nom d'action / forme de citation du verbe « tari » (célébrer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1240;tarini;célébrer (gérondif / inaccompli de tari);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00432";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « tari » (célébrer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1241;taxu-ye;asseoir (nom d'action de taxu);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00434";valide_par_referent;;Nom d'action / forme de citation du verbe « taxu » (asseoir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1242;taxunu;asseoir (gérondif / inaccompli de taxu);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00435";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « taxu » (asseoir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1243;tewe-ye;assister (nom d'action de tewe);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00437";valide_par_referent;;Nom d'action / forme de citation du verbe « tewe » (assister) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1244;tewene;assister (gérondif / inaccompli de tewe);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00438";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « tewe » (assister) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1245;tifin-nde;accuser (nom d'action de tifin);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00440";valide_par_referent;;Nom d'action / forme de citation du verbe « tifin » (accuser) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1246;tifinni;accuser (gérondif / inaccompli de tifin);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00441";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « tifin » (accuser) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1247;tilifi-nde;torturer (nom d'action de tilifi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00443";valide_par_referent;;Nom d'action / forme de citation du verbe « tilifi » (torturer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1248;tilifini;torturer (gérondif / inaccompli de tilifi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00444";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « tilifi » (torturer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1249;tinto-ye;approcher (nom d'action de tinto);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00446";valide_par_referent;;Nom d'action / forme de citation du verbe « tinto » (approcher) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1250;tintono;approcher (gérondif / inaccompli de tinto);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00447";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « tinto » (approcher) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1251;tu-ye;connaître (nom d'action de tu);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00449";valide_par_referent;;Nom d'action / forme de citation du verbe « tu » (connaître) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1252;tuka-nde;coller (nom d'action de tuka);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00451";valide_par_referent;;Nom d'action / forme de citation du verbe « tuka » (coller) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1253;tukana;coller (gérondif / inaccompli de tuka);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00452";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « tuka » (coller) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1254;tulu-nde;tresser (nom d'action de tulu);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00454";valide_par_referent;;Nom d'action / forme de citation du verbe « tulu » (tresser) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1255;tulunu;tresser (gérondif / inaccompli de tulu);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00455";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « tulu » (tresser) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1256;tuma-ye;reposer (nom d'action de tuma);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00457";valide_par_referent;;Nom d'action / forme de citation du verbe « tuma » (reposer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1257;tumana;reposer (gérondif / inaccompli de tuma);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00458";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « tuma » (reposer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1258;tuntchi-nde;accompagner (nom d'action de tuntchi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00460";valide_par_referent;;Nom d'action / forme de citation du verbe « tuntchi » (accompagner) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1259;tuntchini;accompagner (gérondif / inaccompli de tuntchi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00461";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « tuntchi » (accompagner) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1260;tunu;connaître (gérondif / inaccompli de tu);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00462";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « tu » (connaître) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1261;tuyi-nde;informer (nom d'action de tuyi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00464";valide_par_referent;;Nom d'action / forme de citation du verbe « tuyi » (informer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1262;tuyindi-nde;signaler (nom d'action de tuyindi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00466";valide_par_referent;;Nom d'action / forme de citation du verbe « tuyindi » (signaler) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1263;tuyindini;signaler (gérondif / inaccompli de tuyindi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00467";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « tuyindi » (signaler) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1264;tuyini;informer (gérondif / inaccompli de tuyi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00468";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « tuyi » (informer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1265;waqi-nde;nettoyer (nom d'action de waqi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00470";valide_par_referent;;Nom d'action / forme de citation du verbe « waqi » (nettoyer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1266;waqini;nettoyer (gérondif / inaccompli de waqi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00471";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « waqi » (nettoyer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1267;wara-nde;laisser (nom d'action de wara);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00473";valide_par_referent;;Nom d'action / forme de citation du verbe « wara » (laisser) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1268;waran-nde;lâcher (nom d'action de waran);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00475";valide_par_referent;;Nom d'action / forme de citation du verbe « waran » (lâcher) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1269;warana;laisser (gérondif / inaccompli de wara);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00476";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « wara » (laisser) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1270;waranni;lâcher (gérondif / inaccompli de waran);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00477";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « waran » (lâcher) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1271;wari-nde;trouver (nom d'action de wari);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00479";valide_par_referent;;Nom d'action / forme de citation du verbe « wari » (trouver) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1272;warini;trouver (gérondif / inaccompli de wari);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00480";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « wari » (trouver) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1273;waxati su;"à tout moment ; toujours";expression;"snk_engine (CC BY 4.0) ; manifest snk-00481";valide_par_referent;;Forme attestée (complements) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1274;worini;voir (gérondif / inaccompli de wori);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00483";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « wori » (voir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1275;woriye;voir (nom d'action de wori);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00484";valide_par_referent;;Nom d'action / forme de citation du verbe « wori » (voir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1276;wu-ye;pleurer (nom d'action de wu);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00486";valide_par_referent;;Nom d'action / forme de citation du verbe « wu » (pleurer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1277;wunii-nde;déverrouiller (nom d'action de wunii);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00488";valide_par_referent;;Nom d'action / forme de citation du verbe « wunii » (déverrouiller) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1278;wuniini;déverrouiller (gérondif / inaccompli de wunii);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00489";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « wunii » (déverrouiller) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1279;wunu;pleurer (gérondif / inaccompli de wu);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00490";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « wu » (pleurer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1280;wunyi-nde;ouvrir (nom d'action de wunyi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00492";valide_par_referent;;Nom d'action / forme de citation du verbe « wunyi » (ouvrir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1281;wunyini;ouvrir (gérondif / inaccompli de wunyi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00493";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « wunyi » (ouvrir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1282;wurebandi-nde;traduire (nom d'action de wurebandi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00495";valide_par_referent;;Nom d'action / forme de citation du verbe « wurebandi » (traduire) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1283;wurebandini;traduire (gérondif / inaccompli de wurebandi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00496";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « wurebandi » (traduire) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1284;wurunu;courir (gérondif / inaccompli de wuru);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00498";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « wuru » (courir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1285;wuruye;courir (nom d'action de wuru);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00499";valide_par_referent;;Nom d'action / forme de citation du verbe « wuru » (courir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1286;wutunde;prendre (nom d'action de wutu);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00501";valide_par_referent;;Nom d'action / forme de citation du verbe « wutu » (prendre) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1287;wutundi-nde;porter (nom d'action de wutundi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00503";valide_par_referent;;Nom d'action / forme de citation du verbe « wutundi » (porter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1288;wutundini;porter (gérondif / inaccompli de wutundi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00504";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « wutundi » (porter) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1289;xadiafi-nde;critiquer (nom d'action de xadiafi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00507";valide_par_referent;;Nom d'action / forme de citation du verbe « xadiafi » (critiquer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1290;xadiafini;critiquer (gérondif / inaccompli de xadiafi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00508";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « xadiafi » (critiquer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1291;xandio-nde;convaincre (nom d'action de xandio);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00511";valide_par_referent;;Nom d'action / forme de citation du verbe « xandio » (convaincre) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1292;xandiono;convaincre (gérondif / inaccompli de xandio);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00512";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « xandio » (convaincre) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1293;xanemaxawara-nde;autoriser (nom d'action de xanemaxawara);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00514";valide_par_referent;;Nom d'action / forme de citation du verbe « xanemaxawara » (autoriser) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1294;xanemaxawarana;autoriser (gérondif / inaccompli de xanemaxawara);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00515";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « xanemaxawara » (autoriser) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1295;xanu-ye;aimer (nom d'action de xanu);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00517";valide_par_referent;;Nom d'action / forme de citation du verbe « xanu » (aimer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1296;xanunu;aimer (gérondif / inaccompli de xanu);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00518";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « xanu » (aimer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1297;xaru-ye;crier (nom d'action de xaru);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00520";valide_par_referent;;Nom d'action / forme de citation du verbe « xaru » (crier) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1298;xarunu;crier (gérondif / inaccompli de xaru);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00521";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « xaru » (crier) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1299;xaso-ye;vieillir (nom d'action de xaso);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00523";valide_par_referent;;Nom d'action / forme de citation du verbe « xaso » (vieillir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1300;xasono;vieillir (gérondif / inaccompli de xaso);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00524";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « xaso » (vieillir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1301;xati;"lait ; du lait";nom;"snk_engine (CC BY 4.0) ; manifest snk-00525";valide_par_referent;;Forme attestée (objets) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1302;xati ke;le lait;syntagme_nominal;"snk_engine (CC BY 4.0) ; manifest snk-00526";valide_par_referent;;Forme attestée (objets) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1303;xemparadangi-ye;abuser (nom d'action de xemparadangi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00528";valide_par_referent;;Nom d'action / forme de citation du verbe « xemparadangi » (abuser) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1304;xemparadangini;abuser (gérondif / inaccompli de xemparadangi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00529";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « xemparadangi » (abuser) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1305;xenne-ne;violer (nom d'action de xenne);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00531";valide_par_referent;;Nom d'action / forme de citation du verbe « xenne » (violer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1306;xennene;violer (gérondif / inaccompli de xenne);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00532";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « xenne » (violer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1307;xenni-ye;attaquer (nom d'action de xenni);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00534";valide_par_referent;;Nom d'action / forme de citation du verbe « xenni » (attaquer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1308;xennini;attaquer (gérondif / inaccompli de xenni);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00535";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « xenni » (attaquer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1309;xentie-nde;mesurer (nom d'action de xentie);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00537";valide_par_referent;;Nom d'action / forme de citation du verbe « xentie » (mesurer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1310;xentiene;mesurer (gérondif / inaccompli de xentie);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00538";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « xentie » (mesurer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1311;xenu-ye;tomber (nom d'action de xenu);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00540";valide_par_referent;;Nom d'action / forme de citation du verbe « xenu » (tomber) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1312;xenunu;tomber (gérondif / inaccompli de xenu);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00541";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « xenu » (tomber) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1313;xenyi-ye;nager (nom d'action de xenyi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00543";valide_par_referent;;Nom d'action / forme de citation du verbe « xenyi » (nager) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1314;xenyini;nager (gérondif / inaccompli de xenyi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00544";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « xenyi » (nager) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1315;xiri-nde;appeler (nom d'action de xiri);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00546";valide_par_referent;;Nom d'action / forme de citation du verbe « xiri » (appeler) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1316;xirini;appeler (gérondif / inaccompli de xiri);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00547";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « xiri » (appeler) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1317;xithi-nde;serrer (nom d'action de xithi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00549";valide_par_referent;;Nom d'action / forme de citation du verbe « xithi » (serrer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1318;xithini;serrer (gérondif / inaccompli de xithi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00550";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « xithi » (serrer) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1319;xoraxu-nde;affranchir (nom d'action de xoraxu);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00552";valide_par_referent;;Nom d'action / forme de citation du verbe « xoraxu » (affranchir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1320;xoraxunu;affranchir (gérondif / inaccompli de xoraxu);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00553";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « xoraxu » (affranchir) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1321;yagu-nde;embarrasser (nom d'action de yagu);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00555";valide_par_referent;;Nom d'action / forme de citation du verbe « yagu » (embarrasser) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1322;yagunu;embarrasser (gérondif / inaccompli de yagu);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00556";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « yagu » (embarrasser) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1323;yampa-ye;pardonner (nom d'action de yampa);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00558";valide_par_referent;;Nom d'action / forme de citation du verbe « yampa » (pardonner) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1324;yampana;pardonner (gérondif / inaccompli de yampa);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00559";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « yampa » (pardonner) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1325;yanqa-nde;descendre (nom d'action de yanqa);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00561";valide_par_referent;;Nom d'action / forme de citation du verbe « yanqa » (descendre) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1326;yanqana;descendre (gérondif / inaccompli de yanqa);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00562";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « yanqa » (descendre) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1327;yaxawunyi-yen xedie-ye;réveiller (nom d'action de yaxawunyi-yen xedie);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00564";valide_par_referent;;Nom d'action / forme de citation du verbe « yaxawunyi-yen xedie » (réveiller) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1328;yaxawunyi-yen xediene;réveiller (gérondif / inaccompli de yaxawunyi-yen xedie);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00565";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « yaxawunyi-yen xedie » (réveiller) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1329;yexi-ye;marier (nom d'action de yexi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00567";valide_par_referent;;Nom d'action / forme de citation du verbe « yexi » (marier) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1330;yexini;marier (gérondif / inaccompli de yexi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00568";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « yexi » (marier) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1331;yigaye;manger (nom d'action de yige);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00569";valide_par_referent;;Nom d'action / forme de citation du verbe « yige » (manger) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1332;yigene;manger (gérondif / inaccompli de yige);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00571";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « yige » (manger) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1333;yinkutundi-nde;commander (nom d'action de yinkutundi);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00573";valide_par_referent;;Nom d'action / forme de citation du verbe « yinkutundi » (commander) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1334;yinkutundini;commander (gérondif / inaccompli de yinkutundi);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00574";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « yinkutundi » (commander) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1335;yonto-nde;pousser (nom d'action de yonto);nom_d_action;"snk_engine (CC BY 4.0) ; manifest snk-00576";valide_par_referent;;Nom d'action / forme de citation du verbe « yonto » (pousser) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1336;yontono;pousser (gérondif / inaccompli de yonto);verbe_gerondif;"snk_engine (CC BY 4.0) ; manifest snk-00577";valide_par_referent;;Forme en -ni (gérondif / inaccompli) du verbe « yonto » (pousser) — noah-medra, snk_engine (CC BY 4.0)
+SNK-LEX-1337;Xa wouy Diom;bonjour ! (salutation respectueuse / pluriel);expression;validation_referent_utilisateur;fourni_par_referent;;
+SNK-LEX-1338;baaga;margouillat, lézard;nom;Dictionnaire soninké.docx;candidat_dictionnaire_a_verifier;baagane, bakkan, baxan;"baaga Variant: baagane; bakkan; baxan. Nom . lizard; margouillat, lézard. Category: Animal. Note: D2 Plural suffix: -nu."

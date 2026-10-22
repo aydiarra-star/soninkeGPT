@@ -2893,14 +2893,9 @@
       "url": "audio/generated/74097eb0f3a144ab4f21f5e3.wav"
     },
     {
-      "text": "Abada",
-      "source": "data/candidates/external-lexicon-candidates.csv",
-      "url": "audio/generated/6d5a8c618db663db8231625d.wav"
-    },
-    {
-      "text": "aké",
-      "source": "app.js:PHRASEBOOK",
-      "url": "audio/generated/936d0d9eda3daa2a95dee940.wav"
+      "text": "abada",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "url": "audio/generated/91f1c0039cded5d936ca11ba.wav"
     },
     {
       "text": "Ala",
@@ -2908,24 +2903,24 @@
       "url": "audio/generated/df0492b9b264441832d8a3fc.wav"
     },
     {
-      "text": "Alahadi",
-      "source": "data/candidates/external-lexicon-candidates.csv",
-      "url": "audio/generated/49b87f917913696e7f04a0c3.wav"
+      "text": "alahadi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "url": "audio/generated/2369d1d39ed868c0b5118a3d.wav"
     },
     {
-      "text": "Alaxamisa",
-      "source": "data/candidates/external-lexicon-candidates.csv",
-      "url": "audio/generated/65ad6fddfd8e335d2505cfc3.wav"
+      "text": "alaxamisa",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "url": "audio/generated/bbf9127ed35a0f511f690923.wav"
     },
     {
-      "text": "Alijuma",
-      "source": "data/candidates/external-lexicon-candidates.csv",
-      "url": "audio/generated/f991e3a16fd3a09c502c009c.wav"
+      "text": "alijuma",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "url": "audio/generated/d4cc72a82adf9e0d2491b22c.wav"
     },
     {
-      "text": "Alikaati",
-      "source": "data/candidates/external-lexicon-candidates.csv",
-      "url": "audio/generated/f3826355808f82a15ab32d2d.wav"
+      "text": "alikaati",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "url": "audio/generated/d9c37bd764c55f705d32f2b1.wav"
     },
     {
       "text": "Alikeebu",
@@ -2938,9 +2933,9 @@
       "url": "audio/generated/e9d29b08e5aa5f7df96d8b6b.wav"
     },
     {
-      "text": "Alimeeti",
-      "source": "data/candidates/external-lexicon-candidates.csv",
-      "url": "audio/generated/8dded9ade52aac30571c7c6c.wav"
+      "text": "alimeeti",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "url": "audio/generated/4dd88e61b2b55dc3f8b520bf.wav"
     },
     {
       "text": "Aliyatiime",
@@ -3001,11 +2996,6 @@
       "text": "an wouydiom",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "url": "audio/generated/46ff71ef6e2c4a731757d10a.wav"
-    },
-    {
-      "text": "anké",
-      "source": "app.js:PHRASEBOOK",
-      "url": "audio/generated/7d84ed145e8e30dc4f9fba57.wav"
     },
     {
       "text": "Anmiina",
@@ -3094,7 +3084,7 @@
     },
     {
       "text": "baaga",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
+      "source": "data/source/lexique-soninke-fr-base.csv",
       "url": "audio/generated/1c67b421c3188942ef2243b3.wav"
     },
     {
@@ -5913,11 +5903,6 @@
       "url": "audio/generated/827a02fd76a37fa49c71806e.wav"
     },
     {
-      "text": "dáabà",
-      "source": "data/candidates/external-lexicon-candidates.csv",
-      "url": "audio/generated/104897d4a4a5be371a734d73.wav"
-    },
-    {
       "text": "debé",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "url": "audio/generated/82ae022a347cb3b1fd2370d7.wav"
@@ -5941,11 +5926,6 @@
       "text": "diga",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "url": "audio/generated/a854d878233957c1910a8f56.wav"
-    },
-    {
-      "text": "digaa",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "url": "audio/generated/846108ced932267c15f5767d.wav"
     },
     {
       "text": "do",
@@ -6143,11 +6123,6 @@
       "url": "audio/generated/f2e9a23ac36c4b227b16387b.wav"
     },
     {
-      "text": "hàabê",
-      "source": "data/candidates/external-lexicon-candidates.csv",
-      "url": "audio/generated/80cfd71ba21ccf7f87aadc3c.wav"
-    },
-    {
       "text": "hicca",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "url": "audio/generated/3e988f236822db94e877a9fc.wav"
@@ -6233,19 +6208,9 @@
       "url": "audio/generated/61a4b0cf14c1ffdc4d95add6.wav"
     },
     {
-      "text": "jànmû",
-      "source": "data/candidates/external-lexicon-candidates.csv",
-      "url": "audio/generated/32dce9e65b9cd0fd0f313549.wav"
-    },
-    {
       "text": "ji",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "url": "audio/generated/bddf2d2528c7bbf509403a66.wav"
-    },
-    {
-      "text": "jî",
-      "source": "data/candidates/external-lexicon-candidates.csv",
-      "url": "audio/generated/4640a1eb864f5c5528d9f23d.wav"
     },
     {
       "text": "joxi",
@@ -6408,6 +6373,11 @@
       "url": "audio/generated/427da717ff2b10d22eee573e.wav"
     },
     {
+      "text": "koré",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "url": "audio/generated/ab966248441d7bb8b2d3f14e.wav"
+    },
+    {
       "text": "koro",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "url": "audio/generated/3257aaf20f93ccc77e92909d.wav"
@@ -6416,11 +6386,6 @@
       "text": "korome",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "url": "audio/generated/bab005c59af7a9f39c220168.wav"
-    },
-    {
-      "text": "koré",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "url": "audio/generated/ab966248441d7bb8b2d3f14e.wav"
     },
     {
       "text": "kurunba",
@@ -6476,11 +6441,6 @@
       "text": "lellaane",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "url": "audio/generated/04caac403d7124c00f1d1ca1.wav"
-    },
-    {
-      "text": "lémínè",
-      "source": "data/candidates/external-lexicon-candidates.csv",
-      "url": "audio/generated/59d4b418f2131fad3f421a67.wav"
     },
     {
       "text": "lihi",
@@ -6558,11 +6518,6 @@
       "url": "audio/generated/310bccc8f9a21a64f95fee23.wav"
     },
     {
-      "text": "mìní",
-      "source": "data/candidates/external-lexicon-candidates.csv",
-      "url": "audio/generated/6518a9a4a0e2964fd85dfa34.wav"
-    },
-    {
       "text": "mollodarejinma",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "url": "audio/generated/a16f4a6538e9d9887a61c72d.wav"
@@ -6571,11 +6526,6 @@
       "text": "motiinte",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "url": "audio/generated/888ab4db42254bd3d88cc49d.wav"
-    },
-    {
-      "text": "motinte",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "url": "audio/generated/1ad4673ef18ce4663b95a0d5.wav"
     },
     {
       "text": "mugu",
@@ -6658,11 +6608,6 @@
       "url": "audio/generated/52ffca546c656d5748d44658.wav"
     },
     {
-      "text": "ngari",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "url": "audio/generated/c79c09e0f82e55b69c09d6a4.wav"
-    },
-    {
       "text": "ni barka",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "url": "audio/generated/5a0362666738ef1a0ca9aa41.wav"
@@ -6671,16 +6616,6 @@
       "text": "ni ya me",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "url": "audio/generated/541dc00692b8de3edc1477ae.wav"
-    },
-    {
-      "text": "nieru",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "url": "audio/generated/703b095b88d79e7fd15a7ceb.wav"
-    },
-    {
-      "text": "nké",
-      "source": "app.js:PHRASEBOOK",
-      "url": "audio/generated/35576cd68cc8d0423247e083.wav"
     },
     {
       "text": "no",
@@ -6721,16 +6656,6 @@
       "text": "nuxunne",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "url": "audio/generated/f8b1a939fb117b7296270023.wav"
-    },
-    {
-      "text": "nyeru",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "url": "audio/generated/42c9448e5815d0345d66e47a.wav"
-    },
-    {
-      "text": "nyonto",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "url": "audio/generated/8e760453e4a7c679763acde8.wav"
     },
     {
       "text": "olu ni ce",
@@ -6848,11 +6773,6 @@
       "url": "audio/generated/c4ff5c995f243cd68ddf2847.wav"
     },
     {
-      "text": "rí",
-      "source": "data/candidates/external-lexicon-candidates.csv",
-      "url": "audio/generated/5efde756be900584199c737e.wav"
-    },
-    {
       "text": "saane",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "url": "audio/generated/7b63a5dd87b3ae69f4980891.wav"
@@ -6896,16 +6816,6 @@
       "text": "sappe",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "url": "audio/generated/1b300effed7dc31b1f8b04cf.wav"
-    },
-    {
-      "text": "saxu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "url": "audio/generated/d260c75052f61524e2b6fa12.wav"
-    },
-    {
-      "text": "sàaxê",
-      "source": "data/candidates/external-lexicon-candidates.csv",
-      "url": "audio/generated/47770282e3a70e2225345105.wav"
     },
     {
       "text": "sedi",
@@ -7118,11 +7028,6 @@
       "url": "audio/generated/d262165a43db55c938df93f7.wav"
     },
     {
-      "text": "tanyere",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "url": "audio/generated/ca3ba7a07b6c76941582a6e3.wav"
-    },
-    {
       "text": "taro",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "url": "audio/generated/8ff52c91ed7d509440aa7fbf.wav"
@@ -7133,19 +7038,9 @@
       "url": "audio/generated/5e1929c200cb4be4c3a8d770.wav"
     },
     {
-      "text": "tehetee",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "url": "audio/generated/bdfaead62e3a98a99121e213.wav"
-    },
-    {
       "text": "Teingé",
       "source": "data/source/head-face-audio-recording-queue.csv",
       "url": "audio/generated/32e90e97cfe88557fcfd97da.wav"
-    },
-    {
-      "text": "telenngonte",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "url": "audio/generated/1ca972542a29680950a20c31.wav"
     },
     {
       "text": "telenŋonte",
@@ -7218,11 +7113,6 @@
       "url": "audio/generated/fb6021d282db8315b391ada0.wav"
     },
     {
-      "text": "tóxò",
-      "source": "data/candidates/external-lexicon-candidates.csv",
-      "url": "audio/generated/96c23237de7e78a2bcc78a72.wav"
-    },
-    {
       "text": "tuha",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "url": "audio/generated/a3e26b1c2ba80bac7ecb4da3.wav"
@@ -7259,7 +7149,7 @@
     },
     {
       "text": "Xa wouy Diom",
-      "source": "app.js:PHRASEBOOK",
+      "source": "data/source/lexique-soninke-fr-base.csv",
       "url": "audio/generated/461907f4a71d6586be47b272.wav"
     },
     {
@@ -7268,14 +7158,14 @@
       "url": "audio/generated/38c71b93e2ac4767ed368fac.wav"
     },
     {
-      "text": "xanné",
-      "source": "data/source/head-face-audio-recording-queue.csv",
-      "url": "audio/generated/e0b9b7ab66d85ede7656d5a9.wav"
-    },
-    {
       "text": "xané",
       "source": "data/source/head-face-audio-recording-queue.csv",
       "url": "audio/generated/208e7335787dc51b4ec6fc86.wav"
+    },
+    {
+      "text": "xanné",
+      "source": "data/source/head-face-audio-recording-queue.csv",
+      "url": "audio/generated/e0b9b7ab66d85ede7656d5a9.wav"
     },
     {
       "text": "xobo",
@@ -7333,11 +7223,6 @@
       "url": "audio/generated/6ca7334af7c319ef1623b280.wav"
     },
     {
-      "text": "yaxaré",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "url": "audio/generated/641bf4905f38d0a9e478f908.wav"
-    },
-    {
       "text": "Yaxe",
       "source": "data/source/head-face-audio-recording-queue.csv",
       "url": "audio/generated/eb0e3656f55c075758b4e646.wav"
@@ -7348,19 +7233,9 @@
       "url": "audio/generated/0a4cbfb95fad738882ede313.wav"
     },
     {
-      "text": "yàxàrê",
-      "source": "data/candidates/external-lexicon-candidates.csv",
-      "url": "audio/generated/6ade2f49aaf59fd2cba009cf.wav"
-    },
-    {
       "text": "yeli / yere",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "url": "audio/generated/fc0279b4d3238d2d7f75c540.wav"
-    },
-    {
-      "text": "yelinge",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "url": "audio/generated/5ddb3fd096f0dcb554ae0ad1.wav"
     },
     {
       "text": "yelinŋe",
@@ -7443,16 +7318,6 @@
       "url": "audio/generated/19e42ee90fce55a4e0e5bd65.wav"
     },
     {
-      "text": "yígá",
-      "source": "data/candidates/external-lexicon-candidates.csv",
-      "url": "audio/generated/c88be2cca83bc7c72a9fb707.wav"
-    },
-    {
-      "text": "yíttè",
-      "source": "data/candidates/external-lexicon-candidates.csv",
-      "url": "audio/generated/ef24127d9daef5d8e56f1f38.wav"
-    },
-    {
       "text": "yogonu",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "url": "audio/generated/789c89350d2dd41f7c561f02.wav"
@@ -7466,26 +7331,6 @@
       "text": "yugo",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "url": "audio/generated/f6a77d81e13b33baf723d6db.wav"
-    },
-    {
-      "text": "ñeexe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "url": "audio/generated/e5fed3e33edc94b6b1f54331.wav"
-    },
-    {
-      "text": "ñeru",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "url": "audio/generated/53f29c2e8d738e06c509c541.wav"
-    },
-    {
-      "text": "ñiime",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "url": "audio/generated/d45afff497127631f6da6eaf.wav"
-    },
-    {
-      "text": "ñonto",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "url": "audio/generated/10e0312891ed60a0b7fcaf10.wav"
     },
     {
       "text": "ŋ'",
@@ -7506,8 +7351,28 @@
       "text": "ɲamanbali",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "url": "audio/generated/15153d455b480419db40c6b6.wav"
+    },
+    {
+      "text": "ñeexe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "url": "audio/generated/e5fed3e33edc94b6b1f54331.wav"
+    },
+    {
+      "text": "ñeru",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "url": "audio/generated/53f29c2e8d738e06c509c541.wav"
+    },
+    {
+      "text": "ñiime",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "url": "audio/generated/d45afff497127631f6da6eaf.wav"
+    },
+    {
+      "text": "ñonto",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "url": "audio/generated/10e0312891ed60a0b7fcaf10.wav"
     }
   ],
   "syllables": [],
-  "note": "Aucune syllabe sans alignement humain validé. Les clones restent à écouter par le référent."
+  "note": "Les clones générés restent non validés jusqu’à écoute humaine. Aucun WAV original n’est écrasé."
 }

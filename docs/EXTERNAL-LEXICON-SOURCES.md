@@ -16,7 +16,7 @@ Date de première recherche : 21 octobre 2026. Ces ressources servent à repére
 
 - [Soninkara — Glossaire de mots Soninké–Français](https://www.soninkara.com/langue/apprendre-le-soninke/glossaire-de-mots.html) : glossaire attribué à Hadiya Wagué, à utiliser pour repérer des candidats, en conservant attribution et en vérifiant les conditions de réutilisation.
 
-Le fichier `data/candidates/external-lexicon-candidates.csv` contient maintenant 28 candidats issus de Dicosoninke, Soninkara et LGIDF/CNRS. Ils sont tous maintenus en statut `a_verifier` et `rights_to_verify` : les formes avec marques tonales ne doivent pas être converties automatiquement en graphie du corpus interne. Le LGIDF précise que sa présentation linguistique se base sur le soninké du Kingui et qu’il n’existe pas une variété standard unique reconnue comme prestigieuse ; les formes doivent donc rester traçables par source et variété.
+Le fichier `data/candidates/external-lexicon-candidates.csv` contient maintenant 9 candidats uniques issus de Soninkara qui ne figurent pas encore dans le lexique principal (les 19 entrées déjà présentes dans `data/source/lexique-soninke-fr-base.csv` ont été fusionnées avec conservation des formes tonales dans la colonne `variantes`, afin d'éliminer tout doublon). Ils sont tous maintenus en statut `a_verifier` et `rights_to_verify` : les formes avec marques tonales ne doivent pas être converties automatiquement en graphie du corpus interne. Le LGIDF précise que sa présentation linguistique se base sur le soninké du Kingui et qu’il n’existe pas une variété standard unique reconnue comme prestigieuse ; les formes doivent donc rester traçables par source et variété.
 
 ## Méthode d'enrichissement
 1. Relever un candidat et l'URL exacte de sa source.
