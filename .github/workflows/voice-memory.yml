@@ -1,0 +1,32 @@
+name: Build authentic voice memory
+on:
+  push:
+    branches: [main]
+    paths: ['data/**/*.csv', 'app.js', 'scripts/generate_voice.py', 'audio/**', '.github/workflows/voice-memory.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python scripts/generate_voice.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: voice-memory-queue
+          path: data/voice-memory.json
+  generate:
+    if: vars.OMNIVOICE_GPU_ENABLED == 'true'
+    runs-on: [self-hosted, linux, gpu]
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install omnivoice soundfile numpy
+      - run: python scripts/generate_voice.py --generate
+      - uses: actions/upload-artifact@v4
+        with:
+          name: omnivoice-generated-review
+          path: |
+            audio/generated/
+            data/voice-memory.json

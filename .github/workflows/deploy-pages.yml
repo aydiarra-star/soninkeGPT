@@ -20,6 +20,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Test authentic voice playback
+        run: node tests/voice.test.cjs
+      - name: Build lexical voice memory
+        run: python3 scripts/generate_voice.py
       - name: Configure Pages
         uses: actions/configure-pages@v5
         with:

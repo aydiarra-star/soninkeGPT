@@ -3,7 +3,7 @@
    - Réponse automatique garantie à chaque question (100% corpus)
    - Touche Entrer & bouton Envoyer actifs à tout moment
    - Assistant vocal soninké (écoute, enregistrement & réponse vocale en soninké)
-   - 576 audios WAV intégrés actifs + synthèse vocale accessible
+   - WAV du référent uniquement — aucun moteur vocal du navigateur
    - Interface Dorée Royale
    ============================================ */
 
@@ -37,7 +37,7 @@ const state = {
   direction: "all",
   isGenerating: false,
   activeStream: null,
-  voiceReplies: false,
+  voiceReplies: true,
   listening: false,
   recognition: null,
   recorder: null,
@@ -151,33 +151,6 @@ function normalizeSoninkeOrtho(value) {
     .replace(/ou/g, "u")
     .replace(/gu(?=[ei])/g, "g")
     .replace(/['\-]/g, "");
-}
-
-// Transcription phonétique lisible par un moteur TTS francophone quand aucun WAV n'existe
-function soninkeToPhoneticTTS(soninkeText) {
-  return String(soninkeText || "")
-    .split(/(\s+)/)
-    .map((tok) => {
-      if (!tok.trim()) return tok;
-      return tok
-        .replace(/^Xa\b/, "Kha")
-        .replace(/^xa\b/, "kha")
-        .replace(/X/g, "Kh")
-        .replace(/x/g, "kh")
-        .replace(/ɲ/g, "gn")
-        .replace(/ñ/g, "gn")
-        .replace(/ŋ/g, "ng")
-        .replace(/c(?=[aeéèiou])/gi, "tch")
-        .replace(/g(?=[eéèi])/gi, "gu")
-        .replace(/(^|[^oO])u/g, "$1ou")
-        .replace(/^U/, "Ou")
-        .replace(/oo/g, "ô")
-        .replace(/aa/g, "â")
-        .replace(/ee/g, "é")
-        .replace(/ii/g, "î")
-        .replace(/([^eéè])e$/g, "$1é");
-    })
-    .join("");
 }
 
 function parseCSV(text, delimiter = ";") {
@@ -302,9 +275,7 @@ function ensureAudioUnlocked() {
     if (state.audioCtx && state.audioCtx.state === "suspended") {
       state.audioCtx.resume().catch(() => {});
     }
-    if (window.speechSynthesis && speechSynthesis.paused) {
-      speechSynthesis.resume();
-    }
+
   } catch {}
 }
 
@@ -368,6 +339,7 @@ async function playViaWebAudio(url) {
     }
     return await new Promise((resolve) => {
       const src = state.audioCtx.createBufferSource();
+      state.activeSource = src;
       src.buffer = audioBuffer;
       src.connect(state.audioCtx.destination);
       src.onended = () => resolve(true);
@@ -394,69 +366,40 @@ function stopActiveAudio() {
 
 function stopSpeech() {
   state.speechToken++;
-  try { window.speechSynthesis && speechSynthesis.cancel(); } catch {}
+  try { state.activeSource?.stop(); } catch {}
+  state.activeSource = null;
   stopActiveAudio();
   $$(".msg-action-btn.speaking").forEach((b) => b.classList.remove("speaking"));
 }
 
-function getTtsVoice() {
-  const voices = window.speechSynthesis ? speechSynthesis.getVoices() : [];
-  return voices.find((v) => /^fr(-|_)/i.test(v.lang)) || voices.find((v) => /fr/i.test(v.lang)) || voices[0] || null;
-}
-
-function speakUtterance(text, rate = 0.96) {
-  return new Promise((resolve) => {
-    if (!window.speechSynthesis || !text || !text.trim()) {
-      resolve(false);
-      return;
-    }
-    let done = false;
-    const finish = () => { if (!done) { done = true; resolve(true); } };
-    try {
-      const utter = new SpeechSynthesisUtterance(text.trim());
-      utter.lang = "fr-FR";
-      const voice = getTtsVoice();
-      if (voice) utter.voice = voice;
-      utter.rate = rate;
-      utter.onend = finish;
-      utter.onerror = finish;
-      speechSynthesis.speak(utter);
-      setTimeout(finish, Math.max(3000, text.length * 95));
-    } catch {
-      finish();
-    }
-  });
-}
-
-// Décompose une expression soninké en segments : WAV intégrés réels + synthèse phonétique soninké
+// Assemblage de mots entiers attestés : aucune découpe syllabique devinée.
+// Les limites acoustiques de syllabes doivent être alignées et validées avant usage.
 function buildSoninkePhraseSegments(phrase) {
-  const trimmed = String(phrase || "").trim();
-  if (!trimmed) return [];
-  const exact = findAudioInfo(trimmed);
-  if (exact) return [{ type: "audio", url: exact.url, text: trimmed }];
-
-  const words = trimmed.split(/\s+/).filter(Boolean);
-  const segs = [];
-  let pendingTts = [];
-  const flushTts = () => {
-    if (pendingTts.length) {
-      segs.push({ type: "tts", text: soninkeToPhoneticTTS(pendingTts.join(" ")), rate: 0.88 });
-      pendingTts = [];
+  const words = String(phrase || "").replace(/[«»"“”.,!?;:()[\]]/g, " ").trim().split(/\s+/).filter(Boolean);
+  const segments = [];
+  for (let i = 0; i < words.length;) {
+    let match = null;
+    for (let end = words.length; end > i; end--) {
+      const text = words.slice(i, end).join(" ");
+      const info = findAudioInfo(text);
+      if (info) { match = { type: "audio", text, url: info.url, end }; break; }
     }
-  };
-
-  for (const w of words) {
-    const cleanW = w.replace(/^[«"“'(\[]+|[»"”')\].,!?;:]+$/g, "");
-    const info = findAudioInfo(cleanW);
-    if (info) {
-      flushTts();
-      segs.push({ type: "audio", url: info.url, text: cleanW });
-    } else if (cleanW) {
-      pendingTts.push(cleanW);
-    }
+    if (!match) return []; // Ne jamais prononcer une phrase tronquée comme complète.
+    segments.push(match);
+    i = match.end;
   }
-  flushTts();
-  return segs;
+  return segments;
+}
+
+function audioNotice(text) {
+  let node = document.querySelector("#audio-notice");
+  if (!node) {
+    node = document.createElement("div");
+    node.id = "audio-notice";
+    node.setAttribute("role", "status");
+    document.querySelector("#messages-area").append(node);
+  }
+  node.textContent = text;
 }
 
 async function playWordAudio(word, btn = null) {
@@ -480,71 +423,60 @@ async function playWordAudio(word, btn = null) {
   for (const seg of segments) {
     if (token !== state.speechToken) break;
     if (seg.type === "audio") {
-      const ok = await playAudioUrl(seg.url);
-      if (ok) playedAny = true;
-    } else {
-      const ok = await speakUtterance(seg.text, seg.rate || 0.9);
+      const ok = await playViaWebAudio(seg.url);
       if (ok) playedAny = true;
     }
   }
 
-  if (token === state.speechToken && activeAudioBtn === btn) {
+  if (!segments.length) audioNotice(`Audio authentique indisponible pour « ${word} » : génération ou enregistrement nécessaire.`);
+  if (btn && token === state.speechToken && activeAudioBtn === btn) {
     btn.classList.remove("playing");
     activeAudioBtn = null;
   }
   return playedAny;
 }
 
-function buildSpeechSegments(markdownText, { soninkeOnly = false } = {}) {
-  const segments = [];
-  const cleanedDoc = String(markdownText || "").replace(/\{\{audio:([^}]+)\}\}/g, "");
-  const parts = cleanedDoc.split(/(\*\*[^*]+\*\*)/g);
-
-  for (const part of parts) {
-    if (!part) continue;
-    if (part.startsWith("**") && part.endsWith("**") && part.length > 4) {
-      const rawBold = part.slice(2, -2).trim();
-      // Détecte si le bloc en gras est une forme soninké connue ou une expression de début de puce
-      const looksFrenchHeader = /^(Formes liées|Expressions|Phrases|Suggestions|Points clés|Traditions|Salutations|Mots du lexique|Voici|Les nombres|La culture|Petite leçon|Prononciation|Mot à mot|Réponse en soninké)/i.test(rawBold);
-      if (!looksFrenchHeader) {
-        segments.push(...buildSoninkePhraseSegments(rawBold));
-      } else if (!soninkeOnly) {
-        segments.push({ type: "tts", text: rawBold, rate: 1.0 });
-      }
-    } else if (!soninkeOnly) {
-      const clean = part
-        .replace(/https?:\/\/\S+/g, "")
-        .replace(/→/g, " signifie ")
-        .replace(/[`*_>#|~]/g, " ")
-        .replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}]/gu, " ")
-        .replace(/\s+/g, " ")
-        .trim();
-      if (clean && clean !== "-" && clean !== "·") {
-        segments.push({ type: "tts", text: clean, rate: 1.0 });
-      }
-    }
-  }
-  return segments;
+function soninkeForms(markdownText) {
+  const forms = [...String(markdownText).matchAll(/\{\{audio:([^}]+)\}\}|\*\*([^*]+)\*\*/g)]
+    .map(m => (m[1] || m[2]).trim());
+  return [...new Set(forms)].filter(form => findAudioInfo(form) ||
+    PHRASEBOOK.some(p => [p.snk, ...p.alt].some(x => normalizeWord(x) === normalizeWord(form))) ||
+    state.entries.some(e => normalizeWord(e.soninke) === normalizeWord(form)));
 }
 
-async function speakResponse(markdownText, opts = {}) {
-  ensureAudioUnlocked();
-  const token = ++state.speechToken;
-  try { window.speechSynthesis && speechSynthesis.cancel(); } catch {}
-  stopActiveAudio();
+function buildSpeechSegments(text) {
+  return soninkeForms(text).flatMap(buildSoninkePhraseSegments);
+}
 
-  const segments = buildSpeechSegments(markdownText, opts);
-  for (const seg of segments) {
-    if (token !== state.speechToken) return;
-    if (seg.type === "audio") {
-      await playAudioUrl(seg.url);
-    } else {
-      await speakUtterance(seg.text, seg.rate || 0.98);
+async function speakResponse(text) {
+  stopSpeech();
+  ensureAudioUnlocked();
+  const token = state.speechToken;
+  const forms = soninkeForms(text);
+  let unavailable = 0;
+  for (const form of forms) {
+    const segments = buildSoninkePhraseSegments(form);
+    if (!segments.length) unavailable++;
+    for (const segment of segments) {
+      if (token !== state.speechToken) return;
+      if (!await playViaWebAudio(segment.url)) {
+        audioNotice("Lecture bloquée ou indisponible : cliquez sur Écouter pour réessayer.");
+        return;
+      }
     }
   }
-  if (token === state.speechToken) {
-    $$(".msg-action-btn.speaking").forEach((b) => b.classList.remove("speaking"));
-  }
+  if (unavailable || !forms.length) audioNotice("Certaines formes n’ont pas encore de WAV authentique. Aucun remplacement synthétique n’est utilisé.");
+  if (token === state.speechToken) $$(".msg-action-btn.speaking").forEach(b => b.classList.remove("speaking"));
+}
+
+function explainFrench(text) {
+  const forms = soninkeForms(text);
+  return forms.map(form => {
+    const key = normalizeWord(form);
+    const phrases = PHRASEBOOK.filter(p => [p.snk, ...p.alt].some(x => normalizeWord(x) === key)).map(p => p.fr);
+    const meanings = state.entries.filter(e => normalizeWord(e.soninke) === key).map(e => e.francais);
+    return `${form} → ${[...new Set([...phrases, ...meanings])].join(" ; ") || "Sens non documenté — à vérifier avec le référent."}`;
+  }).join("\n") || "Aucune forme soninké identifiée dans cette réponse.";
 }
 
 function syncVoiceReplyUI() {
@@ -1308,10 +1240,10 @@ function renderMarkdown(text) {
   html = html.replace(/\{\{audio:([^}]+)\}\}/g, (_, rawWord) => {
     const word = rawWord.trim();
     const hasRealWav = !!findAudioInfo(word);
-    const cls = hasRealWav ? "audio-play-btn" : "audio-play-btn audio-tts-btn";
+    const cls = "audio-play-btn";
     const title = hasRealWav
       ? `Écouter l'audio intégré du référent : ${word}`
-      : `Écouter la prononciation soninké : ${word}`;
+      : `WAV ou assemblage de mots attestés, sinon indisponible : ${word}`;
     return `<button type="button" class="${cls}" data-audio-word="${word}" title="${title}" aria-label="Écouter ${word}">🔊 ${word}</button>`;
   });
 
@@ -1392,6 +1324,7 @@ function renderMessages() {
             <button type="button" class="msg-action-btn" data-speak-soninke-index="${idx}" title="Écouter uniquement les mots et phrases en soninké" aria-label="Écouter en soninké">
               🗣️ Soninké
             </button>
+            <button type="button" class="msg-action-btn" data-explain-index="${idx}">🇫🇷 Comprendre en français</button>
             <button type="button" class="msg-action-btn" data-copy="${cleanCopy}" title="Copier la réponse" aria-label="Copier la réponse">
               📋 Copier
             </button>
@@ -2128,6 +2061,12 @@ async function loadAllData() {
     state.audioList = audioList;
   }
 
+  try {
+    const response = await fetch("data/voice-memory.json");
+    if (response.ok) for (const item of (await response.json()).audio) {
+      if (!state.audioByWord.has(normalizeWord(item.text))) state.audioByWord.set(normalizeWord(item.text), item);
+    }
+  } catch { /* Le corpus original reste disponible hors ligne. */ }
   updateCorpusStatus();
 }
 
@@ -2343,6 +2282,18 @@ function initEvents() {
       return;
     }
 
+    const explainBtn = e.target.closest("[data-explain-index]");
+    if (explainBtn) {
+      const conv = getConversation(state.activeConversationId);
+      const msg = conv?.messages[Number(explainBtn.dataset.explainIndex)];
+      if (msg) {
+        const body = explainBtn.closest(".message-body");
+        let panel = body.querySelector(".french-explanation");
+        if (!panel) { panel = document.createElement("pre"); panel.className = "french-explanation"; body.append(panel); }
+        panel.textContent = explainFrench(msg.content);
+      }
+      return;
+    }
     const speakBtn = e.target.closest(".msg-action-btn[data-speak-index]");
     if (speakBtn) {
       if (speakBtn.classList.contains("speaking")) {
@@ -2411,12 +2362,7 @@ function initEvents() {
     });
   }
 
-  if (window.speechSynthesis) {
-    speechSynthesis.getVoices();
-    if (speechSynthesis.addEventListener) {
-      speechSynthesis.addEventListener("voiceschanged", () => speechSynthesis.getVoices());
-    }
-  }
+
 }
 
 // ── Initialisation ──
@@ -2424,7 +2370,7 @@ async function init() {
   initTheme();
   loadConversations();
 
-  try { state.voiceReplies = localStorage.getItem(VOICE_PREF_KEY) === "1"; } catch {}
+  try { state.voiceReplies = localStorage.getItem(VOICE_PREF_KEY) !== "0"; } catch {}
   syncVoiceReplyUI();
 
   initEvents();
