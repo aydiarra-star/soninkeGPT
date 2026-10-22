@@ -20,7 +20,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: pip
       - run: python scripts/generate_voice.py
       - uses: actions/upload-artifact@v4
         with:
@@ -37,7 +36,10 @@ jobs:
           python-version: '3.11'
           cache: pip
       - name: Install OmniVoice and audio dependencies
-        run: python -m pip install --upgrade pip && python -m pip install omnivoice soundfile numpy
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install soundfile numpy
+          python -m pip install omnivoice || python -m pip install git+https://github.com/k2-fsa/OmniVoice.git
       - name: Generate all missing Soninke audio with the two authentic references
         run: python scripts/generate_voice.py --generate --device cpu --limit 1000
       - name: Upload audio bundle for human review
