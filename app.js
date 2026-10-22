@@ -277,10 +277,9 @@ function generateResponse(message) {
       const audio = state.audioByWord.get(normalizeWord(e.soninke));
       response = `**${e.soninke}** → ${e.francais}`;
       if (e.categorie) response += `\n\n*Catégorie :* ${e.categorie}`;
-      if (e.statut) response += `\n*Statut :* ${e.statut.replace(/_/g, " ")}`;
-      if (e.source) response += `\n*Source :* ${e.source}`;
+
       if (audio) response += `\n\n🔊 Un enregistrement audio de référence est disponible pour ce mot.`;
-      response += `\n\n*Identifiant : ${e.id}*`;
+
     } else {
       response = `J'ai trouvé **${allResults.length} résultat${allResults.length > 1 ? "s" : ""}** :\n\n`;
       for (const e of allResults.slice(0, 12)) {
@@ -677,7 +676,7 @@ function renderDictResults() {
     const fr = normalizeWord(entry.francais);
     if (dictDirection === "snk") return snk.includes(query);
     if (dictDirection === "fr") return fr.includes(query);
-    return !query || snk.includes(query) || fr.includes(query);
+    return !query || snk.includes(query) || fr.includes(query) || String(e.variantes || "").toLocaleLowerCase("fr").includes(query);
   }).slice(0, MAX_DISPLAY);
 
   const container = $("#dict-results");
