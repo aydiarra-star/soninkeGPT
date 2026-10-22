@@ -32,7 +32,11 @@ function esc(text) {
 }
 
 function normalizeWord(value) {
-  return String(value || "").normalize("NFC").trim().toLocaleLowerCase("fr");
+  return String(value || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .trim()
+    .toLocaleLowerCase("fr");
 }
 
 function parseCSV(text, delimiter = ";") {
