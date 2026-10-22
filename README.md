@@ -33,3 +33,10 @@ Les nouvelles formes sont conservées dans le lexique avec le statut `fourni_par
 - [Glosbe Français–Soninké](https://fr.glosbe.com/fr/snk)
 
 Ces références sont des sources d'audit et de découverte, pas une autorisation automatique de copier leurs bases complètes.
+
+## Lecture sans voix robotique
+
+La lecture emploie uniquement les WAV de la voix du référent, sans synthèse du
+navigateur. Voir [le fonctionnement, les limites de couverture et l’activation
+GPU d’OmniVoice](docs/AUTHENTIC-VOICE.md). Une forme sans WAV n’est jamais remplacée
+par une voix standard.
