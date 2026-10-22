@@ -10,11 +10,10 @@ on:
       - 'app.js'
       - 'scripts/generate_voice.py'
       - 'scripts/upload_review_to_drive.py'
-      - 'audio/**'
       - '.github/workflows/voice-memory.yml'
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
 jobs:
   index:
     runs-on: ubuntu-latest
@@ -60,6 +59,22 @@ jobs:
             data/voice-generation-errors.csv
           if-no-files-found: warn
           retention-days: 30
+      - name: Intégrer automatiquement les WAV valides dans le dépôt de l'application
+        if: success()
+        run: |
+          # Ne jamais ajouter les références de travail ni toucher aux WAV originaux.
+          if [ -d audio/generated ]; then
+            find audio/generated -maxdepth 1 -type f -name '*.wav' ! -name 'reference.wav' -print0 | xargs -0 -r git add --
+          fi
+          git add data/voice-memory.json
+          if git diff --cached --quiet; then
+            echo "Aucun nouveau WAV ni manifeste à intégrer."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Intégrer les WAV OmniVoice disponibles dans SoninkeGPT"
+            git push
+          fi
       - name: Upload WAVs and manifest to Google Drive review folder
         if: success()
         env:
