@@ -18,7 +18,7 @@ def rows(path):
 def key(text):
     return ' '.join(text.lower().split())
 
-def build(generate=False):
+def build(generate=False, limit=100):
     vocabulary = {}
     for path in sorted((ROOT / 'data').rglob('*.csv')):
         for row in rows(path):
@@ -64,14 +64,19 @@ def build(generate=False):
         generated_dir.mkdir(parents=True, exist_ok=True)
         reference = generated_dir / 'reference.wav'
         sf.write(reference, np.concatenate([a, np.zeros(int(.4 * sr)), b]), sr)
-        for item in pending:
+        batch = pending[:max(1, limit)]
+        print(f'Génération du lot : {len(batch)} mots ; {max(0, len(pending) - len(batch))} mots resteront en attente.')
+        for item in batch:
+            output_path = ROOT / item['url']
+            if output_path.exists():
+                continue
             result = model.generate(text=item['text'], language='soninke', ref_audio=str(reference), ref_text='Daga goli. Li taxu.', num_step=32)
             samples = np.asarray(result[0]).squeeze()
             if samples.ndim != 1 or not samples.size or not np.isfinite(samples).all():
                 raise ValueError(f"Audio invalide : {item['text']}")
-            sf.write(ROOT / item['url'], samples, int(model.sampling_rate), subtype='PCM_16')
-        return build(False)
-    memory = {'model': 'k2-fsa/OmniVoice', 'references': ['audio/snk-00054.wav', 'audio/snk-00258.wav'], 'audio': list(audio.values()), 'pending': pending, 'syllables': [], 'note': 'Aucune syllabe sans alignement humain validé. Les clones restent à écouter par le référent.'}
+            sf.write(output_path, samples, int(model.sampling_rate), subtype='PCM_16')
+        return build(False, limit)
+    memory = {'model': 'k2-fsa/OmniVoice', 'references': ['audio/snk-00054.wav', 'audio/snk-00258.wav'], 'audio': list(audio.values()), 'pending': pending, 'syllables': [], 'note': 'Les clones générés restent non validés jusqu’à écoute humaine. Aucun WAV original n’est écrasé.'}
     (ROOT / 'data/voice-memory.json').write_text(json.dumps(memory, ensure_ascii=False, indent=2) + '\n')
     print(f'{len(audio)} WAV indexés ; {len(pending)} formes en attente.')
     return memory
@@ -79,4 +84,6 @@ def build(generate=False):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--generate', action='store_true')
-    build(parser.parse_args().generate)
+    parser.add_argument('--limit', type=int, default=100, help='Nombre maximum de nouveaux WAV à générer par exécution (défaut : 100).')
+    args = parser.parse_args()
+    build(args.generate, args.limit)
