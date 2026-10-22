@@ -132,6 +132,8 @@ function esc(text) {
 
 function normalizeWord(value) {
   return String(value || "")
+    .replace(/ñ/g, "ɲ")
+    .replace(/Ñ/g, "ɲ")
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
     .replace(/[’‘]/g, "'")
@@ -804,9 +806,10 @@ function splitSenses(francais) {
 }
 
 function lookupTerm(term) {
+  const directKey = normalizeWord(term);
   const forms = candidateWordForms(term);
   const ortho = normalizeSoninkeOrtho(term);
-  const exact = [], starts = [], contains = [];
+  const exactDirect = [], exactStemmed = [], starts = [], contains = [];
 
   for (const e of state.entries) {
     const snk = normalizeWord(e.soninke);
@@ -815,12 +818,17 @@ function lookupTerm(term) {
     const senses = splitSenses(e.francais);
     const variants = String(e.variantes || "").split(/[;,|]/).map(normalizeWord).filter(Boolean);
 
+    if (snk === directKey || frFull === directKey || variants.includes(directKey)) {
+      exactDirect.push(e);
+      continue;
+    }
+
     const isExact =
       forms.some((f) => snk === f || frFull === f || senses.includes(f) || variants.includes(f)) ||
       (ortho.length >= 2 && snkOrtho === ortho);
 
     if (isExact) {
-      exact.push(e);
+      exactStemmed.push(e);
       continue;
     }
 
@@ -837,6 +845,7 @@ function lookupTerm(term) {
     }
   }
 
+  const exact = [...exactDirect, ...exactStemmed];
   return {
     exact: exact.slice(0, 10),
     starts: starts.slice(0, 8),
@@ -847,7 +856,7 @@ function lookupTerm(term) {
 function lookupPhrasebook(term) {
   const forms = candidateWordForms(term);
   const ortho = normalizeSoninkeOrtho(term);
-  return PHRASEBOOK.filter((p) => {
+  const matched = PHRASEBOOK.filter((p) => {
     const frN = normalizeWord(p.fr);
     const snkN = normalizeWord(p.snk);
     const snkO = normalizeSoninkeOrtho(p.snk);
@@ -856,6 +865,21 @@ function lookupPhrasebook(term) {
       (ortho.length >= 3 && (snkO === ortho || p.alt.some((a) => normalizeSoninkeOrtho(a) === ortho)))
     );
   });
+  const bySnk = new Map();
+  for (const p of matched) {
+    const k = normalizeWord(p.snk);
+    if (!bySnk.has(k)) {
+      bySnk.set(k, { snk: p.snk, fr: p.fr, alt: [...p.alt], note: p.note });
+    } else {
+      const existing = bySnk.get(k);
+      const frSet = new Set(existing.fr.split(",").map((s) => normalizeWord(s)));
+      if (!frSet.has(normalizeWord(p.fr))) existing.fr += `, ${p.fr}`;
+      for (const a of p.alt) {
+        if (!existing.alt.some((x) => normalizeWord(x) === normalizeWord(a))) existing.alt.push(a);
+      }
+    }
+  }
+  return [...bySnk.values()];
 }
 
 function findMatchingSamples(terms) {
@@ -1891,31 +1915,42 @@ async function loadAllData() {
     fetchTextSafe(RENVOIS_URL),
   ]);
 
-  const seenKeys = new Set();
+  const seenHeadwords = new Set();
+  const seenVariants = new Set();
   const entries = [];
-  const pushEntry = (entry) => {
+  const pushEntry = (entry, { checkVariants = true } = {}) => {
     const snk = String(entry.soninke || "").trim();
     const fr = String(entry.francais || "").trim();
-    if (!snk && !fr) return;
-    const dedupKey = `${normalizeWord(snk)}||${normalizeWord(fr)}`;
-    if (seenKeys.has(dedupKey)) return;
-    seenKeys.add(dedupKey);
-    entries.push(entry);
+    if (!snk || !fr) return;
+    const snkKey = normalizeWord(snk);
+    if (!snkKey || seenHeadwords.has(snkKey)) return;
+    if (checkVariants && seenVariants.has(snkKey)) return;
+    seenHeadwords.add(snkKey);
+    entries.push({ ...entry, soninke: snk, francais: fr });
   };
 
-  // 1. Lexique principal de référence (1 002 entrées + exemples)
+  // 1. Lexique principal de référence (dédoublonné et enrichi)
   for (const row of parseCSV(baseCsv, ";")) {
-    pushEntry({
-      id: row.id || uid(),
-      soninke: row.soninke,
-      francais: row.francais,
-      categorie: row.categorie,
-      source: row.source,
-      statut: row.statut,
-      variantes: row.variantes,
-      exemple_original: row.exemple_original,
-      isCandidate: /a_verifier/i.test(row.statut || ""),
-    });
+    pushEntry(
+      {
+        id: row.id || uid(),
+        soninke: row.soninke,
+        francais: row.francais,
+        categorie: row.categorie,
+        source: row.source,
+        statut: row.statut,
+        variantes: row.variantes,
+        exemple_original: row.exemple_original,
+        isCandidate: /a_verifier/i.test(row.statut || ""),
+      },
+      { checkVariants: false }
+    );
+  }
+  for (const e of entries) {
+    for (const v of String(e.variantes || "").split(/[;,|]/)) {
+      const vk = normalizeWord(v);
+      if (vk) seenVariants.add(vk);
+    }
   }
 
   // 2. Lot Tête & Visage

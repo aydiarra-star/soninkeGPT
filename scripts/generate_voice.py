@@ -7,6 +7,7 @@ import csv
 import hashlib
 import json
 import re
+import unicodedata
 import wave
 from pathlib import Path
 
@@ -17,7 +18,10 @@ def rows(path):
     return list(csv.DictReader(text.splitlines(), delimiter=';' if ';' in text.splitlines()[0] else ','))
 
 def key(text):
-    return ' '.join(text.lower().split())
+    s = str(text or '').replace('ñ', 'ɲ').replace('Ñ', 'ɲ')
+    s = unicodedata.normalize('NFD', s)
+    s = ''.join(c for c in s if unicodedata.category(c) != 'Mn')
+    return ' '.join(s.replace('’', "'").replace('‘', "'").lower().split())
 
 def valid_wav(path):
     try:
