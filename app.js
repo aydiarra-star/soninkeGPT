@@ -154,9 +154,9 @@ function extractSearchTerms(message) {
   // Prioritize explicit translation questions so the whole phrase is not
   // mistaken for a dictionary term (e.g. "Comment dit-on « merci » en soninké ?").
   const translationPatterns = [
-    /comment\\s+dit(?:-on)?\\s+[«"“]?(.+?)[»"”]?\\s+en\\s+sonink[ée]\\s*[?!.]*$/i,
-    /(?:traduis|traduire|traduit|traduction de)\\s+[«"“]?(.+?)[»"”]?\\s+en\\s+sonink[ée]\\s*[?!.]*$/i,
-    /(?:comment\\s+dit-on|comment\\s+dire)\\s+[«"“]?(.+?)[»"”]?\\s*[?!.]*$/i,
+    /comment\s+dit(?:-on)?\s+[«"“]?(.+?)[»"”]?\s+en\s+sonink[ée]\s*[?!.]*$/i,
+    /(?:traduis|traduire|traduit|traduction de)\s+[«"“]?(.+?)[»"”]?\s+en\s+sonink[ée]\s*[?!.]*$/i,
+    /(?:comment\s+dit-on|comment\s+dire)\s+[«"“]?(.+?)[»"”]?\s*[?!.]*$/i,
   ];
   for (const pattern of translationPatterns) {
     const match = message.match(pattern);
