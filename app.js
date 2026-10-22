@@ -131,21 +131,24 @@ function findDictionaryMatches(query) {
   // Exact match
   const exact = state.entries.filter(e =>
     normalizeWord(e.soninke) === normalized ||
-    normalizeWord(e.francais) === normalized
+    normalizeWord(e.francais) === normalized ||
+    String(e.variantes || "").split(/[;,|]/).some(v => normalizeWord(v) === normalized)
   );
   if (exact.length) return exact.slice(0, 10);
 
   // Starts with
   const startsWith = state.entries.filter(e =>
     normalizeWord(e.soninke).startsWith(normalized) ||
-    normalizeWord(e.francais).startsWith(normalized)
+    normalizeWord(e.francais).startsWith(normalized) ||
+    String(e.variantes || "").split(/[;,|]/).some(v => normalizeWord(v).startsWith(normalized))
   );
   if (startsWith.length) return startsWith.slice(0, 10);
 
   // Contains
   const contains = state.entries.filter(e =>
     normalizeWord(e.soninke).includes(normalized) ||
-    normalizeWord(e.francais).includes(normalized)
+    normalizeWord(e.francais).includes(normalized) ||
+    String(e.variantes || "").split(/[;,|]/).some(v => normalizeWord(v).includes(normalized))
   );
   return contains.slice(0, 10);
 }
@@ -239,7 +242,7 @@ function generateResponse(message) {
 
   // Help / what can you do
   if (/aide|help|que peux-tu|que pouvez-vous|capacit[ée]s|fonctionnalit[ée]s/i.test(lower)) {
-    return `**Voici ce que je peux faire :**\n\n🔤 **Traduction**\n- Demandez la traduction d'un mot en soninké ou en français\n- Ex : « Comment dit-on *partir* en soninké ? »\n\n📖 **Lexique**\n- Recherchez des mots dans le dictionnaire de référence\n- Découvrez les catégories et statuts de validation\n\n🔊 **Prononciation**\n- Certains mots disposent d'enregistrements audio de référence\n\n✺ **Culture**\n- Apprenez sur la culture soninké et son histoire\n\n💡 **Suggestions :**\n- « Traduis *bonjour* en soninké »\n- « Apprends-moi quelques mots de base »\n- « Explique-moi la culture soninké »`;
+    return `**Voici ce que je peux faire :**\n\n🔤 **Traduction**\n- Demandez la traduction d'un mot en soninké ou en français\n- Ex : « Comment dit-on *partir* en soninké ? »\n\n📖 **Lexique**\n- Recherchez des mots dans le dictionnaire de référence\n- Découvrez les mots et leurs catégories\n\n🔊 **Prononciation**\n- Certains mots disposent d'enregistrements audio de référence\n\n✺ **Culture**\n- Apprenez sur la culture soninké et son histoire\n\n💡 **Suggestions :**\n- « Traduis *bonjour* en soninké »\n- « Apprends-moi quelques mots de base »\n- « Explique-moi la culture soninké »`;
   }
 
   // Pronunciation / audio
@@ -274,10 +277,9 @@ function generateResponse(message) {
       const audio = state.audioByWord.get(normalizeWord(e.soninke));
       response = `**${e.soninke}** → ${e.francais}`;
       if (e.categorie) response += `\n\n*Catégorie :* ${e.categorie}`;
-      if (e.statut) response += `\n*Statut :* ${e.statut.replace(/_/g, " ")}`;
-      if (e.source) response += `\n*Source :* ${e.source}`;
+
       if (audio) response += `\n\n🔊 Un enregistrement audio de référence est disponible pour ce mot.`;
-      response += `\n\n*Identifiant : ${e.id}*`;
+
     } else {
       response = `J'ai trouvé **${allResults.length} résultat${allResults.length > 1 ? "s" : ""}** :\n\n`;
       for (const e of allResults.slice(0, 12)) {
@@ -674,7 +676,7 @@ function renderDictResults() {
     const fr = normalizeWord(entry.francais);
     if (dictDirection === "snk") return snk.includes(query);
     if (dictDirection === "fr") return fr.includes(query);
-    return !query || snk.includes(query) || fr.includes(query);
+    return !query || snk.includes(query) || fr.includes(query) || String(e.variantes || "").toLocaleLowerCase("fr").includes(query);
   }).slice(0, MAX_DISPLAY);
 
   const container = $("#dict-results");
@@ -688,7 +690,7 @@ function renderDictResults() {
     return `<div class="dict-card">
       <h4>${esc(e.soninke)}${audio ? " 🔊" : ""}</h4>
       <div class="dict-translation">${esc(e.francais)}</div>
-      <div class="dict-meta">${e.categorie ? esc(e.categorie) : ""}${e.statut ? " · " + esc(e.statut.replace(/_/g, " ")) : ""}</div>
+      <div class="dict-meta">${e.categorie ? esc(e.categorie) : ""}</div>
     </div>`;
   }).join("");
 }
