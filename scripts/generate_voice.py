@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Build complete lexical voice memory; optionally generate missing WAVs on a GPU.
-Never infer syllable timestamps or overwrite the original recordings.
+"""Build lexical voice memory and optionally generate missing WAVs with OmniVoice.
+Never overwrite authentic recordings; generated files remain unreviewed until human validation.
 """
 import argparse
 import csv
@@ -26,7 +26,7 @@ def valid_wav(path):
     except (wave.Error, EOFError, OSError):
         return False
 
-def build(generate=False, limit=100):
+def build(generate=False, limit=100, device="auto"):
     vocabulary = {}
     for path in sorted((ROOT / 'data').rglob('*.csv')):
         for row in rows(path):
@@ -62,13 +62,35 @@ def build(generate=False, limit=100):
         import soundfile as sf
         import torch
         from omnivoice import OmniVoice
-        if not torch.cuda.is_available():
-            raise RuntimeError('GPU CUDA requis : aucune voix de remplacement autorisée.')
-        model = OmniVoice.from_pretrained('k2-fsa/OmniVoice', device_map='cuda:0', dtype=torch.float16)
-        if not any('sonink' in str(lang).lower() for lang in model.supported_language_names()):
-            raise RuntimeError('Le modèle ne confirme pas la prise en charge du soninké.')
-        a, sr = sf.read(ROOT / 'audio/snk-00054.wav')
-        b, sr_b = sf.read(ROOT / 'audio/snk-00258.wav')
+
+        # Auto = CUDA si disponible, sinon Apple Silicon MPS, sinon CPU.
+        if device == "auto":
+            if torch.cuda.is_available():
+                target_device = "cuda:0"
+            elif getattr(torch.backends, "mps", None) and torch.backends.mps.is_available():
+                target_device = "mps"
+            else:
+                target_device = "cpu"
+        else:
+            target_device = device
+        if target_device.startswith("cuda") and not torch.cuda.is_available():
+            raise RuntimeError("CUDA demandé mais indisponible. Relance avec --device cpu ou --device auto.")
+        if target_device == "mps" and not (getattr(torch.backends, "mps", None) and torch.backends.mps.is_available()):
+            raise RuntimeError("MPS demandé mais indisponible sur cette machine.")
+        dtype = torch.float16 if target_device.startswith("cuda") else torch.float32
+        print(f"Chargement OmniVoice sur {target_device} ({dtype}) ; le CPU peut être lent et gourmand en mémoire.")
+        model = OmniVoice.from_pretrained('k2-fsa/OmniVoice', device_map=target_device, dtype=dtype)
+        language_names = {str(lang).casefold() for lang in model.supported_language_names()}
+        language_ids = {str(lang).casefold() for lang in model.supported_language_ids()}
+        if not (any('sonink' in lang for lang in language_names) or 'snk' in language_ids):
+            raise RuntimeError('Le modèle ne confirme pas la prise en charge du soninké (snk). Arrêt sans génération.')
+        ref_a = ROOT / 'audio/snk-00054.wav'
+        ref_b = ROOT / 'audio/snk-00258.wav'
+        for ref in (ref_a, ref_b):
+            if not valid_wav(ref):
+                raise FileNotFoundError(f"Référence vocale absente ou WAV invalide : {ref}. Restaure le fichier original, sans le remplacer par une voix générique.")
+        a, sr = sf.read(ref_a)
+        b, sr_b = sf.read(ref_b)
         if sr != sr_b:
             raise ValueError('Fréquences de référence incompatibles.')
         if a.ndim > 1: a = a.mean(axis=1)
@@ -78,18 +100,36 @@ def build(generate=False, limit=100):
         sf.write(reference, np.concatenate([a, np.zeros(int(.4 * sr)), b]), sr)
         batch = pending[:max(1, limit)]
         print(f'Génération du lot : {len(batch)} mots ; {max(0, len(pending) - len(batch))} mots resteront en attente.')
-        for item in batch:
+        failures = []
+        for i, item in enumerate(batch, 1):
             output_path = ROOT / item['url']
             if output_path.exists() and valid_wav(output_path):
                 continue
             if output_path.exists():
-                output_path.unlink()
-            result = model.generate(text=item['text'], language='soninke', ref_audio=str(reference), ref_text='Daga goli. Li taxu.', num_step=32)
-            samples = np.asarray(result[0]).squeeze()
-            if samples.ndim != 1 or not samples.size or not np.isfinite(samples).all():
-                raise ValueError(f"Audio invalide : {item['text']}")
-            sf.write(output_path, samples, int(model.sampling_rate), subtype='PCM_16')
-        return build(False, limit)
+                output_path.unlink()  # fichier généré invalide uniquement; les WAV originaux ne sont jamais touchés
+            try:
+                result = model.generate(text=item['text'], language='snk', ref_audio=str(reference), ref_text='Daga goli. Li taxu.', num_step=32)
+                samples = np.asarray(result[0]).squeeze()
+                if samples.ndim != 1 or not samples.size or not np.isfinite(samples).all():
+                    raise ValueError('sortie audio vide ou invalide')
+                temp_path = output_path.with_suffix('.tmp.wav')
+                sf.write(temp_path, samples, int(model.sampling_rate), subtype='PCM_16')
+                if not valid_wav(temp_path):
+                    temp_path.unlink(missing_ok=True)
+                    raise ValueError('le WAV créé n’a pas passé le contrôle technique')
+                temp_path.replace(output_path)
+                print(f'[{i}/{len(batch)}] WAV créé (à écouter) : {item["text"]}')
+            except Exception as exc:
+                failures.append((item['text'], str(exc)))
+                print(f'[{i}/{len(batch)}] ÉCHEC — {item["text"]}: {exc}')
+        if failures:
+            report = ROOT / 'data/voice-generation-errors.csv'
+            with report.open('w', encoding='utf-8', newline='') as handle:
+                writer = csv.writer(handle)
+                writer.writerow(['soninke', 'erreur'])
+                writer.writerows(failures)
+            print(f'{len(failures)} échec(s) consignés dans {report.relative_to(ROOT)} ; ils pourront être retentés au prochain lancement.')
+        return build(False, limit, device)
     memory = {'model': 'k2-fsa/OmniVoice', 'references': ['audio/snk-00054.wav', 'audio/snk-00258.wav'], 'audio': list(audio.values()), 'pending': pending, 'syllables': [], 'note': 'Les clones générés restent non validés jusqu’à écoute humaine. Aucun WAV original n’est écrasé.'}
     (ROOT / 'data/voice-memory.json').write_text(json.dumps(memory, ensure_ascii=False, indent=2) + '\n')
     print(f'{len(audio)} WAV indexés ; {len(pending)} formes en attente.')
@@ -99,5 +139,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--generate', action='store_true')
     parser.add_argument('--limit', type=int, default=100, help='Nombre maximum de nouveaux WAV à générer par exécution (défaut : 100).')
+    parser.add_argument('--device', choices=['auto', 'cpu', 'cuda', 'mps'], default='auto', help='Périphérique d’inférence ; auto choisit CUDA, puis MPS, puis CPU.')
     args = parser.parse_args()
-    build(args.generate, args.limit)
+    build(args.generate, args.limit, args.device)
