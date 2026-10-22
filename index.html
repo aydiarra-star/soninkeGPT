@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#171612">
-  <meta name="description" content="SoninkeGPT — Assistant conversationnel pour la langue soninké, traduction, apprentissage et culture.">
-  <title>SoninkeGPT — Assistant conversationnel soninké</title>
+  <meta name="theme-color" content="#C99822">
+  <meta name="description" content="SoninkeGPT — Assistant conversationnel et vocal pour la langue soninké, traduction, prononciation audio, apprentissage et culture.">
+  <title>SoninkeGPT — Assistant conversationnel &amp; vocal soninké</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,12 +20,12 @@
         <span class="brand-mark">S</span>
         <span class="brand-name">SoninkeGPT</span>
       </a>
-      <button class="sidebar-toggle" id="sidebar-close" aria-label="Fermer le menu">
+      <button type="button" class="sidebar-close sidebar-toggle" id="sidebar-close" aria-label="Fermer le menu">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
       </button>
     </div>
 
-    <button class="new-chat-btn" id="new-chat-btn">
+    <button type="button" class="new-chat-btn" id="new-chat-btn">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
       Nouvelle discussion
     </button>
@@ -41,12 +41,16 @@
 
     <div class="sidebar-bottom">
       <div class="sidebar-section">
-        <button class="sidebar-action" id="dictionary-btn">
+        <button type="button" class="sidebar-action" id="dictionary-btn">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-          Lexique soninké
+          Lexique &amp; Audios
           <span class="badge" id="lexicon-count">—</span>
         </button>
-        <button class="sidebar-action" id="settings-btn">
+        <button type="button" class="sidebar-action" id="sidebar-voice-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"/></svg>
+          Assistant vocal soninké
+        </button>
+        <button type="button" class="sidebar-action" id="settings-btn">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
           Paramètres
         </button>
@@ -62,17 +66,21 @@
     <!-- Top bar -->
     <header class="topbar" id="topbar">
       <div class="topbar-left">
-        <button class="menu-btn" id="menu-btn" aria-label="Ouvrir le menu">
+        <button type="button" class="menu-btn" id="menu-btn" aria-label="Ouvrir le menu">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
         </button>
-        <button class="new-chat-btn-top" id="new-chat-btn-top" aria-label="Nouvelle discussion">
+        <button type="button" class="new-chat-btn-top" id="new-chat-btn-top" aria-label="Nouvelle discussion">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
         </button>
         <h1 class="topbar-title" id="topbar-title">Nouvelle discussion</h1>
       </div>
       <div class="topbar-right">
         <span class="corpus-status" id="corpus-status">Chargement…</span>
-        <button class="theme-toggle" id="theme-toggle" aria-label="Changer le thème">
+        <button type="button" class="topbar-voice-toggle" id="topbar-voice-btn" aria-pressed="false" title="Activer ou désactiver la réponse vocale automatique">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+          <span id="topbar-voice-label">Réponse audio</span>
+        </button>
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Changer le thème">
           <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
           <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         </button>
@@ -87,22 +95,30 @@
           <div class="welcome-logo">
             <span class="welcome-mark">S</span>
           </div>
-          <h2 class="welcome-title">A jaara ! 👋</h2>
+          <h2 class="welcome-title">Xa wouy Diom ! 👋</h2>
           <p class="welcome-subtitle">Je suis SoninkeGPT, votre assistant conversationnel pour la langue soninké. Je peux vous aider avec la traduction, l'apprentissage, la culture et bien plus encore.</p>
+          <div class="welcome-quick-audio">
+            <button type="button" class="welcome-voice-pill" id="welcome-greet-audio-btn">
+              🔊 Écouter « Xa wouy Diom ! »
+            </button>
+            <button type="button" class="welcome-voice-pill welcome-mic-pill" id="welcome-mic-btn">
+              🎤 Parler en vocal
+            </button>
+          </div>
           <div class="suggestions" id="suggestions">
-            <button class="suggestion-card" data-prompt="Traduis « bonjour » en soninké">
+            <button type="button" class="suggestion-card" data-prompt="Traduis « bonjour » en soninké">
               <span class="suggestion-icon">⇄</span>
               <span class="suggestion-text">Traduis « bonjour » en soninké</span>
             </button>
-            <button class="suggestion-card" data-prompt="Apprends-moi quelques mots de base en soninké">
+            <button type="button" class="suggestion-card" data-prompt="Apprends-moi quelques mots de base en soninké">
               <span class="suggestion-icon">📖</span>
               <span class="suggestion-text">Apprends-moi quelques mots de base en soninké</span>
             </button>
-            <button class="suggestion-card" data-prompt="Explique-moi la culture soninké">
+            <button type="button" class="suggestion-card" data-prompt="Explique-moi la culture soninké">
               <span class="suggestion-icon">✺</span>
               <span class="suggestion-text">Explique-moi la culture soninké</span>
             </button>
-            <button class="suggestion-card" data-prompt="Comment dit-on « merci » en soninké ?">
+            <button type="button" class="suggestion-card" data-prompt="Comment dit-on « merci » en soninké ?">
               <span class="suggestion-icon">💬</span>
               <span class="suggestion-text">Comment dit-on « merci » en soninké ?</span>
             </button>
@@ -119,13 +135,33 @@
     <!-- Input Area -->
     <div class="input-area" id="input-area">
       <div class="input-wrapper">
-        <div class="input-container">
-          <textarea id="message-input" placeholder="Envoyer un message à SoninkeGPT…" rows="1" autocomplete="off"></textarea>
-          <button class="send-btn" id="send-btn" disabled aria-label="Envoyer">
+        <!-- Live Voice Assistant Panel -->
+        <div class="voice-status" id="voice-status" hidden>
+          <div class="voice-wave" id="voice-wave" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <span class="voice-timer" id="voice-timer" hidden>00:00</span>
+          <span class="voice-status-text" id="voice-status-text">Je vous écoute…</span>
+          <div class="voice-panel-actions" id="voice-panel-actions" hidden>
+            <button type="button" class="voice-finish-btn" id="voice-finish-btn">Envoyer</button>
+            <button type="button" class="voice-cancel-btn" id="voice-cancel-btn" aria-label="Annuler">✕</button>
+          </div>
+        </div>
+
+        <form class="input-container" id="chat-form" action="#" autocomplete="off">
+          <textarea id="message-input" placeholder="Envoyer un message à SoninkeGPT…" rows="1" autocomplete="off" enterkeyhint="send" lang="fr"></textarea>
+          <button type="button" class="voice-reply-btn" id="voice-reply-btn" aria-pressed="false" aria-label="Réponse vocale automatique" title="Activer / désactiver la réponse en audio vocal">
+            <svg class="voice-on-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+            <svg class="voice-off-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M23 9l-6 6M17 9l6 6"/></svg>
+          </button>
+          <button type="button" class="mic-btn" id="mic-btn" aria-label="Assistant vocal soninké (écouter, enregistrer et répondre en soninké)" title="Assistant vocal : écouter, enregistrer et répondre en soninké">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"/></svg>
+          </button>
+          <button type="submit" class="send-btn enabled" id="send-btn" aria-label="Envoyer">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
           </button>
-        </div>
-        <p class="input-disclaimer">SoninkeGPT utilise le lexique soninké–français de référence. Les réponses sont générées à partir du corpus existant.</p>
+        </form>
+        <p class="input-disclaimer">Entrée = réponse automatique immédiate · 🎤 Assistant vocal (écoute, enregistre &amp; répond en soninké) · 🔊 Audios intégrés &amp; réponse vocale.</p>
       </div>
     </div>
   </main>
@@ -136,7 +172,7 @@
   <div class="modal" role="dialog" aria-label="Paramètres">
     <div class="modal-header">
       <h3>Paramètres</h3>
-      <button class="modal-close" id="settings-close" aria-label="Fermer">
+      <button type="button" class="modal-close" id="settings-close" aria-label="Fermer">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
       </button>
     </div>
@@ -144,27 +180,39 @@
       <div class="setting-group">
         <label>Thème</label>
         <div class="theme-options">
-          <button class="theme-option" data-theme="light">
+          <button type="button" class="theme-option" data-theme="light">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-            Clair
+            Doré (par défaut)
           </button>
-          <button class="theme-option" data-theme="dark">
+          <button type="button" class="theme-option" data-theme="dark">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-            Sombre
+            Sombre &amp; Or
           </button>
-          <button class="theme-option" data-theme="auto">
+          <button type="button" class="theme-option" data-theme="auto">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
             Système
           </button>
         </div>
       </div>
       <div class="setting-group">
+        <label>Assistant vocal &amp; réponses audio</label>
+        <div class="setting-row">
+          <div>
+            <p class="setting-info">Réponses vocales automatiques : SoninkeGPT répond en audio vocal (audios soninké intégrés du corpus + prononciation vocale).</p>
+          </div>
+          <button type="button" class="switch" id="voice-replies-switch" role="switch" aria-checked="false" aria-label="Réponses vocales automatiques">
+            <span class="switch-thumb"></span>
+          </button>
+        </div>
+        <p class="setting-info setting-voice-note">Le bouton micro (🎤) à côté de la touche Entrer écoute votre voix, l'enregistre et vous répond directement en soninké.</p>
+      </div>
+      <div class="setting-group">
         <label>Données</label>
-        <button class="danger-btn" id="clear-all-data">Supprimer toutes les conversations</button>
+        <button type="button" class="danger-btn" id="clear-all-data">Supprimer toutes les conversations</button>
       </div>
       <div class="setting-group">
         <label>À propos</label>
-        <p class="setting-info">SoninkeGPT est un projet communautaire dédié à la préservation et à la transmission de la langue soninké. Le lexique contient <strong id="about-count">—</strong> entrées validées.</p>
+        <p class="setting-info">SoninkeGPT est un projet communautaire dédié à la préservation et à la transmission de la langue soninké. Le corpus rassemble <strong id="about-count">—</strong> entrées lexicales et <strong id="about-audio-count">—</strong> enregistrements audio actifs.</p>
       </div>
       <div class="setting-group">
         <label>Ressources</label>
@@ -183,23 +231,24 @@
   </div>
 </div>
 
-<!-- Dictionary Panel Modal -->
+<!-- Dictionary & Audio Panel Modal -->
 <div class="modal-overlay" id="dictionary-modal">
-  <div class="modal modal-wide" role="dialog" aria-label="Lexique soninké">
+  <div class="modal modal-wide" role="dialog" aria-label="Lexique et audios soninké">
     <div class="modal-header">
-      <h3>📚 Lexique soninké–français</h3>
-      <button class="modal-close" id="dictionary-close" aria-label="Fermer">
+      <h3>📚 Lexique &amp; Audios soninké–français</h3>
+      <button type="button" class="modal-close" id="dictionary-close" aria-label="Fermer">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
       </button>
     </div>
     <div class="modal-body">
       <div class="dict-search-row">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-        <input type="search" id="dict-search" placeholder="Rechercher un mot…" autocomplete="off">
+        <input type="search" id="dict-search" placeholder="Rechercher un mot ou un audio…" autocomplete="off">
         <div class="dict-filters">
-          <button class="dict-filter active" data-dir="all">Tout</button>
-          <button class="dict-filter" data-dir="snk">Soninké</button>
-          <button class="dict-filter" data-dir="fr">Français</button>
+          <button type="button" class="dict-filter active" data-dir="all">Tout</button>
+          <button type="button" class="dict-filter" data-dir="snk">Soninké</button>
+          <button type="button" class="dict-filter" data-dir="fr">Français</button>
+          <button type="button" class="dict-filter" data-dir="audio">🔊 Audios</button>
         </div>
       </div>
       <div class="dict-results" id="dict-results">
@@ -218,8 +267,8 @@
     <div class="modal-body">
       <p>Êtes-vous sûr de vouloir supprimer cette conversation ? Cette action est irréversible.</p>
       <div class="modal-actions">
-        <button class="btn-secondary" id="delete-cancel">Annuler</button>
-        <button class="btn-danger" id="delete-confirm">Supprimer</button>
+        <button type="button" class="btn-secondary" id="delete-cancel">Annuler</button>
+        <button type="button" class="btn-danger" id="delete-confirm">Supprimer</button>
       </div>
     </div>
   </div>
@@ -227,11 +276,11 @@
 
 <!-- Context Menu -->
 <div class="context-menu" id="context-menu">
-  <button class="context-item" data-action="rename">
+  <button type="button" class="context-item" data-action="rename">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
     Renommer
   </button>
-  <button class="context-item" data-action="delete">
+  <button type="button" class="context-item" data-action="delete">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
     Supprimer
   </button>
