@@ -26,7 +26,7 @@ def valid_wav(path):
     except (wave.Error, EOFError, OSError):
         return False
 
-def build(generate=False, limit=100, device="auto"):
+def build(generate=False, limit=20, device="auto"):
     vocabulary = {}
     for path in sorted((ROOT / 'data').rglob('*.csv')):
         for row in rows(path):
@@ -138,7 +138,7 @@ def build(generate=False, limit=100, device="auto"):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--generate', action='store_true')
-    parser.add_argument('--limit', type=int, default=100, help='Nombre maximum de nouveaux WAV à générer par exécution (défaut : 100).')
+    parser.add_argument('--limit', type=int, default=20, help='Nombre maximum de nouveaux WAV à générer par exécution (défaut : 20).')
     parser.add_argument('--device', choices=['auto', 'cpu', 'cuda', 'mps'], default='auto', help='Périphérique d’inférence ; auto choisit CUDA, puis MPS, puis CPU.')
     args = parser.parse_args()
     build(args.generate, args.limit, args.device)
