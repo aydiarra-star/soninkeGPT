@@ -1362,9 +1362,9 @@ SNK-LEX-1336;yontono;pousser (gérondif / inaccompli de yonto);verbe_gerondif;"s
 SNK-LEX-1337;Xa wouy Diom;bonjour ! (salutation respectueuse / pluriel);expression;validation_referent_utilisateur;fourni_par_referent;;
 SNK-LEX-1338;baaga;margouillat, lézard;nom;Dictionnaire soninké.docx;candidat_dictionnaire_a_verifier;baagane, bakkan, baxan;"baaga Variant: baagane; bakkan; baxan. Nom . lizard; margouillat, lézard. Category: Animal. Note: D2 Plural suffix: -nu."
 SNK-LEX-1339;Daga goli;partir travailler;expression;validation_referent_utilisateur;valide_par_referent;;Daga goli
-SNK-LEX-1340;Daga iige;aller manger ; va manger;expression;validation_referent_utilisateur;valide_par_referent;;Daga iige
-SNK-LEX-1341;Daga sohu;aller dormir ; va dormir;expression;validation_referent_utilisateur;valide_par_referent;;Daga sohu
-SNK-LEX-1342;Li taxu;viens t’asseoir ; venir s’asseoir;expression;validation_referent_utilisateur;valide_par_referent;;Li taxu
+SNK-LEX-1340;Daga iige;"aller manger ; va manger";expression;validation_referent_utilisateur;valide_par_referent;;Daga iige
+SNK-LEX-1341;Daga sohu;"aller dormir ; va dormir";expression;validation_referent_utilisateur;valide_par_referent;;Daga sohu
+SNK-LEX-1342;Li taxu;"viens t’asseoir ; venir s’asseoir";expression;validation_referent_utilisateur;valide_par_referent;;Li taxu
 SNK-LEX-1343;Mpai reni;j’arrive (reni = venir);expression;validation_referent_utilisateur;valide_par_referent;;Mpai reni
 SNK-LEX-1344;Mpai telle;je pars (telle = partir);expression;validation_referent_utilisateur;valide_par_referent;;Mpai telle
 SNK-LEX-1345;baabe;chacun;nom;validation_referent_utilisateur;valide_par_referent;;
@@ -1374,32 +1374,32 @@ SNK-LEX-1348;bahaade;drap, couvre-lit;nom;validation_referent_utilisateur;valide
 SNK-LEX-1349;bahe;antichambre, vestibule;nom;validation_referent_utilisateur;valide_par_referent;;
 SNK-LEX-1350;bahi;étaler, répandre — verbe boyi;lexeme;validation_referent_utilisateur;valide_par_referent;;
 SNK-LEX-1351;bahido;tapis de selle;nom;validation_referent_utilisateur;valide_par_referent;;
-SNK-LEX-1352;bajjo;couverture en laine ; fils unique ; variété de cheval;nom;validation_referent_utilisateur;valide_par_referent;;
+SNK-LEX-1352;bajjo;"couverture en laine ; fils unique ; variété de cheval";nom;validation_referent_utilisateur;valide_par_referent;;
 SNK-LEX-1353;bakkaane;margouillat, lézard;nom;validation_referent_utilisateur;valide_par_referent;;
-SNK-LEX-1354;bakkande;soustraction ; sortie;nom;validation_referent_utilisateur;valide_par_referent;;
-SNK-LEX-1355;balawu;épidémie ; accident ; incident;nom;validation_referent_utilisateur;valide_par_referent;;
+SNK-LEX-1354;bakkande;"soustraction ; sortie";nom;validation_referent_utilisateur;valide_par_referent;;
+SNK-LEX-1355;balawu;"épidémie ; accident ; incident";nom;validation_referent_utilisateur;valide_par_referent;;
 SNK-LEX-1356;balaxa;margouillat, scinque;nom;validation_referent_utilisateur;valide_par_referent;;
 SNK-LEX-1357;balla;refuser, se révolter;verbe;validation_referent_utilisateur;valide_par_referent;bara;
 SNK-LEX-1358;banbuxu;sud;nom;validation_referent_utilisateur;valide_par_referent;;
 SNK-LEX-1359;bandi;premier lait d’un animal après la mise bas;nom;validation_referent_utilisateur;valide_par_referent;;
 SNK-LEX-1360;bapoore;capitaine (poisson);nom;validation_referent_utilisateur;valide_par_referent;;
-SNK-LEX-1361;baqa;agression ; provocation;nom;validation_referent_utilisateur;valide_par_referent;;
+SNK-LEX-1361;baqa;"agression ; provocation";nom;validation_referent_utilisateur;valide_par_referent;;
 SNK-LEX-1362;baramaneene;rate (organe);nom;validation_referent_utilisateur;valide_par_referent;;
 SNK-LEX-1363;bari;parce que;conjonction;validation_referent_utilisateur;valide_par_referent;;
-SNK-LEX-1364;barike;bénédiction ; prospérité ; protection ; force;nom;validation_referent_utilisateur;valide_par_referent;;
-SNK-LEX-1365;barimanda;pourquoi ; pour quelle raison;expression;validation_referent_utilisateur;valide_par_referent;birimanda;
+SNK-LEX-1364;barike;"bénédiction ; prospérité ; protection ; force";nom;validation_referent_utilisateur;valide_par_referent;;
+SNK-LEX-1365;barimanda;"pourquoi ; pour quelle raison";expression;validation_referent_utilisateur;valide_par_referent;birimanda;
 SNK-LEX-1366;barisa;parce que;conjonction;validation_referent_utilisateur;valide_par_referent;;
-SNK-LEX-1367;bataxi;badigeonner ; plâtrer ; salir;verbe;validation_referent_utilisateur;valide_par_referent;;
-SNK-LEX-1368;batta;suivre ; louer/adorer;verbe;validation_referent_utilisateur;valide_par_referent;;
-SNK-LEX-1369;battamexe;successeur ; adjoint;nom;validation_referent_utilisateur;valide_par_referent;;
-SNK-LEX-1370;battaxe;lettre ; message;nom;validation_referent_utilisateur;valide_par_referent;;
+SNK-LEX-1367;bataxi;"badigeonner ; plâtrer ; salir";verbe;validation_referent_utilisateur;valide_par_referent;;
+SNK-LEX-1368;batta;"suivre ; louer/adorer";verbe;validation_referent_utilisateur;valide_par_referent;;
+SNK-LEX-1369;battamexe;"successeur ; adjoint";nom;validation_referent_utilisateur;valide_par_referent;;
+SNK-LEX-1370;battaxe;"lettre ; message";nom;validation_referent_utilisateur;valide_par_referent;;
 SNK-LEX-1371;bawo;parce que;conjonction;validation_referent_utilisateur;valide_par_referent;;
-SNK-LEX-1372;bawoni;parce que ; car;conjonction;validation_referent_utilisateur;valide_par_referent;;
+SNK-LEX-1372;bawoni;"parce que ; car";conjonction;validation_referent_utilisateur;valide_par_referent;;
 SNK-LEX-1373;bawuri;parce que;conjonction;validation_referent_utilisateur;valide_par_referent;;
 SNK-LEX-1374;baxaane;margouillat, lézard;nom;validation_referent_utilisateur;valide_par_referent;;
 SNK-LEX-1375;bayaade;drap, couvre-lit;nom;validation_referent_utilisateur;valide_par_referent;;
 SNK-LEX-1376;bayi;étaler, répandre — verbe boyi;lexeme;validation_referent_utilisateur;valide_par_referent;boye;
 SNK-LEX-1377;bayidi;parce que;conjonction;validation_referent_utilisateur;valide_par_referent;;
-SNK-LEX-1378;bedege;plante qui repousse après avoir été coupée ; buisson;nom;validation_referent_utilisateur;valide_par_referent;;
+SNK-LEX-1378;bedege;"plante qui repousse après avoir été coupée ; buisson";nom;validation_referent_utilisateur;valide_par_referent;;
 SNK-LEX-1379;beeteye;moment entre 9 h et 10 h;expression;validation_referent_utilisateur;valide_par_referent;;
 SNK-LEX-1380;belifata;cache-sexe féminin;nom;validation_referent_utilisateur;valide_par_referent;;
