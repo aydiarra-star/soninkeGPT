@@ -55,8 +55,11 @@ def build(generate=False, limit=20, device="auto"):
             )
             if not text:
                 continue
-            # Retire uniquement un éventuel numéro de ligne placé au début.
+            # Retire un numéro de ligne au début et les chiffres de désambiguïsation
+            # placés à la fin (ex. ba1, ba2, baabo1). Les formes normalisées
+            # sont dédupliquées avant génération afin de ne pas prononcer les chiffres.
             text = re.sub(r"^\s*\d+\s*[-.:)]?\s*", "", text).strip()
+            text = re.sub(r"\d+$", "", text).strip()
             if not text:
                 continue
             french = next(
@@ -83,6 +86,20 @@ def build(generate=False, limit=20, device="auto"):
                     {"text": text, "source": "app.js:PHRASEBOOK", "francais": ""},
                 )
 
+    # Conserve les validations humaines déjà inscrites dans le manifeste précédent.
+    previous_memory_path = ROOT / "data/voice-memory.json"
+    previous_audio = {}
+    if previous_memory_path.exists():
+        try:
+            previous_memory = json.loads(previous_memory_path.read_text(encoding="utf-8"))
+            previous_audio = {
+                key(item.get("text", "")): item
+                for item in previous_memory.get("audio", [])
+                if item.get("text")
+            }
+        except (json.JSONDecodeError, OSError):
+            previous_audio = {}
+
     audio = {}
     manifest = ROOT / "data/source/manifest-577-review.csv"
     if manifest.exists():
@@ -108,6 +125,16 @@ def build(generate=False, limit=20, device="auto"):
             else:
                 # Only generated files are considered here; original audio/ files are untouched.
                 path.unlink()
+
+    # Restaure les métadonnées de validation humaine après chaque reconstruction.
+    for normalized, item in audio.items():
+        previous = previous_audio.get(normalized)
+        if previous and previous.get("linguistic_validation"):
+            item["linguistic_validation"] = previous["linguistic_validation"]
+            if previous.get("validation_date"):
+                item["validation_date"] = previous["validation_date"]
+            if previous.get("kind") == "voice_clone_validated":
+                item["kind"] = "voice_clone_validated"
 
     # Add known French translations to audio entries without overwriting existing translations.
     for normalized, item in vocabulary.items():
