@@ -76,7 +76,7 @@ jobs:
                   and str(p.get('text', '')).strip().casefold() not in existing_texts
               )
           ]
-          target_path.write_text(json.dumps(target, ensure_ascii=False, indent=2) + '\\n', encoding='utf-8')
+          target_path.write_text(json.dumps(target, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
           record = {
             'batch': 'OmniVoice lot de 100 mots',
             'source_workflow_run': 39921977548,
@@ -91,7 +91,7 @@ jobs:
           records = json.loads(record_path.read_text(encoding='utf-8')) if record_path.exists() else []
           records = [r for r in records if r.get('source_workflow_run') != 39921977548]
           records.append(record)
-          record_path.write_text(json.dumps(records, ensure_ascii=False, indent=2) + '\\n', encoding='utf-8')
+          record_path.write_text(json.dumps(records, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
           print(f'WAV copiés sans écraser les existants: {copied}; entrées audio ajoutées: {added}')
           PY
       - name: Vérifier les nouveaux WAV et le manifeste
@@ -119,7 +119,7 @@ jobs:
                   bad.append(f'{p}: {e}')
           print(f'WAV présents et lisibles: {checked}; erreurs: {len(bad)}')
           if bad:
-              print('\\n'.join(bad))
+              print('\n'.join(bad))
               raise SystemExit(1)
           PY
       - name: Committer le lot approuvé directement dans main
