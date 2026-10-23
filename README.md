@@ -11,11 +11,15 @@ le patrimoine linguistique déjà constitué dans
 
 - **Parler et écouter** : micro, enregistrement et réponses lues avec la voix
   de référence du corpus.
-- **Traduction** français ↔ soninké, uniquement avec des formes attestées.
+- **Traduction** français ↔ soninké, uniquement avec des formes attestées ;
+  le moteur peut aussi **composer des phrases grammaticalement** (Sujet +
+  Auxiliaire/Marqueur + Objet + Verbe, ou Sujet + Verbe + Complément) à partir
+  du lexique attesté, avec explication pédagogique et signalement explicite
+  de tout mot manquant, jamais inventé.
 - **Niveaux d'apprentissage** : débutant, intermédiaire, avancé.
 - **Favoris** : enregistrer un mot, une phrase ou une expression et le
   réécouter plus tard.
-- **Lexique et audios** : 1 414 entrées et 842 audios indexés (enregistrements historiques et audios
+- **Lexique et audios** : 1 416 entrées et 842 audios indexés (enregistrements historiques et audios
   générés, avec leurs statuts de validation), filtrables par soninké, français ou audio.
 - **Contrôle linguistique** : aucune forme bambara, malinké, peul, wolof,
   dioula ou arabe présentée comme du soninké ; les formes non vérifiées sont
