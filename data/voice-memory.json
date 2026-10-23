@@ -3466,140 +3466,260 @@
       "source": "data/candidates/external-lexicon-candidates.csv",
       "francais": "Étrier",
       "url": "audio/generated/a5260fe3a52a42937a08c817.wav",
-      "kind": "voice_clone_unreviewed"
+      "kind": "voice_clone_unreviewed",
+      "validation": {
+        "voix": "confirmée par le référent linguistique",
+        "prononciation": "validée par le référent linguistique",
+        "date": "2026-10-23",
+        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
+      }
     },
     {
       "text": "Alimaami",
       "source": "data/candidates/external-lexicon-candidates.csv",
       "francais": "Imam; Alimamy (prénom masculin)",
       "url": "audio/generated/e9d29b08e5aa5f7df96d8b6b.wav",
-      "kind": "voice_clone_unreviewed"
+      "kind": "voice_clone_unreviewed",
+      "validation": {
+        "voix": "confirmée par le référent linguistique",
+        "prononciation": "validée par le référent linguistique",
+        "date": "2026-10-23",
+        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
+      }
     },
     {
       "text": "Aliyatiime",
       "source": "data/candidates/external-lexicon-candidates.csv",
       "francais": "Orphelin",
       "url": "audio/generated/5d2b44b4007c6be67d335720.wav",
-      "kind": "voice_clone_unreviewed"
+      "kind": "voice_clone_unreviewed",
+      "validation": {
+        "voix": "confirmée par le référent linguistique",
+        "prononciation": "validée par le référent linguistique",
+        "date": "2026-10-23",
+        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
+      }
     },
     {
       "text": "Ala",
       "source": "data/candidates/external-lexicon-candidates.csv",
       "francais": "Allah; Dieu",
       "url": "audio/generated/df0492b9b264441832d8a3fc.wav",
-      "kind": "voice_clone_unreviewed"
+      "kind": "voice_clone_unreviewed",
+      "validation": {
+        "voix": "confirmée par le référent linguistique",
+        "prononciation": "validée par le référent linguistique",
+        "date": "2026-10-23",
+        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
+      }
     },
     {
       "text": "allanbatte",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "adoration de Dieu",
       "url": "audio/generated/294f9428fa7d551db27764bd.wav",
-      "kind": "voice_clone_unreviewed"
+      "kind": "voice_clone_unreviewed",
+      "validation": {
+        "voix": "confirmée par le référent linguistique",
+        "prononciation": "validée par le référent linguistique",
+        "date": "2026-10-23",
+        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
+      }
     },
     {
       "text": "abada",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "jamais",
       "url": "audio/generated/91f1c0039cded5d936ca11ba.wav",
-      "kind": "voice_clone_unreviewed"
+      "kind": "voice_clone_unreviewed",
+      "validation": {
+        "voix": "confirmée par le référent linguistique",
+        "prononciation": "validée par le référent linguistique",
+        "date": "2026-10-23",
+        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
+      }
     },
     {
       "text": "alaxamisa",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "jeudi",
       "url": "audio/generated/bbf9127ed35a0f511f690923.wav",
-      "kind": "voice_clone_unreviewed"
+      "kind": "voice_clone_unreviewed",
+      "validation": {
+        "voix": "confirmée par le référent linguistique",
+        "prononciation": "validée par le référent linguistique",
+        "date": "2026-10-23",
+        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
+      }
     },
     {
       "text": "alijuma",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "vendredi",
       "url": "audio/generated/d4cc72a82adf9e0d2491b22c.wav",
-      "kind": "voice_clone_unreviewed"
+      "kind": "voice_clone_unreviewed",
+      "validation": {
+        "voix": "confirmée par le référent linguistique",
+        "prononciation": "validée par le référent linguistique",
+        "date": "2026-10-23",
+        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
+      }
     },
     {
       "text": "alikaati",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "policier",
       "url": "audio/generated/d9c37bd764c55f705d32f2b1.wav",
-      "kind": "voice_clone_unreviewed"
+      "kind": "voice_clone_unreviewed",
+      "validation": {
+        "voix": "confirmée par le référent linguistique",
+        "prononciation": "validée par le référent linguistique",
+        "date": "2026-10-23",
+        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
+      }
     },
     {
       "text": "alimeeti",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "allumette",
       "url": "audio/generated/4dd88e61b2b55dc3f8b520bf.wav",
-      "kind": "voice_clone_unreviewed"
+      "kind": "voice_clone_unreviewed",
+      "validation": {
+        "voix": "confirmée par le référent linguistique",
+        "prononciation": "validée par le référent linguistique",
+        "date": "2026-10-23",
+        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
+      }
     },
     {
       "text": "an moxo",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "bonjour, comment ça va ? (singulier)",
       "url": "audio/generated/a5ec543015bdbb9678916bc6.wav",
-      "kind": "voice_clone_unreviewed"
+      "kind": "voice_clone_unreviewed",
+      "validation": {
+        "voix": "confirmée par le référent linguistique",
+        "prononciation": "validée par le référent linguistique",
+        "date": "2026-10-23",
+        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
+      }
     },
     {
       "text": "an janmu",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "ton nom de famille",
       "url": "audio/generated/7e27189524149d7700a735e3.wav",
-      "kind": "voice_clone_unreviewed"
+      "kind": "voice_clone_unreviewed",
+      "validation": {
+        "voix": "confirmée par le référent linguistique",
+        "prononciation": "validée par le référent linguistique",
+        "date": "2026-10-23",
+        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
+      }
     },
     {
       "text": "an mpay kan ciine",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "Quel âge as-tu ?",
       "url": "audio/generated/8e5eb36fd02a03e92df80c6d.wav",
-      "kind": "voice_clone_unreviewed"
+      "kind": "voice_clone_unreviewed",
+      "validation": {
+        "voix": "confirmée par le référent linguistique",
+        "prononciation": "validée par le référent linguistique",
+        "date": "2026-10-23",
+        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
+      }
     },
     {
       "text": "an li haranci kan ciine yi",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "en quelle année es-tu arrivé en France ?",
       "url": "audio/generated/7b4a7e59a68c00f767a764a4.wav",
-      "kind": "voice_clone_unreviewed"
+      "kind": "voice_clone_unreviewed",
+      "validation": {
+        "voix": "confirmée par le référent linguistique",
+        "prononciation": "validée par le référent linguistique",
+        "date": "2026-10-23",
+        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
+      }
     },
     {
       "text": "an la wa soninkankanen cahana ba",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "sais-tu écrire le soninké ?",
       "url": "audio/generated/f7c9756c9d9e0b55bbb70d96.wav",
-      "kind": "voice_clone_unreviewed"
+      "kind": "voice_clone_unreviewed",
+      "validation": {
+        "voix": "confirmée par le référent linguistique",
+        "prononciation": "validée par le référent linguistique",
+        "date": "2026-10-23",
+        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
+      }
     },
     {
       "text": "an kayen koy i nga",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "montre-moi ton cahier",
       "url": "audio/generated/36d5958293f983fae3b4199f.wav",
-      "kind": "voice_clone_unreviewed"
+      "kind": "voice_clone_unreviewed",
+      "validation": {
+        "voix": "confirmée par le référent linguistique",
+        "prononciation": "validée par le référent linguistique",
+        "date": "2026-10-23",
+        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
+      }
     },
     {
       "text": "an kitaaben qa",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "où est ton livre ?",
       "url": "audio/generated/6f6e83297f8678b48566bef1.wav",
-      "kind": "voice_clone_unreviewed"
+      "kind": "voice_clone_unreviewed",
+      "validation": {
+        "voix": "confirmée par le référent linguistique",
+        "prononciation": "validée par le référent linguistique",
+        "date": "2026-10-23",
+        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
+      }
     },
     {
       "text": "alahadi",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "dimanche",
       "url": "audio/generated/2369d1d39ed868c0b5118a3d.wav",
-      "kind": "voice_clone_unreviewed"
+      "kind": "voice_clone_unreviewed",
+      "validation": {
+        "voix": "confirmée par le référent linguistique",
+        "prononciation": "validée par le référent linguistique",
+        "date": "2026-10-23",
+        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
+      }
     },
     {
       "text": "allanbatte1",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
       "francais": "adoration de Dieu",
       "url": "audio/generated/d2a7447825640beb10f229d8.wav",
-      "kind": "voice_clone_unreviewed"
+      "kind": "voice_clone_unreviewed",
+      "validation": {
+        "voix": "confirmée par le référent linguistique",
+        "prononciation": "validée par le référent linguistique",
+        "date": "2026-10-23",
+        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
+      }
     },
     {
       "text": "-bali",
       "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
       "francais": "manque de",
       "url": "audio/generated/74097eb0f3a144ab4f21f5e3.wav",
-      "kind": "voice_clone_unreviewed"
+      "kind": "voice_clone_unreviewed",
+      "validation": {
+        "voix": "confirmée par le référent linguistique",
+        "prononciation": "validée par le référent linguistique",
+        "date": "2026-10-23",
+        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
+      }
     }
   ],
   "pending": [
