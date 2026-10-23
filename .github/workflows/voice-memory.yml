@@ -12,6 +12,16 @@ on:
       - 'scripts/upload_review_to_drive.py'
       - '.github/workflows/voice-memory.yml'
   workflow_dispatch:
+    inputs:
+      batch_limit:
+        description: "Nombre de nouveaux WAV à produire"
+        required: true
+        default: "20"
+        type: choice
+        options:
+          - "20"
+          - "50"
+          - "100"
 permissions:
   contents: write
 jobs:
@@ -46,8 +56,8 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install soundfile numpy
           python -m pip install omnivoice || python -m pip install git+https://github.com/k2-fsa/OmniVoice.git
-      - name: Generate one batch of 20 missing Soninke audio with the two authentic references
-        run: python scripts/generate_voice.py --generate --device cpu --limit 20
+      - name: Generate one batch of missing Soninke audio with the two authentic references
+        run: python scripts/generate_voice.py --generate --device cpu --limit ${{ github.event.inputs.batch_limit || '20' }}
       - name: Upload audio bundle for human review
         if: always()
         uses: actions/upload-artifact@v4
