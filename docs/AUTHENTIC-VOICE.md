@@ -1,16 +1,41 @@
-# Voix du référent uniquement
+# Voix de référence sur tous les contenus audio
 
-Le navigateur n’utilise aucun moteur de synthèse vocale. La lecture automatique
-est activée par défaut ; l’utilisateur peut la couper. Les restrictions d’autoplay
-du navigateur nécessitent parfois un clic sur « Écouter ». Les explications en
-français restent textuelles (bouton sur chaque réponse et questions « Que signifie… ? »).
+SoninkeGPT utilise une **voix de référence unique** pour l'ensemble de son
+expérience vocale : mots, expressions, salutations, traductions, réponses
+générées, contenu pédagogique, favoris et futurs ajouts du corpus.
 
-La mémoire indexe les WAV historiques et toutes les formes lexicales des CSV,
-ainsi que les salutations de PHRASEBOOK. Les buffers décodés sont conservés pendant
-la session. L’assemblage WebAudio emploie les expressions exactes puis les mots
-entiers, par correspondance la plus longue. Une phrase incomplètement couverte
-n’est pas prononcée. Aucun alignement syllabique fiable n’existe dans le corpus :
-le système ne découpe donc pas arbitrairement les WAV pour inventer des syllabes.
+```text
+corpus du référent  ─┐
+générations OmniVoice├─► index unique ─► lecture (WebAudio / HTMLAudio)
+issu de la voix    ─┘
+```
+
+Une seule fonction, `findAudioInfo()`, résout chaque forme affichée. Elle
+consulte, dans cet ordre :
+
+1. l'index des enregistrements du corpus (`audio/snk-*.wav`) ;
+2. l'index des variantes graphiques reliées à leur lemme enregistré ;
+3. l'index orthographique normalisé (kh↔x, ou↔u, ñ↔ny, dj↔j, tch↔c) ;
+4. l'index de `data/voice-memory.json`, qui contient les enregistrements
+   existants et les clips générés avec OmniVoice à partir de la voix de
+   référence.
+
+Aucune autre voix n'est employée : le navigateur n'utilise jamais
+`speechSynthesis` ni une voix système. Si une forme n'a pas d'audio de
+référence, l'interface affiche « Audio à venir » et explique qu'aucune voix de
+substitution n'est utilisée.
+
+## Lecture
+
+La lecture automatique est activée par défaut ; l'utilisateur peut la couper.
+Les restrictions d'autoplay imposent parfois un clic sur « Écouter ». Les
+explications en français restent textuelles.
+
+Les buffers décodés sont conservés pendant la session. L'assemblage WebAudio
+emploie les expressions exactes puis les mots entiers, par correspondance la
+plus longue. Une phrase incomplètement couverte n'est pas prononcée. Aucun
+alignement syllabique fiable n'existe dans le corpus : le système ne découpe
+donc pas arbitrairement les WAV pour inventer des syllabes.
 
 ## Génération automatique
 
@@ -28,14 +53,14 @@ leur prononciation doit être écoutée et validée par le référent.
 Le workflow `voice-memory.yml` reconstruit automatiquement la file après un ajout
 CSV sur main. Pour activer le lot neuronal, provisionner un runner isolé
 `self-hosted, linux, gpu` avec PyTorch CUDA et accès au modèle, puis définir la
-variable de dépôt `OMNIVOICE_GPU_ENABLED=true`. Sans cela, seul l’index tourne :
+variable de dépôt `OMNIVOICE_GPU_ENABLED=true`. Sans cela, seul l'index tourne :
 aucun GPU gratuit ni prise en charge linguistique ne sont présumés.
-Le lot produit l’artefact `omnivoice-generated-review`. Après validation humaine,
-intégrer ses WAV sous `audio/generated/` et reconstruire l’index ; Pages chargera
+Le lot produit l'artefact `omnivoice-generated-review`. Après validation humaine,
+intégrer ses WAV sous `audio/generated/` et reconstruire l'index ; Pages chargera
 ces fichiers. Le workflow ne publie pas silencieusement des clones non validés.
 
-Pages reconstruit également l’index avant chaque déploiement. Les formes à venir
-entrent ainsi automatiquement dans la mémoire, mais leur audio n’existe qu’après
-une génération réussie ou la fourniture d’un enregistrement validé.
+Pages reconstruit également l'index avant chaque déploiement. Les formes à venir
+entrent ainsi automatiquement dans la mémoire, mais leur audio n'existe qu'après
+une génération réussie ou la fourniture d'un enregistrement validé.
 
 Tests : `node tests/voice.test.cjs` ; `python scripts/generate_voice.py`.

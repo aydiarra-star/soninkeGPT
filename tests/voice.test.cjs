@@ -47,5 +47,48 @@ assert.equal(evaluate("soninkeForms('**Titre inconnu**').length"), 0);
   assert.equal(evaluate("lookupTerm('baano-ye').exact[0].soninke"), 'baano-ye');
   assert.equal(evaluate("lookupTerm('segeñe').exact[0].francais"), 'ongle');
   assert(evaluate("lookupTerm('segene').exact[0].francais").includes('monter'));
-  console.log(`Authentic voice & zero-duplicate lexicon tests passed (${entries.length} unique entries)`);
+
+  // ── Contrôle linguistique : aucune forme étrangère présentée comme soninké ──
+  assert(evaluate('state.guard.size') >= 4, 'La liste d’exclusion linguistique doit être chargée');
+  assert.equal(evaluate("isExcludedForm('i ni ce')"), true);
+  assert.equal(evaluate("isExcludedForm('ni barka')"), true);
+  assert.equal(evaluate("isExcludedForm('Xa wouy Diom')"), false);
+  const excludedReply = evaluate("generateResponse('i ni ce')");
+  assert(!/\{\{pair:i ni ce/.test(excludedReply), 'Une forme écartée ne doit jamais être présentée en soninké');
+  assert(/Nawari/.test(excludedReply), 'La forme soninké attestée doit être proposée');
+
+  // ── Ordre SONINKÉ ↓ FRANÇAIS ──
+  const greeting = evaluate("generateResponse('bonjour')");
+  assert(/\{\{pair:Xa wouy Diom\|/.test(greeting), 'Le bloc doit commencer par la forme soninké');
+  const rendered = evaluate("renderMarkdown(generateResponse('bonjour'))");
+  assert(!/\{\{pair:/.test(rendered), 'Tous les blocs doivent être rendus');
+  assert(/pair-snk[^>]*>Xa wouy Diom<[\s\S]*pair-fr[^>]*>Bonjour/.test(rendered), 'Ordre soninké puis traduction');
+
+  // ── Attestation linguistique ──
+  assert.equal(evaluate("attestationOf('Xa wouy Diom').level"), 'referent');
+  assert.equal(evaluate("attestationOf('an moxo').level"), 'review');
+  assert.equal(evaluate("attestationOf('forme totalement inconnue').level"), 'unknown');
+
+  // ── Voix de référence : tous les audios passent par le même index ──
+  const refAudio = evaluate("findAudioInfo('baano-ye')");
+  assert(refAudio && refAudio.url === 'audio/snk-00006.wav', 'Audio de référence attendu pour baano-ye');
+  assert.equal(evaluate("isExcludedForm('baano-ye')"), false);
+
+  // ── Niveaux et favoris ──
+  evaluate("setLevel('avance', false)");
+  assert.equal(evaluate('state.level'), 'avance');
+  evaluate("setLevel('debutant', false)");
+  evaluate("toggleFavorite({ snk: 'Xa wouy Diom', fr: 'Bonjour', type: 'expression' })");
+  assert.equal(evaluate('state.favorites.length'), 1);
+  assert.equal(evaluate("isFavorite('Xa wouy Diom', 'Bonjour')"), true);
+  evaluate("toggleFavorite({ snk: 'Xa wouy Diom', fr: 'Bonjour', type: 'expression' })");
+  assert.equal(evaluate('state.favorites.length'), 0);
+
+  // ── Aucun emoji décoratif dans les réponses générées ──
+  for (const prompt of ["bonjour", "aide", "famille", "apprends-moi 5 mots", "Raconte une histoire"]) {
+    const reply = evaluate(`generateResponse(${JSON.stringify(prompt)})`);
+    assert(!/[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}]/u.test(reply), `Emoji décoratif dans la réponse : ${prompt}`);
+  }
+
+  console.log(`Authentic voice, linguistic guard & lexicon tests passed (${entries.length} unique entries)`);
 })();

@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "updated": "2026-10-23",
+  "purpose": "Formes qui ne doivent jamais être présentées comme du soninké par SoninkeGPT. Le corpus source reste inchangé : cette liste est un garde-fou d'affichage et de génération.",
+  "policy": [
+    "Une forme listée ici n'est jamais proposée comme traduction soninké, même si elle figure dans une source externe à vérifier.",
+    "Une forme absente du corpus vérifié est signalée comme non attestée, jamais inventée.",
+    "Toute exclusion doit pouvoir être revue par un locuteur référent soninké."
+  ],
+  "excluded": [
+    {
+      "form": "i ni ce",
+      "reason": "Formule de salutation et de remerciement bambara, présente dans une source externe du lexique (statut source_externe_a_verifier). Elle n'est pas du soninké.",
+      "replacement": "Xa wouy Diom / an wouydiom"
+    },
+    {
+      "form": "olu ni ce",
+      "reason": "Variante plurielle de la formule bambara « i ni ce », issue de la même source externe non validée.",
+      "replacement": "Xa wouy Diom"
+    },
+    {
+      "form": "ni barka",
+      "reason": "Formule de remerciement bambara / malinké, entrée dans le lexique via une source externe à vérifier. Le soninké attesté du corpus utilise « nawari ».",
+      "replacement": "nawari"
+    },
+    {
+      "form": "i ka kene",
+      "reason": "Formule bambara (« comment vas-tu »), parfois confondue avec le soninké dans les ressources en ligne.",
+      "replacement": "i kera di ? / an moxo ?"
+    },
+    {
+      "form": "njoxo na",
+      "reason": "Formule wolof, sans attestation soninké dans le corpus.",
+      "replacement": "Xa wouy Diom / Toora nta"
+    }
+  ]
+}

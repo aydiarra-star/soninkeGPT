@@ -1,6 +1,42 @@
 # SoninkeGPT
 
-SoninkeGPT est un nouveau projet consacré au dictionnaire et à l'assistance linguistique soninké–français. Il repart sur une base logicielle neuve tout en réutilisant, de manière sélective et traçable, le patrimoine linguistique déjà constitué dans [Soninké TTS Libre](https://github.com/aydiarra-star/xamxam-xara).
+**L'assistant vocal de la langue soninké.**
+
+SoninkeGPT est un assistant vocal et pédagogique soninké–français. Il repart sur
+une base logicielle neuve tout en réutilisant, de manière sélective et traçable,
+le patrimoine linguistique déjà constitué dans
+[Soninké TTS Libre](https://github.com/aydiarra-star/xamxam-xara).
+
+## Fonctionnalités
+
+- **Parler et écouter** : micro, enregistrement et réponses lues avec la voix
+  de référence du corpus.
+- **Traduction** français ↔ soninké, uniquement avec des formes attestées.
+- **Niveaux d'apprentissage** : débutant, intermédiaire, avancé.
+- **Favoris** : enregistrer un mot, une phrase ou une expression et le
+  réécouter plus tard.
+- **Lexique et audios** : 1 372 entrées et près de 600 enregistrements de
+  référence indexés, filtrables par soninké, français ou audio.
+- **Contrôle linguistique** : aucune forme bambara, malinké, peul, wolof,
+  dioula ou arabe présentée comme du soninké ; les formes non vérifiées sont
+  signalées au lieu d'être inventées.
+
+L'affichage pédagogique suit toujours l'ordre **SONINKÉ ↓ TRADUCTION FRANÇAISE**,
+avec le statut de validation de la forme.
+
+## Interface
+
+Palette sobre de trois couleurs — `#B8860B`, `#FAF6E9`, `#1A1A1A` — complétée par
+la teinte secondaire `#6B4F1D`. Ombres réduites, bordures fines, aucune
+gradient décoratif, icônes SVG limitées aux usages utiles (microphone, audio,
+traduction, favori). Le fond clair laisse ressortir les cartes et la hiérarchie
+typographique.
+
+## Documentation linguistique
+
+- [Contrôle linguistique et statuts d'attestation](docs/LINGUISTIC-QUALITY.md)
+- [Liste des formes écartées](data/validation/non-soninke-forms.json)
+- [Voix de référence sur tous les contenus audio](docs/AUTHENTIC-VOICE.md)
 
 ## Priorité immédiate : transfert sans perte
 - Manifeste historique de 577 entrées : [copie source](data/source/manifest-577-review.csv)

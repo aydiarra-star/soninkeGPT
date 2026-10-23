@@ -1,10 +1,12 @@
 /* ============================================
-   SONINKEGPT — Assistant Conversationnel & Vocal Soninké
-   - Réponse automatique garantie à chaque question (100% corpus)
-   - Touche Entrer & bouton Envoyer actifs à tout moment
-   - Assistant vocal soninké (écoute, enregistrement & réponse vocale en soninké)
-   - WAV du référent uniquement — aucun moteur vocal du navigateur
-   - Interface Dorée Royale
+   SONINKEGPT — L'assistant vocal de la langue soninké
+   - Réponses exclusivement issues du corpus soninké attesté
+   - Contrôle linguistique : jamais de bambara, malinké, peul, wolof,
+     arabe, dioula ni d'expression étrangère présentée comme soninké
+   - Voix de référence du corpus sur tous les contenus audio
+   - Aucun moteur vocal du navigateur
+   - Niveaux d'apprentissage : débutant, intermédiaire, avancé
+   - Favoris : mots, phrases et expressions à réécouter
    ============================================ */
 
 // ── Constants ──
@@ -19,9 +21,14 @@ const FICHE_VAL_4_URL = "data/source/reports/fiche-validation-referent-soninke-0
 const REVUE_DICT_URL = "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv";
 const RENVOIS_URL = "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv";
 
+const GUARD_URL = "data/validation/non-soninke-forms.json";
+const VOICE_MEMORY_URL = "data/voice-memory.json";
+
 const STORAGE_KEY = "soninkegpt_conversations";
 const THEME_KEY = "soninkegpt_theme";
 const VOICE_PREF_KEY = "soninkegpt_voice_replies";
+const LEVEL_KEY = "soninkegpt_level";
+const FAVORITES_KEY = "soninkegpt_favorites";
 const MAX_DISPLAY = 100;
 
 // ── State ──
@@ -51,20 +58,64 @@ const state = {
   sharedAudio: null,
   audioCtx: null,
   audioBufferCache: new Map(),
+  audioByVariant: new Map(),
+  referenceVoice: { model: "", references: [], count: 0 },
+  guard: new Set(),
+  guardInfo: [],
+  favorites: [],
+  favoriteFilter: "all",
+  level: "debutant",
   dataReady: null,
   shiftHeld: false,
 };
 
+// ── Niveaux d'apprentissage ──
+const LEVELS = {
+  debutant: {
+    label: "Débutant",
+    maxEntries: 3,
+    maxSamples: 1,
+    showTranslations: true,
+    hint: "Traductions complètes, phrases courtes et écoute guidée.",
+    guidance: "Écoutez chaque forme, puis répétez-la à voix haute.",
+  },
+  intermediaire: {
+    label: "Intermédiaire",
+    maxEntries: 6,
+    maxSamples: 2,
+    showTranslations: true,
+    hint: "Traductions, variantes et exemples du corpus.",
+    guidance: "Comparez les variantes et repérez les formes du quotidien.",
+  },
+  avance: {
+    label: "Avancé",
+    maxEntries: 10,
+    maxSamples: 3,
+    showTranslations: true,
+    hint: "Formes attestées, variantes, notes et exemples.",
+    guidance: "Travaillez les variantes et les formes fléchies du corpus.",
+  },
+};
+
+function currentLevel() {
+  return LEVELS[state.level] || LEVELS.debutant;
+}
+
+// Nombre d'enregistrements disponibles avec la voix de référence.
+state.audioReferenceCount = function () {
+  return state.audioByWord.size;
+};
+
 // ── Expressions attestées du corpus soninké ──
 const PHRASEBOOK = [
-  { fr: "bonjour", snk: "Xa wouy Diom", alt: ["an wouydiom", "i ni ce", "olu ni ce", "an moxo", "qa moxo"], note: "Xa wouy Diom (salutation respectueuse / pluriel) · an wouydiom / i ni ce (singulier) · olu ni ce / qa moxo (pluriel)" },
-  { fr: "salut", snk: "Xa wouy Diom", alt: ["an wouydiom", "i ni ce", "an moxo"], note: "salutation courante" },
+  { fr: "bonjour", snk: "Xa wouy Diom", alt: ["an wouydiom", "an moxo", "qa moxo"], note: "Xa wouy Diom = salutation respectueuse (pluriel) · an wouydiom = à une personne · an moxo / qa moxo = comment ça va" },
+  { fr: "salut", snk: "Xa wouy Diom", alt: ["an wouydiom", "an moxo"], note: "salutation courante" },
   { fr: "bonsoir", snk: "lellaane", alt: ["Xa wouy Diom"], note: "salutation de l'après-midi / soir" },
   { fr: "bienvenue", snk: "bisimilla", alt: ["Xa wouy Diom"], note: "bonne arrivée, accueillir" },
-  { fr: "merci", snk: "nawari", alt: ["ni barka", "nawaari"], note: "remerciement" },
+  { fr: "merci", snk: "nawari", alt: ["nawaari"], note: "remerciement · variante nawaari" },
   { fr: "au revoir", snk: "oyi waxati", alt: ["hali telle"], note: "salutation de départ" },
   { fr: "comment vas-tu", snk: "i kera di", alt: ["an moxo", "qa moxo"], note: "demander des nouvelles" },
-  { fr: "comment allez-vous", snk: "qa moxo", alt: ["Xa wouy Diom", "i kera di"], note: "pluriel / politesse" },
+  { fr: "comment allez-vous", snk: "qa moxo", alt: ["Xa wouy Diom"], note: "pluriel / politesse · forme de source externe à confirmer" },
   { fr: "ça va", snk: "toora nta", alt: ["toora su nta"], note: "tout va bien (aucun mal)" },
   { fr: "oui", snk: "ee", alt: [], note: "approbation" },
   { fr: "non", snk: "ayi", alt: [], note: "négation" },
@@ -118,6 +169,177 @@ const PHRASEBOOK = [
   { fr: "peu", snk: "honne", alt: [], note: "quantitatif" },
   { fr: "dieu", snk: "Ala", alt: [], note: "nom" },
 ];
+
+// ════════════════════════════════════════════════════════════
+//  CONTRÔLE LINGUISTIQUE — fiabilité avant quantité
+//  Toute forme présentée comme soninké doit être attestée dans
+//  le corpus (référent, lexique, phrases parallèles).
+// ════════════════════════════════════════════════════════════
+
+const ATTESTATION = {
+  referent: { rank: 4, label: "Attesté · référent", cls: "is-attested" },
+  corpus: { rank: 3, label: "Attesté · corpus", cls: "is-attested" },
+  review: { rank: 2, label: "À vérifier · source externe", cls: "is-review" },
+  reference: { rank: 3, label: "Voix de référence", cls: "is-attested" },
+  unknown: { rank: 0, label: "Non attesté dans le corpus", cls: "is-unknown" },
+  excluded: { rank: -1, label: "Forme écartée · non soninké", cls: "is-unknown" },
+};
+
+function loadGuard() {
+  try {
+    const raw = localStorage.getItem("soninkegpt_guard_cache");
+    if (raw) applyGuard(JSON.parse(raw));
+  } catch {}
+}
+
+function applyGuard(payload) {
+  const list = Array.isArray(payload?.excluded) ? payload.excluded : [];
+  state.guardInfo = list;
+  state.guard = new Set();
+  for (const item of list) {
+    const form = typeof item === "string" ? item : item && item.form;
+    const key = normalizeWord(form);
+    if (key) state.guard.add(key);
+  }
+}
+
+function isExcludedForm(form) {
+  const key = normalizeWord(form);
+  if (!key) return false;
+  if (state.guard.has(key)) return true;
+  const tokens = key.split(/\s+/).filter(Boolean);
+  return tokens.length > 1 && tokens.every((t) => state.guard.has(t));
+}
+
+// Attestation d'une forme soninké, sans jamais inventer de source.
+// Le statut linguistique prime sur la simple présence d'un audio.
+function attestationOf(form) {
+  const key = normalizeWord(form);
+  if (!key) return { level: "unknown", ...ATTESTATION.unknown };
+
+  if (isExcludedForm(form)) return { level: "excluded", ...ATTESTATION.excluded };
+
+  // 1. Entrée lexicale (validée par le référent, corpus, ou source externe)
+  const entry = state.entries.find((e) => normalizeWord(e.soninke) === key);
+  if (entry) {
+    const statut = String(entry.statut || "");
+    const level = /valide_par_referent|fourni_par_referent/i.test(statut)
+      ? "referent"
+      : entry.isCandidate || /a_verifier|externe/i.test(statut)
+        ? "review"
+        : "corpus";
+    return { level, ...ATTESTATION[level], entry, audio: findAudioInfo(form) };
+  }
+
+  // 2. Livret d'expressions
+  const phrase = PHRASEBOOK.find(
+    (p) => normalizeWord(p.snk) === key || p.alt.some((a) => normalizeWord(a) === key)
+  );
+  if (phrase) return { level: "corpus", ...ATTESTATION.corpus, phrase, audio: findAudioInfo(form) };
+
+  // 3. Phrases parallèles du corpus
+  const sample = state.samples.find((s) => normalizeWord(s.soninke) === key);
+  if (sample) return { level: "corpus", ...ATTESTATION.corpus, sample, audio: findAudioInfo(form) };
+
+  // 4. Enregistrement présent dans l'index de référence
+  const audio = findAudioInfo(form);
+  if (audio) {
+    const level = audio.generated ? "reference" : "referent";
+    return { level, ...ATTESTATION[level], audio };
+  }
+
+  return { level: "unknown", ...ATTESTATION.unknown };
+}
+
+// Bloc d'affichage SONINKÉ ↓ TRADUCTION FRANÇAISE (jamais l'inverse).
+function soninkeBlock(snk, fr, type = null) {
+  const cleanSnk = String(snk || "").replace(/[|{}]/g, " ").replace(/\s+/g, " ").trim();
+  const cleanFr = String(fr || "").replace(/[|{}]/g, " ").replace(/\s+/g, " ").trim();
+  if (!cleanSnk) return "";
+  const kind = type || (cleanSnk.split(/\s+/).length > 1 ? "phrase" : "mot");
+  return `\n\n{{pair:${cleanSnk}|${cleanFr}|${kind}}}\n\n`;
+}
+
+function levelNote() {
+  return currentLevel().guidance;
+}
+
+function levelLimit(key) {
+  return currentLevel()[key] || LEVELS.intermediaire[key];
+}
+
+// ════════════════════════════════════════════════════════════
+//  FAVORIS — mots, phrases et expressions
+// ════════════════════════════════════════════════════════════
+
+function loadFavorites() {
+  try {
+    const raw = localStorage.getItem(FAVORITES_KEY);
+    const list = raw ? JSON.parse(raw) : [];
+    state.favorites = Array.isArray(list) ? list.filter((f) => f && f.snk) : [];
+  } catch {
+    state.favorites = [];
+  }
+}
+
+function saveFavorites() {
+  try { localStorage.setItem(FAVORITES_KEY, JSON.stringify(state.favorites)); } catch {}
+}
+
+function favoriteKey(snk, fr) {
+  return `${normalizeWord(snk)}|${normalizeWord(fr || "")}`;
+}
+
+function isFavorite(snk, fr) {
+  const key = favoriteKey(snk, fr);
+  return state.favorites.some((f) => favoriteKey(f.snk, f.fr) === key);
+}
+
+function toggleFavorite(item) {
+  if (!item || !item.snk) return;
+  const key = favoriteKey(item.snk, item.fr);
+  const index = state.favorites.findIndex((f) => favoriteKey(f.snk, f.fr) === key);
+  if (index >= 0) {
+    state.favorites.splice(index, 1);
+  } else {
+    state.favorites.unshift({
+      snk: String(item.snk).trim(),
+      fr: String(item.fr || "").trim(),
+      type: item.type || (String(item.snk).trim().split(/\s+/).length > 1 ? "phrase" : "mot"),
+      source: item.source || "SoninkeGPT",
+      createdAt: Date.now(),
+    });
+  }
+  saveFavorites();
+  syncFavoriteButtons();
+  renderFavorites();
+  updateFavoritesCount();
+}
+
+function updateFavoritesCount() {
+  const el = $("#favorites-count");
+  if (el) el.textContent = String(state.favorites.length);
+}
+
+// ════════════════════════════════════════════════════════════
+//  NIVEAU D'APPRENTISSAGE
+// ════════════════════════════════════════════════════════════
+
+function setLevel(level, announce = true) {
+  if (!LEVELS[level]) return;
+  state.level = level;
+  try { localStorage.setItem(LEVEL_KEY, level); } catch {}
+  $$(".level-option").forEach((btn) => {
+    const active = btn.dataset.level === level;
+    btn.classList.toggle("active", active);
+    if (btn.getAttribute("role") === "radio") btn.setAttribute("aria-checked", active ? "true" : "false");
+  });
+  const hint = $("#level-hint");
+  if (hint) hint.textContent = currentLevel().hint;
+  const info = $("#settings-level-info");
+  if (info) info.textContent = `${currentLevel().hint} ${currentLevel().guidance}`;
+  if (announce) showVoiceStatus(`Niveau ${currentLevel().label} activé.`, 2400);
+}
 
 // ── Utility ──
 const $ = (sel) => document.querySelector(sel);
@@ -282,13 +504,33 @@ function ensureAudioUnlocked() {
 }
 
 // ── Recherche d'un audio WAV intégré exact ou par mot ──
+// Toutes les lectures audio passent par cet index unique : la voix de référence.
 function findAudioInfo(word) {
   const key = normalizeWord(word);
   if (!key) return null;
   if (state.audioByWord.has(key)) return state.audioByWord.get(key);
+  if (state.audioByVariant.has(key)) return state.audioByVariant.get(key);
   const ortho = normalizeSoninkeOrtho(word);
   if (ortho && state.audioByOrtho.has(ortho)) return state.audioByOrtho.get(ortho);
+  // Variantes de graphie déjà indexées (variantes lexicales, formes fléchies)
+  for (const candidate of audioAliasKeys(word)) {
+    if (state.audioByWord.has(candidate)) return state.audioByWord.get(candidate);
+    if (state.audioByVariant.has(candidate)) return state.audioByVariant.get(candidate);
+    const o = normalizeSoninkeOrtho(candidate);
+    if (o && state.audioByOrtho.has(o)) return state.audioByOrtho.get(o);
+  }
   return null;
+}
+
+function audioAliasKeys(word) {
+  const base = normalizeWord(word);
+  const keys = new Set();
+  if (!base) return [];
+  const stem = base.replace(/[- ](ye|nde|ŋe|nke)$/, "");
+  if (stem && stem !== base) keys.add(stem);
+  if (base.endsWith("'")) keys.add(base.slice(0, -1));
+  keys.delete(base);
+  return [...keys];
 }
 
 // Lecture fiable d'une URL WAV (HTMLAudio réutilisé + secours WebAudio)
@@ -430,7 +672,7 @@ async function playWordAudio(word, btn = null) {
     }
   }
 
-  if (!segments.length) audioNotice(`Audio authentique indisponible pour « ${word} » : génération ou enregistrement nécessaire.`);
+  if (!segments.length) audioNotice(`Aucun enregistrement de référence pour « ${word} ». Aucune voix de substitution n'est utilisée : l'audio doit être enregistré puis validé.`);
   if (btn && token === state.speechToken && activeAudioBtn === btn) {
     btn.classList.remove("playing");
     activeAudioBtn = null;
@@ -439,11 +681,15 @@ async function playWordAudio(word, btn = null) {
 }
 
 function soninkeForms(markdownText) {
-  const forms = [...String(markdownText).matchAll(/\{\{audio:([^}]+)\}\}|\*\*([^*]+)\*\*/g)]
-    .map(m => (m[1] || m[2]).trim());
-  return [...new Set(forms)].filter(form => findAudioInfo(form) ||
+  const text = String(markdownText || "");
+  const forms = [];
+  for (const m of text.matchAll(/\{\{audio:([^}]+)\}\}/g)) forms.push(m[1]);
+  for (const m of text.matchAll(/\{\{pair:([^|}]+)\|/g)) forms.push(m[1]);
+  for (const m of text.matchAll(/\*\*([^*]+)\*\*/g)) forms.push(m[1]);
+  const unique = [...new Set(forms.map((f) => f.trim()).filter(Boolean))];
+  return unique.filter((form) => !isExcludedForm(form) && (findAudioInfo(form) ||
     PHRASEBOOK.some(p => [p.snk, ...p.alt].some(x => normalizeWord(x) === normalizeWord(form))) ||
-    state.entries.some(e => normalizeWord(e.soninke) === normalizeWord(form)));
+    state.entries.some(e => normalizeWord(e.soninke) === normalizeWord(form))));
 }
 
 function buildSpeechSegments(text) {
@@ -462,12 +708,12 @@ async function speakResponse(text) {
     for (const segment of segments) {
       if (token !== state.speechToken) return;
       if (!await playViaWebAudio(segment.url)) {
-        audioNotice("Lecture bloquée ou indisponible : cliquez sur Écouter pour réessayer.");
+        audioNotice("Lecture indisponible : vérifiez le son de l'appareil puis réessayez.");
         return;
       }
     }
   }
-  if (unavailable || !forms.length) audioNotice("Certaines formes n’ont pas encore de WAV authentique. Aucun remplacement synthétique n’est utilisé.");
+  if (unavailable || !forms.length) audioNotice("Certaines formes n'ont pas encore d'enregistrement de référence. Aucune voix de substitution n'est utilisée.");
   if (token === state.speechToken) $$(".msg-action-btn.speaking").forEach(b => b.classList.remove("speaking"));
 }
 
@@ -495,7 +741,7 @@ function syncVoiceReplyUI() {
     topBtn.setAttribute("aria-pressed", active ? "true" : "false");
   }
   if (topLbl) {
-    topLbl.textContent = active ? "Audio : ON" : "Réponse audio";
+    topLbl.textContent = active ? "Voix activée" : "Voix";
   }
   const sw = $("#voice-replies-switch");
   if (sw) sw.setAttribute("aria-checked", active ? "true" : "false");
@@ -513,12 +759,12 @@ function setVoiceReplies(enabled, announce = true) {
   if (announce) {
     showVoiceStatus(
       state.voiceReplies
-        ? "🔊 Réponse vocale activée : SoninkeGPT vous répondra en audio et en soninké."
-        : "🔇 Réponse vocale automatique désactivée (les boutons 🔊 restent actifs).",
+        ? "Lecture vocale activée : chaque réponse sera lue avec la voix de référence lorsqu'un enregistrement existe."
+        : "Lecture vocale automatique désactivée. Les boutons Écouter restent actifs.",
       3200
     );
     if (state.voiceReplies) {
-      speakResponse("**Xa wouy Diom** ! Réponse vocale activée.");
+      playReferenceSample();
     }
   }
 }
@@ -634,7 +880,7 @@ function deliverVoiceTurn(transcript, voiceNoteUrl) {
   } else if (voiceNoteUrl) {
     sendRecordedVoiceMessage(voiceNoteUrl);
   } else {
-    showVoiceStatus("🎤 Aucun son détecté — parlez près du micro ou écrivez votre question.", 3200);
+    showVoiceStatus("Aucun son détecté. Parlez près du micro ou écrivez votre question.", 3200);
   }
 }
 
@@ -652,7 +898,7 @@ async function startListening() {
   const mic = $("#mic-btn");
   const input = $("#message-input");
   if (mic) mic.classList.add("listening");
-  showVoiceStatus("🎤 J'écoute et j'enregistre… parlez en français ou en soninké !", 0, true);
+  showVoiceStatus("J'écoute et j'enregistre. Parlez en français ou en soninké.", 0, true);
 
   let hasAnyCapture = false;
 
@@ -705,7 +951,7 @@ async function startListening() {
           input.value = state.lastTranscript;
           autoResize(input);
           updateSendButton();
-          showVoiceStatus(`🎤 « ${state.lastTranscript} »`, 0, true);
+          showVoiceStatus(`« ${state.lastTranscript} »`, 0, true);
         }
         if (event.results[event.results.length - 1].isFinal && state.lastTranscript) {
           finishVoiceSession();
@@ -715,14 +961,14 @@ async function startListening() {
       recognition.onerror = (e) => {
         // Si MediaRecorder enregistre déjà, on continue l'enregistrement vocal sans couper !
         if (state.recorder && state.recorder.state === "recording") {
-          showVoiceStatus("🔴 Enregistrement vocal actif — appuyez sur « Envoyer » quand vous avez fini.", 0, true);
+          showVoiceStatus("Enregistrement en cours. Appuyez sur Envoyer quand vous avez terminé.", 0, true);
           return;
         }
         cleanupVoiceResources();
         if (e.error === "not-allowed") {
-          showVoiceStatus("⚠️ Autorisez l'accès au microphone dans les réglages du navigateur.", 4200);
+          showVoiceStatus("Autorisez l'accès au microphone dans les réglages du navigateur.", 4200);
         } else {
-          showVoiceStatus("🎤 Touchez à nouveau le micro et parlez clairement.", 3400);
+          showVoiceStatus("Touchez à nouveau le micro et parlez clairement.", 3400);
         }
       };
 
@@ -731,7 +977,7 @@ async function startListening() {
           finishVoiceSession();
         } else if (state.listening && !(state.recorder && state.recorder.state === "recording")) {
           cleanupVoiceResources();
-          showVoiceStatus("🎤 Écoute terminée — touchez le micro pour reparler.", 2800);
+          showVoiceStatus("Écoute terminée. Touchez le micro pour reparler.", 2800);
         }
       };
 
@@ -742,7 +988,7 @@ async function startListening() {
 
   if (!hasAnyCapture) {
     cleanupVoiceResources();
-    showVoiceStatus("🔊 Réponse vocale activée ! Écrivez votre question : je vous réponds en audio soninké.", 4200);
+    showVoiceStatus("Lecture vocale activée. Écrivez votre question : la réponse sera lue avec la voix de référence.", 4200);
     setVoiceReplies(true, false);
     input.focus();
   }
@@ -918,27 +1164,32 @@ function findSimilarEntries(term, limit = 5) {
 }
 
 function formatEntryBullet(e, includeExample = false) {
-  const cat = e.categorie ? ` *(${e.categorie})*` : "";
-  const statusNote = e.isCandidate ? ` · *[à vérifier]*` : "";
-  const variants = e.variantes ? ` · *var. : ${e.variantes}*` : "";
-  let line = `- **${e.soninke}** → ${e.francais}${cat}${variants}${statusNote} {{audio:${e.soninke}}}`;
+  if (!e || isExcludedForm(e.soninke)) return "";
+  const parts = [e.francais];
+  if (e.categorie) parts.push(`(${e.categorie})`);
+  if (e.isCandidate) parts.push("à vérifier");
+  let out = soninkeBlock(e.soninke, parts.filter(Boolean).join(" · "));
+  if (e.variantes) out += `Variantes attestées : ${e.variantes}\n\n`;
 
   // Formes dérivées enregistrées dans audio/snk-*.wav
   const related = state.relatedAudioByStem.get(normalizeWord(e.soninke));
   if (related && related.length && !findAudioInfo(e.soninke)) {
-    const sampleAudio = related[0];
-    line += `\n  - *Forme audio enregistrée :* **${sampleAudio.text}** {{audio:${sampleAudio.text}}}`;
+    out += soninkeBlock(related[0].text, "Forme enregistrée avec la voix de référence", "expression");
   }
   if (includeExample && e.exemple_original) {
-    line += `\n  - *Exemple / note :* ${extractCleanExample(e.exemple_original)}`;
+    out += `*Note du corpus : ${extractCleanExample(e.exemple_original)}*\n\n`;
   }
-  return line;
+  return out;
 }
 
 function formatPhrasebookBullet(p) {
-  const alt = p.alt.length ? ` · *variantes :* ${p.alt.map((a) => `**${a}**`).join(", ")}` : "";
-  const note = p.note ? ` *(${p.note})*` : "";
-  return `- **${p.snk}** → ${p.fr}${alt}${note} {{audio:${p.snk}}}`;
+  if (!p || isExcludedForm(p.snk)) return "";
+  const details = [];
+  if (p.alt.length) details.push(`variantes : ${p.alt.join(", ")}`);
+  const fr = p.fr + (details.length ? ` · ${details.join(" · ")}` : "");
+  let out = soninkeBlock(p.snk, fr, "expression");
+  if (p.note) out += `*${p.note}*\n\n`;
+  return out;
 }
 
 const STOP_WORDS = new Set([
@@ -1015,7 +1266,9 @@ function detectDirection(message) {
 
 // ── Générateur complet de réponses (100% garanti sur toute question) ──
 function buildSingleOrPhraseAnswer(targetPhrase, words, direction) {
-  // 1. D'abord tester l'expression complète (ex. "bonjour", "au revoir", "comment vas-tu", "lemine ke", "Daga goli")
+  const level = currentLevel();
+
+  // 1. D'abord tester l'expression complète (ex. « bonjour », « lemine ke », « Daga goli »)
   if (targetPhrase) {
     const fullLookup = lookupTerm(targetPhrase);
     const fullPB = lookupPhrasebook(targetPhrase);
@@ -1024,50 +1277,44 @@ function buildSingleOrPhraseAnswer(targetPhrase, words, direction) {
     }
   }
 
-  // 2. Si phrase de plusieurs mots : traduction mot-à-mot + reconstruction soninké + phrases du corpus !
+  // 2. Phrase de plusieurs mots : uniquement ce qui est attesté.
+  //    Aucune phrase soninké n'est reconstruite par assemblage de mots.
   if (words.length >= 2) {
     const wordMappings = [];
-    const soninkeAssembly = [];
     for (const w of words.slice(0, 8)) {
       const pb = lookupPhrasebook(w);
       const lk = lookupTerm(w);
       const bestEntry = lk.exact[0] || lk.starts[0];
       const bestPB = pb[0];
-      if (bestPB) {
-        wordMappings.push({ word: w, snk: bestPB.snk, fr: bestPB.fr, alt: bestPB.alt });
-        soninkeAssembly.push(bestPB.snk);
-      } else if (bestEntry) {
-        const isFrQuery = normalizeWord(bestEntry.francais).includes(normalizeWord(w)) || splitSenses(bestEntry.francais).some((s) => candidateWordForms(w).includes(s));
-        const mapped = isFrQuery ? bestEntry.soninke : bestEntry.francais;
-        wordMappings.push({ word: w, snk: bestEntry.soninke, fr: bestEntry.francais, entry: bestEntry });
-        soninkeAssembly.push(isFrQuery ? bestEntry.soninke : bestEntry.soninke);
-      }
+      if (bestPB) wordMappings.push({ word: w, snk: bestPB.snk, fr: bestPB.fr });
+      else if (bestEntry) wordMappings.push({ word: w, snk: bestEntry.soninke, fr: bestEntry.francais, entry: bestEntry });
     }
 
     const matchingSamples = findMatchingSamples(words);
+    let out = "";
 
-    if (wordMappings.length > 0 || matchingSamples.length > 0) {
-      let out = "";
-      if (soninkeAssembly.length > 0) {
-        const joinedSnk = soninkeAssembly.join(" ");
-        out += `🗣️ **En soninké :** **${joinedSnk}** {{audio:${joinedSnk}}}\n\n`;
+    if (matchingSamples.length > 0) {
+      out += "**Phrases attestées correspondantes**\n";
+      for (const sample of matchingSamples.slice(0, level.maxSamples)) {
+        out += soninkeBlock(sample.soninke, sample.french, "phrase");
       }
-      if (wordMappings.length > 0) {
-        out += `**Correspondances du lexique mot par mot :**\n`;
-        for (const m of wordMappings) {
-          if (m.entry) out += formatEntryBullet(m.entry, true) + "\n";
-          else out += `- **${m.snk}** → ${m.fr}${m.alt && m.alt.length ? ` *(aussi : ${m.alt.join(", ")})*` : ""} {{audio:${m.snk}}}\n`;
-        }
-      }
-      if (matchingSamples.length > 0) {
-        out += `\n**Phrases attestées du corpus :**\n`;
-        for (const s of matchingSamples.slice(0, 4)) {
-          out += `- **${s.soninke}** → *« ${s.french} »* {{audio:${s.soninke}}}\n`;
-        }
-      }
-      out += `\nTouchez **🔊** sur n'importe quel mot ou phrase pour écouter sa prononciation soninké !`;
-      return out;
     }
+
+    if (wordMappings.length > 0) {
+      out += "**Correspondances mot à mot du lexique**\n";
+      out += "*Assemblage indicatif : ces formes sont attestées séparément, la phrase complète ne l'est pas.*\n\n";
+      for (const m of wordMappings.slice(0, level.maxEntries)) {
+        out += m.entry ? formatEntryBullet(m.entry) : soninkeBlock(m.snk, m.fr);
+      }
+    }
+
+    if (!out) {
+      return unknownAnswer(targetPhrase || words.join(" "));
+    }
+
+    out += "Pour une traduction de phrase entière, SoninkeGPT ne compose pas de phrase non attestée. La phrase doit être enregistrée puis validée par le référent avant publication.\n\n";
+    out += levelNote();
+    return out;
   }
 
   // 3. Terme unique (ou premier mot clé pertinent)
@@ -1077,66 +1324,73 @@ function buildSingleOrPhraseAnswer(targetPhrase, words, direction) {
   return formatRichTermResponse(mainTerm, lk, pb, direction);
 }
 
+function unknownAnswer(term) {
+  const level = currentLevel();
+  const similar = findSimilarEntries(term, 5).filter((e) => !isExcludedForm(e.soninke));
+  let out = "Je ne trouve pas cette forme dans le corpus soninké vérifié. Je ne l'invente pas.\n\n";
+  if (similar.length > 0) {
+    out += `**Formes les plus proches dans le lexique**\n`;
+    for (const e of similar.slice(0, level.maxEntries)) out += formatEntryBullet(e, level !== "debutant");
+  } else {
+    out += "**Expressions attestées à réutiliser**\n";
+    out += soninkeBlock("Xa wouy Diom", "Bonjour ! (salutation respectueuse)", "expression");
+    out += soninkeBlock("Toora nta", "Tout va bien.", "expression");
+    out += soninkeBlock("Nawari", "Merci.", "mot");
+  }
+  out += "Précisez le mot, l'orthographe approximative ou le thème (famille, corps, nombres, verbes) : je chercherai dans les entrées attestées.\n\n";
+  out += levelNote();
+  return out;
+}
+
 function formatRichTermResponse(term, lk, pb, direction) {
-  const { exact, starts, contains } = lk;
+  const level = currentLevel();
+  const exact = lk.exact.filter((e) => !isExcludedForm(e.soninke));
+  const starts = lk.starts.filter((e) => !isExcludedForm(e.soninke));
+  const contains = lk.contains.filter((e) => !isExcludedForm(e.soninke));
   const results = [...exact];
   const seen = new Set(results.map((e) => e.id));
   for (const e of [...starts, ...contains]) {
-    if (!seen.has(e.id)) { results.push(e); seen.add(e.id); }
-    if (results.length >= 10) break;
+    if (seen.has(e.id) || isExcludedForm(e.soninke)) continue;
+    results.push(e);
+    seen.add(e.id);
+    if (results.length >= level.maxEntries) break;
   }
+  const visiblePb = pb.filter((p) => !isExcludedForm(p.snk));
 
-  // Sélectionner la meilleure forme soninké principale pour répondre d'emblée en soninké
-  const heroSnk = (pb[0] && pb[0].snk) || (exact[0] && exact[0].soninke) || (results[0] && results[0].soninke) || null;
-  const heroFr = (pb[0] && pb[0].fr) || (exact[0] && exact[0].francais) || (results[0] && results[0].francais) || "";
+  const heroSnk = (visiblePb[0] && visiblePb[0].snk) || (exact[0] && exact[0].soninke) || (results[0] && results[0].soninke) || null;
+  const heroFr = (visiblePb[0] && visiblePb[0].fr) || (exact[0] && exact[0].francais) || (results[0] && results[0].francais) || "";
 
   let response = "";
   if (heroSnk) {
-    response += `🗣️ **${heroSnk}** → ${heroFr} {{audio:${heroSnk}}}\n\n`;
+    response += soninkeBlock(heroSnk, heroFr || "Sens à préciser par le référent", visiblePb.length ? "expression" : null);
   }
 
-  if (pb.length > 0) {
-    response += `**Formes usuelles en soninké :**\n`;
-    for (const p of pb.slice(0, 5)) response += formatPhrasebookBullet(p) + "\n";
-    response += "\n";
+  if (visiblePb.length > 1) {
+    response += "**Formes usuelles attestées**\n";
+    for (const p of visiblePb.slice(0, level.maxEntries)) response += formatPhrasebookBullet(p);
   }
 
   if (results.length > 0) {
-    response += `**Entrées du lexique (${results.length} trouvée${results.length > 1 ? "s" : ""}) :**\n`;
-    for (const e of results.slice(0, 8)) {
-      response += formatEntryBullet(e, results.length <= 4) + "\n";
+    response += `**Entrées du lexique (${results.length})**\n`;
+    for (const e of results.slice(0, level.maxEntries)) {
+      response += formatEntryBullet(e, level !== "debutant" && results.length <= 3);
     }
   }
 
   const samples = findMatchingSamples([term]);
   if (samples.length > 0) {
-    response += `\n**Exemples de phrases du corpus :**\n`;
-    for (const s of samples.slice(0, 3)) {
-      response += `- **${s.soninke}** → *« ${s.french} »* {{audio:${s.soninke}}}\n`;
+    response += "**Exemples de phrases attestées**\n";
+    for (const s of samples.slice(0, level.maxSamples)) {
+      response += soninkeBlock(s.soninke, s.french, "phrase");
     }
   }
 
   if (heroSnk || results.length > 0) {
-    response += `\nTouchez **🔊** pour écouter la prononciation soninké.`;
+    response += levelNote();
     return response;
   }
 
-  // Recherche orthographique approchée (jamais de blocage « aucune correspondance » !)
-  const similar = findSimilarEntries(term, 6);
-  response = `🗣️ **Xa wouy Diom !** {{audio:Xa wouy Diom}}\n\n`;
-  if (similar.length > 0) {
-    response += `Voici les entrées les plus proches de **« ${term} »** dans le corpus soninké (**${state.entries.length} entrées** & **${state.audioByWord.size} audios**) :\n\n`;
-    for (const e of similar) response += formatEntryBullet(e, true) + "\n";
-  } else {
-    response += `Pour votre demande sur **« ${term} »**, voici des expressions essentielles du corpus soninké (**${state.entries.length} entrées**, **${state.audioByWord.size} audios actifs**) :\n\n`;
-    response += `- **Xa wouy Diom** → Bonjour ! (salutation) {{audio:Xa wouy Diom}}\n`;
-    response += `- **an wouydiom** → Bonjour (à une personne) {{audio:an wouydiom}}\n`;
-    response += `- **i kera di** → Comment vas-tu ? · **toora nta** → Ça va {{audio:toora nta}}\n`;
-    response += `- **nawari** → Merci {{audio:nawari}}\n`;
-    response += `- **aké n'séfé soninké** → Il a parlé soninké {{audio:aké n'séfé soninké}}\n`;
-  }
-  response += `\nPosez n'importe quel mot, expression ou thème (famille, visage, nombres, verbes, culture) — je vous réponds immédiatement en soninké et en audio !`;
-  return response;
+  return unknownAnswer(term);
 }
 
 function generateResponse(message) {
@@ -1144,131 +1398,375 @@ function generateResponse(message) {
   const lower = trimmed.toLocaleLowerCase("fr");
   const ortho = normalizeSoninkeOrtho(trimmed);
   const direction = detectDirection(trimmed);
+  const level = currentLevel();
 
-  // 1. Salutations directes (« Xa wouy Diom », « bonjour », « salut », « i ni ce », etc.)
+  // 0. Forme explicitement écartée (non soninké) : jamais présentée comme du soninké
+  const excludedMatch = [...state.guard].find(
+    (g) => g && (lower === g || ortho === normalizeSoninkeOrtho(g))
+  );
+  if (excludedMatch) {
+    return `Cette forme n'est pas retenue comme soninké par le contrôle linguistique de SoninkeGPT. Elle n'est donc pas présentée comme une traduction soninké.\n\n` +
+      `**Exprimer cette idée en soninké attesté**\n` +
+      soninkeBlock("Nawari", "Merci.", "mot") +
+      soninkeBlock("Xa wouy Diom", "Bonjour ! (salutation respectueuse)", "expression") +
+      `Consultez le lexique pour la forme réellement attestée. Si vous êtes locuteur référent, signalez la forme à valider : elle sera ajoutée après vérification.\n\n`;
+  }
+
+  // 1. Salutations directes
   const isDirectGreeting =
     !/tradui|comment\s+dit|comment\s+dire|signifie|veut\s+dire/i.test(lower) &&
-    (/^(bonjour|bonsoir|salut|hello|hi|hey|coucou|xa\s*wouy|wouy\s*diom|an\s*wouydiom|i\s*ni\s*ce|olu\s*ni\s*ce|bisimilla|a\s*jaara|a\s*jarra)\b/i.test(lower) ||
+    (/^(bonjour|bonsoir|salut|hello|hi|hey|coucou|xa\s*wouy|wouy\s*diom|an\s*wouydiom|bisimilla|a\s*jaara|a\s*jarra)\b/i.test(lower) ||
       /^(xawuydiom|wuy ?jom|anwuyjom)/.test(ortho)) &&
     trimmed.length < 48;
 
   if (isDirectGreeting) {
-    return `**Xa wouy Diom !** 👋 {{audio:Xa wouy Diom}}\n\nBienvenue sur **SoninkeGPT** ! Voici les salutations en soninké :\n\n- **Xa wouy Diom** → Bonjour ! (salutation respectueuse / pluriel) {{audio:Xa wouy Diom}}\n- **an wouydiom** → Bonjour (à une personne) {{audio:an wouydiom}}\n- **i ni ce** → Bonjour (singulier) · **olu ni ce** → Bonjour (pluriel) {{audio:i ni ce}}\n- **an moxo** / **qa moxo** → Bonjour, comment ça va ? {{audio:an moxo}}\n- **bisimilla** → Bienvenue, bonne arrivée {{audio:bisimilla}}\n\nPosez-moi votre question à l'écrit (touche **Entrée**) ou en parlant avec le **micro 🎤** : je vous réponds automatiquement en soninké et en audio !`;
+    return `SoninkeGPT vous salue en soninké.\n` +
+      soninkeBlock("Xa wouy Diom", "Bonjour ! Salutation respectueuse (pluriel).", "expression") +
+      soninkeBlock("an wouydiom", "Bonjour à une personne.", "expression") +
+      soninkeBlock("an moxo", "Bonjour, comment ça va ? (singulier).", "expression") +
+      soninkeBlock("qa moxo", "Bonjour, comment ça va ? (pluriel).", "expression") +
+      soninkeBlock("bisimilla", "Bienvenue, bonne arrivée.", "expression") +
+      `Écrivez votre question ou utilisez le micro. Chaque forme est lue avec la voix de référence lorsqu'un enregistrement existe.\n\n` +
+      levelNote();
   }
 
   // 2. Comment ça va ?
-  if (!/tradui|comment\s+dit/i.test(lower) && /^(comment (vas|allez)|ça va|ca va|njoxo na|i kera di|an moxo|qa moxo|toora)\b/i.test(lower) && trimmed.length < 48) {
-    return `**Toora nta !** 😊 *(Ça va très bien !)* {{audio:toora nta}}\n\nDialogue courant en soninké :\n- **i kera di ?** → Comment vas-tu ? {{audio:i kera di}}\n- **qa moxo ?** → Comment allez-vous ? {{audio:qa moxo}}\n- **toora nta** / **toora su nta** → Ça va / Tout va bien {{audio:toora su nta}}\n\nEt vous, comment puis-je vous aider en soninké aujourd'hui ?`;
+  if (!/tradui|comment\s+dit/i.test(lower) && /^(comment (vas|allez)|ça va|ca va|i kera di|an moxo|qa moxo|toora)\b/i.test(lower) && trimmed.length < 56) {
+    return `**La conversation de tous les jours**\n` +
+      soninkeBlock("Toora nta", "Tout va bien.", "expression") +
+      soninkeBlock("i kera di ?", "Comment vas-tu ?", "expression") +
+      soninkeBlock("qa moxo ?", "Comment allez-vous ? (pluriel)", "expression") +
+      soninkeBlock("toora su nta", "Tout va bien (variante).", "expression") +
+      `Réponse possible : **Toora nta** (tout va bien).\n\n` +
+      levelNote();
   }
 
-  // 3. Remerciements directs
-  if (!/tradui|comment\s+dit|comment\s+dire/i.test(lower) && /^(merci|thank|nawari|nawaari|ni barka|diakara)\b/i.test(lower) && trimmed.length < 36) {
-    return `**Nawari !** 🙏 *(Merci !)* {{audio:nawari}}\n\nEn soninké, pour remercier :\n- **nawari** *(var. nawaari)* → merci {{audio:nawari}}\n- **ni barka** → merci {{audio:ni barka}}\n\nJe reste à votre écoute pour toute autre question en français ou en soninké !`;
+  // 3. Remerciements
+  if (!/tradui|comment\s+dit|comment\s+dire/i.test(lower) && /^(merci|nawari|nawaari)\b/i.test(lower) && trimmed.length < 36) {
+    return `**Remercier en soninké**\n` +
+      soninkeBlock("Nawari", "Merci.", "mot") +
+      soninkeBlock("nawaari", "Merci (variante orthographique).", "mot") +
+      levelNote();
   }
 
-  // 4. Au revoir / départ
+  // 4. Au revoir
   if (!/tradui|comment\s+dit|comment\s+dire/i.test(lower) && /^(au revoir|adieu|bye|à bient[ôo]t|a bientot|bonne nuit|oyi waxati|hali telle)\b/i.test(lower) && trimmed.length < 40) {
-    return `**Oyi waxati !** 👋 *(Au revoir !)* {{audio:oyi waxati}}\n\nPour prendre congé en soninké :\n- **oyi waxati** → au revoir {{audio:oyi waxati}}\n- **hali telle** → au revoir / à bientôt {{audio:hali telle}}\n\nÀ très vite sur SoninkeGPT !`;
+    return `**Prendre congé en soninké**\n` +
+      soninkeBlock("oyi waxati", "Au revoir.", "expression") +
+      soninkeBlock("hali telle", "Au revoir, à bientôt.", "expression") +
+      levelNote();
   }
 
-  // 5. Identité / Présentation
+  // 5. Présentation / identité
   if (/(qui es[- ]tu|qui [êe]tes[- ]vous|tu es qui|c'est quoi soninkegpt|pr[ée]sente[- ]toi|ton nom)/i.test(lower)) {
-    return `**Xa wouy Diom !** {{audio:Xa wouy Diom}}\n\nJe suis **SoninkeGPT**, votre assistant conversationnel et vocal dédié à la langue **soninké**.\n\nJe m'appuie sur toutes les ressources vérifiées du projet :\n- **${state.entries.length} entrées lexicales** (mots, sens, variantes et exemples)\n- **${state.audioByWord.size} enregistrements audio WAV** authentiques validés par le référent\n- **Phrases parallèles soninké–français** et assistant vocal interactif\n\nÉcrivez ou cliquez sur **🎤** à côté de la touche Entrer : j'écoute, j'enregistre et je vous réponds en soninké !`;
+    return `Je suis **SoninkeGPT**, l'assistant vocal de la langue soninké. Je travaille uniquement avec le corpus vérifié : **${state.entries.length} entrées lexicales** et **${state.audioReferenceCount()} enregistrements de référence**.\n\n` +
+      `**Se présenter avec des formes attestées**\n` +
+      soninkeBlock("Xa wouy Diom", "Bonjour ! (salutation respectueuse)", "expression") +
+      soninkeBlock("nké", "je, moi", "mot") +
+      soninkeBlock("an", "tu, toi", "mot") +
+      soninkeBlock("sefe", "parler", "mot") +
+      `Une phrase complète de présentation n'est pas encore enregistrée dans le corpus : je ne l'invente pas. Elle sera publiée après validation par le référent.\n\n` +
+      `Niveau actuel : **${level.label}**. ${level.guidance}`;
   }
 
-  // 6. Thème : Tête, visage & corps humain
+  // 6. Apprendre un nombre précis de mots
+  if (/(apprends[- ]moi|donne[- ]moi)\s+(\d+|cinq|5|dix|10)\s+mots/i.test(lower)) {
+    return fiveWordsAnswer();
+  }
+
+  // 7. Raconter une histoire (aucune histoire validée dans le corpus)
+  if (/raconte[^-]*(une |moi une )?histoire|histoire en sonink/i.test(lower)) {
+    let out = `Je ne dispose pas encore d'une histoire soninké enregistrée et validée : je ne vais pas en inventer une.\n\n`;
+    out += `**Matière attestée disponible pour construire un récit**\n`;
+    for (const sample of state.samples.slice(0, Math.max(3, level.maxSamples))) {
+      out += soninkeBlock(sample.soninke, sample.french, "phrase");
+    }
+    out += `Une histoire authentique doit être racontée par un locuteur, enregistrée avec la voix de référence, puis validée. Le corpus est ouvert à cet ajout.\n\n`;
+    out += levelNote();
+    return out;
+  }
+
+  // 8. Proverbe (aucun proverbe validé dans le corpus)
+  if (/proverbe/i.test(lower)) {
+    return `Aucun proverbe soninké n'est encore validé dans le corpus de SoninkeGPT. Je préfère vous le dire plutôt que d'inventer un proverbe.\n\n` +
+      `**Expressions attestées à utiliser en attendant**\n` +
+      soninkeBlock("Xa wouy Diom", "Bonjour ! (salutation respectueuse)", "expression") +
+      soninkeBlock("Toora nta", "Tout va bien.", "expression") +
+      soninkeBlock("bisimilla", "Bienvenue, bonne arrivée.", "expression") +
+      `Un proverbe pourra être ajouté avec son enregistrement et sa validation par le référent.\n\n` +
+      levelNote();
+  }
+
+  // 9. Corriger une phrase
+  if (/corrige|corriger ma phrase|correction de ma phrase/i.test(lower)) {
+    const quoted = trimmed.match(/[«"“]([^»"”]+)[»"”]/);
+    if (quoted && quoted[1].trim()) return proofreadPhrase(quoted[1].trim());
+    return `Indiquez votre phrase entre guillemets, par exemple : « an wouydiom ».\n\n` +
+      `**Méthode de correction**\n` +
+      `- chaque mot est comparé au lexique soninké et aux enregistrements de référence ;\n` +
+      `- un mot inconnu est signalé, jamais remplacé par une invention ;\n` +
+      `- l'ordre grammatical d'une phrase complète doit être validé par un locuteur référent.\n\n` +
+      levelNote();
+  }
+
+  // 10. « Traduis cette phrase » sans phrase fournie
+  if (/traduis cette phrase|traduire cette phrase|traduis une phrase/i.test(lower)) {
+    let out = `Quelle phrase souhaitez-vous traduire ? Écrivez-la après votre demande, par exemple : « La femme mange le riz ».\n\n`;
+    out += `**Exemples de phrases déjà attestées dans le corpus**\n`;
+    for (const sample of state.samples.slice(0, Math.max(2, level.maxSamples))) {
+      out += soninkeBlock(sample.soninke, sample.french, "phrase");
+    }
+    out += `Le sens est toujours donné dans l'ordre SONINKÉ → FRANÇAIS.\n\n`;
+    out += levelNote();
+    return out;
+  }
+
+  // 11. Conversation quotidienne
+  if (/conversation quotidienne|dialogue (du|de) quotidien|parler tous les jours/i.test(lower)) {
+    return `**Conversation quotidienne en soninké**\n` +
+      soninkeBlock("Xa wouy Diom", "Bonjour ! (salutation respectueuse)", "expression") +
+      soninkeBlock("an moxo ?", "Comment ça va ? (singulier)", "expression") +
+      soninkeBlock("Toora nta", "Tout va bien.", "expression") +
+      soninkeBlock("i kera di ?", "Comment vas-tu ?", "expression") +
+      soninkeBlock("nawari", "Merci.", "mot") +
+      soninkeBlock("oyi waxati", "Au revoir.", "expression") +
+      `Écoutez chaque réplique et répétez-la : toutes les formes sont attestées dans le corpus.\n\n` +
+      levelNote();
+  }
+
+  // 12. Thème : tête, visage et corps
   if (/(visage|corps humain|parties du corps|t[êe]te et visage)/i.test(lower)) {
-    const hf = state.entries.filter((e) => /partie_du_corps|tete_visage/i.test((e.categorie || "") + " " + (e.source || "")));
-    let res = `**Le visage et le corps en soninké** 🗣️\n\n`;
-    for (const e of hf.slice(0, 16)) res += formatEntryBullet(e) + "\n";
-    res += `\nTouchez **🔊** sur chaque terme pour l'écouter.`;
+    const hf = state.entries.filter((e) => /partie_du_corps|tete_visage/i.test((e.categorie || "") + " " + (e.source || "")) && !isExcludedForm(e.soninke));
+    let res = `**Le visage et le corps en soninké**\n`;
+    for (const e of hf.slice(0, level.maxEntries)) res += formatEntryBullet(e);
+    res += `\n${levelNote()}`;
     return res;
   }
 
-  // 7. Thème : Jours de la semaine
+  // 13. Thème : jours de la semaine
   if (/jours? de la semaine|lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche/i.test(lower) && /jour|semaine/i.test(lower)) {
-    const days = state.entries.filter((e) => /lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche/i.test(e.francais || ""));
-    let res = `**Les jours en soninké** 📅\n\n`;
-    for (const e of days) res += formatEntryBullet(e) + "\n";
-    res += `- **lenki** → aujourd'hui {{audio:lenki}}\n- **daru** → hier {{audio:daru}}\n- **koota su** → chaque jour {{audio:koota su}}\n`;
+    const days = state.entries.filter((e) => /lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche/i.test(e.francais || "") && !isExcludedForm(e.soninke));
+    let res = `**Les jours en soninké**\n`;
+    for (const e of days.slice(0, level.maxEntries)) res += formatEntryBullet(e);
+    res += soninkeBlock("lenki", "aujourd'hui", "mot");
+    res += soninkeBlock("daru", "hier", "mot");
+    res += soninkeBlock("koota su", "chaque jour", "expression");
+    res += `\n${levelNote()}`;
     return res;
   }
 
-  // 8. Thème : Nombres / chiffres
+  // 14. Thème : nombres
   if (/nombres?|num[ée]ros?|chiffres?|compter en sonink/i.test(lower)) {
-    const nums = state.entries.filter((e) => /nombre|num[ée]ral/i.test(e.categorie || ""));
-    let res = `**Compter en soninké** 🔢\n\n`;
-    for (const e of nums.slice(0, 14)) res += formatEntryBullet(e) + "\n";
-    res += `\nTouchez **🔊** pour écouter chaque nombre.`;
+    const nums = state.entries.filter((e) => /nombre|num[ée]ral/i.test(e.categorie || "") && !isExcludedForm(e.soninke));
+    let res = `**Compter en soninké**\n`;
+    for (const e of nums.slice(0, Math.max(6, level.maxEntries))) res += formatEntryBullet(e);
+    res += `\n${levelNote()}`;
     return res;
   }
 
-  // 9. Thème : Famille
+  // 15. Thème : famille
   if (/famille|parent/i.test(lower) && !/tradui/i.test(lower)) {
-    let res = `**La famille en soninké** 👨‍👩‍👧‍👦\n\n`;
-    res += `- **haabe** / **baaba** / **faba** → père, papa {{audio:baaba}}\n`;
-    res += `- **saaxe** → mère, maman {{audio:saaxe}}\n`;
-    res += `- **lemine** → enfant {{audio:lemine}} · **lemine ke** → l'enfant {{audio:lemine ke}}\n`;
-    res += `- **yaxare** → femme {{audio:yaxare}}\n`;
-    res += `- **yugo** → homme {{audio:yugo}}\n`;
-    res += `- **ka** → maison {{audio:ka}}\n`;
-    return res;
+    return `**La famille en soninké**\n` +
+      soninkeBlock("baaba", "père, papa", "mot") +
+      soninkeBlock("saaxe", "mère, maman", "mot") +
+      soninkeBlock("lemine", "enfant", "mot") +
+      soninkeBlock("yaxare", "femme", "mot") +
+      soninkeBlock("yugo", "homme", "mot") +
+      soninkeBlock("ka", "maison", "mot") +
+      `\n${levelNote()}`;
   }
 
-  // 10. Mots de base / Apprentissage / Parler en soninké
+  // 16. Mots de base / apprentissage
   if (/mot[s]? de base|vocabulaire de base|quelques mots|premiers mots|apprends-moi|apprendre le sonink|le[çc]on|enseigne|parle[- ]moi en sonink|phrase[s]? en sonink/i.test(lower)) {
-    let response = `**Xa wouy Diom !** 📖 *Apprenons l'essentiel du soninké :* {{audio:Xa wouy Diom}}\n\n`;
-    response += `**1. Salutations & politesse :**\n`;
-    response += `- **Xa wouy Diom** → Bonjour ! {{audio:Xa wouy Diom}}\n`;
-    response += `- **an wouydiom** / **i ni ce** → Bonjour (à une personne) {{audio:an wouydiom}}\n`;
-    response += `- **i kera di ?** → Comment vas-tu ? · **toora nta** → Ça va {{audio:toora nta}}\n`;
-    response += `- **nawari** → Merci {{audio:nawari}} · **oyi waxati** → Au revoir {{audio:oyi waxati}}\n\n`;
-    response += `**2. Verbes & mots avec audios enregistrés du référent :**\n`;
-    for (const w of ["daga", "ri", "sefe", "yige", "mini", "goli", "safa", "xanu", "maro", "lemine"]) {
-      const match = state.entries.find((e) => normalizeWord(e.soninke) === w);
-      if (match) response += formatEntryBullet(match) + "\n";
-    }
-    response += `\n**3. Phrases complètes du corpus :**\n`;
-    for (const s of state.samples.slice(0, 4)) {
-      response += `- **${s.soninke}** → *« ${s.french} »* {{audio:${s.soninke}}}\n`;
-    }
-    response += `\nTouchez **🔊** sur n'importe quelle ligne pour l'écouter immédiatement !`;
-    return response;
+    return basicsAnswer();
   }
 
-  // 11. Culture soninké
-  if (/culture|histoire|peuple sonink|empire du ghana|ghana|wagadu|tradition orale|griot|geseru|c[ée]r[ée]monie|castes traditionnelles/i.test(lower)) {
-    return `**La culture et l'histoire soninké (Wagadu)** ✺\n\n- **Xa wouy Diom** → Salutation de paix et de respect {{audio:Xa wouy Diom}}\n- **bisimilla** →Hospitalité et accueil (*bienvenue, bonne arrivée*) {{audio:bisimilla}}\n\n**Points essentiels :**\n- Le peuple **soninké** (aussi appelé Sarakolé, Marka ou Wakore) est le fondateur historique de l'**Empire du Wagadu (Ghana)**, l'un des plus grands empires d'Afrique de l'Ouest.\n- Le **soninké** appartient à la famille des langues **mandé** et est parlé au **Mali, Mauritanie, Sénégal, Gambie, Guinée-Bissau, Côte d'Ivoire** ainsi que dans une vaste diaspora internationale (notamment en France).\n- La **tradition orale** (portée notamment par les *geseru*, griots et généalogistes) transmet l'histoire, les patronymes (*janmu* comme Bacili, Cissé, Diagana, Diarra, Sylla, Touré, Wagué…) et les valeurs de solidarité communautaire.\n\nLe corpus actuel de SoninkeGPT réunit **${state.entries.length} entrées** et **${state.audioByWord.size} enregistrements audio** pour préserver et transmettre ce patrimoine vivant !`;
+  // 17. Culture soninké
+  if (/culture|peuple sonink|empire du ghana|ghana|wagadu|tradition orale|griot|geseru|c[ée]r[ée]monie|castes traditionnelles/i.test(lower)) {
+    return `**La culture et l'histoire soninké (Wagadu)**\n\n` +
+      `Le peuple soninké (aussi appelé Sarakolé, Marka ou Wakore) est à l'origine de l'empire du Wagadu (Ghana), l'un des grands ensembles politiques d'Afrique de l'Ouest. La langue soninké appartient à la famille mandé et est parlée au Mali, en Mauritanie, au Sénégal, en Gambie, en Guinée-Bissau, en Côte d'Ivoire et dans la diaspora.\n\n` +
+      `La tradition orale, portée notamment par les geseru, transmet l'histoire, les patronymes et les valeurs de solidarité communautaire.\n\n` +
+      `**Formes attestées liées à l'accueil**\n` +
+      soninkeBlock("Xa wouy Diom", "Salutation de paix et de respect.", "expression") +
+      soninkeBlock("bisimilla", "Hospitalité, bonne arrivée.", "expression") +
+      `Le corpus réunit **${state.entries.length} entrées** et **${state.audioReferenceCount()} enregistrements de référence**.\n\n` +
+      levelNote();
   }
 
-  // 12. Prononciation / Audios intégrés
+  // 18. Prononciation et audio
   if (/prononciation|audios?|écouter|entendre|enregistrement|voix/i.test(lower) && !/tradui|comment\s+dit|signifie/i.test(lower)) {
-    return `**Audios intégrés & Réponse vocale SoninkeGPT** 🔊\n\nLes **${state.audioByWord.size} enregistrements WAV** du référent sont **100 % actifs** :\n- **Daga goli** {{audio:Daga goli}} · **Daga iige** {{audio:Daga iige}} · **Li taxu** {{audio:Li taxu}}\n- **Mpai reni** {{audio:Mpai reni}} · **Mpai telle** {{audio:Mpai telle}}\n- **lemine ke** *(l'enfant)* {{audio:lemine ke}} · **maro ke** *(le riz)* {{audio:maro ke}} · **koota su** *(chaque jour)* {{audio:koota su}}\n\n**3 façons d'utiliser le mode vocal :**\n- Touchez **🔊 Réponse audio** (en haut à droite ou à côté de la zone de texte) pour que SoninkeGPT vous réponde automatiquement en voix audio.\n- Touchez **🎤** (à côté de la touche Entrer) pour enregistrer votre voix et recevoir une réponse parlée en soninké.\n- Ouvrez **📚 Lexique & Audios → filtre « 🔊 Audios »** pour parcourir les ${state.audioByWord.size} enregistrements.`;
+    return `**La voix de référence**\n\n` +
+      `Tous les contenus audio de SoninkeGPT utilisent la voix de référence du corpus : mots, expressions, salutations, traductions, réponses et favoris. Aucune voix synthétique du navigateur n'est utilisée.\n\n` +
+      soninkeBlock("Daga goli", "Aller au travail.", "expression") +
+      soninkeBlock("Li taxu", "Assieds-toi.", "expression") +
+      soninkeBlock("lemine ke", "L'enfant.", "expression") +
+      soninkeBlock("maro ke", "Le riz.", "expression") +
+      soninkeBlock("koota su", "Chaque jour.", "expression") +
+      `**Pour écouter :** sélectionnez « Écouter » sur n'importe quelle forme, utilisez le bouton micro, ou ouvrez le lexique et son filtre Audios. Si un enregistrement manque, SoninkeGPT l'indique au lieu de le remplacer par une autre voix.\n\n` +
+      levelNote();
   }
 
-  // 13. Aide
+  // 19. Aide
   if (/^(aide|help|que peux-tu|que pouvez-vous|capacit[ée]s|fonctionnalit[ée]s|comment [cç]a marche)/i.test(lower)) {
-    return `**Xa wouy Diom ! Voici tout ce que je fais pour vous :** {{audio:Xa wouy Diom}}\n\n- **Traduction instantanée français ↔ soninké** de mots et de phrases (*« Traduis bonjour en soninké »*, *« Comment dit-on merci en soninké ? »*, *« La femme mange le riz »*)\n- **Assistant vocal soninké (🎤 à côté d'Entrer)** : j'écoute votre voix, je l'enregistre et je vous réponds en soninké\n- **Audios intégrés actifs (${state.audioByWord.size} WAV)** : cliquez sur n'importe quel bouton **🔊**\n- **Réponse audio vocale automatique** : activez **🔊 Réponse audio** en un clic\n- **Touche Entrée active à tout moment** sur mobile et ordinateur.`;
+    return `**Ce que fait SoninkeGPT**\n\n` +
+      `- Traduction français ↔ soninké, uniquement avec des formes attestées.\n` +
+      `- Assistant vocal : écoute, enregistrement et réponse avec la voix de référence.\n` +
+      `- Niveaux débutant, intermédiaire et avancé.\n` +
+      `- Favoris : enregistrez un mot, une phrase ou une expression pour le réécouter.\n` +
+      `- Lexique et audios : ${state.entries.length} entrées, ${state.audioReferenceCount()} enregistrements.\n\n` +
+      `Chaque réponse pédagogique est présentée dans l'ordre SONINKÉ → FRANÇAIS, avec le statut de validation de la forme.\n\n` +
+      levelNote();
   }
 
-  // 14. Recherche lexicale & traduction (mots simples, expressions, phrases complètes, fautes de frappe)
+  // 20. Recherche lexicale & traduction
   const { targetPhrase, words } = extractTargetPhraseAndWords(trimmed);
   return buildSingleOrPhraseAnswer(targetPhrase, words, direction);
 }
 
-// ── Rendu Markdown + Boutons Audio Intégrés Actifs ──
+// Cinq mots attestés par le référent, avec la voix de référence.
+function fiveWordsAnswer() {
+  const preferred = ["daga", "sefe", "yige", "mini", "goli", "xanu", "ri", "safa", "ka", "nawari"];
+  const picked = [];
+  const seen = new Set();
+  const add = (entry) => {
+    const key = normalizeWord(entry.soninke);
+    if (!key || seen.has(key) || isExcludedForm(entry.soninke)) return false;
+    seen.add(key);
+    picked.push(entry);
+    return true;
+  };
+
+  for (const form of preferred) {
+    const entry = state.entries.find((e) => normalizeWord(e.soninke) === form
+      && attestationOf(e.soninke).level === "referent"
+      && !!findAudioInfo(e.soninke));
+    if (entry) add(entry);
+    if (picked.length === 5) break;
+  }
+  if (picked.length < 5) {
+    for (const entry of state.entries) {
+      if (picked.length >= 5) break;
+      const key = normalizeWord(entry.soninke);
+      if (key.includes(" ")) continue;
+      if (attestationOf(entry.soninke).level !== "referent" || !findAudioInfo(entry.soninke)) continue;
+      add(entry);
+    }
+  }
+
+  let out = `**Cinq mots soninké à retenir**\n`;
+  for (const entry of picked) out += formatEntryBullet(entry);
+  out += `Touchez « Écouter » sur chaque mot, puis répétez-le à voix haute.\n\n`;
+  out += levelNote();
+  return out;
+}
+
+function basicsAnswer() {
+  let response = `**L'essentiel du soninké**\n`;
+  response += `**Salutations et politesse**\n`;
+  response += soninkeBlock("Xa wouy Diom", "Bonjour ! (salutation respectueuse)", "expression");
+  response += soninkeBlock("an wouydiom", "Bonjour à une personne.", "expression");
+  response += soninkeBlock("Toora nta", "Tout va bien.", "expression");
+  response += soninkeBlock("nawari", "Merci.", "mot");
+  response += soninkeBlock("oyi waxati", "Au revoir.", "expression");
+
+  response += `**Verbes et noms du corpus**\n`;
+  for (const w of ["daga", "sefe", "yige", "mini", "goli", "xanu", "maro", "lemine"]) {
+    const match = state.entries.find((e) => normalizeWord(e.soninke) === w && !isExcludedForm(e.soninke));
+    if (match) response += formatEntryBullet(match);
+  }
+
+  if (state.samples.length) {
+    response += `**Phrases parallèles attestées**\n`;
+    for (const sample of state.samples.slice(0, currentLevel().maxSamples)) {
+      response += soninkeBlock(sample.soninke, sample.french, "phrase");
+    }
+  }
+  response += levelNote();
+  return response;
+}
+
+// Contrôle mot à mot d'une phrase fournie par l'utilisateur.
+function proofreadPhrase(phrase) {
+  const tokens = String(phrase).split(/\s+/).filter(Boolean).slice(0, 20);
+  const rows = tokens.map((raw) => {
+    const clean = raw.replace(/^[«»"'“”.,!?;:()]+|[»«"'“”.,!?;:()]+$/g, "");
+    return { raw, clean, att: attestationOf(clean) };
+  });
+  const unknown = rows.filter((r) => (ATTESTATION[r.att.level]?.rank ?? 0) < 2);
+
+  let out = `**Analyse de « ${phrase} »**\n`;
+  for (const row of rows) {
+    if (!row.clean) continue;
+    const label = row.att.label || "Non attesté dans le corpus";
+    out += `- **${row.clean}** : ${label}\n`;
+  }
+  out += `\n`;
+  if (unknown.length) {
+    out += `**Formes non vérifiées : ${unknown.map((r) => r.clean).join(", ")}**\n\n`;
+    out += `Je ne propose pas de correction inventée : une correction n'est fiable que si elle est attestée. Soumettez ces formes au référent pour validation.\n\n`;
+  } else {
+    out += `Chaque mot est attesté séparément dans le corpus. L'ordre et l'accord de la phrase complète restent à valider par un locuteur référent.\n\n`;
+  }
+  out += levelNote();
+  return out;
+}
+
+// ── Icônes SVG (aucune dépendance, aucun emoji décoratif) ──
+const ICONS = {
+  speaker: '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M11 5L6 9H2.5v6H6l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/></svg>',
+  speakerLarge: '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M11 5L6 9H2.5v6H6l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.8 5.2a9.5 9.5 0 0 1 0 13.6"/></svg>',
+  star: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L3.5 9.7l5.9-.9z"/></svg>',
+  starFilled: '<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L3.5 9.7l5.9-.9z"/></svg>',
+  copy: '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg>',
+  translate: '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 7h11l-2.5-2.5M20 17H9l2.5 2.5"/></svg>',
+  trash: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>',
+};
+
+// Bloc SONINKÉ ↓ TRADUCTION FRANÇAISE
+function renderSoninkePair(rawSnk, rawFr, rawType) {
+  const snk = String(rawSnk || "").trim();
+  const fr = String(rawFr || "").trim();
+  if (!snk) return "";
+  const att = attestationOf(snk);
+  const audio = att.audio || findAudioInfo(snk);
+  const type = ["mot", "phrase", "expression"].includes(rawType)
+    ? rawType
+    : snk.split(/\s+/).length > 1 ? "phrase" : "mot";
+  const fav = isFavorite(snk, fr);
+  const audioLabel = audio ? "Écouter" : "Audio à venir";
+  const audioCls = audio ? "audio-play-btn" : "audio-play-btn audio-unavailable";
+  const audioTitle = audio
+    ? `Écouter « ${snk} » avec la voix de référence`
+    : `Aucun enregistrement de référence pour « ${snk} » : aucun substitut synthétique n'est utilisé`;
+  return `<div class="soninke-pair" data-snk="${snk}" data-fr="${fr}">
+  <div class="pair-snk-row">
+    <span class="pair-snk" lang="snk">${snk}</span>
+    <button type="button" class="${audioCls}" data-audio-word="${snk}" title="${audioTitle}" aria-label="${audioTitle}">${ICONS.speaker}<span>${audioLabel}</span></button>
+    <button type="button" class="fav-toggle${fav ? " is-favorite" : ""}" data-fav-snk="${snk}" data-fav-fr="${fr}" data-fav-type="${type}" aria-pressed="${fav ? "true" : "false"}" aria-label="${fav ? "Retirer des favoris" : "Ajouter aux favoris"}: ${snk}">${fav ? ICONS.starFilled : ICONS.star}</button>
+  </div>
+  <div class="pair-arrow" aria-hidden="true">↓</div>
+  <div class="pair-fr">${fr}</div>
+  <div class="pair-foot"><span class="pair-badge ${att.cls}">${att.label}</span></div>
+</div>`;
+}
+
+// ── Rendu Markdown + boutons audio de référence ──
 function renderMarkdown(text) {
   let html = esc(text);
 
-  // Marqueurs {{audio:MOT}} → boutons audio interactifs distinguant WAV référent vs synthèse phonétique
+  // Marqueurs {{pair:SONINKÉ|FRANÇAIS|type}} → bloc SONINKÉ ↓ FRANÇAIS
+  html = html.replace(/\{\{pair:([^|}]+)\|([^|}]*)\|?([^|}]*)\}\}/g,
+    (_, snk, fr, type) => renderSoninkePair(snk, fr, (type || "").trim())
+  );
+
+  // Marqueurs {{audio:MOT}} → bouton de lecture de la voix de référence
   html = html.replace(/\{\{audio:([^}]+)\}\}/g, (_, rawWord) => {
     const word = rawWord.trim();
-    const hasRealWav = !!findAudioInfo(word);
-    const cls = "audio-play-btn";
-    const title = hasRealWav
-      ? `Écouter l'audio intégré du référent : ${word}`
-      : `WAV ou assemblage de mots attestés, sinon indisponible : ${word}`;
-    return `<button type="button" class="${cls}" data-audio-word="${word}" title="${title}" aria-label="Écouter ${word}">🔊 ${word}</button>`;
+    const hasReferenceAudio = !!findAudioInfo(word);
+    const title = hasReferenceAudio
+      ? `Écouter « ${word} » avec la voix de référence`
+      : `Aucun enregistrement de référence pour « ${word} » : aucun substitut synthétique n'est utilisé`;
+    return `<button type="button" class="audio-play-btn${hasReferenceAudio ? "" : " audio-unavailable"}" data-audio-word="${word}" title="${title}" aria-label="${title}">${ICONS.speaker}<span>${word}</span></button>`;
   });
 
   // Code blocks
@@ -1300,7 +1798,13 @@ function renderMarkdown(text) {
     .map((block) => {
       block = block.trim();
       if (!block) return "";
-      if (block.startsWith("<ul>") || block.startsWith("<ol>") || block.startsWith("<pre>") || block === "<hr>") {
+      if (
+        block.startsWith("<ul>") ||
+        block.startsWith("<ol>") ||
+        block.startsWith("<pre>") ||
+        block.startsWith('<div class="soninke-pair"') ||
+        block === "<hr>"
+      ) {
         return block;
       }
       return `<p>${block.replace(/\n/g, "<br>")}</p>`;
@@ -1311,6 +1815,32 @@ function renderMarkdown(text) {
 }
 
 // ── Rendu de la conversation (avec actions audio toujours visibles sur mobile & desktop) ──
+// Texte brut lisible d'une réponse (pour la copie et la lecture).
+function plainTextOf(content) {
+  return String(content || "")
+    .replace(/\{\{pair:([^|}]+)\|([^|}]*)\|?([^|}]*)\}\}/g, "$1 → $2")
+    .replace(/\{\{audio:([^}]+)\}\}/g, "$1")
+    .replace(/[*_`#>]/g, "")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
+
+// Formes soninké d'un message, avec leur traduction (pour les favoris).
+function pairItemsOf(content) {
+  const items = [];
+  const seen = new Set();
+  for (const match of String(content || "").matchAll(/\{\{pair:([^|}]+)\|([^|}]*)\|?([^|}]*)\}\}/g)) {
+    const snk = match[1].trim();
+    const fr = match[2].trim();
+    const type = (match[3] || "").trim();
+    const key = `${normalizeWord(snk)}|${normalizeWord(fr)}`;
+    if (!snk || seen.has(key)) continue;
+    seen.add(key);
+    items.push({ snk, fr, type: ["mot", "phrase", "expression"].includes(type) ? type : (snk.split(/\s+/).length > 1 ? "phrase" : "mot") });
+  }
+  return items;
+}
+
 function renderMessages() {
   const conv = getConversation(state.activeConversationId);
   const messagesArea = $("#messages-area");
@@ -1336,21 +1866,30 @@ function renderMessages() {
         <div class="message-content">${esc(msg.content)}${note}</div>
       </div>`;
     } else {
-      const cleanCopy = esc(String(msg.content || "").replace(/\{\{audio:[^}]+\}\}/g, "").trim());
+      const cleanCopy = esc(plainTextOf(msg.content));
+      const pairItems = pairItemsOf(msg.content);
+      const favAll = pairItems.length
+        ? `<button type="button" class="msg-action-btn" data-fav-msg-index="${idx}" title="Enregistrer les formes soninké de cette réponse dans les favoris" aria-label="Enregistrer dans les favoris">
+            ${ICONS.star}<span>Favori</span>
+          </button>`
+        : "";
       html += `<div class="message message-assistant">
-        <div class="message-avatar">S</div>
+        <div class="message-avatar" aria-hidden="true">S</div>
         <div class="message-body">
           <div class="message-text">${renderMarkdown(msg.content)}</div>
           <div class="message-actions">
-            <button type="button" class="msg-action-btn" data-speak-index="${idx}" title="Écouter toute la réponse en audio vocal" aria-label="Écouter la réponse en audio">
-              🔊 Écouter
+            <button type="button" class="msg-action-btn" data-speak-index="${idx}" title="Écouter les formes soninké de la réponse" aria-label="Écouter la réponse">
+              ${ICONS.speakerLarge}<span>Écouter</span>
             </button>
-            <button type="button" class="msg-action-btn" data-speak-soninke-index="${idx}" title="Écouter uniquement les mots et phrases en soninké" aria-label="Écouter en soninké">
-              🗣️ Soninké
+            <button type="button" class="msg-action-btn" data-speak-soninke-index="${idx}" title="Écouter uniquement le soninké" aria-label="Écouter uniquement le soninké">
+              ${ICONS.speaker}<span>Soninké</span>
             </button>
-            <button type="button" class="msg-action-btn" data-explain-index="${idx}">🇫🇷 Comprendre en français</button>
+            <button type="button" class="msg-action-btn" data-explain-index="${idx}" title="Traduire les formes soninké en français" aria-label="Comprendre en français">
+              ${ICONS.translate}<span>Français</span>
+            </button>
+            ${favAll}
             <button type="button" class="msg-action-btn" data-copy="${cleanCopy}" title="Copier la réponse" aria-label="Copier la réponse">
-              📋 Copier
+              ${ICONS.copy}<span>Copier</span>
             </button>
           </div>
         </div>
@@ -1359,7 +1898,27 @@ function renderMessages() {
   });
 
   messagesArea.innerHTML = html;
+  syncFavoriteButtons();
   scrollToBottom();
+}
+
+// Met à jour l'état visuel des étoiles de favoris.
+function syncFavoriteButtons() {
+  document.querySelectorAll("[data-fav-snk]").forEach((btn) => {
+    const active = isFavorite(btn.dataset.favSnk, btn.dataset.favFr);
+    btn.classList.toggle("is-favorite", active);
+    btn.setAttribute("aria-pressed", active ? "true" : "false");
+    btn.setAttribute("aria-label", `${active ? "Retirer des favoris" : "Ajouter aux favoris"}: ${btn.dataset.favSnk}`);
+    btn.innerHTML = active ? ICONS.starFilled : ICONS.star;
+  });
+  document.querySelectorAll("[data-fav-msg-index]").forEach((btn) => {
+    const conv = getConversation(state.activeConversationId);
+    const msg = conv && conv.messages[Number(btn.dataset.favMsgIndex)];
+    if (!msg) return;
+    const items = pairItemsOf(msg.content);
+    const allSaved = items.length > 0 && items.every((item) => isFavorite(item.snk, item.fr));
+    btn.classList.toggle("is-favorite", allSaved);
+  });
 }
 
 function scrollToBottom() {
@@ -1544,7 +2103,7 @@ async function sendRecordedVoiceMessage(voiceNoteUrl) {
   }
 
   if (!state.activeConversationId) {
-    const conv = createConversation("🎤 Message vocal soninké");
+    const conv = createConversation("Message vocal soninké");
     state.activeConversationId = conv.id;
     updateTopbarTitle();
   }
@@ -1553,7 +2112,7 @@ async function sendRecordedVoiceMessage(voiceNoteUrl) {
 
   conv.messages.push({
     role: "user",
-    content: "🎤 Message vocal enregistré",
+    content: "Message vocal enregistré",
     voiceNoteUrl,
   });
   conv.updatedAt = Date.now();
@@ -1566,14 +2125,15 @@ async function sendRecordedVoiceMessage(voiceNoteUrl) {
   showTypingIndicator();
 
   const response =
-    `**Xa wouy Diom !** 🎤 {{audio:Xa wouy Diom}}\n\n` +
-    `J'ai bien **écouté et enregistré** votre message vocal (réécoutable juste au-dessus) et je vous réponds en **soninké** :\n\n` +
-    `- **Xa wouy Diom ! Toora nta !** → *Bonjour ! Tout va bien !* {{audio:toora nta}}\n` +
-    `- **aké n'séfé soninké** → *Il a parlé soninké* {{audio:aké n'séfé soninké}}\n` +
-    `- **Daga goli** {{audio:Daga goli}} · **Li taxu** {{audio:Li taxu}}\n` +
-    `- **nawari** → *Merci* {{audio:nawari}} · **oyi waxati** → *Au revoir* {{audio:oyi waxati}}\n\n` +
-    `Écrivez aussi n'importe quel mot ci-dessous et appuyez sur **Entrée** : la réponse vocale est immédiate !`;
-
+    `Votre message vocal a bien été enregistré : il est réécoutable juste au-dessus.\n\n` +
+    `Ce navigateur ne fournit pas de transcription automatique fiable, donc je ne devine pas son contenu. Écrivez votre question pour une réponse précise.\n\n` +
+    `**Formes attestées pour démarrer**\n` +
+    soninkeBlock("Xa wouy Diom", "Bonjour ! (salutation respectueuse)", "expression") +
+    soninkeBlock("Toora nta", "Tout va bien.", "expression") +
+    soninkeBlock("Nawari", "Merci.", "mot") +
+    soninkeBlock("oyi waxati", "Au revoir.", "expression") +
+    `Chaque forme est lue avec la voix de référence lorsqu'un enregistrement existe.\n\n` +
+    levelNote();
   const pendingSession = { conv, fullText: response, messageCreated: false, timer: null };
   state.activeStream = pendingSession;
   pendingSession.timer = setTimeout(() => {
@@ -1601,8 +2161,8 @@ function renderConversationList() {
   }
 
   if (filtered.length === 0) {
-    list.innerHTML = `<div style="padding: 20px 12px; text-align: center; color: var(--text-sidebar-muted); font-size: 12px;">
-      ${searchQuery ? "Aucune conversation trouvée" : "Aucune conversation"}
+    list.innerHTML = `<div class="conv-empty">
+      ${searchQuery ? "Aucune discussion trouvée" : "Aucune discussion pour le moment"}
     </div>`;
     return;
   }
@@ -1743,6 +2303,69 @@ function confirmDelete() {
   $("#delete-modal").classList.remove("visible");
 }
 
+// Écoute d'un extrait réel de la voix de référence, avec sa traduction.
+function playReferenceSample() {
+  ensureAudioUnlocked();
+  const priority = [
+    "Daga goli", "Li taxu", "Mpai reni", "Mpai telle",
+    "lemine ke", "maro ke", "koota su", "an wouydiom", "Xa wouy Diom",
+  ];
+  let info = priority.map((text) => findAudioInfo(text)).find(Boolean);
+  if (!info) info = state.audioList.find((item) => item && item.url);
+  if (!info) {
+    showVoiceStatus("Aucun enregistrement de référence n'est encore disponible dans le corpus local.", 4200);
+    return;
+  }
+  const entry = state.entries.find((e) => normalizeWord(e.soninke) === normalizeWord(info.text));
+  const translation = info.francais || (entry ? entry.francais : "");
+  showVoiceStatus(`Voix de référence · « ${info.text} »${translation ? ` — ${translation}` : ""}`, 4200);
+  playWordAudio(info.text);
+}
+
+// ── Favoris : mots, phrases et expressions à réécouter ──
+function openFavoritesPanel() {
+  closeSidebar();
+  renderFavorites();
+  $("#favorites-modal").classList.add("visible");
+}
+
+function renderFavorites() {
+  const list = $("#favorites-list");
+  if (!list) return;
+  const filter = state.favoriteFilter;
+  const items = state.favorites.filter((f) => filter === "all" || f.type === filter);
+
+  if (!items.length) {
+    list.innerHTML = `<div class="favorites-empty">
+      ${state.favorites.length
+        ? "Aucun favori dans cette catégorie."
+        : "Aucun favori pour le moment.<br>Touchez l'étoile à côté d'un mot ou d'une phrase pour le réécouter plus tard."}
+    </div>`;
+    updateFavoritesCount();
+    return;
+  }
+
+  list.innerHTML = items
+    .map((f) => {
+      const audio = findAudioInfo(f.snk);
+      const typeLabel = f.type === "mot" ? "Mot" : f.type === "expression" ? "Expression" : "Phrase";
+      return `<div class="favorite-item" data-fav-key="${esc(favoriteKey(f.snk, f.fr))}">
+        <div class="favorite-item-main">
+          <div class="favorite-item-snk" lang="snk">${esc(f.snk)}</div>
+          <div class="favorite-item-fr">${esc(f.fr || "Traduction non renseignée")}</div>
+          <div class="favorite-item-meta">${typeLabel} · ${audio ? "Voix de référence disponible" : "Audio de référence à enregistrer"}</div>
+        </div>
+        <div class="favorite-item-actions">
+          <button type="button" class="audio-play-btn${audio ? "" : " audio-unavailable"}" data-audio-word="${esc(f.snk)}" title="Écouter avec la voix de référence" aria-label="Écouter ${esc(f.snk)}">${ICONS.speaker}</button>
+          <button type="button" class="favorite-remove" data-fav-remove="${esc(f.snk)}|${esc(f.fr)}" title="Retirer des favoris" aria-label="Retirer ${esc(f.snk)} des favoris">${ICONS.trash}</button>
+        </div>
+      </div>`;
+    })
+    .join("");
+
+  updateFavoritesCount();
+}
+
 // ── Lexique & Explorateur des 576 Audios Intégrés ──
 let dictDirection = "all";
 
@@ -1760,37 +2383,44 @@ function renderDictResults() {
   const query = normalizeWord($("#dict-search").value);
   const container = $("#dict-results");
 
-  // Onglet dédié aux 576 enregistrements WAV intégrés !
+  // Onglet dédié aux enregistrements de référence
   if (dictDirection === "audio") {
     const matchingAudios = state.audioList
       .filter((item) => {
+        if (isExcludedForm(item.text)) return false;
         if (!query) return true;
-        return normalizeWord(item.text).includes(query) || normalizeWord(item.francais || "").includes(query) || item.id.includes(query);
+        return normalizeWord(item.text).includes(query) || normalizeWord(item.francais || "").includes(query) || String(item.id).includes(query);
       })
       .slice(0, MAX_DISPLAY);
 
     if (!matchingAudios.length) {
-      container.innerHTML = `<div class="dict-empty">Aucun enregistrement correspondant</div>`;
+      container.innerHTML = `<div class="dict-empty">Aucun enregistrement correspondant.</div>`;
       return;
     }
 
     container.innerHTML = matchingAudios
-      .map(
-        (a) => `<div class="dict-card">
+      .map((a) => {
+        const fav = isFavorite(a.text, a.francais || "");
+        return `<div class="dict-card">
           <div class="dict-card-head">
-            <h4>${esc(a.text)}</h4>
-            <button type="button" class="audio-play-btn" data-audio-word="${esc(a.text)}" title="Écouter ${esc(a.id)}.wav" aria-label="Écouter ${esc(a.text)}">🔊 Écouter</button>
+            <h4 lang="snk">${esc(a.text)}</h4>
+            <button type="button" class="audio-play-btn" data-audio-word="${esc(a.text)}" title="Écouter avec la voix de référence" aria-label="Écouter ${esc(a.text)}">${ICONS.speaker}<span>Écouter</span></button>
+            <button type="button" class="fav-toggle${fav ? " is-favorite" : ""}" data-fav-snk="${esc(a.text)}" data-fav-fr="${esc(a.francais || "")}" data-fav-type="${a.text.split(/\s+/).length > 1 ? "phrase" : "mot"}" aria-pressed="${fav ? "true" : "false"}" aria-label="Ajouter ${esc(a.text)} aux favoris">${fav ? ICONS.starFilled : ICONS.star}</button>
           </div>
           <div class="dict-translation">${a.francais ? esc(a.francais) : "Enregistrement soninké validé"}</div>
-          <div class="dict-meta">🎙️ ${esc(a.id)}.wav · Voix du référent</div>
-        </div>`
-      )
+          <div class="dict-meta">
+            <span class="pair-badge is-attested">Voix de référence</span>
+            <span>${esc(a.id)}.wav</span>
+          </div>
+        </div>`;
+      })
       .join("");
     return;
   }
 
   const results = state.entries
     .filter((entry) => {
+      if (isExcludedForm(entry.soninke)) return false;
       const snk = normalizeWord(entry.soninke);
       const fr = normalizeWord(entry.francais);
       const variants = normalizeWord(entry.variantes || "");
@@ -1801,22 +2431,27 @@ function renderDictResults() {
     .slice(0, MAX_DISPLAY);
 
   if (!results.length) {
-    container.innerHTML = `<div class="dict-empty">Aucun résultat</div>`;
+    container.innerHTML = `<div class="dict-empty">Aucun résultat dans le corpus.</div>`;
     return;
   }
 
   container.innerHTML = results
     .map((e) => {
-      const hasWav = !!findAudioInfo(e.soninke);
-      const btnCls = hasWav ? "audio-play-btn" : "audio-play-btn audio-tts-btn";
-      const label = hasWav ? "🔊 Audio" : "🔈 Voix";
+      const att = attestationOf(e.soninke);
+      const audio = att.audio || findAudioInfo(e.soninke);
+      const fav = isFavorite(e.soninke, e.francais);
+      const type = e.soninke.split(/\s+/).length > 1 ? "phrase" : "mot";
       return `<div class="dict-card">
         <div class="dict-card-head">
-          <h4>${esc(e.soninke)}</h4>
-          <button type="button" class="${btnCls}" data-audio-word="${esc(e.soninke)}" title="Écouter ${esc(e.soninke)}" aria-label="Écouter ${esc(e.soninke)}">${label}</button>
+          <h4 lang="snk">${esc(e.soninke)}</h4>
+          <button type="button" class="audio-play-btn${audio ? "" : " audio-unavailable"}" data-audio-word="${esc(e.soninke)}" title="Écouter avec la voix de référence" aria-label="Écouter ${esc(e.soninke)}">${ICONS.speaker}</button>
+          <button type="button" class="fav-toggle${fav ? " is-favorite" : ""}" data-fav-snk="${esc(e.soninke)}" data-fav-fr="${esc(e.francais)}" data-fav-type="${type}" aria-pressed="${fav ? "true" : "false"}" aria-label="Ajouter ${esc(e.soninke)} aux favoris">${fav ? ICONS.starFilled : ICONS.star}</button>
         </div>
         <div class="dict-translation">${esc(e.francais)}</div>
-        <div class="dict-meta">${e.categorie ? esc(e.categorie) : ""}${hasWav ? " · 🎙️ WAV référent" : ""}${e.isCandidate ? " · à vérifier" : ""}</div>
+        <div class="dict-meta">
+          <span class="pair-badge ${att.cls}">${att.label}</span>
+          ${e.categorie ? `<span>${esc(e.categorie)}</span>` : ""}
+        </div>
       </div>`;
     })
     .join("");
@@ -2116,7 +2751,7 @@ async function loadAllData() {
         state.audioByWord.set(key, info);
         if (ortho && !state.audioByOrtho.has(ortho)) state.audioByOrtho.set(ortho, info);
         state.audioList.push(info);
-        const stem = key.replace(/-(nde|ye|ŋe)$/, "").split(/\\s+/)[0];
+        const stem = key.replace(/-(nde|ye|ŋe)$/, "").split(/\s+/)[0];
         if (stem && stem !== key) {
           if (!state.relatedAudioByStem.has(stem)) state.relatedAudioByStem.set(stem, []);
           state.relatedAudioByStem.get(stem).push(info);
@@ -2124,6 +2759,43 @@ async function loadAllData() {
       }
     }
   } catch { /* Le corpus original reste disponible hors ligne. */ }
+
+  // 9. Voix de référence : source unique de tous les contenus audio
+  try {
+    const response = await fetch(VOICE_MEMORY_URL);
+    if (response.ok) {
+      const memory = await response.json();
+      state.referenceVoice = {
+        model: memory.model || "",
+        references: Array.isArray(memory.references) ? memory.references : [],
+        count: state.audioByWord.size,
+      };
+    }
+  } catch {}
+  state.referenceVoice.count = state.audioByWord.size;
+
+  // 10. Variantes graphiques reliées à l'enregistrement de référence de leur lemme
+  for (const entry of state.entries) {
+    const info = findAudioInfo(entry.soninke);
+    if (!info) continue;
+    for (const variant of String(entry.variantes || "").split(/[;,|]/)) {
+      const key = normalizeWord(variant);
+      if (!key || state.audioByWord.has(key) || state.audioByVariant.has(key)) continue;
+      state.audioByVariant.set(key, info);
+    }
+  }
+
+  // 11. Contrôle linguistique : formes écartées (jamais présentées comme soninké)
+  loadGuard();
+  try {
+    const response = await fetch(GUARD_URL);
+    if (response.ok) {
+      const payload = await response.json();
+      applyGuard(payload);
+      try { localStorage.setItem("soninkegpt_guard_cache", JSON.stringify(payload)); } catch {}
+    }
+  } catch {}
+
   updateCorpusStatus();
 }
 
@@ -2139,13 +2811,19 @@ function updateCorpusStatus() {
   if (aboutAudioEl) aboutAudioEl.textContent = audioCount || "—";
   if (statusEl) {
     let status = `${count} entrées`;
-    if (audioCount) status += ` · ${audioCount} audios`;
+    if (audioCount) status += ` · ${audioCount} audios de référence`;
     statusEl.textContent = status;
+  }
+  const refInfo = $("#reference-voice-info");
+  if (refInfo) {
+    const model = state.referenceVoice && state.referenceVoice.model ? state.referenceVoice.model : "corpus du référent";
+    refInfo.textContent = `Voix de référence : ${model}, ${state.referenceVoice.references?.length || 0} enregistrements sources, ${audioCount} formes indexées. Aucune voix de synthèse du navigateur n'est utilisée.`;
   }
   const audioFilterBtn = document.querySelector('.dict-filter[data-dir="audio"]');
   if (audioFilterBtn && audioCount) {
-    audioFilterBtn.textContent = `🔊 Audios (${audioCount})`;
+    audioFilterBtn.textContent = `Audios (${audioCount})`;
   }
+  updateFavoritesCount();
 }
 
 // ── Event Listeners ──
@@ -2247,9 +2925,7 @@ function initEvents() {
   // Salutation vocale d'accueil « Xa wouy Diom ! »
   const welcomeGreetBtn = $("#welcome-greet-audio-btn");
   if (welcomeGreetBtn) {
-    welcomeGreetBtn.addEventListener("click", () => {
-      speakResponse("**Xa wouy Diom** ! Bienvenue dans SoninkeGPT.");
-    });
+    welcomeGreetBtn.addEventListener("click", () => playReferenceSample());
   }
 
   // 8. Boutons d'activation de la réponse audio vocale automatique
@@ -2262,6 +2938,12 @@ function initEvents() {
   // New chat buttons
   $("#new-chat-btn").addEventListener("click", startNewChat);
   $("#new-chat-btn-top").addEventListener("click", startNewChat);
+  $$(".brand, .topbar-brand").forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      startNewChat();
+    });
+  });
 
   // Menu mobile
   $("#menu-btn").addEventListener("click", openSidebar);
@@ -2270,8 +2952,13 @@ function initEvents() {
 
   // Thème
   $("#theme-toggle").addEventListener("click", toggleTheme);
-  $$(".theme-option").forEach((btn) => {
+  $$(".theme-option[data-theme]").forEach((btn) => {
     btn.addEventListener("click", () => applyTheme(btn.dataset.theme));
+  });
+
+  // Niveau d'apprentissage (accueil + paramètres)
+  $$(".level-option").forEach((btn) => {
+    btn.addEventListener("click", () => setLevel(btn.dataset.level));
   });
 
   // Paramètres
@@ -2288,6 +2975,17 @@ function initEvents() {
   });
   $("#dictionary-close").addEventListener("click", () => $("#dictionary-modal").classList.remove("visible"));
   $("#dict-search").addEventListener("input", renderDictResults);
+
+  // Favoris
+  $("#favorites-btn").addEventListener("click", openFavoritesPanel);
+  $("#favorites-close").addEventListener("click", () => $("#favorites-modal").classList.remove("visible"));
+  $$(".dict-filter[data-fav-filter]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      state.favoriteFilter = btn.dataset.favFilter;
+      $$(".dict-filter[data-fav-filter]").forEach((b) => b.classList.toggle("active", b === btn));
+      renderFavorites();
+    });
+  });
 
   $$(".dict-filter").forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -2311,7 +3009,7 @@ function initEvents() {
   $("#delete-confirm").addEventListener("click", confirmDelete);
 
   $("#clear-all-data").addEventListener("click", () => {
-    if (confirm("Supprimer toutes les conversations ? Cette action est irréversible.")) {
+    if (confirm("Supprimer toutes les discussions ? Les favoris sont conservés.")) {
       state.conversations = [];
       state.activeConversationId = null;
       saveConversations();
@@ -2329,11 +3027,14 @@ function initEvents() {
       const success = await copyToClipboard(copyBtn.dataset.copy);
       if (success) {
         copyBtn.classList.add("copied");
-        const orig = copyBtn.textContent;
-        copyBtn.textContent = "✅ Copié";
+        const label = copyBtn.querySelector("span");
+        const orig = label ? label.textContent : copyBtn.textContent;
+        if (label) label.textContent = "Copié";
+        else copyBtn.textContent = "Copié";
         setTimeout(() => {
           copyBtn.classList.remove("copied");
-          copyBtn.textContent = orig;
+          if (label) label.textContent = orig;
+          else copyBtn.textContent = orig;
         }, 1800);
       }
       return;
@@ -2383,6 +3084,46 @@ function initEvents() {
       return;
     }
 
+    const favToggle = e.target.closest(".fav-toggle[data-fav-snk]");
+    if (favToggle) {
+      toggleFavorite({
+        snk: favToggle.dataset.favSnk,
+        fr: favToggle.dataset.favFr,
+        type: favToggle.dataset.favType,
+      });
+      return;
+    }
+
+    const favMsgBtn = e.target.closest("[data-fav-msg-index]");
+    if (favMsgBtn) {
+      const conv = getConversation(state.activeConversationId);
+      const msg = conv && conv.messages[Number(favMsgBtn.dataset.favMsgIndex)];
+      if (msg) {
+        const items = pairItemsOf(msg.content);
+        const allSaved = items.length > 0 && items.every((item) => isFavorite(item.snk, item.fr));
+        for (const item of items) {
+          if (allSaved) {
+            const key = favoriteKey(item.snk, item.fr);
+            state.favorites = state.favorites.filter((f) => favoriteKey(f.snk, f.fr) !== key);
+          } else if (!isFavorite(item.snk, item.fr)) {
+            state.favorites.unshift({ ...item, source: "Réponse", createdAt: Date.now() });
+          }
+        }
+        saveFavorites();
+        updateFavoritesCount();
+        syncFavoriteButtons();
+        renderFavorites();
+      }
+      return;
+    }
+
+    const favRemove = e.target.closest("[data-fav-remove]");
+    if (favRemove) {
+      const [snk, fr] = favRemove.dataset.favRemove.split("|");
+      toggleFavorite({ snk, fr });
+      return;
+    }
+
     const audioBtn = e.target.closest(".audio-play-btn[data-audio-word]");
     if (audioBtn) {
       playWordAudio(audioBtn.dataset.audioWord, audioBtn);
@@ -2426,6 +3167,14 @@ function initEvents() {
 async function init() {
   initTheme();
   loadConversations();
+  loadFavorites();
+  loadGuard();
+
+  try {
+    const savedLevel = localStorage.getItem(LEVEL_KEY);
+    state.level = LEVELS[savedLevel] ? savedLevel : "debutant";
+  } catch { state.level = "debutant"; }
+  setLevel(state.level, false);
 
   try { state.voiceReplies = localStorage.getItem(VOICE_PREF_KEY) !== "0"; } catch {}
   syncVoiceReplyUI();
@@ -2434,9 +3183,15 @@ async function init() {
   updateSendButton();
   renderConversationList();
   renderMessages();
+  renderFavorites();
+  updateFavoritesCount();
 
   state.dataReady = loadAllData();
   await state.dataReady;
+
+  // Le corpus est chargé : rafraîchir les statuts de validation affichés
+  renderFavorites();
+  renderMessages();
 }
 
 init();
