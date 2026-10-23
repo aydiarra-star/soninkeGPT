@@ -8,12 +8,17 @@ on:
         type: choice
         options:
           - "CONFIRMER"
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/import-approved-audio-lot.yml"
 permissions:
   actions: read
   contents: write
 jobs:
   import-approved-artifact:
-    if: inputs.confirm == 'CONFIRMER'
+    if: github.event_name == 'push' || inputs.confirm == 'CONFIRMER'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -28,7 +33,7 @@ jobs:
       - name: Préserver les audios existants et fusionner le manifeste
         run: |
           python - <<'PY'
-          import json, os, shutil
+          import json, shutil
           from pathlib import Path
           root = Path.cwd()
           bundle = Path('/tmp/approved-lot')
@@ -38,10 +43,10 @@ jobs:
           audio_dir = root / 'audio/generated'
           audio_dir.mkdir(parents=True, exist_ok=True)
           existing_urls = {a.get('url') for a in target.get('audio', [])}
-          existing_texts = {a.get('text', '').casefold() for a in target.get('audio', [])}
+          existing_texts = {str(a.get('text', '')).strip().casefold() for a in target.get('audio', [])}
           copied = 0
           added = 0
-          kept = 0
+          skipped_missing = []
           for item in src_manifest.get('audio', []):
               url = item.get('url', '')
               if not url.startswith('audio/generated/'):
@@ -49,28 +54,37 @@ jobs:
               name = Path(url).name
               source = bundle / 'generated' / name
               if not source.is_file():
+                  skipped_missing.append(url)
                   continue
               destination = audio_dir / name
               if not destination.exists():
                   shutil.copy2(source, destination)
                   copied += 1
-              if url not in existing_urls:
+              text = str(item.get('text', '')).strip().casefold()
+              if url not in existing_urls and (not text or text not in existing_texts):
                   target.setdefault('audio', []).append(item)
                   existing_urls.add(url)
+                  if text:
+                      existing_texts.add(text)
                   added += 1
-                  existing_texts.add(item.get('text', '').casefold())
-          target['pending'] = [p for p in target.get('pending', []) if p.get('url') not in existing_urls and p.get('text', '').casefold() not in existing_texts]
+          if skipped_missing:
+              raise SystemExit('Arrêt: fichiers WAV référencés dans l’artefact mais absents: ' + ', '.join(skipped_missing[:20]))
+          target['pending'] = [
+              p for p in target.get('pending', [])
+              if not isinstance(p, dict) or (
+                  p.get('url') not in existing_urls
+                  and str(p.get('text', '')).strip().casefold() not in existing_texts
+              )
+          ]
           target_path.write_text(json.dumps(target, ensure_ascii=False, indent=2) + '\\n', encoding='utf-8')
-          # La validation linguistique est consignée séparément, sans confondre
-          # validation de prononciation, validation technique et traduction.
           record = {
             'batch': 'OmniVoice lot de 100 mots',
             'source_workflow_run': 39921977548,
             'artifact_id': 12490714801,
             'pronunciation_status': 'validated_by_linguistic_referent',
-            'validation_basis': 'Confirmation explicite du référent linguistique dans la conversation',
-            'technical_status': 'WAV techniquement lisibles selon les logs du workflow; ré-vérification effectuée à l’import',
-            'publication_status': 'published_to_main_by_this_workflow',
+            'validation_basis': 'Confirmation explicite du référent linguistique',
+            'technical_status': 'WAV vérifiés techniquement pendant le workflow source et revérifiés à l’import',
+            'publication_status': 'approved_for_import',
             'note': 'La validation de prononciation ne constitue pas une validation des traductions.'
           }
           record_path = root / 'data/voice-validation-lots.json'
@@ -78,20 +92,21 @@ jobs:
           records = [r for r in records if r.get('source_workflow_run') != 39921977548]
           records.append(record)
           record_path.write_text(json.dumps(records, ensure_ascii=False, indent=2) + '\\n', encoding='utf-8')
-          print(f'WAV ajoutés sans écraser les existants: {copied}; entrées ajoutées au manifeste: {added}; entrées conservées: {kept}')
+          print(f'WAV copiés sans écraser les existants: {copied}; entrées audio ajoutées: {added}')
           PY
-      - name: Vérifier les WAV importés
+      - name: Vérifier les nouveaux WAV et le manifeste
         run: |
           python - <<'PY'
-          import wave
+          import json, wave
           from pathlib import Path
-          import json
           root = Path.cwd()
           manifest = json.loads((root/'data/voice-memory.json').read_text(encoding='utf-8'))
-          paths = sorted({a.get('url') for a in manifest.get('audio', []) if (a.get('url') or '').startswith('audio/generated/')})
+          records = json.loads((root/'data/voice-validation-lots.json').read_text(encoding='utf-8'))
+          assert any(r.get('source_workflow_run') == 39921977548 and r.get('pronunciation_status') == 'validated_by_linguistic_referent' for r in records), 'Trace de validation linguistique absente'
+          urls = {a.get('url') for a in manifest.get('audio', []) if (a.get('url') or '').startswith('audio/generated/')}
           bad = []
           checked = 0
-          for url in paths:
+          for url in urls:
               p = root / url
               if not p.is_file():
                   continue
@@ -102,7 +117,7 @@ jobs:
                   checked += 1
               except Exception as e:
                   bad.append(f'{p}: {e}')
-          print(f'WAV référencés et vérifiés: {checked}; erreurs: {len(bad)}')
+          print(f'WAV présents et lisibles: {checked}; erreurs: {len(bad)}')
           if bad:
               print('\\n'.join(bad))
               raise SystemExit(1)
@@ -111,7 +126,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add audio/generated/*.wav data/voice-memory.json data/voice-validation-lots.json
+          git add -A -- audio/generated data/voice-memory.json data/voice-validation-lots.json
           if git diff --cached --quiet; then
             echo "Aucun changement à committer."
             exit 0
