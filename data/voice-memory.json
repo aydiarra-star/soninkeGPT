@@ -3567,6 +3567,41 @@
       "kind": "voice_clone_unreviewed"
     },
     {
+      "text": "baara",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "variété de paille pour faire les toits",
+      "url": "audio/generated/ad6ec351faafeac1fbde753b.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baase",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "repas d'accueil, plat offert à un hôte",
+      "url": "audio/generated/ab12b6d5f008302da8b0ac59.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baasunde",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "action d'offrir un plat à un hôte",
+      "url": "audio/generated/36117c84672cfe53e3017197.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baata",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "favori(e), préféré(e) / tabatière / pot à pommade",
+      "url": "audio/generated/2d07895d02712836d017acf7.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baaxa",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "ceinture de gris-gris ; margouillat",
+      "url": "audio/generated/270b9e2e389e19c4c5fa6fc0.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
       "text": "ba",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "\"Est-ce que ; appelation honorifique donné à un homme, appelation donnée à un inconnu, monsieur ; diminutif de \"faaba\" ; en ce qui concerne (X),Alla ɲaamarindun ba, axa da kun",
@@ -3578,6 +3613,20 @@
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "valeur quantitative, associé à des déterminants quantifieurs: yogo, tana, 0) ; seul (valeur qualifcatif) ; le même (en fonction épithète, pas en fonction attribut ; dans un contexte où le nom qualifié par baane s'oppose à une première occurrence de même valeur ; chacun ; un peu ; one ; un à un, un par un",
       "url": "audio/generated/d517debb54a589db79858df5.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baari",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "dégagé (d'une obligation, d'un serment)",
+      "url": "audio/generated/838293a870cef64086d98382.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baaraago",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "course de chevaux",
+      "url": "audio/generated/67bc880d8f2e0be8ec33d23f.wav",
       "kind": "voice_clone_unreviewed"
     },
     {
@@ -3637,6 +3686,13 @@
       "kind": "voice_clone_unreviewed"
     },
     {
+      "text": "baanondi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "rendre égal",
+      "url": "audio/generated/7e0324272ba0f0525745ee39.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
       "text": "baananbe",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "chacun",
@@ -3648,6 +3704,55 @@
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "même",
       "url": "audio/generated/c2e096daf3a22cd265765a8a.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baanu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "autres",
+      "url": "audio/generated/026eddb50cc0d96e9c892d3f.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baarindaana",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "libérateur, rédempteur",
+      "url": "audio/generated/24a95a4e7866ffbece078f14.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baasi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "mal, dommage, tort",
+      "url": "audio/generated/6df626793d36e18416f5e1d7.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baasu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "donner un repas d'accueil à quelqu'un, N da Abulaye baasu ti futo",
+      "url": "audio/generated/0c932e08a913b9fa3e2056c3.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baasundaana",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "hôte(sse)",
+      "url": "audio/generated/2a25bfa67b1b237041eb0f26.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baati",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "déjà",
+      "url": "audio/generated/1a1b98a440bdaf37ea46d3a7.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baawo",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "Baawon kati, xollun fugu",
+      "url": "audio/generated/228ccda6614c661ab71369d3.wav",
       "kind": "voice_clone_unreviewed"
     },
     {
@@ -3805,6 +3910,13 @@
       "kind": "voice_clone_unreviewed"
     },
     {
+      "text": "baata1",
+      "source": "data/source/reports/candidats-prioritaires-validation-soninke.csv",
+      "francais": "tabatière",
+      "url": "audio/generated/0dd0b5496b0e57389f515ce4.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
       "text": "baabe",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
       "francais": "",
@@ -3816,6 +3928,20 @@
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
       "francais": "",
       "url": "audio/generated/e01378509e77eef7f72fe8a6.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baawo2",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/6125c8dcfe0617295fa2d7f9.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baawo3",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "Baawon kati, xollun fugu",
+      "url": "audio/generated/b0c178144c70862088d9bf90.wav",
       "kind": "voice_clone_unreviewed"
     },
     {
@@ -3854,6 +3980,13 @@
       "kind": "voice_clone_unreviewed"
     },
     {
+      "text": "baata2",
+      "source": "data/source/reports/lot-validation-prioritaire-soninke.csv",
+      "francais": "favori(e), préféré(e)",
+      "url": "audio/generated/6674d55fb000872e3bd9557b.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
       "text": "ba1",
       "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
       "francais": "\"Est-ce que",
@@ -3875,6 +4008,13 @@
       "kind": "voice_clone_unreviewed"
     },
     {
+      "text": "baawo1",
+      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
+      "francais": "beerini",
+      "url": "audio/generated/277d42e5ee6db72aaabd81e4.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
       "text": "-bali",
       "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
       "francais": "manque de",
@@ -3883,126 +4023,6 @@
     }
   ],
   "pending": [
-    {
-      "text": "baanondi",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "rendre égal",
-      "url": "audio/generated/7e0324272ba0f0525745ee39.wav"
-    },
-    {
-      "text": "baanu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "autres",
-      "url": "audio/generated/026eddb50cc0d96e9c892d3f.wav"
-    },
-    {
-      "text": "baara",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "variété de paille pour faire les toits",
-      "url": "audio/generated/ad6ec351faafeac1fbde753b.wav"
-    },
-    {
-      "text": "baaraago",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "course de chevaux",
-      "url": "audio/generated/67bc880d8f2e0be8ec33d23f.wav"
-    },
-    {
-      "text": "baari",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "dégagé (d'une obligation, d'un serment)",
-      "url": "audio/generated/838293a870cef64086d98382.wav"
-    },
-    {
-      "text": "baarindaana",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "libérateur, rédempteur",
-      "url": "audio/generated/24a95a4e7866ffbece078f14.wav"
-    },
-    {
-      "text": "baase",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "repas d'accueil, plat offert à un hôte",
-      "url": "audio/generated/ab12b6d5f008302da8b0ac59.wav"
-    },
-    {
-      "text": "baasi",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "mal, dommage, tort",
-      "url": "audio/generated/6df626793d36e18416f5e1d7.wav"
-    },
-    {
-      "text": "baasu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "donner un repas d'accueil à quelqu'un, N da Abulaye baasu ti futo",
-      "url": "audio/generated/0c932e08a913b9fa3e2056c3.wav"
-    },
-    {
-      "text": "baasundaana",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "hôte(sse)",
-      "url": "audio/generated/2a25bfa67b1b237041eb0f26.wav"
-    },
-    {
-      "text": "baasunde",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "action d'offrir un plat à un hôte",
-      "url": "audio/generated/36117c84672cfe53e3017197.wav"
-    },
-    {
-      "text": "baata",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "favori(e), préféré(e) / tabatière / pot à pommade",
-      "url": "audio/generated/2d07895d02712836d017acf7.wav"
-    },
-    {
-      "text": "baata1",
-      "source": "data/source/reports/candidats-prioritaires-validation-soninke.csv",
-      "francais": "tabatière",
-      "url": "audio/generated/0dd0b5496b0e57389f515ce4.wav"
-    },
-    {
-      "text": "baata2",
-      "source": "data/source/reports/lot-validation-prioritaire-soninke.csv",
-      "francais": "favori(e), préféré(e)",
-      "url": "audio/generated/6674d55fb000872e3bd9557b.wav"
-    },
-    {
-      "text": "baati",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "déjà",
-      "url": "audio/generated/1a1b98a440bdaf37ea46d3a7.wav"
-    },
-    {
-      "text": "baawo",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "Baawon kati, xollun fugu",
-      "url": "audio/generated/228ccda6614c661ab71369d3.wav"
-    },
-    {
-      "text": "baawo1",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "beerini",
-      "url": "audio/generated/277d42e5ee6db72aaabd81e4.wav"
-    },
-    {
-      "text": "baawo2",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/6125c8dcfe0617295fa2d7f9.wav"
-    },
-    {
-      "text": "baawo3",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "Baawon kati, xollun fugu",
-      "url": "audio/generated/b0c178144c70862088d9bf90.wav"
-    },
-    {
-      "text": "baaxa",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "ceinture de gris-gris ; margouillat",
-      "url": "audio/generated/270b9e2e389e19c4c5fa6fc0.wav"
-    },
     {
       "text": "baaxa1",
       "source": "data/source/reports/lot-validation-prioritaire-soninke.csv",
