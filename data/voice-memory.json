@@ -4060,6 +4060,706 @@
       "francais": "manque de",
       "url": "audio/generated/74097eb0f3a144ab4f21f5e3.wav",
       "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baaye",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "tante ; orphelin ; planer",
+      "url": "audio/generated/556204f9bc897460e15f0c21.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "badaane",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "variole",
+      "url": "audio/generated/7ee5d87c1b8706935b4aedba.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "badage",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "hadage ; buisson",
+      "url": "audio/generated/e9a7fa683f8c20304b162b48.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "badarawulle",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "variété de lynx à robe fauve, caracal",
+      "url": "audio/generated/f4f988e8a77cf5f04a012572.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bado",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "variété de longue herbe utilisée à fabriquer les seccos ; robe multicolore à dominante rouge (ex: chèvre, cheval) ; femme aux grossesses très rapprochées",
+      "url": "audio/generated/c68e3b71b17f1ba365b49e99.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bafe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "antichambre, vestibule",
+      "url": "audio/generated/11e1f63bdbd606f717876316.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bafido",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "tapis de selle",
+      "url": "audio/generated/7f1d9d840c90360e29ab1739.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bagandaare",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "rançon",
+      "url": "audio/generated/a21a3a2a80d9b0f83db07952.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bage",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "variété d'acacia épineux",
+      "url": "audio/generated/9eed2802af32e15018a86f62.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bagi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "variété de tissu européen, percale",
+      "url": "audio/generated/23c8f077bf5acf663c2d1341.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bajo",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "couverture en laine ; fils unique / variété de cheval",
+      "url": "audio/generated/d6f71334015da4f42c134494.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bajungu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "mil ou maïs bouilli",
+      "url": "audio/generated/bf2ec7586f5443c179a3026e.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bakkata",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "colombe, variété de tourterelle ; variété de poisson",
+      "url": "audio/generated/3b7240912059808cc6d4ad34.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bakke",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "sortie",
+      "url": "audio/generated/d1b0a495891fef2ad23afbd7.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bakkubakku",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "crapaud",
+      "url": "audio/generated/9f479895b89fe0f2de2e84c5.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "balafata",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "string, cache-sexe (féminin)",
+      "url": "audio/generated/4c3538a3e5fe1e0e85390e8c.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "ballaade",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "poutre, traverse ; clavicule",
+      "url": "audio/generated/65fc89fcd59f240e8c3d54a2.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "banŋe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "chez, vers ; côté, parti",
+      "url": "audio/generated/94c1ee2f86b8ff59727cb7bb.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bape",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "piège ; terre soulevée par les plantes en germination",
+      "url": "audio/generated/7c466d13b71530b9e4304112.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "banboxo",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "sud ; nom traditionnel pour la région au sud du haut Sénégal (fleuve)",
+      "url": "audio/generated/0e7d3b2c99cf530b2a013b51.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "balaawu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "épidémie ; accident, incident",
+      "url": "audio/generated/49876bf4dbe73c11e1a7d65f.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bagande",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "sortie ; soustraction / bugunde",
+      "url": "audio/generated/0284f31c0a0db937282641ec.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bapore",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "variété de poisson, capitaine",
+      "url": "audio/generated/f40c26a4de6254b8386ff2fd.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "Baaxunu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "région traditionnelle entre Nara et Nioro",
+      "url": "audio/generated/8f63197349b571b903c40d20.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baaya",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "écarter",
+      "url": "audio/generated/ebf0bc0f06c803f17f6e3009.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baayante",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "écarté, ouvert",
+      "url": "audio/generated/96e17a3047e1bb70387e1243.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baayi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "forme vocative de tante (baaye), sœur du père",
+      "url": "audio/generated/a5d1432d10e078f31a73daa5.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "Bacili",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "patronyme soninké",
+      "url": "audio/generated/c23af94680174a433428f737.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "badaxare",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "variété d'arbre utilisé souvent comme clôture",
+      "url": "audio/generated/7c20110507f2af53cb8ee3ff.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "badonlenme",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "enfant qui tète sa maman en état de grossesse",
+      "url": "audio/generated/55de7f02ddd1b0fb219ab7e8.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bafaade",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "drap pour le lit",
+      "url": "audio/generated/fff938624687dd7ed5e56486.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baga",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "suffire, égaler",
+      "url": "audio/generated/7d624400da01cbb1223365bc.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bagandi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "enlever, sorti, faire",
+      "url": "audio/generated/b00b0c7976606f6da6df8d6b.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bagandindi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "faire sortir qqch",
+      "url": "audio/generated/1b63c833fdc9a0fd27281b69.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "Bakari",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "Bakary",
+      "url": "audio/generated/1c2ce2812a938bc70d584e87.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bala",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "être coincé",
+      "url": "audio/generated/f2fdd58856e77152463d6183.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "balandi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "fermer",
+      "url": "audio/generated/56e8910779571b3034c66d5f.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "balawunte",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "imprudent (être)",
+      "url": "audio/generated/88c3db8eeef762fca06161c4.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "balaaxu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "absence",
+      "url": "audio/generated/efb0a12e291f1b35e089cf44.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "balanka",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "bateau à voile, chaland",
+      "url": "audio/generated/a3224c1c8b2a22f35504278d.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "balansanŋe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "variété d'arbre",
+      "url": "audio/generated/088f492530a7501c1d032c4d.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "ballaana",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "celui qui refuse",
+      "url": "audio/generated/502d5ea23f59c636d9b33440.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "balle",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "refus",
+      "url": "audio/generated/a89481fe84845e9dc7c86322.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "balumanga",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "bâton des circoncis",
+      "url": "audio/generated/be14250bd917962457b82baf.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "Bamako",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "Bamako, capitale du Mali",
+      "url": "audio/generated/5743d834232b4628bb54ac41.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bana",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "repousse sauvage de céréale",
+      "url": "audio/generated/59642a7ba5d40b66ee3743db.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bananba",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "Gommier, chigomier, combretum, arbre de fer, bois de plomb, bois d'éléphant",
+      "url": "audio/generated/c259a1271a7bcb9887b4d232.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "banba",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "étendre",
+      "url": "audio/generated/a9e209866549a42bc660bbda.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "banbante",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "étendu",
+      "url": "audio/generated/3f42551cf863f2a9b6acd254.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "banbaado",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "pagne pour attacher un enfant sur le dos / enfance",
+      "url": "audio/generated/a68ba26db3c3b8756405726a.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "banballe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "terrasse",
+      "url": "audio/generated/481ea1ae70d52cf871b7a868.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "banbanŋe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "arbre au bois dur dont les feuilles sont comestibles par les animaux",
+      "url": "audio/generated/47a3134a35870281b30e2cac.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "banbaɲa",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "louche utilisée par les nouvelles mariées",
+      "url": "audio/generated/65f4c429e317fbb68ab3ae7c.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "banbara",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "langue et ethnie bambara",
+      "url": "audio/generated/0764711c4bda9d749c80ed10.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "banbe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "grotte / nager, surnager, flotter, s'amuser dans l'eau",
+      "url": "audio/generated/58388fc51e10c1fc2e40cdc6.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "banbi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "attacher sur le dos (être)",
+      "url": "audio/generated/4444c71a18707ce824925e50.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "banboroso",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "syphilis, vérole",
+      "url": "audio/generated/b42641656c52be41de6b7819.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "banbu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "porter sur le dos",
+      "url": "audio/generated/954f5214a07fea3a6d5491a4.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "banbure",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "envers",
+      "url": "audio/generated/9d0bd8ec76a39542e17ab922.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "banbuse",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "vague",
+      "url": "audio/generated/c26b3c259fff43c3543732a9.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "banbuuse",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "vague",
+      "url": "audio/generated/8d2ac829d969fed94160b0b3.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bandanŋe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "gros ver, chenille",
+      "url": "audio/generated/fa1d7c1850fd5c667b53b280.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bande",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "variété de serpent venimeux qui peut sauter",
+      "url": "audio/generated/fa4c197bef7acad6bec1ffc7.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bandeeri",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "voile, drapeau, parasol, parapluie",
+      "url": "audio/generated/80cdbc205acb7ac445387f72.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bando",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "premier lait d'un animal ayant mis bas",
+      "url": "audio/generated/2bef04411899fc2e5c82c5c9.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bangandi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "apparaître (faire), créer",
+      "url": "audio/generated/1060ca81503c7f62127f09c1.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bangaye",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "apparition, popularité, naissance, création",
+      "url": "audio/generated/93a551e99f912f2eab6accb4.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bange",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "apparaître, naître, être publié, être né",
+      "url": "audio/generated/071770c946211e36bff2c3b3.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "banisirayilanka",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "Israelite",
+      "url": "audio/generated/480ea677f5a2800e78539dd8.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "Banjugu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "nom propre masculin",
+      "url": "audio/generated/f1954ee602b8d3c68ce81033.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "banna",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "riche / homme riche",
+      "url": "audio/generated/3e2f0dc3ecab15b0d63a3478.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bannaaxu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "signe de richesse",
+      "url": "audio/generated/d3d4b34b413d135be3a89fce.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "banta",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "arbuste sauvage",
+      "url": "audio/generated/31dd5c217a92e4f670ec94fa.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bantara",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "manioc",
+      "url": "audio/generated/d63f463761969fd8320c2a35.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bantinŋe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "fromager",
+      "url": "audio/generated/522bc28b86825844a5e9fd44.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "banxanxalle",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "dartre",
+      "url": "audio/generated/2b40d8381625e655fb5fb314.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bapi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "être écrasé écrasé (être) être couché à plat ventre / être écrasé (nez) / être couché à plat ventre (grenouilles),",
+      "url": "audio/generated/936e544cdaedbe475a9ef3ac.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bapu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "écraser",
+      "url": "audio/generated/6fc502bcd6523fbad754b9e2.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baqaana",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "provocateur",
+      "url": "audio/generated/a445f28f7b7af56007f042a5.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baqaare",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "crème de mil et de lait caillé",
+      "url": "audio/generated/5ae6d8197e4c61315556bd42.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baqalla",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "provocateur, agresseur",
+      "url": "audio/generated/a793d15fe675cb934b684a89.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baqata",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "provocateur, agresseur",
+      "url": "audio/generated/5fbbd1224642475279c6d554.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baqe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "variété d'herbe mangée par les chevaux / agression, provocation",
+      "url": "audio/generated/b604f6139ef2e66a13d6bb7d.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baraada",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "théière",
+      "url": "audio/generated/197b18363716946d98657c71.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "barabara",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "faire bouillir",
+      "url": "audio/generated/e89b9c90948d5e734ec8bd79.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bafi",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/f1fc1e0231e03c300766ea1d.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bahaade",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/5e8e01872774fa1dd6253f7b.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bahe",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/4330136b90f51d743b5c56fd.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bahi",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/32b4e157206b6c2aff05185f.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bahido",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/09c824480ee1e00941ebc4a3.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bajjo",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/2d4b5e820ccd79dcc37b2e66.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bakkaane",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/a7baa6b3addb177b4e7304fa.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bakkande",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/40b012825bdd3e4700d2eb55.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "balawu",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/8c96ee93608dc4fd5945235e.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "balaxa",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/20a6a414955332b508d9f731.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "balla",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/85cb3daccfa01916075afc3c.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "banbuxu",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/954f9d45da69d83e8b195aca.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bandi",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/893b95a698ff9bca2806a9bb.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bapoore",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/971bdd90964b62374d341b8e.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baqa",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/557327c7a044e146b40a9312.wav",
+      "kind": "voice_clone_unreviewed"
     }
   ],
   "pending": [
@@ -4074,30 +4774,6 @@
       "source": "data/source/reports/lot-validation-prioritaire-soninke.csv",
       "francais": "margouillat",
       "url": "audio/generated/ac366c647197dc677e88bdf0.wav"
-    },
-    {
-      "text": "Baaxunu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "région traditionnelle entre Nara et Nioro",
-      "url": "audio/generated/8f63197349b571b903c40d20.wav"
-    },
-    {
-      "text": "baaya",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "écarter",
-      "url": "audio/generated/ebf0bc0f06c803f17f6e3009.wav"
-    },
-    {
-      "text": "baayante",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "écarté, ouvert",
-      "url": "audio/generated/96e17a3047e1bb70387e1243.wav"
-    },
-    {
-      "text": "baaye",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "tante ; orphelin ; planer",
-      "url": "audio/generated/556204f9bc897460e15f0c21.wav"
     },
     {
       "text": "baaye1",
@@ -4118,48 +4794,6 @@
       "url": "audio/generated/2e139373bb199750995f41a7.wav"
     },
     {
-      "text": "baayi",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "forme vocative de tante (baaye), sœur du père",
-      "url": "audio/generated/a5d1432d10e078f31a73daa5.wav"
-    },
-    {
-      "text": "Bacili",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "patronyme soninké",
-      "url": "audio/generated/c23af94680174a433428f737.wav"
-    },
-    {
-      "text": "badaane",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "variole",
-      "url": "audio/generated/7ee5d87c1b8706935b4aedba.wav"
-    },
-    {
-      "text": "badage",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "hadage ; buisson",
-      "url": "audio/generated/e9a7fa683f8c20304b162b48.wav"
-    },
-    {
-      "text": "badarawulle",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "variété de lynx à robe fauve, caracal",
-      "url": "audio/generated/f4f988e8a77cf5f04a012572.wav"
-    },
-    {
-      "text": "badaxare",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "variété d'arbre utilisé souvent comme clôture",
-      "url": "audio/generated/7c20110507f2af53cb8ee3ff.wav"
-    },
-    {
-      "text": "bado",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "variété de longue herbe utilisée à fabriquer les seccos ; robe multicolore à dominante rouge (ex: chèvre, cheval) ; femme aux grossesses très rapprochées",
-      "url": "audio/generated/c68e3b71b17f1ba365b49e99.wav"
-    },
-    {
       "text": "bado1",
       "source": "data/source/reports/lot-validation-prioritaire-soninke.csv",
       "francais": "variété de longue herbe utilisée à fabriquer les seccos",
@@ -4178,42 +4812,6 @@
       "url": "audio/generated/fd1375598f1efea3648e847e.wav"
     },
     {
-      "text": "badonlenme",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "enfant qui tète sa maman en état de grossesse",
-      "url": "audio/generated/55de7f02ddd1b0fb219ab7e8.wav"
-    },
-    {
-      "text": "bafaade",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "drap pour le lit",
-      "url": "audio/generated/fff938624687dd7ed5e56486.wav"
-    },
-    {
-      "text": "bafe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "antichambre, vestibule",
-      "url": "audio/generated/11e1f63bdbd606f717876316.wav"
-    },
-    {
-      "text": "bafi",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/f1fc1e0231e03c300766ea1d.wav"
-    },
-    {
-      "text": "bafido",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "tapis de selle",
-      "url": "audio/generated/7f1d9d840c90360e29ab1739.wav"
-    },
-    {
-      "text": "baga",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "suffire, égaler",
-      "url": "audio/generated/7d624400da01cbb1223365bc.wav"
-    },
-    {
       "text": "baga1",
       "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
       "francais": "suffire, égaler",
@@ -4224,78 +4822,6 @@
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
       "francais": "",
       "url": "audio/generated/2ce7f576bd0fcb7b1186b967.wav"
-    },
-    {
-      "text": "bagandaare",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "rançon",
-      "url": "audio/generated/a21a3a2a80d9b0f83db07952.wav"
-    },
-    {
-      "text": "bagande",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "sortie ; soustraction / bugunde",
-      "url": "audio/generated/0284f31c0a0db937282641ec.wav"
-    },
-    {
-      "text": "bagandi",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "enlever, sorti, faire",
-      "url": "audio/generated/b00b0c7976606f6da6df8d6b.wav"
-    },
-    {
-      "text": "bagandindi",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "faire sortir qqch",
-      "url": "audio/generated/1b63c833fdc9a0fd27281b69.wav"
-    },
-    {
-      "text": "bage",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "variété d'acacia épineux",
-      "url": "audio/generated/9eed2802af32e15018a86f62.wav"
-    },
-    {
-      "text": "bagi",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "variété de tissu européen, percale",
-      "url": "audio/generated/23c8f077bf5acf663c2d1341.wav"
-    },
-    {
-      "text": "bahaade",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/5e8e01872774fa1dd6253f7b.wav"
-    },
-    {
-      "text": "bahe",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/4330136b90f51d743b5c56fd.wav"
-    },
-    {
-      "text": "bahi",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/32b4e157206b6c2aff05185f.wav"
-    },
-    {
-      "text": "bahido",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/09c824480ee1e00941ebc4a3.wav"
-    },
-    {
-      "text": "bajjo",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/2d4b5e820ccd79dcc37b2e66.wav"
-    },
-    {
-      "text": "bajo",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "couverture en laine ; fils unique / variété de cheval",
-      "url": "audio/generated/d6f71334015da4f42c134494.wav"
     },
     {
       "text": "bajo1",
@@ -4316,204 +4842,6 @@
       "url": "audio/generated/f8fbe42e8ba9cbde57d5dceb.wav"
     },
     {
-      "text": "bajungu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "mil ou maïs bouilli",
-      "url": "audio/generated/bf2ec7586f5443c179a3026e.wav"
-    },
-    {
-      "text": "Bakari",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "Bakary",
-      "url": "audio/generated/1c2ce2812a938bc70d584e87.wav"
-    },
-    {
-      "text": "bakkaane",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/a7baa6b3addb177b4e7304fa.wav"
-    },
-    {
-      "text": "bakkande",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/40b012825bdd3e4700d2eb55.wav"
-    },
-    {
-      "text": "bakkata",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "colombe, variété de tourterelle ; variété de poisson",
-      "url": "audio/generated/3b7240912059808cc6d4ad34.wav"
-    },
-    {
-      "text": "bakke",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "sortie",
-      "url": "audio/generated/d1b0a495891fef2ad23afbd7.wav"
-    },
-    {
-      "text": "bakkubakku",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "crapaud",
-      "url": "audio/generated/9f479895b89fe0f2de2e84c5.wav"
-    },
-    {
-      "text": "bala",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "être coincé",
-      "url": "audio/generated/f2fdd58856e77152463d6183.wav"
-    },
-    {
-      "text": "balaawu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "épidémie ; accident, incident",
-      "url": "audio/generated/49876bf4dbe73c11e1a7d65f.wav"
-    },
-    {
-      "text": "balaaxu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "absence",
-      "url": "audio/generated/efb0a12e291f1b35e089cf44.wav"
-    },
-    {
-      "text": "balafata",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "string, cache-sexe (féminin)",
-      "url": "audio/generated/4c3538a3e5fe1e0e85390e8c.wav"
-    },
-    {
-      "text": "balandi",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "fermer",
-      "url": "audio/generated/56e8910779571b3034c66d5f.wav"
-    },
-    {
-      "text": "balanka",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "bateau à voile, chaland",
-      "url": "audio/generated/a3224c1c8b2a22f35504278d.wav"
-    },
-    {
-      "text": "balansanŋe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "variété d'arbre",
-      "url": "audio/generated/088f492530a7501c1d032c4d.wav"
-    },
-    {
-      "text": "balawu",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/8c96ee93608dc4fd5945235e.wav"
-    },
-    {
-      "text": "balawunte",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "imprudent (être)",
-      "url": "audio/generated/88c3db8eeef762fca06161c4.wav"
-    },
-    {
-      "text": "balaxa",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/20a6a414955332b508d9f731.wav"
-    },
-    {
-      "text": "balla",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/85cb3daccfa01916075afc3c.wav"
-    },
-    {
-      "text": "ballaade",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "poutre, traverse ; clavicule",
-      "url": "audio/generated/65fc89fcd59f240e8c3d54a2.wav"
-    },
-    {
-      "text": "ballaana",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "celui qui refuse",
-      "url": "audio/generated/502d5ea23f59c636d9b33440.wav"
-    },
-    {
-      "text": "balle",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "refus",
-      "url": "audio/generated/a89481fe84845e9dc7c86322.wav"
-    },
-    {
-      "text": "balumanga",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "bâton des circoncis",
-      "url": "audio/generated/be14250bd917962457b82baf.wav"
-    },
-    {
-      "text": "Bamako",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "Bamako, capitale du Mali",
-      "url": "audio/generated/5743d834232b4628bb54ac41.wav"
-    },
-    {
-      "text": "bana",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "repousse sauvage de céréale",
-      "url": "audio/generated/59642a7ba5d40b66ee3743db.wav"
-    },
-    {
-      "text": "bananba",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "Gommier, chigomier, combretum, arbre de fer, bois de plomb, bois d'éléphant",
-      "url": "audio/generated/c259a1271a7bcb9887b4d232.wav"
-    },
-    {
-      "text": "banba",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "étendre",
-      "url": "audio/generated/a9e209866549a42bc660bbda.wav"
-    },
-    {
-      "text": "banbaado",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "pagne pour attacher un enfant sur le dos / enfance",
-      "url": "audio/generated/a68ba26db3c3b8756405726a.wav"
-    },
-    {
-      "text": "banballe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "terrasse",
-      "url": "audio/generated/481ea1ae70d52cf871b7a868.wav"
-    },
-    {
-      "text": "banbante",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "étendu",
-      "url": "audio/generated/3f42551cf863f2a9b6acd254.wav"
-    },
-    {
-      "text": "banbanŋe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "arbre au bois dur dont les feuilles sont comestibles par les animaux",
-      "url": "audio/generated/47a3134a35870281b30e2cac.wav"
-    },
-    {
-      "text": "banbara",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "langue et ethnie bambara",
-      "url": "audio/generated/0764711c4bda9d749c80ed10.wav"
-    },
-    {
-      "text": "banbaɲa",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "louche utilisée par les nouvelles mariées",
-      "url": "audio/generated/65f4c429e317fbb68ab3ae7c.wav"
-    },
-    {
-      "text": "banbe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "grotte / nager, surnager, flotter, s'amuser dans l'eau",
-      "url": "audio/generated/58388fc51e10c1fc2e40cdc6.wav"
-    },
-    {
       "text": "banbe1",
       "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
       "francais": "grotte",
@@ -4524,222 +4852,6 @@
       "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
       "francais": "nager, surnager, flotter, s'amuser dans l'eau",
       "url": "audio/generated/81bf875d11e30da8a7dca458.wav"
-    },
-    {
-      "text": "banbi",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "attacher sur le dos (être)",
-      "url": "audio/generated/4444c71a18707ce824925e50.wav"
-    },
-    {
-      "text": "banboroso",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "syphilis, vérole",
-      "url": "audio/generated/b42641656c52be41de6b7819.wav"
-    },
-    {
-      "text": "banboxo",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "sud ; nom traditionnel pour la région au sud du haut Sénégal (fleuve)",
-      "url": "audio/generated/0e7d3b2c99cf530b2a013b51.wav"
-    },
-    {
-      "text": "banbu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "porter sur le dos",
-      "url": "audio/generated/954f5214a07fea3a6d5491a4.wav"
-    },
-    {
-      "text": "banbure",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "envers",
-      "url": "audio/generated/9d0bd8ec76a39542e17ab922.wav"
-    },
-    {
-      "text": "banbuse",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "vague",
-      "url": "audio/generated/c26b3c259fff43c3543732a9.wav"
-    },
-    {
-      "text": "banbuuse",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "vague",
-      "url": "audio/generated/8d2ac829d969fed94160b0b3.wav"
-    },
-    {
-      "text": "banbuxu",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/954f9d45da69d83e8b195aca.wav"
-    },
-    {
-      "text": "bandanŋe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "gros ver, chenille",
-      "url": "audio/generated/fa1d7c1850fd5c667b53b280.wav"
-    },
-    {
-      "text": "bande",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "variété de serpent venimeux qui peut sauter",
-      "url": "audio/generated/fa4c197bef7acad6bec1ffc7.wav"
-    },
-    {
-      "text": "bandeeri",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "voile, drapeau, parasol, parapluie",
-      "url": "audio/generated/80cdbc205acb7ac445387f72.wav"
-    },
-    {
-      "text": "bandi",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/893b95a698ff9bca2806a9bb.wav"
-    },
-    {
-      "text": "bando",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "premier lait d'un animal ayant mis bas",
-      "url": "audio/generated/2bef04411899fc2e5c82c5c9.wav"
-    },
-    {
-      "text": "bangandi",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "apparaître (faire), créer",
-      "url": "audio/generated/1060ca81503c7f62127f09c1.wav"
-    },
-    {
-      "text": "bangaye",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "apparition, popularité, naissance, création",
-      "url": "audio/generated/93a551e99f912f2eab6accb4.wav"
-    },
-    {
-      "text": "bange",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "apparaître, naître, être publié, être né",
-      "url": "audio/generated/071770c946211e36bff2c3b3.wav"
-    },
-    {
-      "text": "banisirayilanka",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "Israelite",
-      "url": "audio/generated/480ea677f5a2800e78539dd8.wav"
-    },
-    {
-      "text": "Banjugu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "nom propre masculin",
-      "url": "audio/generated/f1954ee602b8d3c68ce81033.wav"
-    },
-    {
-      "text": "banna",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "riche / homme riche",
-      "url": "audio/generated/3e2f0dc3ecab15b0d63a3478.wav"
-    },
-    {
-      "text": "bannaaxu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "signe de richesse",
-      "url": "audio/generated/d3d4b34b413d135be3a89fce.wav"
-    },
-    {
-      "text": "banta",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "arbuste sauvage",
-      "url": "audio/generated/31dd5c217a92e4f670ec94fa.wav"
-    },
-    {
-      "text": "bantara",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "manioc",
-      "url": "audio/generated/d63f463761969fd8320c2a35.wav"
-    },
-    {
-      "text": "bantinŋe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "fromager",
-      "url": "audio/generated/522bc28b86825844a5e9fd44.wav"
-    },
-    {
-      "text": "banxanxalle",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "dartre",
-      "url": "audio/generated/2b40d8381625e655fb5fb314.wav"
-    },
-    {
-      "text": "banŋe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "chez, vers ; côté, parti",
-      "url": "audio/generated/94c1ee2f86b8ff59727cb7bb.wav"
-    },
-    {
-      "text": "bape",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "piège ; terre soulevée par les plantes en germination",
-      "url": "audio/generated/7c466d13b71530b9e4304112.wav"
-    },
-    {
-      "text": "bapi",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "être écrasé écrasé (être) être couché à plat ventre / être écrasé (nez) / être couché à plat ventre (grenouilles),",
-      "url": "audio/generated/936e544cdaedbe475a9ef3ac.wav"
-    },
-    {
-      "text": "bapoore",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/971bdd90964b62374d341b8e.wav"
-    },
-    {
-      "text": "bapore",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "variété de poisson, capitaine",
-      "url": "audio/generated/f40c26a4de6254b8386ff2fd.wav"
-    },
-    {
-      "text": "bapu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "écraser",
-      "url": "audio/generated/6fc502bcd6523fbad754b9e2.wav"
-    },
-    {
-      "text": "baqa",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/557327c7a044e146b40a9312.wav"
-    },
-    {
-      "text": "baqaana",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "provocateur",
-      "url": "audio/generated/a445f28f7b7af56007f042a5.wav"
-    },
-    {
-      "text": "baqaare",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "crème de mil et de lait caillé",
-      "url": "audio/generated/5ae6d8197e4c61315556bd42.wav"
-    },
-    {
-      "text": "baqalla",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "provocateur, agresseur",
-      "url": "audio/generated/a793d15fe675cb934b684a89.wav"
-    },
-    {
-      "text": "baqata",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "provocateur, agresseur",
-      "url": "audio/generated/5fbbd1224642475279c6d554.wav"
-    },
-    {
-      "text": "baqe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "variété d'herbe mangée par les chevaux / agression, provocation",
-      "url": "audio/generated/b604f6139ef2e66a13d6bb7d.wav"
     },
     {
       "text": "baqe1",
@@ -4776,18 +4888,6 @@
       "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
       "francais": "ficelle, fil",
       "url": "audio/generated/f586c28b4009d2ca472efd86.wav"
-    },
-    {
-      "text": "baraada",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "théière",
-      "url": "audio/generated/197b18363716946d98657c71.wav"
-    },
-    {
-      "text": "barabara",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "faire bouillir",
-      "url": "audio/generated/e89b9c90948d5e734ec8bd79.wav"
     },
     {
       "text": "barabarante",

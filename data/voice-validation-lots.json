@@ -1,0 +1,12 @@
+[
+  {
+    "batch": "OmniVoice lot de 100 mots",
+    "source_workflow_run": 39921977548,
+    "artifact_id": 12490714801,
+    "pronunciation_status": "validated_by_linguistic_referent",
+    "validation_basis": "Confirmation explicite du référent linguistique",
+    "technical_status": "WAV vérifiés techniquement pendant le workflow source et revérifiés à l’import",
+    "publication_status": "approved_for_import",
+    "note": "La validation de prononciation ne constitue pas une validation des traductions."
+  }
+]
