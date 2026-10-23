@@ -3466,383 +3466,283 @@
       "source": "data/candidates/external-lexicon-candidates.csv",
       "francais": "Étrier",
       "url": "audio/generated/a5260fe3a52a42937a08c817.wav",
-      "kind": "voice_clone_unreviewed",
-      "validation": {
-        "voix": "confirmée par le référent linguistique",
-        "prononciation": "validée par le référent linguistique",
-        "date": "2026-10-23",
-        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
-      }
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "Alimaami",
       "source": "data/candidates/external-lexicon-candidates.csv",
       "francais": "Imam; Alimamy (prénom masculin)",
       "url": "audio/generated/e9d29b08e5aa5f7df96d8b6b.wav",
-      "kind": "voice_clone_unreviewed",
-      "validation": {
-        "voix": "confirmée par le référent linguistique",
-        "prononciation": "validée par le référent linguistique",
-        "date": "2026-10-23",
-        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
-      }
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "Aliyatiime",
       "source": "data/candidates/external-lexicon-candidates.csv",
       "francais": "Orphelin",
       "url": "audio/generated/5d2b44b4007c6be67d335720.wav",
-      "kind": "voice_clone_unreviewed",
-      "validation": {
-        "voix": "confirmée par le référent linguistique",
-        "prononciation": "validée par le référent linguistique",
-        "date": "2026-10-23",
-        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
-      }
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "Ala",
       "source": "data/candidates/external-lexicon-candidates.csv",
       "francais": "Allah; Dieu",
       "url": "audio/generated/df0492b9b264441832d8a3fc.wav",
-      "kind": "voice_clone_unreviewed",
-      "validation": {
-        "voix": "confirmée par le référent linguistique",
-        "prononciation": "validée par le référent linguistique",
-        "date": "2026-10-23",
-        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
-      }
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "Anmiina",
+      "source": "data/candidates/external-lexicon-candidates.csv",
+      "francais": "Amen",
+      "url": "audio/generated/d308376a15673461a180cde1.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "Annebi",
+      "source": "data/candidates/external-lexicon-candidates.csv",
+      "francais": "Le prophète Mahomet",
+      "url": "audio/generated/af10ef313815e49ecc104afe.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "Anniye",
+      "source": "data/candidates/external-lexicon-candidates.csv",
+      "francais": "Souhait",
+      "url": "audio/generated/ae5d75065652e10086ce43ee.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "Araba",
+      "source": "data/candidates/external-lexicon-candidates.csv",
+      "francais": "Mercredi",
+      "url": "audio/generated/e32eaa2a77f9b32eb0e6bbf9.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "Arijanna",
+      "source": "data/candidates/external-lexicon-candidates.csv",
+      "francais": "Paradis",
+      "url": "audio/generated/257a8c694cbbd7dd25901fa2.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baaba",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "père, papa (nom d'appel familier)",
+      "url": "audio/generated/8dc4345e65c7374bdc7a978e.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baabo",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "mousse, écume ; gardien des circoncis / orage, première grande pluie de l'hivernage",
+      "url": "audio/generated/da9e3cb1b2da5d2255fdba0c.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "ba",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "\"Est-ce que ; appelation honorifique donné à un homme, appelation donnée à un inconnu, monsieur ; diminutif de \"faaba\" ; en ce qui concerne (X),Alla ɲaamarindun ba, axa da kun",
+      "url": "audio/generated/970f519c2cadbcefb1e81694.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "allanbatte",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "adoration de Dieu",
       "url": "audio/generated/294f9428fa7d551db27764bd.wav",
-      "kind": "voice_clone_unreviewed",
-      "validation": {
-        "voix": "confirmée par le référent linguistique",
-        "prononciation": "validée par le référent linguistique",
-        "date": "2026-10-23",
-        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
-      }
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "abada",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "jamais",
       "url": "audio/generated/91f1c0039cded5d936ca11ba.wav",
-      "kind": "voice_clone_unreviewed",
-      "validation": {
-        "voix": "confirmée par le référent linguistique",
-        "prononciation": "validée par le référent linguistique",
-        "date": "2026-10-23",
-        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
-      }
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "alaxamisa",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "jeudi",
       "url": "audio/generated/bbf9127ed35a0f511f690923.wav",
-      "kind": "voice_clone_unreviewed",
-      "validation": {
-        "voix": "confirmée par le référent linguistique",
-        "prononciation": "validée par le référent linguistique",
-        "date": "2026-10-23",
-        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
-      }
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "alijuma",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "vendredi",
       "url": "audio/generated/d4cc72a82adf9e0d2491b22c.wav",
-      "kind": "voice_clone_unreviewed",
-      "validation": {
-        "voix": "confirmée par le référent linguistique",
-        "prononciation": "validée par le référent linguistique",
-        "date": "2026-10-23",
-        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
-      }
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "alikaati",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "policier",
       "url": "audio/generated/d9c37bd764c55f705d32f2b1.wav",
-      "kind": "voice_clone_unreviewed",
-      "validation": {
-        "voix": "confirmée par le référent linguistique",
-        "prononciation": "validée par le référent linguistique",
-        "date": "2026-10-23",
-        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
-      }
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "alimeeti",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "allumette",
       "url": "audio/generated/4dd88e61b2b55dc3f8b520bf.wav",
-      "kind": "voice_clone_unreviewed",
-      "validation": {
-        "voix": "confirmée par le référent linguistique",
-        "prononciation": "validée par le référent linguistique",
-        "date": "2026-10-23",
-        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
-      }
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "ayi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "non",
+      "url": "audio/generated/29ddc6293cd680d1a399c7c0.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "an moxo",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "bonjour, comment ça va ? (singulier)",
       "url": "audio/generated/a5ec543015bdbb9678916bc6.wav",
-      "kind": "voice_clone_unreviewed",
-      "validation": {
-        "voix": "confirmée par le référent linguistique",
-        "prononciation": "validée par le référent linguistique",
-        "date": "2026-10-23",
-        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
-      }
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "axaku",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "vous",
+      "url": "audio/generated/e1b42975181da188961870db.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "an wouydiom",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "bonjour",
+      "url": "audio/generated/46ff71ef6e2c4a731757d10a.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "an toxo",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "ton prénom",
+      "url": "audio/generated/b83792ed7af7665d4bf635e2.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "an janmu",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "ton nom de famille",
       "url": "audio/generated/7e27189524149d7700a735e3.wav",
-      "kind": "voice_clone_unreviewed",
-      "validation": {
-        "voix": "confirmée par le référent linguistique",
-        "prononciation": "validée par le référent linguistique",
-        "date": "2026-10-23",
-        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
-      }
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "An na ciino mamnémé",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "Quel âge as-tu ?",
+      "url": "audio/generated/1b3898f01d6af5edf93ed1d2.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "an mpay kan ciine",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "Quel âge as-tu ?",
       "url": "audio/generated/8e5eb36fd02a03e92df80c6d.wav",
-      "kind": "voice_clone_unreviewed",
-      "validation": {
-        "voix": "confirmée par le référent linguistique",
-        "prononciation": "validée par le référent linguistique",
-        "date": "2026-10-23",
-        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
-      }
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "an li haranci kan ciine yi",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "en quelle année es-tu arrivé en France ?",
       "url": "audio/generated/7b4a7e59a68c00f767a764a4.wav",
-      "kind": "voice_clone_unreviewed",
-      "validation": {
-        "voix": "confirmée par le référent linguistique",
-        "prononciation": "validée par le référent linguistique",
-        "date": "2026-10-23",
-        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
-      }
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "axa kundan nan laato yere yi ba",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "habites-tu loin d’ici ?",
+      "url": "audio/generated/32a0188fe36beea8cabac48a.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "an la wa soninkankanen cahana ba",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "sais-tu écrire le soninké ?",
       "url": "audio/generated/f7c9756c9d9e0b55bbb70d96.wav",
-      "kind": "voice_clone_unreviewed",
-      "validation": {
-        "voix": "confirmée par le référent linguistique",
-        "prononciation": "validée par le référent linguistique",
-        "date": "2026-10-23",
-        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
-      }
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "an kayen koy i nga",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "montre-moi ton cahier",
       "url": "audio/generated/36d5958293f983fae3b4199f.wav",
-      "kind": "voice_clone_unreviewed",
-      "validation": {
-        "voix": "confirmée par le référent linguistique",
-        "prononciation": "validée par le référent linguistique",
-        "date": "2026-10-23",
-        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
-      }
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "an kitaaben qa",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "où est ton livre ?",
       "url": "audio/generated/6f6e83297f8678b48566bef1.wav",
-      "kind": "voice_clone_unreviewed",
-      "validation": {
-        "voix": "confirmée par le référent linguistique",
-        "prononciation": "validée par le référent linguistique",
-        "date": "2026-10-23",
-        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
-      }
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "alahadi",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "dimanche",
       "url": "audio/generated/2369d1d39ed868c0b5118a3d.wav",
-      "kind": "voice_clone_unreviewed",
-      "validation": {
-        "voix": "confirmée par le référent linguistique",
-        "prononciation": "validée par le référent linguistique",
-        "date": "2026-10-23",
-        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
-      }
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "ba2",
+      "source": "data/source/reports/candidats-prioritaires-validation-soninke.csv",
+      "francais": "appelation honorifique donné à un homme, appelation donnée à un inconnu, monsieur",
+      "url": "audio/generated/a16370a54feb9f4668fcb16e.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baabe",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/bc308029035282c9cad42303.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "allanbatte1",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
       "francais": "adoration de Dieu",
       "url": "audio/generated/d2a7447825640beb10f229d8.wav",
-      "kind": "voice_clone_unreviewed",
-      "validation": {
-        "voix": "confirmée par le référent linguistique",
-        "prononciation": "validée par le référent linguistique",
-        "date": "2026-10-23",
-        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
-      }
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baabo1",
+      "source": "data/source/reports/lot-validation-prioritaire-soninke.csv",
+      "francais": "mousse, écume",
+      "url": "audio/generated/0c1c1d6153043c8e7b699162.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baabo2",
+      "source": "data/source/reports/lot-validation-prioritaire-soninke.csv",
+      "francais": "gardien des circoncis",
+      "url": "audio/generated/fe95cc705d61d149de47530d.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "ba1",
+      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
+      "francais": "\"Est-ce que",
+      "url": "audio/generated/26c95ab9357272a811596b52.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "ba3",
+      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
+      "francais": "en ce qui concerne (X),Alla ɲaamarindun ba, axa da kun",
+      "url": "audio/generated/1c93514f62931c42ad91c594.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "-bali",
       "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
       "francais": "manque de",
       "url": "audio/generated/74097eb0f3a144ab4f21f5e3.wav",
-      "kind": "voice_clone_unreviewed",
-      "validation": {
-        "voix": "confirmée par le référent linguistique",
-        "prononciation": "validée par le référent linguistique",
-        "date": "2026-10-23",
-        "note": "Validation déclarée par l’utilisateur après écoute individuelle."
-      }
+      "kind": "voice_clone_unreviewed"
     }
   ],
   "pending": [
-    {
-      "text": "An na ciino mamnémé",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "Quel âge as-tu ?",
-      "url": "audio/generated/1b3898f01d6af5edf93ed1d2.wav"
-    },
-    {
-      "text": "an toxo",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "ton prénom",
-      "url": "audio/generated/b83792ed7af7665d4bf635e2.wav"
-    },
-    {
-      "text": "an wouydiom",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "bonjour",
-      "url": "audio/generated/46ff71ef6e2c4a731757d10a.wav"
-    },
-    {
-      "text": "Anmiina",
-      "source": "data/candidates/external-lexicon-candidates.csv",
-      "francais": "Amen",
-      "url": "audio/generated/d308376a15673461a180cde1.wav"
-    },
-    {
-      "text": "Annebi",
-      "source": "data/candidates/external-lexicon-candidates.csv",
-      "francais": "Le prophète Mahomet",
-      "url": "audio/generated/af10ef313815e49ecc104afe.wav"
-    },
-    {
-      "text": "Anniye",
-      "source": "data/candidates/external-lexicon-candidates.csv",
-      "francais": "Souhait",
-      "url": "audio/generated/ae5d75065652e10086ce43ee.wav"
-    },
-    {
-      "text": "Araba",
-      "source": "data/candidates/external-lexicon-candidates.csv",
-      "francais": "Mercredi",
-      "url": "audio/generated/e32eaa2a77f9b32eb0e6bbf9.wav"
-    },
-    {
-      "text": "Arijanna",
-      "source": "data/candidates/external-lexicon-candidates.csv",
-      "francais": "Paradis",
-      "url": "audio/generated/257a8c694cbbd7dd25901fa2.wav"
-    },
-    {
-      "text": "axa kundan nan laato yere yi ba",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "habites-tu loin d’ici ?",
-      "url": "audio/generated/32a0188fe36beea8cabac48a.wav"
-    },
-    {
-      "text": "axaku",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "vous",
-      "url": "audio/generated/e1b42975181da188961870db.wav"
-    },
-    {
-      "text": "ayi",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "non",
-      "url": "audio/generated/29ddc6293cd680d1a399c7c0.wav"
-    },
-    {
-      "text": "ba",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "\"Est-ce que ; appelation honorifique donné à un homme, appelation donnée à un inconnu, monsieur ; diminutif de \"faaba\" ; en ce qui concerne (X),Alla ɲaamarindun ba, axa da kun",
-      "url": "audio/generated/970f519c2cadbcefb1e81694.wav"
-    },
-    {
-      "text": "ba1",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "\"Est-ce que",
-      "url": "audio/generated/26c95ab9357272a811596b52.wav"
-    },
-    {
-      "text": "ba2",
-      "source": "data/source/reports/candidats-prioritaires-validation-soninke.csv",
-      "francais": "appelation honorifique donné à un homme, appelation donnée à un inconnu, monsieur",
-      "url": "audio/generated/a16370a54feb9f4668fcb16e.wav"
-    },
-    {
-      "text": "ba3",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "en ce qui concerne (X),Alla ɲaamarindun ba, axa da kun",
-      "url": "audio/generated/1c93514f62931c42ad91c594.wav"
-    },
-    {
-      "text": "baaba",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "père, papa (nom d'appel familier)",
-      "url": "audio/generated/8dc4345e65c7374bdc7a978e.wav"
-    },
-    {
-      "text": "baabe",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/bc308029035282c9cad42303.wav"
-    },
-    {
-      "text": "baabo",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "mousse, écume ; gardien des circoncis / orage, première grande pluie de l'hivernage",
-      "url": "audio/generated/da9e3cb1b2da5d2255fdba0c.wav"
-    },
-    {
-      "text": "baabo1",
-      "source": "data/source/reports/lot-validation-prioritaire-soninke.csv",
-      "francais": "mousse, écume",
-      "url": "audio/generated/0c1c1d6153043c8e7b699162.wav"
-    },
-    {
-      "text": "baabo2",
-      "source": "data/source/reports/lot-validation-prioritaire-soninke.csv",
-      "francais": "gardien des circoncis",
-      "url": "audio/generated/fe95cc705d61d149de47530d.wav"
-    },
     {
       "text": "baabo3",
       "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
