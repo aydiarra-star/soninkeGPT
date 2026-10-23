@@ -797,6 +797,23 @@ function hideVoiceStatus() {
   if (timer) timer.hidden = true;
 }
 
+// Libellé du bouton micro : action claire à l'écran, pas seulement une icône.
+function setMicLabel(listening) {
+  const btn = $("#mic-btn");
+  const label = $("#mic-label");
+  if (label) label.textContent = listening ? "J'écoute" : "Parler";
+  if (btn) {
+    const text = listening
+      ? "Arrêter l'écoute et envoyer le message vocal"
+      : "Assistant vocal soninké : parler";
+    btn.setAttribute("aria-label", text);
+    btn.setAttribute("title", listening
+      ? "Écoute en cours — touchez pour arrêter"
+      : "Assistant vocal : écouter, enregistrer et répondre en soninké");
+    btn.setAttribute("aria-pressed", listening ? "true" : "false");
+  }
+}
+
 // ── Assistant Vocal Soninké (Écoute + Enregistrement + Réponse en soninké) ──
 function getSpeechRecognition() {
   return window.SpeechRecognition || window.webkitSpeechRecognition || null;
@@ -827,6 +844,7 @@ function cleanupVoiceResources() {
   state.listening = false;
   const mic = $("#mic-btn");
   if (mic) mic.classList.remove("listening", "recording");
+  setMicLabel(false);
 }
 
 function cancelListening() {
@@ -898,6 +916,7 @@ async function startListening() {
   const mic = $("#mic-btn");
   const input = $("#message-input");
   if (mic) mic.classList.add("listening");
+  setMicLabel(true);
   showVoiceStatus("J'écoute et j'enregistre. Parlez en français ou en soninké.", 0, true);
 
   let hasAnyCapture = false;
@@ -1740,11 +1759,15 @@ function renderSoninkePair(rawSnk, rawFr, rawType) {
     : `Aucun enregistrement de référence pour « ${snk} » : aucun substitut synthétique n'est utilisé`;
   return `<div class="soninke-pair" data-snk="${snk}" data-fr="${fr}">
   <div class="pair-snk-row">
+    <div class="pair-snk-block">
+    <span class="pair-lang is-target">Soninké</span>
     <span class="pair-snk" lang="snk">${snk}</span>
+    </div>
     <button type="button" class="${audioCls}" data-audio-word="${snk}" title="${audioTitle}" aria-label="${audioTitle}">${ICONS.speaker}<span>${audioLabel}</span></button>
     <button type="button" class="fav-toggle${fav ? " is-favorite" : ""}" data-fav-snk="${snk}" data-fav-fr="${fr}" data-fav-type="${type}" aria-pressed="${fav ? "true" : "false"}" aria-label="${fav ? "Retirer des favoris" : "Ajouter aux favoris"}: ${snk}">${fav ? ICONS.starFilled : ICONS.star}</button>
   </div>
   <div class="pair-arrow" aria-hidden="true">↓</div>
+  <span class="pair-lang">Français</span>
   <div class="pair-fr">${fr}</div>
   <div class="pair-foot"><span class="pair-badge ${att.cls}">${att.label}</span></div>
 </div>`;
