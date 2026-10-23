@@ -1407,3 +1407,13 @@ SNK-LEX-1379;beeteye;moment entre 9 h et 10 h;expression;validation_referent_uti
 SNK-LEX-1380;belifata;cache-sexe féminin;nom;validation_referent_utilisateur;valide_par_referent;;
 
 SNK-LEX-0520;betexi;badigeonner / salir;verbe;Lexique Soninké du Mali (betexi → betexe);valide_par_referent;;"Entrée principale betexe : badigeonner ; salir. Traduction validée par le référent linguistique le 2026-10-23."
+SNK-LEX-1381;booru;"instrument des féticheurs";nom;"Lexique Soninké du Mali–Français–Anglais : renvoi à boolu1";candidat_dictionnaire_a_verifier;boolu;"booru → boolu1 ; boolu1 = instrument des féticheurs"
+SNK-LEX-1382;boro;"place ; espace ; cour";nom;"Lexique Soninké du Mali–Français–Anglais : renvoi à bera";candidat_dictionnaire_a_verifier;bera;"boro → bera ; bera = place, espace, cour"
+SNK-LEX-1383;botu;"suivre ; obéir ; louer/adorer ; devoir";verbe;"Lexique Soninké du Mali–Français–Anglais : renvoi à batu2";candidat_dictionnaire_a_verifier;batu;"botu → batu2 ; sens attestés : suivre, obéir, louer/adorer, devoir"
+SNK-LEX-1384;buttu;"se fâcher ; se mettre en colère";verbe;"Lexique Soninké du Mali–Français–Anglais : renvoi à butu1";candidat_dictionnaire_a_verifier;butu;"buttu → butu1 ; se fâcher, se mettre en colère"
+SNK-LEX-1385;cigakorome;"coque d’arachide";nom;"Lexique Soninké du Mali–Français–Anglais : renvoi à tigakorome";candidat_dictionnaire_a_verifier;tigakorome;"cigakorome → tigakorome ; coque d’arachide"
+SNK-LEX-1386;cigamaxafo;"sauce d’arachide";nom;"Lexique Soninké du Mali–Français–Anglais : renvoi à tigamaxafo";candidat_dictionnaire_a_verifier;tigamaxafo;"cigamaxafo → tigamaxafo ; sauce d’arachide"
+SNK-LEX-1387;cuballe;"caste de pêcheurs";nom;"Lexique Soninké du Mali–Français–Anglais : renvoi à suballe";candidat_dictionnaire_a_verifier;suballe;"cuballe → suballe ; caste de pêcheurs"
+SNK-LEX-1388;cunsu;"entasser ; ramasser la récolte d’arachide en tas";verbe;"Lexique Soninké du Mali–Français–Anglais : renvoi à sunsu";candidat_dictionnaire_a_verifier;sunsu;"cunsu → sunsu ; entasser la récolte d’arachide"
+SNK-LEX-1389;cuuba;"tremper ; plonger ; mouiller";verbe;"Lexique Soninké du Mali–Français–Anglais : renvoi à juuba";candidat_dictionnaire_a_verifier;juuba;"cuuba → juuba ; tremper, plonger, mouiller"
+SNK-LEX-1390;nawaari;"remercier ; saluer ; être bienvenu";verbe;"Lexique Soninké du Mali–Français–Anglais : entrée nawaari";candidat_dictionnaire_a_verifier;nawari;"nawaari : remercier, saluer, être bienvenu"
