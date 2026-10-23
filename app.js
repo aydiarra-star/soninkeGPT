@@ -334,10 +334,10 @@ function setLevel(level, announce = true) {
     btn.classList.toggle("active", active);
     if (btn.getAttribute("role") === "radio") btn.setAttribute("aria-checked", active ? "true" : "false");
   });
-  const hint = $("#level-hint");
-  if (hint) hint.textContent = currentLevel().hint;
   const info = $("#settings-level-info");
   if (info) info.textContent = `${currentLevel().hint} ${currentLevel().guidance}`;
+  const sidebarBadge = $("#sidebar-level-badge");
+  if (sidebarBadge) sidebarBadge.textContent = currentLevel().label;
   if (announce) showVoiceStatus(`Niveau ${currentLevel().label} activé.`, 2400);
 }
 
@@ -2326,43 +2326,122 @@ function confirmDelete() {
   $("#delete-modal").classList.remove("visible");
 }
 
+// ── Gestion unifiée des panneaux du menu (Assistant vocal, Lexique Audio, Favoris, Paramètres) ──
+function syncNavActiveState() {
+  $$(".sidebar-action[data-open-panel]").forEach((btn) => {
+    const modal = $(`#${btn.dataset.openPanel}`);
+    const isOpen = Boolean(modal && modal.classList.contains("visible"));
+    btn.classList.toggle("active", isOpen);
+    btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  });
+}
+
+function closeAllModals() {
+  $$(".modal-overlay.visible").forEach((m) => m.classList.remove("visible"));
+  syncNavActiveState();
+}
+
+function openVoicePanel() {
+  closeAllModals();
+  closeSidebar();
+  const modal = $("#voice-modal");
+  if (modal) {
+    modal.classList.add("visible");
+    syncNavActiveState();
+    const quickInput = $("#quick-translate-input");
+    if (quickInput) quickInput.focus();
+  }
+}
+
+function openSettingsPanel() {
+  closeAllModals();
+  closeSidebar();
+  const modal = $("#settings-modal");
+  if (modal) {
+    modal.classList.add("visible");
+    syncNavActiveState();
+  }
+}
+
 // Écoute d'un extrait réel de la voix de référence, avec sa traduction.
+let referenceSampleCursor = 0;
+
 function playReferenceSample() {
   ensureAudioUnlocked();
   const priority = [
     "Daga goli", "Li taxu", "Mpai reni", "Mpai telle",
     "lemine ke", "maro ke", "koota su", "an wouydiom", "Xa wouy Diom",
   ];
-  let info = priority.map((text) => findAudioInfo(text)).find(Boolean);
-  if (!info) info = state.audioList.find((item) => item && item.url);
+  const available = priority.map((text) => findAudioInfo(text)).filter(Boolean);
+  let info = available.length
+    ? available[referenceSampleCursor++ % available.length]
+    : state.audioList.find((item) => item && item.url);
   if (!info) {
-    showVoiceStatus("Aucun enregistrement de référence n'est encore disponible dans le corpus local.", 4200);
+    const emptyMsg = "Aucun enregistrement de référence n'est encore disponible dans le corpus local.";
+    showVoiceStatus(emptyMsg, 4200);
+    const refStatus = $("#ref-voice-status");
+    if (refStatus) {
+      refStatus.textContent = emptyMsg;
+      refStatus.hidden = false;
+    }
     return;
   }
   const entry = state.entries.find((e) => normalizeWord(e.soninke) === normalizeWord(info.text));
   const translation = info.francais || (entry ? entry.francais : "");
-  showVoiceStatus(`Voix de référence · « ${info.text} »${translation ? ` — ${translation}` : ""}`, 4200);
+  const summary = `Voix de référence · « ${info.text} »${translation ? ` — ${translation}` : ""}`;
+  showVoiceStatus(summary, 4200);
+  const refStatus = $("#ref-voice-status");
+  if (refStatus) {
+    refStatus.textContent = summary;
+    refStatus.hidden = false;
+  }
   playWordAudio(info.text);
 }
 
-// ── Favoris : mots, phrases et expressions à réécouter ──
+// ── Favoris : proverbes, histoires, phrases et traductions à réécouter ──
 function openFavoritesPanel() {
+  closeAllModals();
   closeSidebar();
   renderFavorites();
-  $("#favorites-modal").classList.add("visible");
+  const modal = $("#favorites-modal");
+  if (modal) {
+    modal.classList.add("visible");
+    syncNavActiveState();
+  }
+}
+
+function matchesFavoriteFilter(item, filter) {
+  if (!filter || filter === "all") return true;
+  const type = String(item.type || "").toLowerCase();
+  if (filter === "traduction") {
+    return type === "traduction" || type === "mot" || type === "expression";
+  }
+  return type === filter;
+}
+
+function favoriteTypeLabel(type) {
+  switch (String(type || "").toLowerCase()) {
+    case "proverbe": return "Proverbe";
+    case "histoire": return "Histoire";
+    case "phrase": return "Phrase";
+    case "expression": return "Expression";
+    case "mot":
+    case "traduction":
+    default: return "Traduction";
+  }
 }
 
 function renderFavorites() {
   const list = $("#favorites-list");
   if (!list) return;
   const filter = state.favoriteFilter;
-  const items = state.favorites.filter((f) => filter === "all" || f.type === filter);
+  const items = state.favorites.filter((f) => matchesFavoriteFilter(f, filter));
 
   if (!items.length) {
     list.innerHTML = `<div class="favorites-empty">
       ${state.favorites.length
-        ? "Aucun favori dans cette catégorie."
-        : "Aucun favori pour le moment.<br>Touchez l'étoile à côté d'un mot ou d'une phrase pour le réécouter plus tard."}
+        ? "Aucun favori enregistré dans cette catégorie."
+        : "Aucun favori pour le moment.<br>Enregistrez vos proverbes, histoires, phrases et traductions ci-dessus ou via l'étoile à côté de chaque forme soninké."}
     </div>`;
     updateFavoritesCount();
     return;
@@ -2371,7 +2450,7 @@ function renderFavorites() {
   list.innerHTML = items
     .map((f) => {
       const audio = findAudioInfo(f.snk);
-      const typeLabel = f.type === "mot" ? "Mot" : f.type === "expression" ? "Expression" : "Phrase";
+      const typeLabel = favoriteTypeLabel(f.type);
       return `<div class="favorite-item" data-fav-key="${esc(favoriteKey(f.snk, f.fr))}">
         <div class="favorite-item-main">
           <div class="favorite-item-snk" lang="snk">${esc(f.snk)}</div>
@@ -2389,17 +2468,24 @@ function renderFavorites() {
   updateFavoritesCount();
 }
 
-// ── Lexique & Explorateur des 576 Audios Intégrés ──
+// ── Lexique Audio & Explorateur des 576 Audios Intégrés ──
 let dictDirection = "all";
 
 function openDictionaryPanel(initialDir = null) {
+  closeAllModals();
+  closeSidebar();
   if (initialDir) {
     dictDirection = initialDir;
-    $$(".dict-filter").forEach((b) => b.classList.toggle("active", b.dataset.dir === dictDirection));
+    $$(".dict-filter[data-dir]").forEach((b) => b.classList.toggle("active", b.dataset.dir === dictDirection));
   }
-  $("#dictionary-modal").classList.add("visible");
+  const modal = $("#dictionary-modal");
+  if (modal) {
+    modal.classList.add("visible");
+    syncNavActiveState();
+  }
   renderDictResults();
-  $("#dict-search").focus();
+  const searchInput = $("#dict-search");
+  if (searchInput) searchInput.focus();
 }
 
 function renderDictResults() {
@@ -2927,8 +3013,9 @@ function initEvents() {
     submitMessage(input.value);
   });
 
-  // 7. Assistant Vocal Soninké (à côté de la touche Entrer + écran d'accueil + barre latérale)
+  // 7. Assistant Vocal Soninké (micro bas de page + onglet Assistant vocal)
   const triggerVoiceAssistant = () => {
+    closeAllModals();
     closeSidebar();
     if (state.listening) finishVoiceSession();
     else startListening();
@@ -2937,18 +3024,41 @@ function initEvents() {
   $("#mic-btn").addEventListener("click", triggerVoiceAssistant);
   const welcomeMic = $("#welcome-mic-btn");
   if (welcomeMic) welcomeMic.addEventListener("click", triggerVoiceAssistant);
+
   const sidebarVoice = $("#sidebar-voice-btn");
-  if (sidebarVoice) sidebarVoice.addEventListener("click", triggerVoiceAssistant);
+  if (sidebarVoice) sidebarVoice.addEventListener("click", openVoicePanel);
+  const voiceModalClose = $("#voice-modal-close");
+  if (voiceModalClose) voiceModalClose.addEventListener("click", closeAllModals);
+
+  const quickTranslateForm = $("#quick-translate-form");
+  if (quickTranslateForm) {
+    quickTranslateForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const field = $("#quick-translate-input");
+      const query = field ? field.value.trim() : "";
+      if (!query) {
+        if (field) field.focus();
+        return;
+      }
+      field.value = "";
+      closeAllModals();
+      submitMessage(`Traduis « ${query} » en soninké`);
+    });
+  }
 
   const voiceFinishBtn = $("#voice-finish-btn");
   if (voiceFinishBtn) voiceFinishBtn.addEventListener("click", finishVoiceSession);
   const voiceCancelBtn = $("#voice-cancel-btn");
   if (voiceCancelBtn) voiceCancelBtn.addEventListener("click", cancelListening);
 
-  // Salutation vocale d'accueil « Xa wouy Diom ! »
+  // Lecteurs d'aperçu de la voix de référence (Lexique Audio + Paramètres)
   const welcomeGreetBtn = $("#welcome-greet-audio-btn");
   if (welcomeGreetBtn) {
     welcomeGreetBtn.addEventListener("click", () => playReferenceSample());
+  }
+  const settingsTestVoiceBtn = $("#settings-test-voice-btn");
+  if (settingsTestVoiceBtn) {
+    settingsTestVoiceBtn.addEventListener("click", () => playReferenceSample());
   }
 
   // 8. Boutons d'activation de la réponse audio vocale automatique
@@ -2959,17 +3069,31 @@ function initEvents() {
   if (voiceSwitch) voiceSwitch.addEventListener("click", () => setVoiceReplies(!state.voiceReplies));
 
   // New chat buttons
-  $("#new-chat-btn").addEventListener("click", startNewChat);
-  $("#new-chat-btn-top").addEventListener("click", startNewChat);
+  $("#new-chat-btn").addEventListener("click", () => {
+    closeAllModals();
+    startNewChat();
+  });
+  $("#new-chat-btn-top").addEventListener("click", () => {
+    closeAllModals();
+    startNewChat();
+  });
   $$(".brand, .topbar-brand").forEach((link) => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
+      closeAllModals();
       startNewChat();
     });
   });
 
-  // Menu mobile
+  // Menu mobile & bascule barre latérale bureau
   $("#menu-btn").addEventListener("click", openSidebar);
+  const sidebarToggleBtn = $("#sidebar-toggle-btn");
+  if (sidebarToggleBtn) {
+    sidebarToggleBtn.addEventListener("click", () => {
+      const sb = $("#sidebar");
+      if (sb) sb.classList.toggle("collapsed");
+    });
+  }
   $("#sidebar-close").addEventListener("click", closeSidebar);
   $("#sidebar-overlay").addEventListener("click", closeSidebar);
 
@@ -2979,29 +3103,60 @@ function initEvents() {
     btn.addEventListener("click", () => applyTheme(btn.dataset.theme));
   });
 
-  // Niveau d'apprentissage (accueil + paramètres)
+  // Niveau d'apprentissage (Paramètres)
   $$(".level-option").forEach((btn) => {
     btn.addEventListener("click", () => setLevel(btn.dataset.level));
   });
 
   // Paramètres
-  $("#settings-btn").addEventListener("click", () => {
-    closeSidebar();
-    $("#settings-modal").classList.add("visible");
-  });
-  $("#settings-close").addEventListener("click", () => $("#settings-modal").classList.remove("visible"));
+  $("#settings-btn").addEventListener("click", openSettingsPanel);
+  $("#settings-close").addEventListener("click", closeAllModals);
 
-  // Lexique & Audios
-  $("#dictionary-btn").addEventListener("click", () => {
-    closeSidebar();
-    openDictionaryPanel();
-  });
-  $("#dictionary-close").addEventListener("click", () => $("#dictionary-modal").classList.remove("visible"));
+  // Lexique Audio
+  $("#dictionary-btn").addEventListener("click", () => openDictionaryPanel());
+  $("#dictionary-close").addEventListener("click", closeAllModals);
   $("#dict-search").addEventListener("input", renderDictResults);
 
-  // Favoris
+  // Favoris (proverbes, histoires, phrases, traductions)
   $("#favorites-btn").addEventListener("click", openFavoritesPanel);
-  $("#favorites-close").addEventListener("click", () => $("#favorites-modal").classList.remove("visible"));
+  $("#favorites-close").addEventListener("click", closeAllModals);
+
+  const favAddForm = $("#favorite-add-form");
+  if (favAddForm) {
+    favAddForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const snkInput = $("#fav-input-snk");
+      const frInput = $("#fav-input-fr");
+      const typeSelect = $("#fav-input-type");
+      const snkVal = snkInput ? snkInput.value.trim() : "";
+      const frVal = frInput ? frInput.value.trim() : "";
+      const typeVal = typeSelect ? typeSelect.value : "traduction";
+      if (!snkVal) {
+        if (snkInput) snkInput.focus();
+        return;
+      }
+      if (!isFavorite(snkVal, frVal)) {
+        state.favorites.unshift({
+          snk: snkVal,
+          fr: frVal,
+          type: typeVal,
+          source: "Favoris personnels",
+          createdAt: Date.now(),
+        });
+        saveFavorites();
+      }
+      if (snkInput) snkInput.value = "";
+      if (frInput) frInput.value = "";
+      if (!matchesFavoriteFilter({ type: typeVal }, state.favoriteFilter)) {
+        state.favoriteFilter = "all";
+        $$(".dict-filter[data-fav-filter]").forEach((b) => b.classList.toggle("active", b.dataset.favFilter === "all"));
+      }
+      syncFavoriteButtons();
+      renderFavorites();
+      updateFavoritesCount();
+    });
+  }
+
   $$(".dict-filter[data-fav-filter]").forEach((btn) => {
     btn.addEventListener("click", () => {
       state.favoriteFilter = btn.dataset.favFilter;
@@ -3010,10 +3165,10 @@ function initEvents() {
     });
   });
 
-  $$(".dict-filter").forEach((btn) => {
+  $$(".dict-filter[data-dir]").forEach((btn) => {
     btn.addEventListener("click", () => {
       dictDirection = btn.dataset.dir;
-      $$(".dict-filter").forEach((b) => b.classList.toggle("active", b === btn));
+      $$(".dict-filter[data-dir]").forEach((b) => b.classList.toggle("active", b === btn));
       renderDictResults();
     });
   });
@@ -3120,7 +3275,15 @@ function initEvents() {
     const favMsgBtn = e.target.closest("[data-fav-msg-index]");
     if (favMsgBtn) {
       const conv = getConversation(state.activeConversationId);
-      const msg = conv && conv.messages[Number(favMsgBtn.dataset.favMsgIndex)];
+      const msgIdx = Number(favMsgBtn.dataset.favMsgIndex);
+      const msg = conv && conv.messages[msgIdx];
+      const prevUserMsg = conv && msgIdx > 0 ? conv.messages[msgIdx - 1] : null;
+      const contextText = `${prevUserMsg?.content || ""} ${msg?.content || ""}`;
+      const inferredCategory = /proverbe/i.test(contextText)
+        ? "proverbe"
+        : /histoire|récit|conte/i.test(contextText)
+          ? "histoire"
+          : null;
       if (msg) {
         const items = pairItemsOf(msg.content);
         const allSaved = items.length > 0 && items.every((item) => isFavorite(item.snk, item.fr));
@@ -3129,7 +3292,12 @@ function initEvents() {
             const key = favoriteKey(item.snk, item.fr);
             state.favorites = state.favorites.filter((f) => favoriteKey(f.snk, f.fr) !== key);
           } else if (!isFavorite(item.snk, item.fr)) {
-            state.favorites.unshift({ ...item, source: "Réponse", createdAt: Date.now() });
+            state.favorites.unshift({
+              ...item,
+              type: inferredCategory || item.type,
+              source: "Réponse",
+              createdAt: Date.now(),
+            });
           }
         }
         saveFavorites();
@@ -3153,24 +3321,28 @@ function initEvents() {
     }
   });
 
-  // Cartes de suggestions de l'accueil
+  // Cartes de suggestions rapides (dans les panneaux du menu)
   $$(".suggestion-card").forEach((card) => {
     card.addEventListener("click", () => {
       const promptText = card.dataset.prompt;
-      if (promptText) submitMessage(promptText);
+      if (promptText) {
+        closeAllModals();
+        closeSidebar();
+        submitMessage(promptText);
+      }
     });
   });
 
   // Fermeture des modales
   $$(".modal-overlay").forEach((overlay) => {
     overlay.addEventListener("click", (e) => {
-      if (e.target === overlay) overlay.classList.remove("visible");
+      if (e.target === overlay) closeAllModals();
     });
   });
 
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
-      $$(".modal-overlay.visible").forEach((m) => m.classList.remove("visible"));
+      closeAllModals();
       $("#context-menu").classList.remove("visible");
       closeSidebar();
       if (state.listening) cancelListening();
