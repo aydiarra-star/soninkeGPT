@@ -9,6 +9,7 @@ on:
         options:
           - "CONFIRMER"
 permissions:
+  actions: read
   contents: write
 jobs:
   import-approved-artifact:
