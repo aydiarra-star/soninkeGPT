@@ -3539,10 +3539,115 @@
       "kind": "voice_clone_unreviewed"
     },
     {
+      "text": "baade",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "lieu où l'on reçoit les condoléances ; tombeau, deuil",
+      "url": "audio/generated/11a92b734c0469ea19fe6a44.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baafe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "battant de porte",
+      "url": "audio/generated/941665a00c1f199dbd56c276.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baalixu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "pubère, qui a atteint l'âge de la puberté",
+      "url": "audio/generated/66ccea5b2c26b2daa819c315.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baana",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "Tabaski, le douzième mois lunaire ; ressembler, être uni, être un",
+      "url": "audio/generated/498a10e6a97f91bd0ca269cd.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
       "text": "ba",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "\"Est-ce que ; appelation honorifique donné à un homme, appelation donnée à un inconnu, monsieur ; diminutif de \"faaba\" ; en ce qui concerne (X),Alla ɲaamarindun ba, axa da kun",
       "url": "audio/generated/970f519c2cadbcefb1e81694.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baane",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "valeur quantitative, associé à des déterminants quantifieurs: yogo, tana, 0) ; seul (valeur qualifcatif) ; le même (en fonction épithète, pas en fonction attribut ; dans un contexte où le nom qualifié par baane s'oppose à une première occurrence de même valeur ; chacun ; un peu ; one ; un à un, un par un",
+      "url": "audio/generated/d517debb54a589db79858df5.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baabondi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "mousser (faire)",
+      "url": "audio/generated/bca76b1d8f1298a2ccd38ff6.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baabu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "secourir avec de l'argent",
+      "url": "audio/generated/9b6d7b5c4d2f4cc59cdfcbaf.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baafinlenme",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "cadenas, serrure",
+      "url": "audio/generated/5f41e9267d1c255eb302bc82.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baaja",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "creuser, approfondir",
+      "url": "audio/generated/a0ee7e403a8dbd23f9eeb0d9.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baami",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "aller au petit galop, chevaucher",
+      "url": "audio/generated/9e0fd3bf64e037b97fe28582.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baamindi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "galoper (faire)",
+      "url": "audio/generated/8dcf49283f31268316e5c214.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baanaaxu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "unicité, solitude, ressemblance",
+      "url": "audio/generated/402377a9d29328b57bfd7835.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baananbaano",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "quelques",
+      "url": "audio/generated/db9ae1a3fade5d93bb76b518.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baananbe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "chacun",
+      "url": "audio/generated/8e752dc3780ea95323a214cd.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baananne",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "même",
+      "url": "audio/generated/c2e096daf3a22cd265765a8a.wav",
       "kind": "voice_clone_unreviewed"
     },
     {
@@ -3686,6 +3791,13 @@
       "kind": "voice_clone_unreviewed"
     },
     {
+      "text": "baaga",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "margouillat, lézard",
+      "url": "audio/generated/1c67b421c3188942ef2243b3.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
       "text": "ba2",
       "source": "data/source/reports/candidats-prioritaires-validation-soninke.csv",
       "francais": "appelation honorifique donné à un homme, appelation donnée à un inconnu, monsieur",
@@ -3697,6 +3809,13 @@
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
       "francais": "",
       "url": "audio/generated/bc308029035282c9cad42303.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baagane",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/e01378509e77eef7f72fe8a6.wav",
       "kind": "voice_clone_unreviewed"
     },
     {
@@ -3721,6 +3840,20 @@
       "kind": "voice_clone_unreviewed"
     },
     {
+      "text": "baana1",
+      "source": "data/source/reports/lot-validation-prioritaire-soninke.csv",
+      "francais": "Tabaski, le douzième mois lunaire",
+      "url": "audio/generated/c089b464f2fb16be8c8fc349.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baana2",
+      "source": "data/source/reports/lot-validation-prioritaire-soninke.csv",
+      "francais": "ressembler, être uni, être un",
+      "url": "audio/generated/60e46745ac65932bc05a5f19.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
       "text": "ba1",
       "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
       "francais": "\"Est-ce que",
@@ -3735,6 +3868,13 @@
       "kind": "voice_clone_unreviewed"
     },
     {
+      "text": "baabo3",
+      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
+      "francais": "orage, première grande pluie de l'hivernage",
+      "url": "audio/generated/cc10bac26ed054ace7ef6b3c.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
       "text": "-bali",
       "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
       "francais": "manque de",
@@ -3743,126 +3883,6 @@
     }
   ],
   "pending": [
-    {
-      "text": "baabo3",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "orage, première grande pluie de l'hivernage",
-      "url": "audio/generated/cc10bac26ed054ace7ef6b3c.wav"
-    },
-    {
-      "text": "baabondi",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "mousser (faire)",
-      "url": "audio/generated/bca76b1d8f1298a2ccd38ff6.wav"
-    },
-    {
-      "text": "baabu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "secourir avec de l'argent",
-      "url": "audio/generated/9b6d7b5c4d2f4cc59cdfcbaf.wav"
-    },
-    {
-      "text": "baade",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "lieu où l'on reçoit les condoléances ; tombeau, deuil",
-      "url": "audio/generated/11a92b734c0469ea19fe6a44.wav"
-    },
-    {
-      "text": "baafe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "battant de porte",
-      "url": "audio/generated/941665a00c1f199dbd56c276.wav"
-    },
-    {
-      "text": "baafinlenme",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "cadenas, serrure",
-      "url": "audio/generated/5f41e9267d1c255eb302bc82.wav"
-    },
-    {
-      "text": "baaga",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "margouillat, lézard",
-      "url": "audio/generated/1c67b421c3188942ef2243b3.wav"
-    },
-    {
-      "text": "baagane",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/e01378509e77eef7f72fe8a6.wav"
-    },
-    {
-      "text": "baaja",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "creuser, approfondir",
-      "url": "audio/generated/a0ee7e403a8dbd23f9eeb0d9.wav"
-    },
-    {
-      "text": "baalixu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "pubère, qui a atteint l'âge de la puberté",
-      "url": "audio/generated/66ccea5b2c26b2daa819c315.wav"
-    },
-    {
-      "text": "baami",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "aller au petit galop, chevaucher",
-      "url": "audio/generated/9e0fd3bf64e037b97fe28582.wav"
-    },
-    {
-      "text": "baamindi",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "galoper (faire)",
-      "url": "audio/generated/8dcf49283f31268316e5c214.wav"
-    },
-    {
-      "text": "baana",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "Tabaski, le douzième mois lunaire ; ressembler, être uni, être un",
-      "url": "audio/generated/498a10e6a97f91bd0ca269cd.wav"
-    },
-    {
-      "text": "baana1",
-      "source": "data/source/reports/lot-validation-prioritaire-soninke.csv",
-      "francais": "Tabaski, le douzième mois lunaire",
-      "url": "audio/generated/c089b464f2fb16be8c8fc349.wav"
-    },
-    {
-      "text": "baana2",
-      "source": "data/source/reports/lot-validation-prioritaire-soninke.csv",
-      "francais": "ressembler, être uni, être un",
-      "url": "audio/generated/60e46745ac65932bc05a5f19.wav"
-    },
-    {
-      "text": "baanaaxu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "unicité, solitude, ressemblance",
-      "url": "audio/generated/402377a9d29328b57bfd7835.wav"
-    },
-    {
-      "text": "baananbaano",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "quelques",
-      "url": "audio/generated/db9ae1a3fade5d93bb76b518.wav"
-    },
-    {
-      "text": "baananbe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "chacun",
-      "url": "audio/generated/8e752dc3780ea95323a214cd.wav"
-    },
-    {
-      "text": "baananne",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "même",
-      "url": "audio/generated/c2e096daf3a22cd265765a8a.wav"
-    },
-    {
-      "text": "baane",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "valeur quantitative, associé à des déterminants quantifieurs: yogo, tana, 0) ; seul (valeur qualifcatif) ; le même (en fonction épithète, pas en fonction attribut ; dans un contexte où le nom qualifié par baane s'oppose à une première occurrence de même valeur ; chacun ; un peu ; one ; un à un, un par un",
-      "url": "audio/generated/d517debb54a589db79858df5.wav"
-    },
     {
       "text": "baanondi",
       "source": "data/source/lexique-soninke-fr-base.csv",
