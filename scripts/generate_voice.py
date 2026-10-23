@@ -126,15 +126,26 @@ def build(generate=False, limit=20, device="auto"):
                 # Only generated files are considered here; original audio/ files are untouched.
                 path.unlink()
 
-    # Restaure les métadonnées de validation humaine après chaque reconstruction.
+    # Restaure toutes les métadonnées de validation humaine après chaque reconstruction.
+    # Ne pas perdre les validations séparées lors d'un nouveau lot de génération.
+    validation_fields = (
+        "linguistic_validation",
+        "pronunciation_validation",
+        "translation_validation",
+        "validation_batch",
+        "validation_date",
+        "validated_by",
+        "translation_text_missing",
+    )
     for normalized, item in audio.items():
         previous = previous_audio.get(normalized)
-        if previous and previous.get("linguistic_validation"):
-            item["linguistic_validation"] = previous["linguistic_validation"]
-            if previous.get("validation_date"):
-                item["validation_date"] = previous["validation_date"]
-            if previous.get("kind") == "voice_clone_validated":
-                item["kind"] = "voice_clone_validated"
+        if not previous:
+            continue
+        for field in validation_fields:
+            if field in previous:
+                item[field] = previous[field]
+        if previous.get("kind") == "voice_clone_validated":
+            item["kind"] = "voice_clone_validated"
 
     # Add known French translations to audio entries without overwriting existing translations.
     for normalized, item in vocabulary.items():
