@@ -2516,10 +2516,10 @@ function renderDictResults() {
             <button type="button" class="audio-play-btn" data-audio-word="${esc(a.text)}" title="Écouter avec la voix de référence" aria-label="Écouter ${esc(a.text)}">${ICONS.speaker}<span>Écouter</span></button>
             <button type="button" class="fav-toggle${fav ? " is-favorite" : ""}" data-fav-snk="${esc(a.text)}" data-fav-fr="${esc(a.francais || "")}" data-fav-type="${a.text.split(/\s+/).length > 1 ? "phrase" : "mot"}" aria-pressed="${fav ? "true" : "false"}" aria-label="Ajouter ${esc(a.text)} aux favoris">${fav ? ICONS.starFilled : ICONS.star}</button>
           </div>
-          <div class="dict-translation">${a.francais ? esc(a.francais) : "Enregistrement soninké validé"}</div>
+          <div class="dict-translation">${a.francais ? esc(a.francais) : "Traduction non renseignée"}</div>
           <div class="dict-meta">
-            <span class="pair-badge is-attested">Voix de référence</span>
-            <span>${esc(a.id)}.wav</span>
+            <span class="pair-badge ${a.linguistic_validation ? "is-attested" : a.generated ? "is-review" : "is-attested"}">${a.linguistic_validation ? "Prononciation validée par le référent" : a.generated ? "Audio généré · prononciation à valider" : "Enregistrement de référence"}</span>
+            <span>${esc(String(a.url || "").split("/").pop() || "")}</span>
           </div>
         </div>`;
       })
