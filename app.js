@@ -179,6 +179,7 @@ const PHRASEBOOK = [
 const ATTESTATION = {
   referent: { rank: 4, label: "Attesté · référent", cls: "is-attested" },
   corpus: { rank: 3, label: "Attesté · corpus", cls: "is-attested" },
+  composed: { rank: 3, label: "Composé · lexique attesté", cls: "is-attested" },
   review: { rank: 2, label: "À vérifier · source externe", cls: "is-review" },
   reference: { rank: 3, label: "Voix de référence", cls: "is-attested" },
   unknown: { rank: 0, label: "Non attesté dans le corpus", cls: "is-unknown" },
@@ -209,6 +210,24 @@ function isExcludedForm(form) {
   if (state.guard.has(key)) return true;
   const tokens = key.split(/\s+/).filter(Boolean);
   return tokens.length > 1 && tokens.every((t) => state.guard.has(t));
+}
+
+function isAttestedSoninkeSpan(span) {
+  const key = normalizeWord(span);
+  if (!key || isExcludedForm(span)) return false;
+  if (state.entries.some((e) => normalizeWord(e.soninke) === key)) return true;
+  if (PHRASEBOOK.some((p) => normalizeWord(p.snk) === key || p.alt.some((a) => normalizeWord(a) === key))) return true;
+  if (state.samples.some((s) => normalizeWord(s.soninke) === key)) return true;
+  if (findAudioInfo(span)) return true;
+  // Forme inaccomplie régulière (-na/-ne/-ni/-no/-nu) d'un verbe attesté du corpus
+  const impfMatch = key.match(/^(.+?[aeiou])n([aeiou])$/);
+  if (impfMatch && impfMatch[1].slice(-1) === impfMatch[2]) {
+    const stem = impfMatch[1];
+    if (state.entries.some((e) => /verbe/i.test(e.categorie || "") && normalizeWord(e.soninke) === stem)) {
+      return true;
+    }
+  }
+  return false;
 }
 
 // Attestation d'une forme soninké, sans jamais inventer de source.
@@ -246,6 +265,35 @@ function attestationOf(form) {
   if (audio) {
     const level = audio.generated ? "reference" : "referent";
     return { level, ...ATTESTATION[level], audio };
+  }
+
+  // 5. Phrase composée grammaticalement dont chaque segment est attesté dans le corpus
+  const cleanTokens = String(form || "")
+    .replace(/[«»"“”.,!?;:()[\]]/g, " ")
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean);
+  if (cleanTokens.length >= 2) {
+    let idx = 0;
+    let allAttested = true;
+    while (idx < cleanTokens.length) {
+      let matchedEnd = -1;
+      for (let end = Math.min(cleanTokens.length, idx + 4); end > idx; end--) {
+        const span = cleanTokens.slice(idx, end).join(" ");
+        if (isAttestedSoninkeSpan(span)) {
+          matchedEnd = end;
+          break;
+        }
+      }
+      if (matchedEnd < 0) {
+        allAttested = false;
+        break;
+      }
+      idx = matchedEnd;
+    }
+    if (allAttested) {
+      return { level: "composed", ...ATTESTATION.composed, audio: findAudioInfo(form) };
+    }
   }
 
   return { level: "unknown", ...ATTESTATION.unknown };
@@ -680,6 +728,32 @@ async function playWordAudio(word, btn = null) {
   return playedAny;
 }
 
+// Extrait les segments disposant déjà d'un audio de référence dans une phrase composée
+function extractAvailableAudioSegments(phrase) {
+  const words = String(phrase || "").replace(/[«»"“”.,!?;:()[\]]/g, " ").trim().split(/\s+/).filter(Boolean);
+  const found = [];
+  const seen = new Set();
+  for (let i = 0; i < words.length;) {
+    let match = null;
+    for (let end = Math.min(words.length, i + 4); end > i; end--) {
+      const text = words.slice(i, end).join(" ");
+      const info = findAudioInfo(text);
+      if (info) { match = { text, url: info.url, end }; break; }
+    }
+    if (match) {
+      const k = normalizeWord(match.text);
+      if (!seen.has(k)) {
+        seen.add(k);
+        found.push(match);
+      }
+      i = match.end;
+    } else {
+      i++;
+    }
+  }
+  return found;
+}
+
 function soninkeForms(markdownText) {
   const text = String(markdownText || "");
   const forms = [];
@@ -688,8 +762,10 @@ function soninkeForms(markdownText) {
   for (const m of text.matchAll(/\*\*([^*]+)\*\*/g)) forms.push(m[1]);
   const unique = [...new Set(forms.map((f) => f.trim()).filter(Boolean))];
   return unique.filter((form) => !isExcludedForm(form) && (findAudioInfo(form) ||
+    buildSoninkePhraseSegments(form).length > 0 ||
     PHRASEBOOK.some(p => [p.snk, ...p.alt].some(x => normalizeWord(x) === normalizeWord(form))) ||
-    state.entries.some(e => normalizeWord(e.soninke) === normalizeWord(form))));
+    state.entries.some(e => normalizeWord(e.soninke) === normalizeWord(form)) ||
+    (form.split(/\s+/).length > 1 && unattestedTokensOf(form).length === 0)));
 }
 
 function buildSpeechSegments(text) {
@@ -717,13 +793,52 @@ async function speakResponse(text) {
   if (token === state.speechToken) $$(".msg-action-btn.speaking").forEach(b => b.classList.remove("speaking"));
 }
 
+// Traduction lexicale d'une phrase composée, mot à mot (sans jamais deviner)
+function glossSoninkeSpans(form) {
+  const words = String(form || "").replace(/[«»"“”.,!?;:()[\]]/g, " ").trim().split(/\s+/).filter(Boolean);
+  const parts = [];
+  const markerGloss = {
+    wa: "inaccompli (action en cours / habituelle)", di: "passé (avec objet)", da: "passé (avec objet)",
+    "n'di": "passé (avec objet)", ma: "négation du passé", maxa: "ne… pas (impératif / passé)",
+    nta: "négation de l'inaccompli", "yi rini": "futur proche", rini: "futur lointain / à venir",
+    "n'ti rini": "négation du futur proche", "n'taxa rini": "négation du futur proche (variante)",
+    do: "action en cours", fayi: "en train de", ba: "marque de question",
+  };
+  let i = 0;
+  while (i < words.length) {
+    let matched = false;
+    for (let end = Math.min(words.length, i + 4); end > i; end--) {
+      const span = words.slice(i, end).join(" ");
+      const key = normalizeWord(span);
+      const entry = state.entries.find((e) => normalizeWord(e.soninke) === key && !isExcludedForm(e.soninke));
+      if (entry) { parts.push(`${span} = ${entry.francais.split(";")[0]}`); i = end; matched = true; break; }
+      const pron = SONINKE_PRONOUNS.find((p) => p.short === span || p.long === span);
+      if (pron) { parts.push(`${span} = ${pron.fr[0]}`); i = end; matched = true; break; }
+      if (markerGloss[key] !== undefined) { parts.push(`${span} = ${markerGloss[key]}`); i = end; matched = true; break; }
+      const elided = span.match(/^(n'|m'|l'|ŋ')(\S+)$/);
+      if (elided) {
+        const sub = state.entries.find((e) => normalizeWord(e.soninke) === normalizeWord(elided[2]) && !isExcludedForm(e.soninke));
+        if (sub) { parts.push(`${span} = ${sub.francais.split(";")[0]} (avec particule ${elided[1]})`); i = end; matched = true; break; }
+      }
+    }
+    if (!matched) { parts.push(`${words[i]} = (non attesté)`); i++; }
+  }
+  return parts;
+}
+
 function explainFrench(text) {
   const forms = soninkeForms(text);
   return forms.map(form => {
     const key = normalizeWord(form);
     const phrases = PHRASEBOOK.filter(p => [p.snk, ...p.alt].some(x => normalizeWord(x) === key)).map(p => p.fr);
-    const meanings = state.entries.filter(e => normalizeWord(e.soninke) === key).map(e => e.francais);
-    return `${form} → ${[...new Set([...phrases, ...meanings])].join(" ; ") || "Sens non documenté — à vérifier avec le référent."}`;
+    const meanings = state.entries.filter(e => normalizeWord(e.soninke) === key && !isExcludedForm(e.soninke)).map(e => e.francais);
+    const direct = [...new Set([...phrases, ...meanings])];
+    if (direct.length) return `${form} → ${direct.join(" ; ")}`;
+    if (form.split(/\s+/).length > 1) {
+      const parts = glossSoninkeSpans(form);
+      if (parts.length) return `${form} →\n  ${parts.join("\n  ")}`;
+    }
+    return `${form} → Sens non documenté — à vérifier avec le référent.`;
   }).join("\n") || "Aucune forme soninké identifiée dans cette réponse.";
 }
 
@@ -1032,35 +1147,141 @@ function levenshtein(a, b) {
 
 // Formes canoniques françaises courantes (pluriels, féminins, conjugaisons usuelles)
 const FR_IRREGULAR_MAP = {
-  "suis": "être", "es": "être", "est": "être", "sommes": "être", "etes": "être", "sont": "être",
-  "vais": "aller", "vas": "aller", "va": "aller", "allons": "aller", "allez": "aller", "vont": "aller",
-  "pars": "partir", "part": "partir", "partons": "partir", "partez": "partir", "partent": "partir", "parti": "partir", "partie": "partir",
-  "viens": "venir", "vient": "venir", "venons": "venir", "venez": "venir", "viennent": "venir", "venu": "venir", "venue": "venir",
-  "bois": "boire", "boit": "boire", "buvons": "boire", "buvez": "boire", "boivent": "boire", "bu": "boire",
-  "vois": "voir", "voit": "voir", "voyons": "voir", "voyez": "voir", "voient": "voir", "vu": "voir",
-  "prends": "prendre", "prend": "prendre", "prenons": "prendre", "prenez": "prendre", "prennent": "prendre", "pris": "prendre",
-  "dors": "dormir", "dort": "dormir", "dormons": "dormir", "dormez": "dormir", "dorment": "dormir", "dormi": "dormir",
-  "ecris": "ecrire", "ecrit": "ecrire", "ecrivons": "ecrire", "ecrivez": "ecrire", "ecrivent": "ecrire",
+  "suis": "être", "es": "être", "est": "être", "sommes": "être", "etes": "être", "sont": "être", "etais": "être", "etait": "être", "etaient": "être", "ete": "être",
+  "ai": "avoir", "as": "avoir", "a": "avoir", "avons": "avoir", "avez": "avoir", "ont": "avoir", "avais": "avoir", "avait": "avoir", "avaient": "avoir", "eu": "avoir",
+  "vais": "aller", "vas": "aller", "va": "aller", "allons": "aller", "allez": "aller", "vont": "aller", "allais": "aller", "allait": "aller", "alle": "aller", "allee": "aller", "alles": "aller", "allees": "aller", "irai": "aller", "iras": "aller", "ira": "aller", "irons": "aller", "irez": "aller", "iront": "aller",
+  "pars": "partir", "part": "partir", "partons": "partir", "partez": "partir", "partent": "partir", "partais": "partir", "partait": "partir", "parti": "partir", "partie": "partir", "partis": "partir", "parties": "partir", "partirai": "partir", "partiras": "partir", "partira": "partir", "partirons": "partir", "partirez": "partir", "partiront": "partir",
+  "viens": "venir", "vient": "venir", "venons": "venir", "venez": "venir", "viennent": "venir", "venais": "venir", "venait": "venir", "venu": "venir", "venue": "venir", "venus": "venir", "venues": "venir", "viendrai": "venir", "viendras": "venir", "viendra": "venir", "viendrons": "venir", "viendrez": "venir", "viendront": "venir",
+  "bois": "boire", "boit": "boire", "buvons": "boire", "buvez": "boire", "boivent": "boire", "buvais": "boire", "buvait": "boire", "bu": "boire", "bue": "boire", "boirai": "boire", "boiras": "boire", "boira": "boire", "boirons": "boire", "boirez": "boire", "boiront": "boire",
+  "vois": "voir", "voit": "voir", "voyons": "voir", "voyez": "voir", "voient": "voir", "voyais": "voir", "voyait": "voir", "vu": "voir", "vue": "voir", "verrai": "voir", "verras": "voir", "verra": "voir", "verrons": "voir", "verrez": "voir",
+  "prends": "prendre", "prend": "prendre", "prenons": "prendre", "prenez": "prendre", "prennent": "prendre", "prenais": "prendre", "prenait": "prendre", "pris": "prendre", "prise": "prendre", "prendrai": "prendre", "prendras": "prendre", "prendra": "prendre",
+  "comprends": "comprendre", "comprend": "comprendre", "comprenons": "comprendre", "comprenez": "comprendre", "comprennent": "comprendre", "compris": "comprendre",
+  "apprends": "apprendre", "apprend": "apprendre", "apprenons": "apprendre", "apprenez": "apprendre", "apprennent": "apprendre", "appris": "apprendre",
+  "dors": "dormir", "dort": "dormir", "dormons": "dormir", "dormez": "dormir", "dorment": "dormir", "dormais": "dormir", "dormait": "dormir", "dormi": "dormir", "dormirai": "dormir", "dormira": "dormir",
+  "ecris": "ecrire", "ecrit": "ecrire", "ecrivons": "ecrire", "ecrivez": "ecrire", "ecrivent": "ecrire", "ecrivais": "ecrire", "ecrivait": "ecrire", "ecrirai": "ecrire", "ecrira": "ecrire",
+  "dis": "dire", "dit": "dire", "disons": "dire", "dites": "dire", "disent": "dire", "disais": "dire", "disait": "dire", "dirai": "dire", "dira": "dire",
+  "mets": "mettre", "met": "mettre", "mettons": "mettre", "mettez": "mettre", "mettent": "mettre", "mis": "mettre", "mise": "mettre",
+  "promets": "promettre", "promet": "promettre", "promis": "promettre",
+  "ouvres": "ouvrir", "ouvre": "ouvrir", "ouvrons": "ouvrir", "ouvrez": "ouvrir", "ouvrent": "ouvrir", "ouvert": "ouvrir", "ouverte": "ouvrir",
+  "offres": "offrir", "offre": "offrir", "offrons": "offrir", "offrez": "offrir", "offrent": "offrir", "offert": "offrir", "offerte": "offrir",
+  "cours": "courir", "court": "courir", "courons": "courir", "courez": "courir", "courent": "courir", "couru": "courir", "courrai": "courir", "courra": "courir",
+  "veux": "vouloir", "veut": "vouloir", "voulons": "vouloir", "voulez": "vouloir", "veulent": "vouloir", "voulais": "vouloir", "voulait": "vouloir", "voulu": "vouloir", "voudrai": "vouloir", "voudra": "vouloir",
+  "peux": "pouvoir", "peut": "pouvoir", "pouvons": "pouvoir", "pouvez": "pouvoir", "peuvent": "pouvoir", "pu": "pouvoir",
+  "sais": "savoir", "sait": "savoir", "savons": "savoir", "savez": "savoir", "savent": "savoir", "su": "savoir",
+  "connais": "connaitre", "connait": "connaitre", "connaissons": "connaitre", "connaissez": "connaitre", "connaissent": "connaitre", "connu": "connaitre",
+  "vends": "vendre", "vend": "vendre", "vendons": "vendre", "vendez": "vendre", "vendent": "vendre", "vendu": "vendre",
+  "attends": "attendre", "attend": "attendre", "attendons": "attendre", "attendez": "attendre", "attendent": "attendre", "attendu": "attendre",
+  "entends": "entendre", "entend": "entendre", "entendons": "entendre", "entendez": "entendre", "entendent": "entendre", "entendu": "entendre",
+  "reponds": "repondre", "repond": "repondre", "repondons": "repondre", "repondez": "repondre", "repondent": "repondre", "repondu": "repondre",
+  "descends": "descendre", "descend": "descendre", "descendons": "descendre", "descendez": "descendre", "descendent": "descendre", "descendu": "descendre", "descendue": "descendre",
+  "perds": "perdre", "perd": "perdre", "perdons": "perdre", "perdez": "perdre", "perdent": "perdre", "perdu": "perdre",
+  "mords": "mordre", "mord": "mordre", "mordons": "mordre", "mordez": "mordre", "mordent": "mordre", "mordu": "mordre",
+  "bats": "battre", "bat": "battre", "battons": "battre", "battez": "battre", "battent": "battre", "battu": "battre",
+  "combats": "combattre", "combat": "combattre", "combattu": "combattre",
+  "traduis": "traduire", "traduit": "traduire", "traduisons": "traduire", "traduisez": "traduire", "traduisent": "traduire",
+  "ris": "rire", "rit": "rire", "rions": "rire", "riez": "rire", "rient": "rire", "ri": "rire",
+  "assois": "asseoir", "assoit": "asseoir", "assieds": "asseoir", "assied": "asseoir", "asseyons": "asseoir", "asseyez": "asseoir", "assoient": "asseoir", "assis": "asseoir", "assise": "asseoir",
+  "couds": "coudre", "coud": "coudre", "cousons": "coudre", "cousez": "coudre", "cousent": "coudre", "cousu": "coudre",
+  "eteins": "eteindre", "eteint": "eteindre", "eteignons": "eteindre", "eteignez": "eteindre", "eteignent": "eteindre",
+  "crains": "craindre", "craint": "craindre", "craignons": "craindre", "craignez": "craindre", "craignent": "craindre",
+  "fais": "faire", "fait": "faire", "faisons": "faire", "faites": "faire", "font": "faire", "ferai": "faire", "fera": "faire",
+  "dois": "devoir", "doit": "devoir", "devons": "devoir", "devez": "devoir", "doivent": "devoir", "du": "devoir",
+  "lis": "lire", "lit": "lire", "lisons": "lire", "lisez": "lire", "lisent": "lire", "lu": "lire",
+  "vis": "vivre", "vit": "vivre", "vivons": "vivre", "vivez": "vivre", "vivent": "vivre", "vecu": "vivre",
+  "nais": "naitre", "nait": "naitre", "naissons": "naitre", "naissent": "naitre", "ne": "naitre", "nee": "naitre",
+  "suis_v": "suivre",
   "yeux": "œil", "chevaux": "cheval", "enfants": "enfant", "femmes": "femme", "hommes": "homme",
   "maisons": "maison", "jours": "jour", "mots": "mot", "parents": "père", "mamans": "mère", "papas": "papa",
+  "livres": "livre", "cahiers": "cahier", "lettres": "lettre", "villages": "village", "marches": "marche",
+  "oiseaux": "oiseau", "animaux": "animal", "fruits": "fruit", "arbres": "arbre", "chiens": "chien",
+  "poissons": "poisson", "dents": "dent", "mains": "main", "pieds": "pied", "etoiles": "etoile", "nuages": "nuage",
+  "freres": "frere", "soeurs": "soeur", "epouses": "epouse", "familles": "famille", "ecoles": "ecole",
 };
 
 function candidateWordForms(rawTerm) {
   const n = normalizeWord(rawTerm);
   const forms = new Set([n]);
+  const pushVerbForms = (stem) => {
+    if (!stem || stem.length < 2) return;
+    forms.add(stem + "er");
+    forms.add(stem + "re");
+    forms.add(stem + "ir");
+    if (/[eiué]$/.test(stem)) forms.add(stem + "r");
+  };
   if (FR_IRREGULAR_MAP[n]) forms.add(normalizeWord(FR_IRREGULAR_MAP[n]));
   if (n.length > 3 && n.endsWith("s")) forms.add(n.slice(0, -1));
   if (n.length > 3 && n.endsWith("x")) forms.add(n.slice(0, -1));
-  if (n.length > 4 && n.endsWith("es")) { forms.add(n.slice(0, -2)); forms.add(n.slice(0, -2) + "er"); }
-  if (n.length > 4 && n.endsWith("ent")) forms.add(n.slice(0, -3) + "er");
-  if (n.length > 4 && n.endsWith("ons")) forms.add(n.slice(0, -3) + "er");
-  if (n.length > 4 && n.endsWith("ez")) forms.add(n.slice(0, -2) + "er");
-  if (n.length > 3 && n.endsWith("e")) forms.add(n.slice(0, -1) + "er");
+  if (n.length > 6 && n.endsWith("aient")) pushVerbForms(n.slice(0, -5));
+  if (n.length > 5 && (n.endsWith("ais") || n.endsWith("ait") || n.endsWith("ant"))) pushVerbForms(n.slice(0, -3));
+  if (n.length > 5 && (n.endsWith("ions") || n.endsWith("iez"))) pushVerbForms(n.slice(0, -4));
+  if (n.length > 4 && (n.endsWith("erai") || n.endsWith("eras") || n.endsWith("erez"))) forms.add(n.replace(/(rai|ras|rez)$/, "re"));
+  if (n.length > 4 && /(rai|ras|ra|rons|rez|ront)$/.test(n)) forms.add(n.replace(/(rai|ras|ra|rons|rez|ront)$/, "re"));
+  if (n.length > 4 && n.endsWith("es")) { forms.add(n.slice(0, -2)); pushVerbForms(n.slice(0, -2)); }
+  if (n.length > 4 && n.endsWith("ent")) pushVerbForms(n.slice(0, -3));
+  if (n.length > 4 && n.endsWith("ons")) pushVerbForms(n.slice(0, -3));
+  if (n.length > 4 && n.endsWith("ez")) pushVerbForms(n.slice(0, -2));
+  if (n.length > 4 && (n.endsWith("ee") || n.endsWith("ees"))) forms.add(n.replace(/ees?$/, "er"));
+  if (n.length > 3 && n.endsWith("e")) { forms.add(n.slice(0, -1) + "er"); forms.add(n.slice(0, -1)); forms.add(n.slice(0, -1) + "r"); }
+  if (n.length > 4 && (n.endsWith("is") || n.endsWith("it"))) { forms.add(n.slice(0, -1)); forms.add(n.slice(0, -2)); }
   // Suffixes morphologiques soninké courants (-ke défini, -nu/-u pluriel, -nde/-ye/-ni)
   if (n.length > 4 && (n.endsWith("-nde") || n.endsWith("-ye"))) forms.add(n.replace(/-(nde|ye)$/, ""));
   if (n.length > 4 && n.endsWith("ni")) forms.add(n.slice(0, -2));
   if (n.length > 4 && n.endsWith("nu")) forms.add(n.slice(0, -2));
+  // Chaque forme dérivée repasse par la table des verbes irréguliers (viendras → viendra → venir)
+  for (const f of [...forms]) {
+    if (FR_IRREGULAR_MAP[f]) forms.add(normalizeWord(FR_IRREGULAR_MAP[f]));
+  }
   return [...forms].filter(Boolean);
+}
+
+// Score de priorité lexicale : référent + audio > référent > corpus + audio > source externe
+const PREFERRED_SONINKE_LEMMAS = new Set([
+  "ka", "saxa", "maro", "maro ke", "lemine", "lemine ke", "xati", "xati ke", "lettra", "lettra ke",
+  "baaba", "saaxe", "yaxare", "yake", "yugo", "kiine", "kore", "debe", "yigande", "kissima",
+  "daga", "ri", "yige", "mini", "sefe", "goli", "safa", "wori", "faye", "xanu", "wutu", "dema",
+  "muru", "sore", "taxu", "kunyi", "suge", "rege", "wu", "tuma", "ko", "ku", "tu", "faamu",
+  "wurebandi", "mula", "xobo", "gage", "kini", "ji", "tiye", "nexe", "kitabe", "kaye", "lekolu",
+  "lenki", "daru", "kumbene", "koota su", "waxati su", "abada", "kere", "no"
+]);
+
+function scoreCorpusEntry(entry, directKey = "") {
+  if (!entry) return -999;
+  if (isExcludedForm(entry.soninke)) return -500;
+  let score = 0;
+  const snkNorm = normalizeWord(entry.soninke);
+  const frNorm = normalizeWord(entry.francais);
+  const statut = String(entry.statut || "");
+  if (directKey && snkNorm === directKey) score += 1000;
+  if (directKey && frNorm === directKey) score += 120;
+  if (/valide_par_referent|fourni_par_referent/i.test(statut)) score += 60;
+  else if (!entry.isCandidate && !/a_verifier|externe/i.test(statut)) score += 30;
+  else score -= 15;
+  if (findAudioInfo(entry.soninke)) score += 35;
+  if (PREFERRED_SONINKE_LEMMAS.has(snkNorm)) score += 28;
+  if (/verbe_gerondif|nom_d_action/i.test(entry.categorie || "") && (!directKey || snkNorm !== directKey)) score -= 18;
+  return score;
+}
+
+// Meilleure entrée attestée d'une recherche lexicale, filtrable par catégorie
+// opts.definite : privilégie la forme définie attestée « … ke » (le riz → maro ke, l'enfant → lemine ke)
+// opts.directKey : le mot recherché (renforce exactement le sens demandé et écarte le bruit des exemples)
+// opts.strictContent : n'accepte que les correspondances exactes/proches (jamais le fouilli des exemples)
+function bestSoninkeEntry(lookup, preferredCategory = "", opts = {}) {
+  const pool = (opts.strictContent
+    ? [...(lookup?.exact || []), ...(lookup?.starts || [])]
+    : [...(lookup?.exact || []), ...(lookup?.starts || []), ...(lookup?.contains || [])]
+  ).filter((e) => e && !isExcludedForm(e.soninke));
+  if (!pool.length) return null;
+  const catRegex = preferredCategory ? new RegExp(preferredCategory, "i") : null;
+  const primary = catRegex ? pool.filter((e) => catRegex.test(e.categorie || "")) : pool;
+  const directKey = normalizeWord(opts.directKey || "");
+  const ranked = (primary.length ? primary : pool).slice()
+    .sort((a, b) => scoreCorpusEntry(b, directKey) - scoreCorpusEntry(a, directKey));
+  if (opts.definite) {
+    const def = ranked.find((e) => /\s+ke$/i.test(String(e.soninke).trim()) && /referent/i.test(String(e.statut || "")));
+    if (def) return def;
+  }
+  return ranked[0] || null;
 }
 
 function splitSenses(francais) {
@@ -1077,9 +1298,11 @@ function lookupTerm(term) {
   const exactDirect = [], exactStemmed = [], starts = [], contains = [];
 
   for (const e of state.entries) {
+    if (isExcludedForm(e.soninke)) continue;
     const snk = normalizeWord(e.soninke);
     const snkOrtho = normalizeSoninkeOrtho(e.soninke);
     const frFull = normalizeWord(e.francais);
+    const frBare = frFull.replace(/^(?:le\s|la\s|les\s|un\s|une\s|l'|d'|du\s|des\s|de la\s|de\s)/, "");
     const senses = splitSenses(e.francais);
     const variants = String(e.variantes || "").split(/[;,|]/).map(normalizeWord).filter(Boolean);
 
@@ -1089,7 +1312,7 @@ function lookupTerm(term) {
     }
 
     const isExact =
-      forms.some((f) => snk === f || frFull === f || senses.includes(f) || variants.includes(f)) ||
+      forms.some((f) => snk === f || frFull === f || frBare === f || senses.includes(f) || variants.includes(f)) ||
       (ortho.length >= 2 && snkOrtho === ortho);
 
     if (isExact) {
@@ -1099,16 +1322,22 @@ function lookupTerm(term) {
 
     const allTokens = [
       ...snk.split(/\s+/),
-      ...frFull.split(/[\s,;()/]+/),
+      ...frFull.split(/[\s,;()/']+/),
+      ...frBare.split(/[\s,;()/']+/),
       ...variants.flatMap((v) => v.split(/\s+/)),
     ].filter(Boolean);
 
-    if (forms.some((f) => f.length >= 2 && (snk.startsWith(f) || frFull.startsWith(f) || allTokens.includes(f)))) {
+    if (forms.some((f) => f.length >= 2 && (snk.startsWith(f) || frFull.startsWith(f) || frBare.startsWith(f) || allTokens.includes(f)))) {
       starts.push(e);
-    } else if (forms.some((f) => f.length >= 3 && (snk.includes(f) || frFull.includes(f) || normalizeWord(e.exemple_original || "").includes(f)))) {
+    } else if (forms.some((f) => f.length >= 3 && (snk.includes(f) || frFull.includes(f) || frBare.includes(f) || normalizeWord(e.exemple_original || "").includes(f)))) {
       contains.push(e);
     }
   }
+
+  exactDirect.sort((a, b) => scoreCorpusEntry(b, directKey) - scoreCorpusEntry(a, directKey));
+  exactStemmed.sort((a, b) => scoreCorpusEntry(b, directKey) - scoreCorpusEntry(a, directKey));
+  starts.sort((a, b) => scoreCorpusEntry(b, directKey) - scoreCorpusEntry(a, directKey));
+  contains.sort((a, b) => scoreCorpusEntry(b, directKey) - scoreCorpusEntry(a, directKey));
 
   const exact = [...exactDirect, ...exactStemmed];
   return {
@@ -1145,6 +1374,577 @@ function lookupPhrasebook(term) {
     }
   }
   return [...bySnk.values()];
+}
+
+// ════════════════════════════════════════════════════════════
+//  GRAMMAIRE SONINKÉ — composition de phrases à partir du lexique
+//  (Sujet + Auxiliaire/Marqueur + Objet + Verbe / Sujet + Verbe + Complément)
+//  Chaque forme produite n'utilise QUE des mots attestés du corpus ;
+//  tout mot absent est signalé explicitement, jamais inventé.
+// ════════════════════════════════════════════════════════════
+
+function capitalizeFirst(text) {
+  const s = String(text || "").trim();
+  return s ? s[0].toUpperCase() + s.slice(1) : s;
+}
+
+const SONINKE_PRONOUNS = [
+  { person: "1s", fr: ["je", "j'"],          short: "n",  long: "nke",  longAccent: "nké" },
+  { person: "2s", fr: ["tu", "t'"],          short: "an", long: "anke", longAccent: "anké" },
+  { person: "3s", fr: ["il", "elle", "on"],  short: "a",  long: "ake",  longAccent: "aké" },
+  { person: "1p", fr: ["nous"],              short: "o",  long: "oku",  longAccent: "oku" },
+  { person: "2p", fr: ["vous"],              short: "xa", long: "xaku", longAccent: "xaku" },
+  { person: "3p", fr: ["ils", "elles"],      short: "i",  long: "iku",  longAccent: "iku" },
+];
+
+// Marqueurs attestés dans le corpus (SNK-GRM-0013..0033 du lexique)
+const SONINKE_TENSE_RULES = {
+  imperfective:    { aux: "wa",        label: "inaccompli (présent habituel / action en cours)", detail: "wa + verbe en -ni/-na/-ne/-no/-nu" },
+  past:            { aux: "n'di",      label: "accompli (passé)",                                detail: "n'di / da + objet + n' + verbe à sa base" },
+  future:          { aux: "yi rini",   label: "futur proche",                                    detail: "yi rini + verbe à sa base" },
+  futureFar:       { aux: "rini",      label: "futur lointain",                                  detail: "rini + verbe à sa base" },
+  imperfectiveNeg: { aux: "nta",       label: "négation de l'inaccompli",                        detail: "nta + verbe en -ni/-na/-ne/-no/-nu" },
+  pastNeg:         { aux: "ma",        label: "négation du passé",                               detail: "ma + verbe à sa base (variante attestée : maxa)" },
+  futureNearNeg:   { aux: "n'ti rini", label: "négation du futur proche",                        detail: "n'ti rini (variante : n'taxa rini) + verbe en -ni/-na/-ne/-no/-nu" },
+};
+
+// Particule nasale n' devant le verbe à l'accompli transitif (attesté : « Anké n'di maro n'yiga »)
+// m' devant b/f/m, l' devant r, ŋ' devant w (SNK-GRM-0028..0031)
+function combineNasalParticle(verb) {
+  const w = String(verb || "").trim();
+  if (!w) return "";
+  if (/^[bfm]/i.test(w)) return "m'" + w;
+  if (/^r/i.test(w)) return "l'" + w;
+  if (/^w/i.test(w)) return "ŋ'" + w;
+  return "n'" + w;
+}
+
+// Forme inaccomplie attestée : daga → dagana, yige → yigene, mini → minini…
+function imperfectiveFormOf(verbBare) {
+  const snk = String(verbBare || "").trim();
+  if (!snk) return "";
+  const snkNorm = normalizeWord(snk);
+  for (const e of state.entries) {
+    if (!/verbe_gerondif/i.test(e.categorie || "")) continue;
+    // Le français d'un gérondif suit le motif « … (gérondif / inaccompli de VERBE) » :
+    // correspondance EXACTE du radical pour ne pas confondre ri → riti.
+    const m = normalizeWord(e.francais || "").match(/inaccompli de ([a-zàâäçéèêëîïôöùûüœ' -]+)\)?\s*$/i);
+    if (m && m[1].trim() === snkNorm) return String(e.soninke).trim();
+  }
+  // Règle régulière attestée : verbe + n + voyelle finale (daga→dagana, ri→rini, mini→minini)
+  const m = snkNorm.match(/[aeiou]$/);
+  if (m) return snk + "n" + m[0];
+  return snk + "ni";
+}
+
+// Jeton autorisé dans une phrase composée : attesté, pronom, marqueur ou forme élidée n'/m'/l'/ŋ'
+function isComposedTokenAttested(token) {
+  const tok = String(token || "").trim();
+  if (!tok) return false;
+  if (isAttestedSoninkeSpan(tok)) return true;
+  if (SONINKE_PRONOUNS.some((p) => p.short === tok || p.long === tok)) return true;
+  if (["wa", "di", "da", "ma", "maxa", "nta", "do", "fayi", "ba"].includes(tok)) return true;
+  const elided = tok.match(/^(n'|m'|l'|ŋ')(\S+)$/);
+  if (elided) {
+    if (["di", "da"].includes(elided[2])) return true;
+    if (isAttestedSoninkeSpan(elided[2])) return true;
+  }
+  return false;
+}
+
+// Vérifie que chaque segment d'une phrase composée est attesté dans le corpus
+function unattestedTokensOf(sentence) {
+  const segs = String(sentence || "").replace(/[«»"“”.,!?;:()[\]]/g, " ").trim().split(/\s+/).filter(Boolean);
+  const missing = [];
+  let i = 0;
+  while (i < segs.length) {
+    let matched = false;
+    for (let end = Math.min(segs.length, i + 4); end > i; end--) {
+      if (isComposedTokenAttested(segs.slice(i, end).join(" "))) { i = end; matched = true; break; }
+    }
+    if (!matched) { missing.push(segs[i]); i++; }
+  }
+  return missing;
+}
+
+// ── Analyse grammaticale d'une phrase française simple ──
+const FR_SUBJECT_PRONOUN_RE = /^(je|j'|tu|t'|il|elle|on|nous|vous|ils|elles)\s+/i;
+const FR_NP_SUBJECT_RE = /^(?:(le|la|les|un|une|du|de la|des|mon|ma|mes|ton|ta|tes|son|sa|ses|notre|nos|votre|vos|leur|leurs)\s+|(l'|d'))([a-zàâäçéèêëîïôöùûüœ]+(?:\s+[a-zàâäçéèêëîïôöùûüœ]+)?)\s+(?=\S)/i;
+const FR_FUT_PERIPH_RE = /^(?:vais|vas|va|allons|allez|vont)\s+(.+)$/i;
+const FR_PAST_AVOIR_RE = /^(?:ai|as|a|avons|avez|ont)\s+(.+)$/i;
+const FR_PAST_ETRE_RE = /^(?:suis|es|est|sommes|etes|sont|étais|était|étaient)\s+(.+)$/i;
+const FR_FUT_SIMPLE_RE = /^([a-zàâäçéèêëîïôöùûüœ]{2,}?)(?:rai|ras|ra|rons|rez|ront)$/i;
+const FR_IMPF_SIMPLE_RE = /^([a-zàâäçéèêëîïôöùûüœ]{2,}?)(?:ais|ait|ions|iez|aient)$/i;
+const FR_TIME_LIST = ["tous les jours", "chaque jour", "aujourd'hui", "demain", "hier", "toujours", "jamais", "maintenant"];
+const FR_DET_TOKEN_RE = /^(le|la|les|un|une|du|de|des|mon|ma|mes|ton|ta|tes|son|sa|ses|ce|cette|ces|au|aux)$/i;
+const FR_OBJ_PRONOUNS = new Set(["le", "la", "les", "l'", "lui", "leur", "me", "m'", "te", "t'", "se", "s'", "nous", "vous", "y", "en"]);
+const FR_SKIP_TOKENS = new Set(["ne", "n'", "n'a", "pas", "plus", "se", "s'", "me", "m'", "te", "t'", "lui", "leur", "y", "en", "le", "la", "les", "l'"]);
+
+function lookupFrenchNounPhrase(tokens, maxLen = 2, opts = {}) {
+  // On privilégie d'abord le nom simple (évite d'avaler l'auxiliaire ou l'adjectif)
+  for (let len = 1; len <= Math.min(maxLen, tokens.length); len++) {
+    const piece = tokens.slice(0, len).join(" ");
+    const entry = bestSoninkeEntry(lookupTerm(piece), "nom|syntagme|lexeme|partie_du_corps|expression|numéral|nombre", { ...opts, directKey: piece, strictContent: true });
+    if (entry && /nom|syntagme|lexeme|partie_du_corps|expression|numeral|nombre/i.test(entry.categorie || "")) {
+      return { entry, length: len, text: piece };
+    }
+  }
+  return null;
+}
+
+function lookupFrenchVerbToken(token) {
+  if (!token || FR_SKIP_TOKENS.has(token)) return null;
+  const seen = new Set();
+  for (const form of [token, ...candidateWordForms(token)]) {
+    const key = normalizeWord(form);
+    if (!key || seen.has(key)) continue;
+    seen.add(key);
+    const entry = bestSoninkeEntry(lookupTerm(key), "", { directKey: key, strictContent: true });
+    if (entry && /verbe/i.test(entry.categorie || "") && !/verbe_gerondif|nom_d_action/i.test(entry.categorie || "")) {
+      return { entry, form: key };
+    }
+  }
+  return null;
+}
+
+function hasFrenchVerb(text) {
+  return String(text || "").split(/\s+/).some((tok) => !!lookupFrenchVerbToken(tok));
+}
+
+// Un complément de lieu n'est accepté que si la partie nommée existe dans le lexique
+function hasFrenchNounGuess(text) {
+  const tokens = String(text || "").split(/\s+/).filter(Boolean);
+  return tokens.some((tok) => FR_DET_TOKEN_RE.test(tok) || /^(l'|d')/.test(tok) || !!lookupFrenchNounPhrase([tok.replace(/^(l'|d')/, "")], 1));
+}
+
+// Reconstitue l'infinitif à partir d'une forme fléchie (mangera → manger, parlait → parler)
+function stripFrenchInflection(token, regex) {
+  const m = String(token || "").match(regex);
+  if (!m) return null;
+  return lookupFrenchVerbToken(String(token).match(regex)[0]);
+}
+
+function stripLeadingArticle(text) {
+  return String(text || "")
+    .replace(/^(?:le|la|les|un|une|du|de la|des|de)\s+/i, "")
+    .replace(/^(?:l'|d')/i, "")
+    .trim();
+}
+
+function parseFrenchStructure(text) {
+  const original = String(text || "").trim().replace(/[?!.…]+$/, "");
+  if (!original) return null;
+  const g = {
+    original,
+    subjectPronoun: null,
+    subjectEntry: null,
+    verbWord: null,
+    verbEntry: null,
+    objectWord: null,
+    objectEntry: null,
+    objectPronoun: false,
+    adjectiveEntry: null,
+    placeWord: null,
+    placeEntry: null,
+    complementWord: null,
+    complementEntry: null,
+    timeWord: null,
+    timeEntry: null,
+    negation: false,
+    tense: "imperfective",
+    interrogative: /[?]\s*$/.test(String(text).trim()) || /^(?:est-ce que|qu'est-ce que)\b/i.test(normalizeWord(text)),
+    copuleMissing: false,
+  };
+
+  let work = normalizeWord(original).replace(/^(?:est-ce que|qu'est-ce que)\s+/i, "");
+
+  // 1. Sujet : pronom (courte ou élidée) puis groupe nominal attesté
+  const subjM = work.match(FR_SUBJECT_PRONOUN_RE);
+  if (subjM) {
+    const key = subjM[1].replace(/'/g, "e").toLowerCase();
+    g.subjectPronoun = SONINKE_PRONOUNS.find((p) => p.fr.some((f) => f.replace(/'/g, "e") === key)) || null;
+    work = work.slice(subjM[0].length).trim();
+  } else {
+    const npM = work.match(FR_NP_SUBJECT_RE);
+    if (npM) {
+      const definite = /^(le|la|les|l')/i.test(npM[1] || npM[2] || "");
+      const probeTokens = npM[3].trim().split(/\s+/);
+      // Nom le plus court d'abord : ne jamais avaler l'auxiliaire (« l'enfant a mangé »)
+      for (let len = 1; len <= probeTokens.length; len++) {
+        const piece = probeTokens.slice(0, len).join(" ");
+        const entry = bestSoninkeEntry(lookupTerm(piece), "nom|syntagme|lexeme|partie_du_corps", { definite, directKey: piece, strictContent: true });
+        if (entry) {
+          g.subjectEntry = entry;
+          work = work.slice(work.indexOf(piece) + piece.length).trim();
+          break;
+        }
+      }
+    }
+  }
+
+  // 2. Négation en tête du groupe verbal (« ne/n'/n'a »)
+  if (/^(?:ne\s+|n'|n'a\s+)/i.test(work)) {
+    g.negation = true;
+    work = work.replace(/^(?:ne\s+|n'|n'a\s+)/i, "").trim();
+  }
+  // Négation en queue (« pas / plus / jamais »)
+  {
+    const tokens = work.split(/\s+/).filter(Boolean);
+    const kept = [];
+    for (const t of tokens) {
+      if (t === "pas" || t === "plus") { g.negation = true; continue; }
+      if (t === "jamais") { g.negation = true; if (!g.timeWord) g.timeWord = "jamais"; continue; }
+      kept.push(t);
+    }
+    work = kept.join(" ");
+  }
+
+  // 3. Temps : passé composé / futur périphrastique, puis futur et imparfait simples
+  let rest = work;
+  const pastAvoir = rest.match(FR_PAST_AVOIR_RE);
+  const pastEtre = !pastAvoir && rest.match(FR_PAST_ETRE_RE);
+  const futPeriph = !pastAvoir && !pastEtre && rest.match(FR_FUT_PERIPH_RE);
+  if (pastAvoir && hasFrenchVerb(pastAvoir[1])) {
+    g.tense = "past";
+    rest = pastAvoir[1].trim();
+  } else if (pastEtre && hasFrenchVerb(pastEtre[1])) {
+    g.tense = "past";
+    rest = pastEtre[1].trim();
+  } else if (pastEtre) {
+    g.copuleMissing = true;
+  } else if (futPeriph && hasFrenchVerb(futPeriph[1])) {
+    g.tense = "future";
+    rest = futPeriph[1].trim();
+  }
+
+  const restTokens = rest.split(/\s+/).filter(Boolean);
+  if (g.tense === "imperfective" && restTokens.length) {
+    const t0 = restTokens[0];
+    if (FR_FUT_SIMPLE_RE.test(t0) && lookupFrenchVerbToken(t0)) {
+      g.tense = "future";
+    } else if (FR_IMPF_SIMPLE_RE.test(t0) && lookupFrenchVerbToken(t0)) {
+      // Imparfait français → inaccompli soninké (déjà la valeur par défaut)
+    }
+  }
+
+  // 4. Compléments de temps attestés
+  {
+    const flat = restTokens.join(" ");
+    for (const phrase of FR_TIME_LIST) {
+      const idx = flat.indexOf(phrase);
+      if (idx >= 0) {
+        if (!g.timeWord) g.timeWord = phrase;
+        restTokens.splice(0, restTokens.length, ...flat.replace(phrase, " ").replace(/\s+/g, " ").trim().split(/\s+/).filter(Boolean));
+        break;
+      }
+    }
+    if (g.timeWord) g.timeEntry = bestSoninkeEntry(lookupTerm(g.timeWord), "adverbe|expression|nom", { directKey: g.timeWord, strictContent: true });
+  }
+
+  // 5. Complément de lieu final (« au marché », « à la maison », « à l'école ») — y compris en début
+  {
+    const flat = restTokens.join(" ");
+    const placeM = flat.match(/(?:^|\s)(?:au|aux|a la|a l'|a|dans|chez|en|sur)\s+(.+)$/i);
+    if (placeM && placeM[1] && hasFrenchNounGuess(placeM[1])) {
+      g.placeWord = stripLeadingArticle(placeM[1]);
+      const found = lookupFrenchNounPhrase(g.placeWord.split(/\s+/), 2, { definite: /(?:au|aux|a\s+la|a\s+l')/i.test(placeM[0]) });
+      if (found) g.placeEntry = found.entry;
+      const beforePlace = placeM.index === 0 ? "" : flat.slice(0, placeM.index).trim();
+      restTokens.splice(0, restTokens.length, ...beforePlace.split(/\s+/).filter(Boolean));
+    }
+  }
+
+  // 6. Verbe principal (premier token verbal attesté du corpus)
+  let verbIndex = -1;
+  for (let i = 0; i < restTokens.length; i++) {
+    const tok = restTokens[i];
+    if (FR_SKIP_TOKENS.has(tok)) {
+      if (FR_OBJ_PRONOUNS.has(tok)) g.objectPronoun = true;
+      continue;
+    }
+    const found = lookupFrenchVerbToken(tok);
+    if (found) {
+      verbIndex = i;
+      g.verbWord = tok;
+      g.verbEntry = found.entry;
+      break;
+    }
+  }
+  if (verbIndex >= 0) {
+    const before = restTokens.slice(0, verbIndex).filter((t) => !FR_SKIP_TOKENS.has(t));
+    const after = restTokens.slice(verbIndex + 1);
+
+    // 7. Objet nominal placé avant le verbe (cas rare en français déclaratif)
+    if (before.length && !g.objectEntry) {
+      const objText = stripLeadingArticle(before.join(" "));
+      const found = objText ? lookupFrenchNounPhrase(objText.split(/\s+/), 2) : null;
+      if (found) { g.objectWord = found.text; g.objectEntry = found.entry; }
+      else if (objText) g.objectWord = objText;
+    }
+
+    // 8. Après le verbe : déterminant + nom (+ adjectif) ou complément
+    let detCount = 0;
+    let definite = false;
+    while (detCount < after.length && (FR_DET_TOKEN_RE.test(after[detCount]) || /^(l'|d')/.test(after[detCount]))) {
+      if (/^(le|la|les|l')$/i.test(after[detCount]) || /^l'/.test(after[detCount])) definite = true;
+      detCount++;
+    }
+    const afterNoDet = after.slice(detCount);
+    if (!g.objectEntry && afterNoDet.length && !FR_TIME_LIST.includes(afterNoDet.join(" "))) {
+      const found = lookupFrenchNounPhrase(afterNoDet, 2, { definite });
+      if (found && !/^(pas|plus|jamais)$/i.test(afterNoDet[0])) {
+        g.objectWord = found.text;
+        g.objectEntry = found.entry;
+        let consumed = detCount + found.length;
+        const adjToken = after[consumed] && !FR_SKIP_TOKENS.has(after[consumed]) ? after[consumed] : null;
+        if (adjToken) {
+          const adjEntry = bestSoninkeEntry(lookupTerm(adjToken), "adjectif|quantitatif|quantificateur|adverbe", { directKey: adjToken, strictContent: true });
+          if (adjEntry && /adjectif|quantit|adverbe/i.test(adjEntry.categorie || "")) {
+            g.adjectiveEntry = adjEntry;
+            consumed++;
+          }
+        }
+        const restC = after.slice(consumed).join(" ").trim();
+        if (restC) {
+          g.complementWord = restC;
+          const ce = bestSoninkeEntry(lookupTerm(restC), "adverbe|expression|nom|deictique", { directKey: restC, strictContent: true });
+          if (ce) g.complementEntry = ce;
+        }
+      } else {
+        const restC = afterNoDet.join(" ").trim();
+        if (restC) {
+          g.complementWord = restC;
+          const ce = bestSoninkeEntry(lookupTerm(restC), "adverbe|expression|nom|deictique", { directKey: restC, strictContent: true });
+          if (ce) g.complementEntry = ce;
+        }
+      }
+    }
+  }
+
+  // Annotation explicite du futur lointain par l'utilisateur
+  if (/futur lointain|plus tard(?:\s+que|\b)/i.test(original) && g.tense === "future") g.tense = "futureFar";
+
+  return g;
+}
+
+// ── Composition de la phrase soninké selon les règles du référent ──
+function composeSoninkeTranslation(g) {
+  if (!g || !g.verbEntry) return null;
+  if (!g.subjectPronoun && !g.subjectEntry) return null;
+  if (g.copuleMissing) return null;
+
+  const verbBare = String(g.verbEntry.soninke || "").trim();
+  if (!verbBare) return null;
+  const verbImpf = imperfectiveFormOf(verbBare);
+  const transitive = !!(g.objectEntry || g.objectWord || g.objectPronoun);
+  const notes = [];
+
+  let aux = "";
+  let verbForm = verbBare;
+  let useLongPronoun = false;
+  let ruleKey = g.tense;
+
+  if (g.negation) {
+    if (g.tense === "past") ruleKey = "pastNeg";
+    else if (g.tense === "future" || g.tense === "futureFar") ruleKey = "futureNearNeg";
+    else ruleKey = "imperfectiveNeg";
+  }
+
+  switch (ruleKey) {
+    case "past":
+      if (transitive) {
+        // Attesté : « Anké n'di maro n'yiga » (1s/2s/1p/2p) et « A da i doronmun biyi » (3s/3p)
+        const p = g.subjectPronoun;
+        if (!g.subjectEntry && p && (p.person === "1s" || p.person === "2s" || p.person === "1p" || p.person === "2p")) {
+          aux = "n'di";
+          useLongPronoun = true;
+        } else {
+          aux = "da";
+        }
+        verbForm = combineNasalParticle(verbBare);
+      } else {
+        // Attesté : « N daga » (1re personne) et « Aké n'daga » (autres personnes)
+        const p = g.subjectPronoun;
+        if (!(p && p.person === "1s")) {
+          verbForm = combineNasalParticle(verbBare);
+          useLongPronoun = !g.subjectEntry;
+        }
+      }
+      break;
+    case "future":
+      aux = SONINKE_TENSE_RULES.future.aux;
+      break;
+    case "futureFar":
+      aux = SONINKE_TENSE_RULES.futureFar.aux;
+      break;
+    case "pastNeg":
+      aux = SONINKE_TENSE_RULES.pastNeg.aux;
+      break;
+    case "imperfectiveNeg":
+      aux = SONINKE_TENSE_RULES.imperfectiveNeg.aux;
+      verbForm = verbImpf || verbBare;
+      break;
+    case "futureNearNeg":
+      aux = SONINKE_TENSE_RULES.futureNearNeg.aux;
+      verbForm = verbImpf || verbBare;
+      break;
+    default:
+      aux = SONINKE_TENSE_RULES.imperfective.aux;
+      verbForm = verbImpf || verbBare;
+      break;
+  }
+
+  const subject = g.subjectEntry
+    ? String(g.subjectEntry.soninke).trim()
+    : (useLongPronoun ? (g.subjectPronoun.longAccent || g.subjectPronoun.long) : g.subjectPronoun.short);
+
+  // Ordre typologique : Sujet + Auxiliaire/Marqueur + Objet (+ Adjectif) + Verbe + Compléments
+  const parts = [subject];
+  if (aux) parts.push(aux);
+  if (g.objectEntry) {
+    parts.push(String(g.objectEntry.soninke).trim());
+    if (g.adjectiveEntry) parts.push(String(g.adjectiveEntry.soninke).trim());
+  } else if (g.objectWord) {
+    notes.push(`Pour compléter cette phrase avec précision, il faudrait ajouter le mot « ${g.objectWord} » au lexique.`);
+  } else if (g.objectPronoun) {
+    notes.push(`Pour compléter cette phrase avec précision, il faudrait préciser le pronom objet soninké dans le lexique.`);
+  }
+  parts.push(verbForm);
+  if (g.placeEntry) parts.push(String(g.placeEntry.soninke).trim());
+  else if (g.placeWord) notes.push(`Pour compléter cette phrase avec précision, il faudrait ajouter le mot « ${g.placeWord} » au lexique.`);
+  if (g.complementEntry) parts.push(String(g.complementEntry.soninke).trim());
+  else if (g.complementWord) notes.push(`Pour compléter cette phrase avec précision, il faudrait ajouter le mot « ${g.complementWord} » au lexique.`);
+  if (g.timeEntry) parts.push(String(g.timeEntry.soninke).trim());
+  else if (g.timeWord) notes.push(`Pour compléter cette phrase avec précision, il faudrait ajouter le mot « ${g.timeWord} » au lexique.`);
+  if (g.interrogative) parts.push("ba");
+
+  const sentence = capitalizeFirst(parts.filter(Boolean).join(" ").replace(/\s+/g, " "));
+  const missing = unattestedTokensOf(sentence);
+  if (missing.length) {
+    return { sentence: null, notes: [...notes, ...missing.map((m) => `Forme à faire valider par le référent : « ${m} ».`)] };
+  }
+  let structure;
+  if (ruleKey === "past") {
+    structure = transitive
+      ? `Sujet + « ${aux} » + Objet + n' + Verbe — accompli (passé), attesté : « Anké n'di maro n'yiga »`
+      : (aux ? `Sujet + « ${aux} » + Verbe + complément — accompli` : `Sujet + Verbe + complément — accompli, attesté : « N daga » / « Aké n'daga sakha lenki »`);
+  } else {
+    structure = `Sujet + « ${aux} » + ${transitive ? "Objet + " : ""}Verbe${g.interrogative ? " + ba" : ""} — ${(SONINKE_TENSE_RULES[ruleKey] || SONINKE_TENSE_RULES.imperfective).label}`;
+  }
+  return { sentence, ruleKey, notes, structure };
+}
+
+// ── Segments audio disponibles dans une phrase (notification d'écoute partielle) ──
+const SONINKE_GRAMMAR_MARKERS_RE = /\b(wa|n'di|da|di|ma|maxa|nta|n'ti rini|n'taxa rini|yi rini|rini|fayi|do)\b/i;
+
+function extractSoninkeSentenceFromResponse(text) {
+  const forms = [];
+  for (const m of String(text || "").matchAll(/\{\{pair:([^|}]+)\|/g)) forms.push(m[1]);
+  const found = forms.find((v) => SONINKE_GRAMMAR_MARKERS_RE.test(String(v)) && String(v).trim().split(/\s+/).length >= 3);
+  return found ? String(found).trim() : "";
+}
+
+function sentencePresenceNote(sentence) {
+  const s = String(sentence || "").trim();
+  if (!s) return "";
+  const segs = extractAvailableAudioSegments(s);
+  if (!segs.length) return "";
+  return `Audio de référence disponible pour : ${segs.map((x) => x.text).join(" · ")}.`;
+}
+
+// ── Réponse pédagogique : phrase composée + explication grammaticale ──
+function grammarAnswer(sourceText) {
+  // Priorité absolue au corpus : la même phrase déjà enregistrée et validée prime sur toute composition
+  const normSrc = normalizeWord(sourceText).replace(/[?.!…]+$/, "").trim();
+  const sampleHit = normSrc ? state.samples.find((s) =>
+    normalizeWord(s.french).replace(/[?.!…]+$/, "").trim() === normSrc
+  ) : null;
+  if (sampleHit && !isExcludedForm(sampleHit.soninke)) {
+    let out = `**Phrase attestée dans le corpus**\n`;
+    out += soninkeBlock(sampleHit.soninke, sampleHit.french, "phrase");
+    out += `*Cette phrase complète est enregistrée dans le corpus validé par le référent : elle prime sur toute recomposition.*\n\n`;
+    const alt = state.samples.filter((s) => s !== sampleHit &&
+      normalizeWord(s.french).split(/[\s'.,!?()]+/).some((w) => normSrc.split(/\s+/).includes(w)));
+    for (const s of alt.slice(0, 2)) out += soninkeBlock(s.soninke, s.french, "phrase");
+    out += levelNote();
+    return out;
+  }
+
+  const parsed = parseFrenchStructure(sourceText);
+  if (!parsed) return null;
+
+  if (parsed.copuleMissing) {
+    return `La copule « être » n'est pas encore enregistrée comme verbe autonome dans le lexique soninké.\n\n` +
+      `Pour compléter cette phrase avec précision, il faudrait ajouter la forme « être » (copule) au lexique.\n\n` +
+      `**Formes attestées proches**\n` +
+      soninkeBlock("Toora nta", "Tout va bien.", "expression") +
+      soninkeBlock("kere", "Ici.", "mot") +
+      levelNote();
+  }
+
+  if (!parsed.verbWord && !parsed.objectWord && !parsed.subjectPronoun && !parsed.subjectEntry) return null;
+  if (!parsed.verbWord && !parsed.objectWord) return null;
+
+  const composed = composeSoninkeTranslation(parsed);
+
+  if (!parsed.verbEntry) {
+    const guess = parsed.verbWord || "";
+    let out = guess
+      ? `Le verbe « ${guess} » n'est pas attesté comme verbe dans le corpus soninké : je ne l'invente pas.\n\n` +
+        `Pour compléter cette phrase avec précision, il faudrait ajouter le mot « ${guess} » au lexique.\n\n`
+      : `Cette structure ne peut pas être composée uniquement avec les formes attestées du corpus.\n\n`;
+    const near = guess ? findSimilarEntries(guess, 4).filter((e) => /verbe/i.test(e.categorie || "")) : [];
+    if (near.length) {
+      out += `**Verbes attestés proches**\n`;
+      for (const e of near) out += formatEntryBullet(e);
+    }
+    out += levelNote();
+    return out;
+  }
+
+  if (!composed || !composed.sentence) {
+    if (composed && composed.notes && composed.notes.length) {
+      let out = `La phrase ne peut pas être composée fidèlement uniquement avec des formes attestées.\n\n`;
+      for (const n of composed.notes) out += `- ${n}\n`;
+      out += `\n**Phrases attestées de structure proche**\n`;
+      for (const s of state.samples.slice(0, 2)) out += soninkeBlock(s.soninke, s.french, "phrase");
+      out += levelNote();
+      return out;
+    }
+    return null;
+  }
+
+  const audioNote = sentencePresenceNote(composed.sentence);
+  let out = `**Phrase soninké construite selon les règles du corpus**\n`;
+  out += soninkeBlock(composed.sentence, parsed.original, "phrase");
+  out += `*Structure : ${composed.structure}.*\n\n`;
+  if (audioNote) out += `*${audioNote}*\n\n`;
+  if (composed.notes && composed.notes.length) {
+    out += `**Pour une phrase 100 % complète**\n`;
+    for (const n of composed.notes) out += `- ${n}\n`;
+    out += `\n`;
+  }
+  out += `**Pour pratiquer**\n`;
+  out += `- changez le sujet (${SONINKE_PRONOUNS.map((p) => p.short).join(" / ")}) avec les pronoms attestés ;\n`;
+  out += `- demandez « corrige ma phrase » pour vérifier votre propre formulation.\n\n`;
+  out += levelNote();
+  return out;
+}
+
+// ── Détection d'une demande de composition de phrase ──
+function sentenceToCompose(message) {
+  const trimmed = String(message || "").trim();
+  if (!trimmed) return "";
+  const { targetPhrase, words } = extractTargetPhraseAndWords(trimmed);
+  const isTranslationAsk = /en\s+sonink[ée]|en\s+fran[çc]ais|tradui|comment\s+dit|comment\s+dire/i.test(trimmed);
+  if (isTranslationAsk && targetPhrase && targetPhrase.split(/\s+/).length >= 2) return targetPhrase;
+  if (words.length < 2) return "";
+  if (isTranslationAsk && targetPhrase) return targetPhrase;
+  const looksFrenchSentence = FR_SUBJECT_PRONOUN_RE.test(trimmed)
+    || /^(?:est-ce que|qu'est-ce que)\s+\S+\s+\S+/i.test(trimmed)
+    || /^(?:le|la|l'|un|une|mon|ma|ton|ta|son|sa|notre|votre|leur)\s*\S+\s+\S+/i.test(trimmed);
+  if (looksFrenchSentence && !/\b(tradui|signifie|veut\s+dire)\b/i.test(trimmed)) return trimmed.replace(/[?.!]+$/, "");
+  return "";
 }
 
 function findMatchingSamples(terms) {
@@ -1637,6 +2437,16 @@ function generateResponse(message) {
       levelNote();
   }
 
+  // 19b. Composition grammaticale d'une phrase complète (S-Aux-O-V / S-V-Complément)
+  //      selon les règles du référent, uniquement avec des mots attestés.
+  if (!/^(présente-toi|c'est quoi|qui es-tu)\b/i.test(lower)) {
+    const sentenceSrc = sentenceToCompose(trimmed);
+    if (sentenceSrc) {
+      const reply = grammarAnswer(sentenceSrc);
+      if (reply) return reply;
+    }
+  }
+
   // 20. Recherche lexicale & traduction
   const { targetPhrase, words } = extractTargetPhraseAndWords(trimmed);
   return buildSingleOrPhraseAnswer(targetPhrase, words, direction);
@@ -1747,16 +2557,25 @@ function renderSoninkePair(rawSnk, rawFr, rawType) {
   const fr = String(rawFr || "").trim();
   if (!snk) return "";
   const att = attestationOf(snk);
-  const audio = att.audio || findAudioInfo(snk);
+  const fullSegments = buildSoninkePhraseSegments(snk);
+  const hasFullAudio = Boolean(att.audio || findAudioInfo(snk) || fullSegments.length > 0);
+  const partialSegments = !hasFullAudio && snk.split(/\s+/).length > 1
+    ? extractAvailableAudioSegments(snk)
+    : [];
   const type = ["mot", "phrase", "expression"].includes(rawType)
     ? rawType
     : snk.split(/\s+/).length > 1 ? "phrase" : "mot";
   const fav = isFavorite(snk, fr);
-  const audioLabel = audio ? "Écouter" : "Audio à venir";
-  const audioCls = audio ? "audio-play-btn" : "audio-play-btn audio-unavailable";
-  const audioTitle = audio
+  const audioLabel = hasFullAudio ? "Écouter" : "Audio à venir";
+  const audioCls = hasFullAudio ? "audio-play-btn" : "audio-play-btn audio-unavailable";
+  const audioTitle = hasFullAudio
     ? `Écouter « ${snk} » avec la voix de référence`
-    : `Aucun enregistrement de référence pour « ${snk} » : aucun substitut synthétique n'est utilisé`;
+    : `Aucun enregistrement complet pour « ${snk} » : aucun substitut synthétique n'est utilisé`;
+  const partialHtml = partialSegments.map((seg) => {
+    const w = esc(seg.text);
+    const t = `Écouter « ${w} » avec la voix de référence`;
+    return `<button type="button" class="audio-play-btn" data-audio-word="${w}" title="${t}" aria-label="${t}">${ICONS.speaker}<span>${w}</span></button>`;
+  }).join("");
   return `<div class="soninke-pair" data-snk="${snk}" data-fr="${fr}">
   <div class="pair-snk-row">
     <div class="pair-snk-block">
@@ -1769,7 +2588,7 @@ function renderSoninkePair(rawSnk, rawFr, rawType) {
   <div class="pair-arrow" aria-hidden="true">↓</div>
   <span class="pair-lang">Français</span>
   <div class="pair-fr">${fr}</div>
-  <div class="pair-foot"><span class="pair-badge ${att.cls}">${att.label}</span></div>
+  <div class="pair-foot"><span class="pair-badge ${att.cls}">${att.label}</span>${partialHtml}</div>
 </div>`;
 }
 

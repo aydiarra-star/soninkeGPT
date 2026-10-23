@@ -90,5 +90,37 @@ assert.equal(evaluate("soninkeForms('**Titre inconnu**').length"), 0);
     assert(!/[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}]/u.test(reply), `Emoji décoratif dans la réponse : ${prompt}`);
   }
 
+  // ── Composition grammaticale : Sujet + Auxiliaire + Objet + Verbe (corpus attesté) ──
+  // Inaccompli transitif : S + wa + O + V(-na/-ne/-ni)
+  const pres = evaluate("generateResponse('Traduis « je mange le riz chaque jour » en soninké')");
+  assert(/\{\{pair:N wa maro ke yigene koota su\|/.test(pres), `Inaccompli attendu « N wa maro ke yigene koota su », obtenu : ${pres.slice(0, 200)}`);
+  // Accompli transitif : S + n'di + O + n'V (attesté : « Anké n'di maro n'yiga »)
+  const past = evaluate("generateResponse('Traduis « l\\'enfant a mangé le riz » en soninké')");
+  assert(/\{\{pair:Lemine ke da maro ke n'yige\|/.test(past), `Accompli nominal attendu, obtenu : ${past.slice(0, 200)}`);
+  const past2 = evaluate("generateResponse('Traduis « tu as bu le lait » en soninké')");
+  assert(/\{\{pair:Anké n'di xati ke m'mini\|/.test(past2), `Accompli 2s attendu « Anké n'di xati ke m'mini », obtenu : ${past2.slice(0, 240)}`);
+  // Accompli intransitif : S + V + complément (attesté : « N daga » / « Aké n'daga sakha lenki »)
+  const intrans = evaluate("generateResponse('Traduis « je suis parti au marché hier » en soninké')");
+  assert(/\{\{pair:N daga saxa daru\|/.test(intrans), `Accompli intransitif attendu, obtenu : ${intrans.slice(0, 200)}`);
+  const intrans3 = evaluate("generateResponse('Traduis « il est parti au marché hier » en soninké')");
+  assert(/\{\{pair:Aké n'daga saxa daru\|/.test(intrans3), `Accompli intransitif 3s attendu « Aké n'daga saxa daru », obtenu : ${intrans3.slice(0, 240)}`);
+  // Priorité absolue au corpus : la phrase enregistrée prime sur la recomposition
+  const corpusHit = evaluate("generateResponse('Traduis « tu as mangé le riz » en soninké')");
+  assert(/\{\{pair:anké n'di maro n'yiga\|/.test(corpusHit) && /Phrase attestée dans le corpus/.test(corpusHit),
+    `La phrase attestée du corpus doit primer, obtenu : ${corpusHit.slice(0, 240)}`);
+  // Négation de l'inaccompli : nta + verbe inaccompli
+  const neg = evaluate("generateResponse('Traduis « nous ne travaillons pas aujourd\\'hui » en soninké')");
+  assert(/\{\{pair:O nta golini lenki\|/.test(neg), `Négation inaccompli attendue, obtenu : ${neg.slice(0, 200)}`);
+  // Négation du passé : ma + verbe à sa base
+  const negPast = evaluate("generateResponse('Traduis « elle n\\'a pas bu le lait » en soninké')");
+  assert(/\{\{pair:A ma xati ke mini\|/.test(negPast), `Négation du passé attendue, obtenu : ${negPast.slice(0, 200)}`);
+  // Mot manquant signalé, jamais inventé
+  const missing = evaluate("generateResponse('Traduis « je mange du poisson avec le chat » en soninké')");
+  assert(/ajouter le mot/.test(missing), `Le mot manquant doit être signalé, obtenu : ${missing.slice(0, 200)}`);
+  assert(!/\{\{pair:Aucun|invent/i.test(missing), 'Aucune phrase inventée ne doit être rendue comme attestée');
+  // Une phrase composée est reconnue comme « Composé · lexique attesté »
+  assert.equal(evaluate("attestationOf('N wa maro ke yigene').level"), 'composed');
+  assert.equal(evaluate("attestationOf('N daga saxa').level"), 'composed');
+
   console.log(`Authentic voice, linguistic guard & lexicon tests passed (${entries.length} unique entries)`);
 })();

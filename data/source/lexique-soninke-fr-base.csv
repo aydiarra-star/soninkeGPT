@@ -212,6 +212,8 @@ SNK-GRM-0028;m';particule devant b, f, m;particule;liste_referent;fourni_par_ref
 SNK-GRM-0029;l';particule devant r;particule;liste_referent;fourni_par_referent;;
 SNK-GRM-0030;ŋ';particule devant w;particule;liste_referent;fourni_par_referent;;
 SNK-GRM-0031;n';particule par défaut;particule;liste_referent;fourni_par_referent;;
+SNK-GRM-0032;nta;ne... pas (négation de l'inaccompli et de l'état);marqueur_negation;liste_referent;fourni_par_referent;;
+SNK-GRM-0033;ma;ne... pas (négation de l'accompli / passé);marqueur_negation;liste_referent;fourni_par_referent;;
 SNK-LEX-0183;baaba;père, papa (nom d'appel familier);nom;"Dictionnaire soninké.docx; segments=4";valide_par_referent;;"baaba Nom . papa; father; père, papa (nom d'appel fam.)Note: D2 Plural suffix: -nu."
 SNK-LEX-0184;baabo;"mousse, écume ; gardien des circoncis / orage, première grande pluie de l'hivernage";nom;"Dictionnaire soninké.docx; segments=6,8; variantes=baawo";"valide_par_referent;candidat_dictionnaire_a_verifier";baawo;"baabo1 Nom . foam; mousse, écume. Baabon wa xatin kanma. Foam is on the cow milk. Il y a de la mousse sur le lait de vache. Leminun na hattayen do baabon ya mulla. Children like tea with a head on it. Les enfants aiment le thé avec mousse. Plural suffix: -nu. Underlying form: bàabu."
 SNK-LEX-0185;baade;"lieu où l'on reçoit les condoléances ; tombeau, deuil";nom;"Dictionnaire soninké.docx; segments=11,12";valide_par_referent;;"baade Nom . 1 • place where condolences are given; lieu où l'on reçoit les condoléances. N wa telle baaden di.I am going to the mourning place (lit: place where condolences are given). J'irai recevoir les condoléances. Plural suffix: -u. Underlying form: baada."
