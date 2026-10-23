@@ -3616,6 +3616,214 @@
       "kind": "voice_clone_unreviewed"
     },
     {
+      "text": "baaye",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "tante ; orphelin ; planer",
+      "url": "audio/generated/556204f9bc897460e15f0c21.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "badaane",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "variole",
+      "url": "audio/generated/7ee5d87c1b8706935b4aedba.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "badage",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "hadage ; buisson",
+      "url": "audio/generated/e9a7fa683f8c20304b162b48.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "badarawulle",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "variété de lynx à robe fauve, caracal",
+      "url": "audio/generated/f4f988e8a77cf5f04a012572.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "bado",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "variété de longue herbe utilisée à fabriquer les seccos ; robe multicolore à dominante rouge (ex: chèvre, cheval) ; femme aux grossesses très rapprochées",
+      "url": "audio/generated/c68e3b71b17f1ba365b49e99.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "bafe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "antichambre, vestibule",
+      "url": "audio/generated/11e1f63bdbd606f717876316.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "bafido",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "tapis de selle",
+      "url": "audio/generated/7f1d9d840c90360e29ab1739.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "bagandaare",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "rançon",
+      "url": "audio/generated/a21a3a2a80d9b0f83db07952.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "bage",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "variété d'acacia épineux",
+      "url": "audio/generated/9eed2802af32e15018a86f62.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "bagi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "variété de tissu européen, percale",
+      "url": "audio/generated/23c8f077bf5acf663c2d1341.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "bajo",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "couverture en laine ; fils unique / variété de cheval",
+      "url": "audio/generated/d6f71334015da4f42c134494.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "bajungu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "mil ou maïs bouilli",
+      "url": "audio/generated/bf2ec7586f5443c179a3026e.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "bakkata",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "colombe, variété de tourterelle ; variété de poisson",
+      "url": "audio/generated/3b7240912059808cc6d4ad34.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "bakke",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "sortie",
+      "url": "audio/generated/d1b0a495891fef2ad23afbd7.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "bakkubakku",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "crapaud",
+      "url": "audio/generated/9f479895b89fe0f2de2e84c5.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "balafata",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "string, cache-sexe (féminin)",
+      "url": "audio/generated/4c3538a3e5fe1e0e85390e8c.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "ballaade",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "poutre, traverse ; clavicule",
+      "url": "audio/generated/65fc89fcd59f240e8c3d54a2.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "banŋe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "chez, vers ; côté, parti",
+      "url": "audio/generated/94c1ee2f86b8ff59727cb7bb.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "bape",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "piège ; terre soulevée par les plantes en germination",
+      "url": "audio/generated/7c466d13b71530b9e4304112.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "baraji",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "bénir, récompenser ; récompense divine, grâce divine, bénédiction, offrande / ingrat",
+      "url": "audio/generated/538b1121fe61e247c4d534e3.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "barake",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "bénédiction, prospérité, protection ; force",
+      "url": "audio/generated/73d89d192729b11df82c0fc7.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baraxatoye",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "grosseur ; fierté, hautain",
+      "url": "audio/generated/a8b0dc96830fb03f044dd3f3.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "banboxo",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "sud ; nom traditionnel pour la région au sud du haut Sénégal (fleuve)",
+      "url": "audio/generated/0e7d3b2c99cf530b2a013b51.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "baxu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "être démodé, être dépassé ; agresser, gêner, provoquer, taquiner / bexu",
+      "url": "audio/generated/a38af6272bc6f04a67fc8983.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
       "text": "ba",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "\"Est-ce que ; appelation honorifique donné à un homme, appelation donnée à un inconnu, monsieur ; diminutif de \"faaba\" ; en ce qui concerne (X),Alla ɲaamarindun ba, axa da kun",
@@ -3623,6 +3831,22 @@
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_linguistic_referent",
       "validation_date": "2026-10-23"
+    },
+    {
+      "text": "balaawu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "épidémie ; accident, incident",
+      "url": "audio/generated/49876bf4dbe73c11e1a7d65f.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "barajagu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "émonder, tailler ; sculpter, préparer le matériel pour un travail",
+      "url": "audio/generated/3cfe6fc7256b9085d4d64ab2.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "baane",
@@ -3636,6 +3860,52 @@
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "dégagé (d'une obligation, d'un serment)",
       "url": "audio/generated/838293a870cef64086d98382.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bagande",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "sortie ; soustraction / bugunde",
+      "url": "audio/generated/0284f31c0a0db937282641ec.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "bapore",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "variété de poisson, capitaine",
+      "url": "audio/generated/f40c26a4de6254b8386ff2fd.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "baratu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "croisé ; carrefour",
+      "url": "audio/generated/95d6bd91933703a271695b64.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "batte",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "trace ; place",
+      "url": "audio/generated/7da30f3fdc6b356d2d91cea3.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bawuya",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "manger le repas de la veille ; petit déjeuner composé des restes du supé",
+      "url": "audio/generated/4576d35845f8f277168dec27.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "beexi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "fermer, colmater ; rendre inflexible le coeur de quelqu'un, endurcir le coeur de quelqu'un ; cracher",
+      "url": "audio/generated/2d2d9884e8c4d839cb07c834.wav",
       "kind": "voice_clone_unreviewed"
     },
     {
@@ -3772,10 +4042,1072 @@
       "kind": "voice_clone_unreviewed"
     },
     {
+      "text": "Baaxunu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "région traditionnelle entre Nara et Nioro",
+      "url": "audio/generated/8f63197349b571b903c40d20.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "baaya",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "écarter",
+      "url": "audio/generated/ebf0bc0f06c803f17f6e3009.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "baayante",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "écarté, ouvert",
+      "url": "audio/generated/96e17a3047e1bb70387e1243.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "baayi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "forme vocative de tante (baaye), sœur du père",
+      "url": "audio/generated/a5d1432d10e078f31a73daa5.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "Bacili",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "patronyme soninké",
+      "url": "audio/generated/c23af94680174a433428f737.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "badaxare",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "variété d'arbre utilisé souvent comme clôture",
+      "url": "audio/generated/7c20110507f2af53cb8ee3ff.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "badonlenme",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "enfant qui tète sa maman en état de grossesse",
+      "url": "audio/generated/55de7f02ddd1b0fb219ab7e8.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "bafaade",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "drap pour le lit",
+      "url": "audio/generated/fff938624687dd7ed5e56486.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "baga",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "suffire, égaler",
+      "url": "audio/generated/7d624400da01cbb1223365bc.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "bagandi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "enlever, sorti, faire",
+      "url": "audio/generated/b00b0c7976606f6da6df8d6b.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "bagandindi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "faire sortir qqch",
+      "url": "audio/generated/1b63c833fdc9a0fd27281b69.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "Bakari",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "Bakary",
+      "url": "audio/generated/1c2ce2812a938bc70d584e87.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "bala",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "être coincé",
+      "url": "audio/generated/f2fdd58856e77152463d6183.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "balandi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "fermer",
+      "url": "audio/generated/56e8910779571b3034c66d5f.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "balawunte",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "imprudent (être)",
+      "url": "audio/generated/88c3db8eeef762fca06161c4.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "balaaxu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "absence",
+      "url": "audio/generated/efb0a12e291f1b35e089cf44.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "balanka",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "bateau à voile, chaland",
+      "url": "audio/generated/a3224c1c8b2a22f35504278d.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "balansanŋe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "variété d'arbre",
+      "url": "audio/generated/088f492530a7501c1d032c4d.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "ballaana",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "celui qui refuse",
+      "url": "audio/generated/502d5ea23f59c636d9b33440.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "balle",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "refus",
+      "url": "audio/generated/a89481fe84845e9dc7c86322.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "balumanga",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "bâton des circoncis",
+      "url": "audio/generated/be14250bd917962457b82baf.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "Bamako",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "Bamako, capitale du Mali",
+      "url": "audio/generated/5743d834232b4628bb54ac41.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "bana",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "repousse sauvage de céréale",
+      "url": "audio/generated/59642a7ba5d40b66ee3743db.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "bananba",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "Gommier, chigomier, combretum, arbre de fer, bois de plomb, bois d'éléphant",
+      "url": "audio/generated/c259a1271a7bcb9887b4d232.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "banba",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "étendre",
+      "url": "audio/generated/a9e209866549a42bc660bbda.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "banbante",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "étendu",
+      "url": "audio/generated/3f42551cf863f2a9b6acd254.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "banbaado",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "pagne pour attacher un enfant sur le dos / enfance",
+      "url": "audio/generated/a68ba26db3c3b8756405726a.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "banballe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "terrasse",
+      "url": "audio/generated/481ea1ae70d52cf871b7a868.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "banbanŋe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "arbre au bois dur dont les feuilles sont comestibles par les animaux",
+      "url": "audio/generated/47a3134a35870281b30e2cac.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "banbaɲa",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "louche utilisée par les nouvelles mariées",
+      "url": "audio/generated/65f4c429e317fbb68ab3ae7c.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "banbara",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "langue et ethnie bambara",
+      "url": "audio/generated/0764711c4bda9d749c80ed10.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "banbe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "grotte / nager, surnager, flotter, s'amuser dans l'eau",
+      "url": "audio/generated/58388fc51e10c1fc2e40cdc6.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "banbi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "attacher sur le dos (être)",
+      "url": "audio/generated/4444c71a18707ce824925e50.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "banboroso",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "syphilis, vérole",
+      "url": "audio/generated/b42641656c52be41de6b7819.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "banbu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "porter sur le dos",
+      "url": "audio/generated/954f5214a07fea3a6d5491a4.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "banbure",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "envers",
+      "url": "audio/generated/9d0bd8ec76a39542e17ab922.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "banbuse",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "vague",
+      "url": "audio/generated/c26b3c259fff43c3543732a9.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "banbuuse",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "vague",
+      "url": "audio/generated/8d2ac829d969fed94160b0b3.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "bandanŋe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "gros ver, chenille",
+      "url": "audio/generated/fa1d7c1850fd5c667b53b280.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "bande",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "variété de serpent venimeux qui peut sauter",
+      "url": "audio/generated/fa4c197bef7acad6bec1ffc7.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "bandeeri",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "voile, drapeau, parasol, parapluie",
+      "url": "audio/generated/80cdbc205acb7ac445387f72.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "bando",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "premier lait d'un animal ayant mis bas",
+      "url": "audio/generated/2bef04411899fc2e5c82c5c9.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "bangandi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "apparaître (faire), créer",
+      "url": "audio/generated/1060ca81503c7f62127f09c1.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "bangaye",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "apparition, popularité, naissance, création",
+      "url": "audio/generated/93a551e99f912f2eab6accb4.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "bange",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "apparaître, naître, être publié, être né",
+      "url": "audio/generated/071770c946211e36bff2c3b3.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "banisirayilanka",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "Israelite",
+      "url": "audio/generated/480ea677f5a2800e78539dd8.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "Banjugu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "nom propre masculin",
+      "url": "audio/generated/f1954ee602b8d3c68ce81033.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "banna",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "riche / homme riche",
+      "url": "audio/generated/3e2f0dc3ecab15b0d63a3478.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "bannaaxu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "signe de richesse",
+      "url": "audio/generated/d3d4b34b413d135be3a89fce.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "banta",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "arbuste sauvage",
+      "url": "audio/generated/31dd5c217a92e4f670ec94fa.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "bantara",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "manioc",
+      "url": "audio/generated/d63f463761969fd8320c2a35.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "bantinŋe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "fromager",
+      "url": "audio/generated/522bc28b86825844a5e9fd44.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "banxanxalle",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "dartre",
+      "url": "audio/generated/2b40d8381625e655fb5fb314.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "baɲire",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "cascade, courant d'eau",
+      "url": "audio/generated/ce8e7e33cf30fda5c90c3d25.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bapi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "être écrasé écrasé (être) être couché à plat ventre / être écrasé (nez) / être couché à plat ventre (grenouilles),",
+      "url": "audio/generated/936e544cdaedbe475a9ef3ac.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "bapu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "écraser",
+      "url": "audio/generated/6fc502bcd6523fbad754b9e2.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "baqaana",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "provocateur",
+      "url": "audio/generated/a445f28f7b7af56007f042a5.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "baqaare",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "crème de mil et de lait caillé",
+      "url": "audio/generated/5ae6d8197e4c61315556bd42.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "baqalla",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "provocateur, agresseur",
+      "url": "audio/generated/a793d15fe675cb934b684a89.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "baqata",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "provocateur, agresseur",
+      "url": "audio/generated/5fbbd1224642475279c6d554.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "baqe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "variété d'herbe mangée par les chevaux / agression, provocation",
+      "url": "audio/generated/b604f6139ef2e66a13d6bb7d.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "baraada",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "théière",
+      "url": "audio/generated/197b18363716946d98657c71.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "barabara",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "faire bouillir",
+      "url": "audio/generated/e89b9c90948d5e734ec8bd79.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_linguistic_referent",
+      "validation_date": "2026-10-23"
+    },
+    {
+      "text": "barabarante",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "bouilli",
+      "url": "audio/generated/4410b9a917a02014beffbb80.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "barabo",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "faire de la course hippique, caracoler / aller et venir rapidement à cheval ou en dansant",
+      "url": "audio/generated/d2fce5697db303616f947869.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baraga",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "ouvrir quelque chose (comme une cuve, une calebasse, un baobab)",
+      "url": "audio/generated/0670a8ed0baf2f0342daccbd.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "barakante",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "variété de résine utilisée pour des inhalations",
+      "url": "audio/generated/c365dcebc70eeb798166c142.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "barama",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "blesser gravement / marmite / faire les louanges",
+      "url": "audio/generated/d8c8f598891c8540adfcc06b.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "barataade",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "ce que l'on met de travers",
+      "url": "audio/generated/b12f29abe2eab347fcc995ab.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "barati",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "croiser, poser de travers",
+      "url": "audio/generated/ef609038375091c4e338ab47.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baratinte",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "croisé",
+      "url": "audio/generated/1a8ec5d9a35e9480e6e5181d.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baratibare",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "novembre",
+      "url": "audio/generated/409560cf9373dc966282ee38.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baraxate",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "gros, corpulent, trapus",
+      "url": "audio/generated/11a3beef0db0656c76f9aa49.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baraxato",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "grossir",
+      "url": "audio/generated/dd0513d2aaef2213f713aed6.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baraxatonde",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "grossissement",
+      "url": "audio/generated/b6adbce7e47a3b070ee79f56.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bare",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "lit, couchette",
+      "url": "audio/generated/9b828d53402d6e332ef05a2f.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "barigon",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "barrique",
+      "url": "audio/generated/9d9397b4461ae98ab05e638c.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bariki",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "benir",
+      "url": "audio/generated/2d77c1b47001f3e9741c9dde.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "basa",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "basin",
+      "url": "audio/generated/5550edccf5fb40310e85f2ef.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "basalle",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "oignon",
+      "url": "audio/generated/94004af789cf1bb76add267a.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bataaxe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "lettre, message",
+      "url": "audio/generated/8d7d25c4ac2e15318e148312.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "batalla",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "adverbe qui signale la modalité optative",
+      "url": "audio/generated/eac856cb31260aba46def435.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bati",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "suivre / louer",
+      "url": "audio/generated/2f46f22b2ad71092a6220046.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "batikanxoore",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "temple à Jérusalem",
+      "url": "audio/generated/9941551917b3b62f345ed310.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "batise",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "raser la tête d'un nouveau né le huitième jour après la naissance au moment où il reçoit son nom",
+      "url": "audio/generated/8e37afb95e52a66f3639b698.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "batiye",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "obligation religieuse",
+      "url": "audio/generated/3a721aa1d73372a11169ac91.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "battaana",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "adepte, quelqu'un qui obéit",
+      "url": "audio/generated/8bdd494c48243b1d1b6164a6.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "battamaxe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "successeur, adjoint",
+      "url": "audio/generated/25d45944d9e351bef6130d38.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "battara",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "inutile, bon à rien",
+      "url": "audio/generated/4f0703da0cfd9d8b86ce8b03.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "battaranlenme",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "vaurien",
+      "url": "audio/generated/edcc4d7a3c3185fb3c1fc671.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "battaransere",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "vaurien",
+      "url": "audio/generated/e20040abcd27ee82dc48f9d2.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
       "text": "allanbatte",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "adoration de Dieu",
       "url": "audio/generated/294f9428fa7d551db27764bd.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "batula",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "courtisan",
+      "url": "audio/generated/e250996e0f502ade1af98e4f.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "batundo",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "mouton qu'on garde à la maison",
+      "url": "audio/generated/8dd01fac08fb9dcc7fa7fa54.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "batuta",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "magicien / magie, divination",
+      "url": "audio/generated/fad796575de4a35233096870.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bawolaane",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "fillette pré pubère",
+      "url": "audio/generated/3f1bae4c0e68d5ec5f0ce919.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bawudi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "musique à la guitare accompagnée de chant",
+      "url": "audio/generated/68a8c47718dad2369f751313.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bawudo",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "devoir",
+      "url": "audio/generated/2e366e9909bae2f24403b49e.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baxa",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "bleu, bleu indigo / plante",
+      "url": "audio/generated/56eb27544fae70b017f6be3d.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baxandoroke",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "robe indigo",
+      "url": "audio/generated/e17342449a88a70256af452e.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "Baxaaga",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "Patronyme soninké, ils sont des griots traditionnels (gesere)",
+      "url": "audio/generated/4b8dd5f18f96c9c39e828ad4.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baxabaxa",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "faire peur, intimider, effrayer, menacer",
+      "url": "audio/generated/7f1f84e72970877d80958512.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baxabaxande",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "intimidation",
+      "url": "audio/generated/e47d063284b156460b681d22.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baxadaare",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "jaune d'oeuf",
+      "url": "audio/generated/ad7406bae883e993a0ba1f7e.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baxadimi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "grand boubou bleu indigo",
+      "url": "audio/generated/c3cd9131cabf0dc5f47fd2f2.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baxafuru",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "petit crapaud clair",
+      "url": "audio/generated/a57eb2e8f3872ef7be7f583b.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baxalle",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "mulet",
+      "url": "audio/generated/4ae1626e0a843afb4ec778a9.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baxalli",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "métisse",
+      "url": "audio/generated/9a905d0cad07f178cce29b9e.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baxanma",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "de couleur bleu indigo",
+      "url": "audio/generated/8e9c7f8278e3609e78662c57.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baxubaxu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "pigeon",
+      "url": "audio/generated/533fb5cc3111a43927d2fda1.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "baya",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "essaim (d'abeilles, mouches, moustiques), vol d'oiseaux",
+      "url": "audio/generated/acd3586931243ded5814b0fe.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bayebunsanaani",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "tissu à franges fait de bandes très étroites",
+      "url": "audio/generated/44313efcbc23f0c50c37f4ba.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "be",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "particule relateur",
+      "url": "audio/generated/46599c5bb5c33101f80cea84.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "beda",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "robe de cheval d'un brun très clair",
+      "url": "audio/generated/55a7147ed2b72c75e61b8b3d.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bedde",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "rue, rue principale",
+      "url": "audio/generated/d6264998c942113715637a9b.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bede",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "arbuste à cosse acidulée",
+      "url": "audio/generated/ca762fe6450bd5fbe1cff620.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bedere",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "pintade",
+      "url": "audio/generated/7895b9942557161f0f2cd5a3.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "beelo",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "canari aux usages divers",
+      "url": "audio/generated/426b9e61383a8d76ecd78ae9.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "beeri",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "donner, passer quelque chose à quelqu'un",
+      "url": "audio/generated/68ba29b60f9a6f79413e2cbc.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "beerini",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "parce que",
+      "url": "audio/generated/bfe9e4b35adf236dfa035886.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "beesa",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "variété de tissu venant de Guinée",
+      "url": "audio/generated/f823116c38bf36bdd410b642.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "beesu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "tout le monde",
+      "url": "audio/generated/0d238a277fe295561819cd54.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "beetaye",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "moment entre 9 heures et 10 heures",
+      "url": "audio/generated/0f9196b952d603d62eb2ad9f.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "beexe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "crachat",
+      "url": "audio/generated/77ea5cb6ee8b7083ee46215f.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "behe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "balle de mil",
+      "url": "audio/generated/fdf3dc24ffef7c3cf464647d.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bejexere",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "bois de charpente",
+      "url": "audio/generated/58fbb2746a0f9087349cc0ec.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "beji",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "rappeler un bienfait",
+      "url": "audio/generated/91e59dfef5505752708c63cb.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bejinde",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "l'action de rappeler un bienfait",
+      "url": "audio/generated/def0bb1f4ca73cd4e906d746.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "belefi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "atteindre l'âge de la puberté",
+      "url": "audio/generated/653caacecbbeafebfd2edfb7.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "belexa",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "immature",
+      "url": "audio/generated/450ce97ff51879f9b474ee66.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "beleyi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "éjaculer",
+      "url": "audio/generated/f944d476467f36fd5636c044.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "benba",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "remplir à ras",
+      "url": "audio/generated/4986cde6d134ac9b00740d80.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "benbe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "variété de plante",
+      "url": "audio/generated/683a4a490ccee9af0cc37df7.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bendi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "poêle",
+      "url": "audio/generated/2f7f5246b55813bb3b7eb9db.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bendubeexe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "dartre, dermatose",
+      "url": "audio/generated/cf95f0fbd5413b3554347a2e.wav",
       "kind": "voice_clone_unreviewed"
     },
     {
@@ -3931,22 +5263,6 @@
       "kind": "voice_clone_unreviewed"
     },
     {
-      "text": "ba2",
-      "source": "data/source/reports/candidats-prioritaires-validation-soninke.csv",
-      "francais": "appelation honorifique donné à un homme, appelation donnée à un inconnu, monsieur",
-      "url": "audio/generated/a16370a54feb9f4668fcb16e.wav",
-      "kind": "voice_clone_unreviewed",
-      "linguistic_validation": "rejected_trailing_digit_distorts_pronunciation",
-      "validation_date": "2026-10-23"
-    },
-    {
-      "text": "baata1",
-      "source": "data/source/reports/candidats-prioritaires-validation-soninke.csv",
-      "francais": "tabatière",
-      "url": "audio/generated/0dd0b5496b0e57389f515ce4.wav",
-      "kind": "voice_clone_unreviewed"
-    },
-    {
       "text": "baabe",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
       "francais": "",
@@ -3963,963 +5279,13 @@
       "kind": "voice_clone_unreviewed"
     },
     {
-      "text": "baawo2",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/6125c8dcfe0617295fa2d7f9.wav",
-      "kind": "voice_clone_unreviewed"
-    },
-    {
-      "text": "baawo3",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "Baawon kati, xollun fugu",
-      "url": "audio/generated/b0c178144c70862088d9bf90.wav",
-      "kind": "voice_clone_unreviewed"
-    },
-    {
-      "text": "allanbatte1",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "adoration de Dieu",
-      "url": "audio/generated/d2a7447825640beb10f229d8.wav",
-      "kind": "voice_clone_unreviewed"
-    },
-    {
-      "text": "baabo1",
-      "source": "data/source/reports/lot-validation-prioritaire-soninke.csv",
-      "francais": "mousse, écume",
-      "url": "audio/generated/0c1c1d6153043c8e7b699162.wav",
-      "kind": "voice_clone_unreviewed",
-      "linguistic_validation": "rejected_trailing_digit_distorts_pronunciation",
-      "validation_date": "2026-10-23"
-    },
-    {
-      "text": "baabo2",
-      "source": "data/source/reports/lot-validation-prioritaire-soninke.csv",
-      "francais": "gardien des circoncis",
-      "url": "audio/generated/fe95cc705d61d149de47530d.wav",
-      "kind": "voice_clone_unreviewed",
-      "linguistic_validation": "rejected_trailing_digit_distorts_pronunciation",
-      "validation_date": "2026-10-23"
-    },
-    {
-      "text": "baana1",
-      "source": "data/source/reports/lot-validation-prioritaire-soninke.csv",
-      "francais": "Tabaski, le douzième mois lunaire",
-      "url": "audio/generated/c089b464f2fb16be8c8fc349.wav",
-      "kind": "voice_clone_unreviewed"
-    },
-    {
-      "text": "baana2",
-      "source": "data/source/reports/lot-validation-prioritaire-soninke.csv",
-      "francais": "ressembler, être uni, être un",
-      "url": "audio/generated/60e46745ac65932bc05a5f19.wav",
-      "kind": "voice_clone_unreviewed"
-    },
-    {
-      "text": "baata2",
-      "source": "data/source/reports/lot-validation-prioritaire-soninke.csv",
-      "francais": "favori(e), préféré(e)",
-      "url": "audio/generated/6674d55fb000872e3bd9557b.wav",
-      "kind": "voice_clone_unreviewed"
-    },
-    {
-      "text": "ba1",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "\"Est-ce que",
-      "url": "audio/generated/26c95ab9357272a811596b52.wav",
-      "kind": "voice_clone_unreviewed",
-      "linguistic_validation": "rejected_trailing_digit_distorts_pronunciation",
-      "validation_date": "2026-10-23"
-    },
-    {
-      "text": "ba3",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "en ce qui concerne (X),Alla ɲaamarindun ba, axa da kun",
-      "url": "audio/generated/1c93514f62931c42ad91c594.wav",
-      "kind": "voice_clone_unreviewed",
-      "linguistic_validation": "rejected_trailing_digit_distorts_pronunciation",
-      "validation_date": "2026-10-23"
-    },
-    {
-      "text": "baabo3",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "orage, première grande pluie de l'hivernage",
-      "url": "audio/generated/cc10bac26ed054ace7ef6b3c.wav",
-      "kind": "voice_clone_unreviewed"
-    },
-    {
-      "text": "baawo1",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "beerini",
-      "url": "audio/generated/277d42e5ee6db72aaabd81e4.wav",
-      "kind": "voice_clone_unreviewed"
-    },
-    {
-      "text": "-bali",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "manque de",
-      "url": "audio/generated/74097eb0f3a144ab4f21f5e3.wav",
-      "kind": "voice_clone_unreviewed"
-    },
-    {
-      "text": "baaye",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "tante ; orphelin ; planer",
-      "url": "audio/generated/556204f9bc897460e15f0c21.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "badaane",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "variole",
-      "url": "audio/generated/7ee5d87c1b8706935b4aedba.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "badage",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "hadage ; buisson",
-      "url": "audio/generated/e9a7fa683f8c20304b162b48.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "badarawulle",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "variété de lynx à robe fauve, caracal",
-      "url": "audio/generated/f4f988e8a77cf5f04a012572.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "bado",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "variété de longue herbe utilisée à fabriquer les seccos ; robe multicolore à dominante rouge (ex: chèvre, cheval) ; femme aux grossesses très rapprochées",
-      "url": "audio/generated/c68e3b71b17f1ba365b49e99.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "bafe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "antichambre, vestibule",
-      "url": "audio/generated/11e1f63bdbd606f717876316.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "bafido",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "tapis de selle",
-      "url": "audio/generated/7f1d9d840c90360e29ab1739.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "bagandaare",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "rançon",
-      "url": "audio/generated/a21a3a2a80d9b0f83db07952.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "bage",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "variété d'acacia épineux",
-      "url": "audio/generated/9eed2802af32e15018a86f62.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "bagi",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "variété de tissu européen, percale",
-      "url": "audio/generated/23c8f077bf5acf663c2d1341.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "bajo",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "couverture en laine ; fils unique / variété de cheval",
-      "url": "audio/generated/d6f71334015da4f42c134494.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "bajungu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "mil ou maïs bouilli",
-      "url": "audio/generated/bf2ec7586f5443c179a3026e.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "bakkata",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "colombe, variété de tourterelle ; variété de poisson",
-      "url": "audio/generated/3b7240912059808cc6d4ad34.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "bakke",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "sortie",
-      "url": "audio/generated/d1b0a495891fef2ad23afbd7.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "bakkubakku",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "crapaud",
-      "url": "audio/generated/9f479895b89fe0f2de2e84c5.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "balafata",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "string, cache-sexe (féminin)",
-      "url": "audio/generated/4c3538a3e5fe1e0e85390e8c.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "ballaade",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "poutre, traverse ; clavicule",
-      "url": "audio/generated/65fc89fcd59f240e8c3d54a2.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "banŋe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "chez, vers ; côté, parti",
-      "url": "audio/generated/94c1ee2f86b8ff59727cb7bb.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "bape",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "piège ; terre soulevée par les plantes en germination",
-      "url": "audio/generated/7c466d13b71530b9e4304112.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "banboxo",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "sud ; nom traditionnel pour la région au sud du haut Sénégal (fleuve)",
-      "url": "audio/generated/0e7d3b2c99cf530b2a013b51.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "balaawu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "épidémie ; accident, incident",
-      "url": "audio/generated/49876bf4dbe73c11e1a7d65f.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "bagande",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "sortie ; soustraction / bugunde",
-      "url": "audio/generated/0284f31c0a0db937282641ec.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "bapore",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "variété de poisson, capitaine",
-      "url": "audio/generated/f40c26a4de6254b8386ff2fd.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "Baaxunu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "région traditionnelle entre Nara et Nioro",
-      "url": "audio/generated/8f63197349b571b903c40d20.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "baaya",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "écarter",
-      "url": "audio/generated/ebf0bc0f06c803f17f6e3009.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "baayante",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "écarté, ouvert",
-      "url": "audio/generated/96e17a3047e1bb70387e1243.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "baayi",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "forme vocative de tante (baaye), sœur du père",
-      "url": "audio/generated/a5d1432d10e078f31a73daa5.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "Bacili",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "patronyme soninké",
-      "url": "audio/generated/c23af94680174a433428f737.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "badaxare",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "variété d'arbre utilisé souvent comme clôture",
-      "url": "audio/generated/7c20110507f2af53cb8ee3ff.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "badonlenme",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "enfant qui tète sa maman en état de grossesse",
-      "url": "audio/generated/55de7f02ddd1b0fb219ab7e8.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "bafaade",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "drap pour le lit",
-      "url": "audio/generated/fff938624687dd7ed5e56486.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "baga",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "suffire, égaler",
-      "url": "audio/generated/7d624400da01cbb1223365bc.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "bagandi",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "enlever, sorti, faire",
-      "url": "audio/generated/b00b0c7976606f6da6df8d6b.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "bagandindi",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "faire sortir qqch",
-      "url": "audio/generated/1b63c833fdc9a0fd27281b69.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "Bakari",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "Bakary",
-      "url": "audio/generated/1c2ce2812a938bc70d584e87.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "bala",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "être coincé",
-      "url": "audio/generated/f2fdd58856e77152463d6183.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "balandi",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "fermer",
-      "url": "audio/generated/56e8910779571b3034c66d5f.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "balawunte",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "imprudent (être)",
-      "url": "audio/generated/88c3db8eeef762fca06161c4.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "balaaxu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "absence",
-      "url": "audio/generated/efb0a12e291f1b35e089cf44.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "balanka",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "bateau à voile, chaland",
-      "url": "audio/generated/a3224c1c8b2a22f35504278d.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "balansanŋe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "variété d'arbre",
-      "url": "audio/generated/088f492530a7501c1d032c4d.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "ballaana",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "celui qui refuse",
-      "url": "audio/generated/502d5ea23f59c636d9b33440.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "balle",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "refus",
-      "url": "audio/generated/a89481fe84845e9dc7c86322.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "balumanga",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "bâton des circoncis",
-      "url": "audio/generated/be14250bd917962457b82baf.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "Bamako",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "Bamako, capitale du Mali",
-      "url": "audio/generated/5743d834232b4628bb54ac41.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "bana",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "repousse sauvage de céréale",
-      "url": "audio/generated/59642a7ba5d40b66ee3743db.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "bananba",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "Gommier, chigomier, combretum, arbre de fer, bois de plomb, bois d'éléphant",
-      "url": "audio/generated/c259a1271a7bcb9887b4d232.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "banba",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "étendre",
-      "url": "audio/generated/a9e209866549a42bc660bbda.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "banbante",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "étendu",
-      "url": "audio/generated/3f42551cf863f2a9b6acd254.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "banbaado",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "pagne pour attacher un enfant sur le dos / enfance",
-      "url": "audio/generated/a68ba26db3c3b8756405726a.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "banballe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "terrasse",
-      "url": "audio/generated/481ea1ae70d52cf871b7a868.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "banbanŋe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "arbre au bois dur dont les feuilles sont comestibles par les animaux",
-      "url": "audio/generated/47a3134a35870281b30e2cac.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "banbaɲa",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "louche utilisée par les nouvelles mariées",
-      "url": "audio/generated/65f4c429e317fbb68ab3ae7c.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "banbara",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "langue et ethnie bambara",
-      "url": "audio/generated/0764711c4bda9d749c80ed10.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "banbe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "grotte / nager, surnager, flotter, s'amuser dans l'eau",
-      "url": "audio/generated/58388fc51e10c1fc2e40cdc6.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "banbi",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "attacher sur le dos (être)",
-      "url": "audio/generated/4444c71a18707ce824925e50.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "banboroso",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "syphilis, vérole",
-      "url": "audio/generated/b42641656c52be41de6b7819.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "banbu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "porter sur le dos",
-      "url": "audio/generated/954f5214a07fea3a6d5491a4.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "banbure",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "envers",
-      "url": "audio/generated/9d0bd8ec76a39542e17ab922.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "banbuse",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "vague",
-      "url": "audio/generated/c26b3c259fff43c3543732a9.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "banbuuse",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "vague",
-      "url": "audio/generated/8d2ac829d969fed94160b0b3.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "bandanŋe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "gros ver, chenille",
-      "url": "audio/generated/fa1d7c1850fd5c667b53b280.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "bande",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "variété de serpent venimeux qui peut sauter",
-      "url": "audio/generated/fa4c197bef7acad6bec1ffc7.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "bandeeri",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "voile, drapeau, parasol, parapluie",
-      "url": "audio/generated/80cdbc205acb7ac445387f72.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "bando",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "premier lait d'un animal ayant mis bas",
-      "url": "audio/generated/2bef04411899fc2e5c82c5c9.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "bangandi",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "apparaître (faire), créer",
-      "url": "audio/generated/1060ca81503c7f62127f09c1.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "bangaye",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "apparition, popularité, naissance, création",
-      "url": "audio/generated/93a551e99f912f2eab6accb4.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "bange",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "apparaître, naître, être publié, être né",
-      "url": "audio/generated/071770c946211e36bff2c3b3.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "banisirayilanka",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "Israelite",
-      "url": "audio/generated/480ea677f5a2800e78539dd8.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "Banjugu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "nom propre masculin",
-      "url": "audio/generated/f1954ee602b8d3c68ce81033.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "banna",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "riche / homme riche",
-      "url": "audio/generated/3e2f0dc3ecab15b0d63a3478.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "bannaaxu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "signe de richesse",
-      "url": "audio/generated/d3d4b34b413d135be3a89fce.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "banta",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "arbuste sauvage",
-      "url": "audio/generated/31dd5c217a92e4f670ec94fa.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "bantara",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "manioc",
-      "url": "audio/generated/d63f463761969fd8320c2a35.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "bantinŋe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "fromager",
-      "url": "audio/generated/522bc28b86825844a5e9fd44.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "banxanxalle",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "dartre",
-      "url": "audio/generated/2b40d8381625e655fb5fb314.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "bapi",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "être écrasé écrasé (être) être couché à plat ventre / être écrasé (nez) / être couché à plat ventre (grenouilles),",
-      "url": "audio/generated/936e544cdaedbe475a9ef3ac.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "bapu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "écraser",
-      "url": "audio/generated/6fc502bcd6523fbad754b9e2.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "baqaana",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "provocateur",
-      "url": "audio/generated/a445f28f7b7af56007f042a5.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "baqaare",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "crème de mil et de lait caillé",
-      "url": "audio/generated/5ae6d8197e4c61315556bd42.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "baqalla",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "provocateur, agresseur",
-      "url": "audio/generated/a793d15fe675cb934b684a89.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "baqata",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "provocateur, agresseur",
-      "url": "audio/generated/5fbbd1224642475279c6d554.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "baqe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "variété d'herbe mangée par les chevaux / agression, provocation",
-      "url": "audio/generated/b604f6139ef2e66a13d6bb7d.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "baraada",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "théière",
-      "url": "audio/generated/197b18363716946d98657c71.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
-      "text": "barabara",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "faire bouillir",
-      "url": "audio/generated/e89b9c90948d5e734ec8bd79.wav",
-      "kind": "voice_clone_validated",
-      "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    },
-    {
       "text": "bafi",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
       "francais": "",
       "url": "audio/generated/f1fc1e0231e03c300766ea1d.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
+      "validation_date": "2026-10-23"
     },
     {
       "text": "bahaade",
@@ -4928,8 +5294,7 @@
       "url": "audio/generated/5e8e01872774fa1dd6253f7b.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
+      "validation_date": "2026-10-23"
     },
     {
       "text": "bahe",
@@ -4938,8 +5303,7 @@
       "url": "audio/generated/4330136b90f51d743b5c56fd.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
+      "validation_date": "2026-10-23"
     },
     {
       "text": "bahi",
@@ -4948,8 +5312,7 @@
       "url": "audio/generated/32b4e157206b6c2aff05185f.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
+      "validation_date": "2026-10-23"
     },
     {
       "text": "bahido",
@@ -4958,8 +5321,7 @@
       "url": "audio/generated/09c824480ee1e00941ebc4a3.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
+      "validation_date": "2026-10-23"
     },
     {
       "text": "bajjo",
@@ -4968,8 +5330,7 @@
       "url": "audio/generated/2d4b5e820ccd79dcc37b2e66.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
+      "validation_date": "2026-10-23"
     },
     {
       "text": "bakkaane",
@@ -4978,8 +5339,7 @@
       "url": "audio/generated/a7baa6b3addb177b4e7304fa.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
+      "validation_date": "2026-10-23"
     },
     {
       "text": "bakkande",
@@ -4988,8 +5348,7 @@
       "url": "audio/generated/40b012825bdd3e4700d2eb55.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
+      "validation_date": "2026-10-23"
     },
     {
       "text": "balawu",
@@ -4998,8 +5357,7 @@
       "url": "audio/generated/8c96ee93608dc4fd5945235e.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
+      "validation_date": "2026-10-23"
     },
     {
       "text": "balaxa",
@@ -5008,8 +5366,7 @@
       "url": "audio/generated/20a6a414955332b508d9f731.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
+      "validation_date": "2026-10-23"
     },
     {
       "text": "balla",
@@ -5018,8 +5375,7 @@
       "url": "audio/generated/85cb3daccfa01916075afc3c.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
+      "validation_date": "2026-10-23"
     },
     {
       "text": "banbuxu",
@@ -5028,8 +5384,7 @@
       "url": "audio/generated/954f9d45da69d83e8b195aca.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
+      "validation_date": "2026-10-23"
     },
     {
       "text": "bandi",
@@ -5038,8 +5393,7 @@
       "url": "audio/generated/893b95a698ff9bca2806a9bb.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
+      "validation_date": "2026-10-23"
     },
     {
       "text": "bapoore",
@@ -5048,8 +5402,7 @@
       "url": "audio/generated/971bdd90964b62374d341b8e.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
+      "validation_date": "2026-10-23"
     },
     {
       "text": "baqa",
@@ -5058,803 +5411,150 @@
       "url": "audio/generated/557327c7a044e146b40a9312.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_linguistic_referent",
-      "validation_date": "2026-10-23",
-      "validation_batch": "OmniVoice lot de 100 mots — run 39921977548"
-    }
-  ],
-  "pending": [
-    {
-      "text": "baaxa1",
-      "source": "data/source/reports/lot-validation-prioritaire-soninke.csv",
-      "francais": "ceinture de gris-gris",
-      "url": "audio/generated/cd0c6435b4589c123466fef9.wav"
-    },
-    {
-      "text": "baaxa2",
-      "source": "data/source/reports/lot-validation-prioritaire-soninke.csv",
-      "francais": "margouillat",
-      "url": "audio/generated/ac366c647197dc677e88bdf0.wav"
-    },
-    {
-      "text": "baaye1",
-      "source": "data/source/reports/lot-validation-prioritaire-soninke.csv",
-      "francais": "tante",
-      "url": "audio/generated/f48a67470266cf34d6f22727.wav"
-    },
-    {
-      "text": "baaye2",
-      "source": "data/source/reports/lot-validation-prioritaire-soninke.csv",
-      "francais": "orphelin",
-      "url": "audio/generated/02e057b1b3acf97f42e88901.wav"
-    },
-    {
-      "text": "baaye3",
-      "source": "data/source/reports/lot-validation-prioritaire-soninke.csv",
-      "francais": "planer",
-      "url": "audio/generated/2e139373bb199750995f41a7.wav"
-    },
-    {
-      "text": "bado1",
-      "source": "data/source/reports/lot-validation-prioritaire-soninke.csv",
-      "francais": "variété de longue herbe utilisée à fabriquer les seccos",
-      "url": "audio/generated/7602d4050adbbbd206e130a4.wav"
-    },
-    {
-      "text": "bado2",
-      "source": "data/source/reports/lot-validation-prioritaire-soninke.csv",
-      "francais": "robe multicolore à dominante rouge (ex: chèvre, cheval)",
-      "url": "audio/generated/8ce4e97d3dd2d035bc9f10e8.wav"
-    },
-    {
-      "text": "bado3",
-      "source": "data/source/reports/lot-validation-prioritaire-soninke.csv",
-      "francais": "femme aux grossesses très rapprochées",
-      "url": "audio/generated/fd1375598f1efea3648e847e.wav"
-    },
-    {
-      "text": "baga1",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "suffire, égaler",
-      "url": "audio/generated/6087bdf584627bb062243008.wav"
-    },
-    {
-      "text": "baga2",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/2ce7f576bd0fcb7b1186b967.wav"
-    },
-    {
-      "text": "bajo1",
-      "source": "data/source/reports/lot-validation-prioritaire-soninke.csv",
-      "francais": "couverture en laine",
-      "url": "audio/generated/997eb02e650c0fab4a3f5042.wav"
-    },
-    {
-      "text": "bajo2",
-      "source": "data/source/reports/lot-validation-prioritaire-soninke.csv",
-      "francais": "fils unique",
-      "url": "audio/generated/13874bd6f5ca954e2a72a182.wav"
-    },
-    {
-      "text": "bajo3",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "variété de cheval",
-      "url": "audio/generated/f8fbe42e8ba9cbde57d5dceb.wav"
-    },
-    {
-      "text": "banbe1",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "grotte",
-      "url": "audio/generated/cf54dfd8cf2b08696d9e9f35.wav"
-    },
-    {
-      "text": "banbe2",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "nager, surnager, flotter, s'amuser dans l'eau",
-      "url": "audio/generated/81bf875d11e30da8a7dca458.wav"
-    },
-    {
-      "text": "baqe1",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "variété d'herbe mangée par les chevaux",
-      "url": "audio/generated/263a8cdc636b87952f48493c.wav"
-    },
-    {
-      "text": "baqe2",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "agression, provocation",
-      "url": "audio/generated/766553faa4fb04acbe09075e.wav"
-    },
-    {
-      "text": "baqe3",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/95d97aceb1a44923a6ebd24b.wav"
-    },
-    {
-      "text": "bara1",
-      "source": "data/source/reports/candidats-prioritaires-validation-soninke.csv",
-      "francais": "fonctionne comme marque de la modalité \"refuser à faire",
-      "url": "audio/generated/b68969889a8a43609bdd61ae.wav"
-    },
-    {
-      "text": "bara2",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "aire, surface, cour",
-      "url": "audio/generated/31c979f95a222fc9308f18eb.wav"
-    },
-    {
-      "text": "bara3",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "ficelle, fil",
-      "url": "audio/generated/f586c28b4009d2ca472efd86.wav"
-    },
-    {
-      "text": "barabarante",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "bouilli",
-      "url": "audio/generated/4410b9a917a02014beffbb80.wav"
-    },
-    {
-      "text": "barabo",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "faire de la course hippique, caracoler / aller et venir rapidement à cheval ou en dansant",
-      "url": "audio/generated/d2fce5697db303616f947869.wav"
-    },
-    {
-      "text": "baraga",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "ouvrir quelque chose (comme une cuve, une calebasse, un baobab)",
-      "url": "audio/generated/0670a8ed0baf2f0342daccbd.wav"
-    },
-    {
-      "text": "barajagu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "émonder, tailler ; sculpter, préparer le matériel pour un travail",
-      "url": "audio/generated/3cfe6fc7256b9085d4d64ab2.wav"
-    },
-    {
-      "text": "baraji",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "bénir, récompenser ; récompense divine, grâce divine, bénédiction, offrande / ingrat",
-      "url": "audio/generated/538b1121fe61e247c4d534e3.wav"
-    },
-    {
-      "text": "baraji1",
-      "source": "data/source/reports/candidats-prioritaires-validation-soninke.csv",
-      "francais": "récompense divine, grâce divine, bénédiction, offrande",
-      "url": "audio/generated/d8a73efd614d632647005ceb.wav"
-    },
-    {
-      "text": "baraji2",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "ingrat",
-      "url": "audio/generated/c194335b3ecadfa4d3e99671.wav"
-    },
-    {
-      "text": "barakante",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "variété de résine utilisée pour des inhalations",
-      "url": "audio/generated/c365dcebc70eeb798166c142.wav"
-    },
-    {
-      "text": "barake",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "bénédiction, prospérité, protection ; force",
-      "url": "audio/generated/73d89d192729b11df82c0fc7.wav"
-    },
-    {
-      "text": "barama",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "blesser gravement / marmite / faire les louanges",
-      "url": "audio/generated/d8c8f598891c8540adfcc06b.wav"
-    },
-    {
-      "text": "barama1",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "blesser gravement",
-      "url": "audio/generated/9af070de807042ce89b79582.wav"
-    },
-    {
-      "text": "barama2",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "marmite",
-      "url": "audio/generated/7af409b79416c0ee21598f2d.wav"
-    },
-    {
-      "text": "barama3",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "faire les louanges",
-      "url": "audio/generated/d58d539b2d2c9d68c1763450.wav"
+      "validation_date": "2026-10-23"
     },
     {
       "text": "baramaneene",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
       "francais": "",
-      "url": "audio/generated/d27af884a63009e9c32b2170.wav"
-    },
-    {
-      "text": "barataade",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "ce que l'on met de travers",
-      "url": "audio/generated/b12f29abe2eab347fcc995ab.wav"
-    },
-    {
-      "text": "barati",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "croiser, poser de travers",
-      "url": "audio/generated/ef609038375091c4e338ab47.wav"
-    },
-    {
-      "text": "baratibare",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "novembre",
-      "url": "audio/generated/409560cf9373dc966282ee38.wav"
-    },
-    {
-      "text": "baratinte",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "croisé",
-      "url": "audio/generated/1a8ec5d9a35e9480e6e5181d.wav"
-    },
-    {
-      "text": "baratu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "croisé ; carrefour",
-      "url": "audio/generated/95d6bd91933703a271695b64.wav"
-    },
-    {
-      "text": "baraxate",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "gros, corpulent, trapus",
-      "url": "audio/generated/11a3beef0db0656c76f9aa49.wav"
-    },
-    {
-      "text": "baraxato",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "grossir",
-      "url": "audio/generated/dd0513d2aaef2213f713aed6.wav"
-    },
-    {
-      "text": "baraxatonde",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "grossissement",
-      "url": "audio/generated/b6adbce7e47a3b070ee79f56.wav"
-    },
-    {
-      "text": "baraxatoye",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "grosseur ; fierté, hautain",
-      "url": "audio/generated/a8b0dc96830fb03f044dd3f3.wav"
-    },
-    {
-      "text": "bare",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "lit, couchette",
-      "url": "audio/generated/9b828d53402d6e332ef05a2f.wav"
+      "url": "audio/generated/d27af884a63009e9c32b2170.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "bari",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
       "francais": "",
-      "url": "audio/generated/3922116149e62e455d3e6468.wav"
-    },
-    {
-      "text": "barigon",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "barrique",
-      "url": "audio/generated/9d9397b4461ae98ab05e638c.wav"
+      "url": "audio/generated/3922116149e62e455d3e6468.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "barike",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
       "francais": "",
-      "url": "audio/generated/9992fb92d32fd4b4bffbdb1e.wav"
-    },
-    {
-      "text": "bariki",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "benir",
-      "url": "audio/generated/2d77c1b47001f3e9741c9dde.wav"
+      "url": "audio/generated/9992fb92d32fd4b4bffbdb1e.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "barimanda",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
       "francais": "",
-      "url": "audio/generated/0a4608e655cdb622b48ca26f.wav"
+      "url": "audio/generated/0a4608e655cdb622b48ca26f.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "barisa",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
       "francais": "",
-      "url": "audio/generated/e33a2f53b725b472601757e3.wav"
-    },
-    {
-      "text": "basa",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "basin",
-      "url": "audio/generated/5550edccf5fb40310e85f2ef.wav"
-    },
-    {
-      "text": "basalle",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "oignon",
-      "url": "audio/generated/94004af789cf1bb76add267a.wav"
-    },
-    {
-      "text": "bataaxe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "lettre, message",
-      "url": "audio/generated/8d7d25c4ac2e15318e148312.wav"
-    },
-    {
-      "text": "batalla",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "adverbe qui signale la modalité optative",
-      "url": "audio/generated/eac856cb31260aba46def435.wav"
+      "url": "audio/generated/e33a2f53b725b472601757e3.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "bataxi",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
       "francais": "",
-      "url": "audio/generated/b309283226f7e4d8116a0d6a.wav"
-    },
-    {
-      "text": "bati",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "suivre / louer",
-      "url": "audio/generated/2f46f22b2ad71092a6220046.wav"
-    },
-    {
-      "text": "batikanxoore",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "temple à Jérusalem",
-      "url": "audio/generated/9941551917b3b62f345ed310.wav"
-    },
-    {
-      "text": "batise",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "raser la tête d'un nouveau né le huitième jour après la naissance au moment où il reçoit son nom",
-      "url": "audio/generated/8e37afb95e52a66f3639b698.wav"
-    },
-    {
-      "text": "batiye",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "obligation religieuse",
-      "url": "audio/generated/3a721aa1d73372a11169ac91.wav"
+      "url": "audio/generated/b309283226f7e4d8116a0d6a.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "batta",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
       "francais": "",
-      "url": "audio/generated/dc2da9ed30cace3d7bcd9da1.wav"
-    },
-    {
-      "text": "battaana",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "adepte, quelqu'un qui obéit",
-      "url": "audio/generated/8bdd494c48243b1d1b6164a6.wav"
-    },
-    {
-      "text": "battamaxe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "successeur, adjoint",
-      "url": "audio/generated/25d45944d9e351bef6130d38.wav"
+      "url": "audio/generated/dc2da9ed30cace3d7bcd9da1.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "battamexe",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
       "francais": "",
-      "url": "audio/generated/f334fb4ecc960bbdc9622f8d.wav"
-    },
-    {
-      "text": "battara",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "inutile, bon à rien",
-      "url": "audio/generated/4f0703da0cfd9d8b86ce8b03.wav"
-    },
-    {
-      "text": "battaranlenme",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "vaurien",
-      "url": "audio/generated/edcc4d7a3c3185fb3c1fc671.wav"
-    },
-    {
-      "text": "battaransere",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "vaurien",
-      "url": "audio/generated/e20040abcd27ee82dc48f9d2.wav"
+      "url": "audio/generated/f334fb4ecc960bbdc9622f8d.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "battaxe",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
       "francais": "",
-      "url": "audio/generated/82d66ccd5190bbf873e5c81e.wav"
-    },
-    {
-      "text": "batte",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "trace ; place",
-      "url": "audio/generated/7da30f3fdc6b356d2d91cea3.wav"
-    },
-    {
-      "text": "batu1",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "réunion, assemblée",
-      "url": "audio/generated/380c80f5a8d6259a7961fc1b.wav"
-    },
-    {
-      "text": "batu2",
-      "source": "data/source/reports/candidats-prioritaires-validation-soninke.csv",
-      "francais": "marabatu",
-      "url": "audio/generated/25a9c57505b7dbb57b493e39.wav"
-    },
-    {
-      "text": "batula",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "courtisan",
-      "url": "audio/generated/e250996e0f502ade1af98e4f.wav"
-    },
-    {
-      "text": "batundo",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "mouton qu'on garde à la maison",
-      "url": "audio/generated/8dd01fac08fb9dcc7fa7fa54.wav"
-    },
-    {
-      "text": "batuta",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "magicien / magie, divination",
-      "url": "audio/generated/fad796575de4a35233096870.wav"
+      "url": "audio/generated/82d66ccd5190bbf873e5c81e.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "bawo",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
       "francais": "",
-      "url": "audio/generated/dde5ea28fdcdb61db041a72e.wav"
-    },
-    {
-      "text": "bawolaane",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "fillette pré pubère",
-      "url": "audio/generated/3f1bae4c0e68d5ec5f0ce919.wav"
+      "url": "audio/generated/dde5ea28fdcdb61db041a72e.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "bawoni",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
       "francais": "",
-      "url": "audio/generated/7747c2203a293c25856ddea2.wav"
-    },
-    {
-      "text": "bawudi",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "musique à la guitare accompagnée de chant",
-      "url": "audio/generated/68a8c47718dad2369f751313.wav"
-    },
-    {
-      "text": "bawudo",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "devoir",
-      "url": "audio/generated/2e366e9909bae2f24403b49e.wav"
+      "url": "audio/generated/7747c2203a293c25856ddea2.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "bawuri",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
       "francais": "",
-      "url": "audio/generated/e653c76abbdd27d4dbfd539f.wav"
-    },
-    {
-      "text": "bawuya",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "manger le repas de la veille ; petit déjeuner composé des restes du supé",
-      "url": "audio/generated/4576d35845f8f277168dec27.wav"
-    },
-    {
-      "text": "baxa",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "bleu, bleu indigo / plante",
-      "url": "audio/generated/56eb27544fae70b017f6be3d.wav"
-    },
-    {
-      "text": "baxa1",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "bleu, bleu indigo",
-      "url": "audio/generated/a4ce556dce528f7b3f403016.wav"
-    },
-    {
-      "text": "baxa2",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "plante",
-      "url": "audio/generated/bc9a966c02be52e0a8cf2d01.wav"
-    },
-    {
-      "text": "Baxaaga",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "Patronyme soninké, ils sont des griots traditionnels (gesere)",
-      "url": "audio/generated/4b8dd5f18f96c9c39e828ad4.wav"
+      "url": "audio/generated/e653c76abbdd27d4dbfd539f.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "baxaane",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
       "francais": "",
-      "url": "audio/generated/9ad0fa6cc61775e9889057c2.wav"
-    },
-    {
-      "text": "baxabaxa",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "faire peur, intimider, effrayer, menacer",
-      "url": "audio/generated/7f1f84e72970877d80958512.wav"
-    },
-    {
-      "text": "baxabaxande",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "intimidation",
-      "url": "audio/generated/e47d063284b156460b681d22.wav"
-    },
-    {
-      "text": "baxadaare",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "jaune d'oeuf",
-      "url": "audio/generated/ad7406bae883e993a0ba1f7e.wav"
-    },
-    {
-      "text": "baxadimi",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "grand boubou bleu indigo",
-      "url": "audio/generated/c3cd9131cabf0dc5f47fd2f2.wav"
-    },
-    {
-      "text": "baxafuru",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "petit crapaud clair",
-      "url": "audio/generated/a57eb2e8f3872ef7be7f583b.wav"
-    },
-    {
-      "text": "baxalle",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "mulet",
-      "url": "audio/generated/4ae1626e0a843afb4ec778a9.wav"
-    },
-    {
-      "text": "baxalli",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "métisse",
-      "url": "audio/generated/9a905d0cad07f178cce29b9e.wav"
-    },
-    {
-      "text": "baxandoroke",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "robe indigo",
-      "url": "audio/generated/e17342449a88a70256af452e.wav"
-    },
-    {
-      "text": "baxanma",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "de couleur bleu indigo",
-      "url": "audio/generated/8e9c7f8278e3609e78662c57.wav"
-    },
-    {
-      "text": "baxu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "être démodé, être dépassé ; agresser, gêner, provoquer, taquiner / bexu",
-      "url": "audio/generated/a38af6272bc6f04a67fc8983.wav"
-    },
-    {
-      "text": "baxubaxu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "pigeon",
-      "url": "audio/generated/533fb5cc3111a43927d2fda1.wav"
-    },
-    {
-      "text": "baya",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "essaim (d'abeilles, mouches, moustiques), vol d'oiseaux",
-      "url": "audio/generated/acd3586931243ded5814b0fe.wav"
+      "url": "audio/generated/9ad0fa6cc61775e9889057c2.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "bayaade",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
       "francais": "",
-      "url": "audio/generated/3d3ddd1874726f8bd761226d.wav"
-    },
-    {
-      "text": "bayebunsanaani",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "tissu à franges fait de bandes très étroites",
-      "url": "audio/generated/44313efcbc23f0c50c37f4ba.wav"
+      "url": "audio/generated/3d3ddd1874726f8bd761226d.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "bayi",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
       "francais": "",
-      "url": "audio/generated/6aecebf4e478dbb335f0a82f.wav"
+      "url": "audio/generated/6aecebf4e478dbb335f0a82f.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "bayidi",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
       "francais": "",
-      "url": "audio/generated/e601fc836530e5a749e4fcfb.wav"
-    },
-    {
-      "text": "baɲire",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "cascade, courant d'eau",
-      "url": "audio/generated/ce8e7e33cf30fda5c90c3d25.wav"
-    },
-    {
-      "text": "be",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "particule relateur",
-      "url": "audio/generated/46599c5bb5c33101f80cea84.wav"
-    },
-    {
-      "text": "beda",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "robe de cheval d'un brun très clair",
-      "url": "audio/generated/55a7147ed2b72c75e61b8b3d.wav"
-    },
-    {
-      "text": "bedde",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "rue, rue principale",
-      "url": "audio/generated/d6264998c942113715637a9b.wav"
-    },
-    {
-      "text": "bede",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "arbuste à cosse acidulée",
-      "url": "audio/generated/ca762fe6450bd5fbe1cff620.wav"
+      "url": "audio/generated/e601fc836530e5a749e4fcfb.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "bedege",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
       "francais": "",
-      "url": "audio/generated/d512a1bc5281b43c64cf2cb8.wav"
-    },
-    {
-      "text": "bedere",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "pintade",
-      "url": "audio/generated/7895b9942557161f0f2cd5a3.wav"
-    },
-    {
-      "text": "beelo",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "canari aux usages divers",
-      "url": "audio/generated/426b9e61383a8d76ecd78ae9.wav"
-    },
-    {
-      "text": "beeri",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "donner, passer quelque chose à quelqu'un",
-      "url": "audio/generated/68ba29b60f9a6f79413e2cbc.wav"
-    },
-    {
-      "text": "beerini",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "parce que",
-      "url": "audio/generated/bfe9e4b35adf236dfa035886.wav"
-    },
-    {
-      "text": "beesa",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "variété de tissu venant de Guinée",
-      "url": "audio/generated/f823116c38bf36bdd410b642.wav"
-    },
-    {
-      "text": "beesu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "tout le monde",
-      "url": "audio/generated/0d238a277fe295561819cd54.wav"
-    },
-    {
-      "text": "beetaye",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "moment entre 9 heures et 10 heures",
-      "url": "audio/generated/0f9196b952d603d62eb2ad9f.wav"
+      "url": "audio/generated/d512a1bc5281b43c64cf2cb8.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "beeteye",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
       "francais": "",
-      "url": "audio/generated/5ff3ae51ef709a91a02dcf6e.wav"
-    },
-    {
-      "text": "beexe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "crachat",
-      "url": "audio/generated/77ea5cb6ee8b7083ee46215f.wav"
-    },
-    {
-      "text": "beexi",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "fermer, colmater ; rendre inflexible le coeur de quelqu'un, endurcir le coeur de quelqu'un ; cracher",
-      "url": "audio/generated/2d2d9884e8c4d839cb07c834.wav"
-    },
-    {
-      "text": "beexi1",
-      "source": "data/source/reports/candidats-prioritaires-validation-soninke.csv",
-      "francais": "rendre inflexible le coeur de quelqu'un, endurcir le coeur de quelqu'un",
-      "url": "audio/generated/03d12d5c4751bf3f0c6187a5.wav"
-    },
-    {
-      "text": "beexi2",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "cracher",
-      "url": "audio/generated/39a4ae1f1b542757e4e82622.wav"
-    },
-    {
-      "text": "behe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "balle de mil",
-      "url": "audio/generated/fdf3dc24ffef7c3cf464647d.wav"
-    },
-    {
-      "text": "bejexere",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "bois de charpente",
-      "url": "audio/generated/58fbb2746a0f9087349cc0ec.wav"
-    },
-    {
-      "text": "beji",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "rappeler un bienfait",
-      "url": "audio/generated/91e59dfef5505752708c63cb.wav"
-    },
-    {
-      "text": "bejinde",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "l'action de rappeler un bienfait",
-      "url": "audio/generated/def0bb1f4ca73cd4e906d746.wav"
-    },
-    {
-      "text": "belefi",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "atteindre l'âge de la puberté",
-      "url": "audio/generated/653caacecbbeafebfd2edfb7.wav"
-    },
-    {
-      "text": "belexa",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "immature",
-      "url": "audio/generated/450ce97ff51879f9b474ee66.wav"
-    },
-    {
-      "text": "beleyi",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "éjaculer",
-      "url": "audio/generated/f944d476467f36fd5636c044.wav"
+      "url": "audio/generated/5ff3ae51ef709a91a02dcf6e.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "belifata",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
       "francais": "",
-      "url": "audio/generated/5cee0df37a36cc66d58bf190.wav"
+      "url": "audio/generated/5cee0df37a36cc66d58bf190.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
-      "text": "benba",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "remplir à ras",
-      "url": "audio/generated/4986cde6d134ac9b00740d80.wav"
-    },
-    {
-      "text": "benbe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "variété de plante",
-      "url": "audio/generated/683a4a490ccee9af0cc37df7.wav"
-    },
-    {
-      "text": "bendi",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "poêle",
-      "url": "audio/generated/2f7f5246b55813bb3b7eb9db.wav"
-    },
-    {
-      "text": "bendubeexe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "dartre, dermatose",
-      "url": "audio/generated/cf95f0fbd5413b3554347a2e.wav"
-    },
+      "text": "-bali",
+      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
+      "francais": "manque de",
+      "url": "audio/generated/74097eb0f3a144ab4f21f5e3.wav",
+      "kind": "voice_clone_unreviewed"
+    }
+  ],
+  "pending": [
     {
       "text": "beni",
       "source": "data/source/lexique-soninke-fr-base.csv",
@@ -6030,34 +5730,10 @@
       "url": "audio/generated/f20a7de95fef717ae544a645.wav"
     },
     {
-      "text": "bette1",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "reste de branche coupée",
-      "url": "audio/generated/266ffdc42dbccb26a52a5d80.wav"
-    },
-    {
-      "text": "bette2",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "pluvier",
-      "url": "audio/generated/a438257fbae47028ff6ea7e4.wav"
-    },
-    {
       "text": "betu",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "complètement rempli ; tailler, couper",
       "url": "audio/generated/f571f7b04b539aef245e4f5f.wav"
-    },
-    {
-      "text": "betu1",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "complètement rempli",
-      "url": "audio/generated/b579f6c0c9efbea1b8511730.wav"
-    },
-    {
-      "text": "betu2",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "tailler, couper",
-      "url": "audio/generated/3e32a26e434cb6f7e85c921d.wav"
     },
     {
       "text": "bewu",
@@ -6136,18 +5812,6 @@
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "jeu avec des clous / avant que, avant",
       "url": "audio/generated/fefcde8af854e924d896e694.wav"
-    },
-    {
-      "text": "bica1",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "jeu avec des clous",
-      "url": "audio/generated/d67afa1de9b4b54c41749fc8.wav"
-    },
-    {
-      "text": "bica2",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "avant que, avant",
-      "url": "audio/generated/52a04908e8b226455ab1a88e.wav"
     },
     {
       "text": "bicaqe",
@@ -6354,18 +6018,6 @@
       "url": "audio/generated/9d8faca71648b6ca05f37c14.wav"
     },
     {
-      "text": "bira1",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "vivre",
-      "url": "audio/generated/a5bdbc810d35116ad885e9c8.wav"
-    },
-    {
-      "text": "bira2",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/b654b5f6de34ff52e783c95f.wav"
-    },
-    {
       "text": "biraado",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "faire vivre ; nourriture, vivres",
@@ -6388,18 +6040,6 @@
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "la vie",
       "url": "audio/generated/09f9d2ccbb5d17779b9f025a.wav"
-    },
-    {
-      "text": "bire1",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "instant, moment",
-      "url": "audio/generated/48d937e094608810c6c76df0.wav"
-    },
-    {
-      "text": "bire2",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "vivre",
-      "url": "audio/generated/04f88594109d796a3651bd13.wav"
     },
     {
       "text": "birennu",
@@ -6466,24 +6106,6 @@
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "devenir obscur, s'obscurcir / flamme / jour",
       "url": "audio/generated/db353b91e51c540d8c91d682.wav"
-    },
-    {
-      "text": "bita1",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "devenir obscur, s'obscurcir",
-      "url": "audio/generated/8cf9ae68de6f2491ccee9298.wav"
-    },
-    {
-      "text": "bita2",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "flamme",
-      "url": "audio/generated/6c71b19cb453fa84a9958c9b.wav"
-    },
-    {
-      "text": "bita3",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "jour",
-      "url": "audio/generated/60ee5a8f68027fa4e44052b4.wav"
     },
     {
       "text": "bitaaxe",
@@ -6786,18 +6408,6 @@
       "url": "audio/generated/712e5a92cd673c073184ca31.wav"
     },
     {
-      "text": "boobo1",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "jaune",
-      "url": "audio/generated/d23e7ee75604b2645c06d9ef.wav"
-    },
-    {
-      "text": "boobo2",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "désherber à la main",
-      "url": "audio/generated/c47c46f01646635a54ff8271.wav"
-    },
-    {
       "text": "boode",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "hurler",
@@ -6820,18 +6430,6 @@
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "booru / francais",
       "url": "audio/generated/d26336793f6896de59ebd026.wav"
-    },
-    {
-      "text": "boolu1",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "booru",
-      "url": "audio/generated/8918487e4cd3d39f5c0d07f5.wav"
-    },
-    {
-      "text": "boolu2",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "francais",
-      "url": "audio/generated/fc34f4693c85ea4637806140.wav"
     },
     {
       "text": "boona",
@@ -6900,18 +6498,6 @@
       "url": "audio/generated/48afbde946e49312118a0137.wav"
     },
     {
-      "text": "bora1",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "trou à la base du cou",
-      "url": "audio/generated/7e48e8ce58271d1b0faf96e5.wav"
-    },
-    {
-      "text": "bora2",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/e7ffe1c7a3153d3e566134b1.wav"
-    },
-    {
       "text": "borinŋe",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
       "francais": "",
@@ -6978,18 +6564,6 @@
       "url": "audio/generated/ed5b610ad3b5d38b75581360.wav"
     },
     {
-      "text": "borotoye1",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/9979307a0f5a17aec363fb3d.wav"
-    },
-    {
-      "text": "borotoye2",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "petite déchirure",
-      "url": "audio/generated/815390357bfbe3b8e85d1a3a.wav"
-    },
-    {
       "text": "boroxonjile",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "fourmi noire qui pique",
@@ -7018,18 +6592,6 @@
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "trou à travers, de part en part / être percé",
       "url": "audio/generated/b382bf93e36d1c8e61071ef0.wav"
-    },
-    {
-      "text": "bote1",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "trou à travers, de part en part",
-      "url": "audio/generated/189caf2f511a76211ade878f.wav"
-    },
-    {
-      "text": "bote2",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "être percé",
-      "url": "audio/generated/97d9726594f861bd72001b02.wav"
     },
     {
       "text": "boto",
@@ -7108,18 +6670,6 @@
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "source souterraine / bayi",
       "url": "audio/generated/240adc6aad71aa8ca6dd0d6a.wav"
-    },
-    {
-      "text": "boyi1",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "bayi",
-      "url": "audio/generated/38767260bc273678ce5f506c.wav"
-    },
-    {
-      "text": "boyi2",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "source souterraine",
-      "url": "audio/generated/06a48a303795535f0b0f07b9.wav"
     },
     {
       "text": "boyinaare",
@@ -7230,18 +6780,6 @@
       "url": "audio/generated/71c8ecac80c19908763b9232.wav"
     },
     {
-      "text": "bula1",
-      "source": "data/source/reports/candidats-prioritaires-validation-soninke.csv",
-      "francais": "poudre bleue pour maintenir la couleur indigo",
-      "url": "audio/generated/f1c8a62a5b71c73aa49adf45.wav"
-    },
-    {
-      "text": "bula2",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "title of honor attached to some family names, (<Emphasized>Sisoxobula, Kamisoxobula) </Emphasized>",
-      "url": "audio/generated/66cef8fe4db58161fbd0078b.wav"
-    },
-    {
       "text": "bulanma",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "bleu",
@@ -7258,18 +6796,6 @@
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "chair de calebasse, noix de coco, mie de pain / avant que",
       "url": "audio/generated/9652fe506b6bddea89740c57.wav"
-    },
-    {
-      "text": "bulla1",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "chair de calebasse, noix de coco, mie de pain",
-      "url": "audio/generated/47c7e67b6ef5521222ab7789.wav"
-    },
-    {
-      "text": "bulla2",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "avant que",
-      "url": "audio/generated/f1700c05fd847fef429eb53a.wav"
     },
     {
       "text": "bulle",
@@ -7446,18 +6972,6 @@
       "url": "audio/generated/aa999c7dbbedc7b026eb9bf6.wav"
     },
     {
-      "text": "buru1",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "génération",
-      "url": "audio/generated/c1388f949727c607d7949849.wav"
-    },
-    {
-      "text": "buru2",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "très, beaucoup, trop",
-      "url": "audio/generated/ce31f4f4f0faeefa5af2f3f5.wav"
-    },
-    {
       "text": "burubule",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
       "francais": "",
@@ -7626,18 +7140,6 @@
       "url": "audio/generated/be41963ebb7b06357b632149.wav"
     },
     {
-      "text": "butu1",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "se facher",
-      "url": "audio/generated/2eb768838a50b3f58baf89cf.wav"
-    },
-    {
-      "text": "butu2",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "percer (un abcès)",
-      "url": "audio/generated/e753cf70449b8da001a02082.wav"
-    },
-    {
       "text": "butunde",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "l'action de percer",
@@ -7704,18 +7206,6 @@
       "url": "audio/generated/5374e1da64fdf8892c9fafc5.wav"
     },
     {
-      "text": "buuru1",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "pain",
-      "url": "audio/generated/f589b7c18cafe1041a2f4deb.wav"
-    },
-    {
-      "text": "buuru2",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "gouvernement, autorité",
-      "url": "audio/generated/0fa84b5b76aa75fab2757277.wav"
-    },
-    {
       "text": "buusi",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "uriner ; urine",
@@ -7726,18 +7216,6 @@
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "brûler légèrement ; retirer",
       "url": "audio/generated/658ce3ea02bb785c0cb2e027.wav"
-    },
-    {
-      "text": "buusu1",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "brûler légèrement",
-      "url": "audio/generated/0abdc4a5f626555bd9c0a0c6.wav"
-    },
-    {
-      "text": "buusu2",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "retirer",
-      "url": "audio/generated/40775c6f58250d151db0af82.wav"
     },
     {
       "text": "buuti",
@@ -7908,18 +7386,6 @@
       "url": "audio/generated/416b198005043b784658aba4.wav"
     },
     {
-      "text": "ceero1",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "youyou, perruche sénégalaise",
-      "url": "audio/generated/5571607f44ae7dc4a0273f51.wav"
-    },
-    {
-      "text": "ceero2",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "scie",
-      "url": "audio/generated/e8eca87563226aa5a93b802b.wav"
-    },
-    {
       "text": "ceexu",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "déchirer, fendre",
@@ -8080,18 +7546,6 @@
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "exclamation, entrer précipitamment / hutte",
       "url": "audio/generated/05ef6b5407ee547b36597f5c.wav"
-    },
-    {
-      "text": "curi1",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "exclamation, entrer précipitamment",
-      "url": "audio/generated/2dc62040e4886cfb476a5030.wav"
-    },
-    {
-      "text": "curi2",
-      "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "hutte",
-      "url": "audio/generated/d5b4ce41fadbf37f0e2f1718.wav"
     },
     {
       "text": "cuuba",
@@ -9889,5 +9343,5 @@
     }
   ],
   "syllables": [],
-  "note": "Les clones sont non validés par défaut. Les 100 formes dont la prononciation a été validée par le référent linguistique sont marquées dans leurs entrées et consignées dans data/voice-validation-lots.json. Aucun WAV original n’est écrasé."
+  "note": "Les clones générés restent non validés jusqu’à écoute humaine. Aucun WAV original n’est écrasé."
 }
