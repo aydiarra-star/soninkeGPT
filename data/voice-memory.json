@@ -3818,6 +3818,48 @@
       "validation_batch": "omnivoice-100-2026-10"
     },
     {
+      "text": "biyaade",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "fer à marquer, moule en métal pour l'impression du cuir ou pour marquer les vaches ; grillage à griller / moule en métal, fer à marquer grillage à griller",
+      "url": "audio/generated/cee7cea09cda9330428fe61d.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bologaaɲe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "plage au bord du fleuve, lieu de baignade ; lieu de réunion pour régler des affaires (sens figuré) / plage au bord du fleuve, là où on se lave au bord du fleuve / Place où les gens se réunissent pour régler leurs affaires (fig",
+      "url": "audio/generated/ed48599abffc91b0e274e222.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bolonŋe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "bulunŋe ; vestibule",
+      "url": "audio/generated/edad10175cb2ee766801bf2d.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bonne",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "décès ; le fait d'être gâté, d'être tombé en panne",
+      "url": "audio/generated/9cbf0bf2ae49a157ef1e5c21.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bononte",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "gâté (être) ; un malade mental",
+      "url": "audio/generated/d0a46e18e1a3e3b1f873ca99.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bookine",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "variété d'oiseau ; biche, cochon",
+      "url": "audio/generated/2279413c01646ddf39753694.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
       "text": "banboxo",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "sud ; nom traditionnel pour la région au sud du haut Sénégal (fleuve)",
@@ -3842,6 +3884,20 @@
       "pronunciation_validation": "validated_by_referent",
       "translation_validation": "validated_by_referent",
       "validation_batch": "omnivoice-100-2026-10"
+    },
+    {
+      "text": "bogu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "pousser ; se réaliser ; sortir, (faire) ; faire sortir, enlever, soustraire / bukku",
+      "url": "audio/generated/ae94b4099f51d578caddb567.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bono",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "s'abîmer, se gâter ; détruire, gâter",
+      "url": "audio/generated/99e2f701eb134b6bc82105f5.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "ba",
@@ -3907,6 +3963,48 @@
       "pronunciation_validation": "validated_by_referent",
       "translation_validation": "validated_by_referent",
       "validation_batch": "omnivoice-100-2026-10"
+    },
+    {
+      "text": "boona",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "variété de poisson avec mamelles ; mollet",
+      "url": "audio/generated/429c8452a67e60c3be791464.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "boora",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "déshabiller ; enlever les poils de la queue du cheval ; se déshabiller ; se changer en habit de travail",
+      "url": "audio/generated/4dcabf6269d2ef815a07d4ef.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "boosi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "arracher (de quelqu'un) ; enlever l'épiderme",
+      "url": "audio/generated/a0ea880aed7425e68e905339.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "booxo",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "diviser en deux, déchirer, fendre ; traverser",
+      "url": "audio/generated/bd04f894864f53cd3afbcab5.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bosi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "sucer qqch ; être sucé ; sucer",
+      "url": "audio/generated/c8d3f6dbfe5954aa539823f4.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "buda",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "se troubler (un liquide) - forme passive ; faire du bruit (dans l'eau) ; fâcher",
+      "url": "audio/generated/123a99c12a794872d75e6d7f.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "baane",
@@ -4027,6 +4125,41 @@
       "pronunciation_validation": "validated_by_referent",
       "translation_validation": "validated_by_referent",
       "validation_batch": "omnivoice-100-2026-10"
+    },
+    {
+      "text": "bone",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "malheur, mal ; gâté(e), empêché(e)",
+      "url": "audio/generated/c8dacf657fe92b6064dbcde0.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "boobo",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "jaune ; désherber à la main",
+      "url": "audio/generated/712e5a92cd673c073184ca31.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "boxoti",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "arracher, déraciner",
+      "url": "audio/generated/62743c44069ec98c0fa7f3ad.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "boyi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "source souterraine / bayi",
+      "url": "audio/generated/240adc6aad71aa8ca6dd0d6a.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bucine",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "petit, peu ; jeune",
+      "url": "audio/generated/70413c68c21ec7b5432538b9.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "baaraago",
@@ -5343,7 +5476,7 @@
     {
       "text": "bera",
       "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "espace",
+      "francais": "boro",
       "url": "audio/generated/d4c11669cc2cbab33bc256c2.wav",
       "kind": "voice_clone_validated",
       "pronunciation_validation": "validated_by_referent",
@@ -5981,6 +6114,468 @@
       "validation_batch": "omnivoice-100-2026-10"
     },
     {
+      "text": "biyaame",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "photo, marqueur",
+      "url": "audio/generated/0695546de9bf9eb3f07cd964.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "biye",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "billet",
+      "url": "audio/generated/4e5ddb52791e290ca7cf93ff.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "biyinde",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "brûlure",
+      "url": "audio/generated/72287677e8fdc3ebf28fca74.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bo",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "bon",
+      "url": "audio/generated/3d099d0f13df9d0bb4427a6c.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bocite",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "échapper",
+      "url": "audio/generated/52d77527007b88365ac528f9.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bogunte",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "renommé",
+      "url": "audio/generated/921a306b6dccdc0e80553f9f.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bugantaaxu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "vantardise",
+      "url": "audio/generated/da5d6e3f0d8838406ee5b470.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bogura",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "sortie",
+      "url": "audio/generated/281f9dadd88c7a90db0f2498.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bugante",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "vantard",
+      "url": "audio/generated/491c5c99c28d3bca2956740e.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bojoone",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "chaume",
+      "url": "audio/generated/2c7f5087e9202f75593ef05b.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "boli",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "gourde, calebasse à col",
+      "url": "audio/generated/103c196cbc599376c1637da3.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bolinba",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "pagne multicolore",
+      "url": "audio/generated/db5ec04e9aa1a5069ecc94ea.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bolla",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "bobine",
+      "url": "audio/generated/14b04cf5400f29f824197b80.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bollaane",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "pommade (dans un tube)",
+      "url": "audio/generated/4718a72aa86e59c0769705f5.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bolle",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "bosse",
+      "url": "audio/generated/905a09003897742958359b8b.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bolli",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "tordre, presser",
+      "url": "audio/generated/55ea5cd71f4be66135165e23.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "boloone",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "petite biche grise à crinière",
+      "url": "audio/generated/e4dbaa6da004c228287b88f9.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bolumanga",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "hochet des circoncis",
+      "url": "audio/generated/7cd8928061bbf14910c3efb7.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bomu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "une volée d'oiseaux qui marchent plutôt que voler (non-domestique)",
+      "url": "audio/generated/8585e0741e9dae867b23c416.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bon",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "bon",
+      "url": "audio/generated/72b90a0d25a6e8f71d5f2ed3.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bonaana",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "défunt",
+      "url": "audio/generated/f175d67a65ad57a81f651454.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "Bonmu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "Patronyme soninké",
+      "url": "audio/generated/03d51a8caaa19e75bec60e52.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bonondinde",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "destruction, gâchis, dégât",
+      "url": "audio/generated/7ebf8789900a02830a5c6dfa.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bonoye",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "dépravation",
+      "url": "audio/generated/9839c4905b4760d232b38c2d.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bonondi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "détruire",
+      "url": "audio/generated/952e81cc5879bba73a1b2ca8.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bonsonŋe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "descendance",
+      "url": "audio/generated/bcb940200e80b7d69b9a421e.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bontaana",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "sauteur",
+      "url": "audio/generated/21b6a8364ef696d6e0af6259.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bontande",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "l'action de ressemer",
+      "url": "audio/generated/1d8edeb5cc2557ab62dbdabe.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bontoone",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "variole",
+      "url": "audio/generated/19e5f74a42efc32e91514721.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "boode",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "hurler",
+      "url": "audio/generated/0dcec1221423893ce3d3080e.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "booli",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "idole",
+      "url": "audio/generated/06f4c4afab416eb2459e2b9d.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "boolu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "booru / francais",
+      "url": "audio/generated/d26336793f6896de59ebd026.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "boore",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "tourterelle, pigeon",
+      "url": "audio/generated/bc3f4c6e6a0d388871349076.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "boori",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "fétiche",
+      "url": "audio/generated/0c8cf0798ab433940691dc44.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "booto",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "sac, sacoche",
+      "url": "audio/generated/b7ddf57940852b858a5dcfe7.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "booxe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "se déchirer",
+      "url": "audio/generated/33600bf5e5833c5bce69eb1d.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "booxondiraqe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "fente, déchirure",
+      "url": "audio/generated/c9eae53a304178fd9e444bcc.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bora",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "trou à la base du cou",
+      "url": "audio/generated/48afbde946e49312118a0137.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "borokaaxu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "stérilité",
+      "url": "audio/generated/19db0af431fbfa6fab7b4f6c.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "boroke",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "stérile",
+      "url": "audio/generated/b93de7b6044c8b41ae5a1fc7.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "boroko",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "fumier, excrément",
+      "url": "audio/generated/948d1f725d908dea3a457e6f.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "borondonyelinŋe",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "variété d'oiseau peu farouche, martinet",
+      "url": "audio/generated/1568f604c6d1d60494b768a1.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "boronsi",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "bronze",
+      "url": "audio/generated/b23ab2b88511595e2a30a40e.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "borotoye",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "petite déchirure",
+      "url": "audio/generated/ed5b610ad3b5d38b75581360.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "boroxonjile",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "fourmi noire qui pique",
+      "url": "audio/generated/77a631783071fb496267d500.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "boroxonjilinka",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "fourmilière",
+      "url": "audio/generated/14a66f794a3fbc46a2016464.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "boso",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "fixer, regarder avec attention",
+      "url": "audio/generated/4beec3cd8b6a537edce64a7d.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bote",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "trou à travers, de part en part / être percé",
+      "url": "audio/generated/b382bf93e36d1c8e61071ef0.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "boto",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "être percé (forme passive)",
+      "url": "audio/generated/080bc338a7350d4c37f8018a.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "botonte",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "percé",
+      "url": "audio/generated/4db9696a35626f467d3617d1.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "botoburu",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "saboter / critiquer",
+      "url": "audio/generated/19a755db3adb59b4d21c6257.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "botoxa",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "boue",
+      "url": "audio/generated/e97b925a6217945223edc46d.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "boxomansa",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "vague",
+      "url": "audio/generated/4f8611906a345348b436740f.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "boxome",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "pêcher dans l'eau boueuse des mares",
+      "url": "audio/generated/96484cf7ed5bcc2ca5d11530.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "boxotindaana",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "quelqu'un qui enlève",
+      "url": "audio/generated/0c29fc04eb09561390382fad.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "boxotiye",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "arrachage, déracinement",
+      "url": "audio/generated/68bfc15a1b8bc24db11cf4e3.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "boxotinde",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "arrachage, déracinement",
+      "url": "audio/generated/29b34e2e4f90015a7088071e.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "boyaade",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "drap, couvre-lit",
+      "url": "audio/generated/ac5578b138e344a4fefd662f.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "boyinde",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "étalement",
+      "url": "audio/generated/01625b541235cd49959a6b0a.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "boyiye",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "étalement",
+      "url": "audio/generated/bf3be6ca3bb6ddd4319de41e.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "boyinaare",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "renard",
+      "url": "audio/generated/cb097acb79510fc4c5de75dc.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bubba",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "ramasser",
+      "url": "audio/generated/ee588149abfb6f15ee073ced.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "buci",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "morceler",
+      "url": "audio/generated/ab16e8d2df58c514187e5923.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "budeye",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "trouble",
+      "url": "audio/generated/86868e40f5cfa23ea0c821e1.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bude",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "nénuphar",
+      "url": "audio/generated/ad7d6378f6607e8670a1b4e3.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bugubukku",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "battre bruyamment des ailes",
+      "url": "audio/generated/1d75eace54baaa30ba521a14.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
       "text": "abada",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "jamais",
@@ -6437,37 +7032,35 @@
       "kind": "voice_clone_unreviewed"
     },
     {
-      "text": "bereti",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "croiser ; poser de travers",
-      "url": "audio/generated/78b14db3b8c1951444d587b2.wav",
-      "kind": "voice_clone_validated",
-      "pronunciation_validation": "validated_by_referent",
-      "translation_validation": "validated_by_referent",
-      "validation_batch": "dictionary-9-2026-10",
-      "linguistic_validation": "validated_by_referent",
-      "validation_date": "2026-10-23",
-      "validated_by": "référent linguistique",
-      "translation_sources": "Lexique Soninké du Mali / Dictionnaire soninké.docx : barati, variante bereti"
-    },
-    {
       "text": "betexi",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "badigeonner ; salir",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "badigeonner / salir",
       "url": "audio/generated/668c065d76ebd052306bc66a.wav",
       "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_referent",
       "pronunciation_validation": "validated_by_referent",
       "translation_validation": "validated_by_referent",
       "validation_batch": "dictionary-9-2026-10",
-      "linguistic_validation": "validated_by_referent",
       "validation_date": "2026-10-23",
-      "validated_by": "référent linguistique",
-      "translation_sources": "Lexique Soninké du Mali : betexi → betexe ; article Transitivity in Bakel Soninke"
+      "validated_by": "référent linguistique"
+    },
+    {
+      "text": "bereti",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/78b14db3b8c1951444d587b2.wav",
+      "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_referent",
+      "pronunciation_validation": "validated_by_referent",
+      "translation_validation": "validated_by_referent",
+      "validation_batch": "dictionary-9-2026-10",
+      "validation_date": "2026-10-23",
+      "validated_by": "référent linguistique"
     },
     {
       "text": "bexu",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "avoir tort",
+      "francais": "",
       "url": "audio/generated/cf1a1f06ccfde9b153a8d739.wav",
       "kind": "voice_clone_validated",
       "pronunciation_validation": "validated_by_referent",
@@ -6477,35 +7070,33 @@
     {
       "text": "biini",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "brûler ; griller ; cuire (notamment la poterie)",
+      "francais": "",
       "url": "audio/generated/c12dc23aeb3d2d28ba458532.wav",
       "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_referent",
       "pronunciation_validation": "validated_by_referent",
       "translation_validation": "validated_by_referent",
       "validation_batch": "dictionary-9-2026-10",
-      "linguistic_validation": "validated_by_referent",
       "validation_date": "2026-10-23",
-      "validated_by": "référent linguistique",
-      "translation_sources": "Dictionnaire soninké.docx : variante de biyi ; Lexique Soninké du Mali"
+      "validated_by": "référent linguistique"
     },
     {
       "text": "bilinbili",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "rouler (un pneu, une barrique) ; se rouler",
+      "francais": "",
       "url": "audio/generated/45e7d716a676a558050762cb.wav",
       "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_referent",
       "pronunciation_validation": "validated_by_referent",
       "translation_validation": "validated_by_referent",
       "validation_batch": "dictionary-9-2026-10",
-      "linguistic_validation": "validated_by_referent",
       "validation_date": "2026-10-23",
-      "validated_by": "référent linguistique",
-      "translation_sources": "Dictionnaire soninké.docx : variante de birinbiri ; Lexique Soninké du Mali"
+      "validated_by": "référent linguistique"
     },
     {
       "text": "bipaade",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "couvrir, couvert, renverser",
+      "francais": "",
       "url": "audio/generated/90c9d29b7a0754c5e83fb2ca.wav",
       "kind": "voice_clone_validated",
       "pronunciation_validation": "validated_by_referent",
@@ -6515,58 +7106,159 @@
     {
       "text": "bipi",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "se mettre à plat ; se coucher à plat ventre ; être renversé",
+      "francais": "",
       "url": "audio/generated/90fd0503c8d1cb40ab3e207c.wav",
       "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_referent",
       "pronunciation_validation": "validated_by_referent",
       "translation_validation": "validated_by_referent",
       "validation_batch": "dictionary-9-2026-10",
-      "linguistic_validation": "validated_by_referent",
       "validation_date": "2026-10-23",
-      "validated_by": "référent linguistique",
-      "translation_sources": "Dictionnaire soninké.docx : variante de bifi ; glossaires consultés"
+      "validated_by": "référent linguistique"
     },
     {
       "text": "biramanda",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "pourquoi ; et pour cause",
+      "francais": "",
       "url": "audio/generated/4028efbcbe8fcce9e8d39373.wav",
       "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_referent",
       "pronunciation_validation": "validated_by_referent",
       "translation_validation": "validated_by_referent",
       "validation_batch": "dictionary-9-2026-10",
-      "linguistic_validation": "validated_by_referent",
       "validation_date": "2026-10-23",
-      "validated_by": "référent linguistique",
-      "translation_sources": "Dictionnaire soninké.docx : variante de birimanda"
+      "validated_by": "référent linguistique"
     },
     {
       "text": "bireye",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "vie",
+      "francais": "",
       "url": "audio/generated/6da6a0949700453ee1eeb968.wav",
       "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_referent",
       "pronunciation_validation": "validated_by_referent",
       "translation_validation": "validated_by_referent",
       "validation_batch": "dictionary-9-2026-10",
-      "linguistic_validation": "validated_by_referent",
       "validation_date": "2026-10-23",
-      "validated_by": "référent linguistique",
-      "translation_sources": "Dictionnaire soninké.docx : variante de biraye ; glossaire Soninkara"
+      "validated_by": "référent linguistique"
     },
     {
       "text": "biya",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "essaim (d’abeilles, de mouches ou de moustiques) ; vol d’oiseaux",
+      "francais": "",
       "url": "audio/generated/6051b5a61b24bf33a853b40f.wav",
       "kind": "voice_clone_validated",
+      "linguistic_validation": "validated_by_referent",
       "pronunciation_validation": "validated_by_referent",
       "translation_validation": "validated_by_referent",
       "validation_batch": "dictionary-9-2026-10",
-      "linguistic_validation": "validated_by_referent",
       "validation_date": "2026-10-23",
-      "validated_by": "référent linguistique",
-      "translation_sources": "Dictionnaire soninké.docx : variante de baya ; Lexique Soninké du Mali"
+      "validated_by": "référent linguistique"
+    },
+    {
+      "text": "boco",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/113d832b1b4c536a79a4ea3e.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bojon",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/cb2b4e2cabb06e411cc0a77f.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bologaaɲi",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/32286d29c40bda1cbea7a115.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bolontonŋe",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/c1c5ab5f819fc2494ed45bee.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bonno",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/286005325055462ffff86af4.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bonta",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/942602e680ac802513afeb72.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "booru",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/774cdf7090cea5ec8cffd146.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "borinŋe",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/c74cd29d21d9f9d69f9f9a10.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "boro",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/0855195e89c66a3ac2724da0.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "boroge",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/7a5b2c79c0805118aa85d9e2.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "boronŋe",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/92afca03eacd903d782d7f7f.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "boroto",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/d881b264c415b96fadeeecac.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "botu",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/0ac6c68255787f35864503cf.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bugandi",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/3d32f985f65191f7e710b132.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "bugu",
+      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
+      "francais": "",
+      "url": "audio/generated/f2429f24c7c7ded648c48f5e.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "-bali",
@@ -6581,616 +7273,16 @@
       "francais": "",
       "url": "audio/generated/5ced6037483472b2e1e04b7a.wav",
       "kind": "voice_clone_validated",
+      "linguistic_validation": "reviewed_translation_pending",
       "pronunciation_validation": "validated_by_referent",
       "translation_validation": "unresolved_no_reliable_translation",
       "validation_batch": "dictionary-9-2026-10",
-      "linguistic_validation": "reviewed_translation_pending",
       "validation_date": "2026-10-23",
       "validated_by": "référent linguistique — forme examinée, traduction non établie",
       "translation_text_missing": true
     }
   ],
   "pending": [
-    {
-      "text": "biyaade",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "fer à marquer, moule en métal pour l'impression du cuir ou pour marquer les vaches ; grillage à griller / moule en métal, fer à marquer grillage à griller",
-      "url": "audio/generated/cee7cea09cda9330428fe61d.wav"
-    },
-    {
-      "text": "biyaame",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "photo, marqueur",
-      "url": "audio/generated/0695546de9bf9eb3f07cd964.wav"
-    },
-    {
-      "text": "biye",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "billet",
-      "url": "audio/generated/4e5ddb52791e290ca7cf93ff.wav"
-    },
-    {
-      "text": "biyinde",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "brûlure",
-      "url": "audio/generated/72287677e8fdc3ebf28fca74.wav"
-    },
-    {
-      "text": "bo",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "bon",
-      "url": "audio/generated/3d099d0f13df9d0bb4427a6c.wav"
-    },
-    {
-      "text": "bocite",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "échapper",
-      "url": "audio/generated/52d77527007b88365ac528f9.wav"
-    },
-    {
-      "text": "boco",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/113d832b1b4c536a79a4ea3e.wav"
-    },
-    {
-      "text": "bogu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "pousser ; se réaliser ; sortir, (faire) ; faire sortir, enlever, soustraire / bukku",
-      "url": "audio/generated/ae94b4099f51d578caddb567.wav"
-    },
-    {
-      "text": "bogunte",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "renommé",
-      "url": "audio/generated/921a306b6dccdc0e80553f9f.wav"
-    },
-    {
-      "text": "bogura",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "sortie",
-      "url": "audio/generated/281f9dadd88c7a90db0f2498.wav"
-    },
-    {
-      "text": "bojon",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/cb2b4e2cabb06e411cc0a77f.wav"
-    },
-    {
-      "text": "bojoone",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "chaume",
-      "url": "audio/generated/2c7f5087e9202f75593ef05b.wav"
-    },
-    {
-      "text": "boli",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "gourde, calebasse à col",
-      "url": "audio/generated/103c196cbc599376c1637da3.wav"
-    },
-    {
-      "text": "bolinba",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "pagne multicolore",
-      "url": "audio/generated/db5ec04e9aa1a5069ecc94ea.wav"
-    },
-    {
-      "text": "bolla",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "bobine",
-      "url": "audio/generated/14b04cf5400f29f824197b80.wav"
-    },
-    {
-      "text": "bollaane",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "pommade (dans un tube)",
-      "url": "audio/generated/4718a72aa86e59c0769705f5.wav"
-    },
-    {
-      "text": "bolle",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "bosse",
-      "url": "audio/generated/905a09003897742958359b8b.wav"
-    },
-    {
-      "text": "bolli",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "tordre, presser",
-      "url": "audio/generated/55ea5cd71f4be66135165e23.wav"
-    },
-    {
-      "text": "bologaaɲe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "plage au bord du fleuve, lieu de baignade ; lieu de réunion pour régler des affaires (sens figuré) / plage au bord du fleuve, là où on se lave au bord du fleuve / Place où les gens se réunissent pour régler leurs affaires (fig",
-      "url": "audio/generated/ed48599abffc91b0e274e222.wav"
-    },
-    {
-      "text": "bologaaɲi",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/32286d29c40bda1cbea7a115.wav"
-    },
-    {
-      "text": "bolontonŋe",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/c1c5ab5f819fc2494ed45bee.wav"
-    },
-    {
-      "text": "bolonŋe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "bulunŋe ; vestibule",
-      "url": "audio/generated/edad10175cb2ee766801bf2d.wav"
-    },
-    {
-      "text": "boloone",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "petite biche grise à crinière",
-      "url": "audio/generated/e4dbaa6da004c228287b88f9.wav"
-    },
-    {
-      "text": "bolumanga",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "hochet des circoncis",
-      "url": "audio/generated/7cd8928061bbf14910c3efb7.wav"
-    },
-    {
-      "text": "bomu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "une volée d'oiseaux qui marchent plutôt que voler (non-domestique)",
-      "url": "audio/generated/8585e0741e9dae867b23c416.wav"
-    },
-    {
-      "text": "bon",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "bon",
-      "url": "audio/generated/72b90a0d25a6e8f71d5f2ed3.wav"
-    },
-    {
-      "text": "bonaana",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "défunt",
-      "url": "audio/generated/f175d67a65ad57a81f651454.wav"
-    },
-    {
-      "text": "bone",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "malheur, mal ; gâté(e), empêché(e)",
-      "url": "audio/generated/c8dacf657fe92b6064dbcde0.wav"
-    },
-    {
-      "text": "Bonmu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "Patronyme soninké",
-      "url": "audio/generated/03d51a8caaa19e75bec60e52.wav"
-    },
-    {
-      "text": "bonne",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "décès ; le fait d'être gâté, d'être tombé en panne",
-      "url": "audio/generated/9cbf0bf2ae49a157ef1e5c21.wav"
-    },
-    {
-      "text": "bonno",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/286005325055462ffff86af4.wav"
-    },
-    {
-      "text": "bono",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "s'abîmer, se gâter ; détruire, gâter",
-      "url": "audio/generated/99e2f701eb134b6bc82105f5.wav"
-    },
-    {
-      "text": "bonondi",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "détruire",
-      "url": "audio/generated/952e81cc5879bba73a1b2ca8.wav"
-    },
-    {
-      "text": "bonondinde",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "destruction, gâchis, dégât",
-      "url": "audio/generated/7ebf8789900a02830a5c6dfa.wav"
-    },
-    {
-      "text": "bononte",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "gâté (être) ; un malade mental",
-      "url": "audio/generated/d0a46e18e1a3e3b1f873ca99.wav"
-    },
-    {
-      "text": "bonoye",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "dépravation",
-      "url": "audio/generated/9839c4905b4760d232b38c2d.wav"
-    },
-    {
-      "text": "bonsonŋe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "descendance",
-      "url": "audio/generated/bcb940200e80b7d69b9a421e.wav"
-    },
-    {
-      "text": "bonta",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/942602e680ac802513afeb72.wav"
-    },
-    {
-      "text": "bontaana",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "sauteur",
-      "url": "audio/generated/21b6a8364ef696d6e0af6259.wav"
-    },
-    {
-      "text": "bontande",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "l'action de ressemer",
-      "url": "audio/generated/1d8edeb5cc2557ab62dbdabe.wav"
-    },
-    {
-      "text": "bontoone",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "variole",
-      "url": "audio/generated/19e5f74a42efc32e91514721.wav"
-    },
-    {
-      "text": "boobo",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "jaune ; désherber à la main",
-      "url": "audio/generated/712e5a92cd673c073184ca31.wav"
-    },
-    {
-      "text": "boode",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "hurler",
-      "url": "audio/generated/0dcec1221423893ce3d3080e.wav"
-    },
-    {
-      "text": "bookine",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "variété d'oiseau ; biche, cochon",
-      "url": "audio/generated/2279413c01646ddf39753694.wav"
-    },
-    {
-      "text": "booli",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "idole",
-      "url": "audio/generated/06f4c4afab416eb2459e2b9d.wav"
-    },
-    {
-      "text": "boolu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "booru / francais",
-      "url": "audio/generated/d26336793f6896de59ebd026.wav"
-    },
-    {
-      "text": "boona",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "variété de poisson avec mamelles ; mollet",
-      "url": "audio/generated/429c8452a67e60c3be791464.wav"
-    },
-    {
-      "text": "boora",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "déshabiller ; enlever les poils de la queue du cheval ; se déshabiller ; se changer en habit de travail",
-      "url": "audio/generated/4dcabf6269d2ef815a07d4ef.wav"
-    },
-    {
-      "text": "boore",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "tourterelle, pigeon",
-      "url": "audio/generated/bc3f4c6e6a0d388871349076.wav"
-    },
-    {
-      "text": "boori",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "fétiche",
-      "url": "audio/generated/0c8cf0798ab433940691dc44.wav"
-    },
-    {
-      "text": "booru",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/774cdf7090cea5ec8cffd146.wav"
-    },
-    {
-      "text": "boosi",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "arracher (de quelqu'un) ; enlever l'épiderme",
-      "url": "audio/generated/a0ea880aed7425e68e905339.wav"
-    },
-    {
-      "text": "booto",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "sac, sacoche",
-      "url": "audio/generated/b7ddf57940852b858a5dcfe7.wav"
-    },
-    {
-      "text": "booxe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "se déchirer",
-      "url": "audio/generated/33600bf5e5833c5bce69eb1d.wav"
-    },
-    {
-      "text": "booxo",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "diviser en deux, déchirer, fendre ; traverser",
-      "url": "audio/generated/bd04f894864f53cd3afbcab5.wav"
-    },
-    {
-      "text": "booxondiraqe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "fente, déchirure",
-      "url": "audio/generated/c9eae53a304178fd9e444bcc.wav"
-    },
-    {
-      "text": "bora",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "trou à la base du cou",
-      "url": "audio/generated/48afbde946e49312118a0137.wav"
-    },
-    {
-      "text": "borinŋe",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/c74cd29d21d9f9d69f9f9a10.wav"
-    },
-    {
-      "text": "boro",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/0855195e89c66a3ac2724da0.wav"
-    },
-    {
-      "text": "boroge",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/7a5b2c79c0805118aa85d9e2.wav"
-    },
-    {
-      "text": "borokaaxu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "stérilité",
-      "url": "audio/generated/19db0af431fbfa6fab7b4f6c.wav"
-    },
-    {
-      "text": "boroke",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "stérile",
-      "url": "audio/generated/b93de7b6044c8b41ae5a1fc7.wav"
-    },
-    {
-      "text": "boroko",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "fumier, excrément",
-      "url": "audio/generated/948d1f725d908dea3a457e6f.wav"
-    },
-    {
-      "text": "borondonyelinŋe",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "variété d'oiseau peu farouche, martinet",
-      "url": "audio/generated/1568f604c6d1d60494b768a1.wav"
-    },
-    {
-      "text": "boronsi",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "bronze",
-      "url": "audio/generated/b23ab2b88511595e2a30a40e.wav"
-    },
-    {
-      "text": "boronŋe",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/92afca03eacd903d782d7f7f.wav"
-    },
-    {
-      "text": "boroto",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/d881b264c415b96fadeeecac.wav"
-    },
-    {
-      "text": "borotoye",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "petite déchirure",
-      "url": "audio/generated/ed5b610ad3b5d38b75581360.wav"
-    },
-    {
-      "text": "boroxonjile",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "fourmi noire qui pique",
-      "url": "audio/generated/77a631783071fb496267d500.wav"
-    },
-    {
-      "text": "boroxonjilinka",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "fourmilière",
-      "url": "audio/generated/14a66f794a3fbc46a2016464.wav"
-    },
-    {
-      "text": "bosi",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "sucer qqch ; être sucé ; sucer",
-      "url": "audio/generated/c8d3f6dbfe5954aa539823f4.wav"
-    },
-    {
-      "text": "boso",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "fixer, regarder avec attention",
-      "url": "audio/generated/4beec3cd8b6a537edce64a7d.wav"
-    },
-    {
-      "text": "bote",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "trou à travers, de part en part / être percé",
-      "url": "audio/generated/b382bf93e36d1c8e61071ef0.wav"
-    },
-    {
-      "text": "boto",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "être percé (forme passive)",
-      "url": "audio/generated/080bc338a7350d4c37f8018a.wav"
-    },
-    {
-      "text": "botoburu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "saboter / critiquer",
-      "url": "audio/generated/19a755db3adb59b4d21c6257.wav"
-    },
-    {
-      "text": "botonte",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "percé",
-      "url": "audio/generated/4db9696a35626f467d3617d1.wav"
-    },
-    {
-      "text": "botoxa",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "boue",
-      "url": "audio/generated/e97b925a6217945223edc46d.wav"
-    },
-    {
-      "text": "botu",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/0ac6c68255787f35864503cf.wav"
-    },
-    {
-      "text": "boxomansa",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "vague",
-      "url": "audio/generated/4f8611906a345348b436740f.wav"
-    },
-    {
-      "text": "boxome",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "pêcher dans l'eau boueuse des mares",
-      "url": "audio/generated/96484cf7ed5bcc2ca5d11530.wav"
-    },
-    {
-      "text": "boxoti",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "arracher, déraciner",
-      "url": "audio/generated/62743c44069ec98c0fa7f3ad.wav"
-    },
-    {
-      "text": "boxotindaana",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "quelqu'un qui enlève",
-      "url": "audio/generated/0c29fc04eb09561390382fad.wav"
-    },
-    {
-      "text": "boxotinde",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "arrachage, déracinement",
-      "url": "audio/generated/29b34e2e4f90015a7088071e.wav"
-    },
-    {
-      "text": "boxotiye",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "arrachage, déracinement",
-      "url": "audio/generated/68bfc15a1b8bc24db11cf4e3.wav"
-    },
-    {
-      "text": "boyaade",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "drap, couvre-lit",
-      "url": "audio/generated/ac5578b138e344a4fefd662f.wav"
-    },
-    {
-      "text": "boyi",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "source souterraine / bayi",
-      "url": "audio/generated/240adc6aad71aa8ca6dd0d6a.wav"
-    },
-    {
-      "text": "boyinaare",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "renard",
-      "url": "audio/generated/cb097acb79510fc4c5de75dc.wav"
-    },
-    {
-      "text": "boyinde",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "étalement",
-      "url": "audio/generated/01625b541235cd49959a6b0a.wav"
-    },
-    {
-      "text": "boyiye",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "étalement",
-      "url": "audio/generated/bf3be6ca3bb6ddd4319de41e.wav"
-    },
-    {
-      "text": "bubba",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "ramasser",
-      "url": "audio/generated/ee588149abfb6f15ee073ced.wav"
-    },
-    {
-      "text": "buci",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "morceler",
-      "url": "audio/generated/ab16e8d2df58c514187e5923.wav"
-    },
-    {
-      "text": "bucine",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "petit, peu ; jeune",
-      "url": "audio/generated/70413c68c21ec7b5432538b9.wav"
-    },
-    {
-      "text": "buda",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "se troubler (un liquide) - forme passive ; faire du bruit (dans l'eau) ; fâcher",
-      "url": "audio/generated/123a99c12a794872d75e6d7f.wav"
-    },
-    {
-      "text": "bude",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "nénuphar",
-      "url": "audio/generated/ad7d6378f6607e8670a1b4e3.wav"
-    },
-    {
-      "text": "budeye",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "trouble",
-      "url": "audio/generated/86868e40f5cfa23ea0c821e1.wav"
-    },
-    {
-      "text": "bugandi",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/3d32f985f65191f7e710b132.wav"
-    },
-    {
-      "text": "bugantaaxu",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "vantardise",
-      "url": "audio/generated/da5d6e3f0d8838406ee5b470.wav"
-    },
-    {
-      "text": "bugante",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "vantard",
-      "url": "audio/generated/491c5c99c28d3bca2956740e.wav"
-    },
-    {
-      "text": "bugu",
-      "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/f2429f24c7c7ded648c48f5e.wav"
-    },
-    {
-      "text": "bugubukku",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "battre bruyamment des ailes",
-      "url": "audio/generated/1d75eace54baaa30ba521a14.wav"
-    },
     {
       "text": "bugunde",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
@@ -8698,6 +8790,12 @@
       "url": "audio/generated/a4c7fd7f94be16fe20909d21.wav"
     },
     {
+      "text": "ma",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "ne... pas (négation de l'accompli / passé)",
+      "url": "audio/generated/3c44c3e1b8b7844786724ac7.wav"
+    },
+    {
       "text": "makkajinma",
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "jaune",
@@ -8894,6 +8992,12 @@
       "source": "data/source/lexique-soninke-fr-base.csv",
       "francais": "ventre",
       "url": "audio/generated/254d63ac58a68b2410b38976.wav"
+    },
+    {
+      "text": "nta",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "ne... pas (négation de l'inaccompli et de l'état)",
+      "url": "audio/generated/e7fba97f77f4e818ebf6de9b.wav"
     },
     {
       "text": "nuxudunbure",
