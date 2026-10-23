@@ -26,11 +26,18 @@ avec le statut de validation de la forme.
 
 ## Interface
 
-Palette sobre de trois couleurs — `#B8860B`, `#FAF6E9`, `#1A1A1A` — complétée par
-la teinte secondaire `#6B4F1D`. Ombres réduites, bordures fines, aucune
-gradient décoratif, icônes SVG limitées aux usages utiles (microphone, audio,
-traduction, favori). Le fond clair laisse ressortir les cartes et la hiérarchie
-typographique.
+Palette maîtresse de trois couleurs — `#B8860B`, `#FAF6E9`, `#1A1A1A` —
+complétée par la teinte secondaire `#6B4F1D` et ses déclinaisons. Ombres
+douces, bordures fines, un seul halo chaud très discret, aucun dégradé
+décoratif. Icônes SVG limitées aux usages utiles : microphone, audio,
+traduction, favori.
+
+Le bouton micro est l'action vocale principale du composeur : aplat doré, libellé
+« Parler » sur grand écran, état « J'écoute » avec halo pendant l'écoute. Les
+blocs pédagogiques affichent les repères **SONINKÉ** et **FRANÇAIS** autour de la
+flèche verticale, avec le statut d'attestation. Les titres de l'accueil et les
+formes soninké utilisent une fonte éditoriale pour distinguer la langue du texte
+d'interface.
 
 ## Documentation linguistique
 
