@@ -54,8 +54,8 @@ jobs:
         if: always()
         run: |
           python - <<'PY'
-          import os, wave, glob, sys
-          files = sorted(glob.glob("audio/generated/*.wav"))
+          import wave, glob, sys
+          files = sorted(p for p in glob.glob("audio/generated/*.wav") if not p.endswith("/reference.wav"))
           good, bad = 0, []
           for path in files:
               try:
@@ -65,7 +65,7 @@ jobs:
                   good += 1
               except Exception as exc:
                   bad.append(f"{path}: {exc}")
-          print(f"WAV vérifiés: {len(files)}; techniquement lisibles: {good}; erreurs: {len(bad)}")
+          print(f"WAV candidats vérifiés: {len(files)}; techniquement lisibles: {good}; erreurs: {len(bad)}")
           for item in bad:
               print("ERREUR:", item)
           if bad:
@@ -75,10 +75,17 @@ jobs:
       - name: Préparer le lot pour validation humaine
         if: always()
         run: |
-          mkdir -p review-bundle
-          [ ! -d audio/generated ] || cp -R audio/generated review-bundle/
+          mkdir -p review-bundle/audio/generated
+          if [ -d audio/generated ]; then
+            find audio/generated -maxdepth 1 -type f -name '*.wav' ! -name 'reference.wav' -exec cp {} review-bundle/audio/generated/ \;
+          fi
           [ ! -f data/voice-memory.json ] || cp data/voice-memory.json review-bundle/
-          [ ! -f data/voice-generation-errors.csv ] || cp data/voice-generation-errors.csv review-bundle/
+          if [ -f data/voice-generation-errors.csv ]; then
+            cp data/voice-generation-errors.csv review-bundle/
+          else
+            printf 'status,detail\n' > review-bundle/voice-generation-errors.csv
+            printf 'info,"Aucun fichier data/voice-generation-errors.csv produit par le script pour cette exécution"\n' >> review-bundle/voice-generation-errors.csv
+          fi
 
       - name: Publier le lot comme artefact de validation
         if: always()
@@ -106,7 +113,6 @@ jobs:
           add-paths: |
             audio/generated/*.wav
             data/voice-memory.json
-            data/voice-generation-errors.csv
 
       - name: Envoyer les fichiers vers Google Drive si les secrets sont configurés
         if: always()
