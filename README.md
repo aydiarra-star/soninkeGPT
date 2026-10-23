@@ -19,7 +19,7 @@ le patrimoine linguistique déjà constitué dans
 - **Niveaux d'apprentissage** : débutant, intermédiaire, avancé.
 - **Favoris** : enregistrer un mot, une phrase ou une expression et le
   réécouter plus tard.
-- **Lexique et audios** : 1 416 entrées et 842 audios indexés (enregistrements historiques et audios
+- **Lexique et audios** : 1 416 entrées et 942 audios indexés (enregistrements historiques et audios
   générés, avec leurs statuts de validation), filtrables par soninké, français ou audio.
 - **Contrôle linguistique** : aucune forme bambara, malinké, peul, wolof,
   dioula ou arabe présentée comme du soninké ; les formes non vérifiées sont
