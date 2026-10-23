@@ -6439,22 +6439,30 @@
     {
       "text": "bereti",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
+      "francais": "croiser ; poser de travers",
       "url": "audio/generated/78b14db3b8c1951444d587b2.wav",
       "kind": "voice_clone_validated",
       "pronunciation_validation": "validated_by_referent",
       "translation_validation": "validated_by_referent",
-      "validation_batch": "omnivoice-100-2026-10"
+      "validation_batch": "dictionary-9-2026-10",
+      "linguistic_validation": "validated_by_referent",
+      "validation_date": "2026-10-23",
+      "validated_by": "référent linguistique",
+      "translation_sources": "Lexique Soninké du Mali / Dictionnaire soninké.docx : barati, variante bereti"
     },
     {
       "text": "betexi",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
+      "francais": "badigeonner ; salir",
       "url": "audio/generated/668c065d76ebd052306bc66a.wav",
       "kind": "voice_clone_validated",
       "pronunciation_validation": "validated_by_referent",
       "translation_validation": "validated_by_referent",
-      "validation_batch": "omnivoice-100-2026-10"
+      "validation_batch": "dictionary-9-2026-10",
+      "linguistic_validation": "validated_by_referent",
+      "validation_date": "2026-10-23",
+      "validated_by": "référent linguistique",
+      "translation_sources": "Lexique Soninké du Mali : betexi → betexe ; article Transitivity in Bakel Soninke"
     },
     {
       "text": "bexu",
@@ -6469,22 +6477,30 @@
     {
       "text": "biini",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
+      "francais": "brûler ; griller ; cuire (notamment la poterie)",
       "url": "audio/generated/c12dc23aeb3d2d28ba458532.wav",
       "kind": "voice_clone_validated",
       "pronunciation_validation": "validated_by_referent",
       "translation_validation": "validated_by_referent",
-      "validation_batch": "omnivoice-100-2026-10"
+      "validation_batch": "dictionary-9-2026-10",
+      "linguistic_validation": "validated_by_referent",
+      "validation_date": "2026-10-23",
+      "validated_by": "référent linguistique",
+      "translation_sources": "Dictionnaire soninké.docx : variante de biyi ; Lexique Soninké du Mali"
     },
     {
       "text": "bilinbili",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
+      "francais": "rouler (un pneu, une barrique) ; se rouler",
       "url": "audio/generated/45e7d716a676a558050762cb.wav",
       "kind": "voice_clone_validated",
       "pronunciation_validation": "validated_by_referent",
       "translation_validation": "validated_by_referent",
-      "validation_batch": "omnivoice-100-2026-10"
+      "validation_batch": "dictionary-9-2026-10",
+      "linguistic_validation": "validated_by_referent",
+      "validation_date": "2026-10-23",
+      "validated_by": "référent linguistique",
+      "translation_sources": "Dictionnaire soninké.docx : variante de birinbiri ; Lexique Soninké du Mali"
     },
     {
       "text": "bipaade",
@@ -6499,42 +6515,58 @@
     {
       "text": "bipi",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
+      "francais": "se mettre à plat ; se coucher à plat ventre ; être renversé",
       "url": "audio/generated/90fd0503c8d1cb40ab3e207c.wav",
       "kind": "voice_clone_validated",
       "pronunciation_validation": "validated_by_referent",
       "translation_validation": "validated_by_referent",
-      "validation_batch": "omnivoice-100-2026-10"
+      "validation_batch": "dictionary-9-2026-10",
+      "linguistic_validation": "validated_by_referent",
+      "validation_date": "2026-10-23",
+      "validated_by": "référent linguistique",
+      "translation_sources": "Dictionnaire soninké.docx : variante de bifi ; glossaires consultés"
     },
     {
       "text": "biramanda",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
+      "francais": "pourquoi ; et pour cause",
       "url": "audio/generated/4028efbcbe8fcce9e8d39373.wav",
       "kind": "voice_clone_validated",
       "pronunciation_validation": "validated_by_referent",
       "translation_validation": "validated_by_referent",
-      "validation_batch": "omnivoice-100-2026-10"
+      "validation_batch": "dictionary-9-2026-10",
+      "linguistic_validation": "validated_by_referent",
+      "validation_date": "2026-10-23",
+      "validated_by": "référent linguistique",
+      "translation_sources": "Dictionnaire soninké.docx : variante de birimanda"
     },
     {
       "text": "bireye",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
+      "francais": "vie",
       "url": "audio/generated/6da6a0949700453ee1eeb968.wav",
       "kind": "voice_clone_validated",
       "pronunciation_validation": "validated_by_referent",
       "translation_validation": "validated_by_referent",
-      "validation_batch": "omnivoice-100-2026-10"
+      "validation_batch": "dictionary-9-2026-10",
+      "linguistic_validation": "validated_by_referent",
+      "validation_date": "2026-10-23",
+      "validated_by": "référent linguistique",
+      "translation_sources": "Dictionnaire soninké.docx : variante de biraye ; glossaire Soninkara"
     },
     {
       "text": "biya",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
+      "francais": "essaim (d’abeilles, de mouches ou de moustiques) ; vol d’oiseaux",
       "url": "audio/generated/6051b5a61b24bf33a853b40f.wav",
       "kind": "voice_clone_validated",
       "pronunciation_validation": "validated_by_referent",
       "translation_validation": "validated_by_referent",
-      "validation_batch": "omnivoice-100-2026-10"
+      "validation_batch": "dictionary-9-2026-10",
+      "linguistic_validation": "validated_by_referent",
+      "validation_date": "2026-10-23",
+      "validated_by": "référent linguistique",
+      "translation_sources": "Dictionnaire soninké.docx : variante de baya ; Lexique Soninké du Mali"
     },
     {
       "text": "-bali",
@@ -6550,8 +6582,12 @@
       "url": "audio/generated/5ced6037483472b2e1e04b7a.wav",
       "kind": "voice_clone_validated",
       "pronunciation_validation": "validated_by_referent",
-      "translation_validation": "validated_by_referent",
-      "validation_batch": "omnivoice-100-2026-10"
+      "translation_validation": "unresolved_no_reliable_translation",
+      "validation_batch": "dictionary-9-2026-10",
+      "linguistic_validation": "reviewed_translation_pending",
+      "validation_date": "2026-10-23",
+      "validated_by": "référent linguistique — forme examinée, traduction non établie",
+      "translation_text_missing": true
     }
   ],
   "pending": [
