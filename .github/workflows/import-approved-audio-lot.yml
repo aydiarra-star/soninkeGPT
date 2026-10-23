@@ -1,0 +1,119 @@
+name: Importer le lot audio validé dans main
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: "Confirmer l'import du lot 100 validé par le référent linguistique"
+        required: true
+        type: choice
+        options:
+          - "CONFIRMER"
+permissions:
+  contents: write
+jobs:
+  import-approved-artifact:
+    if: inputs.confirm == 'CONFIRMER'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Télécharger l'artefact existant
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh run download 39921977548 --repo "${GITHUB_REPOSITORY}" --name "soninkegpt-lot-100-pour-validation" --dir /tmp/approved-lot
+          test -f /tmp/approved-lot/voice-memory.json
+      - name: Préserver les audios existants et fusionner le manifeste
+        run: |
+          python - <<'PY'
+          import json, os, shutil
+          from pathlib import Path
+          root = Path.cwd()
+          bundle = Path('/tmp/approved-lot')
+          src_manifest = json.loads((bundle / 'voice-memory.json').read_text(encoding='utf-8'))
+          target_path = root / 'data/voice-memory.json'
+          target = json.loads(target_path.read_text(encoding='utf-8'))
+          audio_dir = root / 'audio/generated'
+          audio_dir.mkdir(parents=True, exist_ok=True)
+          existing_urls = {a.get('url') for a in target.get('audio', [])}
+          existing_texts = {a.get('text', '').casefold() for a in target.get('audio', [])}
+          copied = 0
+          added = 0
+          kept = 0
+          for item in src_manifest.get('audio', []):
+              url = item.get('url', '')
+              if not url.startswith('audio/generated/'):
+                  continue
+              name = Path(url).name
+              source = bundle / 'generated' / name
+              if not source.is_file():
+                  continue
+              destination = audio_dir / name
+              if not destination.exists():
+                  shutil.copy2(source, destination)
+                  copied += 1
+              if url not in existing_urls:
+                  target.setdefault('audio', []).append(item)
+                  existing_urls.add(url)
+                  added += 1
+                  existing_texts.add(item.get('text', '').casefold())
+          target['pending'] = [p for p in target.get('pending', []) if p.get('url') not in existing_urls and p.get('text', '').casefold() not in existing_texts]
+          target_path.write_text(json.dumps(target, ensure_ascii=False, indent=2) + '\\n', encoding='utf-8')
+          # La validation linguistique est consignée séparément, sans confondre
+          # validation de prononciation, validation technique et traduction.
+          record = {
+            'batch': 'OmniVoice lot de 100 mots',
+            'source_workflow_run': 39921977548,
+            'artifact_id': 12490714801,
+            'pronunciation_status': 'validated_by_linguistic_referent',
+            'validation_basis': 'Confirmation explicite du référent linguistique dans la conversation',
+            'technical_status': 'WAV techniquement lisibles selon les logs du workflow; ré-vérification effectuée à l’import',
+            'publication_status': 'published_to_main_by_this_workflow',
+            'note': 'La validation de prononciation ne constitue pas une validation des traductions.'
+          }
+          record_path = root / 'data/voice-validation-lots.json'
+          records = json.loads(record_path.read_text(encoding='utf-8')) if record_path.exists() else []
+          records = [r for r in records if r.get('source_workflow_run') != 39921977548]
+          records.append(record)
+          record_path.write_text(json.dumps(records, ensure_ascii=False, indent=2) + '\\n', encoding='utf-8')
+          print(f'WAV ajoutés sans écraser les existants: {copied}; entrées ajoutées au manifeste: {added}; entrées conservées: {kept}')
+          PY
+      - name: Vérifier les WAV importés
+        run: |
+          python - <<'PY'
+          import wave
+          from pathlib import Path
+          import json
+          root = Path.cwd()
+          manifest = json.loads((root/'data/voice-memory.json').read_text(encoding='utf-8'))
+          paths = sorted({a.get('url') for a in manifest.get('audio', []) if (a.get('url') or '').startswith('audio/generated/')})
+          bad = []
+          checked = 0
+          for url in paths:
+              p = root / url
+              if not p.is_file():
+                  continue
+              try:
+                  with wave.open(str(p), 'rb') as w:
+                      if w.getnframes() < 1 or w.getframerate() < 1:
+                          raise ValueError('WAV vide')
+                  checked += 1
+              except Exception as e:
+                  bad.append(f'{p}: {e}')
+          print(f'WAV référencés et vérifiés: {checked}; erreurs: {len(bad)}')
+          if bad:
+              print('\\n'.join(bad))
+              raise SystemExit(1)
+          PY
+      - name: Committer le lot approuvé directement dans main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add audio/generated/*.wav data/voice-memory.json data/voice-validation-lots.json
+          if git diff --cached --quiet; then
+            echo "Aucun changement à committer."
+            exit 0
+          fi
+          git commit -m "Importer les audios Soninké du lot validé de 100 mots"
+          git push origin main
