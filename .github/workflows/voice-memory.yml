@@ -50,6 +50,10 @@ jobs:
       - name: Générer les mots manquants avec les références vocales authentiques
         run: python scripts/generate_voice.py --generate --device cpu --limit ${{ inputs.batch_limit }}
 
+      - name: Exclure la copie temporaire de la référence vocale
+        if: always()
+        run: rm -f audio/generated/reference.wav
+
       - name: Vérifier les fichiers audio générés
         if: always()
         run: |
