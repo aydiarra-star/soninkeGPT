@@ -9589,5 +9589,5 @@
     }
   ],
   "syllables": [],
-  "note": "Les clones générés restent non validés jusqu’à écoute humaine. Aucun WAV original n’est écrasé."
+  "note": "Les clones sont non validés par défaut; les lots dont la prononciation a été validée par le référent linguistique sont consignés séparément dans data/voice-validation-lots.json. Aucun WAV original n’est écrasé."
 }
