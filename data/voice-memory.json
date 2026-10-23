@@ -5570,7 +5570,7 @@
     {
       "text": "Beniyaamina",
       "source": "data/source/reports/revue-enrichissement-dictionnaire-soninke.csv",
-      "francais": "",
+      "francais": "Benjamin",
       "url": "audio/generated/5ced6037483472b2e1e04b7a.wav"
     },
     {
@@ -5666,7 +5666,7 @@
     {
       "text": "bereti",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
+      "francais": "croiser ; poser de travers (renvoi à barati)",
       "url": "audio/generated/78b14db3b8c1951444d587b2.wav"
     },
     {
@@ -5720,7 +5720,7 @@
     {
       "text": "betexi",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
+      "francais": "badigeonner ; plâtrer ; salir (renvoi à betexe)",
       "url": "audio/generated/668c065d76ebd052306bc66a.wav"
     },
     {
@@ -5774,7 +5774,7 @@
     {
       "text": "bexu",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
+      "francais": "être démodé, être dépassé ; agresser, gêner, provoquer, taquiner (renvoi à baxu)",
       "url": "audio/generated/cf1a1f06ccfde9b153a8d739.wav"
     },
     {
@@ -5876,7 +5876,7 @@
     {
       "text": "biini",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
+      "francais": "brûler ; griller (renvoi à biyi)",
       "url": "audio/generated/c12dc23aeb3d2d28ba458532.wav"
     },
     {
@@ -5906,7 +5906,7 @@
     {
       "text": "bilinbili",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
+      "francais": "rouler (un pneu, une barrique) ; se rouler (renvoi à birinbiri)",
       "url": "audio/generated/45e7d716a676a558050762cb.wav"
     },
     {
@@ -6026,7 +6026,7 @@
     {
       "text": "biramanda",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
+      "francais": "pourquoi ; pour quelle raison",
       "url": "audio/generated/4028efbcbe8fcce9e8d39373.wav"
     },
     {
@@ -6974,7 +6974,7 @@
     {
       "text": "burubule",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
+      "francais": "brûlure ; brûlis (renvoi à buyinbuye)",
       "url": "audio/generated/d4fb827f4c9036f9b720d8b4.wav"
     },
     {
@@ -7010,7 +7010,7 @@
     {
       "text": "burugutu",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
+      "francais": "passer à la flamme la tête d’un mouton ou d’un poulet ; être passé à la flamme (renvoi à burubutu)",
       "url": "audio/generated/18c628f0a0d9086c487285f6.wav"
     },
     {
@@ -7184,7 +7184,7 @@
     {
       "text": "buugu",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
+      "francais": "fermenter ; enfler ; gonfler (renvoi à buuku)",
       "url": "audio/generated/e65261f2ba9be3d9a83ddc22.wav"
     },
     {
@@ -7244,31 +7244,31 @@
     {
       "text": "buxuti",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
+      "francais": "arracher ; déraciner ; enlever (renvoi à boxoti)",
       "url": "audio/generated/dc907dc22833dd5959eec670.wav"
     },
     {
       "text": "buxutindaana",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
+      "francais": "personne qui arrache ou enlève (renvoi à boxotindaana)",
       "url": "audio/generated/d84176df77b63e2f1c17a332.wav"
     },
     {
       "text": "buxutinde",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
+      "francais": "arrachage ; déracinement (renvoi à boxotinde)",
       "url": "audio/generated/e7533c3cf91b0b9274b7dcd5.wav"
     },
     {
       "text": "buya",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
+      "francais": "brûler ; griller (renvoi à biyi)",
       "url": "audio/generated/39bf03440f6e60cd6eb1111a.wav"
     },
     {
       "text": "buyaade",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
+      "francais": "fer à marquer ; grillage à griller (renvoi à biyaade)",
       "url": "audio/generated/da354fff6b48737c3c2b6d67.wav"
     },
     {
@@ -7280,7 +7280,7 @@
     {
       "text": "buyi",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
+      "francais": "brûler ; griller (renvoi à biyi)",
       "url": "audio/generated/e8a69e236d5102130e389a93.wav"
     },
     {
@@ -7400,7 +7400,7 @@
     {
       "text": "ciga",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
+      "francais": "arachide (renvoi à tiga)",
       "url": "audio/generated/367bc607b6165c052aea7697.wav"
     },
     {
