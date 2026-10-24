@@ -1,5 +1,12 @@
 # Intégration des formes à définir — 2026-10-24
 
+> **Suite de la recherche (même jour)** : une seconde campagne de vérification a
+> apporté trois éléments nouveaux (parallèle *kittinsolle* « bras » pour
+> Kit-soro, glose *ɲuɲu* « gueule, museau » pour gnougnou, statut de doublet
+> graphique de Qunyu-/Kunyu- et Cuute/Tchuute). Aucune définition du lexique
+> n'a changé. Voir
+> [Recherche de définitions — 12 formes (2026-10-24)](definitions-12-formes-soninke-2026-10-24.md).
+
 ## Résultat de la recherche
 
 Les douze formes ont été intégrées au lexique principal. Les graphies originales sont conservées. Les formes dont le sens n'est pas démontré restent explicitement marquées comme non résolues : aucune traduction n'a été fabriquée.
