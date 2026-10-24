@@ -22,7 +22,6 @@ on:
       - "data/source/lexique-soninke-fr-base.csv"
       - "data/candidates/**/*.csv"
       - "data/source/reports/**/*.csv"
-      - "app.js"
 
 permissions:
   contents: write
