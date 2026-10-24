@@ -32,14 +32,16 @@ Jamais l'inverse. Chaque bloc affiche le statut de la forme :
    (`data/validation/non-soninke-forms.json`) ?
 3. Une traduction française est-elle disponible ? Sinon, la réponse indique
    « Sens à préciser par le référent » au lieu d'inventer.
-4. Une phrase complète est-elle attestée ? Sinon, seules les correspondances
-   mot à mot sont montrées, explicitement signalées comme **assemblage
-   indicatif**, jamais comme une traduction validée.
+4. Une phrase complète est-elle attestée ? Si oui, elle est prioritaire. Sinon,
+   l'application compose une proposition à partir des mots disponibles, avec le
+   statut **assemblage indicatif — phrase non attestée**, les éléments français
+   sans correspondance signalés, et sans inventer de mot. L'audio est joué par
+   segments uniquement lorsqu'un enregistrement correspondant existe.
 
 ## Ce que l'application ne fait jamais
 
 - Inventer un mot, une expression ou un proverbe soninké.
-- Assembler des mots attestés pour produire une phrase présentée comme validée.
+- Présenter une phrase assemblée comme attestée ou validée. La composition indicative est autorisée si elle est clairement étiquetée.
 - Présenter du bambara, malinké, peul, wolof, dioula ou arabe comme du soninké.
 - Remplacer un enregistrement manquant par une voix de synthèse du navigateur.
 - Corriger automatiquement une phrase utilisateur : les formes inconnues sont
