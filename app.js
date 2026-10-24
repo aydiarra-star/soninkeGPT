@@ -108,6 +108,7 @@ state.audioReferenceCount = function () {
 
 // ── Expressions attestées du corpus soninké ──
 const PHRASEBOOK = [
+  { fr: "bonjour maman", snk: "an wouydiom ma", alt: [], note: "forme fournie par le référent linguistique : salutation adressée à maman" },
   { fr: "bonjour", snk: "Xa wouy Diom", alt: ["an wouydiom", "an moxo", "qa moxo"], note: "Xa wouy Diom = salutation respectueuse (pluriel) · an wouydiom = à une personne · an moxo / qa moxo = comment ça va" },
   { fr: "salut", snk: "Xa wouy Diom", alt: ["an wouydiom", "an moxo"], note: "salutation courante" },
   { fr: "bonsoir", snk: "lellaane", alt: ["Xa wouy Diom"], note: "salutation de l'après-midi / soir" },
@@ -2277,6 +2278,14 @@ function generateResponse(message) {
       soninkeBlock("Nawari", "Merci.", "mot") +
       soninkeBlock("Xa wouy Diom", "Bonjour ! (salutation respectueuse)", "expression") +
       `Consultez le lexique pour la forme réellement attestée. Si vous êtes locuteur référent, signalez la forme à valider : elle sera ajoutée après vérification.\n\n`;
+  }
+
+  // 1.1 Salutation adressée à maman : respecter la traduction exacte validée par le référent.
+  if (/^(bonjour|salut|coucou)\\s+(maman|mère|ma mère)[!.?\\s]*$/i.test(trimmed)) {
+    return `SoninkeGPT vous salue en soninké.\\n` +
+      soninkeBlock("an wouydiom ma", "Bonjour maman.", "expression") +
+      `Cette formule est distincte de la salutation respectueuse au pluriel.\\n\\n` +
+      levelNote();
   }
 
   // 1. Salutations directes
