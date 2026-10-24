@@ -1055,8 +1055,55 @@ function finishVoiceSession() {
   deliverVoiceTurn(typedOrSpoken, null);
 }
 
-function deliverVoiceTurn(transcript, voiceNoteUrl) {
-  const cleanText = String(transcript || "").trim();
+async function deliverVoiceTurn(transcript, voiceNoteUrl) {
+  let cleanText = String(transcript || "").trim();
+
+  // Si la reconnaissance du navigateur n'a rien transcrit, tenter l'ASR serveur
+  // configuré dans voice-config.js. Aucun secret API n'est stocké dans le frontend.
+  const apiBase = String(window.SONINKEGPT_API_BASE || "").trim().replace(/\\/$/, "");
+  if (!cleanText && voiceNoteUrl && apiBase) {
+    try {
+      showVoiceStatus("Transcription vocale en cours…", 0, false);
+      const audioResponse = await fetch(voiceNoteUrl);
+      if (!audioResponse.ok) throw new Error("audio_unavailable");
+      const audioBlob = await audioResponse.blob();
+      const extension = audioBlob.type.includes("mp4") ? "m4a"
+        : audioBlob.type.includes("ogg") ? "ogg"
+        : audioBlob.type.includes("wav") ? "wav"
+        : audioBlob.type.includes("mpeg") ? "mp3" : "webm";
+      const formData = new FormData();
+      formData.append("file", audioBlob, `soninkegpt-utterance.${extension}`);
+      const response = await fetch(`${apiBase}/api/process-voice`, {
+        method: "POST",
+        body: formData,
+      });
+      const payload = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(payload.detail || "transcription_failed");
+      cleanText = String(payload.text || "").trim();
+      if (cleanText) {
+        const input = $("#message-input");
+        if (input) {
+          input.value = cleanText;
+          autoResize(input);
+          updateSendButton();
+        }
+        showVoiceStatus(
+          `Transcription : « ${cleanText} ». Vérifiez-la ; envoi de la question…`,
+          2200,
+          false
+        );
+      }
+    } catch (error) {
+      const detail = String(error?.message || "");
+      showVoiceStatus(
+        detail && !["audio_unavailable", "transcription_failed", "Failed to fetch"].includes(detail)
+          ? detail
+          : "La transcription serveur est indisponible. Vous pouvez saisir votre phrase au clavier.",
+        4200
+      );
+    }
+  }
+
   if (cleanText) {
     submitMessage(cleanText, { forceVoiceReply: true, voiceNoteUrl });
   } else if (voiceNoteUrl) {
