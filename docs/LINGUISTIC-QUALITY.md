@@ -53,6 +53,33 @@ démarrage, mis en cache localement et appliqué aux réponses, au lexique, aux
 audios et aux favoris. Toute modification de cette liste doit être relue par un
 locuteur référent.
 
+## Pas de doublon dans le lexique
+
+Un mot déjà présent dans le lexique — comme entrée principale **ou** comme
+`variante` — n'est jamais réimporté, même si la nouvelle source donne une glose
+différente. La comparaison ignore la casse, les accents vocaliques, les traits
+d'union et les numéros d'homonyme (`baabo1` = `baabo`), mais elle distingue les
+lettres propres au soninké (`ñ`, `ŋ`, `ɲ`, `ɓ`, `ɗ`, `ƴ`, `ɛ`, `ɔ`) et
+l'apostrophe : *segeñe* « ongle » ≠ *segene* « monter », *n* ≠ *n'*.
+
+Trois outils appliquent cette règle :
+
+| Script | Rôle |
+| --- | --- |
+| `scripts/check_doublons_lexique.py` | Contrôle : doublons d'entrée et formes citées en variante. `--strict` renvoie un code d'erreur si un doublon existe. |
+| `scripts/import_extraction_sans_doublons.py` | Import d'un CSV d'extraction : n'ajoute que les formes absentes, journalise les doublons écartés et les gloses divergentes. |
+| `scripts/fusionner_doublons_lexique.py` | Fusionne les doublons déjà présents, sans perte : la forme absorbée devient `variante`, la glose la plus complète est conservée, une note de fusion est ajoutée. |
+
+Règles de fusion :
+
+- une entrée « renvoi à X » ou « variante de X » est absorbée par X ;
+- à glose identique, l'entrée conservée est celle qui porte l'audio, sinon celle
+  dont le statut de preuve est le plus fort ;
+- deux formes distinctes ayant chacune son audio (*Giya* / *yesso*, *kambe* /
+  *kanbe*…) ne sont jamais fusionnées : ce sont des variantes attestées, pas des
+  doublons ;
+- toute fusion est enregistrée dans `data/reports/fusions-doublons-<date>.csv`.
+
 ## Signaler une erreur
 
 Les corrections sont priorisées ainsi : forme attestée par le référent >

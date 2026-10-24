@@ -63,3 +63,57 @@ un enfant sur le dos / enfance »).
 3. Importer ces entrées avec `source = Dictionnaire soninké.docx` et
    `statut = candidat_dictionnaire_a_verifier` ; ne pas créer d'audio et ne pas
    marquer de prononciation validée.
+
+## Import sans doublon (même jour)
+
+Règle appliquée : un mot déjà présent dans le lexique, comme entrée **ou** comme
+`variante`, n'est jamais réimporté.
+
+- 132 entrées du lot lues → **130 doublons écartés** (52 avec la même glose,
+  28 homonymes numérotés du document déjà regroupés dans un seul article,
+  52 avec une glose formulée différemment) → **2 entrées réellement nouvelles** :
+  - `SNK-LEX-1437` *baane ti baane* « un à un, un par un » (expression) ;
+  - `SNK-LEX-1438` `-bali` « manque de » (suffixe nominal).
+- L'import est idempotent : relancé sur le même fichier, il n'ajoute plus rien.
+- Journal détaillé : `data/reports/import-extraction-2026-10-24.csv`
+  (chaque doublon écarté y figure avec l'entrée du lexique et sa glose).
+
+## Dédoublonnage du lexique existant
+
+Le contrôle `scripts/check_doublons_lexique.py` a révélé des doublons antérieurs
+au lot : la même forme saisie deux fois, souvent une entrée « renvoi à X » ou
+« variante de X » créée en plus de l'article principal.
+
+- 1 464 entrées au départ → **22 entrées absorbées** → **1 442 entrées**.
+- Aucune information perdue : la forme absorbée devient `variante` de l'entrée
+  conservée, la glose la plus complète est gardée, et l'entrée conservée reçoit
+  une note de fusion avec l'identifiant absorbé, sa glose et son statut.
+- Entrées conservées de préférence : celles qui portent un audio
+  (`kambe`, `Nene`, `Nuxune`, `Yaxe`) ou le statut de preuve le plus fort.
+- 41 formes restent citées dans plusieurs entrées : ce sont des **renvois de
+  variantes** (par exemple `Giya`/`yesso`, deux formes attestées ayant chacune
+  son audio), pas des doublons d'entrée. Après fusion : **0 doublon d'entrée**.
+- Journal : `data/reports/fusions-doublons-2026-10-24.csv` ;
+  état des formes : `data/reports/doublons-lexique-2026-10-24.csv`.
+
+Contrôle final : `node tests/ui.test.cjs` et `node tests/voice.test.cjs`
+passent après la fusion.
+
+## Deux gloses réparées au passage
+
+La fusion a mis au jour deux entrées dont la glose avait été mal découpée lors
+d'un import antérieur (la glose contenait une variante au lieu du sens) :
+
+| Entrée | Ancienne glose | Glose rétablie | Justification |
+| --- | --- | --- | --- |
+| `SNK-LEX-0219` *bolonŋe* | « bulunŋe ; vestibule » | « petite rue, ruelle ; vestibule » | texte de l'entrée : *1 • path, route; petite rue, ruelle* |
+| `SNK-LEX-0491` *biifi* | « hihi » (une de ses variantes) | « jouet, jeu d'enfant » | texte de l'entrée : *toy; jouet, jeu d'enfant* |
+
+## Reste à faire
+
+- Poursuivre l'extraction du document au-delà du lot `b` (blocs suivants) avec
+  le même filtre : seules les formes absentes du lexique seront ajoutées.
+- Les 40 formes encore citées en variante dans plusieurs entrées
+  (`Giya`/`yesso`, `kambe`/`kanbe`…) relèvent d'un arbitrage linguistique : ce
+  sont des variantes attestées, pas des doublons, et deux d'entre elles portent
+  chacune un audio qu'il ne faut pas perdre.
