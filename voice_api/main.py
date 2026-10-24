@@ -9,7 +9,7 @@ import os
 from io import BytesIO
 from typing import Optional
 
-from fastapi import FastAPI, File, HTTPException, UploadFile
+from fastapi import FastAPI, File, Form, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from openai import OpenAI
 
@@ -52,7 +52,8 @@ def health_check():
 @app.post("/api/process-voice")
 async def process_voice(
     file: UploadFile = File(...),
-    language: Optional[str] = None,
+    language: Optional[str] = Form(None),
+    vocabulary: Optional[str] = Form(None),
 ):
     """Transcribe one recorded utterance; does not invent or translate its meaning."""
     api_key = os.getenv("OPENAI_API_KEY")
@@ -96,6 +97,15 @@ async def process_voice(
         "toora nta, oyi waxati, bisimilla, Daga goli, Li taxu. "
         "Respecter les espaces et les accents entendus. Si un passage est incertain, ne pas inventer de traduction."
     )
+    # Ajouter automatiquement des formes du lexique chargé par le navigateur.
+    # Limiter la longueur pour éviter de noyer le contexte acoustique de Whisper.
+    if vocabulary:
+        terms = [term.strip() for term in vocabulary.splitlines() if term.strip()]
+        multiword = [term for term in terms if " " in term]
+        singleword = [term for term in terms if " " not in term]
+        vocabulary_hint = ", ".join((multiword + singleword)[:100])
+        if vocabulary_hint:
+            prompt += " Formes du lexique Soninké à privilégier seulement si les sons correspondent : " + vocabulary_hint[:900]
 
     try:
         client = OpenAI(api_key=api_key)
