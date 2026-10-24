@@ -9,7 +9,7 @@ numero;mot_soninke;fichier_dans_lot;validation_prononciation;date_validation;val
 008;bogu;008_bogu.wav;validee_par_referent;2026-10-24;traduction_existante_a_conserver
 009;bogunte;009_bogunte.wav;validee_par_referent;2026-10-24;traduction_existante_a_conserver
 010;bogura;010_bogura.wav;validee_par_referent;2026-10-24;traduction_existante_a_conserver
-011;bojon;011_bojon.wav;validee_par_referent;2026-10-24;a_traduire
+011;bojon;011_bojon.wav;validee_par_referent;2026-10-24;candidat_dictionnaire_a_verifier
 012;bojoone;012_bojoone.wav;validee_par_referent;2026-10-24;traduction_existante_a_conserver
 013;boli;013_boli.wav;validee_par_referent;2026-10-24;traduction_existante_a_conserver
 014;bolinba;014_bolinba.wav;validee_par_referent;2026-10-24;traduction_existante_a_conserver
@@ -36,7 +36,7 @@ numero;mot_soninke;fichier_dans_lot;validation_prononciation;date_validation;val
 035;bononte;035_bononte.wav;validee_par_referent;2026-10-24;traduction_existante_a_conserver
 036;bonoye;036_bonoye.wav;validee_par_referent;2026-10-24;traduction_existante_a_conserver
 037;bonsonŋe;037_bonsonŋe.wav;validee_par_referent;2026-10-24;traduction_existante_a_conserver
-038;bonta;038_bonta.wav;validee_par_referent;2026-10-24;a_traduire
+038;bonta;038_bonta.wav;validee_par_referent;2026-10-24;candidat_dictionnaire_a_verifier
 039;bontaana;039_bontaana.wav;validee_par_referent;2026-10-24;traduction_existante_a_conserver
 040;bontande;040_bontande.wav;validee_par_referent;2026-10-24;traduction_existante_a_conserver
 041;bontoone;041_bontoone.wav;validee_par_referent;2026-10-24;traduction_existante_a_conserver
@@ -56,16 +56,16 @@ numero;mot_soninke;fichier_dans_lot;validation_prononciation;date_validation;val
 055;booxo;055_booxo.wav;validee_par_referent;2026-10-24;traduction_existante_a_conserver
 056;booxondiraqe;056_booxondiraqe.wav;validee_par_referent;2026-10-24;traduction_existante_a_conserver
 057;bora;057_bora.wav;validee_par_referent;2026-10-24;traduction_existante_a_conserver
-058;borinŋe;058_borinŋe.wav;validee_par_referent;2026-10-24;a_traduire
+058;borinŋe;058_borinŋe.wav;validee_par_referent;2026-10-24;candidat_dictionnaire_a_verifier
 059;boro;059_boro.wav;validee_par_referent;2026-10-24;traduction_existante_a_conserver
-060;boroge;060_boroge.wav;validee_par_referent;2026-10-24;a_traduire
+060;boroge;060_boroge.wav;validee_par_referent;2026-10-24;candidat_dictionnaire_a_verifier
 061;borokaaxu;061_borokaaxu.wav;validee_par_referent;2026-10-24;traduction_existante_a_conserver
 062;boroke;062_boroke.wav;validee_par_referent;2026-10-24;traduction_existante_a_conserver
 063;boroko;063_boroko.wav;validee_par_referent;2026-10-24;traduction_existante_a_conserver
 064;borondonyelinŋe;064_borondonyelinŋe.wav;validee_par_referent;2026-10-24;traduction_existante_a_conserver
 065;boronsi;065_boronsi.wav;validee_par_referent;2026-10-24;traduction_existante_a_conserver
 066;boronŋe;066_boronŋe.wav;validee_par_referent;2026-10-24;candidat_dictionnaire_a_verifier
-067;boroto;067_boroto.wav;validee_par_referent;2026-10-24;a_traduire
+067;boroto;067_boroto.wav;validee_par_referent;2026-10-24;candidat_dictionnaire_a_verifier
 068;borotoye;068_borotoye.wav;validee_par_referent;2026-10-24;traduction_existante_a_conserver
 069;boroxonjile;069_boroxonjile.wav;validee_par_referent;2026-10-24;traduction_existante_a_conserver
 070;boroxonjilinka;070_boroxonjilinka.wav;validee_par_referent;2026-10-24;traduction_existante_a_conserver
