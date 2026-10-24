@@ -1073,6 +1073,12 @@ async function deliverVoiceTurn(transcript, voiceNoteUrl) {
         : audioBlob.type.includes("mpeg") ? "mp3" : "webm";
       const formData = new FormData();
       formData.append("file", audioBlob, `soninkegpt-utterance.${extension}`);
+      // Transmettre au moteur les formes soninkées du lexique actuellement chargé.
+      // La liste se met à jour avec le corpus : pas besoin de coder chaque nouveau mot à la main.
+      const lexiconHints = Array.isArray(state.entries)
+        ? [...new Set(state.entries.map((entry) => String(entry?.soninke || "").trim()).filter((word) => word && word.length <= 80))]
+        : [];
+      formData.append("vocabulary", lexiconHints.join(String.fromCharCode(10)).slice(0, 50000));
       const response = await fetch(`${apiBase}/api/process-voice`, {
         method: "POST",
         body: formData,
