@@ -785,9 +785,9 @@ SNK-LEX-0750;nuxunne;nez;nom;Référent 2026-10-24 | CNRS LGIDF | Langues d’Af
 SNK-LEX-0751;laqqe;bouche;nom;"CNRS lexique des noms;CNRS/LGIDF lexique des noms";source_externe_a_verifier;;
 SNK-LEX-0752;neene;langue (organe);nom;Référent 2026-10-24 | CNRS LGIDF | Langues d’Afrique Activities;atteste_source_externe;nene;Variante documentée.
 SNK-LEX-0753;segeñe;ongle;nom;Référent 2026-10-24 | CNRS LGIDF;atteste_source_externe;;Ongle : forme attestée.
-SNK-LEX-0754;ta;pied, jambe;nom;Référent 2026-10-24 | CNRS LGIDF | Langues d’Afrique Activities;atteste_source_externe;tanu;"Pied/jambe documenté; nombre à préciser."
-SNK-LEX-0755;qurungo;genou;nom;CNRS lexique des noms;source_externe_a_verifier;;
-SNK-LEX-0756;kitte;main;nom;Référent 2026-10-24 | CNRS LGIDF | Langues d’Afrique Activities;atteste_source_externe;;Main : forme attestée.
+SNK-LEX-0754;ta;pied, jambe;nom;Référent 2026-10-24 | CNRS LGIDF | Langues d’Afrique Activities;atteste_source_externe;tanu;"Pied/jambe documenté; nombre à préciser. Tange est conservé comme variante issue du document, sans le remplacer comme forme de référence."
+SNK-LEX-0755;qurungo;genou;nom;CNRS LGIDF;atteste_source_externe;Kuru;"Le CNRS atteste qurungo pour genou; Kuru est une forme rapprochée issue du document, pas une équivalence phonologique établie."
+SNK-LEX-0756;kitte;main;nom;Référent 2026-10-24 | CNRS LGIDF | Langues d’Afrique Activities;atteste_source_externe;Kit'e;"Kitte est attesté pour main. Le guide SIL signale des traditions de transcription et d'analyse composées; Kit'e peut couvrir main/bras dans le document source, distinction à maintenir."
 SNK-LEX-0757;noxo;ventre;nom;Référent 2026-10-24 | CNRS LGIDF | Langues d’Afrique Activities;atteste_source_externe;"gonme; gomme";"Ventre : forme attestée; ne pas confondre automatiquement avec estomac."
 SNK-LEX-0758;nuxullenme;intestins;nom;CNRS lexique des noms;source_externe_a_verifier;;
 SNK-LEX-0759;qanne;cou;nom;CNRS lexique des noms;source_externe_a_verifier;;
@@ -1437,7 +1437,7 @@ SNK-LEX-1408;fengeñe;hanche;partie_du_corps;Référent linguistique (validation
 SNK-LEX-1409;xuli;bras;membre_superieur;Référent 2026-10-24;fourni_par_referent_a_verifier;;"Forme ajoutée par le référent; vérification indépendante encore nécessaire."
 SNK-LEX-1410;kunke;épaule;membre_superieur;Référent 2026-10-24;fourni_par_referent_a_verifier;;"Forme ajoutée par le référent; vérification indépendante encore nécessaire."
 SNK-LEX-1411;segenantonbe;coude;membre_superieur;Référent 2026-10-24;fourni_par_referent_a_verifier;;"Forme ajoutée par le référent; vérification indépendante encore nécessaire."
-SNK-LEX-1412;kittinxanne;poignet;membre_superieur;Référent 2026-10-24;fourni_par_referent_a_verifier;;"Forme ajoutée par le référent; vérification indépendante encore nécessaire."
+SNK-LEX-1412;kittinxanne;poignet;membre_superieur;Référent 2026-10-24 | analyse morphologique du référent;atteste_selon_referent_a_verifier;Kit-qasse;"Poignet. Comparaison proposée : kittinxanne / kitun qanne, littéralement « cou de la main »; qasse rapproché de xanne/qanne « cou ». Analyse compositionnelle plausible, forme Kit-qasse à harmoniser avec le référent."
 SNK-LEX-1413;doronme;doigt;membre_superieur;Référent 2026-10-24;fourni_par_referent_a_verifier;;"Forme ajoutée par le référent; vérification indépendante encore nécessaire."
 SNK-LEX-1414;tanxare;jambe;membre_inferieur;Référent 2026-10-24;fourni_par_referent_a_verifier;;"Forme ajoutée par le référent; vérification indépendante encore nécessaire."
 SNK-LEX-1415;toge;cuisse;membre_inferieur;Référent 2026-10-24 | Langues d’Afrique Activities;atteste_source_externe;"togue; togota";Togue ou togota attesté pour cuisse.
@@ -1446,7 +1446,7 @@ SNK-LEX-1417;ɲollenme;mollet;membre_inferieur;Référent linguistique (validati
 SNK-LEX-1418;taxaane;cheville;membre_inferieur;Référent linguistique (validation utilisateur) 2026-10-24;valide_par_referent_linguistique;;Forme validée par le référent linguistique.
 SNK-LEX-1419;tandoronme;orteil;membre_inferieur;Référent 2026-10-24 | Langues d’Afrique Activities;atteste_selon_referent_a_concilier;"tandoromu; tandoronu";"La source pédagogique donne tandoromu pour orteils; graphie à harmoniser."
 SNK-LEX-1420;fate;corps;corps;Référent 2026-10-24;fourni_par_referent_a_verifier;;"Forme ajoutée par le référent; vérification indépendante encore nécessaire."
-SNK-LEX-1421;xotte;os;corps;Référent 2026-10-24 | Soninkara | CNRS LGIDF;atteste_source_externe;"qotte; qóttè";"Xotte attesté dans le glossaire; transcription CNRS qóttè."
+SNK-LEX-1421;xotte;os;corps;Référent 2026-10-24 | Soninkara | CNRS LGIDF;atteste_source_externe;"qotte; qóttè; Xill'e";"Xotte attesté dans le glossaire; transcription CNRS qóttè. Xill'e est une forme rapprochée du document, pas encore une variante phonologique confirmée."
 SNK-LEX-1422;fare;sang;corps;Référent 2026-10-24;fourni_par_referent_a_verifier;;"Le CNRS consulté donne hore pour sang; fare nécessite une vérification supplémentaire."
 SNK-LEX-1423;furutu;poumon;organe;Référent 2026-10-24 | Langues d’Afrique Activities;fourni_par_referent_a_verifier;yoohe;"La source pédagogique consultée donne yoohe pour poumon; furutu reste à vérifier."
 SNK-LEX-1424;gonme;estomac;organe;Référent 2026-10-24 | Langues d’Afrique Activities;atteste_selon_referent_a_concilier;"gomme; noxo";"La source pédagogique donne gomme ou noxo pour ventre; le sens précis « estomac » est à distinguer."
