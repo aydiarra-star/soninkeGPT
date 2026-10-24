@@ -308,7 +308,7 @@ SNK-LEX-0273;coolo;"errer, vagabonder ; vagabond, personne qui ne fait rien, au 
 SNK-LEX-0274;baaraago;course de chevaux;nom;"Dictionnaire soninké.docx; paragraphes source : 51; variantes : barabo; 1 segments conservés dans la fiche de validation du lot 2";valide_par_referent;barabo;"baaraago Variant: barabo. Nom . horse games or races; course de chevaux. Note: PJ synonyme: siinsange."
 SNK-LEX-0275;yime;tête;partie_du_corps;Référent 2026-10-24 | CNRS LGIDF | Langues d’Afrique Activities;atteste_source_externe;"yinme; yinkolla";"Tête attestée; variantes conservées."
 SNK-LEX-0276;yinte;cheveux;partie_du_corps;Référent 2026-10-24 | CNRS LGIDF | Langues d’Afrique Activities;atteste_source_externe;yintu;"Cheveu/poil; yintu rapporté pour cheveux."
-SNK-LEX-0277;Giya;visage;partie_du_corps;Référent 2026-10-24;sous_reserve_a_verifier;yeeso;Sous réserve : attestation indépendante non retrouvée.
+SNK-LEX-0277;Giya;visage;partie_du_corps;Référent linguistique (validation utilisateur) 2026-10-24;valide_par_referent_linguistique; yesso;Forme validée par le référent linguistique : Giya = yesso (visage).
 SNK-LEX-0278;Teingé;front;partie_du_corps;Référent 2026-10-24 | Langues d’Afrique Activities;atteste_source_externe;"teŋe; Tenŋe";"La source donne Tenŋe; graphie à harmoniser."
 SNK-LEX-0279;Yaxe;œil;partie_du_corps;Référent 2026-10-24 | CNRS LGIDF | Soninkara;atteste_source_externe;yaaxe;Forme attestée.
 SNK-LEX-0280;Yaxou;yeux;partie_du_corps;Référent 2026-10-24 | Langues d’Afrique Activities;atteste_source_externe;"yaaxo; yaaxu; yaago";Formes plurielles documentées.
@@ -322,10 +322,10 @@ SNK-LEX-0287;Nene;langue (organe);partie_du_corps;Référent 2026-10-24 | CNRS L
 SNK-LEX-0288;torro;oreille;partie_du_corps;Référent 2026-10-24 | CNRS LGIDF | Langues d’Afrique Activities;atteste_source_externe;"toro; taro";"Taro attesté; torro fourni par le référent."
 SNK-LEX-0289;xoume;joue;partie_du_corps;Référent 2026-10-24 | Langues d’Afrique Activities;atteste_source_externe;xume;Forme attestée.
 SNK-LEX-0290;xané;ancienne proposition pour « menton » — à réexaminer;partie_du_corps;Référent 2026-10-24;forme_non_attestee_a_reexaminer;;"Ancienne attribution conservée pour traçabilité; la liste corrigée attribue sinke à menton."
-SNK-LEX-0291;yesso;"visage (variante proposée; graphie à harmoniser)";partie_du_corps;Référent 2026-10-24;sous_reserve_a_verifier;"Giya; yeeso";"L'ancien audio reste associé à la forme yesso; ne pas réétiqueter son fichier comme yeeso sans contrôle linguistique."
+SNK-LEX-0291;yesso;visage;partie_du_corps;Référent linguistique (validation utilisateur) 2026-10-24;valide_par_referent_linguistique;Giya;"Forme yesso validée par le référent linguistique comme équivalente à Giya. L'audio existant reste associé à la forme yesso."
 SNK-LEX-0292;sinke;menton;partie_du_corps;Référent 2026-10-24;atteste_selon_referent_a_verifier;sinqe;"Sens corrigé selon la liste du référent; source indépendante à confirmer."
 SNK-LEX-0293;xanné;cou;partie_du_corps;Référent 2026-10-24 | Langues d’Afrique Activities;atteste_source_externe;xanne;Correction : xanné/xanne pour cou, non gorge.
-SNK-LEX-0294;xorré;gorge;partie_du_corps;Référent 2026-10-24;sous_reserve_a_verifier;xore;Sous réserve : attestation indépendante non retrouvée.
+SNK-LEX-0294;xorré;gorge;partie_du_corps;Référent linguistique (validation utilisateur) 2026-10-24;valide_par_referent_linguistique;xore;Forme validée par le référent linguistique.
 SNK-LEX-0295;nawari;merci;interjection;validation_referent_utilisateur;fourni_par_referent;nawaari;
 SNK-LEX-0296;baabondi;mousser (faire);verbe;Dictionnaire soninké.docx;candidat_dictionnaire_a_verifier;;"baabondi summary-definition: foam; mousser (faire). See main entry: baabo1, -ndi3. Verbe transitif. foam, make foamy; faire mousser. Alu da hatayen baabondi. Alou foamed the tea. Alou a fait moussé le thé. Gram: 6 Note: D2"
 SNK-LEX-0297;baabu;secourir avec de l'argent;verbe;Dictionnaire soninké.docx;candidat_dictionnaire_a_verifier;;"baabu Verbe transitif. aid by means of money; secourir avec de l'argent. Tanpille baabu in ŋa. N baabu tanpille yi. Help me with 100 francs CFA. Prête-moi 100 francs CFA. Tanpille baabe. 100 francs CFA were loaned. 100 francs CFA ont été prêté.Gram: Le 'patient' et le 'bénéficiaire', tous les deux peuvent fonctionner comme objet direct et circonstant. Néanmoins, seul le syntagme nominal du 'patient' peut être le sujet de la forme passive du verbe.; The patient and beneficiary can equally bear the direct object and oblique grammatical relation. However, only the noun phrase functioning as the patient can be the suject of the passive form of the verb. Gram: 3 Note: D2"
@@ -1433,7 +1433,7 @@ SNK-LEX-1404;guidjimé;poitrine / torse;partie_du_corps;Référent 2026-10-24 | 
 SNK-LEX-1405;boutte;foie;organe;Référent 2026-10-24 | CNRS LGIDF | Langues d’Afrique Activities;corrige_atteste_source_externe;butte;"Forme corrigée selon la liste du référent; la source CNRS note butte/butte proche, variante conservée."
 SNK-LEX-1406;xodo;dos;partie_du_corps;Référent 2026-10-24 | CNRS LGIDF;atteste_selon_referent_a_verifier;qóodò;"Le CNRS donne qóodò pour dos; correspondance orthographique avec xodo à confirmer."
 SNK-LEX-1407;thinkambé;fesses;partie_du_corps;Référent 2026-10-24 | Langues d’Afrique Activities;atteste_source_externe;tinkanbe;Tinkanbe attesté pour fesses.
-SNK-LEX-1408;fengeñe;hanche;partie_du_corps;Référent 2026-10-24;sous_reserve_a_verifier;;"Forme fournie par le référent; attestation indépendante non retrouvée pendant ce contrôle."
+SNK-LEX-1408;fengeñe;hanche;partie_du_corps;Référent linguistique (validation utilisateur) 2026-10-24;valide_par_referent_linguistique;;Forme validée par le référent linguistique.
 SNK-LEX-1409;xuli;bras;membre_superieur;Référent 2026-10-24;fourni_par_referent_a_verifier;;"Forme ajoutée par le référent; vérification indépendante encore nécessaire."
 SNK-LEX-1410;kunke;épaule;membre_superieur;Référent 2026-10-24;fourni_par_referent_a_verifier;;"Forme ajoutée par le référent; vérification indépendante encore nécessaire."
 SNK-LEX-1411;segenantonbe;coude;membre_superieur;Référent 2026-10-24;fourni_par_referent_a_verifier;;"Forme ajoutée par le référent; vérification indépendante encore nécessaire."
@@ -1442,12 +1442,12 @@ SNK-LEX-1413;doronme;doigt;membre_superieur;Référent 2026-10-24;fourni_par_ref
 SNK-LEX-1414;tanxare;jambe;membre_inferieur;Référent 2026-10-24;fourni_par_referent_a_verifier;;"Forme ajoutée par le référent; vérification indépendante encore nécessaire."
 SNK-LEX-1415;toge;cuisse;membre_inferieur;Référent 2026-10-24 | Langues d’Afrique Activities;atteste_source_externe;"togue; togota";Togue ou togota attesté pour cuisse.
 SNK-LEX-1416;xurungo;genou;membre_inferieur;Référent 2026-10-24 | Langues d’Afrique Activities | Soninkara;atteste_source_externe;;Xurungo attesté pour genou.
-SNK-LEX-1417;ɲollenme;mollet;membre_inferieur;Référent 2026-10-24;sous_reserve_a_verifier;;"Forme fournie par le référent; attestation indépendante non retrouvée pendant ce contrôle."
-SNK-LEX-1418;taxaane;cheville;membre_inferieur;Référent 2026-10-24;sous_reserve_a_verifier;;"Forme fournie par le référent; attestation indépendante non retrouvée pendant ce contrôle."
+SNK-LEX-1417;ɲollenme;mollet;membre_inferieur;Référent linguistique (validation utilisateur) 2026-10-24;valide_par_referent_linguistique;;Forme validée par le référent linguistique.
+SNK-LEX-1418;taxaane;cheville;membre_inferieur;Référent linguistique (validation utilisateur) 2026-10-24;valide_par_referent_linguistique;;Forme validée par le référent linguistique.
 SNK-LEX-1419;tandoronme;orteil;membre_inferieur;Référent 2026-10-24 | Langues d’Afrique Activities;atteste_selon_referent_a_concilier;"tandoromu; tandoronu";"La source pédagogique donne tandoromu pour orteils; graphie à harmoniser."
 SNK-LEX-1420;fate;corps;corps;Référent 2026-10-24;fourni_par_referent_a_verifier;;"Forme ajoutée par le référent; vérification indépendante encore nécessaire."
 SNK-LEX-1421;xotte;os;corps;Référent 2026-10-24 | Soninkara | CNRS LGIDF;atteste_source_externe;"qotte; qóttè";"Xotte attesté dans le glossaire; transcription CNRS qóttè."
 SNK-LEX-1422;fare;sang;corps;Référent 2026-10-24;fourni_par_referent_a_verifier;;"Le CNRS consulté donne hore pour sang; fare nécessite une vérification supplémentaire."
 SNK-LEX-1423;furutu;poumon;organe;Référent 2026-10-24 | Langues d’Afrique Activities;fourni_par_referent_a_verifier;yoohe;"La source pédagogique consultée donne yoohe pour poumon; furutu reste à vérifier."
 SNK-LEX-1424;gonme;estomac;organe;Référent 2026-10-24 | Langues d’Afrique Activities;atteste_selon_referent_a_concilier;"gomme; noxo";"La source pédagogique donne gomme ou noxo pour ventre; le sens précis « estomac » est à distinguer."
-SNK-LEX-1425;faradinlenme;rein;organe;Référent 2026-10-24;sous_reserve_a_verifier;;"Forme fournie par le référent; attestation indépendante non retrouvée pendant ce contrôle."
+SNK-LEX-1425;faradinlenme;rein;organe;Référent linguistique (validation utilisateur) 2026-10-24;valide_par_referent_linguistique;;Forme validée par le référent linguistique.
