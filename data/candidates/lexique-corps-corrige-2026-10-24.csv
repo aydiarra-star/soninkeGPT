@@ -1,0 +1,47 @@
+candidate_id,rang,section,francais,soninke,variantes_attestees,forme_document,origine,statut_verification,sources,note
+CORPS-20261024-001,1,1. La tête et le visage,tête,yime,yinme ; yinkolla ; yínmè,yime,document_confirme,atteste,"S2,S3,S4,S6",
+CORPS-20261024-002,2,1. La tête et le visage,cheveux,yinte,yìntè,yinte,document_confirme,atteste,"S1,S2,S3,S4","Le dictionnaire ODA élargit à « poil, plume »."
+CORPS-20261024-003,3,1. La tête et le visage,visage,Giya,yeeso,Giya,document_confirme,sous_reserve,S5,"Une seule source. `yesso`, classé « menton » par le document, est une variante de yeeso."
+CORPS-20261024-004,4,1. La tête et le visage,front,Teingé,teŋe ; tenŋe ; taηe,Teingé,document_confirme,atteste,"S1,S2,S5,S6,S8","`Taŋe`, classé « jambe » par le document, est la même forme-source."
+CORPS-20261024-005,5,1. La tête et le visage,œil,Yaxe,yaaxe ; yáaxè,Yaxe,document_confirme,atteste,"S1,S2,S3,S5,S6,S8",
+CORPS-20261024-006,6,1. La tête et le visage,yeux,Yaxou,yaaxo ; yaaxu ; yaago,Yaxou,document_confirme,atteste,"S1,S2",Pluriel de yaaxe.
+CORPS-20261024-007,7,1. La tête et le visage,nez,Nuxune,nuxunne ; núxúnnè,Nuxune,document_confirme,atteste,"S1,S2,S3,S5,S6,S8",
+CORPS-20261024-008,8,1. La tête et le visage,bouche,rakke,raqe ; laqe ; laxxe ; láqqè,rakke,document_confirme,atteste,"S1,S2,S3,S5,S6,S8",Alternance dialectale r / l.
+CORPS-20261024-009,9,1. La tête et le visage,lèvre,some,soome ; soomu ; soomon-fate,some,document_confirme,atteste,"S2,S5,S6",`gnougnou` est écarté : non attesté.
+CORPS-20261024-010,10,1. La tête et le visage,dent,kambe,kanbe ; kànbê,kambe,document_confirme,atteste,"S1,S2,S3,S5",
+CORPS-20261024-011,11,1. La tête et le visage,dents (pluriel),kambou,kanbo ; kanbu,kambou,document_confirme,atteste,"S1,S2",
+CORPS-20261024-012,12,1. La tête et le visage,langue,Nene,neene ; néenè,Nene,document_confirme,atteste,"S1,S2,S3,S5",
+CORPS-20261024-013,13,1. La tête et le visage,oreille,torro,toro ; taro ; tárò,torro,document_confirme,atteste,"S1,S3,S5,S6,S8",Variantes toro / taro selon les parlers.
+CORPS-20261024-014,14,1. La tête et le visage,joue,xoume,xume ; qume,xoume,document_confirme,atteste,"S1,S2,S5,S6",
+CORPS-20261024-015,15,1. La tête et le visage,menton,sinke,sinqe ; sinqinxotte ; sinxe,sinke,document_confirme,atteste,"S1,S5,S6,S8","Corrige la base interne du projet, qui rattachait sinke au cou."
+CORPS-20261024-016,16,1. La tête et le visage,cou,xanné,xanne ; qanne ; qánnè,xanné,document_confirme,atteste,"S1,S2,S3,S4,S5,S6,S8","Corrige la base interne du projet, qui rattachait xanné à la gorge."
+CORPS-20261024-017,17,1. La tête et le visage,gorge,xorré,xore,xorré,document_confirme,sous_reserve,S5,Une seule source.
+CORPS-20261024-018,18,2. Le tronc et les organes,poitrine / torse,guidjimé,gijinme ; giginme ; gijimen ; gíjínmè,guidjimé,document_confirme,atteste,"S2,S3,S5,S6,S8",
+CORPS-20261024-019,19,2. Le tronc et les organes,foie,boutte,butte ; búttè,boutte,document_corrige,atteste,"S1,S2,S3,S4,S9,S10","Le document disait « cœur ». Sens dérivés attestés : courage, colère."
+CORPS-20261024-020,20,2. Le tronc et les organes,cœur,sondonme,sondome ; sòndònmê,,ajout_source,atteste,"S1,S2,S3",Notion absente du document : `boutte` y était donné à tort pour le cœur.
+CORPS-20261024-021,21,2. Le tronc et les organes,ventre,noxo,noqo ; nòxô,noxo,document_confirme,atteste,"S1,S2,S3,S5,S8",
+CORPS-20261024-022,22,2. Le tronc et les organes,dos,xodo,xoodo ; qóodò,,ajout_source,atteste,"S3,S5,S7","Remplace `mpallé`, qui signifie « puis, ensuite »."
+CORPS-20261024-023,23,2. Le tronc et les organes,fesses,thinkambé,tinkanbe ; fallankanbe,thinkambé,document_confirme,atteste,"S1,S2,S5",
+CORPS-20261024-024,24,2. Le tronc et les organes,hanche,fengeñe,,,ajout_source,sous_reserve,S5,"Remplace `siga`, non attesté dans ce sens. Une seule source."
+CORPS-20261024-025,25,3. Les membres supérieurs,main,Kitte,kitte ; kíttè ; kitu,Kitte,document_confirme,atteste,"S1,S2,S3,S5,S7,S8","Le guide SIL glose kitte comme « la main, le bras »."
+CORPS-20261024-026,26,3. Les membres supérieurs,bras,xuli,kafe ; quli,Kit'e,ajout_source,atteste,"S4,S6,S10","Le document donnait `Kit'e`, variante graphique probable de kitte. ODA glose xuli « avant-bras », le glossaire Soninkara « bras »."
+CORPS-20261024-027,27,3. Les membres supérieurs,épaule,kunke,kunku,Qanfe / Kanfe,ajout_source,atteste,"S1,S4,S8,S10","Remplace Qanfe / Kanfe, qui correspondent à kánpè = aile."
+CORPS-20261024-028,28,3. Les membres supérieurs,coude,segenantonbe,segeñ tonbe ; saganan tombe,Qunyu-bunyi / Kunyu-bunyi,ajout_source,atteste,"S4,S5,S6,S8",Remplace deux formes non attestées.
+CORPS-20261024-029,29,3. Les membres supérieurs,poignet,kittinxanne,kitun qanne,Kit-qasse,ajout_source,atteste,"S5,S6",Littéralement « le cou de la main ». `Kit-qasse` suit la même composition.
+CORPS-20261024-030,30,3. Les membres supérieurs,doigt,doronme,kittindoromu ; doronmu,Kit-soro,ajout_source,atteste,"S1,S2,S5,S8",`Kit-soro` se lit comme « doigt de la main » ; graphie à confirmer.
+CORPS-20261024-031,31,3. Les membres supérieurs,ongle,segeñe,segeɲe ; segene ; ségeñè,Tegi-soro / Tegi-suuru,ajout_source,atteste,"S1,S3,S5",Remplace deux formes non attestées.
+CORPS-20261024-032,32,4. Les membres inférieurs,jambe,tanxare,tansolle ; karankare ; tâ,Taŋe,ajout_source,atteste,"S3,S5,S8","`Taŋe` est réattribué au front, où les sources le placent."
+CORPS-20261024-033,33,4. Les membres inférieurs,pied,ta,taanu (pluriel),Tange,ajout_source,atteste,"S1,S3,S5,S8",`Tange` reste une graphie à confirmer avec le référent.
+CORPS-20261024-034,34,4. Les membres inférieurs,cuisse,toge,togue ; togota,Cuute / Tchuute,ajout_source,atteste,"S1,S2,S4,S5,S10",Remplace deux formes non attestées.
+CORPS-20261024-035,35,4. Les membres inférieurs,genou,xurungo,xurngo ; qúrúngò,Kuntu-bunyi / Kuru,ajout_source,atteste,"S1,S2,S3,S5,S8",`Kuru` peut en être une réduction ; à confirmer.
+CORPS-20261024-036,36,4. Les membres inférieurs,mollet,ɲollenme,,Tange-golle,ajout_source,sous_reserve,S4,Une seule source. Remplace une forme non attestée.
+CORPS-20261024-037,37,4. Les membres inférieurs,cheville,taxaane,sellinñelle,Tange-muru,ajout_source,sous_reserve,"S5,S8","Deux sources, deux formes différentes. Remplace une forme non attestée."
+CORPS-20261024-038,38,4. Les membres inférieurs,orteil,tandoronme,tandoore ; tandoromu,Tange-soro,ajout_source,atteste,"S1,S2,S5,S8",`Tange-soro` se lit comme « doigt de pied » ; graphie à confirmer.
+CORPS-20261024-039,39,"5. Os, muscles et éléments internes",corps,fate,,Biy'e / Biye,ajout_source,atteste,"S1,S5,S6",Remplace deux formes non attestées dans ce sens. Homonyme de « peau ».
+CORPS-20261024-040,40,"5. Os, muscles et éléments internes",peau,fate / hate,hàtê,Guru / Kuuru,ajout_source,atteste,"S1,S3,S5",Remplace deux formes non attestées dans ce sens. Homonyme de « corps ».
+CORPS-20261024-041,41,"5. Os, muscles et éléments internes",os,xotte,qóttè,Xill'e / Kille,ajout_source,atteste,"S3,S4,S5",`Kille` est la route. `Xill'e` reste une graphie à confirmer pour xotte.
+CORPS-20261024-042,42,"5. Os, muscles et éléments internes",sang,fare,fore ; hòrê,Yig'e / Yige,ajout_source,atteste,"S1,S3,S5",Remplace deux formes non attestées dans ce sens (yige = manger).
+CORPS-20261024-043,43,"5. Os, muscles et éléments internes",chair / muscle / viande,Tiye,tíyè,Tiy'e / Tiye,document_confirme,atteste,"S1,S3,S4,S5,S10",Le document écrit « Chaire » ; la forme française est « chair ».
+CORPS-20261024-044,44,"5. Os, muscles et éléments internes",poumon,furutu,fruutu ; yoohe,,ajout_source,atteste,"S1,S2,S5",
+CORPS-20261024-045,45,"5. Os, muscles et éléments internes",estomac,gonme,kuuse,,ajout_source,atteste,"S1,S5",
+CORPS-20261024-046,46,"5. Os, muscles et éléments internes",rein,faradinlenme,faradillenme ; mollo,,ajout_source,sous_reserve,"S1,S5",Une source donne aussi `faradillenme` pour le rein et `mollo` pour un sens voisin.
