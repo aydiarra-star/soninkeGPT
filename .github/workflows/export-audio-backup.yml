@@ -1,0 +1,51 @@
+name: Export Soninke audio backup
+on:
+  push:
+    paths:
+      - ".github/workflows/export-audio-backup.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: write
+jobs:
+  package-audio:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+      - name: Package tracked audio files and reference manifests
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p backup/soninkegpt-audio-backup/audio
+          git ls-files -z 'audio/**/*.wav' 'audio/*.wav' | while IFS= read -r -d '' f; do
+            mkdir -p "backup/soninkegpt-audio-backup/$(dirname "$f")"
+            cp "$f" "backup/soninkegpt-audio-backup/$f"
+          done
+          mkdir -p backup/soninkegpt-audio-backup/data/source backup/soninkegpt-audio-backup/reports
+          cp data/source/manifest-577-review.csv backup/soninkegpt-audio-backup/data/source/ 2>/dev/null || true
+          cp reports/audio-transfer-audit.csv backup/soninkegpt-audio-backup/reports/ 2>/dev/null || true
+          {
+            echo "SoninkeGPT audio backup"
+            echo "Generated from repository branch main."
+            echo "Includes all WAV files tracked under audio/ at the time of this workflow run."
+            echo "The reference manifest and audio transfer audit are included when present."
+            echo
+            printf 'WAV file count: '
+            find backup/soninkegpt-audio-backup/audio -type f -name '*.wav' | wc -l
+            printf 'Uncompressed bytes: '
+            find backup/soninkegpt-audio-backup/audio -type f -name '*.wav' -printf '%s\n' | awk '{s+=$1} END {print s+0}'
+          } > backup/soninkegpt-audio-backup/README-backup.txt
+          cd backup
+          zip -qr soninkegpt-audios-backup.zip soninkegpt-audio-backup
+          unzip -t soninkegpt-audios-backup.zip
+          ls -lh soninkegpt-audios-backup.zip
+      - name: Upload ZIP artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: soninkegpt-audios-backup
+          path: backup/soninkegpt-audios-backup.zip
+          if-no-files-found: error
+          retention-days: 90
