@@ -1981,13 +1981,13 @@ function composeLexicalPhraseFallback(sourceText) {
   const mapped = [];
   const seen = new Set();
   for (const token of tokens) {
-    if (ignored.has(token)) continue;
     const pronoun = SONINKE_PRONOUNS.find((p) => p.fr.includes(token));
     if (pronoun) {
       const key = "pronoun:" + pronoun.person;
       if (!seen.has(key)) { mapped.push({ snk: pronoun.short, fr: token, role: "subject", token }); seen.add(key); }
       continue;
     }
+    if (ignored.has(token)) continue;
     const lk = lookupTerm(token);
     const pool = [...(lk.exact || []), ...(lk.starts || [])].filter((e) => e && !isExcludedForm(e.soninke));
     const entry = pool.sort((a,b) => scoreCorpusEntry(b, token)-scoreCorpusEntry(a, token))[0];
