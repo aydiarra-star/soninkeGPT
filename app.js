@@ -2006,7 +2006,7 @@ function composeLexicalPhraseFallback(sourceText) {
   const nouns = mapped.filter((x) => x.role === "noun");
   const verbs = mapped.filter((x) => x.role === "verb");
   const complements = mapped.filter((x) => x.role === "complement" || x.role === "other");
-  const ordered = verbs.length ? [...subject, ...nouns, ...complements, ...verbs] : mapped;
+  const ordered = verbs.length ? [...subject, ...nouns, ...verbs, ...complements] : mapped;
   const sentence = capitalizeFirst(ordered.map((x) => x.snk).filter(Boolean).join(" ").replace(/\s+/g, " "));
   if (!sentence) return null;
   const mappedFrench = mapped.map((x) => x.token);
@@ -2093,9 +2093,9 @@ function grammarAnswer(sourceText) {
   }
 
   const audioNote = sentencePresenceNote(composed.sentence);
-  let out = `**Phrase soninké construite selon les règles du corpus**\n`;
+  let out = `**Phrase soninké composée à partir du lexique**\n`;
   out += soninkeBlock(composed.sentence, parsed.original, "phrase");
-  out += `*Structure : ${composed.structure}.*\n\n`;
+  out += `*Structure : ${composed.structure}. Phrase complète non attestée : composition automatique à confirmer par le référent.*\n\n`;
   if (audioNote) out += `*${audioNote}*\n\n`;
   if (composed.notes && composed.notes.length) {
     out += `**Pour une phrase 100 % complète**\n`;
