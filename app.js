@@ -2281,10 +2281,10 @@ function generateResponse(message) {
   }
 
   // 1.1 Salutation adressée à maman : respecter la traduction exacte validée par le référent.
-  if (/^(bonjour|salut|coucou)\\s+(maman|mère|ma mère)[!.?\\s]*$/i.test(trimmed)) {
-    return `SoninkeGPT vous salue en soninké.\\n` +
+  if (/^(bonjour|salut|coucou)\s+(maman|mère|ma mère)[!.?\s]*$/i.test(trimmed)) {
+    return `SoninkeGPT vous salue en soninké.\n` +
       soninkeBlock("an wouydiom ma", "Bonjour maman.", "expression") +
-      `Cette formule est distincte de la salutation respectueuse au pluriel.\\n\\n` +
+      `Cette formule est distincte de la salutation respectueuse au pluriel.\n\n` +
       levelNote();
   }
 
