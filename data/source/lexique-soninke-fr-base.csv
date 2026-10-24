@@ -314,7 +314,7 @@ SNK-LEX-0279;Yaxe;œil;partie_du_corps;Référent 2026-10-24 | CNRS LGIDF | Soni
 SNK-LEX-0280;Yaxou;yeux;partie_du_corps;Référent 2026-10-24 | Langues d’Afrique Activities;atteste_source_externe;"yaaxo; yaaxu; yaago";Formes plurielles documentées.
 SNK-LEX-0281;Nuxune;nez;partie_du_corps;Référent 2026-10-24 | CNRS LGIDF | Langues d’Afrique Activities;atteste_source_externe;nuxunne;Forme attestée.
 SNK-LEX-0282;rakke;bouche;partie_du_corps;Référent 2026-10-24 | Langues d’Afrique Activities;atteste_selon_referent_a_concilier;"raqe; laqe; laxxe";"La source donne laxxe; graphies à harmoniser."
-SNK-LEX-0283;gnougnou;gueule / museau (d'un animal);partie_du_corps;Glossaire soninké-français signalé par le référent, 2026-10-24;atteste_source_a_verifier;"ɲuɲu";"Nouvelle piste : gnougnou serait une graphie francisée de ɲuɲu « gueule, museau (animal) ». Ne pas traduire par « lèvre »; pour lèvre, comparer soome / soomon-fate. Source exacte et variété à vérifier."
+SNK-LEX-0283;gnougnou;lèvre;partie_du_corps;Référent linguistique (validation utilisateur) 2026-10-24;valide_par_referent_linguistique;some;"Sens « lèvre » confirmé explicitement par le référent linguistique le 2026-10-24. La piste externe ɲuɲu « gueule/museau » reste distincte et non confirmée pour cette entrée; ne pas fusionner sans preuve."
 SNK-LEX-0284;some;lèvre;partie_du_corps;Référent 2026-10-24 | Langues d’Afrique Activities;atteste_source_externe;soome;Forme attestée.
 SNK-LEX-0285;kambe;dent;partie_du_corps;Référent 2026-10-24 | CNRS LGIDF | Langues d’Afrique Activities;atteste_source_externe;kanbe;Forme attestée.
 SNK-LEX-0286;kambou;dents;partie_du_corps;Référent 2026-10-24 | Langues d’Afrique Activities;atteste_source_externe;kanbu;Pluriel documenté sous kanbu.
