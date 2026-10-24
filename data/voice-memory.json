@@ -6588,6 +6588,806 @@
       "validation_date": "2026-10-23",
       "validated_by": "référent linguistique — forme examinée, traduction non établie",
       "translation_text_missing": true
+    },
+    {
+      "text": "biyaade",
+      "url": "audio/lots/lot-100-2026-10-24/001_biyaade.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "biyaame",
+      "url": "audio/lots/lot-100-2026-10-24/002_biyaame.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "biye",
+      "url": "audio/lots/lot-100-2026-10-24/003_biye.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "biyinde",
+      "url": "audio/lots/lot-100-2026-10-24/004_biyinde.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bo",
+      "url": "audio/lots/lot-100-2026-10-24/005_bo.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bocite",
+      "url": "audio/lots/lot-100-2026-10-24/006_bocite.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "boco",
+      "url": "audio/lots/lot-100-2026-10-24/007_boco.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "a_traduire"
+    },
+    {
+      "text": "bogu",
+      "url": "audio/lots/lot-100-2026-10-24/008_bogu.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bogunte",
+      "url": "audio/lots/lot-100-2026-10-24/009_bogunte.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bogura",
+      "url": "audio/lots/lot-100-2026-10-24/010_bogura.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bojon",
+      "url": "audio/lots/lot-100-2026-10-24/011_bojon.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "a_traduire"
+    },
+    {
+      "text": "bojoone",
+      "url": "audio/lots/lot-100-2026-10-24/012_bojoone.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "boli",
+      "url": "audio/lots/lot-100-2026-10-24/013_boli.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bolinba",
+      "url": "audio/lots/lot-100-2026-10-24/014_bolinba.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bolla",
+      "url": "audio/lots/lot-100-2026-10-24/015_bolla.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bollaane",
+      "url": "audio/lots/lot-100-2026-10-24/016_bollaane.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bolle",
+      "url": "audio/lots/lot-100-2026-10-24/017_bolle.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bolli",
+      "url": "audio/lots/lot-100-2026-10-24/018_bolli.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bologaaɲe",
+      "url": "audio/lots/lot-100-2026-10-24/019_bologaaɲe.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bologaaɲi",
+      "url": "audio/lots/lot-100-2026-10-24/020_bologaaɲi.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "candidat_dictionnaire_a_verifier"
+    },
+    {
+      "text": "bolontonŋe",
+      "url": "audio/lots/lot-100-2026-10-24/021_bolontonŋe.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "candidat_dictionnaire_a_verifier"
+    },
+    {
+      "text": "bolonŋe",
+      "url": "audio/lots/lot-100-2026-10-24/022_bolonŋe.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "boloone",
+      "url": "audio/lots/lot-100-2026-10-24/023_boloone.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bolumanga",
+      "url": "audio/lots/lot-100-2026-10-24/024_bolumanga.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bomu",
+      "url": "audio/lots/lot-100-2026-10-24/025_bomu.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bon",
+      "url": "audio/lots/lot-100-2026-10-24/026_bon.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bonaana",
+      "url": "audio/lots/lot-100-2026-10-24/027_bonaana.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bone",
+      "url": "audio/lots/lot-100-2026-10-24/028_bone.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "Bonmu",
+      "url": "audio/lots/lot-100-2026-10-24/029_Bonmu.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bonne",
+      "url": "audio/lots/lot-100-2026-10-24/030_bonne.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bonno",
+      "url": "audio/lots/lot-100-2026-10-24/031_bonno.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "candidat_dictionnaire_a_verifier"
+    },
+    {
+      "text": "bono",
+      "url": "audio/lots/lot-100-2026-10-24/032_bono.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bonondi",
+      "url": "audio/lots/lot-100-2026-10-24/033_bonondi.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bonondinde",
+      "url": "audio/lots/lot-100-2026-10-24/034_bonondinde.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bononte",
+      "url": "audio/lots/lot-100-2026-10-24/035_bononte.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bonoye",
+      "url": "audio/lots/lot-100-2026-10-24/036_bonoye.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bonsonŋe",
+      "url": "audio/lots/lot-100-2026-10-24/037_bonsonŋe.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bonta",
+      "url": "audio/lots/lot-100-2026-10-24/038_bonta.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "a_traduire"
+    },
+    {
+      "text": "bontaana",
+      "url": "audio/lots/lot-100-2026-10-24/039_bontaana.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bontande",
+      "url": "audio/lots/lot-100-2026-10-24/040_bontande.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bontoone",
+      "url": "audio/lots/lot-100-2026-10-24/041_bontoone.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "boobo",
+      "url": "audio/lots/lot-100-2026-10-24/042_boobo.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "boode",
+      "url": "audio/lots/lot-100-2026-10-24/043_boode.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bookine",
+      "url": "audio/lots/lot-100-2026-10-24/044_bookine.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "booli",
+      "url": "audio/lots/lot-100-2026-10-24/045_booli.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "boolu",
+      "url": "audio/lots/lot-100-2026-10-24/046_boolu.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "boona",
+      "url": "audio/lots/lot-100-2026-10-24/047_boona.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "boora",
+      "url": "audio/lots/lot-100-2026-10-24/048_boora.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "boore",
+      "url": "audio/lots/lot-100-2026-10-24/049_boore.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "boori",
+      "url": "audio/lots/lot-100-2026-10-24/050_boori.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "booru",
+      "url": "audio/lots/lot-100-2026-10-24/051_booru.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "boosi",
+      "url": "audio/lots/lot-100-2026-10-24/052_boosi.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "booto",
+      "url": "audio/lots/lot-100-2026-10-24/053_booto.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "booxe",
+      "url": "audio/lots/lot-100-2026-10-24/054_booxe.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "booxo",
+      "url": "audio/lots/lot-100-2026-10-24/055_booxo.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "booxondiraqe",
+      "url": "audio/lots/lot-100-2026-10-24/056_booxondiraqe.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bora",
+      "url": "audio/lots/lot-100-2026-10-24/057_bora.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "borinŋe",
+      "url": "audio/lots/lot-100-2026-10-24/058_borinŋe.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "a_traduire"
+    },
+    {
+      "text": "boro",
+      "url": "audio/lots/lot-100-2026-10-24/059_boro.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "boroge",
+      "url": "audio/lots/lot-100-2026-10-24/060_boroge.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "a_traduire"
+    },
+    {
+      "text": "borokaaxu",
+      "url": "audio/lots/lot-100-2026-10-24/061_borokaaxu.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "boroke",
+      "url": "audio/lots/lot-100-2026-10-24/062_boroke.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "boroko",
+      "url": "audio/lots/lot-100-2026-10-24/063_boroko.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "borondonyelinŋe",
+      "url": "audio/lots/lot-100-2026-10-24/064_borondonyelinŋe.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "boronsi",
+      "url": "audio/lots/lot-100-2026-10-24/065_boronsi.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "boronŋe",
+      "url": "audio/lots/lot-100-2026-10-24/066_boronŋe.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "candidat_dictionnaire_a_verifier"
+    },
+    {
+      "text": "boroto",
+      "url": "audio/lots/lot-100-2026-10-24/067_boroto.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "a_traduire"
+    },
+    {
+      "text": "borotoye",
+      "url": "audio/lots/lot-100-2026-10-24/068_borotoye.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "boroxonjile",
+      "url": "audio/lots/lot-100-2026-10-24/069_boroxonjile.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "boroxonjilinka",
+      "url": "audio/lots/lot-100-2026-10-24/070_boroxonjilinka.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bosi",
+      "url": "audio/lots/lot-100-2026-10-24/071_bosi.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "boso",
+      "url": "audio/lots/lot-100-2026-10-24/072_boso.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bote",
+      "url": "audio/lots/lot-100-2026-10-24/073_bote.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "boto",
+      "url": "audio/lots/lot-100-2026-10-24/074_boto.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "botoburu",
+      "url": "audio/lots/lot-100-2026-10-24/075_botoburu.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "botonte",
+      "url": "audio/lots/lot-100-2026-10-24/076_botonte.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "botoxa",
+      "url": "audio/lots/lot-100-2026-10-24/077_botoxa.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "botu",
+      "url": "audio/lots/lot-100-2026-10-24/078_botu.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "boxomansa",
+      "url": "audio/lots/lot-100-2026-10-24/079_boxomansa.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "boxome",
+      "url": "audio/lots/lot-100-2026-10-24/080_boxome.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "boxoti",
+      "url": "audio/lots/lot-100-2026-10-24/081_boxoti.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "boxotindaana",
+      "url": "audio/lots/lot-100-2026-10-24/082_boxotindaana.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "boxotinde",
+      "url": "audio/lots/lot-100-2026-10-24/083_boxotinde.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "boxotiye",
+      "url": "audio/lots/lot-100-2026-10-24/084_boxotiye.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "boyaade",
+      "url": "audio/lots/lot-100-2026-10-24/085_boyaade.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "boyi",
+      "url": "audio/lots/lot-100-2026-10-24/086_boyi.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "boyinaare",
+      "url": "audio/lots/lot-100-2026-10-24/087_boyinaare.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "boyinde",
+      "url": "audio/lots/lot-100-2026-10-24/088_boyinde.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "boyiye",
+      "url": "audio/lots/lot-100-2026-10-24/089_boyiye.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bubba",
+      "url": "audio/lots/lot-100-2026-10-24/090_bubba.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "buci",
+      "url": "audio/lots/lot-100-2026-10-24/091_buci.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bucine",
+      "url": "audio/lots/lot-100-2026-10-24/092_bucine.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "buda",
+      "url": "audio/lots/lot-100-2026-10-24/093_buda.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bude",
+      "url": "audio/lots/lot-100-2026-10-24/094_bude.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "budeye",
+      "url": "audio/lots/lot-100-2026-10-24/095_budeye.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bugandi",
+      "url": "audio/lots/lot-100-2026-10-24/096_bugandi.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "candidat_dictionnaire_a_verifier"
+    },
+    {
+      "text": "bugantaaxu",
+      "url": "audio/lots/lot-100-2026-10-24/097_bugantaaxu.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bugante",
+      "url": "audio/lots/lot-100-2026-10-24/098_bugante.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
+    },
+    {
+      "text": "bugu",
+      "url": "audio/lots/lot-100-2026-10-24/099_bugu.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "candidat_dictionnaire_a_verifier"
+    },
+    {
+      "text": "bugubukku",
+      "url": "audio/lots/lot-100-2026-10-24/100_bugubukku.wav",
+      "kind": "recorded",
+      "validation_prononciation": "validee_par_referent",
+      "date_validation": "2026-10-24",
+      "statut_traduction": "traduction_existante_a_conserver"
     }
   ],
   "pending": [
