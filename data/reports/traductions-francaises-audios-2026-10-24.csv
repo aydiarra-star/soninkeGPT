@@ -1,5 +1,5 @@
 ﻿audio_id;mot_soninke;traduction_francaise;fichier_audio;type_audio;validation_prononciation;statut_traduction;source_traduction;date_validation;notes
-snk-00001;a;il / elle;audio/snk-00001.wav;recorded;;;voice-memory.json:francais;;
+snk-00001;a;il / elle;audio/snk-00001.wav;recorded;;;voice-memory.json:francais;;Traduction reprise de la mémoire vocale du projet.
 snk-00002;ake;il / elle;audio/snk-00002.wav;recorded;;;voice-memory.json:francais;;
 snk-00003;an;tu;audio/snk-00003.wav;recorded;;;voice-memory.json:francais;;
 snk-00004;anke;tu;audio/snk-00004.wav;recorded;;;voice-memory.json:francais;;
