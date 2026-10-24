@@ -2916,6 +2916,7 @@ function streamMessage(conv, fullText, shouldSpeak = false) {
 }
 
 // ── Envoi universel : fonctionne À TOUT MOMENT (zéro blocage) ──
+// Lecture vocale : prioriser les phrases attestées et les enregistrements validés.
 function submitMessage(text, opts = {}) {
   ensureAudioUnlocked();
   const value = String(text || "").trim();
