@@ -1,0 +1,130 @@
+name: Générer les 100 prochains audios Soninké
+on:
+  workflow_dispatch:
+    inputs:
+      batch_limit:
+        description: Nombre maximal de nouveaux audios
+        required: true
+        default: "100"
+        type: choice
+        options: ["100"]
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/generate-next-100-audios.yml"
+
+concurrency:
+  group: soninkegpt-next-100-audios
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Vérifier les références vocales du référent
+        run: |
+          test -s audio/snk-00054.wav
+          test -s audio/snk-00258.wav
+          python - <<'PY'
+          import wave
+          for p in ("audio/snk-00054.wav", "audio/snk-00258.wav"):
+              with wave.open(p, "rb") as w:
+                  assert w.getnframes() > 0 and w.getframerate() > 0, f"Référence invalide: {p}"
+                  print(p, w.getframerate(), "Hz", w.getnframes(), "frames")
+          PY
+      - name: Installer OmniVoice
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy soundfile
+          python -m pip install omnivoice || python -m pip install git+https://github.com/k2-fsa/OmniVoice.git
+          python -m pip install torch
+      - name: Indexer les audios existants sans les remplacer
+        run: python scripts/generate_voice.py
+      - name: Générer jusqu'à 100 mots manquants avec la voix de référence
+        run: python scripts/generate_voice.py --generate --device cpu --limit 100
+      - name: Supprimer la copie temporaire de référence
+        if: always()
+        run: rm -f audio/generated/reference.wav
+      - name: Contrôle technique et préparation du lot à écouter
+        if: always()
+        run: |
+          python - <<'PY'
+          import json, wave
+          from pathlib import Path
+          root = Path(".")
+          manifest = json.loads(Path("data/voice-memory.json").read_text(encoding="utf-8"))
+          generated = []
+          bad = []
+          for item in manifest.get("audio", []):
+              if item.get("kind") not in ("voice_clone_unreviewed", "voice_clone_validated"):
+                  continue
+              p = root / item.get("url", "")
+              if not p.is_file():
+                  continue
+              try:
+                  with wave.open(str(p), "rb") as w:
+                      if w.getnframes() < 1 or w.getframerate() < 1:
+                          raise ValueError("WAV vide")
+                  generated.append((item.get("text", ""), str(p)))
+              except Exception as e:
+                  bad.append(f"{p}: {e}")
+          print(f"Audios générés/indexés: {len(generated)}; WAV invalides: {len(bad)}")
+          for e in bad: print("ERREUR:", e)
+          Path("review-bundle").mkdir(exist_ok=True)
+          Path("review-bundle/voice-memory.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+          if bad: raise SystemExit(1)
+          PY
+          mkdir -p review-bundle/audio/generated
+          find audio/generated -maxdepth 1 -type f -name '*.wav' ! -name 'reference.wav' -exec cp {} review-bundle/audio/generated/ \;
+          if [ -f data/voice-generation-errors.csv ]; then cp data/voice-generation-errors.csv review-bundle/; fi
+      - name: Publier l'artefact pour validation humaine
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: soninkegpt-next-100-audios-review
+          path: review-bundle/
+          if-no-files-found: warn
+          retention-days: 30
+      - name: Proposer les nouveaux audios dans une PR, sans publication automatique
+        if: success()
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: audio-review/next-100-${{ github.run_number }}
+          base: main
+          delete-branch: false
+          title: "Revue humaine — prochains audios Soninké (lot de 100 max)"
+          body: |
+            Génération exécutée avec les références vocales du référent.
+            Les fichiers générés sont des clones non validés : écouter chaque audio.
+            Aucun audio n'est fusionné dans main automatiquement.
+          commit-message: "Préparer les prochains audios Soninké pour validation"
+          add-paths: |
+            audio/generated/*.wav
+            data/voice-memory.json
+      - name: Transférer vers Google Drive si les secrets sont configurés
+        if: always()
+        env:
+          GOOGLE_DRIVE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_DRIVE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_DRIVE_REVIEW_FOLDER_ID: ${{ secrets.GOOGLE_DRIVE_REVIEW_FOLDER_ID }}
+        run: |
+          if [ -z "$GOOGLE_DRIVE_SERVICE_ACCOUNT_JSON" ] || [ -z "$GOOGLE_DRIVE_REVIEW_FOLDER_ID" ]; then
+            echo "::warning::Google Drive non configuré ; les résultats restent dans l'artefact GitHub Actions."
+            exit 0
+          fi
+          python -m pip install google-api-python-client google-auth
+          python scripts/upload_review_to_drive.py
