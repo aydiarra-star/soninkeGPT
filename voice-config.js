@@ -1,3 +1,3 @@
-// URL HTTPS du backend vocal. À renseigner après le déploiement du service Render.
-// Laisser vide désactive la transcription serveur et conserve le comportement actuel.
-window.SONINKEGPT_API_BASE = "";
+// URL HTTPS du backend vocal Render SoninkeGPT.
+// La clé API reste exclusivement dans les variables d'environnement du serveur.
+window.SONINKEGPT_API_BASE = "https://soninkegpt-voice-api.onrender.com";
