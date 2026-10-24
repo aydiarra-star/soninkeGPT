@@ -67,7 +67,7 @@ Deux niveaux de confiance : **attesté** (au moins deux sources convergentes) et
 | cuisse | **toge** | togue ; togota | ajouté depuis les sources | atteste | S1,S2,S4,S5,S10 |
 | genou | **xurungo** | xurngo ; qúrúngò | ajouté depuis les sources | atteste | S1,S2,S3,S5,S8 |
 | mollet | **ɲollenme** | — | ajouté depuis les sources | sous reserve | S4 |
-| cheville | **taxaane** | sellinñelle | ajouté depuis les sources | sous reserve | S5,S8 |
+| cheville | **taxaane** | sellinñelle ; ɲollenme | ajouté depuis les sources | sous reserve | S4,S5,S8 |
 | orteil | **tandoronme** | tandoore ; tandoromu | ajouté depuis les sources | atteste | S1,S2,S5,S8 |
 
 ### 5. Os, muscles et éléments internes
@@ -110,8 +110,8 @@ Deux niveaux de confiance : **attesté** (au moins deux sources convergentes) et
 - **ta** — `Tange` reste une graphie à confirmer avec le référent.
 - **toge** — Remplace deux formes non attestées.
 - **xurungo** — `Kuru` peut en être une réduction ; à confirmer.
-- **ɲollenme** — Une seule source. Remplace une forme non attestée.
-- **taxaane** — Deux sources, deux formes différentes. Remplace une forme non attestée.
+- **ɲollenme** — Une seule source. Remplace une forme non attestée. Le relevé ODA porte aussi le sens « ankle ; cheville du pied » pour cette même entrée : à vérifier sur la page avant d'en tenir compte.
+- **taxaane** — Trois formes concurrentes selon les sources. Remplace une forme non attestée.
 - **tandoronme** — `Tange-soro` se lit comme « doigt de pied » ; graphie à confirmer.
 - **fate** — Remplace deux formes non attestées dans ce sens. Homonyme de « peau ».
 - **fate / hate** — Remplace deux formes non attestées dans ce sens. Homonyme de « corps ».

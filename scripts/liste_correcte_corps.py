@@ -121,9 +121,12 @@ LISTE = [
     (35, 4, "genou", "xurungo", "xurngo ; qúrúngò", "Kuntu-bunyi / Kuru", "ajout_source", "atteste",
      "S1,S2,S3,S5,S8", "`Kuru` peut en être une réduction ; à confirmer."),
     (36, 4, "mollet", "ɲollenme", "", "Tange-golle", "ajout_source", "sous_reserve", "S4",
-     "Une seule source. Remplace une forme non attestée."),
-    (37, 4, "cheville", "taxaane", "sellinñelle", "Tange-muru", "ajout_source", "sous_reserve",
-     "S5,S8", "Deux sources, deux formes différentes. Remplace une forme non attestée."),
+     "Une seule source. Remplace une forme non attestée. Le relevé ODA porte aussi le sens "
+     "« ankle ; cheville du pied » pour cette même entrée : à vérifier sur la page avant "
+     "d'en tenir compte."),
+    (37, 4, "cheville", "taxaane", "sellinñelle ; ɲollenme", "Tange-muru", "ajout_source",
+     "sous_reserve", "S4,S5,S8",
+     "Trois formes concurrentes selon les sources. Remplace une forme non attestée."),
     (38, 4, "orteil", "tandoronme", "tandoore ; tandoromu", "Tange-soro", "ajout_source", "atteste",
      "S1,S2,S5,S8", "`Tange-soro` se lit comme « doigt de pied » ; graphie à confirmer."),
 

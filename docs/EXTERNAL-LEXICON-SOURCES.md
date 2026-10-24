@@ -35,6 +35,18 @@ et `data/source/reports/verification-sens-parties-corps-2026-10-24.csv`.
 | [Tableau anatomique multilingue, colonne soninké « Haten súuhunu »](https://megambia.com/wp-content/uploads/2025/01/040125-bodyparts.pdf) | Équivalents anglais/soninké pour cheville, orteil, coude, mollet | Ressource pédagogique gambienne; graphie « Sarahule »; à recouper |
 | [Denis Creissels — lexèmes simples du soninké du Kingi](https://journals.openedition.org/mandenkan/738) | Liste de lexèmes avec gloses et schèmes tonaux | Source académique; sert à confirmer des sens dérivés (« foie, courage, colère ») |
 
+### Références complémentaires, non consultables en ligne
+
+Quatre ouvrages pourraient départager les formes restées non résolues (composés du type
+`Kit-qasse`, `Tange-soro`, `Kuntu-bunyi`). Aucun n'est exploitable en ligne à ce jour :
+
+| Référence | Pourquoi elle compte | Accès |
+|---|---|---|
+| Ousmane Moussa Diagana, *Dictionnaire soninké-français (Mauritanie)*, Karthala, 2013, 5 800 entrées | Décrit le parler de Kaédi, dont l'alphabet comporte le phonème **q** — la même orthographe que le document (`Qanfe`, `Qunyu`, `Kit-qasse`). Piste la plus prometteuse | Ouvrage payant (PDF 19,99 €). Seuls les liminaires sont en accès libre |
+| Gordon & Sara Williams, *Des aspects de la lexicologie du Soninke : la dérivation, les mots composés, le changement de transitivité*, Dakar, SIL, 1998, 92 p. | Traite explicitement de la composition ; le document écrit ses composés avec un trait d'union pédagogique | PDF sur [sil.org/resources/archives/49407](https://www.sil.org/resources/archives/49407) ; la section utile (p. 43-88) dépasse la limite d'extraction automatique et demande une lecture manuelle |
+| Galtier, Dantioko & Dramé, *Lexique Soninké-Français*, Bamako, DNAFLA, 1979, 100 p. | Lexique malien de référence | Exemplaire physique uniquement (signalé par COCOON et l'UNESCO) |
+| Abdoulaye Bathily, *Lexique soninke (sarakole)-français*, Dakar, CLAD, 1975 | Lexique sénégalais ancien | Non numérisé |
+
 Règle appliquée pendant cette recherche : aucune traduction extrapolée. Une forme non
 retrouvée est déclarée `non_atteste`, une divergence est déclarée `corrige` avec ses
 sources, et une divergence entre variétés dialectales est signalée comme `conflit`
