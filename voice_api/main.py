@@ -100,10 +100,20 @@ async def process_voice(
     # Ajouter automatiquement des formes du lexique chargé par le navigateur.
     # Limiter la longueur pour éviter de noyer le contexte acoustique de Whisper.
     if vocabulary:
-        terms = [term.strip() for term in vocabulary.splitlines() if term.strip()]
+        terms = list(dict.fromkeys(term.strip() for term in vocabulary.splitlines() if term.strip()))
         multiword = [term for term in terms if " " in term]
         singleword = [term for term in terms if " " not in term]
-        vocabulary_hint = ", ".join((multiword + singleword)[:100])
+
+        def spread(items, limit):
+            if len(items) <= limit:
+                return items
+            # Échantillonner sur tout le lexique, pas seulement ses premières entrées,
+            # pour que les formes ajoutées ultérieurement aient aussi une chance d'être suggérées.
+            indexes = [round(i * (len(items) - 1) / (limit - 1)) for i in range(limit)]
+            return [items[i] for i in indexes]
+
+        selected_terms = spread(multiword, 45) + spread(singleword, 35)
+        vocabulary_hint = ", ".join(selected_terms)
         if vocabulary_hint:
             prompt += " Formes du lexique Soninké à privilégier seulement si les sons correspondent : " + vocabulary_hint[:900]
 
