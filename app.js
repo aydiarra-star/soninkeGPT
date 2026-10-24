@@ -796,9 +796,21 @@ async function speakResponse(text) {
 
     // Priorité à un enregistrement complet (phrase ou expression), s'il existe.
     const exact = findAudioInfo(form);
+    const isMultiword = String(form).trim().split(/\s+/).length > 1;
+    const phraseKey = normalizeWord(form);
+    const approvedPhrase = PHRASEBOOK.some(p =>
+      !/à confirmer|à rechercher|à produire|à valider/i.test(String(p.note || "")) &&
+      [p.snk, ...(p.alt || [])].some(candidate => normalizeWord(candidate) === phraseKey)
+    ) || state.samples.some(sample => normalizeWord(sample.soninke) === phraseKey);
+
+    // Un enregistrement complet est prioritaire. Sinon, assemblage mot à mot
+    // seulement pour une phrase attestée dans le phrasébook/corpus : on ne fabrique
+    // pas une phrase grammaticale en juxtaposant arbitrairement des mots connus.
     const segments = exact
       ? [{ type: "audio", text: form, url: exact.url }]
-      : buildSoninkePhraseSegments(form);
+      : (isMultiword && !approvedPhrase)
+        ? []
+        : buildSoninkePhraseSegments(form);
 
     // Pas de lecture tronquée : si un seul mot manque, on n'improvise pas le reste.
     if (!segments.length) {
