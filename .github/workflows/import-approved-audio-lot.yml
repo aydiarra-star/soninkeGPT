@@ -1,4 +1,4 @@
-name: Importer le lot audio validé dans main
+name: Importer les 479 WAV dont la prononciation a été validée
 on:
   push:
     branches: [main]
@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       confirm:
-        description: "Confirmer l'import des 100 audios validés"
+        description: "Confirmer l'import des 479 WAV validés"
         required: true
         type: choice
         options: ["CONFIRMER"]
@@ -24,147 +24,132 @@ jobs:
         with:
           ref: main
           fetch-depth: 0
-      - name: Télécharger l'artefact audio de production
+      - name: Télécharger l'artefact des 479 WAV validés
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh run download 40032014603 --repo "${GITHUB_REPOSITORY}" --name "soninkegpt-lot-100-pour-validation" --dir /tmp/approved-lot
-      - name: Importer uniquement les 100 mots du manifeste validé
+          gh run download 40054587505 --repo "${GITHUB_REPOSITORY}" --name "soninkegpt-lot-100-pour-validation" --dir /tmp/approved-lot
+      - name: Fusionner les WAV et enregistrer la validation de prononciation
         run: |
           python - <<'PY'
           import csv, json, shutil, wave
           from pathlib import Path
+
           root = Path.cwd()
           bundle = Path('/tmp/approved-lot')
-          validation_path = root / 'data/validation/lot-100-pronunciation-validation-2026-10-24.csv'
-          with validation_path.open(encoding='utf-8-sig', newline='') as f:
-              validation = list(csv.DictReader(f, delimiter=';'))
-          if len(validation) != 100:
-              raise SystemExit(f'Manifeste de validation attendu: 100 lignes, trouvé: {len(validation)}')
-          words = {r['mot_soninke'].strip().casefold(): r['mot_soninke'].strip() for r in validation}
-          manifests = []
-          for p in bundle.rglob('*.json'):
-              try:
-                  obj = json.loads(p.read_text(encoding='utf-8'))
-                  if isinstance(obj, dict) and isinstance(obj.get('audio'), list):
-                      hits = sum(str(a.get('text','')).strip().casefold() in words for a in obj['audio'] if isinstance(a, dict))
-                      if hits:
-                          manifests.append((hits, p, obj))
-              except Exception:
-                  pass
-          manifests.sort(key=lambda x: x[0], reverse=True)
-          mapping = {}
-          if manifests:
-              _, source_manifest_path, source_manifest = manifests[0]
-              for item in source_manifest.get('audio', []):
-                  if not isinstance(item, dict):
-                      continue
-                  text = str(item.get('text','')).strip()
-                  key = text.casefold()
-                  if key in words and key not in mapping:
-                      url = str(item.get('url','')).replace('\\','/')
-                      candidates = [bundle / url, source_manifest_path.parent / url, bundle / Path(url).name]
-                      src = next((p for p in candidates if p.is_file()), None)
-                      if src:
-                          mapping[key] = (words[key], src)
-          # Fallback for an artifact that contains word-named WAVs instead of a voice-memory manifest.
-          for p in bundle.rglob('*.wav'):
-              stem = p.stem
-              candidate = stem.split('_',1)[1] if '_' in stem and stem.split('_',1)[0].isdigit() else stem
-              key = candidate.casefold()
-              if key in words and key not in mapping:
-                  mapping[key] = (words[key], p)
-          missing = sorted(set(words) - set(mapping))
-          if missing:
-              raise SystemExit('Arrêt de sécurité : audios introuvables pour ces mots : ' + ', '.join(words[k] for k in missing))
-          destination = root / 'audio/lots/lot-100-2026-10-24'
-          destination.mkdir(parents=True, exist_ok=True)
-          manifest_path = root / 'data/voice-memory.json'
-          manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
-          audios = manifest.setdefault('audio', [])
-          existing_texts = {str(a.get('text','')).strip().casefold() for a in audios}
-          existing_urls = {str(a.get('url','')) for a in audios}
+          source_manifest_path = bundle / 'voice-memory.json'
+          if not source_manifest_path.is_file():
+              raise SystemExit("Arrêt de sécurité : voice-memory.json absent de l'artefact.")
+          source_manifest = json.loads(source_manifest_path.read_text(encoding='utf-8'))
+          wavs = sorted(bundle.rglob('*.wav'))
+          if len(wavs) != 479:
+              raise SystemExit(f"Arrêt de sécurité : 479 WAV attendus, trouvé {len(wavs)}.")
+
+          by_url = {}
+          for item in source_manifest.get('audio', []):
+              if isinstance(item, dict) and item.get('url'):
+                  by_url[str(item['url']).replace('\\\\', '/')] = item
+
+          generated_dir = root / 'audio/generated'
+          generated_dir.mkdir(parents=True, exist_ok=True)
+          validated_items = []
+          unmapped_files = []
           copied = 0
-          added = 0
-          for row in validation:
-              word = row['mot_soninke'].strip()
-              key = word.casefold()
-              src = mapping[key][1]
-              name = row['fichier_dans_lot'].strip() or (word + '.wav')
-              target = destination / name
+          for src in wavs:
+              with wave.open(str(src), 'rb') as wav:
+                  if wav.getnframes() < 1 or wav.getframerate() < 1 or wav.getnchannels() < 1:
+                      raise SystemExit(f"WAV invalide : {src}")
+              name = src.name
+              url = f'audio/generated/{name}'
+              item = by_url.get(url)
+              target = generated_dir / name
               if not target.exists():
                   shutil.copy2(src, target)
                   copied += 1
-              with wave.open(str(target), 'rb') as w:
-                  if w.getnframes() < 1 or w.getframerate() < 1:
-                      raise SystemExit(f'WAV invalide : {target}')
-              url = target.relative_to(root).as_posix()
-              if url not in existing_urls and key not in existing_texts:
-                  item = {
-                      'text': word,
-                      'url': url,
-                      'kind': 'recorded',
-                      'validation_prononciation': 'validee_par_referent',
-                      'date_validation': '2026-10-24',
-                      'statut_traduction': row.get('validation_traduction', 'a_traduire')
-                  }
-                  # Keep French only where the current lexicon has a non-empty entry; candidates stay flagged separately.
-                  lex_path = root / 'data/source/lexique-soninke-fr-base.csv'
-                  with lex_path.open(encoding='utf-8-sig', newline='') as f:
-                      lex_rows = list(csv.DictReader(f, delimiter=';'))
-                  match = next((x for x in lex_rows if x.get('mot','').strip().casefold() == key), None)
-                  if match and match.get('traduction','').strip() and match.get('statut_validation','').strip() not in ('a_traduire', 'non_renseigne'):
-                      item['francais'] = match['traduction'].strip()
-                  audios.append(item)
-                  existing_urls.add(url)
-                  existing_texts.add(key)
+              if item:
+                  validated_items.append((url, item))
+              else:
+                  unmapped_files.append(name)
+
+          if len(validated_items) != 465:
+              raise SystemExit(f"Arrêt de sécurité : 465 correspondances attendues, trouvé {len(validated_items)}.")
+          if len(unmapped_files) != 14:
+              raise SystemExit(f"Arrêt de sécurité : 14 fichiers sans correspondance attendus, trouvé {len(unmapped_files)}.")
+
+          manifest_path = root / 'data/voice-memory.json'
+          manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
+          audio = manifest.setdefault('audio', [])
+          by_current_url = {str(x.get('url', '')): x for x in audio if isinstance(x, dict) and x.get('url')}
+          added = 0
+          updated = 0
+          words = []
+          for url, source_item in validated_items:
+              word = str(source_item.get('text', '')).strip()
+              if word:
+                  words.append(word)
+              current = by_current_url.get(url)
+              if current is None:
+                  current = dict(source_item)
+                  audio.append(current)
+                  by_current_url[url] = current
                   added += 1
-          manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+              else:
+                  updated += 1
+              current['validation_prononciation'] = 'validee_par_referent_linguistique'
+              current['date_validation_prononciation'] = '2026-10-24'
+              current['validation_prononciation_source'] = 'Confirmation explicite de l’utilisateur : prononciation validée'
+              current['publication_status'] = 'imported_to_main'
+          manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\\n', encoding='utf-8')
+
           record_path = root / 'data/voice-validation-lots.json'
           records = json.loads(record_path.read_text(encoding='utf-8')) if record_path.exists() else []
-          records = [r for r in records if r.get('source_workflow_run') != 40032014603]
+          records = [r for r in records if r.get('source_workflow_run') != 40054587505]
           records.append({
-              'batch': 'Lot de 100 audios soninké',
-              'source_workflow_run': 40032014603,
-              'artifact_id': 12542125522,
+              'batch': 'Lot de 479 WAV — prononciation validée par le référent linguistique',
+              'source_workflow_run': 40054587505,
+              'artifact_id': 12547382650,
               'pronunciation_status': 'validated_by_linguistic_referent',
-              'validation_basis': 'Confirmation explicite du référent linguistique le 24 octobre 2026',
-              'technical_status': '100 WAV contrôlés et vérifiés à l’import',
+              'validation_basis': 'Confirmation explicite de l’utilisateur : « Validé et bonne prononciation » le 24 octobre 2026',
+              'technical_status': '479 WAV vérifiés techniquement à l’import',
               'publication_status': 'imported_to_main',
-              'word_count': 100,
-              'words': [r['mot_soninke'].strip() for r in validation],
-              'words_without_validated_translation': [r['mot_soninke'].strip() for r in validation if 'existante' not in r.get('validation_traduction','').casefold() and 'conserver' not in r.get('validation_traduction','').casefold()],
-              'note': 'La validation de prononciation ne valide pas automatiquement les traductions ; les traductions candidates restent à vérifier.'
+              'file_count': 479,
+              'mapped_word_count': len(set(words)),
+              'words': sorted(set(words), key=str.casefold),
+              'unmapped_audio_files': unmapped_files,
+              'note': 'La validation porte sur la prononciation, pas sur la traduction. Les 14 fichiers sans correspondance lexicale sont conservés dans audio/generated mais ne sont pas reliés artificiellement à un mot.'
           })
-          record_path.write_text(json.dumps(records, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-          print(f'Lot vérifié : {len(mapping)} mots ; WAV ajoutés dans le dossier du lot : {copied} ; nouvelles entrées au manifeste : {added}.')
+          record_path.write_text(json.dumps(records, ensure_ascii=False, indent=2) + '\\n', encoding='utf-8')
+          print(f'WAV du lot : {len(wavs)} ; correspondances lexicales : {len(validated_items)} ; fichiers sans correspondance : {len(unmapped_files)} ; WAV copiés : {copied} ; entrées du manifeste ajoutées : {added} ; entrées mises à jour : {updated}.')
           PY
-      - name: Vérifier le lot avant commit
+      - name: Vérifier le lot fusionné
         run: |
           python - <<'PY'
-          import wave
+          import json, wave
           from pathlib import Path
-          files = sorted(Path('audio/lots/lot-100-2026-10-24').glob('*.wav'))
+          root = Path.cwd()
+          rec = json.loads((root / 'data/voice-validation-lots.json').read_text(encoding='utf-8'))
+          lot = next(r for r in rec if r.get('source_workflow_run') == 40054587505)
+          files = [root / 'audio/generated' / p.name for p in Path('/tmp/approved-lot').rglob('*.wav')]
           bad = []
           for p in files:
               try:
                   with wave.open(str(p), 'rb') as w:
                       if w.getnframes() < 1 or w.getframerate() < 1:
                           raise ValueError('WAV vide')
-              except Exception as exc:
-                  bad.append(f'{p}: {exc}')
-          print(f'WAV du lot : {len(files)} ; invalides : {len(bad)}')
-          if len(files) != 100 or bad:
-              raise SystemExit('\n'.join(bad) or 'Le lot ne contient pas exactement 100 WAV valides.')
+              except Exception as e:
+                  bad.append(f'{p.name}: {e}')
+          if len(files) != 479 or bad or lot.get('mapped_word_count') != 465 or len(lot.get('unmapped_audio_files', [])) != 14:
+              raise SystemExit(f'Vérification échouée : fichiers={len(files)}, erreurs={bad[:5]}, mots={lot.get("mapped_word_count")}, non associés={len(lot.get("unmapped_audio_files", []))}')
+          print('Validation OK : 479 WAV ; 465 associations lexicales ; 14 fichiers conservés sans association forcée.')
           PY
-      - name: Commiter directement dans main
+      - name: Commiter la fusion dans main
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- audio/lots/lot-100-2026-10-24 data/voice-memory.json data/voice-validation-lots.json
+          git add -- audio/generated data/voice-memory.json data/voice-validation-lots.json
           if git diff --cached --quiet; then
             echo "Aucun changement à committer."
             exit 0
           fi
-          git commit -m "Importer les 100 audios soninké validés"
+          git commit -m "Fusionner les 479 WAV dont la prononciation est validée"
           git push origin main
