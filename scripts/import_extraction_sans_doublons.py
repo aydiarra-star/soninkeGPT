@@ -31,7 +31,7 @@ from pathlib import Path
 
 LEXIQUE = Path("data/source/lexique-soninke-fr-base.csv")
 CHAMPS = ["id", "soninke", "francais", "categorie", "source", "statut",
-          "variantes", "exemple_original"]
+          "variantes", "exemple_original", "definition", "definition_statut"]
 
 SOURCE = "Dictionnaire soninké.docx (Google Doc b–f) 2026-10-24"
 STATUT = "candidat_dictionnaire_a_verifier"
@@ -140,6 +140,8 @@ def main(argv: list[str]) -> int:
             "statut": STATUT,
             "variantes": "",
             "exemple_original": (ligne.get("note") or "").strip(),
+            "definition": "",
+            "definition_statut": "",
         })
         numero += 1
 

@@ -178,6 +178,9 @@ def main(argv: list[str]) -> int:
     # réécriture ligne à ligne : les lignes non touchées restent identiques
     # à l'octet près, ce qui garde un diff lisible et vérifiable.
     brut = LEXIQUE.read_text(encoding="utf-8").splitlines()
+    # Colonnes réellement présentes dans le fichier : une ligne réécrite ne
+    # doit jamais perdre une colonne ajoutée depuis (définitions, par exemple).
+    colonnes_fichier = brut[0].split(";") if brut else CHAMPS
     sortie, vus = [], 0
     for ligne in brut:
         identifiant = ligne.split(";", 1)[0]
@@ -186,7 +189,7 @@ def main(argv: list[str]) -> int:
             continue
         if identifiant in modifies:
             buffer = io.StringIO()
-            csv.DictWriter(buffer, fieldnames=CHAMPS, delimiter=";",
+            csv.DictWriter(buffer, fieldnames=colonnes_fichier, delimiter=";",
                            extrasaction="ignore", quoting=csv.QUOTE_MINIMAL,
                            lineterminator="").writerow(modifies[identifiant])
             ligne = buffer.getvalue()

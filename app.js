@@ -2038,6 +2038,10 @@ function formatEntryBullet(e, includeExample = false) {
   if (e.isCandidate) parts.push("à vérifier");
   let out = soninkeBlock(e.soninke, parts.filter(Boolean).join(" · "));
   if (e.variantes) out += `Variantes attestées : ${e.variantes}\n\n`;
+  if (e.definition) {
+    const garde = /a_clarifier/i.test(e.definitionStatut || "") ? " (glose à vérifier)" : "";
+    out += `Définition : ${e.definition}${garde}\n\n`;
+  }
 
   // Formes dérivées enregistrées dans audio/snk-*.wav
   const related = state.relatedAudioByStem.get(normalizeWord(e.soninke));
@@ -3490,6 +3494,7 @@ function renderDictResults() {
           <button type="button" class="fav-toggle${fav ? " is-favorite" : ""}" data-fav-snk="${esc(e.soninke)}" data-fav-fr="${esc(e.francais)}" data-fav-type="${type}" aria-pressed="${fav ? "true" : "false"}" aria-label="Ajouter ${esc(e.soninke)} aux favoris">${fav ? ICONS.starFilled : ICONS.star}</button>
         </div>
         <div class="dict-translation">${esc(e.francais)}</div>
+        ${e.definition ? `<div class="dict-definition">${esc(e.definition)}${/a_clarifier/i.test(e.definitionStatut || "") ? " (glose à vérifier)" : ""}</div>` : ""}
         <div class="dict-meta">
           <span class="pair-badge ${att.cls}">${att.label}</span>
           ${e.categorie ? `<span>${esc(e.categorie)}</span>` : ""}
@@ -3618,6 +3623,8 @@ async function loadAllData() {
         statut: row.statut,
         variantes: row.variantes,
         exemple_original: row.exemple_original,
+        definition: row.definition || "",
+        definitionStatut: row.definition_statut || "",
         isCandidate: /a_verifier/i.test(row.statut || ""),
       },
       { checkVariants: false }

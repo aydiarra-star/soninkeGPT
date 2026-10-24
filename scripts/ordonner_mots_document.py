@@ -563,6 +563,8 @@ def construire(source: Path) -> tuple[list[dict], list[str], dict]:
                 "categorie_lexique": categorie,
                 "traduction_fr": mot.traduction,
                 "definition_et_sens": definition,
+                "definition_redigee": (entree.get("definition") or "").strip() if entree else "",
+                "definition_statut": (entree.get("definition_statut") or "").strip() if entree else "",
                 "provenance_definition": provenance,
                 "exemple_source": exemple,
                 "statut": statut,
@@ -716,6 +718,9 @@ def ecrire_markdown(lignes: list[dict], avertissements: list[str], compteurs: di
         doc.append("| --- | --- | --- | --- | --- | --- | --- |")
         for ligne in contenu:
             definition = definition_courte(ligne["definition_et_sens"])
+            if ligne["definition_redigee"]:
+                garde = " ⚠" if "a_clarifier" in ligne["definition_statut"] else ""
+                definition += f"<br>*{ligne['definition_redigee']}*{garde}"
             doc.append(
                 "| {ordre} | **{forme}** | {type} | {traduction} | {definition} | {statut} | {entree} |".format(
                     ordre=ligne["ordre"],
@@ -752,7 +757,15 @@ def ecrire_markdown(lignes: list[dict], avertissements: list[str], compteurs: di
             entete.append("transitif")
         doc.append(" · ".join(entete))
         doc.append("")
-        doc.append(f"**Sens et définition** : {verbe['definition_et_sens']}")
+        glose = verbe["definition_et_sens"]
+        if normaliser(glose).startswith(normaliser(verbe["traduction_fr"])):
+            doc.append(f"**Traduction et sens** : {glose}")
+        else:
+            doc.append(f"**Traduction et sens** : {verbe['traduction_fr']} — {glose}")
+        if verbe["definition_redigee"]:
+            garde = " *(glose à vérifier)*" if "a_clarifier" in verbe["definition_statut"] else ""
+            doc.append("")
+            doc.append(f"**Définition** : {verbe['definition_redigee']}{garde}")
         if verbe["exemple_source"]:
             doc.append("")
             doc.append(f"**Exemple** : {verbe['exemple_source']}")
@@ -778,6 +791,9 @@ def ecrire_markdown(lignes: list[dict], avertissements: list[str], compteurs: di
         "- Traductions : toutes issues du document, aucune reformulée.",
         "- Définitions : toutes issues du lexique du projet ou, à défaut, du document ; "
         "aucune glose inventée.",
+        f"- Verbes avec une définition rédigée : **{sum(1 for l in lignes if l['definition_redigee'])}** "
+        "sur **182**, à valider par le référent "
+        "([tableau complet](DEFINITIONS-VERBES-A-VALIDER.md)).",
         "- Homographes signalés en note, jamais fusionnés.",
         f"- Verbes avec un exemple dans leur entrée : **{sum(1 for l in verbes if l['exemple_source'])}** "
         f"sur **{len(verbes)}**.",

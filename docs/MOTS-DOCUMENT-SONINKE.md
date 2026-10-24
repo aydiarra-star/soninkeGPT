@@ -55,49 +55,49 @@ Provenance des définitions : lexique du projet **575** · document du référen
 
 | # | Soninké | Type | Traduction | Sens et définition | Statut | Entrée |
 | --- | --- | --- | --- | --- | --- | --- |
-| 5 | **baano** | verbe | ressembler | ressembler | Attesté · référent | `SNK-LEX-0099` |
+| 5 | **baano** | verbe | ressembler | ressembler<br>*Avoir l'air de, présenter les mêmes traits ou le même aspect que quelqu'un ou quelque chose.* | Attesté · référent | `SNK-LEX-0099` |
 | 6 | **baanono** | gérondif | ressembler (gérondif) | ressembler (gérondif / inaccompli de baano) | Attesté · référent | `SNK-LEX-0966` |
 | 7 | **baano-ye** | nom d'action | ressembler (nom d'action) | ressembler (nom d'action de baano) | Attesté · référent | `SNK-LEX-0965` |
-| 8 | **bagu** | verbe | sortir | sortir | Attesté · référent | `SNK-LEX-0178` |
+| 8 | **bagu** | verbe | sortir | sortir<br>*Quitter un lieu, passer du dedans au dehors.* | Attesté · référent | `SNK-LEX-0178` |
 | 9 | **bagunu** | gérondif | sortir (gérondif) | sortir (gérondif / inaccompli de bagu) | Attesté · référent | `SNK-LEX-0968` |
 | 10 | **bagu-ye** | nom d'action | sortir (nom d'action) | sortir (nom d'action de bagu) | Attesté · référent | `SNK-LEX-0967` |
-| 11 | **bakuman** | verbe | distinguer | distinguer | Attesté · référent | `SNK-LEX-0058` |
+| 11 | **bakuman** | verbe | distinguer | distinguer<br>*Reconnaître une chose d'une autre, percevoir une différence entre deux choses.* | Attesté · référent | `SNK-LEX-0058` |
 | 12 | **bakuman-nde** | nom d'action | distinguer (nom d'action) | distinguer (nom d'action de bakuman) | Attesté · référent | `SNK-LEX-0969` |
 | 13 | **bakumanni** | gérondif | distinguer (gérondif) | distinguer (gérondif / inaccompli de bakuman) | Attesté · référent | `SNK-LEX-0970` |
-| 14 | **bante** | verbe | absenter | absenter / s'absenter, s'abstenir de, manquer / fonctionne comme marque de la modalité "refuser à faire | Attesté · référent | `SNK-LEX-0129` |
+| 14 | **bante** | verbe | absenter | absenter / s'absenter, s'abstenir de, manquer / fonctionne comme marque de la modalité "refuser à faire<br>*S'absenter, manquer à un endroit, s'abstenir de faire quelque chose.* | Attesté · référent | `SNK-LEX-0129` |
 | 15 | **bantene** | gérondif | absenter (gérondif) | absenter (gérondif / inaccompli de bante) | Attesté · référent | `SNK-LEX-0972` |
 | 16 | **bante-ye** | nom d'action | absenter (nom d'action) | absenter (nom d'action de bante) | Attesté · référent | `SNK-LEX-0971` |
-| 17 | **bara** | verbe | refuser | refuser / fonctionne comme marque de la modalité "refuser à faire / aire, surface, cour / ficelle, fil | Attesté · référent | `SNK-LEX-0093` |
+| 17 | **bara** | verbe | refuser | refuser / fonctionne comme marque de la modalité "refuser à faire / aire, surface, cour / ficelle, fil<br>*Refuser, rejeter ce qui est proposé ou demandé.* | Attesté · référent | `SNK-LEX-0093` |
 | 18 | **barana** | gérondif | refuser (gérondif) | refuser (gérondif / inaccompli de bara) | Attesté · référent | `SNK-LEX-0974` |
 | 19 | **bara-ye** | nom d'action | refuser (nom d'action) | refuser (nom d'action de bara) | Attesté · référent | `SNK-LEX-0973` |
-| 20 | **batu** | verbe | obéir | obéir / réunion, assemblée / marabatu / obéir, adorer / devoir (redevabilité) | Attesté · référent | `SNK-LEX-0078` |
+| 20 | **batu** | verbe | obéir | obéir / réunion, assemblée / marabatu / obéir, adorer / devoir (redevabilité)<br>*Obéir à quelqu'un, le vénérer, adorer (Dieu).* | Attesté · référent | `SNK-LEX-0078` |
 | 21 | **batu-nde** | nom d'action | obéir (nom d'action) | obéir (nom d'action de batu) | Attesté · référent | `SNK-LEX-0975` |
 | 22 | **batunu** | gérondif | obéir (gérondif) | obéir (gérondif / inaccompli de batu) | Attesté · référent | `SNK-LEX-0976` |
-| 23 | **besin** | verbe | frotter | frotter | Attesté · référent | `SNK-LEX-0141` |
+| 23 | **besin** | verbe | frotter | frotter<br>*Frotter une surface en appuyant, pour nettoyer, polir ou faire pénétrer un produit.* | Attesté · référent | `SNK-LEX-0141` |
 | 24 | **besin-nde** | nom d'action | frotter (nom d'action) | frotter (nom d'action de besin) | Attesté · référent | `SNK-LEX-0977` |
 | 25 | **besinni** | gérondif | frotter (gérondif) | frotter (gérondif / inaccompli de besin) | Attesté · référent | `SNK-LEX-0978` |
-| 26 | **bexin** | verbe | zipper | zipper | Attesté · référent | `SNK-LEX-0150` |
+| 26 | **bexin** | verbe | zipper | zipper<br>*Fermer au moyen d'une fermeture à glissière.* ⚠ | Attesté · référent | `SNK-LEX-0150` |
 | 27 | **bexin-nde** | nom d'action | zipper (nom d'action) | zipper (nom d'action de bexin) | Attesté · référent | `SNK-LEX-0979` |
 | 28 | **bexinni** | gérondif | zipper (gérondif) | zipper (gérondif / inaccompli de bexin) | Attesté · référent | `SNK-LEX-0980` |
-| 29 | **bire** | verbe | vivre | vivre / instant, moment / quand | Attesté · référent | `SNK-LEX-0180` |
+| 29 | **bire** | verbe | vivre | vivre / instant, moment / quand<br>*Vivre, être en vie.* | Attesté · référent | `SNK-LEX-0180` |
 | 30 | **birene** | gérondif | vivre (gérondif) | vivre (gérondif / inaccompli de bire) | Attesté · référent | `SNK-LEX-0982` |
 | 31 | **bire-ye** | nom d'action | vivre (nom d'action) | vivre (nom d'action de bire) | Attesté · référent | `SNK-LEX-0981` |
-| 32 | **bisimilahi** | verbe | accueillir | accueillir | Attesté · référent | `SNK-LEX-0152` |
+| 32 | **bisimilahi** | verbe | accueillir | accueillir<br>*Accueillir quelqu'un, lui souhaiter la bienvenue.* ⚠ | Attesté · référent | `SNK-LEX-0152` |
 | 33 | **bisimilahi-nde** | nom d'action | accueillir (nom d'action) | accueillir (nom d'action de bisimilahi) | Attesté · référent | `SNK-LEX-0983` |
 | 34 | **bisimilahini** | gérondif | accueillir (gérondif) | accueillir (gérondif / inaccompli de bisimilahi) | Attesté · référent | `SNK-LEX-0984` |
-| 35 | **biyi** | verbe | brûler | brûler / buyi / être brûlé, être grillé | Attesté · référent | `SNK-LEX-0032` |
+| 35 | **biyi** | verbe | brûler | brûler / buyi / être brûlé, être grillé<br>*Brûler, consumer par le feu.* | Attesté · référent | `SNK-LEX-0032` |
 | 36 | **biyi-nde** | nom d'action | brûler (nom d'action) | brûler (nom d'action de biyi) | Attesté · référent | `SNK-LEX-0985` |
 | 37 | **biyini** | gérondif | brûler (gérondif) | brûler (gérondif / inaccompli de biyi) | Attesté · référent | `SNK-LEX-0986` |
-| 38 | **boguman** | verbe | séparer | séparer | Attesté · référent | `SNK-LEX-0110` |
+| 38 | **boguman** | verbe | séparer | séparer<br>*Séparer, mettre à part, désunir des personnes ou des choses.* | Attesté · référent | `SNK-LEX-0110` |
 | 39 | **boguman-nde** | nom d'action | séparer (nom d'action) | séparer (nom d'action de boguman) | Attesté · référent | `SNK-LEX-0987` |
 | 40 | **bogumanni** | gérondif | séparer (gérondif) | séparer (gérondif / inaccompli de boguman) | Attesté · référent | `SNK-LEX-0988` |
-| 41 | **bonte** | verbe | sauter | sauter / sauter par-dessus | Attesté · référent | `SNK-LEX-0106` |
+| 41 | **bonte** | verbe | sauter | sauter / sauter par-dessus<br>*Sauter, s'élever d'un bond.* | Attesté · référent | `SNK-LEX-0106` |
 | 42 | **bontene** | gérondif | sauter (gérondif) | sauter (gérondif / inaccompli de bonte) | Attesté · référent | `SNK-LEX-0990` |
 | 43 | **bonte-ye** | nom d'action | sauter (nom d'action) | sauter (nom d'action de bonte) | Attesté · référent | `SNK-LEX-0989` |
-| 44 | **boxu** | verbe | déchirer | déchirer / Un groupe de souris | Attesté · référent | `SNK-LEX-0059` |
+| 44 | **boxu** | verbe | déchirer | déchirer / Un groupe de souris<br>*Déchirer, mettre en pièces.* ⚠ | Attesté · référent | `SNK-LEX-0059` |
 | 45 | **boxu-nde** | nom d'action | déchirer (nom d'action) | déchirer (nom d'action de boxu) | Attesté · référent | `SNK-LEX-0991` |
 | 46 | **boxunu** | gérondif | déchirer (gérondif) | déchirer (gérondif / inaccompli de boxu) | Attesté · référent | `SNK-LEX-0992` |
-| 47 | **bulxa** | verbe | effacer | effacer | Attesté · référent | `SNK-LEX-0138` |
+| 47 | **bulxa** | verbe | effacer | effacer<br>*Effacer, faire disparaître une trace ou une inscription.* | Attesté · référent | `SNK-LEX-0138` |
 | 48 | **bulxana** | gérondif | effacer (gérondif) | effacer (gérondif / inaccompli de bulxa) | Attesté · référent | `SNK-LEX-0994` |
 | 49 | **bulxa-nde** | nom d'action | effacer (nom d'action) | effacer (nom d'action de bulxa) | Attesté · référent | `SNK-LEX-0993` |
 
@@ -107,7 +107,7 @@ Provenance des définitions : lexique du projet **575** · document du référen
 
 | # | Soninké | Type | Traduction | Sens et définition | Statut | Entrée |
 | --- | --- | --- | --- | --- | --- | --- |
-| 50 | **contan** | verbe | compter | compter | Attesté · référent | `SNK-LEX-0045` |
+| 50 | **contan** | verbe | compter | compter<br>*Compter, dénombrer, énumérer des unités.* | Attesté · référent | `SNK-LEX-0045` |
 | 51 | **contan-nde** | nom d'action | compter (nom d'action) | compter (nom d'action de contan) | Attesté · référent | `SNK-LEX-0995` |
 | 52 | **contanni** | gérondif | compter (gérondif) | compter (gérondif / inaccompli de contan) | Attesté · référent | `SNK-LEX-0996` |
 
@@ -118,54 +118,54 @@ Provenance des définitions : lexique du projet **575** · document du référen
 | # | Soninké | Type | Traduction | Sens et définition | Statut | Entrée |
 | --- | --- | --- | --- | --- | --- | --- |
 | 53 | **da** | marqueur | passé avec objet (da) | passé avec objet (variante de di) | Attesté · référent | `SNK-GRM-0020` |
-| 54 | **daga** | verbe | partir | partir | Attesté · référent | `SNK-LEX-0001` |
+| 54 | **daga** | verbe | partir | partir<br>*Partir, quitter un lieu pour aller ailleurs.* | Attesté · référent | `SNK-LEX-0001` |
 | 55 | **dagana** | gérondif | partir (gérondif) | partir (gérondif / inaccompli de daga) | Attesté · référent | `SNK-LEX-0997` |
 | 56 | **dagaye** | nom d'action | partir (nom d'action) | partir (nom d'action de daga) | Attesté · référent | `SNK-LEX-0998` |
-| 57 | **dantaxi** | verbe | annoncer | annoncer | Attesté · référent | `SNK-LEX-0020` |
+| 57 | **dantaxi** | verbe | annoncer | annoncer<br>*Annoncer, faire savoir publiquement.* | Attesté · référent | `SNK-LEX-0020` |
 | 58 | **dantaxi-nde** | nom d'action | annoncer (nom d'action) | annoncer (nom d'action de dantaxi) | Attesté · référent | `SNK-LEX-0999` |
 | 59 | **dantaxini** | gérondif | annoncer (gérondif) | annoncer (gérondif / inaccompli de dantaxi) | Attesté · référent | `SNK-LEX-1000` |
-| 60 | **dema** | verbe | aider | aider | Attesté · référent | `SNK-LEX-0017` |
+| 60 | **dema** | verbe | aider | aider<br>*Aider quelqu'un, lui apporter son appui.* | Attesté · référent | `SNK-LEX-0017` |
 | 61 | **demana** | gérondif | aider (gérondif) | aider (gérondif / inaccompli de dema) | Attesté · référent | `SNK-LEX-1003` |
 | 62 | **dema-nde** | nom d'action | aider (nom d'action) | aider (nom d'action de dema) | Attesté · référent | `SNK-LEX-1002` |
 | 63 | **di** | marqueur | passé avec objet | passé avec objet | Attesté · référent | `SNK-GRM-0018` |
-| 64 | **diabi** | verbe | répondre | répondre | Attesté · référent | `SNK-LEX-0176` |
+| 64 | **diabi** | verbe | répondre | répondre<br>*Répondre à quelqu'un, répliquer.* | Attesté · référent | `SNK-LEX-0176` |
 | 65 | **diabi-nde** | nom d'action | répondre (nom d'action) | répondre (nom d'action de diabi) | Attesté · référent | `SNK-LEX-1004` |
 | 66 | **diabini** | gérondif | répondre (gérondif) | répondre (gérondif / inaccompli de diabi) | Attesté · référent | `SNK-LEX-1005` |
-| 67 | **diamba** | verbe | trahir | trahir | Attesté · référent | `SNK-LEX-0148` |
+| 67 | **diamba** | verbe | trahir | trahir<br>*Trahir quelqu'un, manquer à la fidélité promise.* | Attesté · référent | `SNK-LEX-0148` |
 | 68 | **diambana** | gérondif | trahir (gérondif) | trahir (gérondif / inaccompli de diamba) | Attesté · référent | `SNK-LEX-1007` |
 | 69 | **diamba-nde** | nom d'action | trahir (nom d'action) | trahir (nom d'action de diamba) | Attesté · référent | `SNK-LEX-1006` |
-| 70 | **diambe** | verbe | abandonner | abandonner | Attesté · référent | `SNK-LEX-0012` |
+| 70 | **diambe** | verbe | abandonner | abandonner<br>*Abandonner quelqu'un ou une entreprise, laisser sans secours.* | Attesté · référent | `SNK-LEX-0012` |
 | 71 | **diambene** | gérondif | abandonner (gérondif) | abandonner (gérondif / inaccompli de diambe) | Attesté · référent | `SNK-LEX-1009` |
 | 72 | **diambe-ye** | nom d'action | abandonner (nom d'action) | abandonner (nom d'action de diambe) | Attesté · référent | `SNK-LEX-1008` |
-| 73 | **dioofe** | verbe | arriver | arriver | Attesté · référent | `SNK-LEX-0025` |
+| 73 | **dioofe** | verbe | arriver | arriver<br>*Arriver, parvenir au lieu où l'on se rend.* | Attesté · référent | `SNK-LEX-0025` |
 | 74 | **dioofene** | gérondif | arriver (gérondif) | arriver (gérondif / inaccompli de dioofe) | Attesté · référent | `SNK-LEX-1011` |
 | 75 | **dioofe-ye** | nom d'action | arriver (nom d'action) | arriver (nom d'action de dioofe) | Attesté · référent | `SNK-LEX-1010` |
-| 76 | **diopandi** | verbe | commencer | commencer | Attesté · référent | `SNK-LEX-0044` |
+| 76 | **diopandi** | verbe | commencer | commencer<br>*Commencer, entreprendre une action.* | Attesté · référent | `SNK-LEX-0044` |
 | 77 | **diopandi-nde** | nom d'action | commencer (nom d'action) | commencer (nom d'action de diopandi) | Attesté · référent | `SNK-LEX-1012` |
 | 78 | **diopandini** | gérondif | commencer (gérondif) | commencer (gérondif / inaccompli de diopandi) | Attesté · référent | `SNK-LEX-1013` |
-| 79 | **dioxi** | verbe | couler | couler | Attesté · référent | `SNK-LEX-0048` |
+| 79 | **dioxi** | verbe | couler | couler<br>*Couler, s'écouler en parlant d'un liquide.* | Attesté · référent | `SNK-LEX-0048` |
 | 80 | **dioxini** | gérondif | couler (gérondif) | couler (gérondif / inaccompli de dioxi) | Attesté · référent | `SNK-LEX-1015` |
 | 81 | **dioxi-ye** | nom d'action | couler (nom d'action) | couler (nom d'action de dioxi) | Attesté · référent | `SNK-LEX-1014` |
-| 82 | **djikeranxoso** | verbe | décevoir | décevoir | Attesté · référent | `SNK-LEX-0166` |
+| 82 | **djikeranxoso** | verbe | décevoir | décevoir<br>*Décevoir, tromper l'attente de quelqu'un.* | Attesté · référent | `SNK-LEX-0166` |
 | 83 | **djikeranxoso-nde** | nom d'action | décevoir (nom d'action) | décevoir (nom d'action de djikeranxoso) | Attesté · référent | `SNK-LEX-1016` |
 | 84 | **djikeranxosono** | gérondif | décevoir (gérondif) | décevoir (gérondif / inaccompli de djikeranxoso) | Attesté · référent | `SNK-LEX-1017` |
 | 85 | **do** | marqueur | action en cours (do … me) | action en cours | Attesté · référent | `SNK-GRM-0022` |
-| 86 | **doron** | verbe | respecter | respecter | Attesté · référent | `SNK-LEX-0097` |
+| 86 | **doron** | verbe | respecter | respecter<br>*Respecter, honorer quelqu'un.* | Attesté · référent | `SNK-LEX-0097` |
 | 87 | **doron-nde** | nom d'action | respecter (nom d'action) | respecter (nom d'action de doron) | Attesté · référent | `SNK-LEX-1018` |
 | 88 | **doronni** | gérondif | respecter (gérondif) | respecter (gérondif / inaccompli de doron) | Attesté · référent | `SNK-LEX-1019` |
-| 89 | **dufintandi** | verbe | plonger | plonger | Attesté · référent | `SNK-LEX-0084` |
+| 89 | **dufintandi** | verbe | plonger | plonger<br>*Plonger, s'enfoncer dans un liquide.* | Attesté · référent | `SNK-LEX-0084` |
 | 90 | **dufintandi-nde** | nom d'action | plonger (nom d'action) | plonger (nom d'action de dufintandi) | Attesté · référent | `SNK-LEX-1020` |
 | 91 | **dufintandini** | gérondif | plonger (gérondif) | plonger (gérondif / inaccompli de dufintandi) | Attesté · référent | `SNK-LEX-1021` |
-| 92 | **dufuutu** | verbe | étirer | étirer | Attesté · référent | `SNK-LEX-0151` |
+| 92 | **dufuutu** | verbe | étirer | étirer<br>*Étirer, allonger en tirant.* | Attesté · référent | `SNK-LEX-0151` |
 | 93 | **dufuutu-nde** | nom d'action | étirer (nom d'action) | étirer (nom d'action de dufuutu) | Attesté · référent | `SNK-LEX-1022` |
 | 94 | **dufuutunu** | gérondif | étirer (gérondif) | étirer (gérondif / inaccompli de dufuutu) | Attesté · référent | `SNK-LEX-1023` |
-| 95 | **dugu** | verbe | attendre | attendre | Attesté · référent | `SNK-LEX-0155` |
+| 95 | **dugu** | verbe | attendre | attendre<br>*Attendre, patienter jusqu'à un moment donné.* | Attesté · référent | `SNK-LEX-0155` |
 | 96 | **dugu-nde** | nom d'action | attendre (nom d'action) | attendre (nom d'action de dugu) | Attesté · référent | `SNK-LEX-1024` |
 | 97 | **dugunu** | gérondif | attendre (gérondif) | attendre (gérondif / inaccompli de dugu) | Attesté · référent | `SNK-LEX-1025` |
-| 98 | **duguta** | verbe | terminer | terminer | Attesté · référent | `SNK-LEX-0111` |
+| 98 | **duguta** | verbe | terminer | terminer<br>*Terminer, achever, mener à son terme.* ⚠ | Attesté · référent | `SNK-LEX-0111` |
 | 99 | **dugutana** | gérondif | terminer (gérondif) | terminer (gérondif / inaccompli de duguta) | Attesté · référent | `SNK-LEX-1027` |
 | 100 | **duguta-ye** | nom d'action | terminer (nom d'action) | terminer (nom d'action de duguta) | Attesté · référent | `SNK-LEX-1026` |
-| 101 | **duŋe** | verbe | accepter | accepter | Attesté · référent | `SNK-LEX-0013` |
+| 101 | **duŋe** | verbe | accepter | accepter<br>*Accepter, consentir à ce qui est proposé.* | Attesté · référent | `SNK-LEX-0013` |
 | 102 | **duŋene** | gérondif | accepter (gérondif) | accepter (gérondif / inaccompli de duŋe) | Attesté · référent | `SNK-LEX-1029` |
 | 103 | **duŋe-ye** | nom d'action | accepter (nom d'action) | accepter (nom d'action de duŋe) | Attesté · référent | `SNK-LEX-1028` |
 
@@ -175,57 +175,57 @@ Provenance des définitions : lexique du projet **575** · document du référen
 
 | # | Soninké | Type | Traduction | Sens et définition | Statut | Entrée |
 | --- | --- | --- | --- | --- | --- | --- |
-| 104 | **faamu** | verbe | comprendre | comprendre | Attesté · référent | `SNK-LEX-0158` |
+| 104 | **faamu** | verbe | comprendre | comprendre<br>*Comprendre, saisir le sens de quelque chose.* | Attesté · référent | `SNK-LEX-0158` |
 | 105 | **faamu-nde** | nom d'action | comprendre (nom d'action) | comprendre (nom d'action de faamu) | Attesté · référent | `SNK-LEX-1030` |
 | 106 | **faamunu** | gérondif | comprendre (gérondif) | comprendre (gérondif / inaccompli de faamu) | Attesté · référent | `SNK-LEX-1031` |
-| 107 | **fallanyille** | verbe | reculer | reculer | Attesté · référent | `SNK-LEX-0092` |
+| 107 | **fallanyille** | verbe | reculer | reculer<br>*Reculer, aller en arrière, rétrograder.* | Attesté · référent | `SNK-LEX-0092` |
 | 108 | **fallanyillene** | gérondif | reculer (gérondif) | reculer (gérondif / inaccompli de fallanyille) | Attesté · référent | `SNK-LEX-1033` |
 | 109 | **fallanyille-ye** | nom d'action | reculer (nom d'action) | reculer (nom d'action de fallanyille) | Attesté · référent | `SNK-LEX-1032` |
-| 110 | **fanqe** | verbe | lutter | lutter | Attesté · référent | `SNK-LEX-0070` |
+| 110 | **fanqe** | verbe | lutter | lutter<br>*Lutter, se battre contre quelqu'un ou quelque chose.* | Attesté · référent | `SNK-LEX-0070` |
 | 111 | **fanqene** | gérondif | lutter (gérondif) | lutter (gérondif / inaccompli de fanqe) | Attesté · référent | `SNK-LEX-1035` |
 | 112 | **fanqe-ye** | nom d'action | lutter (nom d'action) | lutter (nom d'action de fanqe) | Attesté · référent | `SNK-LEX-1034` |
-| 113 | **faraxu** | verbe | changer | changer | Attesté · référent | `SNK-LEX-0037` |
+| 113 | **faraxu** | verbe | changer | changer<br>*Changer, devenir autre, se transformer.* | Attesté · référent | `SNK-LEX-0037` |
 | 114 | **faraxu-nde** | nom d'action | changer (nom d'action) | changer (nom d'action de faraxu) | Attesté · référent | `SNK-LEX-1036` |
 | 115 | **faraxunu** | gérondif | changer (gérondif) | changer (gérondif / inaccompli de faraxu) | Attesté · référent | `SNK-LEX-1037` |
-| 116 | **fatampantchi** | verbe | argumenter | argumenter | Attesté · référent | `SNK-LEX-0024` |
+| 116 | **fatampantchi** | verbe | argumenter | argumenter<br>*Argumenter, discuter en avançant des raisons et des preuves.* | Attesté · référent | `SNK-LEX-0024` |
 | 117 | **fatampantchi-nde** | nom d'action | argumenter (nom d'action) | argumenter (nom d'action de fatampantchi) | Attesté · référent | `SNK-LEX-1038` |
 | 118 | **fatampantchini** | gérondif | argumenter (gérondif) | argumenter (gérondif / inaccompli de fatampantchi) | Attesté · référent | `SNK-LEX-1039` |
-| 119 | **faye** | verbe | regarder | regarder | Attesté · référent | `SNK-LEX-0003` |
+| 119 | **faye** | verbe | regarder | regarder<br>*Regarder, observer attentivement.* | Attesté · référent | `SNK-LEX-0003` |
 | 120 | **fayeni** | gérondif | regarder (gérondif) | regarder (gérondif / inaccompli de faye) | Attesté · référent | `SNK-LEX-1040` |
 | 121 | **fayi** | marqueur | en train de (watia) | en train de | Attesté · référent | `SNK-GRM-0014` |
 | 122 | **fayinde** | nom d'action | regarder (nom d'action) | regarder (nom d'action de faye) | Attesté · référent | `SNK-LEX-1041` |
 | 123 | **fayi rini** | marqueur | sur le point de | sur le point de | Attesté · référent | `SNK-GRM-0013` |
-| 124 | **filinka** | verbe | tourner | tourner | Attesté · référent | `SNK-LEX-0146` |
+| 124 | **filinka** | verbe | tourner | tourner<br>*Tourner, faire tourner, se retourner.* | Attesté · référent | `SNK-LEX-0146` |
 | 125 | **filinkana** | gérondif | tourner (gérondif) | tourner (gérondif / inaccompli de filinka) | Attesté · référent | `SNK-LEX-1043` |
 | 126 | **filinka-nde** | nom d'action | tourner (nom d'action) | tourner (nom d'action de filinka) | Attesté · référent | `SNK-LEX-1042` |
-| 127 | **fimaxagomundi** | verbe | préparer | préparer | Attesté · référent | `SNK-LEX-0087` |
+| 127 | **fimaxagomundi** | verbe | préparer | préparer<br>*Préparer, apprêter ce qui est nécessaire.* | Attesté · référent | `SNK-LEX-0087` |
 | 128 | **fimaxagomundi-nde** | nom d'action | préparer (nom d'action) | préparer (nom d'action de fimaxagomundi) | Attesté · référent | `SNK-LEX-1044` |
 | 129 | **fimaxagomundini** | gérondif | préparer (gérondif) | préparer (gérondif / inaccompli de fimaxagomundi) | Attesté · référent | `SNK-LEX-1045` |
-| 130 | **finkoyindi** | verbe | présenter | présenter | Attesté · référent | `SNK-LEX-0088` |
+| 130 | **finkoyindi** | verbe | présenter | présenter<br>*Présenter quelqu'un, le faire connaître à d'autres.* | Attesté · référent | `SNK-LEX-0088` |
 | 131 | **finkoyindi-nde** | nom d'action | présenter (nom d'action) | présenter (nom d'action de finkoyindi) | Attesté · référent | `SNK-LEX-1046` |
 | 132 | **finkoyindini** | gérondif | présenter (gérondif) | présenter (gérondif / inaccompli de finkoyindi) | Attesté · référent | `SNK-LEX-1047` |
-| 133 | **finsaanindi** | verbe | décider | décider | Attesté · référent | `SNK-LEX-0060` |
+| 133 | **finsaanindi** | verbe | décider | décider<br>*Décider, trancher une question.* | Attesté · référent | `SNK-LEX-0060` |
 | 134 | **finsaanindi-nde** | nom d'action | décider (nom d'action) | décider (nom d'action de finsaanindi) | Attesté · référent | `SNK-LEX-1048` |
 | 135 | **finsaanindini** | gérondif | décider (gérondif) | décider (gérondif / inaccompli de finsaanindi) | Attesté · référent | `SNK-LEX-1049` |
-| 136 | **finsirondi** | verbe | réconcilier | réconcilier | Attesté · référent | `SNK-LEX-0100` |
+| 136 | **finsirondi** | verbe | réconcilier | réconcilier<br>*Réconcilier, rétablir la concorde entre des personnes brouillées.* | Attesté · référent | `SNK-LEX-0100` |
 | 137 | **finsirondi-nde** | nom d'action | réconcilier (nom d'action) | réconcilier (nom d'action de finsirondi) | Attesté · référent | `SNK-LEX-1050` |
 | 138 | **finsirondini** | gérondif | réconcilier (gérondif) | réconcilier (gérondif / inaccompli de finsirondi) | Attesté · référent | `SNK-LEX-1051` |
-| 139 | **fita** | verbe | jeter | jeter | Attesté · référent | `SNK-LEX-0067` |
+| 139 | **fita** | verbe | jeter | jeter<br>*Jeter, se défaire de quelque chose en le lançant.* | Attesté · référent | `SNK-LEX-0067` |
 | 140 | **fitana** | gérondif | jeter (gérondif) | jeter (gérondif / inaccompli de fita) | Attesté · référent | `SNK-LEX-1053` |
 | 141 | **fita-nde** | nom d'action | jeter (nom d'action) | jeter (nom d'action de fita) | Attesté · référent | `SNK-LEX-1052` |
-| 142 | **fitta** | verbe | lancer | lancer | Attesté · référent | `SNK-LEX-0069` |
+| 142 | **fitta** | verbe | lancer | lancer<br>*Lancer, projeter avec force.* | Attesté · référent | `SNK-LEX-0069` |
 | 143 | **fittana** | gérondif | lancer (gérondif) | lancer (gérondif / inaccompli de fitta) | Attesté · référent | `SNK-LEX-1055` |
 | 144 | **fitta-nde** | nom d'action | lancer (nom d'action) | lancer (nom d'action de fitta) | Attesté · référent | `SNK-LEX-1054` |
-| 145 | **fiwarame** | verbe | disputer | disputer | Attesté · référent | `SNK-LEX-0057` |
+| 145 | **fiwarame** | verbe | disputer | disputer<br>*Se disputer, se quereller, échanger des reproches.* | Attesté · référent | `SNK-LEX-0057` |
 | 146 | **fiwarame-nde** | nom d'action | disputer (nom d'action) | disputer (nom d'action de fiwarame) | Attesté · référent | `SNK-LEX-1056` |
 | 147 | **fiwaramene** | gérondif | disputer (gérondif) | disputer (gérondif / inaccompli de fiwarame) | Attesté · référent | `SNK-LEX-1057` |
-| 148 | **fixorondi** | verbe | empirer | empirer | Attesté · référent | `SNK-LEX-0064` |
+| 148 | **fixorondi** | verbe | empirer | empirer<br>*Empirer, rendre pire une situation.* | Attesté · référent | `SNK-LEX-0064` |
 | 149 | **fixorondi-nde** | nom d'action | empirer (nom d'action) | empirer (nom d'action de fixorondi) | Attesté · référent | `SNK-LEX-1058` |
 | 150 | **fixorondini** | gérondif | empirer (gérondif) | empirer (gérondif / inaccompli de fixorondi) | Attesté · référent | `SNK-LEX-1059` |
-| 151 | **fufe** | verbe | respirer | respirer | Attesté · référent | `SNK-LEX-0098` |
+| 151 | **fufe** | verbe | respirer | respirer<br>*Respirer, aspirer et rejeter de l'air.* | Attesté · référent | `SNK-LEX-0098` |
 | 152 | **fufene** | gérondif | respirer (gérondif) | respirer (gérondif / inaccompli de fufe) | Attesté · référent | `SNK-LEX-1061` |
 | 153 | **fufe-ye** | nom d'action | respirer (nom d'action) | respirer (nom d'action de fufe) | Attesté · référent | `SNK-LEX-1060` |
-| 154 | **fuutu** | verbe | tirer | tirer | Attesté · référent | `SNK-LEX-0112` |
+| 154 | **fuutu** | verbe | tirer | tirer<br>*Tirer, extraire quelque chose en tirant.* | Attesté · référent | `SNK-LEX-0112` |
 | 155 | **fuutu-nde** | nom d'action | tirer (nom d'action) | tirer (nom d'action de fuutu) | Attesté · référent | `SNK-LEX-1062` |
 | 156 | **fuutunu** | gérondif | tirer (gérondif) | tirer (gérondif / inaccompli de fuutu) | Attesté · référent | `SNK-LEX-1063` |
 
@@ -235,25 +235,25 @@ Provenance des définitions : lexique du projet **575** · document du référen
 
 | # | Soninké | Type | Traduction | Sens et définition | Statut | Entrée |
 | --- | --- | --- | --- | --- | --- | --- |
-| 157 | **gadia** | verbe | combattre | combattre | Attesté · référent | `SNK-LEX-0157` |
+| 157 | **gadia** | verbe | combattre | combattre<br>*Combattre, faire la guerre, se battre contre un adversaire.* | Attesté · référent | `SNK-LEX-0157` |
 | 158 | **gadiana** | gérondif | combattre (gérondif) | combattre (gérondif / inaccompli de gadia) | Attesté · référent | `SNK-LEX-1065` |
 | 159 | **gadia-ŋe** | nom d'action | combattre (nom d'action) | combattre (nom d'action de gadia) | Attesté · référent | `SNK-LEX-1064` |
-| 160 | **gage** | verbe | vendre | vendre | Attesté · référent | `SNK-LEX-0179` |
+| 160 | **gage** | verbe | vendre | vendre<br>*Vendre, céder une marchandise contre paiement.* | Attesté · référent | `SNK-LEX-0179` |
 | 161 | **gagene** | gérondif | vendre (gérondif) | vendre (gérondif / inaccompli de gage) | Attesté · référent | `SNK-LEX-1067` |
 | 162 | **gage-ye** | nom d'action | vendre (nom d'action) | vendre (nom d'action de gage) | Attesté · référent | `SNK-LEX-1066` |
-| 163 | **gara** | verbe | mentir | mentir | Attesté · référent | `SNK-LEX-0168` |
+| 163 | **gara** | verbe | mentir | mentir<br>*Mentir, dire ce qui est faux.* | Attesté · référent | `SNK-LEX-0168` |
 | 164 | **garana** | gérondif | mentir (gérondif) | mentir (gérondif / inaccompli de gara) | Attesté · référent | `SNK-LEX-1069` |
 | 165 | **gara-nde** | nom d'action | mentir (nom d'action) | mentir (nom d'action de gara) | Attesté · référent | `SNK-LEX-1068` |
-| 166 | **goli** | verbe | travailler | travailler | Attesté · référent | `SNK-LEX-0010` |
+| 166 | **goli** | verbe | travailler | travailler<br>*Travailler, accomplir un travail.* | Attesté · référent | `SNK-LEX-0010` |
 | 167 | **golini** | gérondif | travailler (gérondif) | travailler (gérondif / inaccompli de goli) | Attesté · référent | `SNK-LEX-1070` |
 | 168 | **goliye** | nom d'action | travailler (nom d'action) | travailler (nom d'action de goli) | Attesté · référent | `SNK-LEX-1071` |
-| 169 | **gomundi** | verbe | réparer | réparer | Attesté · référent | `SNK-LEX-0101` |
+| 169 | **gomundi** | verbe | réparer | réparer<br>*Réparer, remettre en état ce qui est abîmé.* | Attesté · référent | `SNK-LEX-0101` |
 | 170 | **gomundi-nde** | nom d'action | réparer (nom d'action) | réparer (nom d'action de gomundi) | Attesté · référent | `SNK-LEX-1072` |
 | 171 | **gomundini** | gérondif | réparer (gérondif) | réparer (gérondif / inaccompli de gomundi) | Attesté · référent | `SNK-LEX-1073` |
-| 172 | **gongo** | verbe | avertir | avertir | Attesté · référent | `SNK-LEX-0030` |
+| 172 | **gongo** | verbe | avertir | avertir<br>*Avertir, prévenir quelqu'un de quelque chose.* | Attesté · référent | `SNK-LEX-0030` |
 | 173 | **gongo-nde** | nom d'action | avertir (nom d'action) | avertir (nom d'action de gongo) | Attesté · référent | `SNK-LEX-1074` |
 | 174 | **gongono** | gérondif | avertir (gérondif) | avertir (gérondif / inaccompli de gongo) | Attesté · référent | `SNK-LEX-1075` |
-| 175 | **gunudi** | verbe | plier | plier | Attesté · référent | `SNK-LEX-0083` |
+| 175 | **gunudi** | verbe | plier | plier<br>*Plier, courber ce qui était droit.* | Attesté · référent | `SNK-LEX-0083` |
 | 176 | **gunudi-nde** | nom d'action | plier (nom d'action) | plier (nom d'action de gunudi) | Attesté · référent | `SNK-LEX-1076` |
 | 177 | **gunudini** | gérondif | plier (gérondif) | plier (gérondif / inaccompli de gunudi) | Attesté · référent | `SNK-LEX-1077` |
 
@@ -272,70 +272,70 @@ Provenance des définitions : lexique du projet **575** · document du référen
 
 | # | Soninké | Type | Traduction | Sens et définition | Statut | Entrée |
 | --- | --- | --- | --- | --- | --- | --- |
-| 180 | **kaanemaxawutu** | verbe | diriger | diriger | Attesté · référent | `SNK-LEX-0056` |
+| 180 | **kaanemaxawutu** | verbe | diriger | diriger<br>*Diriger, conduire un groupe, prendre la tête.* | Attesté · référent | `SNK-LEX-0056` |
 | 181 | **kaanemaxawutu-nde** | nom d'action | diriger (nom d'action) | diriger (nom d'action de kaanemaxawutu) | Attesté · référent | `SNK-LEX-1078` |
 | 182 | **kaanemaxawutunu** | gérondif | diriger (gérondif) | diriger (gérondif / inaccompli de kaanemaxawutu) | Attesté · référent | `SNK-LEX-1079` |
-| 183 | **kaban** | verbe | interdire | interdire | Attesté · référent | `SNK-LEX-0167` |
+| 183 | **kaban** | verbe | interdire | interdire<br>*Interdire, défendre de faire quelque chose.* | Attesté · référent | `SNK-LEX-0167` |
 | 184 | **kaban-nde** | nom d'action | interdire (nom d'action) | interdire (nom d'action de kaban) | Attesté · référent | `SNK-LEX-1080` |
 | 185 | **kabanni** | gérondif | interdire (gérondif) | interdire (gérondif / inaccompli de kaban) | Attesté · référent | `SNK-LEX-1081` |
-| 186 | **kafuma** | verbe | additionner | additionner | Attesté · référent | `SNK-LEX-0016` |
+| 186 | **kafuma** | verbe | additionner | additionner<br>*Additionner, réunir des nombres en un total.* | Attesté · référent | `SNK-LEX-0016` |
 | 187 | **kafumana** | gérondif | additionner (gérondif) | additionner (gérondif / inaccompli de kafuma) | Attesté · référent | `SNK-LEX-1083` |
 | 188 | **kafuma-nde** | nom d'action | additionner (nom d'action) | additionner (nom d'action de kafuma) | Attesté · référent | `SNK-LEX-1082` |
-| 189 | **kanalaga** | verbe | sentir | sentir | Attesté · référent | `SNK-LEX-0177` |
+| 189 | **kanalaga** | verbe | sentir | sentir<br>*Sentir, percevoir une odeur.* ⚠ | Attesté · référent | `SNK-LEX-0177` |
 | 190 | **kanalagana** | gérondif | sentir (gérondif) | sentir (gérondif / inaccompli de kanalaga) | Attesté · référent | `SNK-LEX-1085` |
 | 191 | **kanalaga-nde** | nom d'action | sentir (nom d'action) | sentir (nom d'action de kanalaga) | Attesté · référent | `SNK-LEX-1084` |
-| 192 | **kanewutu** | verbe | devancer | devancer | Attesté · référent | `SNK-LEX-0055` |
+| 192 | **kanewutu** | verbe | devancer | devancer<br>*Devancer, prendre les devants sur quelqu'un.* | Attesté · référent | `SNK-LEX-0055` |
 | 193 | **kanewutu-nde** | nom d'action | devancer (nom d'action) | devancer (nom d'action de kanewutu) | Attesté · référent | `SNK-LEX-1086` |
 | 194 | **kanewutunu** | gérondif | devancer (gérondif) | devancer (gérondif / inaccompli de kanewutu) | Attesté · référent | `SNK-LEX-1087` |
-| 195 | **kara** | verbe | casser | casser | Attesté · référent | `SNK-LEX-0036` |
+| 195 | **kara** | verbe | casser | casser<br>*Casser, briser.* | Attesté · référent | `SNK-LEX-0036` |
 | 196 | **karana** | gérondif | casser (gérondif) | casser (gérondif / inaccompli de kara) | Attesté · référent | `SNK-LEX-1089` |
 | 197 | **kara-nde** | nom d'action | casser (nom d'action) | casser (nom d'action de kara) | Attesté · référent | `SNK-LEX-1088` |
-| 198 | **kari** | verbe | tuer | tuer | Attesté · référent | `SNK-LEX-0119` |
+| 198 | **kari** | verbe | tuer | tuer<br>*Tuer, ôter la vie.* | Attesté · référent | `SNK-LEX-0119` |
 | 199 | **kari-nde** | nom d'action | tuer (nom d'action) | tuer (nom d'action de kari) | Attesté · référent | `SNK-LEX-1090` |
 | 200 | **karini** | gérondif | tuer (gérondif) | tuer (gérondif / inaccompli de kari) | Attesté · référent | `SNK-LEX-1091` |
-| 201 | **katu** | verbe | battre | battre | Attesté · référent | `SNK-LEX-0156` |
+| 201 | **katu** | verbe | battre | battre<br>*Battre, frapper à plusieurs reprises.* | Attesté · référent | `SNK-LEX-0156` |
 | 202 | **katu-nde** | nom d'action | battre (nom d'action) | battre (nom d'action de katu) | Attesté · référent | `SNK-LEX-1092` |
 | 203 | **katunu** | gérondif | battre (gérondif) | battre (gérondif / inaccompli de katu) | Attesté · référent | `SNK-LEX-1093` |
-| 204 | **kawafi** | verbe | étonner | étonner | Attesté · référent | `SNK-LEX-0128` |
+| 204 | **kawafi** | verbe | étonner | étonner<br>*Étonner, surprendre, frapper d'étonnement.* | Attesté · référent | `SNK-LEX-0128` |
 | 205 | **kawafi-nde** | nom d'action | étonner (nom d'action) | étonner (nom d'action de kawafi) | Attesté · référent | `SNK-LEX-1094` |
 | 206 | **kawafini** | gérondif | étonner (gérondif) | étonner (gérondif / inaccompli de kawafi) | Attesté · référent | `SNK-LEX-1095` |
-| 207 | **kerin** | verbe | éteindre | éteindre | Attesté · référent | `SNK-LEX-0181` |
+| 207 | **kerin** | verbe | éteindre | éteindre<br>*Éteindre un feu ou une lumière.* | Attesté · référent | `SNK-LEX-0181` |
 | 208 | **kerin-nde** | nom d'action | éteindre (nom d'action) | éteindre (nom d'action de kerin) | Attesté · référent | `SNK-LEX-1096` |
 | 209 | **kerinni** | gérondif | éteindre (gérondif) | éteindre (gérondif / inaccompli de kerin) | Attesté · référent | `SNK-LEX-1097` |
-| 210 | **keti** | verbe | toucher | toucher | Attesté · référent | `SNK-LEX-0115` |
+| 210 | **keti** | verbe | toucher | toucher<br>*Toucher, entrer en contact avec la main.* | Attesté · référent | `SNK-LEX-0115` |
 | 211 | **ketini** | gérondif | toucher (gérondif) | toucher (gérondif / inaccompli de keti) | Attesté · référent | `SNK-LEX-1099` |
 | 212 | **keti-ye** | nom d'action | toucher (nom d'action) | toucher (nom d'action de keti) | Attesté · référent | `SNK-LEX-1098` |
-| 213 | **ko** | verbe | dire | dire | Attesté · référent | `SNK-LEX-0164` |
-| 214 | **kofuma** | verbe | unir | unir | Attesté · référent | `SNK-LEX-0120` |
+| 213 | **ko** | verbe | dire | dire<br>*Dire, énoncer.* | Attesté · référent | `SNK-LEX-0164` |
+| 214 | **kofuma** | verbe | unir | unir<br>*Unir, mettre ensemble pour faire un tout.* ⚠ | Attesté · référent | `SNK-LEX-0120` |
 | 215 | **kofumana** | gérondif | unir (gérondif) | unir (gérondif / inaccompli de kofuma) | Attesté · référent | `SNK-LEX-1102` |
 | 216 | **kofuma-nde** | nom d'action | unir (nom d'action) | unir (nom d'action de kofuma) | Attesté · référent | `SNK-LEX-1101` |
 | 217 | **kono** | gérondif | dire (gérondif) | dire (gérondif / inaccompli de ko) | Attesté · référent | `SNK-LEX-1103` |
-| 218 | **konti** | verbe | perdre | perdre | Attesté · référent | `SNK-LEX-0173` |
+| 218 | **konti** | verbe | perdre | perdre<br>*Perdre, ne plus retrouver ce qu'on possédait.* | Attesté · référent | `SNK-LEX-0173` |
 | 219 | **kontini** | gérondif | perdre (gérondif) | perdre (gérondif / inaccompli de konti) | Attesté · référent | `SNK-LEX-1105` |
 | 220 | **konti-ye** | nom d'action | perdre (nom d'action) | perdre (nom d'action de konti) | Attesté · référent | `SNK-LEX-1104` |
-| 221 | **konun** | verbe | effrayer | effrayer | Attesté · référent | `SNK-LEX-0062` |
+| 221 | **konun** | verbe | effrayer | effrayer<br>*Effrayer, faire peur.* | Attesté · référent | `SNK-LEX-0062` |
 | 222 | **konun-nde** | nom d'action | effrayer (nom d'action) | effrayer (nom d'action de konun) | Attesté · référent | `SNK-LEX-1106` |
 | 223 | **konunni** | gérondif | effrayer (gérondif) | effrayer (gérondif / inaccompli de konun) | Attesté · référent | `SNK-LEX-1107` |
 | 224 | **ko-ŋe** | nom d'action | dire (nom d'action) | dire (nom d'action de ko) | Attesté · référent | `SNK-LEX-1100` |
-| 225 | **koroosa** | verbe | tricoter | tricoter | Attesté · référent | `SNK-LEX-0117` |
+| 225 | **koroosa** | verbe | tricoter | tricoter<br>*Tricoter, fabriquer un tissu avec des mailles.* | Attesté · référent | `SNK-LEX-0117` |
 | 226 | **koroosana** | gérondif | tricoter (gérondif) | tricoter (gérondif / inaccompli de koroosa) | Attesté · référent | `SNK-LEX-1110` |
 | 227 | **koroosa-nde** | nom d'action | tricoter (nom d'action) | tricoter (nom d'action de koroosa) | Attesté · référent | `SNK-LEX-1109` |
-| 228 | **korosin** | verbe | surveiller | surveiller | Attesté · référent | `SNK-LEX-0109` |
+| 228 | **korosin** | verbe | surveiller | surveiller<br>*Surveiller, garder à l'œil.* | Attesté · référent | `SNK-LEX-0109` |
 | 229 | **korosin-nde** | nom d'action | surveiller (nom d'action) | surveiller (nom d'action de korosin) | Attesté · référent | `SNK-LEX-1111` |
 | 230 | **korosinni** | gérondif | surveiller (gérondif) | surveiller (gérondif / inaccompli de korosin) | Attesté · référent | `SNK-LEX-1112` |
-| 231 | **koyin** | verbe | montrer | montrer | Attesté · référent | `SNK-LEX-0075` |
+| 231 | **koyin** | verbe | montrer | montrer<br>*Montrer, faire voir.* | Attesté · référent | `SNK-LEX-0075` |
 | 232 | **koyin-nde** | nom d'action | montrer (nom d'action) | montrer (nom d'action de koyin) | Attesté · référent | `SNK-LEX-1113` |
 | 233 | **koyinni** | gérondif | montrer (gérondif) | montrer (gérondif / inaccompli de koyin) | Attesté · référent | `SNK-LEX-1114` |
-| 234 | **ku** | verbe | offrir | offrir | Attesté · référent | `SNK-LEX-0171` |
-| 235 | **kumu** | verbe | allumer | allumer | Attesté · référent | `SNK-LEX-0019` |
+| 234 | **ku** | verbe | offrir | offrir<br>*Offrir, donner en présent.* ⚠ | Attesté · référent | `SNK-LEX-0171` |
+| 235 | **kumu** | verbe | allumer | allumer<br>*Allumer un feu ou une lumière.* | Attesté · référent | `SNK-LEX-0019` |
 | 236 | **kumu-nde** | nom d'action | allumer (nom d'action) | allumer (nom d'action de kumu) | Attesté · référent | `SNK-LEX-1117` |
 | 237 | **kumunu** | gérondif | allumer (gérondif) | allumer (gérondif / inaccompli de kumu) | Attesté · référent | `SNK-LEX-1118` |
 | 238 | **kunu** | gérondif | offrir (gérondif) | offrir (gérondif / inaccompli de ku) | Attesté · référent | `SNK-LEX-1119` |
-| 239 | **kunyi** | verbe | saluer | saluer | Attesté · référent | `SNK-LEX-0105` |
+| 239 | **kunyi** | verbe | saluer | saluer<br>*Saluer quelqu'un, lui adresser les salutations d'usage.* | Attesté · référent | `SNK-LEX-0105` |
 | 240 | **kunyi-nde** | nom d'action | saluer (nom d'action) | saluer (nom d'action de kunyi) | Attesté · référent | `SNK-LEX-1120` |
 | 241 | **kunyini** | gérondif | saluer (gérondif) | saluer (gérondif / inaccompli de kunyi) | Attesté · référent | `SNK-LEX-1121` |
 | 242 | **ku-ye** | nom d'action | offrir (nom d'action) | offrir (nom d'action de ku) | Attesté · référent | `SNK-LEX-1115` |
-| 243 | **kuyi** | verbe | rêver | rêver | Attesté · référent | `SNK-LEX-0103` |
+| 243 | **kuyi** | verbe | rêver | rêver<br>*Rêver, voir en rêve.* | Attesté · référent | `SNK-LEX-0103` |
 | 244 | **kuyini** | gérondif | rêver (gérondif) | rêver (gérondif / inaccompli de kuyi) | Attesté · référent | `SNK-LEX-1123` |
 | 245 | **kuyi-ye** | nom d'action | rêver (nom d'action) | rêver (nom d'action de kuyi) | Attesté · référent | `SNK-LEX-1122` |
 
@@ -346,13 +346,13 @@ Provenance des définitions : lexique du projet **575** · document du référen
 | # | Soninké | Type | Traduction | Sens et définition | Statut | Entrée |
 | --- | --- | --- | --- | --- | --- | --- |
 | 246 | **l'** | particule | particule devant l'initiale « r » | particule devant r | Attesté · référent | `SNK-GRM-0029` |
-| 247 | **laaton** | verbe | éloigner | éloigner | Attesté · référent | `SNK-LEX-0126` |
+| 247 | **laaton** | verbe | éloigner | éloigner<br>*Éloigner, mettre à distance.* | Attesté · référent | `SNK-LEX-0126` |
 | 248 | **laaton-nde** | nom d'action | éloigner (nom d'action) | éloigner (nom d'action de laaton) | Attesté · référent | `SNK-LEX-1124` |
 | 249 | **laatonni** | gérondif | éloigner (gérondif) | éloigner (gérondif / inaccompli de laaton) | Attesté · référent | `SNK-LEX-1125` |
-| 250 | **laydurangandi** | verbe | promettre | promettre | Attesté · référent | `SNK-LEX-0174` |
+| 250 | **laydurangandi** | verbe | promettre | promettre<br>*Promettre, s'engager à faire quelque chose.* | Attesté · référent | `SNK-LEX-0174` |
 | 251 | **laydurangandi-nde** | nom d'action | promettre (nom d'action) | promettre (nom d'action de laydurangandi) | Attesté · référent | `SNK-LEX-1126` |
 | 252 | **laydurangandini** | gérondif | promettre (gérondif) | promettre (gérondif / inaccompli de laydurangandi) | Attesté · référent | `SNK-LEX-1127` |
-| 253 | **lifi** | verbe | coudre | coudre | Attesté · référent | `SNK-LEX-0161` |
+| 253 | **lifi** | verbe | coudre | coudre<br>*Coudre, assembler avec du fil.* | Attesté · référent | `SNK-LEX-0161` |
 | 254 | **lifi-nde** | nom d'action | coudre (nom d'action) | coudre (nom d'action de lifi) | Attesté · référent | `SNK-LEX-1131` |
 | 255 | **lifini** | gérondif | coudre (gérondif) | coudre (gérondif / inaccompli de lifi) | Attesté · référent | `SNK-LEX-1132` |
 
@@ -363,47 +363,47 @@ Provenance des définitions : lexique du projet **575** · document du référen
 | # | Soninké | Type | Traduction | Sens et définition | Statut | Entrée |
 | --- | --- | --- | --- | --- | --- | --- |
 | 256 | **m'** | particule | particule devant l'initiale « b » | particule devant b, f, m | Attesté · référent | `SNK-GRM-0028` |
-| 257 | **maaman** | verbe | énerver | énerver | Attesté · référent | `SNK-LEX-0127` |
+| 257 | **maaman** | verbe | énerver | énerver<br>*Énerver, agacer, faire perdre patience.* | Attesté · référent | `SNK-LEX-0127` |
 | 258 | **maaman-de** | nom d'action | énerver (nom d'action) | énerver (nom d'action de maaman) | Attesté · référent | `SNK-LEX-1133` |
 | 259 | **maamanni** | gérondif | énerver (gérondif) | énerver (gérondif / inaccompli de maaman) | Attesté · référent | `SNK-LEX-1134` |
 | 260 | **maxa** | marqueur | impératif négatif | ne... pas (impératif négatif / négation du passé) | Attesté · référent | `SNK-GRM-0024` |
-| 261 | **maxage** | verbe | cordonner | cordonner | Attesté · référent | `SNK-LEX-0136` |
+| 261 | **maxage** | verbe | cordonner | cordonner<br>*Cordonner, fabriquer ou réparer des chaussures.* | Attesté · référent | `SNK-LEX-0136` |
 | 262 | **maxage-me** | nom d'action | cordonner (nom d'action) | cordonner (nom d'action de maxage) | Attesté · référent | `SNK-LEX-1136` |
 | 263 | **maxagene** | gérondif | cordonner (gérondif) | cordonner (gérondif / inaccompli de maxage) | Attesté · référent | `SNK-LEX-1137` |
-| 264 | **maxankutondi** | verbe | raconter | raconter | Attesté · référent | `SNK-LEX-0090` |
+| 264 | **maxankutondi** | verbe | raconter | raconter<br>*Raconter, rapporter un récit, une histoire.* | Attesté · référent | `SNK-LEX-0090` |
 | 265 | **maxankutondi-nde** | nom d'action | raconter (nom d'action) | raconter (nom d'action de maxankutondi) | Attesté · référent | `SNK-LEX-1138` |
 | 266 | **maxankutondini** | gérondif | raconter (gérondif) | raconter (gérondif / inaccompli de maxankutondi) | Attesté · référent | `SNK-LEX-1139` |
-| 267 | **mekitandi** | verbe | relier | relier | Attesté · référent | `SNK-LEX-0094` |
+| 267 | **mekitandi** | verbe | relier | relier<br>*Relier, mettre en rapport, joindre.* | Attesté · référent | `SNK-LEX-0094` |
 | 268 | **mekitandi-nde** | nom d'action | relier (nom d'action) | relier (nom d'action de mekitandi) | Attesté · référent | `SNK-LEX-1142` |
 | 269 | **mekitandini** | gérondif | relier (gérondif) | relier (gérondif / inaccompli de mekitandi) | Attesté · référent | `SNK-LEX-1143` |
-| 270 | **me-wutu** | verbe | coordonner | coordonner | Attesté · référent | `SNK-LEX-0046` |
+| 270 | **me-wutu** | verbe | coordonner | coordonner<br>*Coordonner, agencer les parties d'un ensemble.* ⚠ | Attesté · référent | `SNK-LEX-0046` |
 | 271 | **me-wutu-nde** | nom d'action | coordonner (nom d'action) | coordonner (nom d'action de me-wutu) | Attesté · référent | `SNK-LEX-1140` |
 | 272 | **me-wutunu** | gérondif | coordonner (gérondif) | coordonner (gérondif / inaccompli de me-wutu) | Attesté · référent | `SNK-LEX-1141` |
-| 273 | **mexindi** | verbe | salir | salir | Attesté · référent | `SNK-LEX-0104` |
+| 273 | **mexindi** | verbe | salir | salir<br>*Salir, rendre sale.* | Attesté · référent | `SNK-LEX-0104` |
 | 274 | **mexindi-nde** | nom d'action | salir (nom d'action) | salir (nom d'action de mexindi) | Attesté · référent | `SNK-LEX-1144` |
 | 275 | **mexindini** | gérondif | salir (gérondif) | salir (gérondif / inaccompli de mexindi) | Attesté · référent | `SNK-LEX-1145` |
 | 276 | **mine** | nom d'action | boire (nom d'action) | boire (nom d'action de mini) | Attesté · référent | `SNK-LEX-1146` |
-| 277 | **mini** | verbe | boire | boire | Attesté · référent | `SNK-LEX-0006` |
+| 277 | **mini** | verbe | boire | boire<br>*Boire, absorber un liquide par la bouche.* | Attesté · référent | `SNK-LEX-0006` |
 | 278 | **minini** | gérondif | boire (gérondif) | boire (gérondif / inaccompli de mini) | Attesté · référent | `SNK-LEX-1147` |
-| 279 | **misso** | verbe | saboter | saboter | Attesté · référent | `SNK-LEX-0137` |
+| 279 | **misso** | verbe | saboter | saboter<br>*Saboter, faire échouer volontairement une entreprise.* | Attesté · référent | `SNK-LEX-0137` |
 | 280 | **missono** | gérondif | saboter (gérondif) | saboter (gérondif / inaccompli de misso) | Attesté · référent | `SNK-LEX-1149` |
 | 281 | **misso-ye** | nom d'action | saboter (nom d'action) | saboter (nom d'action de misso) | Attesté · référent | `SNK-LEX-1148` |
-| 282 | **mooso** | verbe | caresser | caresser | Attesté · référent | `SNK-LEX-0035` |
+| 282 | **mooso** | verbe | caresser | caresser<br>*Caresser, passer la main doucement sur quelqu'un.* | Attesté · référent | `SNK-LEX-0035` |
 | 283 | **mooso-nde** | nom d'action | caresser (nom d'action) | caresser (nom d'action de mooso) | Attesté · référent | `SNK-LEX-1150` |
 | 284 | **moosono** | gérondif | caresser (gérondif) | caresser (gérondif / inaccompli de mooso) | Attesté · référent | `SNK-LEX-1151` |
-| 285 | **mugni** | verbe | impatienter | impatienter | Attesté · référent | `SNK-LEX-0142` |
+| 285 | **mugni** | verbe | impatienter | impatienter<br>*Impatienter, faire perdre patience.* | Attesté · référent | `SNK-LEX-0142` |
 | 286 | **mugnini** | gérondif | impatienter (gérondif) | impatienter (gérondif / inaccompli de mugni) | Attesté · référent | `SNK-LEX-1153` |
 | 287 | **mugni-ye** | nom d'action | impatienter (nom d'action) | impatienter (nom d'action de mugni) | Attesté · référent | `SNK-LEX-1152` |
-| 288 | **mulondi** | verbe | froidir | froidir | Attesté · référent | `SNK-LEX-0140` |
+| 288 | **mulondi** | verbe | froidir | froidir<br>*Refroidir, rendre froid.* | Attesté · référent | `SNK-LEX-0140` |
 | 289 | **mulondi-nde** | nom d'action | froidir (nom d'action) | froidir (nom d'action de mulondi) | Attesté · référent | `SNK-LEX-1154` |
 | 290 | **mulondini** | gérondif | froidir (gérondif) | froidir (gérondif / inaccompli de mulondi) | Attesté · référent | `SNK-LEX-1155` |
-| 291 | **mungu** | verbe | oublier | oublier | Attesté · référent | `SNK-LEX-0079` |
+| 291 | **mungu** | verbe | oublier | oublier<br>*Oublier, perdre le souvenir de quelque chose.* | Attesté · référent | `SNK-LEX-0079` |
 | 292 | **mungunu** | gérondif | oublier (gérondif) | oublier (gérondif / inaccompli de mungu) | Attesté · référent | `SNK-LEX-1157` |
 | 293 | **mungu-ye** | nom d'action | oublier (nom d'action) | oublier (nom d'action de mungu) | Attesté · référent | `SNK-LEX-1156` |
-| 294 | **muru** | verbe | chercher | chercher | Attesté · référent | `SNK-LEX-0039` |
+| 294 | **muru** | verbe | chercher | chercher<br>*Chercher, s'efforcer de trouver.* | Attesté · référent | `SNK-LEX-0039` |
 | 295 | **muru-nde** | nom d'action | chercher (nom d'action) | chercher (nom d'action de muru) | Attesté · référent | `SNK-LEX-1158` |
 | 296 | **murunu** | gérondif | chercher (gérondif) | chercher (gérondif / inaccompli de muru) | Attesté · référent | `SNK-LEX-1159` |
-| 297 | **muxu** | verbe | cacher | cacher | Attesté · référent | `SNK-LEX-0034` |
+| 297 | **muxu** | verbe | cacher | cacher<br>*Cacher, dissimuler.* | Attesté · référent | `SNK-LEX-0034` |
 | 298 | **muxu-nde** | nom d'action | cacher (nom d'action) | cacher (nom d'action de muxu) | Attesté · référent | `SNK-LEX-1160` |
 | 299 | **muxunu** | gérondif | cacher (gérondif) | cacher (gérondif / inaccompli de muxu) | Attesté · référent | `SNK-LEX-1161` |
 
@@ -416,15 +416,15 @@ Provenance des définitions : lexique du projet **575** · document du référen
 | 300 | **n** | pronom | je | je | Attesté · référent | `SNK-GRM-0007` |
 | 301 | **n'** | particule | particule par défaut (toute autre initiale) | particule par défaut | Attesté · référent | `SNK-GRM-0031` |
 | 302 | **na** | marqueur | demande (na) | demande / qu'il | Attesté · référent | `SNK-GRM-0017` |
-| 303 | **nia** | verbe | devenir | devenir | Attesté · référent | `SNK-LEX-0163` |
+| 303 | **nia** | verbe | devenir | devenir<br>*Devenir, passer d'un état à un autre.* | Attesté · référent | `SNK-LEX-0163` |
 | 304 | **niana** | gérondif | devenir (gérondif) | devenir (gérondif / inaccompli de nia) | Attesté · référent | `SNK-LEX-1163` |
 | 305 | **nia-ŋe** | nom d'action | devenir (nom d'action) | devenir (nom d'action de nia) | Attesté · référent | `SNK-LEX-1162` |
-| 306 | **niaŋundi** | verbe | transformer | transformer | Attesté · référent | `SNK-LEX-0116` |
+| 306 | **niaŋundi** | verbe | transformer | transformer<br>*Transformer, faire devenir autre.* | Attesté · référent | `SNK-LEX-0116` |
 | 307 | **niaŋundi-nde** | nom d'action | transformer (nom d'action) | transformer (nom d'action de niaŋundi) | Attesté · référent | `SNK-LEX-1164` |
 | 308 | **niaŋundini** | gérondif | transformer (gérondif) | transformer (gérondif / inaccompli de niaŋundi) | Attesté · référent | `SNK-LEX-1165` |
 | 309 | **ni ya me** | suffixe | action en cours (do … me) | suffixe de l'action en cours (avec do) | Attesté · référent | `SNK-GRM-0023` |
 | 310 | **nke** | pronom | je | je | Attesté · référent | `SNK-GRM-0001` |
-| 311 | **noni** | verbe | tracer | tracer | Attesté · référent | `SNK-LEX-0147` |
+| 311 | **noni** | verbe | tracer | tracer<br>*Tracer, dessiner un trait, une ligne.* | Attesté · référent | `SNK-LEX-0147` |
 | 312 | **noni-nde** | nom d'action | tracer (nom d'action) | tracer (nom d'action de noni) | Attesté · référent | `SNK-LEX-1166` |
 | 313 | **nonini** | gérondif | tracer (gérondif) | tracer (gérondif / inaccompli de noni) | Attesté · référent | `SNK-LEX-1167` |
 | 314 | **n'taxa rini** | marqueur | négation – futur proche (n'taxa) | négation du futur proche (variante) | Attesté · référent | `SNK-GRM-0026` |
@@ -453,23 +453,23 @@ Provenance des définitions : lexique du projet **575** · document du référen
 
 | # | Soninké | Type | Traduction | Sens et définition | Statut | Entrée |
 | --- | --- | --- | --- | --- | --- | --- |
-| 319 | **raga** | verbe | attraper | attraper | Attesté · référent | `SNK-LEX-0028` |
+| 319 | **raga** | verbe | attraper | attraper<br>*Attraper, saisir ce qui fuit.* | Attesté · référent | `SNK-LEX-0028` |
 | 320 | **ragana** | gérondif | attraper (gérondif) | attraper (gérondif / inaccompli de raga) | Attesté · référent | `SNK-LEX-1169` |
 | 321 | **raga-nde** | nom d'action | attraper (nom d'action) | attraper (nom d'action de raga) | Attesté · référent | `SNK-LEX-1168` |
-| 322 | **rege** | verbe | danser | danser | Attesté · référent | `SNK-LEX-0054` |
+| 322 | **rege** | verbe | danser | danser<br>*Danser.* | Attesté · référent | `SNK-LEX-0054` |
 | 323 | **regene** | gérondif | danser (gérondif) | danser (gérondif / inaccompli de rege) | Attesté · référent | `SNK-LEX-1171` |
 | 324 | **rege-ye** | nom d'action | danser (nom d'action) | danser (nom d'action de rege) | Attesté · référent | `SNK-LEX-1170` |
-| 325 | **ri** | verbe | venir | venir | Attesté · référent | `SNK-LEX-0002` |
+| 325 | **ri** | verbe | venir | venir<br>*Venir, se déplacer vers celui qui parle.* | Attesté · référent | `SNK-LEX-0002` |
 | 326 | **rini** | gérondif | venir (gérondif) | futur lointain / à venir | Attesté · référent | `SNK-GRM-0015` |
 | 327 | **rini** | marqueur | futur lointain | futur lointain / à venir | Attesté · référent | `SNK-GRM-0015` |
-| 328 | **riti** | verbe | apporter | apporter | Attesté · référent | `SNK-LEX-0022` |
+| 328 | **riti** | verbe | apporter | apporter<br>*Apporter, amener ce qu'on porte vers un lieu.* | Attesté · référent | `SNK-LEX-0022` |
 | 329 | **riti-nde** | nom d'action | apporter (nom d'action) | apporter (nom d'action de riti) | Attesté · référent | `SNK-LEX-1172` |
 | 330 | **ritini** | gérondif | apporter (gérondif) | apporter (gérondif / inaccompli de riti) | Attesté · référent | `SNK-LEX-1173` |
 | 331 | **riye** | nom d'action | venir (nom d'action) | venir (nom d'action de ri) | Attesté · référent | `SNK-LEX-1174` |
-| 332 | **rondi** | verbe | mettre | mettre | Attesté · référent | `SNK-LEX-0169` |
+| 332 | **rondi** | verbe | mettre | mettre<br>*Mettre, placer quelque chose quelque part.* | Attesté · référent | `SNK-LEX-0169` |
 | 333 | **rondi-nde** | nom d'action | mettre (nom d'action) | mettre (nom d'action de rondi) | Attesté · référent | `SNK-LEX-1175` |
 | 334 | **rondini** | gérondif | mettre (gérondif) | mettre (gérondif / inaccompli de rondi) | Attesté · référent | `SNK-LEX-1176` |
-| 335 | **roxo** | verbe | prêter | prêter | Attesté · référent | `SNK-LEX-0089` |
+| 335 | **roxo** | verbe | prêter | prêter<br>*Prêter, remettre quelque chose à quelqu'un pour un temps.* | Attesté · référent | `SNK-LEX-0089` |
 | 336 | **roxo-nde** | nom d'action | prêter (nom d'action) | prêter (nom d'action de roxo) | Attesté · référent | `SNK-LEX-1177` |
 | 337 | **roxono** | gérondif | prêter (gérondif) | prêter (gérondif / inaccompli de roxo) | Attesté · référent | `SNK-LEX-1178` |
 
@@ -479,82 +479,82 @@ Provenance des définitions : lexique du projet **575** · document du référen
 
 | # | Soninké | Type | Traduction | Sens et définition | Statut | Entrée |
 | --- | --- | --- | --- | --- | --- | --- |
-| 338 | **saare** | verbe | naître | naître | Attesté · référent | `SNK-LEX-0170` |
+| 338 | **saare** | verbe | naître | naître<br>*Naître, venir au monde.* | Attesté · référent | `SNK-LEX-0170` |
 | 339 | **saarene** | gérondif | naître (gérondif) | naître (gérondif / inaccompli de saare) | Attesté · référent | `SNK-LEX-1180` |
 | 340 | **saare-ye** | nom d'action | naître (nom d'action) | naître (nom d'action de saare) | Attesté · référent | `SNK-LEX-1179` |
-| 341 | **safa** | verbe | écrire | écrire | Attesté · référent | `SNK-LEX-0008` |
+| 341 | **safa** | verbe | écrire | écrire<br>*Écrire, tracer des signes d'écriture.* | Attesté · référent | `SNK-LEX-0008` |
 | 342 | **safana** | gérondif | écrire (gérondif) | écrire (gérondif / inaccompli de safa) | Attesté · référent | `SNK-LEX-1181` |
 | 343 | **safande** | nom d'action | écrire (nom d'action) | écrire (nom d'action de safa) | Attesté · référent | `SNK-LEX-1182` |
-| 344 | **sakundi** | verbe | égarer | égarer | Attesté · référent | `SNK-LEX-0125` |
+| 344 | **sakundi** | verbe | égarer | égarer<br>*Égarer, perdre un objet en le laissant hors de sa place.* | Attesté · référent | `SNK-LEX-0125` |
 | 345 | **sakundi-nde** | nom d'action | égarer (nom d'action) | égarer (nom d'action de sakundi) | Attesté · référent | `SNK-LEX-1183` |
 | 346 | **sakundini** | gérondif | égarer (gérondif) | égarer (gérondif / inaccompli de sakundi) | Attesté · référent | `SNK-LEX-1184` |
-| 347 | **sameti** | verbe | confier | confier | Attesté · référent | `SNK-LEX-0135` |
+| 347 | **sameti** | verbe | confier | confier<br>*Confier, remettre à la garde de quelqu'un.* | Attesté · référent | `SNK-LEX-0135` |
 | 348 | **sameti-nde** | nom d'action | confier (nom d'action) | confier (nom d'action de sameti) | Attesté · référent | `SNK-LEX-1185` |
 | 349 | **sametini** | gérondif | confier (gérondif) | confier (gérondif / inaccompli de sameti) | Attesté · référent | `SNK-LEX-1186` |
-| 350 | **sane** | verbe | apparaître | apparaître | Attesté · référent | `SNK-LEX-0153` |
+| 350 | **sane** | verbe | apparaître | apparaître<br>*Apparaître, se montrer.* | Attesté · référent | `SNK-LEX-0153` |
 | 351 | **sanene** | gérondif | apparaître (gérondif) | apparaître (gérondif / inaccompli de sane) | Attesté · référent | `SNK-LEX-1188` |
 | 352 | **sane-ye** | nom d'action | apparaître (nom d'action) | apparaître (nom d'action de sane) | Attesté · référent | `SNK-LEX-1187` |
-| 353 | **sangalu** | verbe | clôturer | clôturer | Attesté · référent | `SNK-LEX-0133` |
+| 353 | **sangalu** | verbe | clôturer | clôturer<br>*Clôturer, fermer un terrain par une clôture.* | Attesté · référent | `SNK-LEX-0133` |
 | 354 | **sangalu-nde** | nom d'action | clôturer (nom d'action) | clôturer (nom d'action de sangalu) | Attesté · référent | `SNK-LEX-1189` |
 | 355 | **sangalunu** | gérondif | clôturer (gérondif) | clôturer (gérondif / inaccompli de sangalu) | Attesté · référent | `SNK-LEX-1190` |
-| 356 | **sanku** | verbe | disparaître | disparaître | Attesté · référent | `SNK-LEX-0165` |
+| 356 | **sanku** | verbe | disparaître | disparaître<br>*Disparaître, cesser d'être visible.* | Attesté · référent | `SNK-LEX-0165` |
 | 357 | **sankunu** | gérondif | disparaître (gérondif) | disparaître (gérondif / inaccompli de sanku) | Attesté · référent | `SNK-LEX-1192` |
 | 358 | **sanku-ye** | nom d'action | disparaître (nom d'action) | disparaître (nom d'action de sanku) | Attesté · référent | `SNK-LEX-1191` |
-| 359 | **saqe** | verbe | coucher | coucher | Attesté · référent | `SNK-LEX-0047` |
+| 359 | **saqe** | verbe | coucher | coucher<br>*Coucher, être étendu pour dormir.* | Attesté · référent | `SNK-LEX-0047` |
 | 360 | **saqene** | gérondif | coucher (gérondif) | coucher (gérondif / inaccompli de saqe) | Attesté · référent | `SNK-LEX-1194` |
 | 361 | **saqe-ye** | nom d'action | coucher (nom d'action) | coucher (nom d'action de saqe) | Attesté · référent | `SNK-LEX-1193` |
-| 362 | **sefe** | verbe | parler | parler | Attesté · référent | `SNK-LEX-0004` |
+| 362 | **sefe** | verbe | parler | parler<br>*Parler, s'exprimer par la parole.* | Attesté · référent | `SNK-LEX-0004` |
 | 363 | **sefene** | gérondif | parler (gérondif) | parler (gérondif / inaccompli de sefe) | Attesté · référent | `SNK-LEX-1195` |
 | 364 | **sefeye** | nom d'action | parler (nom d'action) | parler (nom d'action de sefe) | Attesté · référent | `SNK-LEX-1196` |
-| 365 | **sege** | verbe | monter | monter | Attesté · référent | `SNK-LEX-0074` |
+| 365 | **sege** | verbe | monter | monter<br>*Monter, aller vers le haut.* | Attesté · référent | `SNK-LEX-0074` |
 | 366 | **segene** | gérondif | monter (gérondif) | monter (gérondif / inaccompli de sege) | Attesté · référent | `SNK-LEX-1198` |
 | 367 | **sege-ye** | nom d'action | monter (nom d'action) | monter (nom d'action de sege) | Attesté · référent | `SNK-LEX-1197` |
-| 368 | **si** | verbe | raser | raser | Attesté · référent | `SNK-LEX-0091` |
-| 369 | **sigi** | verbe | stopper | stopper | Attesté · référent | `SNK-LEX-0144` |
+| 368 | **si** | verbe | raser | raser<br>*Raser, couper le poil de près.* | Attesté · référent | `SNK-LEX-0091` |
+| 369 | **sigi** | verbe | stopper | stopper<br>*Stopper, s'arrêter, cesser d'avancer.* | Attesté · référent | `SNK-LEX-0144` |
 | 370 | **sigi-nde** | nom d'action | stopper (nom d'action) | stopper (nom d'action de sigi) | Attesté · référent | `SNK-LEX-1200` |
 | 371 | **sigini** | gérondif | stopper (gérondif) | stopper (gérondif / inaccompli de sigi) | Attesté · référent | `SNK-LEX-1201` |
-| 372 | **simandi** | verbe | en rappeler | en rappeler | Attesté · référent | `SNK-LEX-0139` |
+| 372 | **simandi** | verbe | en rappeler | en rappeler<br>*Rappeler quelque chose, le remettre en mémoire.* ⚠ | Attesté · référent | `SNK-LEX-0139` |
 | 373 | **simandi-nde** | nom d'action | en rappeler (nom d'action) | en rappeler (nom d'action de simandi) | Attesté · référent | `SNK-LEX-1202` |
 | 374 | **simandini** | gérondif | en rappeler (gérondif) | en rappeler (gérondif / inaccompli de simandi) | Attesté · référent | `SNK-LEX-1203` |
-| 375 | **simme** | verbe | penser | penser | Attesté · référent | `SNK-LEX-0081` |
+| 375 | **simme** | verbe | penser | penser<br>*Penser, réfléchir.* | Attesté · référent | `SNK-LEX-0081` |
 | 376 | **simmene** | gérondif | penser (gérondif) | penser (gérondif / inaccompli de simme) | Attesté · référent | `SNK-LEX-1205` |
 | 377 | **simme-ye** | nom d'action | penser (nom d'action) | penser (nom d'action de simme) | Attesté · référent | `SNK-LEX-1204` |
 | 378 | **sini** | gérondif | raser (gérondif) | raser (gérondif / inaccompli de si) | Attesté · référent | `SNK-LEX-1206` |
 | 379 | **si-ye** | nom d'action | raser (nom d'action) | raser (nom d'action de si) | Attesté · référent | `SNK-LEX-1199` |
-| 380 | **siyi** | verbe | coiffer | coiffer | Attesté · référent | `SNK-LEX-0041` |
+| 380 | **siyi** | verbe | coiffer | coiffer<br>*Coiffer, peigner et arranger les cheveux.* | Attesté · référent | `SNK-LEX-0041` |
 | 381 | **siyini** | gérondif | coiffer (gérondif) | coiffer (gérondif / inaccompli de siyi) | Attesté · référent | `SNK-LEX-1208` |
 | 382 | **siyi-ye** | nom d'action | coiffer (nom d'action) | coiffer (nom d'action de siyi) | Attesté · référent | `SNK-LEX-1207` |
-| 383 | **sonundi** | verbe | tisser | tisser | Attesté · référent | `SNK-LEX-0113` |
+| 383 | **sonundi** | verbe | tisser | tisser<br>*Tisser, entrecroiser des fils.* | Attesté · référent | `SNK-LEX-0113` |
 | 384 | **sonundi-nde** | nom d'action | tisser (nom d'action) | tisser (nom d'action de sonundi) | Attesté · référent | `SNK-LEX-1209` |
 | 385 | **sonundini** | gérondif | tisser (gérondif) | tisser (gérondif / inaccompli de sonundi) | Attesté · référent | `SNK-LEX-1210` |
-| 386 | **sooti** | verbe | brancher | brancher | Attesté · référent | `SNK-LEX-0031` |
+| 386 | **sooti** | verbe | brancher | brancher<br>*Brancher, raccorder à une installation.* ⚠ | Attesté · référent | `SNK-LEX-0031` |
 | 387 | **sooti-nde** | nom d'action | brancher (nom d'action) | brancher (nom d'action de sooti) | Attesté · référent | `SNK-LEX-1211` |
 | 388 | **sootini** | gérondif | brancher (gérondif) | brancher (gérondif / inaccompli de sooti) | Attesté · référent | `SNK-LEX-1212` |
-| 389 | **sore** | verbe | cuisiner | cuisiner | Attesté · référent | `SNK-LEX-0052` |
+| 389 | **sore** | verbe | cuisiner | cuisiner<br>*Cuisiner, faire la cuisine.* ⚠ | Attesté · référent | `SNK-LEX-0052` |
 | 390 | **sorene** | gérondif | cuisiner (gérondif) | cuisiner (gérondif / inaccompli de sore) | Attesté · référent | `SNK-LEX-1214` |
 | 391 | **sore-ye** | nom d'action | cuisiner (nom d'action) | cuisiner (nom d'action de sore) | Attesté · référent | `SNK-LEX-1213` |
-| 392 | **soxondi** | verbe | verrouiller | verrouiller | Attesté · référent | `SNK-LEX-0121` |
+| 392 | **soxondi** | verbe | verrouiller | verrouiller<br>*Verrouiller, fermer à clé.* | Attesté · référent | `SNK-LEX-0121` |
 | 393 | **soxondi-nde** | nom d'action | verrouiller (nom d'action) | verrouiller (nom d'action de soxondi) | Attesté · référent | `SNK-LEX-1215` |
 | 394 | **soxondini** | gérondif | verrouiller (gérondif) | verrouiller (gérondif / inaccompli de soxondi) | Attesté · référent | `SNK-LEX-1216` |
-| 395 | **soyi** | verbe | rire | rire | Attesté · référent | `SNK-LEX-0175` |
+| 395 | **soyi** | verbe | rire | rire<br>*Rire.* | Attesté · référent | `SNK-LEX-0175` |
 | 396 | **soyini** | gérondif | rire (gérondif) | rire (gérondif / inaccompli de soyi) | Attesté · référent | `SNK-LEX-1218` |
 | 397 | **soyi-ye** | nom d'action | rire (nom d'action) | rire (nom d'action de soyi) | Attesté · référent | `SNK-LEX-1217` |
-| 398 | **sugandi** | verbe | choisir | choisir | Attesté · référent | `SNK-LEX-0040` |
+| 398 | **sugandi** | verbe | choisir | choisir<br>*Choisir, retenir parmi plusieurs.* | Attesté · référent | `SNK-LEX-0040` |
 | 399 | **sugandi-nde** | nom d'action | choisir (nom d'action) | choisir (nom d'action de sugandi) | Attesté · référent | `SNK-LEX-1219` |
 | 400 | **sugandini** | gérondif | choisir (gérondif) | choisir (gérondif / inaccompli de sugandi) | Attesté · référent | `SNK-LEX-1220` |
-| 401 | **suge** | verbe | chanter | chanter | Attesté · référent | `SNK-LEX-0038` |
+| 401 | **suge** | verbe | chanter | chanter<br>*Chanter.* | Attesté · référent | `SNK-LEX-0038` |
 | 402 | **sugene** | gérondif | chanter (gérondif) | chanter (gérondif / inaccompli de suge) | Attesté · référent | `SNK-LEX-1222` |
 | 403 | **suge-ye** | nom d'action | chanter (nom d'action) | chanter (nom d'action de suge) | Attesté · référent | `SNK-LEX-1221` |
-| 404 | **sukandi** | verbe | cocher | cocher | Attesté · référent | `SNK-LEX-0134` |
+| 404 | **sukandi** | verbe | cocher | cocher<br>*Cocher, marquer d'un signe une case ou un nom.* | Attesté · référent | `SNK-LEX-0134` |
 | 405 | **sukandi-nde** | nom d'action | cocher (nom d'action) | cocher (nom d'action de sukandi) | Attesté · référent | `SNK-LEX-1223` |
 | 406 | **sukandini** | gérondif | cocher (gérondif) | cocher (gérondif / inaccompli de sukandi) | Attesté · référent | `SNK-LEX-1224` |
-| 407 | **sumba** | verbe | souquer | souquer | Attesté · référent | `SNK-LEX-0143` |
+| 407 | **sumba** | verbe | souquer | souquer<br>*Souquer, haler sur un cordage.* ⚠ | Attesté · référent | `SNK-LEX-0143` |
 | 408 | **sumbana** | gérondif | souquer (gérondif) | souquer (gérondif / inaccompli de sumba) | Attesté · référent | `SNK-LEX-1226` |
 | 409 | **sumba-nde** | nom d'action | souquer (nom d'action) | souquer (nom d'action de sumba) | Attesté · référent | `SNK-LEX-1225` |
-| 410 | **suruba** | verbe | aspirer | aspirer | Attesté · référent | `SNK-LEX-0132` |
+| 410 | **suruba** | verbe | aspirer | aspirer<br>*Aspirer, attirer un liquide par la succion.* | Attesté · référent | `SNK-LEX-0132` |
 | 411 | **surubana** | gérondif | aspirer (gérondif) | aspirer (gérondif / inaccompli de suruba) | Attesté · référent | `SNK-LEX-1228` |
 | 412 | **suruba-nde** | nom d'action | aspirer (nom d'action) | aspirer (nom d'action de suruba) | Attesté · référent | `SNK-LEX-1227` |
-| 413 | **suxe** | verbe | jalouser | jalouser | Attesté · référent | `SNK-LEX-0066` |
+| 413 | **suxe** | verbe | jalouser | jalouser<br>*Jalouser, éprouver de la jalousie envers quelqu'un.* | Attesté · référent | `SNK-LEX-0066` |
 | 414 | **suxene** | gérondif | jalouser (gérondif) | jalouser (gérondif / inaccompli de suxe) | Attesté · référent | `SNK-LEX-1230` |
 | 415 | **suxe-ye** | nom d'action | jalouser (nom d'action) | jalouser (nom d'action de suxe) | Attesté · référent | `SNK-LEX-1229` |
 
@@ -564,54 +564,54 @@ Provenance des définitions : lexique du projet **575** · document du référen
 
 | # | Soninké | Type | Traduction | Sens et définition | Statut | Entrée |
 | --- | --- | --- | --- | --- | --- | --- |
-| 416 | **taga** | verbe | bâtir | bâtir | Attesté · référent | `SNK-LEX-0033` |
+| 416 | **taga** | verbe | bâtir | bâtir<br>*Bâtir, construire un ouvrage.* | Attesté · référent | `SNK-LEX-0033` |
 | 417 | **tagana** | gérondif | bâtir (gérondif) | bâtir (gérondif / inaccompli de taga) | Attesté · référent | `SNK-LEX-1232` |
 | 418 | **taga-nde** | nom d'action | bâtir (nom d'action) | bâtir (nom d'action de taga) | Attesté · référent | `SNK-LEX-1231` |
-| 419 | **tagandi** | verbe | créer | créer | Attesté · référent | `SNK-LEX-0051` |
+| 419 | **tagandi** | verbe | créer | créer<br>*Créer, faire exister ce qui n'existait pas.* | Attesté · référent | `SNK-LEX-0051` |
 | 420 | **tagandi-nde** | nom d'action | créer (nom d'action) | créer (nom d'action de tagandi) | Attesté · référent | `SNK-LEX-1233` |
 | 421 | **tagandini** | gérondif | créer (gérondif) | créer (gérondif / inaccompli de tagandi) | Attesté · référent | `SNK-LEX-1234` |
-| 422 | **tambotuga** | verbe | rembourser | rembourser | Attesté · référent | `SNK-LEX-0095` |
+| 422 | **tambotuga** | verbe | rembourser | rembourser<br>*Rembourser, rendre ce qui a été emprunté.* | Attesté · référent | `SNK-LEX-0095` |
 | 423 | **tambotugana** | gérondif | rembourser (gérondif) | rembourser (gérondif / inaccompli de tambotuga) | Attesté · référent | `SNK-LEX-1236` |
 | 424 | **tambotuga-nde** | nom d'action | rembourser (nom d'action) | rembourser (nom d'action de tambotuga) | Attesté · référent | `SNK-LEX-1235` |
-| 425 | **tarandi** | verbe | visiter | visiter | Attesté · référent | `SNK-LEX-0124` |
+| 425 | **tarandi** | verbe | visiter | visiter<br>*Visiter, aller voir quelqu'un.* | Attesté · référent | `SNK-LEX-0124` |
 | 426 | **tarandi-nde** | nom d'action | visiter (nom d'action) | visiter (nom d'action de tarandi) | Attesté · référent | `SNK-LEX-1237` |
 | 427 | **tarandini** | gérondif | visiter (gérondif) | visiter (gérondif / inaccompli de tarandi) | Attesté · référent | `SNK-LEX-1238` |
-| 428 | **tari** | verbe | célébrer | célébrer | Attesté · référent | `SNK-LEX-0053` |
+| 428 | **tari** | verbe | célébrer | célébrer<br>*Célébrer, fêter un événement.* | Attesté · référent | `SNK-LEX-0053` |
 | 429 | **tari-nde** | nom d'action | célébrer (nom d'action) | célébrer (nom d'action de tari) | Attesté · référent | `SNK-LEX-1239` |
 | 430 | **tarini** | gérondif | célébrer (gérondif) | célébrer (gérondif / inaccompli de tari) | Attesté · référent | `SNK-LEX-1240` |
-| 431 | **taxu** | verbe | asseoir | asseoir | Attesté · référent | `SNK-LEX-0154` |
+| 431 | **taxu** | verbe | asseoir | asseoir<br>*S'asseoir, prendre place.* ⚠ | Attesté · référent | `SNK-LEX-0154` |
 | 432 | **taxunu** | gérondif | asseoir (gérondif) | asseoir (gérondif / inaccompli de taxu) | Attesté · référent | `SNK-LEX-1242` |
 | 433 | **taxu-ye** | nom d'action | asseoir (nom d'action) | asseoir (nom d'action de taxu) | Attesté · référent | `SNK-LEX-1241` |
-| 434 | **tewe** | verbe | assister | assister | Attesté · référent | `SNK-LEX-0026` |
+| 434 | **tewe** | verbe | assister | assister<br>*Assister à un événement, y être présent.* ⚠ | Attesté · référent | `SNK-LEX-0026` |
 | 435 | **tewene** | gérondif | assister (gérondif) | assister (gérondif / inaccompli de tewe) | Attesté · référent | `SNK-LEX-1244` |
 | 436 | **tewe-ye** | nom d'action | assister (nom d'action) | assister (nom d'action de tewe) | Attesté · référent | `SNK-LEX-1243` |
-| 437 | **tifin** | verbe | accuser | accuser | Attesté · référent | `SNK-LEX-0015` |
+| 437 | **tifin** | verbe | accuser | accuser<br>*Accuser quelqu'un, le rendre responsable.* | Attesté · référent | `SNK-LEX-0015` |
 | 438 | **tifin-nde** | nom d'action | accuser (nom d'action) | accuser (nom d'action de tifin) | Attesté · référent | `SNK-LEX-1245` |
 | 439 | **tifinni** | gérondif | accuser (gérondif) | accuser (gérondif / inaccompli de tifin) | Attesté · référent | `SNK-LEX-1246` |
-| 440 | **tilifi** | verbe | torturer | torturer | Attesté · référent | `SNK-LEX-0145` |
+| 440 | **tilifi** | verbe | torturer | torturer<br>*Torturer, faire subir des sévices.* | Attesté · référent | `SNK-LEX-0145` |
 | 441 | **tilifi-nde** | nom d'action | torturer (nom d'action) | torturer (nom d'action de tilifi) | Attesté · référent | `SNK-LEX-1247` |
 | 442 | **tilifini** | gérondif | torturer (gérondif) | torturer (gérondif / inaccompli de tilifi) | Attesté · référent | `SNK-LEX-1248` |
-| 443 | **tinto** | verbe | approcher | approcher | Attesté · référent | `SNK-LEX-0023` |
+| 443 | **tinto** | verbe | approcher | approcher<br>*Approcher, se rapprocher.* | Attesté · référent | `SNK-LEX-0023` |
 | 444 | **tintono** | gérondif | approcher (gérondif) | approcher (gérondif / inaccompli de tinto) | Attesté · référent | `SNK-LEX-1250` |
 | 445 | **tinto-ye** | nom d'action | approcher (nom d'action) | approcher (nom d'action de tinto) | Attesté · référent | `SNK-LEX-1249` |
-| 446 | **tu** | verbe | connaître | connaître | Attesté · référent | `SNK-LEX-0159` |
-| 447 | **tuka** | verbe | coller | coller | Attesté · référent | `SNK-LEX-0042` |
+| 446 | **tu** | verbe | connaître | connaître<br>*Connaître, avoir la connaissance de quelqu'un ou de quelque chose.* ⚠ | Attesté · référent | `SNK-LEX-0159` |
+| 447 | **tuka** | verbe | coller | coller<br>*Coller, faire adhérer.* | Attesté · référent | `SNK-LEX-0042` |
 | 448 | **tukana** | gérondif | coller (gérondif) | coller (gérondif / inaccompli de tuka) | Attesté · référent | `SNK-LEX-1253` |
 | 449 | **tuka-nde** | nom d'action | coller (nom d'action) | coller (nom d'action de tuka) | Attesté · référent | `SNK-LEX-1252` |
-| 450 | **tulu** | verbe | tresser | tresser | Attesté · référent | `SNK-LEX-0149` |
+| 450 | **tulu** | verbe | tresser | tresser<br>*Tresser, entrelacer des mèches ou des fils.* | Attesté · référent | `SNK-LEX-0149` |
 | 451 | **tulu-nde** | nom d'action | tresser (nom d'action) | tresser (nom d'action de tulu) | Attesté · référent | `SNK-LEX-1254` |
 | 452 | **tulunu** | gérondif | tresser (gérondif) | tresser (gérondif / inaccompli de tulu) | Attesté · référent | `SNK-LEX-1255` |
-| 453 | **tuma** | verbe | reposer | reposer | Attesté · référent | `SNK-LEX-0096` |
+| 453 | **tuma** | verbe | reposer | reposer<br>*Se reposer, prendre du repos.* | Attesté · référent | `SNK-LEX-0096` |
 | 454 | **tumana** | gérondif | reposer (gérondif) | reposer (gérondif / inaccompli de tuma) | Attesté · référent | `SNK-LEX-1257` |
 | 455 | **tuma-ye** | nom d'action | reposer (nom d'action) | reposer (nom d'action de tuma) | Attesté · référent | `SNK-LEX-1256` |
-| 456 | **tuntchi** | verbe | accompagner | accompagner | Attesté · référent | `SNK-LEX-0014` |
+| 456 | **tuntchi** | verbe | accompagner | accompagner<br>*Accompagner quelqu'un.* | Attesté · référent | `SNK-LEX-0014` |
 | 457 | **tuntchi-nde** | nom d'action | accompagner (nom d'action) | accompagner (nom d'action de tuntchi) | Attesté · référent | `SNK-LEX-1258` |
 | 458 | **tuntchini** | gérondif | accompagner (gérondif) | accompagner (gérondif / inaccompli de tuntchi) | Attesté · référent | `SNK-LEX-1259` |
 | 459 | **tunu** | gérondif | connaître (gérondif) | connaître (gérondif / inaccompli de tu) | Attesté · référent | `SNK-LEX-1260` |
 | 460 | **tu-ye** | nom d'action | connaître (nom d'action) | connaître (nom d'action de tu) | Attesté · référent | `SNK-LEX-1251` |
-| 461 | **tuyi** | verbe | informer | informer | Attesté · référent | `SNK-LEX-0065` |
+| 461 | **tuyi** | verbe | informer | informer<br>*Informer, faire savoir.* | Attesté · référent | `SNK-LEX-0065` |
 | 462 | **tuyi-nde** | nom d'action | informer (nom d'action) | informer (nom d'action de tuyi) | Attesté · référent | `SNK-LEX-1261` |
-| 463 | **tuyindi** | verbe | signaler | signaler | Attesté · référent | `SNK-LEX-0108` |
+| 463 | **tuyindi** | verbe | signaler | signaler<br>*Signaler, indiquer, attirer l'attention sur.* | Attesté · référent | `SNK-LEX-0108` |
 | 464 | **tuyindi-nde** | nom d'action | signaler (nom d'action) | signaler (nom d'action de tuyindi) | Attesté · référent | `SNK-LEX-1262` |
 | 465 | **tuyindini** | gérondif | signaler (gérondif) | signaler (gérondif / inaccompli de tuyindi) | Attesté · référent | `SNK-LEX-1263` |
 | 466 | **tuyini** | gérondif | informer (gérondif) | informer (gérondif / inaccompli de tuyi) | Attesté · référent | `SNK-LEX-1264` |
@@ -623,39 +623,39 @@ Provenance des définitions : lexique du projet **575** · document du référen
 | # | Soninké | Type | Traduction | Sens et définition | Statut | Entrée |
 | --- | --- | --- | --- | --- | --- | --- |
 | 467 | **wa** | marqueur | action en cours (wa) | action en cours | Attesté · référent | `SNK-GRM-0019` |
-| 468 | **waqi** | verbe | nettoyer | nettoyer | Attesté · référent | `SNK-LEX-0077` |
+| 468 | **waqi** | verbe | nettoyer | nettoyer<br>*Nettoyer, ôter la saleté.* | Attesté · référent | `SNK-LEX-0077` |
 | 469 | **waqi-nde** | nom d'action | nettoyer (nom d'action) | nettoyer (nom d'action de waqi) | Attesté · référent | `SNK-LEX-1265` |
 | 470 | **waqini** | gérondif | nettoyer (gérondif) | nettoyer (gérondif / inaccompli de waqi) | Attesté · référent | `SNK-LEX-1266` |
-| 471 | **wara** | verbe | laisser | laisser | Attesté · référent | `SNK-LEX-0068` |
-| 472 | **waran** | verbe | lâcher | lâcher | Attesté · référent | `SNK-LEX-0071` |
+| 471 | **wara** | verbe | laisser | laisser<br>*Laisser, ne pas emporter, ne pas empêcher.* | Attesté · référent | `SNK-LEX-0068` |
+| 472 | **waran** | verbe | lâcher | lâcher<br>*Lâcher, relâcher ce que l'on tenait.* | Attesté · référent | `SNK-LEX-0071` |
 | 473 | **warana** | gérondif | laisser (gérondif) | laisser (gérondif / inaccompli de wara) | Attesté · référent | `SNK-LEX-1269` |
 | 474 | **wara-nde** | nom d'action | laisser (nom d'action) | laisser (nom d'action de wara) | Attesté · référent | `SNK-LEX-1267` |
 | 475 | **waran-nde** | nom d'action | lâcher (nom d'action) | lâcher (nom d'action de waran) | Attesté · référent | `SNK-LEX-1268` |
 | 476 | **waranni** | gérondif | lâcher (gérondif) | lâcher (gérondif / inaccompli de waran) | Attesté · référent | `SNK-LEX-1270` |
-| 477 | **wari** | verbe | trouver | trouver | Attesté · référent | `SNK-LEX-0118` |
+| 477 | **wari** | verbe | trouver | trouver<br>*Trouver, découvrir ce qu'on cherchait.* | Attesté · référent | `SNK-LEX-0118` |
 | 478 | **wari-nde** | nom d'action | trouver (nom d'action) | trouver (nom d'action de wari) | Attesté · référent | `SNK-LEX-1271` |
 | 479 | **warini** | gérondif | trouver (gérondif) | trouver (gérondif / inaccompli de wari) | Attesté · référent | `SNK-LEX-1272` |
 | 480 | **watia** | suffixe | en train de (watia) | suffixe qui suit le verbe, avec le marqueur « fayi » (en train de (watia)) ; insiste sur le moment : « là, maintenant » | Document du référent | — |
-| 481 | **wori** | verbe | voir | voir | Attesté · référent | `SNK-LEX-0007` |
+| 481 | **wori** | verbe | voir | voir<br>*Voir, percevoir par les yeux.* | Attesté · référent | `SNK-LEX-0007` |
 | 482 | **worini** | gérondif | voir (gérondif) | voir (gérondif / inaccompli de wori) | Attesté · référent | `SNK-LEX-1274` |
 | 483 | **woriye** | nom d'action | voir (nom d'action) | voir (nom d'action de wori) | Attesté · référent | `SNK-LEX-1275` |
-| 484 | **wu** | verbe | pleurer | pleurer | Attesté · référent | `SNK-LEX-0082` |
-| 485 | **wunii** | verbe | déverrouiller | déverrouiller | Attesté · référent | `SNK-LEX-0061` |
+| 484 | **wu** | verbe | pleurer | pleurer<br>*Pleurer, verser des larmes.* | Attesté · référent | `SNK-LEX-0082` |
+| 485 | **wunii** | verbe | déverrouiller | déverrouiller<br>*Déverrouiller, ouvrir ce qui était fermé à clé.* | Attesté · référent | `SNK-LEX-0061` |
 | 486 | **wunii-nde** | nom d'action | déverrouiller (nom d'action) | déverrouiller (nom d'action de wunii) | Attesté · référent | `SNK-LEX-1277` |
 | 487 | **wuniini** | gérondif | déverrouiller (gérondif) | déverrouiller (gérondif / inaccompli de wunii) | Attesté · référent | `SNK-LEX-1278` |
 | 488 | **wunu** | gérondif | pleurer (gérondif) | pleurer (gérondif / inaccompli de wu) | Attesté · référent | `SNK-LEX-1279` |
-| 489 | **wunyi** | verbe | ouvrir | ouvrir | Attesté · référent | `SNK-LEX-0172` |
+| 489 | **wunyi** | verbe | ouvrir | ouvrir<br>*Ouvrir, faire cesser la fermeture.* | Attesté · référent | `SNK-LEX-0172` |
 | 490 | **wunyi-nde** | nom d'action | ouvrir (nom d'action) | ouvrir (nom d'action de wunyi) | Attesté · référent | `SNK-LEX-1280` |
 | 491 | **wunyini** | gérondif | ouvrir (gérondif) | ouvrir (gérondif / inaccompli de wunyi) | Attesté · référent | `SNK-LEX-1281` |
-| 492 | **wurebandi** | verbe | traduire | traduire | Attesté · référent | `SNK-LEX-0182` |
+| 492 | **wurebandi** | verbe | traduire | traduire<br>*Traduire, faire passer un texte d'une langue dans une autre.* | Attesté · référent | `SNK-LEX-0182` |
 | 493 | **wurebandi-nde** | nom d'action | traduire (nom d'action) | traduire (nom d'action de wurebandi) | Attesté · référent | `SNK-LEX-1282` |
 | 494 | **wurebandini** | gérondif | traduire (gérondif) | traduire (gérondif / inaccompli de wurebandi) | Attesté · référent | `SNK-LEX-1283` |
-| 495 | **wuru** | verbe | courir | courir | Attesté · référent | `SNK-LEX-0011` |
+| 495 | **wuru** | verbe | courir | courir<br>*Courir, se déplacer rapidement.* | Attesté · référent | `SNK-LEX-0011` |
 | 496 | **wurunu** | gérondif | courir (gérondif) | courir (gérondif / inaccompli de wuru) | Attesté · référent | `SNK-LEX-1284` |
 | 497 | **wuruye** | nom d'action | courir (nom d'action) | courir (nom d'action de wuru) | Attesté · référent | `SNK-LEX-1285` |
-| 498 | **wutu** | verbe | prendre | prendre | Attesté · référent | `SNK-LEX-0009` |
+| 498 | **wutu** | verbe | prendre | prendre<br>*Prendre, saisir, se saisir de.* | Attesté · référent | `SNK-LEX-0009` |
 | 499 | **wutunde** | nom d'action | prendre (nom d'action) | prendre (nom d'action de wutu) | Attesté · référent | `SNK-LEX-1286` |
-| 500 | **wutundi** | verbe | porter | porter | Attesté · référent | `SNK-LEX-0085` |
+| 500 | **wutundi** | verbe | porter | porter<br>*Porter, avoir sur soi et transporter.* | Attesté · référent | `SNK-LEX-0085` |
 | 501 | **wutundi-nde** | nom d'action | porter (nom d'action) | porter (nom d'action de wutundi) | Attesté · référent | `SNK-LEX-1287` |
 | 502 | **wutundini** | gérondif | porter (gérondif) | porter (gérondif / inaccompli de wutundi) | Attesté · référent | `SNK-LEX-1288` |
 | 503 | **wu-ye** | nom d'action | pleurer (nom d'action) | pleurer (nom d'action de wu) | Attesté · référent | `SNK-LEX-1276` |
@@ -667,50 +667,50 @@ Provenance des définitions : lexique du projet **575** · document du référen
 | # | Soninké | Type | Traduction | Sens et définition | Statut | Entrée |
 | --- | --- | --- | --- | --- | --- | --- |
 | 504 | **xa** | pronom | vous | vous | Attesté · référent | `SNK-GRM-0011` |
-| 505 | **xadiafi** | verbe | critiquer | critiquer | Attesté · référent | `SNK-LEX-0050` |
+| 505 | **xadiafi** | verbe | critiquer | critiquer<br>*Critiquer, juger défavorablement.* | Attesté · référent | `SNK-LEX-0050` |
 | 506 | **xadiafi-nde** | nom d'action | critiquer (nom d'action) | critiquer (nom d'action de xadiafi) | Attesté · référent | `SNK-LEX-1289` |
 | 507 | **xadiafini** | gérondif | critiquer (gérondif) | critiquer (gérondif / inaccompli de xadiafi) | Attesté · référent | `SNK-LEX-1290` |
 | 508 | **xaku** | pronom | vous | vous | Attesté · référent | `SNK-GRM-0005` |
-| 509 | **xandio** | verbe | convaincre | convaincre | Attesté · référent | `SNK-LEX-0160` |
+| 509 | **xandio** | verbe | convaincre | convaincre<br>*Convaincre, persuader quelqu'un.* | Attesté · référent | `SNK-LEX-0160` |
 | 510 | **xandio-nde** | nom d'action | convaincre (nom d'action) | convaincre (nom d'action de xandio) | Attesté · référent | `SNK-LEX-1291` |
 | 511 | **xandiono** | gérondif | convaincre (gérondif) | convaincre (gérondif / inaccompli de xandio) | Attesté · référent | `SNK-LEX-1292` |
-| 512 | **xanemaxawara** | verbe | autoriser | autoriser | Attesté · référent | `SNK-LEX-0029` |
+| 512 | **xanemaxawara** | verbe | autoriser | autoriser<br>*Autoriser, donner la permission.* | Attesté · référent | `SNK-LEX-0029` |
 | 513 | **xanemaxawarana** | gérondif | autoriser (gérondif) | autoriser (gérondif / inaccompli de xanemaxawara) | Attesté · référent | `SNK-LEX-1294` |
 | 514 | **xanemaxawara-nde** | nom d'action | autoriser (nom d'action) | autoriser (nom d'action de xanemaxawara) | Attesté · référent | `SNK-LEX-1293` |
-| 515 | **xanu** | verbe | aimer | aimer | Attesté · référent | `SNK-LEX-0018` |
+| 515 | **xanu** | verbe | aimer | aimer<br>*Aimer, apprécier, tenir à quelqu'un.* | Attesté · référent | `SNK-LEX-0018` |
 | 516 | **xanunu** | gérondif | aimer (gérondif) | aimer (gérondif / inaccompli de xanu) | Attesté · référent | `SNK-LEX-1296` |
 | 517 | **xanu-ye** | nom d'action | aimer (nom d'action) | aimer (nom d'action de xanu) | Attesté · référent | `SNK-LEX-1295` |
-| 518 | **xaru** | verbe | crier | crier | Attesté · référent | `SNK-LEX-0049` |
+| 518 | **xaru** | verbe | crier | crier<br>*Crier, pousser un cri.* | Attesté · référent | `SNK-LEX-0049` |
 | 519 | **xarunu** | gérondif | crier (gérondif) | crier (gérondif / inaccompli de xaru) | Attesté · référent | `SNK-LEX-1298` |
 | 520 | **xaru-ye** | nom d'action | crier (nom d'action) | crier (nom d'action de xaru) | Attesté · référent | `SNK-LEX-1297` |
-| 521 | **xaso** | verbe | vieillir | vieillir | Attesté · référent | `SNK-LEX-0122` |
+| 521 | **xaso** | verbe | vieillir | vieillir<br>*Vieillir, prendre de l'âge.* ⚠ | Attesté · référent | `SNK-LEX-0122` |
 | 522 | **xasono** | gérondif | vieillir (gérondif) | vieillir (gérondif / inaccompli de xaso) | Attesté · référent | `SNK-LEX-1300` |
 | 523 | **xaso-ye** | nom d'action | vieillir (nom d'action) | vieillir (nom d'action de xaso) | Attesté · référent | `SNK-LEX-1299` |
-| 524 | **xemparadangi** | verbe | abuser | abuser | Attesté · référent | `SNK-LEX-0130` |
+| 524 | **xemparadangi** | verbe | abuser | abuser<br>*Abuser, profiter de sa position ou de la faiblesse d'autrui.* | Attesté · référent | `SNK-LEX-0130` |
 | 525 | **xemparadangini** | gérondif | abuser (gérondif) | abuser (gérondif / inaccompli de xemparadangi) | Attesté · référent | `SNK-LEX-1304` |
 | 526 | **xemparadangi-ye** | nom d'action | abuser (nom d'action) | abuser (nom d'action de xemparadangi) | Attesté · référent | `SNK-LEX-1303` |
-| 527 | **xenne** | verbe | violer | violer | Attesté · référent | `SNK-LEX-0123` |
+| 527 | **xenne** | verbe | violer | violer<br>*Violer, imposer un rapport sexuel.* | Attesté · référent | `SNK-LEX-0123` |
 | 528 | **xenne-ne** | nom d'action | violer (nom d'action) | violer (nom d'action de xenne) | Attesté · référent | `SNK-LEX-1305` |
 | 529 | **xennene** | gérondif | violer (gérondif) | violer (gérondif / inaccompli de xenne) | Attesté · référent | `SNK-LEX-1306` |
-| 530 | **xenni** | verbe | attaquer | attaquer | Attesté · référent | `SNK-LEX-0027` |
+| 530 | **xenni** | verbe | attaquer | attaquer<br>*Attaquer, assaillir.* | Attesté · référent | `SNK-LEX-0027` |
 | 531 | **xennini** | gérondif | attaquer (gérondif) | attaquer (gérondif / inaccompli de xenni) | Attesté · référent | `SNK-LEX-1308` |
 | 532 | **xenni-ye** | nom d'action | attaquer (nom d'action) | attaquer (nom d'action de xenni) | Attesté · référent | `SNK-LEX-1307` |
-| 533 | **xentie** | verbe | mesurer | mesurer | Attesté · référent | `SNK-LEX-0073` |
+| 533 | **xentie** | verbe | mesurer | mesurer<br>*Mesurer, déterminer une grandeur.* | Attesté · référent | `SNK-LEX-0073` |
 | 534 | **xentie-nde** | nom d'action | mesurer (nom d'action) | mesurer (nom d'action de xentie) | Attesté · référent | `SNK-LEX-1309` |
 | 535 | **xentiene** | gérondif | mesurer (gérondif) | mesurer (gérondif / inaccompli de xentie) | Attesté · référent | `SNK-LEX-1310` |
-| 536 | **xenu** | verbe | tomber | tomber | Attesté · référent | `SNK-LEX-0114` |
+| 536 | **xenu** | verbe | tomber | tomber<br>*Tomber, faire une chute.* | Attesté · référent | `SNK-LEX-0114` |
 | 537 | **xenunu** | gérondif | tomber (gérondif) | tomber (gérondif / inaccompli de xenu) | Attesté · référent | `SNK-LEX-1312` |
 | 538 | **xenu-ye** | nom d'action | tomber (nom d'action) | tomber (nom d'action de xenu) | Attesté · référent | `SNK-LEX-1311` |
-| 539 | **xenyi** | verbe | nager | nager | Attesté · référent | `SNK-LEX-0076` |
+| 539 | **xenyi** | verbe | nager | nager<br>*Nager.* | Attesté · référent | `SNK-LEX-0076` |
 | 540 | **xenyini** | gérondif | nager (gérondif) | nager (gérondif / inaccompli de xenyi) | Attesté · référent | `SNK-LEX-1314` |
 | 541 | **xenyi-ye** | nom d'action | nager (nom d'action) | nager (nom d'action de xenyi) | Attesté · référent | `SNK-LEX-1313` |
-| 542 | **xiri** | verbe | appeler | appeler | Attesté · référent | `SNK-LEX-0021` |
+| 542 | **xiri** | verbe | appeler | appeler<br>*Appeler, interpeller quelqu'un.* | Attesté · référent | `SNK-LEX-0021` |
 | 543 | **xiri-nde** | nom d'action | appeler (nom d'action) | appeler (nom d'action de xiri) | Attesté · référent | `SNK-LEX-1315` |
 | 544 | **xirini** | gérondif | appeler (gérondif) | appeler (gérondif / inaccompli de xiri) | Attesté · référent | `SNK-LEX-1316` |
-| 545 | **xithi** | verbe | serrer | serrer | Attesté · référent | `SNK-LEX-0107` |
+| 545 | **xithi** | verbe | serrer | serrer<br>*Serrer, presser fortement.* | Attesté · référent | `SNK-LEX-0107` |
 | 546 | **xithi-nde** | nom d'action | serrer (nom d'action) | serrer (nom d'action de xithi) | Attesté · référent | `SNK-LEX-1317` |
 | 547 | **xithini** | gérondif | serrer (gérondif) | serrer (gérondif / inaccompli de xithi) | Attesté · référent | `SNK-LEX-1318` |
-| 548 | **xoraxu** | verbe | affranchir | affranchir | Attesté · référent | `SNK-LEX-0131` |
+| 548 | **xoraxu** | verbe | affranchir | affranchir<br>*Affranchir, libérer de la servitude.* | Attesté · référent | `SNK-LEX-0131` |
 | 549 | **xoraxu-nde** | nom d'action | affranchir (nom d'action) | affranchir (nom d'action de xoraxu) | Attesté · référent | `SNK-LEX-1319` |
 | 550 | **xoraxunu** | gérondif | affranchir (gérondif) | affranchir (gérondif / inaccompli de xoraxu) | Attesté · référent | `SNK-LEX-1320` |
 
@@ -720,30 +720,30 @@ Provenance des définitions : lexique du projet **575** · document du référen
 
 | # | Soninké | Type | Traduction | Sens et définition | Statut | Entrée |
 | --- | --- | --- | --- | --- | --- | --- |
-| 551 | **yagu** | verbe | embarrasser | embarrasser | Attesté · référent | `SNK-LEX-0063` |
+| 551 | **yagu** | verbe | embarrasser | embarrasser<br>*Embarrasser, mettre quelqu'un dans l'embarras.* | Attesté · référent | `SNK-LEX-0063` |
 | 552 | **yagu-nde** | nom d'action | embarrasser (nom d'action) | embarrasser (nom d'action de yagu) | Attesté · référent | `SNK-LEX-1321` |
 | 553 | **yagunu** | gérondif | embarrasser (gérondif) | embarrasser (gérondif / inaccompli de yagu) | Attesté · référent | `SNK-LEX-1322` |
-| 554 | **yampa** | verbe | pardonner | pardonner | Attesté · référent | `SNK-LEX-0080` |
+| 554 | **yampa** | verbe | pardonner | pardonner<br>*Pardonner, remettre une faute.* | Attesté · référent | `SNK-LEX-0080` |
 | 555 | **yampana** | gérondif | pardonner (gérondif) | pardonner (gérondif / inaccompli de yampa) | Attesté · référent | `SNK-LEX-1324` |
 | 556 | **yampa-ye** | nom d'action | pardonner (nom d'action) | pardonner (nom d'action de yampa) | Attesté · référent | `SNK-LEX-1323` |
-| 557 | **yanqa** | verbe | descendre | descendre | Attesté · référent | `SNK-LEX-0162` |
+| 557 | **yanqa** | verbe | descendre | descendre<br>*Descendre, aller vers le bas.* | Attesté · référent | `SNK-LEX-0162` |
 | 558 | **yanqana** | gérondif | descendre (gérondif) | descendre (gérondif / inaccompli de yanqa) | Attesté · référent | `SNK-LEX-1326` |
 | 559 | **yanqa-nde** | nom d'action | descendre (nom d'action) | descendre (nom d'action de yanqa) | Attesté · référent | `SNK-LEX-1325` |
-| 560 | **yaxawunyi-yen xedie** | verbe | réveiller | réveiller | Attesté · référent | `SNK-LEX-0102` |
+| 560 | **yaxawunyi-yen xedie** | verbe | réveiller | réveiller<br>*Réveiller quelqu'un, le tirer du sommeil.* ⚠ | Attesté · référent | `SNK-LEX-0102` |
 | 561 | **yaxawunyi-yen xediene** | gérondif | réveiller (gérondif) | réveiller (gérondif / inaccompli de yaxawunyi-yen xedie) | Attesté · référent | `SNK-LEX-1328` |
 | 562 | **yaxawunyi-yen xedie-ye** | nom d'action | réveiller (nom d'action) | réveiller (nom d'action de yaxawunyi-yen xedie) | Attesté · référent | `SNK-LEX-1327` |
-| 563 | **yexi** | verbe | marier | marier | Attesté · référent | `SNK-LEX-0072` |
+| 563 | **yexi** | verbe | marier | marier<br>*Marier, donner en mariage.* | Attesté · référent | `SNK-LEX-0072` |
 | 564 | **yexini** | gérondif | marier (gérondif) | marier (gérondif / inaccompli de yexi) | Attesté · référent | `SNK-LEX-1330` |
 | 565 | **yexi-ye** | nom d'action | marier (nom d'action) | marier (nom d'action de yexi) | Attesté · référent | `SNK-LEX-1329` |
 | 566 | **yi** | marqueur | action en cours, avec objet | action en cours | Attesté · référent | `SNK-GRM-0021` |
 | 567 | **yigaye** | nom d'action | manger (nom d'action) | manger (nom d'action de yige) | Attesté · référent | `SNK-LEX-1331` |
-| 568 | **yige** | verbe | manger | manger | Attesté · référent | `SNK-LEX-0005` |
+| 568 | **yige** | verbe | manger | manger<br>*Manger.* | Attesté · référent | `SNK-LEX-0005` |
 | 569 | **yigene** | gérondif | manger (gérondif) | manger (gérondif / inaccompli de yige) | Attesté · référent | `SNK-LEX-1332` |
-| 570 | **yinkutundi** | verbe | commander | commander | Attesté · référent | `SNK-LEX-0043` |
+| 570 | **yinkutundi** | verbe | commander | commander<br>*Commander, ordonner.* | Attesté · référent | `SNK-LEX-0043` |
 | 571 | **yinkutundi-nde** | nom d'action | commander (nom d'action) | commander (nom d'action de yinkutundi) | Attesté · référent | `SNK-LEX-1333` |
 | 572 | **yinkutundini** | gérondif | commander (gérondif) | commander (gérondif / inaccompli de yinkutundi) | Attesté · référent | `SNK-LEX-1334` |
 | 573 | **yi rini** | marqueur | futur proche | futur proche | Attesté · référent | `SNK-GRM-0016` |
-| 574 | **yonto** | verbe | pousser | pousser | Attesté · référent | `SNK-LEX-0086` |
+| 574 | **yonto** | verbe | pousser | pousser<br>*Pousser, faire aller devant soi.* | Attesté · référent | `SNK-LEX-0086` |
 | 575 | **yonto-nde** | nom d'action | pousser (nom d'action) | pousser (nom d'action de yonto) | Attesté · référent | `SNK-LEX-1335` |
 | 576 | **yontono** | gérondif | pousser (gérondif) | pousser (gérondif / inaccompli de yonto) | Attesté · référent | `SNK-LEX-1336` |
 
@@ -759,7 +759,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0099` · Attesté · référent · verbe
 
-**Sens et définition** : ressembler
+**Traduction et sens** : ressembler
+
+**Définition** : Avoir l'air de, présenter les mêmes traits ou le même aspect que quelqu'un ou quelque chose.
 
 **Formes dérivées** : baanono (gérondif) · baano-ye (nom d'action)
 
@@ -767,7 +769,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0178` · Attesté · référent · verbe
 
-**Sens et définition** : sortir
+**Traduction et sens** : sortir
+
+**Définition** : Quitter un lieu, passer du dedans au dehors.
 
 **Exemple** : bagu See main entry: bogu. 1 • Verbe intransitif. exit; sortir.
 
@@ -781,7 +785,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0058` · Attesté · référent · verbe
 
-**Sens et définition** : distinguer
+**Traduction et sens** : distinguer
+
+**Définition** : Reconnaître une chose d'une autre, percevoir une différence entre deux choses.
 
 **Formes dérivées** : bakuman-nde (nom d'action) · bakumanni (gérondif)
 
@@ -789,7 +795,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0129` · Attesté · référent · verbe
 
-**Sens et définition** : absenter / s'absenter, s'abstenir de, manquer / fonctionne comme marque de la modalité "refuser à faire
+**Traduction et sens** : absenter / s'absenter, s'abstenir de, manquer / fonctionne comme marque de la modalité "refuser à faire
+
+**Définition** : S'absenter, manquer à un endroit, s'abstenir de faire quelque chose.
 
 **Exemple** : bante 1 • Verbe intransitif. prevent, retain; miss, abstain, absent (be); s'absenter, s'abstenir de, manquer. N nta bantene ken ŋa. I won't miss that. Je ne manquerai pas cela.
 
@@ -799,7 +807,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0093` · Attesté · référent · verbe
 
-**Sens et définition** : refuser / fonctionne comme marque de la modalité "refuser à faire / aire, surface, cour / ficelle, fil
+**Traduction et sens** : refuser / fonctionne comme marque de la modalité "refuser à faire / aire, surface, cour / ficelle, fil
+
+**Définition** : Refuser, rejeter ce qui est proposé ou demandé.
 
 **Exemple** : bara1 summary-definition: refuse; refuser. compare: balle.Variant: balla. 1 • Verbe intransitif. refuse, revolt, rebel; refuser, se révolter, rebeller. Dasiri bara na futon yiga. Dasari refused to eat couscous. Dasiri a refusé à manger de couscous.
 
@@ -813,7 +823,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0078` · Attesté · référent · verbe
 
-**Sens et définition** : obéir / réunion, assemblée / marabatu / obéir, adorer / devoir (redevabilité)
+**Traduction et sens** : obéir / réunion, assemblée / marabatu / obéir, adorer / devoir (redevabilité)
+
+**Définition** : Obéir à quelqu'un, le vénérer, adorer (Dieu).
 
 **Exemple** : batu1 Nom . meeting; réunion, assemblée. I da batu taaxundi misiiden xooren di. They had a meeting of the leaders in the big mosque. . Ils ont eu une réunion des anciens dans la grande mosquée.
 
@@ -827,7 +839,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0141` · Attesté · référent · verbe
 
-**Sens et définition** : frotter
+**Traduction et sens** : frotter
+
+**Définition** : Frotter une surface en appuyant, pour nettoyer, polir ou faire pénétrer un produit.
 
 **Formes dérivées** : besin-nde (nom d'action) · besinni (gérondif)
 
@@ -835,7 +849,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0150` · Attesté · référent · verbe
 
-**Sens et définition** : zipper
+**Traduction et sens** : zipper
+
+**Définition** : Fermer au moyen d'une fermeture à glissière. *(glose à vérifier)*
 
 **Formes dérivées** : bexin-nde (nom d'action) · bexinni (gérondif)
 
@@ -843,7 +859,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0180` · Attesté · référent · verbe
 
-**Sens et définition** : vivre / instant, moment / quand
+**Traduction et sens** : vivre / instant, moment / quand
+
+**Définition** : Vivre, être en vie.
 
 **Exemple** : bire2 summary-definition: live; vivre. See main entry: bira1, -i4. Verbe intransitif. live; vivre, pousser. Yitti lorinten bire. The planted tree is living. L'arbre transplanté a poussé.
 
@@ -853,7 +871,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0152` · Attesté · référent · verbe
 
-**Sens et définition** : accueillir
+**Traduction et sens** : accueillir
+
+**Définition** : Accueillir quelqu'un, lui souhaiter la bienvenue. *(glose à vérifier)*
 
 **Formes dérivées** : bisimilahi-nde (nom d'action) · bisimilahini (gérondif)
 
@@ -861,7 +881,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0032` · Attesté · référent · verbe
 
-**Sens et définition** : brûler / buyi / être brûlé, être grillé
+**Traduction et sens** : brûler / buyi / être brûlé, être grillé
+
+**Définition** : Brûler, consumer par le feu.
 
 **Exemple** : biyi compare: buyinbuye. Variant: biini; buya; buyi. 1 • Verbe transitif. burn, grill, bake, fire (pottery); brûler, griller. Tageyaxaren da ginun biyi. The blacksmith fired the water pots. La forgeronne a brulé les jarres. A da i doronmun biyi. She burnt her […]
 
@@ -875,7 +897,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0110` · Attesté · référent · verbe
 
-**Sens et définition** : séparer
+**Traduction et sens** : séparer
+
+**Définition** : Séparer, mettre à part, désunir des personnes ou des choses.
 
 **Formes dérivées** : boguman-nde (nom d'action) · bogumanni (gérondif)
 
@@ -883,7 +907,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0106` · Attesté · référent · verbe
 
-**Sens et définition** : sauter / sauter par-dessus
+**Traduction et sens** : sauter / sauter par-dessus
+
+**Définition** : Sauter, s'élever d'un bond.
 
 **Exemple** : bonte Variant: bonta. Verbe intransitif. 1 • jump; sauter.
 
@@ -897,7 +923,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0059` · Attesté · référent · verbe
 
-**Sens et définition** : déchirer / Un groupe de souris
+**Traduction et sens** : déchirer / Un groupe de souris
+
+**Définition** : Déchirer, mettre en pièces. *(glose à vérifier)*
 
 **Exemple** : boxu Nom . group of mice; Un groupe de souris.
 
@@ -907,7 +935,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0138` · Attesté · référent · verbe
 
-**Sens et définition** : effacer
+**Traduction et sens** : effacer
+
+**Définition** : Effacer, faire disparaître une trace ou une inscription.
 
 **Formes dérivées** : bulxana (gérondif) · bulxa-nde (nom d'action)
 
@@ -915,7 +945,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0045` · Attesté · référent · verbe
 
-**Sens et définition** : compter
+**Traduction et sens** : compter
+
+**Définition** : Compter, dénombrer, énumérer des unités.
 
 **Formes dérivées** : contan-nde (nom d'action) · contanni (gérondif)
 
@@ -923,7 +955,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0001` · Attesté · référent · verbe · clé de conjugaison : dagaer
 
-**Sens et définition** : partir
+**Traduction et sens** : partir
+
+**Définition** : Partir, quitter un lieu pour aller ailleurs.
 
 **Emploi attesté** : Binta daga i faaba banŋe. Binta went to her father's place.Binta est allée chez son père. synonyme: ne2.Underlying form: ban. — SNK-LEX-0211
 
@@ -935,7 +969,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0020` · Attesté · référent · verbe
 
-**Sens et définition** : annoncer
+**Traduction et sens** : annoncer
+
+**Définition** : Annoncer, faire savoir publiquement.
 
 **Formes dérivées** : dantaxi-nde (nom d'action) · dantaxini (gérondif)
 
@@ -943,7 +979,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0017` · Attesté · référent · verbe
 
-**Sens et définition** : aider
+**Traduction et sens** : aider
+
+**Définition** : Aider quelqu'un, lui apporter son appui.
 
 **Formes dérivées** : demana (gérondif) · dema-nde (nom d'action)
 
@@ -951,7 +989,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0176` · Attesté · référent · verbe
 
-**Sens et définition** : répondre
+**Traduction et sens** : répondre
+
+**Définition** : Répondre à quelqu'un, répliquer.
 
 **Formes dérivées** : diabi-nde (nom d'action) · diabini (gérondif)
 
@@ -959,7 +999,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0148` · Attesté · référent · verbe
 
-**Sens et définition** : trahir
+**Traduction et sens** : trahir
+
+**Définition** : Trahir quelqu'un, manquer à la fidélité promise.
 
 **Formes dérivées** : diambana (gérondif) · diamba-nde (nom d'action)
 
@@ -967,7 +1009,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0012` · Attesté · référent · verbe
 
-**Sens et définition** : abandonner
+**Traduction et sens** : abandonner
+
+**Définition** : Abandonner quelqu'un ou une entreprise, laisser sans secours.
 
 **Formes dérivées** : diambene (gérondif) · diambe-ye (nom d'action)
 
@@ -975,7 +1019,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0025` · Attesté · référent · verbe
 
-**Sens et définition** : arriver
+**Traduction et sens** : arriver
+
+**Définition** : Arriver, parvenir au lieu où l'on se rend.
 
 **Formes dérivées** : dioofene (gérondif) · dioofe-ye (nom d'action)
 
@@ -983,7 +1029,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0044` · Attesté · référent · verbe
 
-**Sens et définition** : commencer
+**Traduction et sens** : commencer
+
+**Définition** : Commencer, entreprendre une action.
 
 **Formes dérivées** : diopandi-nde (nom d'action) · diopandini (gérondif)
 
@@ -991,7 +1039,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0048` · Attesté · référent · verbe
 
-**Sens et définition** : couler
+**Traduction et sens** : couler
+
+**Définition** : Couler, s'écouler en parlant d'un liquide.
 
 **Formes dérivées** : dioxini (gérondif) · dioxi-ye (nom d'action)
 
@@ -999,7 +1049,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0166` · Attesté · référent · verbe
 
-**Sens et définition** : décevoir
+**Traduction et sens** : décevoir
+
+**Définition** : Décevoir, tromper l'attente de quelqu'un.
 
 **Formes dérivées** : djikeranxoso-nde (nom d'action) · djikeranxosono (gérondif)
 
@@ -1007,7 +1059,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0097` · Attesté · référent · verbe
 
-**Sens et définition** : respecter
+**Traduction et sens** : respecter
+
+**Définition** : Respecter, honorer quelqu'un.
 
 **Formes dérivées** : doron-nde (nom d'action) · doronni (gérondif)
 
@@ -1015,7 +1069,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0084` · Attesté · référent · verbe
 
-**Sens et définition** : plonger
+**Traduction et sens** : plonger
+
+**Définition** : Plonger, s'enfoncer dans un liquide.
 
 **Formes dérivées** : dufintandi-nde (nom d'action) · dufintandini (gérondif)
 
@@ -1023,7 +1079,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0151` · Attesté · référent · verbe
 
-**Sens et définition** : étirer
+**Traduction et sens** : étirer
+
+**Définition** : Étirer, allonger en tirant.
 
 **Exemple** : --- verbes à conjugaison française irrégulière (formes écrites à la main) ---
 
@@ -1033,7 +1091,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0155` · Attesté · référent · verbe
 
-**Sens et définition** : attendre
+**Traduction et sens** : attendre
+
+**Définition** : Attendre, patienter jusqu'à un moment donné.
 
 **Formes dérivées** : dugu-nde (nom d'action) · dugunu (gérondif)
 
@@ -1041,7 +1101,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0111` · Attesté · référent · verbe
 
-**Sens et définition** : terminer
+**Traduction et sens** : terminer
+
+**Définition** : Terminer, achever, mener à son terme. *(glose à vérifier)*
 
 **Emploi attesté** : Il est allé ouvrir les calebasses.Waayen duguta jaxen baragana. The butcher finished cutting up the sheep. Le boucher a fini de dépecer le mouton. — SNK-LEX-0382
 
@@ -1051,7 +1113,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0013` · Attesté · référent · verbe
 
-**Sens et définition** : accepter
+**Traduction et sens** : accepter
+
+**Définition** : Accepter, consentir à ce qui est proposé.
 
 **Emploi attesté** : Maxa duŋe an funbuunen butunden ŋa ti bun teyen ŋa de ! Don't accept your abcess being pierced with a hot needle! N'accepte pas que ton furoncle soit percé avec une aiguille chaude! — SNK-LEX-0640
 
@@ -1061,7 +1125,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0158` · Attesté · référent · verbe
 
-**Sens et définition** : comprendre
+**Traduction et sens** : comprendre
+
+**Définition** : Comprendre, saisir le sens de quelque chose.
 
 **Formes dérivées** : faamu-nde (nom d'action) · faamunu (gérondif)
 
@@ -1069,7 +1135,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0092` · Attesté · référent · verbe
 
-**Sens et définition** : reculer
+**Traduction et sens** : reculer
+
+**Définition** : Reculer, aller en arrière, rétrograder.
 
 **Formes dérivées** : fallanyillene (gérondif) · fallanyille-ye (nom d'action)
 
@@ -1077,7 +1145,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0070` · Attesté · référent · verbe
 
-**Sens et définition** : lutter
+**Traduction et sens** : lutter
+
+**Définition** : Lutter, se battre contre quelqu'un ou quelque chose.
 
 **Formes dérivées** : fanqene (gérondif) · fanqe-ye (nom d'action)
 
@@ -1085,7 +1155,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0037` · Attesté · référent · verbe
 
-**Sens et définition** : changer
+**Traduction et sens** : changer
+
+**Définition** : Changer, devenir autre, se transformer.
 
 **Formes dérivées** : faraxu-nde (nom d'action) · faraxunu (gérondif)
 
@@ -1093,7 +1165,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0024` · Attesté · référent · verbe
 
-**Sens et définition** : argumenter
+**Traduction et sens** : argumenter
+
+**Définition** : Argumenter, discuter en avançant des raisons et des preuves.
 
 **Formes dérivées** : fatampantchi-nde (nom d'action) · fatampantchini (gérondif)
 
@@ -1101,7 +1175,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0003` · Attesté · référent · verbe · clé de conjugaison : fayinder
 
-**Sens et définition** : regarder
+**Traduction et sens** : regarder
+
+**Définition** : Regarder, observer attentivement.
 
 **Formes dérivées** : fayeni (gérondif) · fayinde (nom d'action)
 
@@ -1109,7 +1185,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0146` · Attesté · référent · verbe
 
-**Sens et définition** : tourner
+**Traduction et sens** : tourner
+
+**Définition** : Tourner, faire tourner, se retourner.
 
 **Formes dérivées** : filinkana (gérondif) · filinka-nde (nom d'action)
 
@@ -1117,7 +1195,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0087` · Attesté · référent · verbe
 
-**Sens et définition** : préparer
+**Traduction et sens** : préparer
+
+**Définition** : Préparer, apprêter ce qui est nécessaire.
 
 **Formes dérivées** : fimaxagomundi-nde (nom d'action) · fimaxagomundini (gérondif)
 
@@ -1125,7 +1205,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0088` · Attesté · référent · verbe
 
-**Sens et définition** : présenter
+**Traduction et sens** : présenter
+
+**Définition** : Présenter quelqu'un, le faire connaître à d'autres.
 
 **Formes dérivées** : finkoyindi-nde (nom d'action) · finkoyindini (gérondif)
 
@@ -1133,7 +1215,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0060` · Attesté · référent · verbe
 
-**Sens et définition** : décider
+**Traduction et sens** : décider
+
+**Définition** : Décider, trancher une question.
 
 **Formes dérivées** : finsaanindi-nde (nom d'action) · finsaanindini (gérondif)
 
@@ -1141,7 +1225,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0100` · Attesté · référent · verbe
 
-**Sens et définition** : réconcilier
+**Traduction et sens** : réconcilier
+
+**Définition** : Réconcilier, rétablir la concorde entre des personnes brouillées.
 
 **Formes dérivées** : finsirondi-nde (nom d'action) · finsirondini (gérondif)
 
@@ -1149,7 +1235,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0067` · Attesté · référent · verbe
 
-**Sens et définition** : jeter
+**Traduction et sens** : jeter
+
+**Définition** : Jeter, se défaire de quelque chose en le lançant.
 
 **Formes dérivées** : fitana (gérondif) · fita-nde (nom d'action)
 
@@ -1157,7 +1245,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0069` · Attesté · référent · verbe
 
-**Sens et définition** : lancer
+**Traduction et sens** : lancer
+
+**Définition** : Lancer, projeter avec force.
 
 **Formes dérivées** : fittana (gérondif) · fitta-nde (nom d'action)
 
@@ -1165,7 +1255,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0057` · Attesté · référent · verbe
 
-**Sens et définition** : disputer
+**Traduction et sens** : disputer
+
+**Définition** : Se disputer, se quereller, échanger des reproches.
 
 **Formes dérivées** : fiwarame-nde (nom d'action) · fiwaramene (gérondif)
 
@@ -1173,7 +1265,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0064` · Attesté · référent · verbe
 
-**Sens et définition** : empirer
+**Traduction et sens** : empirer
+
+**Définition** : Empirer, rendre pire une situation.
 
 **Formes dérivées** : fixorondi-nde (nom d'action) · fixorondini (gérondif)
 
@@ -1181,7 +1275,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0098` · Attesté · référent · verbe
 
-**Sens et définition** : respirer
+**Traduction et sens** : respirer
+
+**Définition** : Respirer, aspirer et rejeter de l'air.
 
 **Formes dérivées** : fufene (gérondif) · fufe-ye (nom d'action)
 
@@ -1189,7 +1285,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0112` · Attesté · référent · verbe
 
-**Sens et définition** : tirer
+**Traduction et sens** : tirer
+
+**Définition** : Tirer, extraire quelque chose en tirant.
 
 **Formes dérivées** : fuutu-nde (nom d'action) · fuutunu (gérondif)
 
@@ -1197,7 +1295,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0157` · Attesté · référent · verbe
 
-**Sens et définition** : combattre
+**Traduction et sens** : combattre
+
+**Définition** : Combattre, faire la guerre, se battre contre un adversaire.
 
 **Formes dérivées** : gadiana (gérondif) · gadia-ŋe (nom d'action)
 
@@ -1205,7 +1305,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0179` · Attesté · référent · verbe
 
-**Sens et définition** : vendre
+**Traduction et sens** : vendre
+
+**Définition** : Vendre, céder une marchandise contre paiement.
 
 **Formes dérivées** : gagene (gérondif) · gage-ye (nom d'action)
 
@@ -1213,7 +1315,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0168` · Attesté · référent · verbe
 
-**Sens et définition** : mentir
+**Traduction et sens** : mentir
+
+**Définition** : Mentir, dire ce qui est faux.
 
 **Formes dérivées** : garana (gérondif) · gara-nde (nom d'action)
 
@@ -1221,7 +1325,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0010` · Attesté · référent · verbe
 
-**Sens et définition** : travailler
+**Traduction et sens** : travailler
+
+**Définition** : Travailler, accomplir un travail.
 
 **Exemple** : cité golini par le locuteur
 
@@ -1231,7 +1337,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0101` · Attesté · référent · verbe
 
-**Sens et définition** : réparer
+**Traduction et sens** : réparer
+
+**Définition** : Réparer, remettre en état ce qui est abîmé.
 
 **Formes dérivées** : gomundi-nde (nom d'action) · gomundini (gérondif)
 
@@ -1239,7 +1347,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0030` · Attesté · référent · verbe
 
-**Sens et définition** : avertir
+**Traduction et sens** : avertir
+
+**Définition** : Avertir, prévenir quelqu'un de quelque chose.
 
 **Formes dérivées** : gongo-nde (nom d'action) · gongono (gérondif)
 
@@ -1247,7 +1357,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0083` · Attesté · référent · verbe
 
-**Sens et définition** : plier
+**Traduction et sens** : plier
+
+**Définition** : Plier, courber ce qui était droit.
 
 **Formes dérivées** : gunudi-nde (nom d'action) · gunudini (gérondif)
 
@@ -1255,7 +1367,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0056` · Attesté · référent · verbe
 
-**Sens et définition** : diriger
+**Traduction et sens** : diriger
+
+**Définition** : Diriger, conduire un groupe, prendre la tête.
 
 **Formes dérivées** : kaanemaxawutu-nde (nom d'action) · kaanemaxawutunu (gérondif)
 
@@ -1263,7 +1377,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0167` · Attesté · référent · verbe
 
-**Sens et définition** : interdire
+**Traduction et sens** : interdire
+
+**Définition** : Interdire, défendre de faire quelque chose.
 
 **Formes dérivées** : kaban-nde (nom d'action) · kabanni (gérondif)
 
@@ -1271,7 +1387,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0016` · Attesté · référent · verbe
 
-**Sens et définition** : additionner
+**Traduction et sens** : additionner
+
+**Définition** : Additionner, réunir des nombres en un total.
 
 **Formes dérivées** : kafumana (gérondif) · kafuma-nde (nom d'action)
 
@@ -1279,7 +1397,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0177` · Attesté · référent · verbe
 
-**Sens et définition** : sentir
+**Traduction et sens** : sentir
+
+**Définition** : Sentir, percevoir une odeur. *(glose à vérifier)*
 
 **Formes dérivées** : kanalagana (gérondif) · kanalaga-nde (nom d'action)
 
@@ -1287,7 +1407,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0055` · Attesté · référent · verbe
 
-**Sens et définition** : devancer
+**Traduction et sens** : devancer
+
+**Définition** : Devancer, prendre les devants sur quelqu'un.
 
 **Formes dérivées** : kanewutu-nde (nom d'action) · kanewutunu (gérondif)
 
@@ -1295,7 +1417,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0036` · Attesté · référent · verbe
 
-**Sens et définition** : casser
+**Traduction et sens** : casser
+
+**Définition** : Casser, briser.
 
 **Formes dérivées** : karana (gérondif) · kara-nde (nom d'action)
 
@@ -1303,7 +1427,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0119` · Attesté · référent · verbe
 
-**Sens et définition** : tuer
+**Traduction et sens** : tuer
+
+**Définition** : Tuer, ôter la vie.
 
 **Emploi attesté** : O fedden da batundonu filli kari yirigi wenden (22) sallen ŋa.Our group butchered 2 fatted sheep for the 22nd of September celebration. Notre groupe a tué deux moutons élevés à la maison lors de la fête du 22 septembre. Plural suffix: -nu. — SNK-LEX-0410
 
@@ -1315,7 +1441,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0156` · Attesté · référent · verbe
 
-**Sens et définition** : battre
+**Traduction et sens** : battre
+
+**Définition** : Battre, frapper à plusieurs reprises.
 
 **Formes dérivées** : katu-nde (nom d'action) · katunu (gérondif)
 
@@ -1323,7 +1451,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0128` · Attesté · référent · verbe
 
-**Sens et définition** : étonner
+**Traduction et sens** : étonner
+
+**Définition** : Étonner, surprendre, frapper d'étonnement.
 
 **Formes dérivées** : kawafi-nde (nom d'action) · kawafini (gérondif)
 
@@ -1331,7 +1461,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0181` · Attesté · référent · verbe
 
-**Sens et définition** : éteindre
+**Traduction et sens** : éteindre
+
+**Définition** : Éteindre un feu ou une lumière.
 
 **Formes dérivées** : kerin-nde (nom d'action) · kerinni (gérondif)
 
@@ -1339,7 +1471,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0115` · Attesté · référent · verbe
 
-**Sens et définition** : toucher
+**Traduction et sens** : toucher
+
+**Définition** : Toucher, entrer en contact avec la main.
 
 **Formes dérivées** : ketini (gérondif) · keti-ye (nom d'action)
 
@@ -1347,7 +1481,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0164` · Attesté · référent · verbe
 
-**Sens et définition** : dire
+**Traduction et sens** : dire
+
+**Définition** : Dire, énoncer.
 
 **Formes dérivées** : kono (gérondif) · ko-ŋe (nom d'action)
 
@@ -1355,7 +1491,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0120` · Attesté · référent · verbe
 
-**Sens et définition** : unir
+**Traduction et sens** : unir
+
+**Définition** : Unir, mettre ensemble pour faire un tout. *(glose à vérifier)*
 
 **Formes dérivées** : kofumana (gérondif) · kofuma-nde (nom d'action)
 
@@ -1363,7 +1501,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0173` · Attesté · référent · verbe
 
-**Sens et définition** : perdre
+**Traduction et sens** : perdre
+
+**Définition** : Perdre, ne plus retrouver ce qu'on possédait.
 
 **Formes dérivées** : kontini (gérondif) · konti-ye (nom d'action)
 
@@ -1371,7 +1511,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0062` · Attesté · référent · verbe
 
-**Sens et définition** : effrayer
+**Traduction et sens** : effrayer
+
+**Définition** : Effrayer, faire peur.
 
 **Formes dérivées** : konun-nde (nom d'action) · konunni (gérondif)
 
@@ -1379,7 +1521,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0117` · Attesté · référent · verbe
 
-**Sens et définition** : tricoter
+**Traduction et sens** : tricoter
+
+**Définition** : Tricoter, fabriquer un tissu avec des mailles.
 
 **Formes dérivées** : koroosana (gérondif) · koroosa-nde (nom d'action)
 
@@ -1387,7 +1531,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0109` · Attesté · référent · verbe
 
-**Sens et définition** : surveiller
+**Traduction et sens** : surveiller
+
+**Définition** : Surveiller, garder à l'œil.
 
 **Formes dérivées** : korosin-nde (nom d'action) · korosinni (gérondif)
 
@@ -1395,7 +1541,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0075` · Attesté · référent · verbe
 
-**Sens et définition** : montrer
+**Traduction et sens** : montrer
+
+**Définition** : Montrer, faire voir.
 
 **Formes dérivées** : koyin-nde (nom d'action) · koyinni (gérondif)
 
@@ -1403,7 +1551,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0171` · Attesté · référent · verbe
 
-**Sens et définition** : offrir
+**Traduction et sens** : offrir
+
+**Définition** : Offrir, donner en présent. *(glose à vérifier)*
 
 **Emploi attesté** : Ku jaxo do kun jaxi baanu. These sheap and other sheaps. Ces moutons et ces autres moutons. — SNK-LEX-0308
 
@@ -1415,7 +1565,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0019` · Attesté · référent · verbe
 
-**Sens et définition** : allumer
+**Traduction et sens** : allumer
+
+**Définition** : Allumer un feu ou une lumière.
 
 **Formes dérivées** : kumu-nde (nom d'action) · kumunu (gérondif)
 
@@ -1423,7 +1575,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0105` · Attesté · référent · verbe
 
-**Sens et définition** : saluer
+**Traduction et sens** : saluer
+
+**Définition** : Saluer quelqu'un, lui adresser les salutations d'usage.
 
 **Formes dérivées** : kunyi-nde (nom d'action) · kunyini (gérondif)
 
@@ -1431,7 +1585,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0103` · Attesté · référent · verbe
 
-**Sens et définition** : rêver
+**Traduction et sens** : rêver
+
+**Définition** : Rêver, voir en rêve.
 
 **Formes dérivées** : kuyini (gérondif) · kuyi-ye (nom d'action)
 
@@ -1439,7 +1595,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0126` · Attesté · référent · verbe
 
-**Sens et définition** : éloigner
+**Traduction et sens** : éloigner
+
+**Définition** : Éloigner, mettre à distance.
 
 **Formes dérivées** : laaton-nde (nom d'action) · laatonni (gérondif)
 
@@ -1447,7 +1605,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0174` · Attesté · référent · verbe
 
-**Sens et définition** : promettre
+**Traduction et sens** : promettre
+
+**Définition** : Promettre, s'engager à faire quelque chose.
 
 **Formes dérivées** : laydurangandi-nde (nom d'action) · laydurangandini (gérondif)
 
@@ -1455,7 +1615,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0161` · Attesté · référent · verbe
 
-**Sens et définition** : coudre
+**Traduction et sens** : coudre
+
+**Définition** : Coudre, assembler avec du fil.
 
 **Formes dérivées** : lifi-nde (nom d'action) · lifini (gérondif)
 
@@ -1463,7 +1625,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0127` · Attesté · référent · verbe
 
-**Sens et définition** : énerver
+**Traduction et sens** : énerver
+
+**Définition** : Énerver, agacer, faire perdre patience.
 
 **Formes dérivées** : maaman-de (nom d'action) · maamanni (gérondif)
 
@@ -1471,7 +1635,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0136` · Attesté · référent · verbe
 
-**Sens et définition** : cordonner
+**Traduction et sens** : cordonner
+
+**Définition** : Cordonner, fabriquer ou réparer des chaussures.
 
 **Formes dérivées** : maxage-me (nom d'action) · maxagene (gérondif)
 
@@ -1479,7 +1645,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0090` · Attesté · référent · verbe
 
-**Sens et définition** : raconter
+**Traduction et sens** : raconter
+
+**Définition** : Raconter, rapporter un récit, une histoire.
 
 **Formes dérivées** : maxankutondi-nde (nom d'action) · maxankutondini (gérondif)
 
@@ -1487,7 +1655,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0094` · Attesté · référent · verbe
 
-**Sens et définition** : relier
+**Traduction et sens** : relier
+
+**Définition** : Relier, mettre en rapport, joindre.
 
 **Formes dérivées** : mekitandi-nde (nom d'action) · mekitandini (gérondif)
 
@@ -1495,7 +1665,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0046` · Attesté · référent · verbe
 
-**Sens et définition** : coordonner
+**Traduction et sens** : coordonner
+
+**Définition** : Coordonner, agencer les parties d'un ensemble. *(glose à vérifier)*
 
 **Formes dérivées** : me-wutu-nde (nom d'action) · me-wutunu (gérondif)
 
@@ -1503,7 +1675,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0104` · Attesté · référent · verbe
 
-**Sens et définition** : salir
+**Traduction et sens** : salir
+
+**Définition** : Salir, rendre sale.
 
 **Formes dérivées** : mexindi-nde (nom d'action) · mexindini (gérondif)
 
@@ -1511,7 +1685,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0006` · Attesté · référent · verbe · transitif
 
-**Sens et définition** : boire
+**Traduction et sens** : boire
+
+**Définition** : Boire, absorber un liquide par la bouche.
 
 **Exemple** : ake n'di xati m'mini / ake m'mini ; avec objet : ake n'di xati m'mini
 
@@ -1521,7 +1697,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0137` · Attesté · référent · verbe
 
-**Sens et définition** : saboter
+**Traduction et sens** : saboter
+
+**Définition** : Saboter, faire échouer volontairement une entreprise.
 
 **Formes dérivées** : missono (gérondif) · misso-ye (nom d'action)
 
@@ -1529,7 +1707,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0035` · Attesté · référent · verbe
 
-**Sens et définition** : caresser
+**Traduction et sens** : caresser
+
+**Définition** : Caresser, passer la main doucement sur quelqu'un.
 
 **Formes dérivées** : mooso-nde (nom d'action) · moosono (gérondif)
 
@@ -1537,7 +1717,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0142` · Attesté · référent · verbe
 
-**Sens et définition** : impatienter
+**Traduction et sens** : impatienter
+
+**Définition** : Impatienter, faire perdre patience.
 
 **Formes dérivées** : mugnini (gérondif) · mugni-ye (nom d'action)
 
@@ -1545,7 +1727,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0140` · Attesté · référent · verbe
 
-**Sens et définition** : froidir
+**Traduction et sens** : froidir
+
+**Définition** : Refroidir, rendre froid.
 
 **Formes dérivées** : mulondi-nde (nom d'action) · mulondini (gérondif)
 
@@ -1553,7 +1737,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0079` · Attesté · référent · verbe
 
-**Sens et définition** : oublier
+**Traduction et sens** : oublier
+
+**Définition** : Oublier, perdre le souvenir de quelque chose.
 
 **Formes dérivées** : mungunu (gérondif) · mungu-ye (nom d'action)
 
@@ -1561,7 +1747,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0039` · Attesté · référent · verbe
 
-**Sens et définition** : chercher
+**Traduction et sens** : chercher
+
+**Définition** : Chercher, s'efforcer de trouver.
 
 **Formes dérivées** : muru-nde (nom d'action) · murunu (gérondif)
 
@@ -1569,7 +1757,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0034` · Attesté · référent · verbe
 
-**Sens et définition** : cacher
+**Traduction et sens** : cacher
+
+**Définition** : Cacher, dissimuler.
 
 **Formes dérivées** : muxu-nde (nom d'action) · muxunu (gérondif)
 
@@ -1577,7 +1767,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0163` · Attesté · référent · verbe
 
-**Sens et définition** : devenir
+**Traduction et sens** : devenir
+
+**Définition** : Devenir, passer d'un état à un autre.
 
 **Formes dérivées** : niana (gérondif) · nia-ŋe (nom d'action)
 
@@ -1585,7 +1777,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0116` · Attesté · référent · verbe
 
-**Sens et définition** : transformer
+**Traduction et sens** : transformer
+
+**Définition** : Transformer, faire devenir autre.
 
 **Formes dérivées** : niaŋundi-nde (nom d'action) · niaŋundini (gérondif)
 
@@ -1593,7 +1787,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0147` · Attesté · référent · verbe
 
-**Sens et définition** : tracer
+**Traduction et sens** : tracer
+
+**Définition** : Tracer, dessiner un trait, une ligne.
 
 **Formes dérivées** : noni-nde (nom d'action) · nonini (gérondif)
 
@@ -1601,7 +1797,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0028` · Attesté · référent · verbe
 
-**Sens et définition** : attraper
+**Traduction et sens** : attraper
+
+**Définition** : Attraper, saisir ce qui fuit.
 
 **Emploi attesté** : Siidi da booren raga ti bapen ŋa. Siidi captured a dove with a trap. Sidi a attrapé une tourterelle avec un piège. — SNK-LEX-0212
 
@@ -1613,7 +1811,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0054` · Attesté · référent · verbe
 
-**Sens et définition** : danser
+**Traduction et sens** : danser
+
+**Définition** : Danser.
 
 **Formes dérivées** : regene (gérondif) · rege-ye (nom d'action)
 
@@ -1621,7 +1821,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0002` · Attesté · référent · verbe · clé de conjugaison : rier
 
-**Sens et définition** : venir
+**Traduction et sens** : venir
+
+**Définition** : Venir, se déplacer vers celui qui parle.
 
 **Emploi attesté** : N ri baasen ya kini in kaawu yi. I came to give a welcoming meal to my mother's brother (uncle). Je suis venu pour donner un repas d'accueil à mon oncle.Underlying form: baasi. — SNK-LEX-0190
 
@@ -1631,7 +1833,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0022` · Attesté · référent · verbe
 
-**Sens et définition** : apporter
+**Traduction et sens** : apporter
+
+**Définition** : Apporter, amener ce qu'on porte vers un lieu.
 
 **Formes dérivées** : riti-nde (nom d'action) · ritini (gérondif)
 
@@ -1639,7 +1843,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0169` · Attesté · référent · verbe
 
-**Sens et définition** : mettre
+**Traduction et sens** : mettre
+
+**Définition** : Mettre, placer quelque chose quelque part.
 
 **Formes dérivées** : rondi-nde (nom d'action) · rondini (gérondif)
 
@@ -1647,7 +1853,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0089` · Attesté · référent · verbe
 
-**Sens et définition** : prêter
+**Traduction et sens** : prêter
+
+**Définition** : Prêter, remettre quelque chose à quelqu'un pour un temps.
 
 **Emploi attesté** : Xa da baraada roxo o yi, o wa hattaye sorene. Loan us a teapot, we are making tea. Prêtez-nous une théière, nous faisons du thé. — SNK-LEX-0378
 
@@ -1657,7 +1865,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0170` · Attesté · référent · verbe
 
-**Sens et définition** : naître
+**Traduction et sens** : naître
+
+**Définition** : Naître, venir au monde.
 
 **Emploi attesté** : Daaban ga na saare, a renmen na bandon fina ya sugunu. When an animal bears an offspring, the newborn nurses the new milk first. Quand un animal met bas, son petit tète d'abord le premier lait. — SNK-LEX-0358
 
@@ -1667,7 +1877,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0008` · Attesté · référent · verbe · transitif
 
-**Sens et définition** : écrire
+**Traduction et sens** : écrire
+
+**Définition** : Écrire, tracer des signes d'écriture.
 
 **Formes dérivées** : safana (gérondif) · safande (nom d'action)
 
@@ -1675,7 +1887,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0125` · Attesté · référent · verbe
 
-**Sens et définition** : égarer
+**Traduction et sens** : égarer
+
+**Définition** : Égarer, perdre un objet en le laissant hors de sa place.
 
 **Formes dérivées** : sakundi-nde (nom d'action) · sakundini (gérondif)
 
@@ -1683,7 +1897,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0135` · Attesté · référent · verbe
 
-**Sens et définition** : confier
+**Traduction et sens** : confier
+
+**Définition** : Confier, remettre à la garde de quelqu'un.
 
 **Formes dérivées** : sameti-nde (nom d'action) · sametini (gérondif)
 
@@ -1691,7 +1907,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0153` · Attesté · référent · verbe
 
-**Sens et définition** : apparaître
+**Traduction et sens** : apparaître
+
+**Définition** : Apparaître, se montrer.
 
 **Formes dérivées** : sanene (gérondif) · sane-ye (nom d'action)
 
@@ -1699,7 +1917,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0133` · Attesté · référent · verbe
 
-**Sens et définition** : clôturer
+**Traduction et sens** : clôturer
+
+**Définition** : Clôturer, fermer un terrain par une clôture.
 
 **Formes dérivées** : sangalu-nde (nom d'action) · sangalunu (gérondif)
 
@@ -1707,7 +1927,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0165` · Attesté · référent · verbe
 
-**Sens et définition** : disparaître
+**Traduction et sens** : disparaître
+
+**Définition** : Disparaître, cesser d'être visible.
 
 **Emploi attesté** : I gidanyaxaren cakkan sanku xoolen ŋa. Their elder sister lost her necklace at the pond. Leur grande soeur a perdu son collier à la rivière. — SNK-LEX-0660
 
@@ -1717,7 +1939,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0047` · Attesté · référent · verbe
 
-**Sens et définition** : coucher
+**Traduction et sens** : coucher
+
+**Définition** : Coucher, être étendu pour dormir.
 
 **Formes dérivées** : saqene (gérondif) · saqe-ye (nom d'action)
 
@@ -1725,7 +1949,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0004` · Attesté · référent · verbe · clé de conjugaison : sefeer
 
-**Sens et définition** : parler
+**Traduction et sens** : parler
+
+**Définition** : Parler, s'exprimer par la parole.
 
 **Formes dérivées** : sefene (gérondif) · sefeye (nom d'action)
 
@@ -1733,7 +1959,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0074` · Attesté · référent · verbe
 
-**Sens et définition** : monter
+**Traduction et sens** : monter
+
+**Définition** : Monter, aller vers le haut.
 
 **Formes dérivées** : segene (gérondif) · sege-ye (nom d'action)
 
@@ -1741,7 +1969,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0091` · Attesté · référent · verbe
 
-**Sens et définition** : raser
+**Traduction et sens** : raser
+
+**Définition** : Raser, couper le poil de près.
 
 **Emploi attesté** : Si tu fais un plat spécial pour un étranger, cela est un repas d'accueil. N ri baasen ya kini in kaawu yi. I came to give a welcoming meal to my mother's brother (uncle). — SNK-LEX-0190
 
@@ -1753,7 +1983,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0144` · Attesté · référent · verbe
 
-**Sens et définition** : stopper
+**Traduction et sens** : stopper
+
+**Définition** : Stopper, s'arrêter, cesser d'avancer.
 
 **Emploi attesté** : Yugon sigi n’i taanun baaya. The man stood with his legs spread apart.L'homme s'arrêta et écarta ses pieds. An kittun baaya! — SNK-LEX-0316
 
@@ -1765,7 +1997,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0139` · Attesté · référent · verbe
 
-**Sens et définition** : en rappeler
+**Traduction et sens** : en rappeler
+
+**Définition** : Rappeler quelque chose, le remettre en mémoire. *(glose à vérifier)*
 
 **Formes dérivées** : simandi-nde (nom d'action) · simandini (gérondif)
 
@@ -1773,7 +2007,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0081` · Attesté · référent · verbe
 
-**Sens et définition** : penser
+**Traduction et sens** : penser
+
+**Définition** : Penser, réfléchir.
 
 **Formes dérivées** : simmene (gérondif) · simme-ye (nom d'action)
 
@@ -1781,7 +2017,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0041` · Attesté · référent · verbe
 
-**Sens et définition** : coiffer
+**Traduction et sens** : coiffer
+
+**Définition** : Coiffer, peigner et arranger les cheveux.
 
 **Formes dérivées** : siyini (gérondif) · siyi-ye (nom d'action)
 
@@ -1789,7 +2027,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0113` · Attesté · référent · verbe
 
-**Sens et définition** : tisser
+**Traduction et sens** : tisser
+
+**Définition** : Tisser, entrecroiser des fils.
 
 **Formes dérivées** : sonundi-nde (nom d'action) · sonundini (gérondif)
 
@@ -1797,7 +2037,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0031` · Attesté · référent · verbe
 
-**Sens et définition** : brancher
+**Traduction et sens** : brancher
+
+**Définition** : Brancher, raccorder à une installation. *(glose à vérifier)*
 
 **Formes dérivées** : sooti-nde (nom d'action) · sootini (gérondif)
 
@@ -1805,7 +2047,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0052` · Attesté · référent · verbe
 
-**Sens et définition** : cuisiner
+**Traduction et sens** : cuisiner
+
+**Définition** : Cuisiner, faire la cuisine. *(glose à vérifier)*
 
 **Emploi attesté** : sore; dartre. Category: Healthy. Note: D2 similaire: fanqalelle. — SNK-LEX-0369
 
@@ -1817,7 +2061,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0121` · Attesté · référent · verbe
 
-**Sens et définition** : verrouiller
+**Traduction et sens** : verrouiller
+
+**Définition** : Verrouiller, fermer à clé.
 
 **Formes dérivées** : soxondi-nde (nom d'action) · soxondini (gérondif)
 
@@ -1825,7 +2071,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0175` · Attesté · référent · verbe
 
-**Sens et définition** : rire
+**Traduction et sens** : rire
+
+**Définition** : Rire.
 
 **Formes dérivées** : soyini (gérondif) · soyi-ye (nom d'action)
 
@@ -1833,7 +2081,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0040` · Attesté · référent · verbe
 
-**Sens et définition** : choisir
+**Traduction et sens** : choisir
+
+**Définition** : Choisir, retenir parmi plusieurs.
 
 **Formes dérivées** : sugandi-nde (nom d'action) · sugandini (gérondif)
 
@@ -1841,7 +2091,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0038` · Attesté · référent · verbe
 
-**Sens et définition** : chanter
+**Traduction et sens** : chanter
+
+**Définition** : Chanter.
 
 **Formes dérivées** : sugene (gérondif) · suge-ye (nom d'action)
 
@@ -1849,7 +2101,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0134` · Attesté · référent · verbe
 
-**Sens et définition** : cocher
+**Traduction et sens** : cocher
+
+**Définition** : Cocher, marquer d'un signe une case ou un nom.
 
 **Formes dérivées** : sukandi-nde (nom d'action) · sukandini (gérondif)
 
@@ -1857,7 +2111,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0143` · Attesté · référent · verbe
 
-**Sens et définition** : souquer
+**Traduction et sens** : souquer
+
+**Définition** : Souquer, haler sur un cordage. *(glose à vérifier)*
 
 **Formes dérivées** : sumbana (gérondif) · sumba-nde (nom d'action)
 
@@ -1865,7 +2121,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0132` · Attesté · référent · verbe
 
-**Sens et définition** : aspirer
+**Traduction et sens** : aspirer
+
+**Définition** : Aspirer, attirer un liquide par la succion.
 
 **Formes dérivées** : surubana (gérondif) · suruba-nde (nom d'action)
 
@@ -1873,7 +2131,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0066` · Attesté · référent · verbe
 
-**Sens et définition** : jalouser
+**Traduction et sens** : jalouser
+
+**Définition** : Jalouser, éprouver de la jalousie envers quelqu'un.
 
 **Formes dérivées** : suxene (gérondif) · suxe-ye (nom d'action)
 
@@ -1881,7 +2141,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0033` · Attesté · référent · verbe
 
-**Sens et définition** : bâtir
+**Traduction et sens** : bâtir
+
+**Définition** : Bâtir, construire un ouvrage.
 
 **Emploi attesté** : Siroyen ga ma fo be taga an danŋa, buroye nta ken tagana an danŋa.What good did not obtain for you, evil will not either. Ce que la bonté ne t'a pas procuré, ce n'est pas la méchanceté qui te l'apportera. — SNK-LEX-0621
 
@@ -1891,7 +2153,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0051` · Attesté · référent · verbe
 
-**Sens et définition** : créer
+**Traduction et sens** : créer
+
+**Définition** : Créer, faire exister ce qui n'existait pas.
 
 **Formes dérivées** : tagandi-nde (nom d'action) · tagandini (gérondif)
 
@@ -1899,7 +2163,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0095` · Attesté · référent · verbe
 
-**Sens et définition** : rembourser
+**Traduction et sens** : rembourser
+
+**Définition** : Rembourser, rendre ce qui a été emprunté.
 
 **Formes dérivées** : tambotugana (gérondif) · tambotuga-nde (nom d'action)
 
@@ -1907,7 +2173,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0124` · Attesté · référent · verbe
 
-**Sens et définition** : visiter
+**Traduction et sens** : visiter
+
+**Définition** : Visiter, aller voir quelqu'un.
 
 **Formes dérivées** : tarandi-nde (nom d'action) · tarandini (gérondif)
 
@@ -1915,7 +2183,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0053` · Attesté · référent · verbe
 
-**Sens et définition** : célébrer
+**Traduction et sens** : célébrer
+
+**Définition** : Célébrer, fêter un événement.
 
 **Formes dérivées** : tari-nde (nom d'action) · tarini (gérondif)
 
@@ -1923,7 +2193,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0154` · Attesté · référent · verbe
 
-**Sens et définition** : asseoir
+**Traduction et sens** : asseoir
+
+**Définition** : S'asseoir, prendre place. *(glose à vérifier)*
 
 **Formes dérivées** : taxunu (gérondif) · taxu-ye (nom d'action)
 
@@ -1931,7 +2203,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0026` · Attesté · référent · verbe
 
-**Sens et définition** : assister
+**Traduction et sens** : assister
+
+**Définition** : Assister à un événement, y être présent. *(glose à vérifier)*
 
 **Formes dérivées** : tewene (gérondif) · tewe-ye (nom d'action)
 
@@ -1939,7 +2213,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0015` · Attesté · référent · verbe
 
-**Sens et définition** : accuser
+**Traduction et sens** : accuser
+
+**Définition** : Accuser quelqu'un, le rendre responsable.
 
 **Formes dérivées** : tifin-nde (nom d'action) · tifinni (gérondif)
 
@@ -1947,7 +2223,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0145` · Attesté · référent · verbe
 
-**Sens et définition** : torturer
+**Traduction et sens** : torturer
+
+**Définition** : Torturer, faire subir des sévices.
 
 **Formes dérivées** : tilifi-nde (nom d'action) · tilifini (gérondif)
 
@@ -1955,7 +2233,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0023` · Attesté · référent · verbe
 
-**Sens et définition** : approcher
+**Traduction et sens** : approcher
+
+**Définition** : Approcher, se rapprocher.
 
 **Formes dérivées** : tintono (gérondif) · tinto-ye (nom d'action)
 
@@ -1963,7 +2243,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0159` · Attesté · référent · verbe
 
-**Sens et définition** : connaître
+**Traduction et sens** : connaître
+
+**Définition** : Connaître, avoir la connaissance de quelqu'un ou de quelque chose. *(glose à vérifier)*
 
 **Emploi attesté** : Si tu fais un plat spécial pour un étranger, cela est un repas d'accueil. N ri baasen ya kini in kaawu yi. I came to give a welcoming meal to my mother's brother (uncle). — SNK-LEX-0190
 
@@ -1975,7 +2257,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0042` · Attesté · référent · verbe
 
-**Sens et définition** : coller
+**Traduction et sens** : coller
+
+**Définition** : Coller, faire adhérer.
 
 **Formes dérivées** : tukana (gérondif) · tuka-nde (nom d'action)
 
@@ -1983,7 +2267,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0149` · Attesté · référent · verbe
 
-**Sens et définition** : tresser
+**Traduction et sens** : tresser
+
+**Définition** : Tresser, entrelacer des mèches ou des fils.
 
 **Formes dérivées** : tulu-nde (nom d'action) · tulunu (gérondif)
 
@@ -1991,7 +2277,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0096` · Attesté · référent · verbe
 
-**Sens et définition** : reposer
+**Traduction et sens** : reposer
+
+**Définition** : Se reposer, prendre du repos.
 
 **Formes dérivées** : tumana (gérondif) · tuma-ye (nom d'action)
 
@@ -1999,7 +2287,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0014` · Attesté · référent · verbe
 
-**Sens et définition** : accompagner
+**Traduction et sens** : accompagner
+
+**Définition** : Accompagner quelqu'un.
 
 **Formes dérivées** : tuntchi-nde (nom d'action) · tuntchini (gérondif)
 
@@ -2007,7 +2297,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0065` · Attesté · référent · verbe
 
-**Sens et définition** : informer
+**Traduction et sens** : informer
+
+**Définition** : Informer, faire savoir.
 
 **Formes dérivées** : tuyi-nde (nom d'action) · tuyini (gérondif)
 
@@ -2015,7 +2307,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0108` · Attesté · référent · verbe
 
-**Sens et définition** : signaler
+**Traduction et sens** : signaler
+
+**Définition** : Signaler, indiquer, attirer l'attention sur.
 
 **Formes dérivées** : tuyindi-nde (nom d'action) · tuyindini (gérondif)
 
@@ -2023,7 +2317,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0077` · Attesté · référent · verbe
 
-**Sens et définition** : nettoyer
+**Traduction et sens** : nettoyer
+
+**Définition** : Nettoyer, ôter la saleté.
 
 **Formes dérivées** : waqi-nde (nom d'action) · waqini (gérondif)
 
@@ -2031,7 +2327,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0068` · Attesté · référent · verbe
 
-**Sens et définition** : laisser
+**Traduction et sens** : laisser
+
+**Définition** : Laisser, ne pas emporter, ne pas empêcher.
 
 **Emploi attesté** : Buttunbuyin ga na sere be wara yaxarin gaba yaxun ŋa, a kaman wa nimisini. If a man marries many wives out of anger, he will regret it. Si la colère pousse quelqu'un à marier beaucoup de femmes, ce dernier va regretter. — SNK-LEX-0638
 
@@ -2041,7 +2339,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0071` · Attesté · référent · verbe
 
-**Sens et définition** : lâcher
+**Traduction et sens** : lâcher
+
+**Définition** : Lâcher, relâcher ce que l'on tenait.
 
 **Formes dérivées** : waran-nde (nom d'action) · waranni (gérondif)
 
@@ -2049,7 +2349,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0118` · Attesté · référent · verbe
 
-**Sens et définition** : trouver
+**Traduction et sens** : trouver
+
+**Définition** : Trouver, découvrir ce qu'on cherchait.
 
 **Emploi attesté** : Gelli jinna buren ga da Isa wari, a da leminen raga, leminen xenu ɲiiɲen ŋa ma a nan toxo bilinqene xanqan gaa bakka a raqen ŋa.When the evil spirit saw Jesus, he took the child and the child fell to the ground, rolling around, foaming at the mouth. . Lorque que le mauvais esprit vit Jésus, il prit […] — SNK-LEX-0499
 
@@ -2059,7 +2361,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0007` · Attesté · référent · verbe · transitif
 
-**Sens et définition** : voir
+**Traduction et sens** : voir
+
+**Définition** : Voir, percevoir par les yeux.
 
 **Exemple** : n di lemine ŋ'wori / ake ŋ'wori ; avec objet : ake n'di lemine ke ŋ'wori
 
@@ -2069,7 +2373,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0082` · Attesté · référent · verbe
 
-**Sens et définition** : pleurer
+**Traduction et sens** : pleurer
+
+**Définition** : Pleurer, verser des larmes.
 
 **Formes dérivées** : wunu (gérondif) · wu-ye (nom d'action)
 
@@ -2077,7 +2383,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0061` · Attesté · référent · verbe
 
-**Sens et définition** : déverrouiller
+**Traduction et sens** : déverrouiller
+
+**Définition** : Déverrouiller, ouvrir ce qui était fermé à clé.
 
 **Formes dérivées** : wunii-nde (nom d'action) · wuniini (gérondif)
 
@@ -2085,7 +2393,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0172` · Attesté · référent · verbe
 
-**Sens et définition** : ouvrir
+**Traduction et sens** : ouvrir
+
+**Définition** : Ouvrir, faire cesser la fermeture.
 
 **Formes dérivées** : wunyi-nde (nom d'action) · wunyini (gérondif)
 
@@ -2093,7 +2403,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0182` · Attesté · référent · verbe
 
-**Sens et définition** : traduire
+**Traduction et sens** : traduire
+
+**Définition** : Traduire, faire passer un texte d'une langue dans une autre.
 
 **Formes dérivées** : wurebandi-nde (nom d'action) · wurebandini (gérondif)
 
@@ -2101,7 +2413,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0011` · Attesté · référent · verbe · clé de conjugaison : wurier
 
-**Sens et définition** : courir
+**Traduction et sens** : courir
+
+**Définition** : Courir, se déplacer rapidement.
 
 **Exemple** : --- verbes de la liste du locuteur (formes en -ni validées 2026-09-25) ---
 
@@ -2111,7 +2425,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0009` · Attesté · référent · verbe · transitif
 
-**Sens et définition** : prendre
+**Traduction et sens** : prendre
+
+**Définition** : Prendre, saisir, se saisir de.
 
 **Emploi attesté** : "Tiga yogo wutu!" "Ayi, ke da in baga.""Take some peanuts!" "No, this is enough"."Prends de l'arachide!" "Non, cela me suffit." N tugaade nta in bakka. My salary is not enough for me. Mon salaire ne me suffit pas. — SNK-LEX-0323
 
@@ -2123,7 +2439,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0085` · Attesté · référent · verbe
 
-**Sens et définition** : porter
+**Traduction et sens** : porter
+
+**Définition** : Porter, avoir sur soi et transporter.
 
 **Formes dérivées** : wutundi-nde (nom d'action) · wutundini (gérondif)
 
@@ -2131,7 +2449,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0050` · Attesté · référent · verbe
 
-**Sens et définition** : critiquer
+**Traduction et sens** : critiquer
+
+**Définition** : Critiquer, juger défavorablement.
 
 **Formes dérivées** : xadiafi-nde (nom d'action) · xadiafini (gérondif)
 
@@ -2139,7 +2459,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0160` · Attesté · référent · verbe
 
-**Sens et définition** : convaincre
+**Traduction et sens** : convaincre
+
+**Définition** : Convaincre, persuader quelqu'un.
 
 **Formes dérivées** : xandio-nde (nom d'action) · xandiono (gérondif)
 
@@ -2147,7 +2469,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0029` · Attesté · référent · verbe
 
-**Sens et définition** : autoriser
+**Traduction et sens** : autoriser
+
+**Définition** : Autoriser, donner la permission.
 
 **Formes dérivées** : xanemaxawarana (gérondif) · xanemaxawara-nde (nom d'action)
 
@@ -2155,7 +2479,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0018` · Attesté · référent · verbe
 
-**Sens et définition** : aimer
+**Traduction et sens** : aimer
+
+**Définition** : Aimer, apprécier, tenir à quelqu'un.
 
 **Formes dérivées** : xanunu (gérondif) · xanu-ye (nom d'action)
 
@@ -2163,7 +2489,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0049` · Attesté · référent · verbe
 
-**Sens et définition** : crier
+**Traduction et sens** : crier
+
+**Définition** : Crier, pousser un cri.
 
 **Formes dérivées** : xarunu (gérondif) · xaru-ye (nom d'action)
 
@@ -2171,7 +2499,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0122` · Attesté · référent · verbe
 
-**Sens et définition** : vieillir
+**Traduction et sens** : vieillir
+
+**Définition** : Vieillir, prendre de l'âge. *(glose à vérifier)*
 
 **Emploi attesté** : Xaso ga na bita, o nta fo walla wuron ŋa. When the moon wanes, we can't see anything at night. Quand la lune diminue, nous ne voyons rien pendant la nuit. — SNK-LEX-0521
 
@@ -2181,7 +2511,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0130` · Attesté · référent · verbe
 
-**Sens et définition** : abuser
+**Traduction et sens** : abuser
+
+**Définition** : Abuser, profiter de sa position ou de la faiblesse d'autrui.
 
 **Formes dérivées** : xemparadangini (gérondif) · xemparadangi-ye (nom d'action)
 
@@ -2189,7 +2521,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0123` · Attesté · référent · verbe
 
-**Sens et définition** : violer
+**Traduction et sens** : violer
+
+**Définition** : Violer, imposer un rapport sexuel.
 
 **Formes dérivées** : xenne-ne (nom d'action) · xennene (gérondif)
 
@@ -2197,7 +2531,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0027` · Attesté · référent · verbe
 
-**Sens et définition** : attaquer
+**Traduction et sens** : attaquer
+
+**Définition** : Attaquer, assaillir.
 
 **Formes dérivées** : xennini (gérondif) · xenni-ye (nom d'action)
 
@@ -2205,7 +2541,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0073` · Attesté · référent · verbe
 
-**Sens et définition** : mesurer
+**Traduction et sens** : mesurer
+
+**Définition** : Mesurer, déterminer une grandeur.
 
 **Formes dérivées** : xentie-nde (nom d'action) · xentiene (gérondif)
 
@@ -2213,7 +2551,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0114` · Attesté · référent · verbe
 
-**Sens et définition** : tomber
+**Traduction et sens** : tomber
+
+**Définition** : Tomber, faire une chute.
 
 **Emploi attesté** : 1 • cloth used to carry a child on one's back; pagne pour attacher un enfant sur le dos.Banbaado ga booxe, leminen xenu. When the baby-carrying cloth tore, the child fell. Quand le pagne de dos s'est déchiré, l'enfant est tombé.Plural suffix: -nu. — SNK-LEX-0343
 
@@ -2225,7 +2565,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0076` · Attesté · référent · verbe
 
-**Sens et définition** : nager
+**Traduction et sens** : nager
+
+**Définition** : Nager.
 
 **Formes dérivées** : xenyini (gérondif) · xenyi-ye (nom d'action)
 
@@ -2233,7 +2575,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0021` · Attesté · référent · verbe
 
-**Sens et définition** : appeler
+**Traduction et sens** : appeler
+
+**Définition** : Appeler, interpeller quelqu'un.
 
 **Formes dérivées** : xiri-nde (nom d'action) · xirini (gérondif)
 
@@ -2241,7 +2585,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0107` · Attesté · référent · verbe
 
-**Sens et définition** : serrer
+**Traduction et sens** : serrer
+
+**Définition** : Serrer, presser fortement.
 
 **Formes dérivées** : xithi-nde (nom d'action) · xithini (gérondif)
 
@@ -2249,7 +2595,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0131` · Attesté · référent · verbe
 
-**Sens et définition** : affranchir
+**Traduction et sens** : affranchir
+
+**Définition** : Affranchir, libérer de la servitude.
 
 **Formes dérivées** : xoraxu-nde (nom d'action) · xoraxunu (gérondif)
 
@@ -2257,7 +2605,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0063` · Attesté · référent · verbe
 
-**Sens et définition** : embarrasser
+**Traduction et sens** : embarrasser
+
+**Définition** : Embarrasser, mettre quelqu'un dans l'embarras.
 
 **Formes dérivées** : yagu-nde (nom d'action) · yagunu (gérondif)
 
@@ -2265,7 +2615,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0080` · Attesté · référent · verbe
 
-**Sens et définition** : pardonner
+**Traduction et sens** : pardonner
+
+**Définition** : Pardonner, remettre une faute.
 
 **Formes dérivées** : yampana (gérondif) · yampa-ye (nom d'action)
 
@@ -2273,7 +2625,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0162` · Attesté · référent · verbe
 
-**Sens et définition** : descendre
+**Traduction et sens** : descendre
+
+**Définition** : Descendre, aller vers le bas.
 
 **Formes dérivées** : yanqana (gérondif) · yanqa-nde (nom d'action)
 
@@ -2281,7 +2635,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0102` · Attesté · référent · verbe
 
-**Sens et définition** : réveiller
+**Traduction et sens** : réveiller
+
+**Définition** : Réveiller quelqu'un, le tirer du sommeil. *(glose à vérifier)*
 
 **Formes dérivées** : yaxawunyi-yen xediene (gérondif) · yaxawunyi-yen xedie-ye (nom d'action)
 
@@ -2289,7 +2645,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0072` · Attesté · référent · verbe
 
-**Sens et définition** : marier
+**Traduction et sens** : marier
+
+**Définition** : Marier, donner en mariage.
 
 **Formes dérivées** : yexini (gérondif) · yexi-ye (nom d'action)
 
@@ -2297,7 +2655,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0005` · Attesté · référent · verbe · clé de conjugaison : yigeyer · transitif
 
-**Sens et définition** : manger
+**Traduction et sens** : manger
+
+**Définition** : Manger.
 
 **Exemple** : avec un objet : ake n'di maro n'yiga / forme en -ni de yiga : nke yi maro yigane
 
@@ -2307,7 +2667,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0043` · Attesté · référent · verbe
 
-**Sens et définition** : commander
+**Traduction et sens** : commander
+
+**Définition** : Commander, ordonner.
 
 **Formes dérivées** : yinkutundi-nde (nom d'action) · yinkutundini (gérondif)
 
@@ -2315,7 +2677,9 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 
 `SNK-LEX-0086` · Attesté · référent · verbe
 
-**Sens et définition** : pousser
+**Traduction et sens** : pousser
+
+**Définition** : Pousser, faire aller devant soi.
 
 **Formes dérivées** : yonto-nde (nom d'action) · yontono (gérondif)
 
@@ -2326,6 +2690,7 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 - Formes extraites : **576** ; entrées du document : **226** (12 pronoms, 26 constructions de temps et d'aspect, 6 particules, 182 verbes).
 - Traductions : toutes issues du document, aucune reformulée.
 - Définitions : toutes issues du lexique du projet ou, à défaut, du document ; aucune glose inventée.
+- Verbes avec une définition rédigée : **182** sur **182**, à valider par le référent ([tableau complet](DEFINITIONS-VERBES-A-VALIDER.md)).
 - Homographes signalés en note, jamais fusionnés.
 - Verbes avec un exemple dans leur entrée : **14** sur **182**.
 - Verbes avec au moins une phrase d'emploi attestée dans le corpus : **25** sur **182**.
