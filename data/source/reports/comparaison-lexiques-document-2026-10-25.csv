@@ -5,7 +5,7 @@ ake;il / elle;DEJA_PRESENT;SNK-GRM-0003;audio/snk-00002.wav;non;Lexiques sonink�
 oku;nous;DEJA_PRESENT;SNK-GRM-0004;audio/snk-00320.wav;non;Lexiques soninké.docx
 xaku;vous;DEJA_PRESENT;SNK-GRM-0005;audio/snk-00509.wav;non;Lexiques soninké.docx
 iku;ils / elles;DEJA_PRESENT;SNK-GRM-0006;audio/snk-00178.wav;non;Lexiques soninké.docx
-n;je;DEJA_PRESENT;SNK-GRM-0007;;oui;Lexiques soninké.docx
+n;je;DEJA_PRESENT;SNK-GRM-0007;;non;Lexiques soninké.docx
 an;tu;DEJA_PRESENT;SNK-GRM-0008;audio/snk-00003.wav;non;Lexiques soninké.docx
 a;il / elle;DEJA_PRESENT;SNK-GRM-0009;audio/snk-00001.wav;non;Lexiques soninké.docx
 o;nous;DEJA_PRESENT;SNK-GRM-0010;audio/snk-00319.wav;non;Lexiques soninké.docx
@@ -193,3 +193,4 @@ gage;vendre;DEJA_PRESENT;SNK-LEX-0179;audio/snk-00159.wav;non;Lexiques soninké.
 bire;vivre / instant, moment / quand;DEJA_PRESENT;SNK-LEX-0180;audio/snk-00029.wav;non;Lexiques soninké.docx
 kerin;éteindre;DEJA_PRESENT;SNK-LEX-0181;audio/snk-00206.wav;non;Lexiques soninké.docx
 wurebandi;traduire;DEJA_PRESENT;SNK-LEX-0182;audio/snk-00494.wav;non;Lexiques soninké.docx
+In;je;AJOUTE_SUR_CONFIRMATION_DU_REFERENT;SNK-GRM-0013;;oui;Correction explicite du référent
