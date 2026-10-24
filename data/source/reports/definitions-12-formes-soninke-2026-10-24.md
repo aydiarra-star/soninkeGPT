@@ -1,79 +1,50 @@
-# Recherche de définitions — 12 formes soninké (2026-10-24)
+# Réévaluation des 12 formes soninké — 2026-10-24
 
-Formes concernées : **Kit-soro, Tange-golle, Tange-muru, Tegi-soro, Tegi-suuru,
-Kuntu-bunyi, Qunyu-bunyi, Kunyu-bunyi, gnougnou, siga, Cuute, Tchuute.**
+## Synthèse
 
-## Résultat en une phrase
+Cette fiche reprend les pistes de recherche source par source fournies le 24 octobre 2026. Elle distingue les sens attestés, les rapprochements morphologiques et les formes encore indéterminées. Une hypothèse n'est pas une traduction validée.
 
-Une seule de ces douze formes a un sens attesté par une source linguistique
-(*siga*). Pour trois autres, la recherche de ce jour apporte un élément
-nouveau et vérifiable (Kit-soro, gnougnou, et le statut de doublet graphique de
-Qunyu-/Kunyu- et de Cuute/Tchuute). Les autres restent **sans définition
-établie** : aucune glose n'est inventée ici, conformément à
-`docs/LINGUISTIC-QUALITY.md`.
+| Forme source | Sens / piste | Statut retenu |
+|---|---|---|
+| Kit-soro | **Bras** : hypothèse à partir de `kit-` ~ `kitte` « main (et bras) » et du parallèle `kittinsolle` « bras » | Hypothèse lexicale à valider; le composé entier n'est pas directement attesté |
+| Tange-golle | `tange` peut être rapproché de `ta` « pied/jambe »; `golle` est donné avec « travail » et « mortier à piler » | Sens du composé non établi |
+| Tange-muru | `muru` peut signifier « chercher » dans la liste du référent; ailleurs le mot est glosé « prépuce » | Sens du composé non établi; ne pas composer mécaniquement les gloses |
+| Tegi-soro | `tegi` non attesté; rapprochement à examiner avec `teŋe/tene` « front » et la forme `Teingé` fournie précédemment | Sens du composé non établi |
+| Tegi-suuru | `-suuru` non attesté dans ce composé; ne pas le confondre avec `suure` « plat de mil » ou `suuxe` « être jaloux » | Sens du composé non établi |
+| Kuntu-bunyi | Les éléments restent non identifiés; les formes voisines `kutu`, `kunne`, `kunto`, `bunne` ne prouvent pas le sens du composé | Sens non établi |
+| Qunyu-bunyi / Kunyu-bunyi | Probables variantes de transcription d'une même forme; hypothèse `q` ~ `k` à vérifier selon la convention et la variété | Variantes provisoirement rapprochées, sens inconnu |
+| gnougnou | **Lèvre** — sens explicitement confirmé et validé par le référent linguistique le 24 octobre 2026; `some` est conservé comme forme associée | `valide_par_referent_linguistique` |
+| siga | « Taille, importance » dans le lexique du soninké du Kingi, *Mandenkan* (2016) | Sens attesté selon la source citée; contexte concret/abstrait à préciser |
+| Cuute / Tchuute | Probables doublets de transcription; identité phonologique et orthographique à vérifier | Variantes provisoirement rapprochées, sens inconnu |
 
-## Tableau de synthèse
+## Décisions prises dans le lexique principal
 
-| Forme source | Segmentation / éléments identifiables | Sens attesté des éléments | Définition de la forme | Niveau de preuve |
-|---|---|---|---|---|
-| **Kit-soro** | `kit-` = *kitte* « main (et bras) » ; second élément `-soro` | *kitte* : main (CNRS-LGIDF, Soninkara, Goumbou) ; *kittinsolle* « bras » et *tansolle* « jambe » dans un vocabulaire soninké comparatif ; *soro* « faire cuire » (verbe), *sooro* « intelligence, compréhension » (Lexique soninké du Mali) | **Hypothèse : « bras »** (cf. *kittinsolle*, *kitte* « main/bras »). Non confirmé : la forme exacte *kittinsoro* n'est pas attestée, et *soro* « cuire / intelligence » n'est pas le même mot que *-solle* de *kittinsolle*. | faible à moyenne — piste à faire écouter/valider |
-| **Tange-golle** | `tange` ≈ *ta* / *tanŋe* « pied, jambe » ; `golle` | *ta* « pied, jambe » ; *golle* « travail » et « mortier à piler » (Soninkara, Goumbou) | **Sens non établi.** Aucun composé anatomique « pied + mortier/travail » n'est attesté ; additionner les deux sens produirait une définition fausse. | nul |
-| **Tange-muru** | `tange` + `muru` | *muru* « chercher » (liste du référent, SNK-LEX-0039) ; certains glossaires donnent aussi *muru* « prépuce » | **Sens non établi.** « pied + chercher » ou « pied + prépuce » ne fait pas sens : le second élément est probablement autre chose (homonymie ou transcriptions différentes du même mot). | nul |
-| **Tegi-soro** | `tegi` + `-soro` (cf. Kit-soro) | *tegi* n'est attesté dans aucune source consultée ; à comparer à *teŋe / tene* « front » et à la forme *Teingé* « front » de la liste du référent (SNK-LEX-0278) | **Sens non établi.** Si *tegi* = « front », le composé ne correspond à aucune partie du corps connue. | nul |
-| **Tegi-suuru** | `tegi` + `-suuru` | *suuru* non attesté ; à ne pas confondre avec *suure* « plat à base de mil » (Goumbou) ni *suuxe* « être jaloux » | **Sens non établi.** | nul |
-| **Kuntu-bunyi** | `kuntu` + `bunyi` | *kuntu* non attesté ; formes voisines : *kutu* « couper », *kunne* « trou, ravin, crevasse », *kunto* « clitoris » (Goumbou). *bunyi* non attesté ; voisin *bunne* « flèche » | **Sens non établi.** Les voisins phonétiques ne suffisent pas : on ne peut ni retenir ni exclure un sens anatomique. | nul |
-| **Qunyu-bunyi** | `qunyu` + `bunyi` | *qunyu / kunyu* non attesté | **Sens non établi** — et il s'agit très probablement du **même mot que Kunyu-bunyi** (voir ci-dessous). | nul |
-| **Kunyu-bunyi** | `kunyu` + `bunyi` | idem | **Sens non établi** ; ne pas compter comme une entrée distincte de Qunyu-bunyi avant vérification. | nul |
-| **gnougnou** | graphie française de *ɲuɲu* (le « gn » note /ɲ/, « ou » note /u/) | *ɲuɲu* « **gueule, museau** (d'un animal) » — glossaire soninké-français (Goumbou), entrée de la série en ɲ- (*ɲaali* « briller », *ɲaara* « grand griot », *ɲoomi* « beignet », *ɲuno* « pantalon ») ; le mot courant pour « lèvre » est *soome* / *soomon-fate* | **« Gueule, museau » est la piste la plus solide** ; l'ancienne glose « lèvre » (liste du référent, 21 oct.) vient probablement d'une confusion avec *soome*. À confirmer auprès du référent. | moyenne — forme et sens attestés dans un glossaire, appariement graphie française ↔ ɲuɲu à valider |
-| **siga** | mot simple | *siga* « **taille, importance** » (lexique du soninké du Kingi, Mandenkan) | **« Taille / importance »** — seul sens de la liste appuyé par une source linguistique ; le sens concret (« taille du corps ») reste à préciser | moyenne — attestation lexicale, pas de contexte |
-| **Cuute** | mot simple | non attesté | **Sens non établi.** | nul |
-| **Tchuute** | doublet graphique de *Cuute* (`c` = /tʃ/, d'où « tch ») | non attesté | **Sens non établi** ; même mot que Cuute, pas une deuxième entrée. | nul |
+- `SNK-LEX-1426` (`Kit-soro`) porte désormais « bras (hypothèse) », avec un statut qui interdit de le présenter comme validé.
+- `SNK-LEX-0283` (`gnougnou`) est maintenant validé comme **« lèvre »** par le référent linguistique. La piste `ɲuɲu` « gueule/museau (animal) » reste une piste distincte à vérifier et n'écrase pas la validation du référent.
+- `SNK-LEX-1432` et `SNK-LEX-1433` conservent deux identifiants pour la traçabilité, mais enregistrent provisoirement `Qunyu-bunyi` et `Kunyu-bunyi` comme variantes probables. Pas de suppression d'entrée.
+- `SNK-LEX-1435` et `SNK-LEX-1436` conservent deux identifiants, avec `Cuute` et `Tchuute` comme variantes possibles non confirmées.
+- Les autres formes restent explicitement non résolues.
+- Aucun fichier audio ni association audio-mot n'a été modifié.
 
-## Ce que la recherche du 24 octobre 2026 a réellement apporté
+## Références signalées / rapprochements à vérifier
 
-1. **Un parallèle pour Kit-soro.** Un vocabulaire soninké comparatif publié
-   donne *kittinsolle* « bras » et *tansolle* « jambe » (aux côtés de
-   *kittinxanne* « poignet », *tandoronme* « orteil », *tanjunqo* « talon »).
-   La structure `kitte + n + solle` éclaire `Kit-soro` : le premier élément est
-   bien « main », le second est un nom de « bois / bâton » (*solle*) réutilisé
-   pour désigner le segment du membre. Cela reste une **hypothèse de
-   segmentation**, pas une attestation de la forme exacte.
-2. **Une définition crédible pour gnougnou** : *ɲuɲu* « gueule, museau », et non
-   « lèvre ». La paire homophone *soome* « lèvre » explique probablement
-   l'ancienne attribution.
-3. **Deux doublets, pas deux mots** : `Qunyu-` / `Kunyu-` (le soninké note /x/
-   par *q*) et `Cuute` / `Tchuute` (`c` = /tʃ/). Ils doivent rester dans une
-   même fiche avec variantes, sans fusion de sens avant validation.
-4. **Aucun progrès sur `tange-`, `tegi-`, `-muru`, `-golle`, `-suuru`,
-   `kuntu`, `kunyu`, `bunyi`, `cuute`.** Les dictionnaires consultés (Lexique
-   soninké du Mali–Français–Anglais, glossaire Goumbou, glossaire Soninkara,
-   lexique CNRS-LGIDF, vocabulaire comparatif) n'ont pas ces entrées.
+- Lexique soninké du Mali – Français – Anglais.
+- Glossaire de Goumbou.
+- Glossaires Soninkara.
+- CNRS LGIDF, lexique soninké.
+- Lexique du Kingi dans *Mandenkan* (2016), pour `siga` « taille, importance ».
+- Vocabulaires comparatifs mentionnant `kittinsolle` « bras » et `tansolle` « jambe ».
 
-## Pistes écartées volontairement
+La référence bibliographique ou l'URL exacte du glossaire qui donne `ɲuɲu` « gueule, museau » reste à retrouver. Cette piste ne remet pas en cause la validation du référent pour `gnougnou = lèvre`.
 
-- Traduire un composé en additionnant ses éléments : `golle` « mortier » +
-  `tange` « pied » ne donne aucune partie du corps ; `muru` « chercher » non
-  plus. Ces combinaisons ont été refusées plutôt que présentées comme des sens.
-- Utiliser les « voisins phonétiques » (*kutu*, *kunne*, *bunne*, *suure*)
-  comme s'il s'agissait des mêmes mots.
-- Reprendre la glose « lèvre » pour *gnougnou* sans réserve.
+## À confirmer avec le référent linguistique
 
-## Ce qu'il faut pour terminer le travail
+1. `Kit-soro` peut-il réellement signifier « bras » dans la variété et la source d'origine ?
+2. La piste comparative `ɲuɲu` « gueule/museau (animal) » correspond-elle à une forme distincte dans la variété visée ? `gnougnou = lèvre` est validé par le référent.
+3. `Qunyu-bunyi` et `Kunyu-bunyi` sont-ils une seule forme avec deux transcriptions ?
+4. `Cuute` et `Tchuute` sont-ils des transcriptions d'une même forme ?
 
-1. **Le document d'origine** de ces douze formes (photo, page, liste) : il donne
-   souvent l'ordre des notions (poignet, talon, cuisse…) et permet de retrouver
-   la bonne équivalence.
-2. **La variété et la localité** (Kaédi, Bakel, Kingi, Guidimakha, Nara…), car
-   les formes du corps changent d'une région à l'autre.
-3. **Une phrase d'exemple** par forme, même courte : c'est ce qui distingue un
-   composé anatomique d'un homonyme verbal.
-4. **L'écoute du référent** pour *Kit-soro* (bras ?) et *gnougnou* (gueule /
-   museau ?), les deux seules hypothèses qui méritent une validation rapide.
-
-Tant que ces éléments manquent, les formes restent dans le lexique avec le
-statut `non_resolu_a_documenter` (SNK-LEX-1426 à SNK-LEX-1436) : aucune
-définition n'a été ajoutée ni modifiée dans
-`data/source/lexique-soninke-fr-base.csv`.
+Tant que ces validations ne sont pas disponibles, les hypothèses ne doivent pas être présentées comme des définitions définitivement validées dans l'interface d'apprentissage.
 
 ## Sources consultées ce jour
 
@@ -100,6 +71,11 @@ définition n'a été ajoutée ni modifiée dans
   *kitte* « main », *ta* « pied », *soome* « lèvre ».
 - Mandenkan, lexique du soninké du Kingi (2016) : https://journals.openedition.org/mandenkan/pdf/738 —
   *siga* « taille, importance ».
+
+Note sur `gnougnou` : la forme *ɲuɲu* « gueule, museau (d'un animal) » relevée dans
+le glossaire de Goumbou est une **piste concurrente**, pas la glose retenue. Le
+référent linguistique a validé `gnougnou = lèvre` le 24 octobre 2026 ; c'est cette
+validation qui fait foi dans le lexique (`SNK-LEX-0283`).
 
 Aucune de ces sources n'est un corpus librement réutilisable en masse : les
 formes sont citées pour la vérification, pas recopiées dans le lexique.
