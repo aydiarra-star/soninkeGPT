@@ -2280,6 +2280,56 @@ function generateResponse(message) {
       `Consultez le lexique pour la forme réellement attestée. Si vous êtes locuteur référent, signalez la forme à valider : elle sera ajoutée après vérification.\n\n`;
   }
 
+  // 0 bis. Recherche exacte d'expressions françaises déjà présentes dans le corpus.
+  // Priorité aux phrases attestées, aux exemples et aux enregistrements complets :
+  // ne pas remplacer une expression précise par une liste générale de salutations.
+  const exactFrenchQuery = normalizeWord(
+    trimmed
+      .replace(/^[«"'“”]+|[»"'“”]+$/g, "")
+      .replace(/^(?:traduis?|traduire|comment dit[- ]on|comment dire|que signifie)\s+(?:en sonink[ée]\s+)?/i, "")
+      .replace(/[.!?;:,]+$/g, "")
+  );
+  if (exactFrenchQuery.split(/\s+/).filter(Boolean).length >= 2) {
+    const exactExpressions = [];
+    const seenExactExpressions = new Set();
+    const addExactExpression = (snk, fr, note = "") => {
+      if (!snk || normalizeWord(snk).split(/\s+/).length < 2 || isExcludedForm(snk)) return;
+      const key = normalizeWord(snk);
+      if (seenExactExpressions.has(key)) return;
+      seenExactExpressions.add(key);
+      exactExpressions.push({ snk, fr: fr || trimmed, note });
+    };
+    for (const p of PHRASEBOOK) {
+      if (normalizeWord(p.fr).replace(/[.!?;:,]+$/g, "") === exactFrenchQuery) {
+        addExactExpression(p.snk, p.fr, p.note);
+      }
+    }
+    for (const sample of state.samples) {
+      if (normalizeWord(sample.french || "").replace(/[.!?;:,]+$/g, "") === exactFrenchQuery) {
+        addExactExpression(sample.soninke, sample.french, "Exemple de phrase du corpus");
+      }
+    }
+    for (const audio of state.audioByWord.values()) {
+      if (normalizeWord(audio.francais || "").replace(/[.!?;:,]+$/g, "") === exactFrenchQuery) {
+        addExactExpression(audio.text, audio.francais, "Enregistrement présent dans la mémoire audio");
+      }
+    }
+    for (const entry of state.entries) {
+      if (normalizeWord(entry.francais || "").replace(/[.!?;:,]+$/g, "") === exactFrenchQuery) {
+        addExactExpression(entry.soninke, entry.francais, entry.statut || entry.source || "");
+      }
+    }
+    if (exactExpressions.length) {
+      let out = "**Expression correspondante dans le corpus SoninkeGPT**\n";
+      for (const item of exactExpressions.slice(0, 5)) {
+        out += soninkeBlock(item.snk, item.fr, "expression");
+        if (item.note) out += `*Source/statut : ${item.note}*\n\n`;
+      }
+      out += `La correspondance complète est prioritaire sur les mots isolés.\n\n${levelNote()}`;
+      return out;
+    }
+  }
+
   // 1.1 Salutation adressée à maman : respecter la traduction exacte validée par le référent.
   if (/^(bonjour|salut|coucou)\s+(maman|mère|ma mère)[!.?\s]*$/i.test(trimmed)) {
     return `SoninkeGPT vous salue en soninké.\n` +
