@@ -306,26 +306,26 @@ SNK-LEX-0271;buusu;"brûler légèrement ; retirer";verbe transitif;"Dictionnair
 SNK-LEX-0272;ceero;"youyou, perruche sénégalaise ; scie";nom;"Dictionnaire soninké.docx; paragraphes source : 807, 808; variantes : aucune détectée; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent;;"ceero1 Nom . Senegal parrot; youyou, perruche sénégalaise.Category: Animal. Poicephalus senegalus. Plural suffix: -nu. Underlying form: céeru."
 SNK-LEX-0273;coolo;"errer, vagabonder ; vagabond, personne qui ne fait rien, au chômage";nom/verbe;"Dictionnaire soninké.docx; paragraphes source : 830, 831; variantes : aucune détectée; 2 segments conservés dans la fiche de validation du lot 2";valide_par_referent;;"coolo 1 • Verbe intransitif. wander about; errer, vagabonder.Underlying form: còoló."
 SNK-LEX-0274;baaraago;course de chevaux;nom;"Dictionnaire soninké.docx; paragraphes source : 51; variantes : barabo; 1 segments conservés dans la fiche de validation du lot 2";valide_par_referent;barabo;"baaraago Variant: barabo. Nom . horse games or races; course de chevaux. Note: PJ synonyme: siinsange."
-SNK-LEX-0275;yime;tête;partie_du_corps;liste_referent_tete_visage_2026-10-21;fourni_par_referent_a_verifier;;
-SNK-LEX-0276;yinte;cheveux;partie_du_corps;liste_referent_tete_visage_2026-10-21;fourni_par_referent_a_verifier;;
-SNK-LEX-0277;Giya;visage;partie_du_corps;liste_referent_tete_visage_2026-10-21;fourni_par_referent_a_verifier;;
-SNK-LEX-0278;Teingé;front;partie_du_corps;liste_referent_tete_visage_2026-10-21;fourni_par_referent_a_verifier;;
-SNK-LEX-0279;Yaxe;œil;partie_du_corps;liste_referent_tete_visage_2026-10-21;fourni_par_referent_a_verifier;;
-SNK-LEX-0280;Yaxou;yeux;partie_du_corps;liste_referent_tete_visage_2026-10-21;fourni_par_referent_a_verifier;;
-SNK-LEX-0281;Nuxune;nez;partie_du_corps;liste_referent_tete_visage_2026-10-21;fourni_par_referent_a_verifier;;
-SNK-LEX-0282;rakke;bouche;partie_du_corps;liste_referent_tete_visage_2026-10-21;fourni_par_referent_a_verifier;;
-SNK-LEX-0283;gnougnou;lèvre;partie_du_corps;liste_referent_tete_visage_2026-10-21;fourni_par_referent_a_verifier;;
-SNK-LEX-0284;some;lèvre;partie_du_corps;liste_referent_tete_visage_2026-10-21;fourni_par_referent_a_verifier;;
-SNK-LEX-0285;kambe;dent;partie_du_corps;liste_referent_tete_visage_2026-10-21;fourni_par_referent_a_verifier;;
-SNK-LEX-0286;kambou;dents (pluriel);partie_du_corps;liste_referent_tete_visage_2026-10-21;fourni_par_referent_a_verifier;;
-SNK-LEX-0287;Nene;langue;partie_du_corps;liste_referent_tete_visage_2026-10-21;fourni_par_referent_a_verifier;;
-SNK-LEX-0288;torro;oreille;partie_du_corps;liste_referent_tete_visage_2026-10-21;fourni_par_referent_a_verifier;;
-SNK-LEX-0289;xoume;joues;partie_du_corps;liste_referent_tete_visage_2026-10-21;fourni_par_referent_a_verifier;;
-SNK-LEX-0290;xané;menton;partie_du_corps;liste_referent_tete_visage_2026-10-21;fourni_par_referent_a_verifier;;
-SNK-LEX-0291;yesso;cou;partie_du_corps;liste_referent_tete_visage_2026-10-21;fourni_par_referent_a_verifier;;
-SNK-LEX-0292;sinke;cou;partie_du_corps;liste_referent_tete_visage_2026-10-21;fourni_par_referent_a_verifier;;
-SNK-LEX-0293;xanné;gorge;partie_du_corps;liste_referent_tete_visage_2026-10-21;fourni_par_referent_a_verifier;;
-SNK-LEX-0294;xorré;gorge;partie_du_corps;liste_referent_tete_visage_2026-10-21;fourni_par_referent_a_verifier;;
+SNK-LEX-0275;yime;tête;partie_du_corps;Référent 2026-10-24 | CNRS LGIDF | Langues d’Afrique Activities;atteste_source_externe;"yinme; yinkolla";"Tête attestée; variantes conservées."
+SNK-LEX-0276;yinte;cheveux;partie_du_corps;Référent 2026-10-24 | CNRS LGIDF | Langues d’Afrique Activities;atteste_source_externe;yintu;"Cheveu/poil; yintu rapporté pour cheveux."
+SNK-LEX-0277;Giya;visage;partie_du_corps;Référent 2026-10-24;sous_reserve_a_verifier;yeeso;Sous réserve : attestation indépendante non retrouvée.
+SNK-LEX-0278;Teingé;front;partie_du_corps;Référent 2026-10-24 | Langues d’Afrique Activities;atteste_source_externe;"teŋe; Tenŋe";"La source donne Tenŋe; graphie à harmoniser."
+SNK-LEX-0279;Yaxe;œil;partie_du_corps;Référent 2026-10-24 | CNRS LGIDF | Soninkara;atteste_source_externe;yaaxe;Forme attestée.
+SNK-LEX-0280;Yaxou;yeux;partie_du_corps;Référent 2026-10-24 | Langues d’Afrique Activities;atteste_source_externe;"yaaxo; yaaxu; yaago";Formes plurielles documentées.
+SNK-LEX-0281;Nuxune;nez;partie_du_corps;Référent 2026-10-24 | CNRS LGIDF | Langues d’Afrique Activities;atteste_source_externe;nuxunne;Forme attestée.
+SNK-LEX-0282;rakke;bouche;partie_du_corps;Référent 2026-10-24 | Langues d’Afrique Activities;atteste_selon_referent_a_concilier;"raqe; laqe; laxxe";"La source donne laxxe; graphies à harmoniser."
+SNK-LEX-0283;gnougnou;forme proposée pour « lèvre » — non attestée dans les sources consultées;partie_du_corps;Référent 2026-10-24;forme_non_attestee_a_reexaminer;;Ancienne proposition conservée pour traçabilité, sans la présenter comme un sens validé.
+SNK-LEX-0284;some;lèvre;partie_du_corps;Référent 2026-10-24 | Langues d’Afrique Activities;atteste_source_externe;soome;Forme attestée.
+SNK-LEX-0285;kambe;dent;partie_du_corps;Référent 2026-10-24 | CNRS LGIDF | Langues d’Afrique Activities;atteste_source_externe;kanbe;Forme attestée.
+SNK-LEX-0286;kambou;dents;partie_du_corps;Référent 2026-10-24 | Langues d’Afrique Activities;atteste_source_externe;kanbu;Pluriel documenté sous kanbu.
+SNK-LEX-0287;Nene;langue (organe);partie_du_corps;Référent 2026-10-24 | CNRS LGIDF | Langues d’Afrique Activities;atteste_source_externe;neene;Forme attestée.
+SNK-LEX-0288;torro;oreille;partie_du_corps;Référent 2026-10-24 | CNRS LGIDF | Langues d’Afrique Activities;atteste_source_externe;"toro; taro";"Taro attesté; torro fourni par le référent."
+SNK-LEX-0289;xoume;joue;partie_du_corps;Référent 2026-10-24 | Langues d’Afrique Activities;atteste_source_externe;xume;Forme attestée.
+SNK-LEX-0290;xané;ancienne proposition pour « menton » — à réexaminer;partie_du_corps;Référent 2026-10-24;forme_non_attestee_a_reexaminer;;"Ancienne attribution conservée pour traçabilité; la liste corrigée attribue sinke à menton."
+SNK-LEX-0291;yeeso;visage;partie_du_corps;Référent 2026-10-24;sous_reserve_a_verifier;Giya;"Forme proposée comme variante de Giya; sous réserve."
+SNK-LEX-0292;sinke;menton;partie_du_corps;Référent 2026-10-24;atteste_selon_referent_a_verifier;sinqe;"Sens corrigé selon la liste du référent; source indépendante à confirmer."
+SNK-LEX-0293;xanné;cou;partie_du_corps;Référent 2026-10-24 | Langues d’Afrique Activities;atteste_source_externe;xanne;Correction : xanné/xanne pour cou, non gorge.
+SNK-LEX-0294;xorré;gorge;partie_du_corps;Référent 2026-10-24;sous_reserve_a_verifier;xore;Sous réserve : attestation indépendante non retrouvée.
 SNK-LEX-0295;nawari;merci;interjection;validation_referent_utilisateur;fourni_par_referent;nawaari;
 SNK-LEX-0296;baabondi;mousser (faire);verbe;Dictionnaire soninké.docx;candidat_dictionnaire_a_verifier;;"baabondi summary-definition: foam; mousser (faire). See main entry: baabo1, -ndi3. Verbe transitif. foam, make foamy; faire mousser. Alu da hatayen baabondi. Alou foamed the tea. Alou a fait moussé le thé. Gram: 6 Note: D2"
 SNK-LEX-0297;baabu;secourir avec de l'argent;verbe;Dictionnaire soninké.docx;candidat_dictionnaire_a_verifier;;"baabu Verbe transitif. aid by means of money; secourir avec de l'argent. Tanpille baabu in ŋa. N baabu tanpille yi. Help me with 100 francs CFA. Prête-moi 100 francs CFA. Tanpille baabe. 100 francs CFA were loaned. 100 francs CFA ont été prêté.Gram: Le 'patient' et le 'bénéficiaire', tous les deux peuvent fonctionner comme objet direct et circonstant. Néanmoins, seul le syntagme nominal du 'patient' peut être le sujet de la forme passive du verbe.; The patient and beneficiary can equally bear the direct object and oblique grammatical relation. However, only the noun phrase functioning as the patient can be the suject of the passive form of the verb. Gram: 3 Note: D2"
@@ -728,17 +728,17 @@ SNK-LEX-0693;lenki;aujourd’hui;adverbe;Soninkara glossaire L-O;source_externe_
 SNK-LEX-0694;senbe;force;nom;Soninkara glossaire P-S;source_externe_a_verifier;;
 SNK-LEX-0695;setu;monter à cheval;verbe;Soninkara glossaire P-S;source_externe_a_verifier;;
 SNK-LEX-0696;sikko;trois;nombre;Soninkara glossaire P-S;source_externe_a_verifier;;
-SNK-LEX-0697;sondonme;cœur;nom;Soninkara glossaire P-S;source_externe_a_verifier;;
+SNK-LEX-0697;sondonme;cœur;nom;Référent 2026-10-24 | CNRS LGIDF | Soninkara;atteste_source_externe;;Cœur : forme confirmée par les sources consultées.
 SNK-LEX-0698;sukkara;sucre;nom;Soninkara glossaire P-S;source_externe_a_verifier;;
 SNK-LEX-0699;sunpo;nombril;nom;Soninkara glossaire P-S;source_externe_a_verifier;;
 SNK-LEX-0700;yaage;honte;nom;Soninkara glossaire T-Z;source_externe_a_verifier;;
 SNK-LEX-0701;yaala;se promener;verbe;Soninkara glossaire T-Z;source_externe_a_verifier;;
-SNK-LEX-0702;yaaxe;œil;nom;Soninkara glossaire T-Z;source_externe_a_verifier;;
+SNK-LEX-0702;yaaxe;œil;nom;Référent 2026-10-24 | CNRS LGIDF | Soninkara;atteste_source_externe;yaxe;Variante de Yaxe.
 SNK-LEX-0703;yaqqe;épouse;nom;Soninkara glossaire T-Z;source_externe_a_verifier;;
 SNK-LEX-0704;yaxare;femme;nom;"Soninkara glossaire T-Z;validation_referent_utilisateur";fourni_par_referent;yaxaré, yàxàrê;
 SNK-LEX-0705;yelle;œuf;nom;Soninkara glossaire T-Z;source_externe_a_verifier;;
 SNK-LEX-0706;yille;mil, céréale;nom;Soninkara glossaire T-Z;source_externe_a_verifier;;
-SNK-LEX-0707;yinme;tête;nom;Soninkara glossaire T-Z;source_externe_a_verifier;;
+SNK-LEX-0707;yinme;tête;nom;Référent 2026-10-24 | CNRS LGIDF | Langues d’Afrique Activities;atteste_source_externe;"yime; yinkolla";Variante de yime.
 SNK-LEX-0708;yitte;arbre, médicament;nom;Soninkara glossaire T-Z;source_externe_a_verifier;yíttè;
 SNK-LEX-0709;yugo;homme;nom;Soninkara glossaire T-Z;source_externe_a_verifier;;
 SNK-LEX-0710;toxo;nom individuel;nom;CNRS lexique des noms;source_externe_a_verifier;tóxò;
@@ -774,25 +774,25 @@ SNK-LEX-0739;korome;écorce;nom;CNRS lexique des noms;source_externe_a_verifier;
 SNK-LEX-0740;huuge;fleur;nom;CNRS lexique des noms;source_externe_a_verifier;;
 SNK-LEX-0741;sokke;herbe;nom;CNRS lexique des noms;source_externe_a_verifier;;
 SNK-LEX-0742;kacce;corde;nom;CNRS lexique des noms;source_externe_a_verifier;;
-SNK-LEX-0743;hate;peau;nom;CNRS lexique des noms;source_externe_a_verifier;;
-SNK-LEX-0744;tiye;viande;nom;CNRS lexique des noms;source_externe_a_verifier;;
+SNK-LEX-0743;hate;peau;nom;Référent 2026-10-24 | CNRS LGIDF;atteste_source_externe;;Peau : forme attestée.
+SNK-LEX-0744;tiye;viande;nom;Référent 2026-10-24 | CNRS LGIDF;atteste_source_externe;;Viande : forme attestée.
 SNK-LEX-0745;hore;sang;nom;CNRS lexique des noms;source_externe_a_verifier;;
 SNK-LEX-0746;qotte;os;nom;CNRS lexique des noms;source_externe_a_verifier;;
 SNK-LEX-0747;katoye;graisse;nom;CNRS lexique des noms;source_externe_a_verifier;;
 SNK-LEX-0748;qoqqe;queue;nom;"CNRS lexique des noms;CNRS/LGIDF lexique des noms;CNRS LGIDF lexique";source_externe_a_verifier;;
-SNK-LEX-0749;taro;oreille;nom;CNRS lexique des noms;source_externe_a_verifier;;
-SNK-LEX-0750;nuxunne;nez;nom;CNRS lexique des noms;source_externe_a_verifier;;
+SNK-LEX-0749;taro;oreille;nom;Référent 2026-10-24 | CNRS LGIDF | Langues d’Afrique Activities;atteste_source_externe;"torro; toro";Variante documentée.
+SNK-LEX-0750;nuxunne;nez;nom;Référent 2026-10-24 | CNRS LGIDF | Langues d’Afrique Activities;atteste_source_externe;nuxune;Variante documentée.
 SNK-LEX-0751;laqqe;bouche;nom;"CNRS lexique des noms;CNRS/LGIDF lexique des noms";source_externe_a_verifier;;
-SNK-LEX-0752;neene;langue (organe);nom;CNRS lexique des noms;source_externe_a_verifier;;
-SNK-LEX-0753;segeñe;ongle;nom;"CNRS lexique des noms;CNRS LGIDF lexique";source_externe_a_verifier;;
-SNK-LEX-0754;ta;pied, jambe;nom;CNRS lexique des noms;source_externe_a_verifier;;
+SNK-LEX-0752;neene;langue (organe);nom;Référent 2026-10-24 | CNRS LGIDF | Langues d’Afrique Activities;atteste_source_externe;nene;Variante documentée.
+SNK-LEX-0753;segeñe;ongle;nom;Référent 2026-10-24 | CNRS LGIDF;atteste_source_externe;;Ongle : forme attestée.
+SNK-LEX-0754;ta;pied, jambe;nom;Référent 2026-10-24 | CNRS LGIDF | Langues d’Afrique Activities;atteste_source_externe;tanu;"Pied/jambe documenté; nombre à préciser."
 SNK-LEX-0755;qurungo;genou;nom;CNRS lexique des noms;source_externe_a_verifier;;
-SNK-LEX-0756;kitte;main;nom;CNRS lexique des noms;source_externe_a_verifier;;
-SNK-LEX-0757;noxo;ventre;nom;CNRS lexique des noms;source_externe_a_verifier;;
+SNK-LEX-0756;kitte;main;nom;Référent 2026-10-24 | CNRS LGIDF | Langues d’Afrique Activities;atteste_source_externe;;Main : forme attestée.
+SNK-LEX-0757;noxo;ventre;nom;Référent 2026-10-24 | CNRS LGIDF | Langues d’Afrique Activities;atteste_source_externe;"gonme; gomme";"Ventre : forme attestée; ne pas confondre automatiquement avec estomac."
 SNK-LEX-0758;nuxullenme;intestins;nom;CNRS lexique des noms;source_externe_a_verifier;;
 SNK-LEX-0759;qanne;cou;nom;CNRS lexique des noms;source_externe_a_verifier;;
 SNK-LEX-0760;qoodo;dos;nom;CNRS lexique des noms;source_externe_a_verifier;;
-SNK-LEX-0761;gijinme;poitrine;nom;CNRS lexique des noms;source_externe_a_verifier;;
+SNK-LEX-0761;gijinme;poitrine;nom;Référent 2026-10-24 | CNRS LGIDF | Langues d’Afrique Activities;atteste_source_externe;guidjimé;Poitrine : forme attestée.
 SNK-LEX-0762;kiye;soleil;nom;CNRS lexique des noms;source_externe_a_verifier;;
 SNK-LEX-0763;qaso;lune;nom;CNRS lexique des noms;source_externe_a_verifier;;
 SNK-LEX-0764;saane;étoile;nom;CNRS lexique des noms;source_externe_a_verifier;;
@@ -1429,3 +1429,25 @@ SNK-LEX-1400;boronŋe;vestibule;nom;Creissels, Phonologie segmentale et tonale d
 SNK-LEX-1401;boroto;"renvoi à buruta : rendre un achat au vendeur ; mettre de côté une partie d'un plat ; diminuer ou découdre";verbe;"Dictionnaire Soninké en ligne, renvoi à buruta";candidat_dictionnaire_a_verifier;buruta;"Plusieurs sens sont possibles ; sélectionner le sens correspondant à l'usage après vérification."
 SNK-LEX-1402;bugandi;"renvoi à bagandi : enlever / faire sortir ; ouvrir";verbe;Lexique Soninké (Mali)-Français-Anglais;candidat_dictionnaire_a_verifier;bagandi;"Entrée de renvoi ; traduction proposée à vérifier par le référent."
 SNK-LEX-1403;bugu;"renvoi à bogu : pousser ; sortir ; faire sortir / enlever / soustraire";verbe;Lexique Soninké (Mali)-Français-Anglais;candidat_dictionnaire_a_verifier;bogu;"Entrée de renvoi ; traduction proposée à vérifier par le référent."
+SNK-LEX-1404;guidjimé;poitrine / torse;partie_du_corps;Référent 2026-10-24 | CNRS LGIDF | Langues d’Afrique Activities;atteste_source_externe;gijinme;Gijinme attesté pour poitrine.
+SNK-LEX-1405;boutte;foie;organe;Référent 2026-10-24 | CNRS LGIDF | Langues d’Afrique Activities;corrige_atteste_source_externe;butte;"Forme corrigée selon la liste du référent; la source CNRS note butte/butte proche, variante conservée."
+SNK-LEX-1406;xodo;dos;partie_du_corps;Référent 2026-10-24 | CNRS LGIDF;atteste_selon_referent_a_verifier;qóodò;"Le CNRS donne qóodò pour dos; correspondance orthographique avec xodo à confirmer."
+SNK-LEX-1407;thinkambé;fesses;partie_du_corps;Référent 2026-10-24 | Langues d’Afrique Activities;atteste_source_externe;tinkanbe;Tinkanbe attesté pour fesses.
+SNK-LEX-1408;fengeñe;hanche;partie_du_corps;Référent 2026-10-24;sous_reserve_a_verifier;;"Forme fournie par le référent; attestation indépendante non retrouvée pendant ce contrôle."
+SNK-LEX-1409;xuli;bras;membre_superieur;Référent 2026-10-24;fourni_par_referent_a_verifier;;"Forme ajoutée par le référent; vérification indépendante encore nécessaire."
+SNK-LEX-1410;kunke;épaule;membre_superieur;Référent 2026-10-24;fourni_par_referent_a_verifier;;"Forme ajoutée par le référent; vérification indépendante encore nécessaire."
+SNK-LEX-1411;segenantonbe;coude;membre_superieur;Référent 2026-10-24;fourni_par_referent_a_verifier;;"Forme ajoutée par le référent; vérification indépendante encore nécessaire."
+SNK-LEX-1412;kittinxanne;poignet;membre_superieur;Référent 2026-10-24;fourni_par_referent_a_verifier;;"Forme ajoutée par le référent; vérification indépendante encore nécessaire."
+SNK-LEX-1413;doronme;doigt;membre_superieur;Référent 2026-10-24;fourni_par_referent_a_verifier;;"Forme ajoutée par le référent; vérification indépendante encore nécessaire."
+SNK-LEX-1414;tanxare;jambe;membre_inferieur;Référent 2026-10-24;fourni_par_referent_a_verifier;;"Forme ajoutée par le référent; vérification indépendante encore nécessaire."
+SNK-LEX-1415;toge;cuisse;membre_inferieur;Référent 2026-10-24 | Langues d’Afrique Activities;atteste_source_externe;"togue; togota";Togue ou togota attesté pour cuisse.
+SNK-LEX-1416;xurungo;genou;membre_inferieur;Référent 2026-10-24 | Langues d’Afrique Activities | Soninkara;atteste_source_externe;;Xurungo attesté pour genou.
+SNK-LEX-1417;ɲollenme;mollet;membre_inferieur;Référent 2026-10-24;sous_reserve_a_verifier;;"Forme fournie par le référent; attestation indépendante non retrouvée pendant ce contrôle."
+SNK-LEX-1418;taxaane;cheville;membre_inferieur;Référent 2026-10-24;sous_reserve_a_verifier;;"Forme fournie par le référent; attestation indépendante non retrouvée pendant ce contrôle."
+SNK-LEX-1419;tandoronme;orteil;membre_inferieur;Référent 2026-10-24 | Langues d’Afrique Activities;atteste_selon_referent_a_concilier;"tandoromu; tandoronu";"La source pédagogique donne tandoromu pour orteils; graphie à harmoniser."
+SNK-LEX-1420;fate;corps;corps;Référent 2026-10-24;fourni_par_referent_a_verifier;;"Forme ajoutée par le référent; vérification indépendante encore nécessaire."
+SNK-LEX-1421;xotte;os;corps;Référent 2026-10-24 | Soninkara | CNRS LGIDF;atteste_source_externe;"qotte; qóttè";"Xotte attesté dans le glossaire; transcription CNRS qóttè."
+SNK-LEX-1422;fare;sang;corps;Référent 2026-10-24;fourni_par_referent_a_verifier;;"Le CNRS consulté donne hore pour sang; fare nécessite une vérification supplémentaire."
+SNK-LEX-1423;furutu;poumon;organe;Référent 2026-10-24 | Langues d’Afrique Activities;fourni_par_referent_a_verifier;yoohe;"La source pédagogique consultée donne yoohe pour poumon; furutu reste à vérifier."
+SNK-LEX-1424;gonme;estomac;organe;Référent 2026-10-24 | Langues d’Afrique Activities;atteste_selon_referent_a_concilier;"gomme; noxo";"La source pédagogique donne gomme ou noxo pour ventre; le sens précis « estomac » est à distinguer."
+SNK-LEX-1425;faradinlenme;rein;organe;Référent 2026-10-24;sous_reserve_a_verifier;;"Forme fournie par le référent; attestation indépendante non retrouvée pendant ce contrôle."
