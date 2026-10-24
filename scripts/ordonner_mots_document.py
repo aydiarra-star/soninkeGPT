@@ -718,7 +718,10 @@ def ecrire_markdown(lignes: list[dict], avertissements: list[str], compteurs: di
         doc.append("| --- | --- | --- | --- | --- | --- | --- |")
         for ligne in contenu:
             definition = definition_courte(ligne["definition_et_sens"])
-            if ligne["definition_redigee"]:
+            # Dans l'index, la définition rédigée n'est affichée que pour les
+            # verbes : les noms d'action et gérondifs dérivés du même verbe
+            # répéteraient la même phrase trois fois.
+            if ligne["definition_redigee"] and ligne["type"] == "verbe":
                 garde = " ⚠" if "a_clarifier" in ligne["definition_statut"] else ""
                 definition += f"<br>*{ligne['definition_redigee']}*{garde}"
             doc.append(

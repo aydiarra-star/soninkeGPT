@@ -9,9 +9,10 @@ du lexique : il n'y a donc **aucune entrée à créer**, seulement des entrées 
 enrichir — c'est la garantie anti-doublon du projet.
 
 Les définitions elles-mêmes sont rédigées à la main dans
-`data/source/definitions-verbes-redigees.csv`, à partir de la glose française
-déjà attestée dans le lexique (aucune source nouvelle, aucun sens inventé).
-Ce script ne rédige rien : il joint, contrôle et met en forme.
+`data/source/definitions-redigees.csv` (avec celles des autres mots du
+lexique), à partir de la glose française déjà attestée dans le lexique : aucune
+source nouvelle, aucun sens inventé. Ce script ne rédige rien : il joint,
+contrôle et met en forme.
 
   1. pour chaque verbe, retrouve son entrée de lexique (comparaison identique à
      celle de `check_doublons_lexique.py`, importée du script d'import) ;
@@ -23,8 +24,9 @@ Ce script ne rédige rien : il joint, contrôle et met en forme.
   5. écrit `data/candidates/definitions-verbes-2026-10-24.csv` et
      `docs/DEFINITIONS-VERBES-A-VALIDER.md`.
 
-Aucune écriture dans le lexique : voir `scripts/enrichir_verbes_sans_doublons.py`
-pour l'application, qui n'ajoute jamais de ligne.
+Aucune écriture dans le lexique : voir
+`scripts/enrichir_definitions_sans_doublons.py` pour l'application, qui n'ajoute
+jamais de ligne.
 
 Usage :
     python3 scripts/preparer_definitions_verbes.py
@@ -44,7 +46,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 LEXIQUE = ROOT / "data" / "source" / "lexique-soninke-fr-base.csv"
 DOCUMENT = ROOT / "data" / "grammaire" / "soninke.yaml"
-REDIGEES = ROOT / "data" / "source" / "definitions-verbes-redigees.csv"
+REDIGEES = ROOT / "data" / "source" / "definitions-redigees.csv"
 SORTIE_CSV = ROOT / "data" / "candidates" / "definitions-verbes-2026-10-24.csv"
 SORTIE_MD = ROOT / "docs" / "DEFINITIONS-VERBES-A-VALIDER.md"
 DATE = "2026-10-24"
@@ -368,10 +370,10 @@ def ecrire_markdown(lignes: list[dict], resume: dict) -> Path:
         "douteux sont marqués `a_clarifier` et expliqués dans la note, au lieu d'être "
         "tranchés arbitrairement.",
         "",
-        "Les définitions sont rédigées dans `data/source/definitions-verbes-redigees.csv`, "
+        "Les définitions sont rédigées dans `data/source/definitions-redigees.csv`, "
         "jointes ici par `scripts/preparer_definitions_verbes.py`, puis écrites dans la "
         "colonne `definition` des entrées existantes par "
-        "`scripts/enrichir_verbes_sans_doublons.py`.",
+        "`scripts/enrichir_definitions_sans_doublons.py`.",
         "",
         "## Règle anti-doublon appliquée",
         "",
@@ -437,7 +439,7 @@ def ecrire_markdown(lignes: list[dict], resume: dict) -> Path:
         "",
         f"- `{REDIGEES.relative_to(ROOT)}` — définitions rédigées, source de ce document",
         f"- `{SORTIE_CSV.relative_to(ROOT)}` — mêmes données, lisibles par machine",
-        "- `scripts/enrichir_verbes_sans_doublons.py` — application sans création de ligne",
+        "- `scripts/enrichir_definitions_sans_doublons.py` — application sans création de ligne",
         "- `scripts/check_doublons_lexique.py` — contrôle des doublons",
         "- `docs/MOTS-DOCUMENT-SONINKE.md` — inventaire complet des formes du document",
         "- `docs/LINGUISTIC-QUALITY.md` — règles d'attestation",
@@ -459,9 +461,12 @@ def verifier(lignes: list[dict], resume: dict) -> int:
             problemes.append(f"{ligne['forme']} : définition sans provenance")
 
     redigees = lire_definitions_redigees(REDIGEES)
-    document = {v["props"]["forme"] for v in lire_verbes_document(DOCUMENT)}
-    for forme in sorted(set(redigees) - document):
-        problemes.append(f"{forme} : définition rédigée pour une forme hors document")
+    with LEXIQUE.open(encoding="utf-8", newline="") as flux:
+        formes_lexique = {
+            ligne["soninke"].strip() for ligne in csv.DictReader(flux, delimiter=";") if ligne.get("id")
+        }
+    for forme in sorted(set(redigees) - formes_lexique):
+        problemes.append(f"{forme} : définition rédigée pour une forme absente du lexique")
 
     if problemes:
         print("✖ " + "\n✖ ".join(problemes), file=sys.stderr)

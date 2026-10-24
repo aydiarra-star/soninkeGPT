@@ -20,7 +20,7 @@ Document source : [Google Doc du référent](https://docs.google.com/document/d/
 
 Chaque définition est rédigée en français à partir de la glose déjà attestée dans le lexique (`francais`) et, quand elle existe, de la ligne de glose anglaise de la source. Aucune définition n'ajoute un sens que ces sources ne portent pas : les cas douteux sont marqués `a_clarifier` et expliqués dans la note, au lieu d'être tranchés arbitrairement.
 
-Les définitions sont rédigées dans `data/source/definitions-verbes-redigees.csv`, jointes ici par `scripts/preparer_definitions_verbes.py`, puis écrites dans la colonne `definition` des entrées existantes par `scripts/enrichir_verbes_sans_doublons.py`.
+Les définitions sont rédigées dans `data/source/definitions-redigees.csv`, jointes ici par `scripts/preparer_definitions_verbes.py`, puis écrites dans la colonne `definition` des entrées existantes par `scripts/enrichir_definitions_sans_doublons.py`.
 
 ## Règle anti-doublon appliquée
 
@@ -244,9 +244,9 @@ Ordre alphabétique soninké. « Emploi attesté » donne une phrase du corpus q
 
 ## Fichiers liés
 
-- `data/source/definitions-verbes-redigees.csv` — définitions rédigées, source de ce document
+- `data/source/definitions-redigees.csv` — définitions rédigées, source de ce document
 - `data/candidates/definitions-verbes-2026-10-24.csv` — mêmes données, lisibles par machine
-- `scripts/enrichir_verbes_sans_doublons.py` — application sans création de ligne
+- `scripts/enrichir_definitions_sans_doublons.py` — application sans création de ligne
 - `scripts/check_doublons_lexique.py` — contrôle des doublons
 - `docs/MOTS-DOCUMENT-SONINKE.md` — inventaire complet des formes du document
 - `docs/LINGUISTIC-QUALITY.md` — règles d'attestation

@@ -1,30 +1,37 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Écrit les définitions des verbes dans le lexique, sans jamais créer de ligne.
+"""Écrit les définitions dans le lexique, sans jamais créer de ligne.
 
 Le lexique `data/source/lexique-soninke-fr-base.csv` ne reçoit **aucune entrée
 nouvelle** : chaque définition est posée sur une entrée qui existe déjà, et le
 script refuse tout ce qui ne respecte pas cette règle.
 
+Deux sources de définitions, au même format (`soninke;definition;statut;note`) :
+
+  - `data/source/definitions-redigees.csv` : définitions rédigées à la main
+    d'après la glose française déjà attestée dans le lexique ;
+  - `data/source/definitions-formes-derivees.csv` : définitions des noms
+    d'action et gérondifs, générées par règle depuis le verbe de base.
+
 Contrôles effectués avant d'écrire :
 
-  1. chaque `id_lexique` du fichier de définitions doit exister dans le lexique ;
-  2. la `forme` de la ligne doit correspondre au `soninke` de cette entrée
+  1. chaque forme doit correspondre à **exactement une** entrée du lexique
      (comparaison du projet : casse, accents vocaliques, tirets, apostrophes et
      numéros d'homonyme ignorés ; `ñ`, `ŋ`, `ɲ` distincts) ;
-  3. deux lignes ne peuvent pas viser le même identifiant ;
-  4. une forme qui ne serait qu'une `variante` d'une autre entrée est refusée.
+  2. une forme qui n'est qu'une `variante` d'une autre entrée est refusée ;
+  3. deux fichiers ne peuvent pas définir la même forme ;
+  4. toute forme sans entrée est refusée : le script n'invente pas de ligne.
 
 Contrôles effectués après écriture :
 
   5. même nombre de lignes, mêmes identifiants, mêmes formes soninké ;
-  6. toutes les autres colonnes sont inchangées, à la valeur près ;
+  6. toutes les autres colonnes sont inchangées ;
   7. `scripts/check_doublons_lexique.py --strict` doit passer. Sinon le fichier
      est remis dans son état d'origine.
 
 Usage :
-    python3 scripts/enrichir_verbes_sans_doublons.py --dry-run
-    python3 scripts/enrichir_verbes_sans_doublons.py
+    python3 scripts/enrichir_definitions_sans_doublons.py --dry-run
+    python3 scripts/enrichir_definitions_sans_doublons.py
 """
 
 from __future__ import annotations
@@ -40,7 +47,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 LEXIQUE = ROOT / "data" / "source" / "lexique-soninke-fr-base.csv"
-DEFINITIONS = ROOT / "data" / "candidates" / "definitions-verbes-2026-10-24.csv"
+SOURCES = [
+    ROOT / "data" / "source" / "definitions-redigees.csv",
+    ROOT / "data" / "source" / "definitions-formes-derivees.csv",
+]
 NOUVELLES_COLONNES = ["definition", "definition_statut"]
 
 
@@ -60,6 +70,25 @@ def lire_lexique() -> tuple[list[str], list[dict]]:
     return colonnes, lignes
 
 
+def lire_definitions(cle) -> tuple[dict[str, dict], list[str]]:
+    definitions: dict[str, dict] = {}
+    erreurs: list[str] = []
+    for chemin in SOURCES:
+        if not chemin.exists():
+            erreurs.append(f"fichier de définitions introuvable : {chemin.relative_to(ROOT)}")
+            continue
+        with chemin.open(encoding="utf-8", newline="") as flux:
+            for ligne in csv.DictReader(flux, delimiter=";"):
+                forme = (ligne.get("soninke") or "").strip()
+                if not forme:
+                    continue
+                if cle(forme) in definitions:
+                    erreurs.append(f"{forme} : définie dans deux fichiers")
+                    continue
+                definitions[cle(forme)] = ligne
+    return definitions, erreurs
+
+
 def main(argv: list[str]) -> int:
     analyseur = argparse.ArgumentParser()
     analyseur.add_argument("--dry-run", action="store_true", help="contrôle tout, n'écrit rien")
@@ -67,42 +96,36 @@ def main(argv: list[str]) -> int:
 
     cle = charger_cle()
     colonnes, lignes = lire_lexique()
-    par_id = {l["id"]: l for l in lignes}
-    variantes = {}
+    par_cle: dict[str, list[dict]] = {}
+    variantes: dict[str, str] = {}
     for ligne in lignes:
+        par_cle.setdefault(cle(ligne["soninke"]), []).append(ligne)
         for variante in (ligne.get("variantes") or "").split(","):
             if variante.strip():
                 variantes.setdefault(cle(variante), ligne["id"])
 
-    with DEFINITIONS.open(encoding="utf-8", newline="") as flux:
-        definitions = [l for l in csv.DictReader(flux, delimiter=";") if (l.get("forme") or "").strip()]
-
-    erreurs: list[str] = []
+    definitions, erreurs = lire_definitions(cle)
     retenues: dict[str, dict] = {}
-    for ligne in definitions:
-        forme = ligne["forme"].strip()
-        identifiant = (ligne.get("id_lexique") or "").strip()
-        definition = (ligne.get("definition_proposee") or "").strip()
-
-        if not definition:
+    for k, ligne in definitions.items():
+        forme = ligne["soninke"].strip()
+        texte = (ligne.get("definition") or "").strip()
+        if not texte:
             erreurs.append(f"{forme} : définition vide")
             continue
-        if identifiant not in par_id:
-            erreurs.append(f"{forme} : identifiant {identifiant!r} absent du lexique → création refusée")
+        entrees = par_cle.get(k, [])
+        if not entrees:
+            erreurs.append(f"{forme} : aucune entrée de lexique → création refusée")
             continue
-        if cle(par_id[identifiant]["soninke"]) != cle(forme):
+        if len(entrees) > 1:
             erreurs.append(
-                f"{forme} : l'entrée {identifiant} porte « {par_id[identifiant]['soninke']} » → "
-                "la définition ne vise pas le bon mot"
+                f"{forme} : {len(entrees)} entrées portent cette forme "
+                f"({', '.join(e['id'] for e in entrees)}) → définition refusée"
             )
             continue
-        if identifiant in retenues:
-            erreurs.append(f"{forme} : l'entrée {identifiant} est définie deux fois")
+        if k in variantes and cle(entrees[0]["soninke"]) != k:
+            erreurs.append(f"{forme} : simple variante de {variantes[k]} → création refusée")
             continue
-        if cle(forme) in variantes and cle(par_id[identifiant]["soninke"]) != cle(forme):
-            erreurs.append(f"{forme} : simple variante d'une autre entrée → création refusée")
-            continue
-        retenues[identifiant] = ligne
+        retenues[entrees[0]["id"]] = ligne
 
     if erreurs:
         print("✖ Aucune écriture. Problèmes :", file=sys.stderr)
@@ -110,23 +133,26 @@ def main(argv: list[str]) -> int:
             print("  - " + erreur, file=sys.stderr)
         return 1
 
-    print(f"lexique      {len(lignes)} entrées")
-    print(f"définitions  {len(retenues)} visant une entrée existante")
-    print(f"lignes à ajouter 0")
+    deja = sum(1 for l in lignes if (l.get("definition") or "").strip())
+    print(f"lexique            {len(lignes)} entrées")
+    print(f"définitions lues   {len(definitions)} (réparties sur {len(retenues)} entrées)")
+    print(f"déjà définies      {deja}")
+    print("lignes à ajouter   0")
 
     if options.dry_run:
         for identifiant, ligne in list(retenues.items())[:5]:
-            print(f"  {par_id[identifiant]['soninke']} → {ligne['definition_proposee'][:70]}")
+            print(f"  {identifiant} {ligne['soninke']} → {ligne['definition'][:70]}")
         print("✔ Contrôles passés, rien n'a été écrit (--dry-run).")
         return 0
 
     sortie_colonnes = colonnes + [c for c in NOUVELLES_COLONNES if c not in colonnes]
-    for identifiant, ligne in retenues.items():
-        par_id[identifiant]["definition"] = ligne["definition_proposee"].strip()
-        par_id[identifiant]["definition_statut"] = ligne["statut_validation"].strip()
     for ligne in lignes:
         ligne.setdefault("definition", "")
         ligne.setdefault("definition_statut", "")
+    par_id = {l["id"]: l for l in lignes}
+    for identifiant, ligne in retenues.items():
+        par_id[identifiant]["definition"] = ligne["definition"].strip()
+        par_id[identifiant]["definition_statut"] = (ligne.get("statut") or "").strip()
 
     sauvegarde = LEXIQUE.with_suffix(".csv.avant-definitions")
     shutil.copyfile(LEXIQUE, sauvegarde)
@@ -148,7 +174,7 @@ def main(argv: list[str]) -> int:
         raise
 
     # ── Contrôles après écriture ────────────────────────────
-    colonnes_apres, lignes_apres = lire_lexique()
+    _, lignes_apres = lire_lexique()
     problemes = []
     if len(lignes_apres) != len(lignes):
         problemes.append(f"nombre de lignes modifié : {len(lignes)} → {len(lignes_apres)}")

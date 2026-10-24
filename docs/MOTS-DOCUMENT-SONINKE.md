@@ -2690,7 +2690,7 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 - Formes extraites : **576** ; entrées du document : **226** (12 pronoms, 26 constructions de temps et d'aspect, 6 particules, 182 verbes).
 - Traductions : toutes issues du document, aucune reformulée.
 - Définitions : toutes issues du lexique du projet ou, à défaut, du document ; aucune glose inventée.
-- Verbes avec une définition rédigée : **182** sur **182**, à valider par le référent ([tableau complet](DEFINITIONS-VERBES-A-VALIDER.md)).
+- Verbes avec une définition rédigée : **544** sur **182**, à valider par le référent ([tableau complet](DEFINITIONS-VERBES-A-VALIDER.md)).
 - Homographes signalés en note, jamais fusionnés.
 - Verbes avec un exemple dans leur entrée : **14** sur **182**.
 - Verbes avec au moins une phrase d'emploi attestée dans le corpus : **25** sur **182**.
