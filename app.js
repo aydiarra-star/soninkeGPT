@@ -3321,7 +3321,13 @@ function renderDictResults() {
       .filter((item) => {
         if (isExcludedForm(item.text)) return false;
         if (!query) return true;
-        return normalizeWord(item.text).includes(query) || normalizeWord(item.francais || "").includes(query) || String(item.id).includes(query);
+        return normalizeWord(item.text).includes(query) || normalizeWord(item.francais || "").includes(query) || String(item.id || "").includes(query);
+      })
+      // Afficher d'abord le dernier lot validé pour qu'il soit visible sans devoir parcourir tout l'historique.
+      .sort((a, b) => {
+        const aRecent = String(a.url || "").includes("audio/lots/lot-100-2026-10-24/") ? 1 : 0;
+        const bRecent = String(b.url || "").includes("audio/lots/lot-100-2026-10-24/") ? 1 : 0;
+        return bRecent - aRecent || normalizeWord(a.text).localeCompare(normalizeWord(b.text), "fr");
       })
       .slice(0, MAX_DISPLAY);
 
@@ -3341,7 +3347,7 @@ function renderDictResults() {
           </div>
           <div class="dict-translation">${a.francais ? esc(a.francais) : "Traduction non renseignée"}</div>
           <div class="dict-meta">
-            <span class="pair-badge ${a.linguistic_validation ? "is-attested" : a.generated ? "is-review" : "is-attested"}">${a.linguistic_validation ? "Prononciation validée par le référent" : a.generated ? "Audio généré · prononciation à valider" : "Enregistrement de référence"}</span>
+            <span class="pair-badge ${(a.linguistic_validation || a.validation_prononciation === "validee_par_referent") ? "is-attested" : a.generated ? "is-review" : "is-attested"}">${(a.linguistic_validation || a.validation_prononciation === "validee_par_referent") ? "Prononciation validée par le référent" : a.generated ? "Audio généré · prononciation à valider" : "Enregistrement de référence"}</span>
             <span>${esc(String(a.url || "").split("/").pop() || "")}</span>
           </div>
         </div>`;
