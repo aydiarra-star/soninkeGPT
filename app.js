@@ -1162,7 +1162,11 @@ async function startListening() {
   }
 
   // 2. Démarrer la reconnaissance vocale en direct en parallèle
-  const SR = getSpeechRecognition();
+  // Quand l’API serveur est configurée, ne pas laisser la reconnaissance du navigateur
+  // (forcée en fr-FR) afficher/valider une transcription française à la place du soninké.
+  // On enregistre l’audio puis on confie la transcription au backend.
+  const serverApiBase = String(window.SONINKEGPT_API_BASE || "").trim();
+  const SR = serverApiBase ? null : getSpeechRecognition();
   if (SR && state.listening) {
     try {
       const recognition = new SR();
