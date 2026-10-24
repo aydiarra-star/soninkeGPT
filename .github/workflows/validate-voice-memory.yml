@@ -1,0 +1,66 @@
+name: Validate Soninke voice memory
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "data/voice-memory.json"
+      - ".github/workflows/validate-voice-memory.yml"
+  pull_request:
+    paths:
+      - "data/voice-memory.json"
+      - ".github/workflows/validate-voice-memory.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Vérifier la mémoire vocale et les statuts de validation
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path("data/voice-memory.json")
+          data = json.loads(path.read_text(encoding="utf-8"))
+          audio = data.get("audio")
+          if not isinstance(audio, list):
+              raise SystemExit("ERREUR: data/voice-memory.json doit contenir une liste audio")
+
+          seen = set()
+          errors = []
+          for i, item in enumerate(audio, 1):
+              word = str(item.get("text", "")).strip()
+              url = str(item.get("url", "")).strip()
+              if not word:
+                  errors.append(f"entrée {i}: mot vide")
+              if not url:
+                  errors.append(f"entrée {i}: chemin audio vide ({word or 'sans mot'})")
+              key = (word.casefold(), url)
+              if key in seen:
+                  errors.append(f"entrée {i}: doublon mot/audio ({word}, {url})")
+              seen.add(key)
+
+              if item.get("kind") == "voice_clone_validated":
+                  if item.get("pronunciation_validation") != "validated_by_linguistic_referent":
+                      errors.append(f"{word}: statut validé sans pronunciation_validation canonique")
+                  if not item.get("validation_date"):
+                      errors.append(f"{word}: statut validé sans validation_date")
+                  if not item.get("validated_by"):
+                      errors.append(f"{word}: statut validé sans validated_by")
+                  if item.get("validation_prononciation") != "validee_par_referent_linguistique":
+                      errors.append(f"{word}: statut validé sans confirmation linguistique source")
+
+          if errors:
+              print("\n".join(errors))
+              raise SystemExit(f"ÉCHEC: {len(errors)} problème(s) dans la mémoire vocale")
+          validated = sum(item.get("kind") == "voice_clone_validated" for item in audio)
+          print(f"OK: {len(audio)} entrées; {validated} voix générées validées; chemins audio et métadonnées cohérents.")
+          PY
