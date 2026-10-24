@@ -45,3 +45,37 @@ La référence bibliographique ou l'URL exacte du glossaire qui donne `ɲuɲu` �
 4. `Cuute` et `Tchuute` sont-ils des transcriptions d'une même forme ?
 
 Tant que ces validations ne sont pas disponibles, les hypothèses ne doivent pas être présentées comme des définitions définitivement validées dans l'interface d'apprentissage.
+
+## Sources consultées ce jour
+
+- Vocabulaire soninké (parties du corps, animaux, nombres), *Des mots et des
+  langues* : https://desmotsetdeslangues.eklablog.com/soninke-a113996526
+  (source du parallèle *kittinsolle* « bras » / *tansolle* « jambe »).
+- Glossaire soninké-français (Goumbou) :
+  http://goumbou.free.fr/documents/glossaire-soninke-fran-ais.pdf
+  (*kitte* « bras + main », *kutu* « couper », *kunne* « trou », *kunto*
+  « clitoris », *bunne* « flèche », *golle* « travail / mortier », *soome*
+  « lèvre, bec », *ɲuɲu* « gueule, museau »).
+- Lexique soninké du Mali–Français–Anglais (Lexique Pro, via Asawan) :
+  https://www.asawan.org/fr/lexique_soninke —
+  *ta* « pied, jambe, roue », *tandoronme* « orteil », *tanjunqo* « talon »,
+  *sooro* « intelligence, compréhension ».
+- Soninkara, glossaire Soninké–Français (D–G et T–Z) :
+  https://www.soninkara.com/langue/apprendre-le-soninke/glossaire-de-mots-soninke-francais-t-z.html —
+  *ta* « jambe + pied », *toge* « cuisse », *tene* « front », *toro* « oreille »,
+  *golle* « travail / mortier ».
+- CNRS / LGIDF, « Soninké : lexique (noms) » : https://lgidf.cnrs.fr/node/680 —
+  *kitte* « main », *ta* « pied/jambe », *quruŋgo* « genou », *qotte* « os ».
+- Les Langues d'Afrique Activities, « Décrire les parties du corps en
+  Soninké » : https://leslanguesdafriqueactivities.com/lessons/4-savoir-decrire-lhomme-et-sa-societe-en-soninke-2/decrire-les-parties-du-corps-en-soninke/ —
+  *kitte* « main », *ta* « pied », *soome* « lèvre ».
+- Mandenkan, lexique du soninké du Kingi (2016) : https://journals.openedition.org/mandenkan/pdf/738 —
+  *siga* « taille, importance ».
+
+Note sur `gnougnou` : la forme *ɲuɲu* « gueule, museau (d'un animal) » relevée dans
+le glossaire de Goumbou est une **piste concurrente**, pas la glose retenue. Le
+référent linguistique a validé `gnougnou = lèvre` le 24 octobre 2026 ; c'est cette
+validation qui fait foi dans le lexique (`SNK-LEX-0283`).
+
+Aucune de ces sources n'est un corpus librement réutilisable en masse : les
+formes sont citées pour la vérification, pas recopiées dans le lexique.
