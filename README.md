@@ -46,6 +46,8 @@ d'interface.
 ## Documentation linguistique
 
 - [Contrôle linguistique et statuts d'attestation](docs/LINGUISTIC-QUALITY.md)
+- [« Être » et « avoir » en soninké : traductions et conjugaison](docs/VERBES-ETRE-AVOIR.md)
+- [Paradigmes être/avoir, lisibles par machine](data/source/paradigmes-etre-avoir.csv)
 - [Liste des formes écartées](data/validation/non-soninke-forms.json)
 - [Voix de référence sur tous les contenus audio](docs/AUTHENTIC-VOICE.md)
 
