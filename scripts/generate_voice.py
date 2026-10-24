@@ -162,6 +162,20 @@ def build(generate=False, limit=20, device="auto"):
             audio[normalized]["francais"] = item["francais"]
 
     pending = [item for normalized, item in sorted(vocabulary.items()) if normalized not in audio]
+
+    # Prioritize explicitly audited missing-audio entries before the general queue.
+    # The report uses mot_soninke (not soninke), so it is not ingested as new vocabulary.
+    priority_path = ROOT / "data/source/reports/comparaison-lexiques-document-2026-10-25.csv"
+    priority_words = []
+    if priority_path.exists():
+        for row in rows(priority_path):
+            if row.get("audio_manquant", "").strip().casefold() in {"oui", "yes", "true", "1"}:
+                word = row.get("mot_soninke", "").strip()
+                if word:
+                    priority_words.append(key(word))
+    if priority_words:
+        priority_rank = {word: index for index, word in enumerate(priority_words)}
+        pending.sort(key=lambda item: (0, priority_rank[key(item["text"])]) if key(item["text"]) in priority_rank else (1, key(item["text"])))
     if generate and pending:
         import numpy as np
         import soundfile as sf
