@@ -1,0 +1,41 @@
+name: Validate SoninkeGPT application
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "app.js"
+      - "index.html"
+      - "voice-config.js"
+      - ".github/workflows/validate-app.yml"
+  pull_request:
+    paths:
+      - "app.js"
+      - "index.html"
+      - "voice-config.js"
+      - ".github/workflows/validate-app.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Check JavaScript syntax
+        run: |
+          node --check app.js
+          node --check voice-config.js
+      - name: Check HTML references and whitespace
+        run: |
+          test -s index.html
+          grep -q 'src="app.js' index.html
+          grep -q 'src="voice-config.js' index.html
+          git diff --check
