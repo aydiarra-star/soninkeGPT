@@ -727,7 +727,7 @@ SNK-LEX-0699;sunpo;nombril;nom;Soninkara glossaire P-S;source_externe_a_verifier
 SNK-LEX-0700;yaage;honte;nom;Soninkara glossaire T-Z;source_externe_a_verifier;;;Honte, pudeur, retenue morale.;redigee_a_valider
 SNK-LEX-0701;yaala;se promener;verbe;Soninkara glossaire T-Z;source_externe_a_verifier;;;Se promener.;redigee_a_valider
 SNK-LEX-0703;yaqqe;épouse;nom;Soninkara glossaire T-Z;source_externe_a_verifier;;;Épouse, femme mariée.;redigee_a_valider
-SNK-LEX-0704;yaxare;femme;nom;"Soninkara glossaire T-Z;validation_referent_utilisateur";fourni_par_referent;yaxaré, yàxàrê;;Femme, être humain adulte de sexe féminin.;redigee_a_valider
+SNK-LEX-0704;yaxare;femme;nom;Validation explicite du référent utilisateur le 2026-10-24; définition et prononciation validées;valide_par_referent;yaxaré, yàxàrê;;Femme, être humain adulte de sexe féminin.;validee_par_referent
 SNK-LEX-0705;yelle;œuf;nom;Soninkara glossaire T-Z;source_externe_a_verifier;;;Œuf.;redigee_a_valider
 SNK-LEX-0706;yille;mil, céréale;nom;Soninkara glossaire T-Z;source_externe_a_verifier;;;Mil, céréale de base.;redigee_a_valider
 SNK-LEX-0707;yinme;tête;nom;Référent 2026-10-24 | CNRS LGIDF | Langues d’Afrique Activities;atteste_source_externe;"yime; yinkolla";Variante de yime.;Tête (partie supérieure du corps).;redigee_a_valider
@@ -1468,3 +1468,16 @@ SNK-LEX-1466;buxutinde;arrachage;nom;Hypothèse morphologique validée par le r�
 SNK-LEX-1467;buyi;brûler;verbe;"Correspondance lexicale consultée; validation du référent 2026-10-24";valide_par_referent;biyi;;"Brûler; variante à conserver.";redigee_a_valider
 SNK-LEX-1468;bulunŋe;"petite rue; ruelle; vestibule";nom;"Lexique Pro, renvoi bolonŋe; validation du référent 2026-10-24";valide_par_referent;bolonŋe;;Petite rue, ruelle ou vestibule.;redigee_a_valider
 SNK-LEX-1469;bugundi;"enlever; faire sortir; ouvrir";verbe;"Lexique Pro, renvoi bagandi; validation du référent 2026-10-24";valide_par_referent;bagandi;;"Enlever, faire sortir ou ouvrir; sens à préciser par contexte.";redigee_a_valider
+SNK-LEX-1470;kàmé;cent;numéral;"Validation explicite du référent utilisateur le 2026-10-24; définition et prononciation validées";valide_par_referent;;;Cent (100).;validee_par_referent
+SNK-LEX-1471;wújìné;mille;numéral;"Validation explicite du référent utilisateur le 2026-10-24; définition et prononciation validées";valide_par_referent;;;Mille (1 000).;validee_par_referent
+SNK-LEX-1472;ńké;moi;pronom_personnel;"Validation explicite du référent utilisateur le 2026-10-24; définition et prononciation validées";valide_par_referent;;;Pronom personnel de première personne du singulier : moi.;validee_par_referent
+SNK-LEX-1473;ánkè;toi;pronom_personnel;"Validation explicite du référent utilisateur le 2026-10-24; définition et prononciation validées";valide_par_referent;;;Pronom personnel de deuxième personne du singulier : toi.;validee_par_referent
+SNK-LEX-1474;àkê;lui, elle, cela;pronom_personnel;"Validation explicite du référent utilisateur le 2026-10-24; définition et prononciation validées";valide_par_referent;;;"Pronom de troisième personne du singulier; la traduction dépend du contexte.";validee_par_referent
+SNK-LEX-1475;ókú;nous;pronom_personnel;"Validation explicite du référent utilisateur le 2026-10-24; définition et prononciation validées";valide_par_referent;;;Pronom personnel de première personne du pluriel : nous.;validee_par_referent
+SNK-LEX-1476;áxákù;vous;pronom_personnel;"Validation explicite du référent utilisateur le 2026-10-24; définition et prononciation validées";valide_par_referent;;;Pronom personnel de deuxième personne du pluriel : vous.;validee_par_referent
+SNK-LEX-1477;ìkû;eux, elles;pronom_personnel;"Validation explicite du référent utilisateur le 2026-10-24; définition et prononciation validées";valide_par_referent;;;Pronom personnel de troisième personne du pluriel : eux ou elles.;validee_par_referent
+SNK-LEX-1478;ké;ceci, celui-ci, celle-ci;pronom_demonstratif;"Validation explicite du référent utilisateur le 2026-10-24; définition et prononciation validées";valide_par_referent;;;Démonstratif désignant une personne ou une chose proche.;validee_par_referent
+SNK-LEX-1479;kên;cela, celui-là, celle-là;pronom_demonstratif;"Validation explicite du référent utilisateur le 2026-10-24; définition et prononciation validées";valide_par_referent;;;Démonstratif désignant une personne ou une chose indiquée dans le contexte.;validee_par_referent
+SNK-LEX-1480;yèré;ici;adverbe_de_lieu;"Validation explicite du référent utilisateur le 2026-10-24; définition et prononciation validées";valide_par_referent;;;Adverbe indiquant le lieu proche du locuteur.;validee_par_referent
+SNK-LEX-1481;nó;là;adverbe_de_lieu;"Validation explicite du référent utilisateur le 2026-10-24; définition et prononciation validées";valide_par_referent;;;Adverbe indiquant un lieu désigné dans le contexte.;validee_par_referent
+SNK-LEX-1482;yaxaru;femmes;nom;"Validation explicite du référent utilisateur le 2026-10-24; définition et prononciation validées";valide_par_referent;;;Pluriel de yaxare : femmes.;validee_par_referent
