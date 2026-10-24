@@ -109,12 +109,17 @@ def ecrire(tableau: list[dict], statuts: Counter, vides: Counter, lignes: list[d
         "",
         "## Ce qui reste à écrire",
         "",
-        "| Catégorie | Entrées sans définition |",
-        "| --- | --- |",
     ]
-    for categorie, nombre in vides.most_common():
-        if nombre:
-            textes.append(f"| {categorie} | {nombre} |")
+    if any(vides.values()):
+        textes += [
+            "| Catégorie | Entrées sans définition |",
+            "| --- | --- |",
+        ]
+        for categorie, nombre in vides.most_common():
+            if nombre:
+                textes.append(f"| {categorie} | {nombre} |")
+    else:
+        textes.append(f"Aucune entrée restante : les **{total}** entrées du lexique ont une définition.")
 
     textes += [
         "",
@@ -126,6 +131,9 @@ def ecrire(tableau: list[dict], statuts: Counter, vides: Counter, lignes: list[d
         "`data/source/definitions-redigees.csv`.",
         "3. **Noms d'action et gérondifs** : définition générée par règle depuis le verbe "
         "de base, dans `data/source/definitions-formes-derivees.csv`.",
+        "4. **Noms, adjectifs, expressions, parties du corps, numéraux, pronoms et marqueurs grammaticaux** : "
+        "définition rédigée à la main à partir de la glose attestée du lexique, dans "
+        "`data/source/definitions-redigees.csv`.",
         "",
         "Aucune définition n'est inventée : quand la glose de départ est incertaine, le "
         "statut passe à `a_clarifier` et la question est portée à la fiche du référent.",

@@ -718,10 +718,9 @@ def ecrire_markdown(lignes: list[dict], avertissements: list[str], compteurs: di
         doc.append("| --- | --- | --- | --- | --- | --- | --- |")
         for ligne in contenu:
             definition = definition_courte(ligne["definition_et_sens"])
-            # Dans l'index, la définition rédigée n'est affichée que pour les
-            # verbes : les noms d'action et gérondifs dérivés du même verbe
-            # répéteraient la même phrase trois fois.
-            if ligne["definition_redigee"] and ligne["type"] == "verbe":
+            # Dans l'index, les noms d'action et gérondifs dérivés du même verbe
+            # ne répètent pas la définition du verbe de base.
+            if ligne["definition_redigee"] and ligne["type"] not in ("nom d'action", "gérondif"):
                 garde = " ⚠" if "a_clarifier" in ligne["definition_statut"] else ""
                 definition += f"<br>*{ligne['definition_redigee']}*{garde}"
             doc.append(
@@ -794,7 +793,7 @@ def ecrire_markdown(lignes: list[dict], avertissements: list[str], compteurs: di
         "- Traductions : toutes issues du document, aucune reformulée.",
         "- Définitions : toutes issues du lexique du projet ou, à défaut, du document ; "
         "aucune glose inventée.",
-        f"- Verbes avec une définition rédigée : **{sum(1 for l in lignes if l['definition_redigee'])}** "
+        f"- Verbes avec une définition rédigée : **{sum(1 for l in verbes if l['definition_redigee'])}** "
         "sur **182**, à valider par le référent "
         "([tableau complet](DEFINITIONS-VERBES-A-VALIDER.md)).",
         "- Homographes signalés en note, jamais fusionnés.",

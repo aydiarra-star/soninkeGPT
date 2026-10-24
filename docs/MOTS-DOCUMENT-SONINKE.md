@@ -44,10 +44,10 @@ Provenance des définitions : lexique du projet **575** · document du référen
 
 | # | Soninké | Type | Traduction | Sens et définition | Statut | Entrée |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | **a** | pronom | il / elle | il / elle | Attesté · référent | `SNK-GRM-0009` |
-| 2 | **ake** | pronom | il / elle | il / elle | Attesté · référent | `SNK-GRM-0003` |
-| 3 | **an** | pronom | tu | tu | Attesté · référent | `SNK-GRM-0008` |
-| 4 | **anke** | pronom | tu | tu | Attesté · référent | `SNK-GRM-0002` |
+| 1 | **a** | pronom | il / elle | il / elle<br>*Pronom personnel de la troisième personne du singulier (série brève, sujet, objet ou possessif) : il, elle, le, la, son, sa.* | Attesté · référent | `SNK-GRM-0009` |
+| 2 | **ake** | pronom | il / elle | il / elle<br>*Pronom personnel sujet ou emphatique de la troisième personne du singulier (série longue) : il, elle, lui.* | Attesté · référent | `SNK-GRM-0003` |
+| 3 | **an** | pronom | tu | tu<br>*Pronom personnel de la deuxième personne du singulier (série brève, sujet ou déterminant possessif) : tu, ton, ta.* | Attesté · référent | `SNK-GRM-0008` |
+| 4 | **anke** | pronom | tu | tu<br>*Pronom personnel sujet ou emphatique de la deuxième personne du singulier (série longue) : tu, toi.* | Attesté · référent | `SNK-GRM-0002` |
 
 [↑ index](#index-alphabétique)
 
@@ -117,7 +117,7 @@ Provenance des définitions : lexique du projet **575** · document du référen
 
 | # | Soninké | Type | Traduction | Sens et définition | Statut | Entrée |
 | --- | --- | --- | --- | --- | --- | --- |
-| 53 | **da** | marqueur | passé avec objet (da) | passé avec objet (variante de di) | Attesté · référent | `SNK-GRM-0020` |
+| 53 | **da** | marqueur | passé avec objet (da) | passé avec objet (variante de di)<br>*Marqueur prédicatif de l'accompli transitif affirmatif, placé entre le sujet et l'objet direct (variante de di).* | Attesté · référent | `SNK-GRM-0020` |
 | 54 | **daga** | verbe | partir | partir<br>*Partir, quitter un lieu pour aller ailleurs.* | Attesté · référent | `SNK-LEX-0001` |
 | 55 | **dagana** | gérondif | partir (gérondif) | partir (gérondif / inaccompli de daga) | Attesté · référent | `SNK-LEX-0997` |
 | 56 | **dagaye** | nom d'action | partir (nom d'action) | partir (nom d'action de daga) | Attesté · référent | `SNK-LEX-0998` |
@@ -127,7 +127,7 @@ Provenance des définitions : lexique du projet **575** · document du référen
 | 60 | **dema** | verbe | aider | aider<br>*Aider quelqu'un, lui apporter son appui.* | Attesté · référent | `SNK-LEX-0017` |
 | 61 | **demana** | gérondif | aider (gérondif) | aider (gérondif / inaccompli de dema) | Attesté · référent | `SNK-LEX-1003` |
 | 62 | **dema-nde** | nom d'action | aider (nom d'action) | aider (nom d'action de dema) | Attesté · référent | `SNK-LEX-1002` |
-| 63 | **di** | marqueur | passé avec objet | passé avec objet | Attesté · référent | `SNK-GRM-0018` |
+| 63 | **di** | marqueur | passé avec objet | passé avec objet<br>*Marqueur prédicatif de l'accompli transitif affirmatif, placé entre le sujet et l'objet direct.* | Attesté · référent | `SNK-GRM-0018` |
 | 64 | **diabi** | verbe | répondre | répondre<br>*Répondre à quelqu'un, répliquer.* | Attesté · référent | `SNK-LEX-0176` |
 | 65 | **diabi-nde** | nom d'action | répondre (nom d'action) | répondre (nom d'action de diabi) | Attesté · référent | `SNK-LEX-1004` |
 | 66 | **diabini** | gérondif | répondre (gérondif) | répondre (gérondif / inaccompli de diabi) | Attesté · référent | `SNK-LEX-1005` |
@@ -149,7 +149,7 @@ Provenance des définitions : lexique du projet **575** · document du référen
 | 82 | **djikeranxoso** | verbe | décevoir | décevoir<br>*Décevoir, tromper l'attente de quelqu'un.* | Attesté · référent | `SNK-LEX-0166` |
 | 83 | **djikeranxoso-nde** | nom d'action | décevoir (nom d'action) | décevoir (nom d'action de djikeranxoso) | Attesté · référent | `SNK-LEX-1016` |
 | 84 | **djikeranxosono** | gérondif | décevoir (gérondif) | décevoir (gérondif / inaccompli de djikeranxoso) | Attesté · référent | `SNK-LEX-1017` |
-| 85 | **do** | marqueur | action en cours (do … me) | action en cours | Attesté · référent | `SNK-GRM-0022` |
+| 85 | **do** | marqueur | action en cours (do … me) | action en cours<br>*Marqueur aspectuel d'action en cours ; sert aussi de coordonnant (« et, avec »).* | Attesté · référent | `SNK-GRM-0022` |
 | 86 | **doron** | verbe | respecter | respecter<br>*Respecter, honorer quelqu'un.* | Attesté · référent | `SNK-LEX-0097` |
 | 87 | **doron-nde** | nom d'action | respecter (nom d'action) | respecter (nom d'action de doron) | Attesté · référent | `SNK-LEX-1018` |
 | 88 | **doronni** | gérondif | respecter (gérondif) | respecter (gérondif / inaccompli de doron) | Attesté · référent | `SNK-LEX-1019` |
@@ -192,9 +192,9 @@ Provenance des définitions : lexique du projet **575** · document du référen
 | 118 | **fatampantchini** | gérondif | argumenter (gérondif) | argumenter (gérondif / inaccompli de fatampantchi) | Attesté · référent | `SNK-LEX-1039` |
 | 119 | **faye** | verbe | regarder | regarder<br>*Regarder, observer attentivement.* | Attesté · référent | `SNK-LEX-0003` |
 | 120 | **fayeni** | gérondif | regarder (gérondif) | regarder (gérondif / inaccompli de faye) | Attesté · référent | `SNK-LEX-1040` |
-| 121 | **fayi** | marqueur | en train de (watia) | en train de | Attesté · référent | `SNK-GRM-0014` |
+| 121 | **fayi** | marqueur | en train de (watia) | en train de<br>*Marqueur aspectuel progressif indiquant que l'action est en train de se dérouler.* | Attesté · référent | `SNK-GRM-0014` |
 | 122 | **fayinde** | nom d'action | regarder (nom d'action) | regarder (nom d'action de faye) | Attesté · référent | `SNK-LEX-1041` |
-| 123 | **fayi rini** | marqueur | sur le point de | sur le point de | Attesté · référent | `SNK-GRM-0013` |
+| 123 | **fayi rini** | marqueur | sur le point de | sur le point de<br>*Locution aspectuelle d'imminence indiquant qu'une action est sur le point de s'accomplir (« être sur le point de »).* | Attesté · référent | `SNK-GRM-0013` |
 | 124 | **filinka** | verbe | tourner | tourner<br>*Tourner, faire tourner, se retourner.* | Attesté · référent | `SNK-LEX-0146` |
 | 125 | **filinkana** | gérondif | tourner (gérondif) | tourner (gérondif / inaccompli de filinka) | Attesté · référent | `SNK-LEX-1043` |
 | 126 | **filinka-nde** | nom d'action | tourner (nom d'action) | tourner (nom d'action de filinka) | Attesté · référent | `SNK-LEX-1042` |
@@ -263,8 +263,8 @@ Provenance des définitions : lexique du projet **575** · document du référen
 
 | # | Soninké | Type | Traduction | Sens et définition | Statut | Entrée |
 | --- | --- | --- | --- | --- | --- | --- |
-| 178 | **i** | pronom | ils / elles | ils / elles | Attesté · référent | `SNK-GRM-0012` |
-| 179 | **iku** | pronom | ils / elles | ils / elles | Attesté · référent | `SNK-GRM-0006` |
+| 178 | **i** | pronom | ils / elles | ils / elles<br>*Pronom personnel de la troisième personne du pluriel (série brève, sujet, réfléchi ou possessif) : ils, elles, leur.* | Attesté · référent | `SNK-GRM-0012` |
+| 179 | **iku** | pronom | ils / elles | ils / elles<br>*Pronom personnel sujet ou emphatique de la troisième personne du pluriel (série longue) : ils, elles, eux.* | Attesté · référent | `SNK-GRM-0006` |
 
 [↑ index](#index-alphabétique)
 
@@ -345,7 +345,7 @@ Provenance des définitions : lexique du projet **575** · document du référen
 
 | # | Soninké | Type | Traduction | Sens et définition | Statut | Entrée |
 | --- | --- | --- | --- | --- | --- | --- |
-| 246 | **l'** | particule | particule devant l'initiale « r » | particule devant r | Attesté · référent | `SNK-GRM-0029` |
+| 246 | **l'** | particule | particule devant l'initiale « r » | particule devant r<br>*Forme assimilée de la consonne de liaison devant r.* | Attesté · référent | `SNK-GRM-0029` |
 | 247 | **laaton** | verbe | éloigner | éloigner<br>*Éloigner, mettre à distance.* | Attesté · référent | `SNK-LEX-0126` |
 | 248 | **laaton-nde** | nom d'action | éloigner (nom d'action) | éloigner (nom d'action de laaton) | Attesté · référent | `SNK-LEX-1124` |
 | 249 | **laatonni** | gérondif | éloigner (gérondif) | éloigner (gérondif / inaccompli de laaton) | Attesté · référent | `SNK-LEX-1125` |
@@ -362,11 +362,11 @@ Provenance des définitions : lexique du projet **575** · document du référen
 
 | # | Soninké | Type | Traduction | Sens et définition | Statut | Entrée |
 | --- | --- | --- | --- | --- | --- | --- |
-| 256 | **m'** | particule | particule devant l'initiale « b » | particule devant b, f, m | Attesté · référent | `SNK-GRM-0028` |
+| 256 | **m'** | particule | particule devant l'initiale « b » | particule devant b, f, m<br>*Forme assimilée de la nasale de première personne ou de liaison devant les consonnes labiales b, f et m.* | Attesté · référent | `SNK-GRM-0028` |
 | 257 | **maaman** | verbe | énerver | énerver<br>*Énerver, agacer, faire perdre patience.* | Attesté · référent | `SNK-LEX-0127` |
 | 258 | **maaman-de** | nom d'action | énerver (nom d'action) | énerver (nom d'action de maaman) | Attesté · référent | `SNK-LEX-1133` |
 | 259 | **maamanni** | gérondif | énerver (gérondif) | énerver (gérondif / inaccompli de maaman) | Attesté · référent | `SNK-LEX-1134` |
-| 260 | **maxa** | marqueur | impératif négatif | ne... pas (impératif négatif / négation du passé) | Attesté · référent | `SNK-GRM-0024` |
+| 260 | **maxa** | marqueur | impératif négatif | ne... pas (impératif négatif / négation du passé)<br>*Marqueur de la défense (impératif négatif, « ne … pas »).* | Attesté · référent | `SNK-GRM-0024` |
 | 261 | **maxage** | verbe | cordonner | cordonner<br>*Cordonner, fabriquer ou réparer des chaussures.* | Attesté · référent | `SNK-LEX-0136` |
 | 262 | **maxage-me** | nom d'action | cordonner (nom d'action) | cordonner (nom d'action de maxage) | Attesté · référent | `SNK-LEX-1136` |
 | 263 | **maxagene** | gérondif | cordonner (gérondif) | cordonner (gérondif / inaccompli de maxage) | Attesté · référent | `SNK-LEX-1137` |
@@ -413,22 +413,22 @@ Provenance des définitions : lexique du projet **575** · document du référen
 
 | # | Soninké | Type | Traduction | Sens et définition | Statut | Entrée |
 | --- | --- | --- | --- | --- | --- | --- |
-| 300 | **n** | pronom | je | je | Attesté · référent | `SNK-GRM-0007` |
-| 301 | **n'** | particule | particule par défaut (toute autre initiale) | particule par défaut | Attesté · référent | `SNK-GRM-0031` |
-| 302 | **na** | marqueur | demande (na) | demande / qu'il | Attesté · référent | `SNK-GRM-0017` |
+| 300 | **n** | pronom | je | je<br>*Pronom personnel sujet de la première personne du singulier (série brève) : je.* | Attesté · référent | `SNK-GRM-0007` |
+| 301 | **n'** | particule | particule par défaut (toute autre initiale) | particule par défaut<br>*Forme par défaut de la nasale de première personne ou de liaison devant consonne.* | Attesté · référent | `SNK-GRM-0031` |
+| 302 | **na** | marqueur | demande (na) | demande / qu'il<br>*Marqueur grammatical d'injonction ou de subordination (« que, pour que ») ; sert aussi de marque prédicative d'accompli.* | Attesté · référent | `SNK-GRM-0017` |
 | 303 | **nia** | verbe | devenir | devenir<br>*Devenir, passer d'un état à un autre.* | Attesté · référent | `SNK-LEX-0163` |
 | 304 | **niana** | gérondif | devenir (gérondif) | devenir (gérondif / inaccompli de nia) | Attesté · référent | `SNK-LEX-1163` |
 | 305 | **nia-ŋe** | nom d'action | devenir (nom d'action) | devenir (nom d'action de nia) | Attesté · référent | `SNK-LEX-1162` |
 | 306 | **niaŋundi** | verbe | transformer | transformer<br>*Transformer, faire devenir autre.* | Attesté · référent | `SNK-LEX-0116` |
 | 307 | **niaŋundi-nde** | nom d'action | transformer (nom d'action) | transformer (nom d'action de niaŋundi) | Attesté · référent | `SNK-LEX-1164` |
 | 308 | **niaŋundini** | gérondif | transformer (gérondif) | transformer (gérondif / inaccompli de niaŋundi) | Attesté · référent | `SNK-LEX-1165` |
-| 309 | **ni ya me** | suffixe | action en cours (do … me) | suffixe de l'action en cours (avec do) | Attesté · référent | `SNK-GRM-0023` |
-| 310 | **nke** | pronom | je | je | Attesté · référent | `SNK-GRM-0001` |
+| 309 | **ni ya me** | suffixe | action en cours (do … me) | suffixe de l'action en cours (avec do)<br>*Élément postposé employé en corrélation avec do pour marquer l'action en cours.* | Attesté · référent | `SNK-GRM-0023` |
+| 310 | **nke** | pronom | je | je<br>*Pronom personnel sujet ou emphatique de la première personne du singulier (série longue) : je, moi.* | Attesté · référent | `SNK-GRM-0001` |
 | 311 | **noni** | verbe | tracer | tracer<br>*Tracer, dessiner un trait, une ligne.* | Attesté · référent | `SNK-LEX-0147` |
 | 312 | **noni-nde** | nom d'action | tracer (nom d'action) | tracer (nom d'action de noni) | Attesté · référent | `SNK-LEX-1166` |
 | 313 | **nonini** | gérondif | tracer (gérondif) | tracer (gérondif / inaccompli de noni) | Attesté · référent | `SNK-LEX-1167` |
-| 314 | **n'taxa rini** | marqueur | négation – futur proche (n'taxa) | négation du futur proche (variante) | Attesté · référent | `SNK-GRM-0026` |
-| 315 | **n'ti rini** | marqueur | négation – futur proche | négation du futur proche | Attesté · référent | `SNK-GRM-0025` |
+| 314 | **n'taxa rini** | marqueur | négation – futur proche (n'taxa) | négation du futur proche (variante)<br>*Construction négative du futur proche (variante de n'ti rini).* | Attesté · référent | `SNK-GRM-0026` |
+| 315 | **n'ti rini** | marqueur | négation – futur proche | négation du futur proche<br>*Construction négative du futur proche (« ne pas être sur le point de, ne pas aller »).* | Attesté · référent | `SNK-GRM-0025` |
 
 [↑ index](#index-alphabétique)
 
@@ -436,7 +436,7 @@ Provenance des définitions : lexique du projet **575** · document du référen
 
 | # | Soninké | Type | Traduction | Sens et définition | Statut | Entrée |
 | --- | --- | --- | --- | --- | --- | --- |
-| 316 | **ŋ'** | particule | particule devant l'initiale « w » | particule devant w | Attesté · référent | `SNK-GRM-0030` |
+| 316 | **ŋ'** | particule | particule devant l'initiale « w » | particule devant w<br>*Forme assimilée de la nasale devant la semi-consonne vélaire w.* | Attesté · référent | `SNK-GRM-0030` |
 
 [↑ index](#index-alphabétique)
 
@@ -444,8 +444,8 @@ Provenance des définitions : lexique du projet **575** · document du référen
 
 | # | Soninké | Type | Traduction | Sens et définition | Statut | Entrée |
 | --- | --- | --- | --- | --- | --- | --- |
-| 317 | **o** | pronom | nous | nous | Attesté · référent | `SNK-GRM-0010` |
-| 318 | **oku** | pronom | nous | nous | Attesté · référent | `SNK-GRM-0004` |
+| 317 | **o** | pronom | nous | nous<br>*Pronom personnel de la première personne du pluriel (série brève, sujet ou possessif) : nous, notre.* | Attesté · référent | `SNK-GRM-0010` |
+| 318 | **oku** | pronom | nous | nous<br>*Pronom personnel sujet ou emphatique de la première personne du pluriel (série longue) : nous.* | Attesté · référent | `SNK-GRM-0004` |
 
 [↑ index](#index-alphabétique)
 
@@ -461,7 +461,7 @@ Provenance des définitions : lexique du projet **575** · document du référen
 | 324 | **rege-ye** | nom d'action | danser (nom d'action) | danser (nom d'action de rege) | Attesté · référent | `SNK-LEX-1170` |
 | 325 | **ri** | verbe | venir | venir<br>*Venir, se déplacer vers celui qui parle.* | Attesté · référent | `SNK-LEX-0002` |
 | 326 | **rini** | gérondif | venir (gérondif) | futur lointain / à venir | Attesté · référent | `SNK-GRM-0015` |
-| 327 | **rini** | marqueur | futur lointain | futur lointain / à venir | Attesté · référent | `SNK-GRM-0015` |
+| 327 | **rini** | marqueur | futur lointain | futur lointain / à venir<br>*Auxiliaire et marqueur temporel du futur indiquant une action à venir.* | Attesté · référent | `SNK-GRM-0015` |
 | 328 | **riti** | verbe | apporter | apporter<br>*Apporter, amener ce qu'on porte vers un lieu.* | Attesté · référent | `SNK-LEX-0022` |
 | 329 | **riti-nde** | nom d'action | apporter (nom d'action) | apporter (nom d'action de riti) | Attesté · référent | `SNK-LEX-1172` |
 | 330 | **ritini** | gérondif | apporter (gérondif) | apporter (gérondif / inaccompli de riti) | Attesté · référent | `SNK-LEX-1173` |
@@ -622,7 +622,7 @@ Provenance des définitions : lexique du projet **575** · document du référen
 
 | # | Soninké | Type | Traduction | Sens et définition | Statut | Entrée |
 | --- | --- | --- | --- | --- | --- | --- |
-| 467 | **wa** | marqueur | action en cours (wa) | action en cours | Attesté · référent | `SNK-GRM-0019` |
+| 467 | **wa** | marqueur | action en cours (wa) | action en cours<br>*Marqueur prédicatif de l'inaccompli affirmatif, indiquant une action en cours ou habituelle.* | Attesté · référent | `SNK-GRM-0019` |
 | 468 | **waqi** | verbe | nettoyer | nettoyer<br>*Nettoyer, ôter la saleté.* | Attesté · référent | `SNK-LEX-0077` |
 | 469 | **waqi-nde** | nom d'action | nettoyer (nom d'action) | nettoyer (nom d'action de waqi) | Attesté · référent | `SNK-LEX-1265` |
 | 470 | **waqini** | gérondif | nettoyer (gérondif) | nettoyer (gérondif / inaccompli de waqi) | Attesté · référent | `SNK-LEX-1266` |
@@ -666,11 +666,11 @@ Provenance des définitions : lexique du projet **575** · document du référen
 
 | # | Soninké | Type | Traduction | Sens et définition | Statut | Entrée |
 | --- | --- | --- | --- | --- | --- | --- |
-| 504 | **xa** | pronom | vous | vous | Attesté · référent | `SNK-GRM-0011` |
+| 504 | **xa** | pronom | vous | vous<br>*Pronom personnel de la deuxième personne du pluriel (série brève, sujet ou possessif) : vous, votre.* | Attesté · référent | `SNK-GRM-0011` |
 | 505 | **xadiafi** | verbe | critiquer | critiquer<br>*Critiquer, juger défavorablement.* | Attesté · référent | `SNK-LEX-0050` |
 | 506 | **xadiafi-nde** | nom d'action | critiquer (nom d'action) | critiquer (nom d'action de xadiafi) | Attesté · référent | `SNK-LEX-1289` |
 | 507 | **xadiafini** | gérondif | critiquer (gérondif) | critiquer (gérondif / inaccompli de xadiafi) | Attesté · référent | `SNK-LEX-1290` |
-| 508 | **xaku** | pronom | vous | vous | Attesté · référent | `SNK-GRM-0005` |
+| 508 | **xaku** | pronom | vous | vous<br>*Pronom personnel sujet ou emphatique de la deuxième personne du pluriel (série longue) : vous.* | Attesté · référent | `SNK-GRM-0005` |
 | 509 | **xandio** | verbe | convaincre | convaincre<br>*Convaincre, persuader quelqu'un.* | Attesté · référent | `SNK-LEX-0160` |
 | 510 | **xandio-nde** | nom d'action | convaincre (nom d'action) | convaincre (nom d'action de xandio) | Attesté · référent | `SNK-LEX-1291` |
 | 511 | **xandiono** | gérondif | convaincre (gérondif) | convaincre (gérondif / inaccompli de xandio) | Attesté · référent | `SNK-LEX-1292` |
@@ -735,14 +735,14 @@ Provenance des définitions : lexique du projet **575** · document du référen
 | 563 | **yexi** | verbe | marier | marier<br>*Marier, donner en mariage.* | Attesté · référent | `SNK-LEX-0072` |
 | 564 | **yexini** | gérondif | marier (gérondif) | marier (gérondif / inaccompli de yexi) | Attesté · référent | `SNK-LEX-1330` |
 | 565 | **yexi-ye** | nom d'action | marier (nom d'action) | marier (nom d'action de yexi) | Attesté · référent | `SNK-LEX-1329` |
-| 566 | **yi** | marqueur | action en cours, avec objet | action en cours | Attesté · référent | `SNK-GRM-0021` |
+| 566 | **yi** | marqueur | action en cours, avec objet | action en cours<br>*Marqueur aspectuel et postposition servant dans les constructions d'action en cours et de localisation.* | Attesté · référent | `SNK-GRM-0021` |
 | 567 | **yigaye** | nom d'action | manger (nom d'action) | manger (nom d'action de yige) | Attesté · référent | `SNK-LEX-1331` |
 | 568 | **yige** | verbe | manger | manger<br>*Manger.* | Attesté · référent | `SNK-LEX-0005` |
 | 569 | **yigene** | gérondif | manger (gérondif) | manger (gérondif / inaccompli de yige) | Attesté · référent | `SNK-LEX-1332` |
 | 570 | **yinkutundi** | verbe | commander | commander<br>*Commander, ordonner.* | Attesté · référent | `SNK-LEX-0043` |
 | 571 | **yinkutundi-nde** | nom d'action | commander (nom d'action) | commander (nom d'action de yinkutundi) | Attesté · référent | `SNK-LEX-1333` |
 | 572 | **yinkutundini** | gérondif | commander (gérondif) | commander (gérondif / inaccompli de yinkutundi) | Attesté · référent | `SNK-LEX-1334` |
-| 573 | **yi rini** | marqueur | futur proche | futur proche | Attesté · référent | `SNK-GRM-0016` |
+| 573 | **yi rini** | marqueur | futur proche | futur proche<br>*Locution temporelle marquant le futur proche.* | Attesté · référent | `SNK-GRM-0016` |
 | 574 | **yonto** | verbe | pousser | pousser<br>*Pousser, faire aller devant soi.* | Attesté · référent | `SNK-LEX-0086` |
 | 575 | **yonto-nde** | nom d'action | pousser (nom d'action) | pousser (nom d'action de yonto) | Attesté · référent | `SNK-LEX-1335` |
 | 576 | **yontono** | gérondif | pousser (gérondif) | pousser (gérondif / inaccompli de yonto) | Attesté · référent | `SNK-LEX-1336` |
@@ -2690,7 +2690,7 @@ Une fiche par verbe du document, avec sa définition complète, un exemple attes
 - Formes extraites : **576** ; entrées du document : **226** (12 pronoms, 26 constructions de temps et d'aspect, 6 particules, 182 verbes).
 - Traductions : toutes issues du document, aucune reformulée.
 - Définitions : toutes issues du lexique du projet ou, à défaut, du document ; aucune glose inventée.
-- Verbes avec une définition rédigée : **544** sur **182**, à valider par le référent ([tableau complet](DEFINITIONS-VERBES-A-VALIDER.md)).
+- Verbes avec une définition rédigée : **182** sur **182**, à valider par le référent ([tableau complet](DEFINITIONS-VERBES-A-VALIDER.md)).
 - Homographes signalés en note, jamais fusionnés.
 - Verbes avec un exemple dans leur entrée : **14** sur **182**.
 - Verbes avec au moins une phrase d'emploi attestée dans le corpus : **25** sur **182**.

@@ -75,7 +75,7 @@ def construire() -> tuple[list[dict], list[str]]:
         categorie = (ligne.get("categorie") or "").strip()
         if categorie not in CATEGORIES:
             continue
-        if (ligne.get("definition") or "").strip():
+        if ligne["soninke"] in definitions:
             continue
         base_sources = MOTIF_BASE.search(ligne.get("exemple_original") or "")
         if not base_sources:
