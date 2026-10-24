@@ -90,11 +90,11 @@ async def process_voice(
 
     # Prompt is a vocabulary hint only; Whisper may still misrecognize Soninke.
     prompt = (
-        "Conversation possible en français ou en soninké. "
-        "Termes soninkés à reconnaître si réellement prononcés : "
-        "SoninkeGPT, Soninké, Xa wouy Diom, an wouydiom ma, Nawari, "
+        "La personne peut parler en soninké, langue à faible représentation dans les systèmes de transcription, ou en français. "
+        "Priorité : transcrire les sons prononcés, ne pas traduire en français, ne pas remplacer un mot soninké par un mot français ressemblant. "
+        "Exemples de formes soninkées à conserver telles quelles lorsqu’elles sont prononcées : daga goli, baytélé yigi, SoninkeGPT, Soninké, Xa wouy Diom, an wouydiom ma, Nawari, "
         "toora nta, oyi waxati, bisimilla, Daga goli, Li taxu. "
-        "Transcrire fidèlement, sans traduire ni compléter les mots inaudibles."
+        "Respecter les espaces et les accents entendus. Si un passage est incertain, ne pas inventer de traduction."
     )
 
     try:
