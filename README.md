@@ -11,11 +11,7 @@ le patrimoine linguistique déjà constitué dans
 
 - **Parler et écouter** : micro, enregistrement et réponses lues avec la voix
   de référence du corpus.
-- **Traduction** français ↔ soninké, uniquement avec des formes attestées ;
-  le moteur peut aussi **composer des phrases grammaticalement** (Sujet +
-  Auxiliaire/Marqueur + Objet + Verbe, ou Sujet + Verbe + Complément) à partir
-  du lexique attesté, avec explication pédagogique et signalement explicite
-  de tout mot manquant, jamais inventé.
+- **Traduction** français ↔ soninké : les phrases complètes du corpus sont prioritaires. Si aucune phrase n'est attestée, SoninkeGPT compose une proposition à partir des mots disponibles et des segments audio existants, avec le statut « assemblage indicatif — phrase non attestée », les éléments manquants signalés et sans inventer de mot.
 - **Niveaux d'apprentissage** : débutant, intermédiaire, avancé.
 - **Favoris** : enregistrer un mot, une phrase ou une expression et le
   réécouter plus tard.
