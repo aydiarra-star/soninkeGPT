@@ -5,7 +5,7 @@ SNK-LEX-1472;ńké;moi;audio/snk-00315.wav;snk-00315;matched_existing_source_m
 SNK-LEX-1473;ánkè;toi;audio/snk-00004.wav;snk-00004;matched_existing_source_manifest;validee_par_referent_utilisateur;"Forme source anke normalisée; correspondance du manifeste source."
 SNK-LEX-1474;àkê;"lui, elle, cela";audio/snk-00002.wav;snk-00002;matched_existing_source_manifest;validee_par_referent_utilisateur;"Forme source ake normalisée; correspondance du manifeste source."
 SNK-LEX-1475;ókú;nous;audio/snk-00320.wav;snk-00320;matched_existing_source_manifest;validee_par_referent_utilisateur;"Forme source oku normalisée; correspondance du manifeste source."
-SNK-LEX-1476;áxákù;vous;;;pending_exact_audio_match;validee_par_referent_utilisateur;"Aucun fichier source exact identifié; aucun WAV anonyme attribué."
+SNK-LEX-1476;áxákù;vous;audio/generated/e1b42975181da188961870db.wav;voice-memory.json:axaku;matched_existing_voice_memory;validee_par_referent_utilisateur;"Correspondance explicite trouvée dans data/voice-memory.json pour axaku (vous); forme accentuée normalisée. Le WAV anonyme ne lui est pas attribué."
 SNK-LEX-1477;ìkû;"eux, elles";audio/snk-00178.wav;snk-00178;matched_existing_source_manifest;validee_par_referent_utilisateur;"Forme source iku normalisée; correspondance du manifeste source."
 SNK-LEX-1478;ké;"ceci, celui-ci, celle-ci";;;pending_exact_audio_match;validee_par_referent_utilisateur;"Aucun fichier source exact identifié; aucun WAV anonyme attribué."
 SNK-LEX-1479;kên;"cela, celui-là, celle-là";;;pending_exact_audio_match;validee_par_referent_utilisateur;"Aucun fichier source exact identifié; aucun WAV anonyme attribué."
