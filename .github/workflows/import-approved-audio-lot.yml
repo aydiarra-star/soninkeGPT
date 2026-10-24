@@ -99,7 +99,7 @@ jobs:
               current['date_validation_prononciation'] = '2026-10-24'
               current['validation_prononciation_source'] = 'Confirmation explicite de l’utilisateur : prononciation validée'
               current['publication_status'] = 'imported_to_main'
-          manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\\n', encoding='utf-8')
+          manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 
           record_path = root / 'data/voice-validation-lots.json'
           records = json.loads(record_path.read_text(encoding='utf-8')) if record_path.exists() else []
@@ -118,7 +118,7 @@ jobs:
               'unmapped_audio_files': unmapped_files,
               'note': 'La validation porte sur la prononciation, pas sur la traduction. Les 14 fichiers sans correspondance lexicale sont conservés dans audio/generated mais ne sont pas reliés artificiellement à un mot.'
           })
-          record_path.write_text(json.dumps(records, ensure_ascii=False, indent=2) + '\\n', encoding='utf-8')
+          record_path.write_text(json.dumps(records, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
           print(f'WAV du lot : {len(wavs)} ; correspondances lexicales : {len(validated_items)} ; fichiers sans correspondance : {len(unmapped_files)} ; WAV copiés : {copied} ; entrées du manifeste ajoutées : {added} ; entrées mises à jour : {updated}.')
           PY
       - name: Vérifier le lot fusionné
