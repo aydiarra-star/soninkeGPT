@@ -1,0 +1,65 @@
+id;forme;verbe_fr;construction;temps;polarite;personne;francais;statut;source;modele_atteste;note
+SNK-EA-0001;N xooren ni.;être;copule équative ní;présent;positif;1sg;Je suis grand.;assemble_a_valider;modèle SNK-LEX-0479 / SNK-LEX-0463;A bexecen ni. / O kan beran xooren ni.;Attribut adjectival xoore « grand » + -n ; forme à valider par le référent.
+SNK-EA-0002;An xooren ni.;être;copule équative ní;présent;positif;2sg;Tu es grand.;assemble_a_valider;modèle SNK-LEX-0479;A bexecen ni.;La copule ne s'accorde pas : seul le pronom change.
+SNK-EA-0003;A xooren ni.;être;copule équative ní;présent;positif;3sg;Il / elle est grand(e).;assemble_a_valider;modèle SNK-LEX-0479;A bexecen ni.;Attesté avec un autre adjectif (bexece « acide, sucré »).
+SNK-EA-0004;O xooren ni.;être;copule équative ní;présent;positif;1pl;Nous sommes grands.;assemble_a_valider;modèle SNK-LEX-0479;A bexecen ni.;-
+SNK-EA-0005;Xa xooren ni.;être;copule équative ní;présent;positif;2pl;Vous êtes grands.;assemble_a_valider;modèle SNK-LEX-0479;A bexecen ni.;-
+SNK-EA-0006;I xooren ni.;être;copule équative ní;présent;positif;3pl;Ils / elles sont grands.;assemble_a_valider;modèle SNK-LEX-0479;A bexecen ni.;-
+SNK-EA-0007;N xoore feti.;être;copule équative ní (négatif feti);présent;négatif;1sg;Je ne suis pas grand.;assemble_a_valider;modèle SNK-LEX-0536 / SNK-LEX-0249;Niima feti bugante yi. / Baporen ragande neye feti.;À la forme négative l'attribut ne prend pas -n.
+SNK-EA-0008;An xoore feti.;être;copule équative ní (négatif feti);présent;négatif;2sg;Tu n'es pas grand.;assemble_a_valider;modèle SNK-LEX-0249;Baporen ragande neye feti.;-
+SNK-EA-0009;A xoore feti.;être;copule équative ní (négatif feti);présent;négatif;3sg;Il / elle n'est pas grand(e).;assemble_a_valider;modèle SNK-LEX-0249;Baporen ragande neye feti.;-
+SNK-EA-0010;O xoore feti.;être;copule équative ní (négatif feti);présent;négatif;1pl;Nous ne sommes pas grands.;assemble_a_valider;modèle SNK-LEX-0249;Baporen ragande neye feti.;-
+SNK-EA-0011;Xa xoore feti.;être;copule équative ní (négatif feti);présent;négatif;2pl;Vous n'êtes pas grands.;assemble_a_valider;modèle SNK-LEX-0249;Baporen ragande neye feti.;-
+SNK-EA-0012;I xoore feti.;être;copule équative ní (négatif feti);présent;négatif;3pl;Ils / elles ne sont pas grands.;assemble_a_valider;modèle SNK-LEX-0249;Baporen ragande neye feti.;-
+SNK-EA-0013;Ken ni baasi xoore yi.;être;copule équative ní + postposition yi;présent;positif;-;Cela est très grave.;atteste_corpus;SNK-LEX-0310;Ken ni baasi xoore yi.;Deux termes : attribut + ni + nom + yi.
+SNK-EA-0014;Ké yugo ni tagén ña yi.;être;copule équative ní + focalisateur;présent;positif;-;Cet homme est forgeron.;atteste_source_externe;Creissels 2018, Mandenkan 59, ex. 14a;Ké yugo ni tagén ña yi.;Variété du Kingi ; focalisateur ña.
+SNK-EA-0015;Tagén ña ni.;être;copule équative ní (identification);présent;positif;-;C'est un forgeron.;atteste_source_externe;Creissels 2018, ex. 13;Tagén ña ni.;Identification sans second terme exprimé.
+SNK-EA-0016;Niima feti bugante yi.;être;copule équative ní (négatif feti);présent;négatif;3sg;Nima n'est pas un vantard.;atteste_corpus;SNK-LEX-0536;Niima feti bugante yi.;Modèle du négatif avec attribut nominal.
+SNK-EA-0017;A yaqe feti.;être;copule équative ní (négatif feti);présent;négatif;3sg;Ce n'est pas sa femme.;atteste_source_externe;Livret d'auto-formation Soninke, Dakar 2001;A yaqe feti.;Négatif sans postposition.
+SNK-EA-0018;N wa deben di.;être;copule locative wá;présent;positif;1sg;Je suis au village.;assemble_a_valider;modèle Creissels 2018 § 3.4;Haatu wa konpen di.;Postposition di « dans » ; debe « village » attesté au corpus (deben di).
+SNK-EA-0019;An wa deben di.;être;copule locative wá;présent;positif;2sg;Tu es au village.;assemble_a_valider;modèle Creissels 2018 § 3.4;Haatu wa konpen di.;-
+SNK-EA-0020;A wa deben di.;être;copule locative wá;présent;positif;3sg;Il / elle est au village.;assemble_a_valider;modèle Creissels 2018 § 3.4;Haatu wa konpen di.;Attesté avec konpe « chambre ».
+SNK-EA-0021;O wa deben di.;être;copule locative wá;présent;positif;1pl;Nous sommes au village.;assemble_a_valider;modèle Creissels 2018 § 3.4;Haatu wa konpen di.;-
+SNK-EA-0022;Xa wa deben di.;être;copule locative wá;présent;positif;2pl;Vous êtes au village.;assemble_a_valider;modèle Creissels 2018 § 3.4;Haatu wa konpen di.;-
+SNK-EA-0023;I wa deben di.;être;copule locative wá;présent;positif;3pl;Ils / elles sont au village.;assemble_a_valider;modèle Creissels 2018 § 3.4;Haatu wa konpen di.;-
+SNK-EA-0024;N nta deben di.;être;copule locative wá (négatif nta);présent;négatif;1sg;Je ne suis pas au village.;assemble_a_valider;modèle Creissels 2018 § 3.4;Haatu nta konpen di.;-
+SNK-EA-0025;An nta deben di.;être;copule locative wá (négatif nta);présent;négatif;2sg;Tu n'es pas au village.;assemble_a_valider;modèle Creissels 2018 § 3.4;Haatu nta konpen di.;-
+SNK-EA-0026;A nta deben di.;être;copule locative wá (négatif nta);présent;négatif;3sg;Il / elle n'est pas au village.;assemble_a_valider;modèle Creissels 2018 § 3.4;Haatu nta konpen di.;-
+SNK-EA-0027;O nta deben di.;être;copule locative wá (négatif nta);présent;négatif;1pl;Nous ne sommes pas au village.;assemble_a_valider;modèle Creissels 2018 § 3.4;Haatu nta konpen di.;-
+SNK-EA-0028;Xa nta deben di.;être;copule locative wá (négatif nta);présent;négatif;2pl;Vous n'êtes pas au village.;assemble_a_valider;modèle Creissels 2018 § 3.4;Haatu nta konpen di.;-
+SNK-EA-0029;I nta deben di.;être;copule locative wá (négatif nta);présent;négatif;3pl;Ils / elles ne sont pas au village.;assemble_a_valider;modèle Creissels 2018 § 3.4;Haatu nta konpen di.;-
+SNK-EA-0030;Baabon wa xatin kanma.;être;copule locative wá (existence);présent;positif;-;Il y a de la mousse sur le lait de vache.;atteste_corpus;SNK-LEX-0184;Baabon wa xatin kanma.;Emploi existentiel sans sujet pronominal.
+SNK-EA-0031;Baasi nt'a di.;être;copule locative wá (existence, négatif);présent;négatif;-;Il n'y a rien de mal.;atteste_corpus;SNK-LEX-0310;Baasi nt'a di.;nta + a (élision) + di.
+SNK-EA-0032;Sokke gabe nta Tooka makkante.;être;copule locative wá (existence, négatif);présent;négatif;-;Il n'y a pas assez d'herbes sauvages dans le champ de maïs de Toka.;atteste_source_externe;Cours de soninké, Kassataya 2012;Sokke gabe nta Tooka makkante.;Confirme nta existentiel.
+SNK-EA-0033;Gidimekaanun bologaaɲi na ti minna yi ?;être;copule locative wá variante na (interrogatif);présent;positif;-;Où est la plage des gens de Gidimaxa ?;atteste_corpus;SNK-LEX-0218;Gidimekaanun bologaaɲi na ti minna yi ?;wa devient na avec un mot interrogatif.
+SNK-EA-0034;Haatu na minna ?;être;copule locative wá variante na (interrogatif);présent;positif;-;Où est Fatou ?;atteste_source_externe;Creissels 2018, ex. 12c;Haatu na minna ?;-
+SNK-EA-0035;An nàn dinká in ŋa.;être;verbe statif + nàn;présent;positif;2sg;Tu es plus gros que moi.;atteste_source_externe;Creissels 2018, ex. 22;An nàn dinká in ŋa.;Couple nàn / ntá propre aux verbes statifs ; dialecte à confirmer.
+SNK-EA-0036;Kiyen nàn tawó.;être;verbe statif + nàn;présent;positif;-;Le soleil est ardent.;atteste_source_externe;Creissels 2018, ex. 44;Kiyen nàn tawó.;-
+SNK-EA-0037;Kànjàanén tàrún nàn gìilá guwàanén qàllún ŋà.;être;verbe statif + nàn (comparaison);présent;positif;-;Les oreilles du lièvre sont plus longues que celles de l'écureuil.;atteste_source_externe;Creissels 2018, ex. 17;Kànjàanén tàrún nàn gìilá guwàanén qàllún ŋà.;Tons notés dans la source.
+SNK-EA-0038;In ni.;être;copule équative ní (paradigme pédagogique);présent;positif;1sg;Je suis.;atteste_source_externe;soninko.info, leçon 2;In ni.;Paradigme d'un cours mauritanien, à recouper avec le corpus.
+SNK-EA-0039;In ñi.;être;paradigme pédagogique (imparfait);passé;positif;1sg;J'étais.;atteste_source_externe;soninko.info, leçon 2;In ñi.;ñi correspond au marqueur d'inaccompli passé de Creissels.
+SNK-EA-0040;In we ñaana.;être;paradigme pédagogique (futur);futur;positif;1sg;Je serai.;atteste_source_externe;soninko.info, leçon 2;In we ñaana.;Forme non confirmée par le corpus du projet.
+SNK-EA-0041;A ye ñaana.;être;paradigme pédagogique (futur);futur;positif;3sg;Il / elle sera.;atteste_source_externe;soninko.info, leçon 2;A ye ñaana.;-
+SNK-EA-0042;—;être;copule équative ní;passé;positif;1sg;J'étais.;non_atteste;corpus du projet;—;Aucune forme fléchie au passé dans le corpus : à recueillir auprès du référent.
+SNK-EA-0043;—;être;copule équative ní;futur;positif;1sg;Je serai.;non_atteste;corpus du projet;—;Aucune forme fléchie au futur dans le corpus.
+SNK-EA-0044;—;être;copule équative ní;passé;négatif;1sg;Je n'étais pas.;non_atteste;corpus du projet;—;À recueillir auprès du référent.
+SNK-EA-0045;Ka wa in yi.;avoir;possession : possédé + wá + possesseur + yi;présent;positif;1sg;J'ai une maison.;assemble_a_valider;modèle SNK-LEX-0303;Yintin xullu baananbaanon wa a yi.;Pronom in à confirmer (n yi également entendu).
+SNK-EA-0046;Ka wa an yi.;avoir;possession : possédé + wá + possesseur + yi;présent;positif;2sg;Tu as une maison.;assemble_a_valider;modèle SNK-LEX-0303;Yintin xullu baananbaanon wa a yi.;-
+SNK-EA-0047;Ka wa a yi.;avoir;possession : possédé + wá + possesseur + yi;présent;positif;3sg;Il / elle a une maison.;assemble_a_valider;modèle SNK-LEX-0303;Yintin xullu baananbaanon wa a yi.;Le possédé est en tête de phrase.
+SNK-EA-0048;Ka wa o yi.;avoir;possession : possédé + wá + possesseur + yi;présent;positif;1pl;Nous avons une maison.;assemble_a_valider;modèle SNK-LEX-0303;Yintin xullu baananbaanon wa a yi.;-
+SNK-EA-0049;Ka wa xa yi.;avoir;possession : possédé + wá + possesseur + yi;présent;positif;2pl;Vous avez une maison.;assemble_a_valider;modèle SNK-LEX-0303;Yintin xullu baananbaanon wa a yi.;-
+SNK-EA-0050;Ka wa i yi.;avoir;possession : possédé + wá + possesseur + yi;présent;positif;3pl;Ils / elles ont une maison.;assemble_a_valider;modèle SNK-LEX-0303;Yintin xullu baananbaanon wa a yi.;-
+SNK-EA-0051;Ka wa Faatu yi.;avoir;possession : possédé + wá + nom + yi;présent;positif;3sg;Fatou a une maison.;assemble_a_valider;modèle SNK-LEX-0365;Bannaaxun taagumansen wa dudoxotonten ŋa.;Possesseur nominal en 3pl : postposition ŋa.
+SNK-EA-0052;Yintin xullu baananbaanon wa a yi.;avoir;possession : possédé + wá + possesseur + yi;présent;positif;3sg;Il a quelques cheveux blancs.;atteste_corpus;SNK-LEX-0303;Yintin xullu baananbaanon wa a yi.;Traduction française fournie par la source.
+SNK-EA-0053;Bannaaxun taagumansen wa dudoxotonten ŋa.;avoir;possession : possédé + wá + possesseur + ŋa;présent;positif;3pl;Le courageux a le signe de la richesse.;atteste_corpus;SNK-LEX-0365;Bannaaxun taagumansen wa dudoxotonten ŋa.;ŋa et yi sont deux variantes de la même postposition.
+SNK-EA-0054;Ka nta in yi.;avoir;possession (négatif nta);présent;négatif;1sg;Je n'ai pas de maison.;assemble_a_valider;modèle SNK-LEX-0463;Xenpe nta a yi.;Le négatif de la possession est nta.
+SNK-EA-0055;Ka nta an yi.;avoir;possession (négatif nta);présent;négatif;2sg;Tu n'as pas de maison.;assemble_a_valider;modèle SNK-LEX-0463;Xenpe nta a yi.;-
+SNK-EA-0056;Ka nta a yi.;avoir;possession (négatif nta);présent;négatif;3sg;Il / elle n'a pas de maison.;assemble_a_valider;modèle SNK-LEX-0463;Xenpe nta a yi.;-
+SNK-EA-0057;Ka nta o yi.;avoir;possession (négatif nta);présent;négatif;1pl;Nous n'avons pas de maison.;assemble_a_valider;modèle SNK-LEX-0463;Xenpe nta a yi.;-
+SNK-EA-0058;Ka nta xa yi.;avoir;possession (négatif nta);présent;négatif;2pl;Vous n'avez pas de maison.;assemble_a_valider;modèle SNK-LEX-0463;Xenpe nta a yi.;-
+SNK-EA-0059;Ka nta i yi.;avoir;possession (négatif nta);présent;négatif;3pl;Ils / elles n'ont pas de maison.;assemble_a_valider;modèle SNK-LEX-0463;Xenpe nta a yi.;-
+SNK-EA-0060;—;avoir;possession;passé;positif;1sg;J'avais / j'ai eu.;non_atteste;corpus du projet;—;Aucune forme confirmée.
+SNK-EA-0061;—;avoir;possession;futur;positif;1sg;J'aurai.;non_atteste;corpus du projet;—;Aucune forme confirmée.
+SNK-EA-0062;—;avoir;possession;passé;négatif;1sg;Je n'avais pas.;non_atteste;corpus du projet;—;Aucune forme confirmée.
+SNK-EA-0063;Anke n'di maro n'yiga.;avoir (auxiliaire français);accompli transitif;passé;positif;2sg;Tu as mangé le riz.;atteste_corpus;soninke-samples.jsonl;Anke n'di maro n'yiga.;« Avoir » des temps composés = marqueur di + particule, sans auxiliaire.
+SNK-EA-0064;In yige.;avoir (auxiliaire français);accompli intransitif;passé;positif;1sg;J'ai mangé.;atteste_source_externe;soninko.info, leçon 2;In yige.;Pas d'auxiliaire : marqueur Ø à l'accompli intransitif ; le corpus du projet écrit aussi n yige.

@@ -46,6 +46,13 @@ d'interface.
 ## Documentation linguistique
 
 - [Contrôle linguistique et statuts d'attestation](docs/LINGUISTIC-QUALITY.md)
+- [« Être » et « avoir » en soninké : traductions et conjugaison](docs/VERBES-ETRE-AVOIR.md)
+- [Tous les mots du document soninké, ordonnés, avec traduction, sens et définition](docs/MOTS-DOCUMENT-SONINKE.md)
+- [Définitions des 182 verbes du document, à valider par le référent](docs/DEFINITIONS-VERBES-A-VALIDER.md)
+- [État des définitions du lexique : 1442 entrées définies sur 1442](docs/DEFINITIONS-LEXIQUE.md)
+- [Questions au référent : 172 gloses à trancher](docs/QUESTIONS-REFERENT.md)
+- [Définitions rédigées, lisibles par machine](data/source/definitions-redigees.csv)
+- [Paradigmes être/avoir, lisibles par machine](data/source/paradigmes-etre-avoir.csv)
 - [Liste des formes écartées](data/validation/non-soninke-forms.json)
 - [Voix de référence sur tous les contenus audio](docs/AUTHENTIC-VOICE.md)
 

@@ -69,6 +69,7 @@ Trois outils appliquent cette règle :
 | `scripts/check_doublons_lexique.py` | Contrôle : doublons d'entrée et formes citées en variante. `--strict` renvoie un code d'erreur si un doublon existe. |
 | `scripts/import_extraction_sans_doublons.py` | Import d'un CSV d'extraction : n'ajoute que les formes absentes, journalise les doublons écartés et les gloses divergentes. |
 | `scripts/fusionner_doublons_lexique.py` | Fusionne les doublons déjà présents, sans perte : la forme absorbée devient `variante`, la glose la plus complète est conservée, une note de fusion est ajoutée. |
+| `scripts/enrichir_definitions_sans_doublons.py` | Écrit les définitions dans la colonne `definition` des entrées **existantes** ; refuse toute forme qui ne serait pas déjà une entrée ou qui ne serait qu'une variante, puis vérifie que la liste des lignes et des formes n'a pas bougé. |
 
 Règles de fusion :
 
@@ -79,6 +80,22 @@ Règles de fusion :
   *kanbe*…) ne sont jamais fusionnées : ce sont des variantes attestées, pas des
   doublons ;
 - toute fusion est enregistrée dans `data/reports/fusions-doublons-<date>.csv`.
+
+## Définitions et gloses à vérifier
+
+Chaque entrée peut porter une définition française dans la colonne `definition`,
+avec son statut dans `definition_statut` :
+
+| Statut | Signification |
+| --- | --- |
+| `redigee_a_valider` | Définition rédigée d'après la glose attestée du lexique, en attente de validation. |
+| `forme_derivee_du_verbe` | Nom d'action ou gérondif : définition déduite du verbe de base. |
+| `a_clarifier` | La glose de départ est incertaine ou contradictoire : la définition est proposée, mais le mot reste affiché avec la mention « glose à vérifier ». |
+
+Une définition ne remplace jamais la traduction : elle l'explique. Elle ne peut
+pas non plus introduire un sens absent de la glose de départ. Les cas douteux
+sont portés à la [fiche de questions du référent](QUESTIONS-REFERENT.md) au lieu
+d'être tranchés arbitrairement.
 
 ## Signaler une erreur
 
