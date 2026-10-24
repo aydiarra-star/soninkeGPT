@@ -1,0 +1,38 @@
+name: Export French audio translations
+on:
+  push:
+    paths:
+      - "data/reports/traductions-francaises-audios-2026-10-24.csv"
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: write
+jobs:
+  package-translations:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Package translation file
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p out/soninkegpt-traductions-francaises
+          cp data/reports/traductions-francaises-audios-2026-10-24.csv out/soninkegpt-traductions-francaises/
+          cat > out/soninkegpt-traductions-francaises/LISEZ-MOI.txt <<'EOF'
+          SoninkeGPT — Traductions françaises des audios
+          Fichier CSV UTF-8, séparateur point-virgule.
+          Chaque ligne associe l'identifiant/fichier audio, la forme soninké, la traduction française, la source et le statut.
+          Les cellules de traduction vides doivent être complétées après identification ou validation linguistique.
+          Les 14 audios non associés sont volontairement laissés sans mot ni traduction afin de ne rien inventer.
+          EOF
+          cd out
+          zip -qr soninkegpt-traductions-francaises-audios.zip soninkegpt-traductions-francaises
+          unzip -t soninkegpt-traductions-francaises-audios.zip
+      - name: Upload translation ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: soninkegpt-traductions-francaises-audios
+          path: out/soninkegpt-traductions-francaises-audios.zip
+          if-no-files-found: error
+          retention-days: 90
