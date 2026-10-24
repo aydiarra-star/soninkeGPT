@@ -1960,6 +1960,80 @@ function sentencePresenceNote(sentence) {
 }
 
 // ── Réponse pédagogique : phrase composée + explication grammaticale ──
+
+// Composition de secours : assemble les correspondances lexicales disponibles,
+// même si la phrase complète n'existe pas dans le corpus.
+function composeLexicalPhraseFallback(sourceText) {
+  const original = String(sourceText || "").trim().replace(/[?!.…]+$/, "");
+  if (!original) return null;
+  const normalized = normalizeWord(original).replace(/[’‘]/g, "'");
+  const tokens = normalized
+    .replace(/\b([ldjnmtsquc])'/gi, "$1 ")
+    .replace(/[^\p{L}\p{M}' -]/gu, " ")
+    .split(/\s+/).filter(Boolean);
+  if (tokens.length < 2) return null;
+  const ignored = new Set([
+    "le","la","les","un","une","des","du","de","d","l","au","aux","a","dans","sur","chez",
+    "et","ou","mais","que","qui","quoi","est-ce","ce","cette","ces","mon","ma","mes","ton","ta",
+    "tes","son","sa","ses","notre","nos","votre","vos","leur","leurs","ne","pas","plus","jamais",
+    "me","te","se","nous","vous","il","elle","ils","elles","on","je","j","tu"
+  ]);
+  const mapped = [];
+  const seen = new Set();
+  for (const token of tokens) {
+    if (ignored.has(token)) continue;
+    const pronoun = SONINKE_PRONOUNS.find((p) => p.fr.includes(token));
+    if (pronoun) {
+      const key = "pronoun:" + pronoun.person;
+      if (!seen.has(key)) { mapped.push({ snk: pronoun.short, fr: token, role: "subject", token }); seen.add(key); }
+      continue;
+    }
+    const lk = lookupTerm(token);
+    const pool = [...(lk.exact || []), ...(lk.starts || [])].filter((e) => e && !isExcludedForm(e.soninke));
+    const entry = pool.sort((a,b) => scoreCorpusEntry(b, token)-scoreCorpusEntry(a, token))[0];
+    if (!entry) continue;
+    const key = normalizeWord(entry.soninke);
+    if (seen.has(key)) continue;
+    const cat = String(entry.categorie || "");
+    const role = /verbe/i.test(cat) ? "verb"
+      : /nom|syntagme|personne|pronom/i.test(cat) ? "noun"
+      : /adjectif|adverbe|deictique|expression/i.test(cat) ? "complement" : "other";
+    mapped.push({ snk: String(entry.soninke).trim(), fr: token, role, entry, token });
+    seen.add(key);
+  }
+  if (!mapped.length) return null;
+  const subject = mapped.filter((x) => x.role === "subject");
+  const nouns = mapped.filter((x) => x.role === "noun");
+  const verbs = mapped.filter((x) => x.role === "verb");
+  const complements = mapped.filter((x) => x.role === "complement" || x.role === "other");
+  const ordered = verbs.length ? [...subject, ...nouns, ...complements, ...verbs] : mapped;
+  const sentence = capitalizeFirst(ordered.map((x) => x.snk).filter(Boolean).join(" ").replace(/\s+/g, " "));
+  if (!sentence) return null;
+  const mappedFrench = mapped.map((x) => x.token);
+  const missingFrench = tokens.filter((t) => !ignored.has(t) && !mappedFrench.includes(t));
+  return {
+    sentence, mapped, missingFrench,
+    note: "Phrase composée automatiquement à partir des formes lexicales disponibles. La phrase entière n'est pas attestée; l'ordre, les particules et la grammaire doivent être confirmés par le référent."
+  };
+}
+
+function fallbackComposedPhrase(sourceText, extraNote = "") {
+  const result = composeLexicalPhraseFallback(sourceText);
+  if (!result) return null;
+  let out = "**Phrase soninké composée à partir du lexique disponible**\n";
+  out += soninkeBlock(result.sentence, String(sourceText || "").trim(), "phrase");
+  out += "*Statut : assemblage automatique indicatif — la phrase complète n'est pas attestée ni validée.*\n\n";
+  out += "*" + result.note + "*\n\n";
+  if (extraNote) out += "*Réserve : " + extraNote + "*\n\n";
+  if (result.missingFrench.length) {
+    out += "**Éléments français sans correspondance lexicale** : " + result.missingFrench.join(", ") + ". Ils ne sont pas inventés ni insérés dans la phrase.\n\n";
+  }
+  const audioSegments = extractAvailableAudioSegments(result.sentence);
+  if (audioSegments.length) out += "*Audio de référence disponible pour les segments : " + audioSegments.map((x) => x.text).join(" · ") + ".*\n\n";
+  out += levelNote();
+  return out;
+}
+
 function grammarAnswer(sourceText) {
   // Priorité absolue au corpus : la même phrase déjà enregistrée et validée prime sur toute composition
   const normSrc = normalizeWord(sourceText).replace(/[?.!…]+$/, "").trim();
@@ -1978,16 +2052,9 @@ function grammarAnswer(sourceText) {
   }
 
   const parsed = parseFrenchStructure(sourceText);
-  if (!parsed) return null;
+  if (!parsed) return fallbackComposedPhrase(sourceText);
 
-  if (parsed.copuleMissing) {
-    return `La copule « être » n'est pas encore enregistrée comme verbe autonome dans le lexique soninké.\n\n` +
-      `Pour compléter cette phrase avec précision, il faudrait ajouter la forme « être » (copule) au lexique.\n\n` +
-      `**Formes attestées proches**\n` +
-      soninkeBlock("Toora nta", "Tout va bien.", "expression") +
-      soninkeBlock("kere", "Ici.", "mot") +
-      levelNote();
-  }
+  if (parsed.copuleMissing) return fallbackComposedPhrase(sourceText, "La copule française « être » n'a pas de correspondance autonome confirmée dans le lexique.");
 
   if (!parsed.verbWord && !parsed.objectWord && !parsed.subjectPronoun && !parsed.subjectEntry) return null;
   if (!parsed.verbWord && !parsed.objectWord) return null;
@@ -1995,6 +2062,8 @@ function grammarAnswer(sourceText) {
   const composed = composeSoninkeTranslation(parsed);
 
   if (!parsed.verbEntry) {
+    const fallback = fallbackComposedPhrase(sourceText, "Le verbe principal n'a pas été identifié comme entrée verbale exacte; les correspondances sont lexicales et indicatives.");
+    if (fallback) return fallback;
     const guess = parsed.verbWord || "";
     let out = guess
       ? `Le verbe « ${guess} » n'est pas attesté comme verbe dans le corpus soninké : je ne l'invente pas.\n\n` +
@@ -2010,6 +2079,8 @@ function grammarAnswer(sourceText) {
   }
 
   if (!composed || !composed.sentence) {
+    const fallback = fallbackComposedPhrase(sourceText, "La composition grammaticale stricte n'a pas abouti; une composition lexicale indicative est fournie.");
+    if (fallback) return fallback;
     if (composed && composed.notes && composed.notes.length) {
       let out = `La phrase ne peut pas être composée fidèlement uniquement avec des formes attestées.\n\n`;
       for (const n of composed.notes) out += `- ${n}\n`;
@@ -2207,8 +2278,7 @@ function buildSingleOrPhraseAnswer(targetPhrase, words, direction) {
     }
   }
 
-  // 2. Phrase de plusieurs mots : uniquement ce qui est attesté.
-  //    Aucune phrase soninké n'est reconstruite par assemblage de mots.
+  // 2. Phrase entière : chercher les correspondances, puis composer une proposition indicative si besoin.
   if (words.length >= 2) {
     const wordMappings = [];
     for (const w of words.slice(0, 8)) {
@@ -2242,7 +2312,9 @@ function buildSingleOrPhraseAnswer(targetPhrase, words, direction) {
       return unknownAnswer(targetPhrase || words.join(" "));
     }
 
-    out += "Pour une traduction de phrase entière, SoninkeGPT ne compose pas de phrase non attestée. La phrase doit être enregistrée puis validée par le référent avant publication.\n\n";
+    const fallback = fallbackComposedPhrase(targetPhrase || words.join(" "));
+    if (fallback) return fallback;
+    out += "Je n’ai pas trouvé assez de correspondances lexicales pour composer cette phrase. Aucun mot manquant n’est inventé.\n\n";
     out += levelNote();
     return out;
   }
