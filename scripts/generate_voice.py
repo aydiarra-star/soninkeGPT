@@ -114,6 +114,15 @@ def build(generate=False, limit=20, device="auto"):
                     "francais": "",
                 }
 
+    # Préserver les WAV validés des lots importés (ex. audio/lots/lot-100-...).
+    # Une reconstruction du manifeste ne doit jamais les faire disparaître.
+    for normalized, previous in previous_audio.items():
+        if normalized in audio or not previous.get("text") or not previous.get("url"):
+            continue
+        previous_path = ROOT / str(previous["url"])
+        if previous_path.is_file() and valid_wav(previous_path):
+            audio[normalized] = dict(previous)
+
     generated_dir = ROOT / "audio/generated"
     for item in vocabulary.values():
         digest = hashlib.sha256(item["text"].encode("utf-8")).hexdigest()[:24]
