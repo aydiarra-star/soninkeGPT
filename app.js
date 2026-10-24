@@ -1060,7 +1060,7 @@ async function deliverVoiceTurn(transcript, voiceNoteUrl) {
 
   // Si la reconnaissance du navigateur n'a rien transcrit, tenter l'ASR serveur
   // configuré dans voice-config.js. Aucun secret API n'est stocké dans le frontend.
-  const apiBase = String(window.SONINKEGPT_API_BASE || "").trim().replace(/\\/$/, "");
+  const apiBase = String(window.SONINKEGPT_API_BASE || "").trim().replace(/\/$/, "");
   if (!cleanText && voiceNoteUrl && apiBase) {
     try {
       showVoiceStatus("Transcription vocale en cours…", 0, false);
