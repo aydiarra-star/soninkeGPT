@@ -1,0 +1,55 @@
+rang,forme_document,sens_document,section_document,sens_atteste,formes_attestees_sources,sources,statut_verification,note
+1,yime,tête,1,tête,yinme ; yinkolla ; yínmè,"S2,S3,S4,S6",confirme,Trois traditions orthographiques pour le même mot.
+2,yinte,cheveux,1,"cheveu, poil",yinte ; yìntè,"S1,S2,S3,S4",confirme,"Le dictionnaire élargit à « poil, plume »."
+3,Giya,visage,1,visage,giya (aussi yeeso),S5,confirme,Une seule source consultée ; à faire confirmer.
+4,Teingé,front,1,front,teŋe ; tenŋe ; taηe ; teŋe,"S1,S2,S5,S6,S8",confirme,Graphie « Teingé » non relevée telle quelle ; la forme-source est teŋe/tenŋe.
+5,Yaxe,œil,1,œil,yaaxe ; yáaxè,"S1,S2,S3,S5,S6,S8",confirme,
+6,Yaxou,yeux,1,yeux (pluriel),yaaxo ; yaaxu ; yaago,"S1,S2",confirme,Pluriel de yaaxe.
+7,Nuxune,nez,1,nez,nuxunne ; núxúnnè,"S1,S2,S3,S5,S6,S8",confirme,
+8,rakke,bouche,1,bouche,raqe ; laqe ; laxxe ; láqqè,"S1,S2,S3,S5,S6,S8",confirme,Alternance dialectale r/l bien documentée sur ce mot.
+9,gnougnou,lèvre,1,non attesté,lèvre = soome ; soomu ; soomon-fate,"S2,S5,S6",non_atteste,"Forme absente des sources consultées. La lèvre est attestée sous « soome/soomo », variante « some » déjà retenue par le document."
+10,some,lèvre,1,lèvre,soome ; soomu ; soomon-fate,"S2,S5,S6",confirme,« some » = graphie francisée de soome.
+11,kambe,dent,1,dent,kanbe ; kànbê,"S1,S2,S3,S5",confirme,
+12,kambou,dents (pluriel),1,dents (pluriel),kanbo ; kanbu,"S1,S2",confirme,
+13,Nene,langue,1,langue (organe),neene ; néenè,"S1,S2,S3,S5",confirme,
+14,torro,oreille,1,oreille,toro ; taro ; tárò,"S1,S3,S5,S6,S8",confirme,Variantes toro/taro selon les parlers.
+15,xoume,joues,1,joue,xume ; qume,"S1,S2,S5,S6",confirme,
+16,yesso,menton,1,visage,yeeso (visage) ; menton = sinqe / sinqinxotte / sinxe,"S5,S1,S6,S8",corrige,"Le document place yesso sous « menton ». Les sources attestent yeeso = visage, et le menton est sinqe (variante « sinke » du document)."
+17,sinke,menton,1,menton,sinqe ; sinqinxotte ; sinxe,"S1,S5,S6,S8",confirme,"Contredit la base interne du projet, qui rattache sinke au cou."
+18,xanné,cou,1,cou,xanne ; qanne ; qánnè,"S1,S2,S3,S4,S5,S6,S8",confirme,"Contredit la base interne du projet, qui rattache xanné à la gorge."
+19,xorré,gorge,1,gorge,xore,S5,confirme,Une seule source consultée ; à faire confirmer.
+20,guidjimé,poitrine / torse,2,poitrine,gijinme ; giginme ; gijimen ; gíjínmè,"S2,S3,S5,S6,S8",confirme,
+21,boutte,cœur,2,"foie (et, par extension, courage / colère)",butte = foie ; cœur = sondonme / sondome / sòndònmê,"S1,S2,S3,S4,S9,S10",corrige,"Divergence majeure : cinq sources indépendantes donnent butte = foie et sondonme = cœur. Le lexique ODA précise aussi les sens dérivés « émotion, colère »."
+22,noxo,ventre,2,ventre,noxo ; noqo ; nòxô,"S1,S2,S3,S5,S8",confirme,
+23,mpallé,dos,2,"« puis, ensuite, après » (adverbe) — pas un nom de partie du corps","dos = xodo ; xoodo ; qóodò ; mpallé / kémpalé / fallé = puis, après","S3,S5,S7",corrige,"Le corpus du référent (S7) emploie mpallé, kémpalé et fallé au sens de « puis / ensuite / après ». Le dos est attesté sous xodo/xoodo."
+24,siga,taille / hanches,2,non attesté dans ce sens,siga = traverser un cours d'eau sans nager (verbe) ; hanche = fengeñe,"S4,S5",non_atteste,Le lexique ODA ne connaît siga que comme verbe et comme nom de personne. La hanche est attestée sous fengeñe.
+25,thinkambé,fesses,2,"fesse, fesses",tinkanbe ; fallankanbe,"S1,S2,S5",confirme,Graphie « thinkambé » non relevée telle quelle ; la forme-source est tinkanbe.
+26,Kit'e,bras,3,à préciser : kitte = main (et bras) ; bras = xuli / kafe,kitte ; xuli ; kafe ; quli,"S1,S4,S6,S10",a_confirmer,"Le document présente « Kit'e / Kitte » comme une seule entrée « bras / main ». Les sources séparent : kitte = main, xuli = bras / avant-bras, kafe = bras."
+27,Kitte,main,3,main,kitte ; kíttè,"S1,S2,S3,S5,S8",confirme,"Le guide SIL glose kitte comme « la main, le bras »."
+28,Qanfe,épaule,3,aile,épaule = kunke ; aile = kánpè / kanpe,"S3,S4,S8,S10",corrige,L'épaule est attestée sous kunke. La forme proche de Qanfe est kánpè / kanpe = aile.
+29,Kanfe,épaule,3,aile,épaule = kunke ; aile = kánpè / kanpe,"S3,S4,S8,S10",corrige,Même correction que Qanfe.
+30,Qunyu-bunyi,coude,3,non attesté,coude = segenantonbe ; segeñ tonbe ; saganan tombe,"S4,S5,S6,S8",non_atteste,Forme absente des sources consultées.
+31,Kunyu-bunyi,coude,3,non attesté,coude = segenantonbe ; segeñ tonbe ; saganan tombe,"S4,S5,S6,S8",non_atteste,Forme absente des sources consultées.
+32,Kit-qasse,poignet,3,poignet (analyse structurale),kittinxanne ; kitun qanne = « le cou de la main »,"S5,S6",a_confirmer,Le poignet se dit littéralement « cou de la main » (kitte + xanne/qanne). Le second élément « qasse » correspond à cette base « cou » ; la graphie reste à confirmer.
+33,Kit-soro,doigt,3,doigt (analyse structurale),doronme ; les doigts = kittindoromu / doronmu,"S1,S2,S5,S8",a_confirmer,Le doigt est attesté sous doronme ; « kit-soro » se lit comme « doigt de la main ». Le second élément « soro » reste à confirmer.
+34,Tegi-soro,ongle,3,non attesté,ongle = segeñe ; segeɲe ; ségeñè,"S1,S3,S5",non_atteste,Forme absente des sources consultées.
+35,Tegi-suuru,ongle,3,non attesté,ongle = segeñe ; segeɲe ; ségeñè,"S1,S3,S5",non_atteste,Forme absente des sources consultées.
+36,Taŋe,jambe,4,front (conflit avec le document),taηe / teŋe = front ; jambe = tanxare ; tansolle ; tâ,"S1,S2,S5,S6,S8",conflit,Le document fait de Taŋe la « jambe » et de Teingé le « front ». Les sources donnent teŋe / taηe = front pour les deux graphies. La jambe est attestée sous tanxare / tâ.
+37,Tange,pied,4,pied / jambe — graphie à confirmer,pied = ta ; pieds = taanu ; jambe = tanxare,"S1,S3,S5,S8",a_confirmer,"La base est ta (pied, jambe) ; le document note Tange. À faire confirmer avec le référent."
+38,Cuute,cuisse,4,non attesté,cuisse = toge ; togue ; togota,"S1,S2,S4,S5,S10",non_atteste,Forme absente des sources consultées.
+39,Tchuute,cuisse,4,non attesté,cuisse = toge ; togue ; togota,"S1,S2,S4,S5,S10",non_atteste,Forme absente des sources consultées.
+40,Kuntu-bunyi,genou,4,non attesté,genou = xurungo ; xurngo ; qúrúngò,"S1,S2,S3,S5,S8",non_atteste,Forme absente des sources consultées.
+41,Kuru,genou,4,genou (variante probable),xurungo ; xurngo ; qúrúngò,"S1,S2,S3,S5,S8",a_confirmer,"Aucune source ne note « kuru » seul ; la forme attestée est xurungo / qúrúngò, dont kuru peut être une réduction. À faire confirmer."
+42,Tange-golle,mollet,4,non attesté,mollet = ɲollenme,S4,non_atteste,Forme absente des sources consultées.
+43,Tange-muru,cheville,4,non attesté,cheville = taxaane ; sellinñelle,"S5,S8",non_atteste,Forme absente des sources consultées.
+44,Tange-soro,orteil,4,orteil (analyse structurale),tandoronme ; tandoore,"S1,S5,S8",a_confirmer,L'orteil est attesté sous tandoronme / tandoore ; « tange-soro » se lit comme « doigt de pied ». Graphie à confirmer.
+45,Biy'e,corps,5,non attesté dans ce sens,"corps = fate ; biye = ticket, billet","S1,S4,S5,S6,S7",corrige,Le corps est attesté sous fate. Le lexique ODA et la base interne donnent biye = billet (SNK-LEX-0529).
+46,Biye,corps,5,non attesté dans ce sens,"corps = fate ; biye = ticket, billet","S1,S4,S5,S6,S7",corrige,Même correction que Biy'e.
+47,Guru,peau,5,non attesté dans ce sens,peau = fate ; hate ; hàtê ; guruɲa = bassin,"S1,S3,S4,S5",corrige,La peau est attestée sous fate / hate. La forme proche guruɲa désigne le bassin.
+48,Kuuru,peau,5,non attesté dans ce sens,peau = fate ; hate ; hàtê ; guruɲa = bassin,"S1,S3,S4,S5",corrige,Même correction que Guru.
+49,Xill'e,os,5,os — graphie à confirmer,os = xotte ; qóttè,"S3,S4,S5",a_confirmer,L'os est attesté sous xotte / qóttè. Aucune source ne note « xill'e » ; le rapprochement repose sur la forme-source xotte.
+50,Kille,os,5,route,route = kille ; kìllê,"S1,S3,S7",corrige,"kille est la route dans toutes les sources consultées, y compris le corpus du référent et la base interne du projet. L'os est xotte."
+51,Yig'e,sang,5,non attesté dans ce sens,sang = fare ; fore ; hòrê ; yige = manger,"S1,S3,S5,S7",corrige,Le sang est attesté sous fare / fore / hòrê. La base yige est le verbe « manger ».
+52,Yige,sang,5,non attesté dans ce sens,sang = fare ; fore ; hòrê ; yige = manger,"S1,S3,S5,S7",corrige,Même correction que Yig'e.
+53,Tiy'e,chair / muscle,5,"viande, chair, muscle",tiye ; tíyè,"S1,S3,S4,S5,S10",confirme,Le document écrit « Chaire » ; la forme française est « chair ».
+54,Tiye,chair / muscle,5,"viande, chair, muscle",tiye ; tíyè,"S1,S3,S4,S5,S10",confirme,
