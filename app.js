@@ -780,21 +780,53 @@ async function speakResponse(text) {
   stopSpeech();
   ensureAudioUnlocked();
   const token = state.speechToken;
+
+  // Les formes {{pair:...}} sont les unités soninké explicitement produites
+  // par l'assistant. On les garde dans l'ordre de la réponse, sans lire le français.
   const forms = soninkeForms(text);
+  const spoken = new Set();
   let unavailable = 0;
+  let played = 0;
+
   for (const form of forms) {
-    const segments = buildSoninkePhraseSegments(form);
-    if (!segments.length) unavailable++;
-    for (const segment of segments) {
+    if (token !== state.speechToken) return;
+    const key = normalizeWord(form);
+    if (!key || spoken.has(key)) continue;
+    spoken.add(key);
+
+    // Priorité à un enregistrement complet (phrase ou expression), s'il existe.
+    const exact = findAudioInfo(form);
+    const segments = exact
+      ? [{ type: "audio", text: form, url: exact.url }]
+      : buildSoninkePhraseSegments(form);
+
+    // Pas de lecture tronquée : si un seul mot manque, on n'improvise pas le reste.
+    if (!segments.length) {
+      unavailable++;
+      continue;
+    }
+
+    for (let i = 0; i < segments.length; i++) {
       if (token !== state.speechToken) return;
-      if (!await playViaWebAudio(segment.url)) {
+      if (!await playViaWebAudio(segments[i].url)) {
         audioNotice("Lecture indisponible : vérifiez le son de l'appareil puis réessayez.");
         return;
       }
+      played++;
+      // Petite pause entre les mots assemblés ; pause plus longue après une expression.
+      if (i < segments.length - 1) {
+        await new Promise(resolve => setTimeout(resolve, 110));
+      }
     }
+    await new Promise(resolve => setTimeout(resolve, 230));
   }
-  if (unavailable || !forms.length) audioNotice("Certaines formes n'ont pas encore d'enregistrement de référence. Aucune voix de substitution n'est utilisée.");
-  if (token === state.speechToken) $$(".msg-action-btn.speaking").forEach(b => b.classList.remove("speaking"));
+
+  if (unavailable || !forms.length) {
+    audioNotice("Audio de référence manquant pour certaines formes. Aucune prononciation inventée ni voix de substitution : seuls les mots et phrases entièrement couverts par les enregistrements sont lus.");
+  } else if (played > 0) {
+    audioNotice("Lecture avec les enregistrements de référence disponibles. Les phrases composées sont assemblées mot à mot lorsque aucun audio complet de la phrase n'existe.");
+  }
+  if (token === state.speechToken) $(".msg-action-btn.speaking").forEach(b => b.classList.remove("speaking"));
 }
 
 // Traduction lexicale d'une phrase composée, mot à mot (sans jamais deviner)
