@@ -11,6 +11,7 @@
 
 // ── Constants ──
 const DATA_URL = "data/source/lexique-soninke-fr-base.csv";
+const HOMONYMS_URL = "data/source/lexique-homonymes-valides-2026-10-25.csv";
 const MANIFEST_URL = "data/source/manifest-577-review.csv";
 const AUDIO_AUDIT_URL = "reports/audio-transfer-audit.csv";
 const CANDIDATES_URL = "data/candidates/external-lexicon-candidates.csv";
@@ -3798,6 +3799,7 @@ async function loadAllData() {
     fiche4Csv,
     revueCsv,
     renvoisCsv,
+    homonymsCsv,
   ] = await Promise.all([
     fetchTextSafe(DATA_URL),
     fetchTextSafe(MANIFEST_URL),
@@ -3809,18 +3811,20 @@ async function loadAllData() {
     fetchTextSafe(FICHE_VAL_4_URL),
     fetchTextSafe(REVUE_DICT_URL),
     fetchTextSafe(RENVOIS_URL),
+    fetchTextSafe(HOMONYMS_URL),
   ]);
 
   const seenHeadwords = new Set();
   const seenVariants = new Set();
   const entries = [];
-  const pushEntry = (entry, { checkVariants = true } = {}) => {
+  const pushEntry = (entry, { checkVariants = true, allowHomonyms = false } = {}) => {
     const snk = String(entry.soninke || "").trim();
     const fr = String(entry.francais || "").trim();
     if (!snk || !fr) return;
     const snkKey = normalizeLexicalKey(snk);
-    if (!snkKey || seenHeadwords.has(snkKey)) return;
-    if (checkVariants && seenVariants.has(snkKey)) return;
+    if (!snkKey) return;
+    if (!allowHomonyms && seenHeadwords.has(snkKey)) return;
+    if (!allowHomonyms && checkVariants && seenVariants.has(snkKey)) return;
     seenHeadwords.add(snkKey);
     entries.push({ ...entry, soninke: snk, francais: fr });
   };
@@ -3937,6 +3941,23 @@ async function loadAllData() {
       exemple_original: row.notes || "",
       isCandidate: true,
     });
+  }
+
+  // 6. Homonymes explicitement arbitrés : garder chaque sens distinct, même à clé normalisée identique.
+  for (const row of parseCSV(homonymsCsv, ";")) {
+    pushEntry({
+      id: row.id,
+      soninke: row.soninke,
+      francais: row.francais,
+      categorie: row.categorie,
+      source: row.source,
+      statut: row.statut,
+      variantes: row.variantes || "",
+      exemple_original: row.exemple_original || "",
+      definition: row.definition || "",
+      definitionStatut: row.definition_statut || "",
+      isCandidate: false,
+    }, { checkVariants: false, allowHomonyms: true });
   }
 
   state.entries = entries;
