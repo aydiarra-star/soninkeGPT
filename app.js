@@ -4016,8 +4016,16 @@ async function loadAllData() {
       definition: row.definition || "",
       definitionStatut: row.definition_statut || "",
     };
-    if (existing && existing.isCandidate) {
-      Object.assign(existing, entry, { id: existing.id || entry.id });
+    if (existing && (existing.isCandidate || row.variantes || normalizeLexicalKey(existing.francais) === normalizeLexicalKey(francais))) {
+      const mergedVariants = [
+        ...String(existing.variantes || "").split(/[;,|]/),
+        ...String(row.variantes || "").split(/[;,|]/),
+      ].map((variant) => String(variant || "").trim()).filter(Boolean);
+      const uniqueVariants = [...new Map(mergedVariants.map((variant) => [normalizeLexicalKey(variant), variant])).values()];
+      Object.assign(existing, entry, {
+        id: existing.id || entry.id,
+        variantes: uniqueVariants.join("; "),
+      });
     } else if (existing) {
       pushEntry(entry, { checkVariants: false, allowHomonyms: true });
     } else {
