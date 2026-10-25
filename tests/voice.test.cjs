@@ -103,6 +103,10 @@ assert.equal(evaluate("soninkeForms('**Titre inconnu**').length"), 0);
     "Xaranmoxo": "Professeur",
     "Xatti": "Lait",
     "Xoso": "Mois, lune",
+    "Alikeebu": "Étrier",
+    "Alimaami": "Imam ; Alimamy (prénom masculin)",
+    "Aliyatiime": "Orphelin",
+    "Anniye": "Souhait",
   };
   for (const [form, french] of Object.entries(expectedValidatedList)) {
     const key = evaluate(`normalizeLexicalKey(${JSON.stringify(form)})`);
