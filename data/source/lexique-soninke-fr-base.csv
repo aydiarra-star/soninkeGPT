@@ -1481,4 +1481,4 @@ SNK-LEX-1479;kên;cela, celui-là, celle-là;pronom_demonstratif;"Validation ex
 SNK-LEX-1480;yèré;ici;adverbe_de_lieu;"Validation explicite du référent utilisateur le 2026-10-24; définition et prononciation validées";valide_par_referent;;;Adverbe indiquant le lieu proche du locuteur.;validee_par_referent
 SNK-LEX-1481;nó;là;adverbe_de_lieu;"Validation explicite du référent utilisateur le 2026-10-24; définition et prononciation validées";valide_par_referent;;;Adverbe indiquant un lieu désigné dans le contexte.;validee_par_referent
 SNK-LEX-1482;yaxaru;femmes;nom;"Validation explicite du référent utilisateur le 2026-10-24; définition et prononciation validées";valide_par_referent;;;Pluriel de yaxare : femmes.;validee_par_referent
-SNK-GRM-0013;In;je;pronom_personnel;correction_explicite_du_referent;fourni_par_referent;;;Pronom personnel sujet de première personne du singulier : je.;a_valider_audio
+SNK-GRM-0030;In;je;pronom_personnel;correction_explicite_du_referent;fourni_par_referent;;;Pronom personnel sujet de première personne du singulier : je.;a_valider_audio
