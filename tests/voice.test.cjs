@@ -107,7 +107,7 @@ assert.equal(evaluate("soninkeForms('**Titre inconnu**').length"), 0);
   assert(partialFallback && partialFallback.missingFrench.includes('zorbax'),
     'Les mots sans correspondance doivent être signalés sans bloquer toute la composition');
   const fallbackReply = evaluate("fallbackComposedPhrase('je mange le riz chaque jour')");
-  assert(/phrase composée automatiquement/i.test(fallbackReply) && /\\{\\{pair:/i.test(fallbackReply),
+  assert(/phrase composée automatiquement/i.test(fallbackReply) && /\{\{pair:/i.test(fallbackReply),
     'La réponse doit afficher une phrase composée et non seulement une liste de mots');
 
   // ── Composition grammaticale : Sujet + Auxiliaire + Objet + Verbe (corpus attesté) ──
