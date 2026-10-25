@@ -27,6 +27,12 @@ const evaluate = text => vm.runInContext(text, sandbox);
 assert.equal(evaluate("buildSoninkePhraseSegments('daga goli').length"), 2);
 assert.equal(evaluate("buildSoninkePhraseSegments('daga inconnu').length"), 0);
 assert.equal(evaluate("buildSoninkePhraseSegments('').length"), 0);
+assert.equal(evaluate("buildAvailableAudioSegments('daga inconnu goli').length"), 2,
+  'Les segments audio disponibles doivent être récupérés même si un mot manque');
+assert.equal(evaluate("buildAvailableAudioSegments('daga inconnu daga').length"), 2,
+  'La lecture partielle doit conserver les répétitions et leur ordre');
+assert.equal(evaluate("renderSoninkePair('daga inconnu goli', 'phrase indicative', 'phrase').includes('Écouter les segments')"), true,
+  'Une phrase composée avec des audios partiels doit proposer leur lecture');
 assert.equal(evaluate("explainFrench('**Xa wouy Diom**').includes('bonjour')"), true);
 assert.equal(evaluate("soninkeForms('**Titre inconnu**').length"), 0);
 
