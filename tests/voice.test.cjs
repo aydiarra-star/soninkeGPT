@@ -117,23 +117,23 @@ assert.equal(evaluate("soninkeForms('**Titre inconnu**').length"), 0);
   }
   // Traductions des 17 formes audio : variantes reliées au lemme canonique, sans doublon.
   const expectedAudioTranslations = {
-    "Beniyaamina": ["Benjamin", "candidat_source_a_valider"],
-    "burugutu": ["Passer à la flamme (une tête de mouton ou de poulet)", "candidat_source_a_valider"],
-    "burunqu": ["Destruction, effacement", "candidat_source_a_valider"],
-    "buya": ["Brûler, griller", "candidat_source_a_valider"],
-    "bunanbuna": ["Guêpe qui fait des nids en banco aux murs", "candidat_source_a_valider"],
-    "buruxu": ["Destruction, effacement (sens à confirmer)", "candidat_source_a_valider"],
-    "bugunde": ["Soustraction", "candidat_source_a_valider"],
-    "burubule": ["Brûlure, brûlis", "candidat_source_a_valider"],
-    "buxutindaana": ["Enleveur ; personne qui arrache (rattachement à confirmer)", "candidat_source_a_valider"],
+    "Beniyaamina": ["Benjamin", "valide_par_referent_linguistique"],
+    "burugutu": ["Passer à la flamme (une tête de mouton ou de poulet)", "valide_par_referent_linguistique"],
+    "burunqu": ["Destruction, effacement", "valide_par_referent_linguistique"],
+    "buya": ["Brûler, griller", "valide_par_referent_linguistique"],
+    "bunanbuna": ["Guêpe qui fait des nids en banco aux murs", "valide_par_referent_linguistique"],
+    "buruxu": ["Destruction, effacement", "valide_par_referent_linguistique"],
+    "bugunde": ["Soustraction", "valide_par_referent_linguistique"],
+    "burubule": ["Brûlure, brûlis", "valide_par_referent_linguistique"],
+    "buxutindaana": ["Arracheur", "valide_par_referent_linguistique"],
     "buyaade": ["Fer à marquer ; moule métallique pour marquer le bétail ou imprimer le cuir ; grillage à griller", "valide_par_referent_linguistique"],
-    "buxuti": ["Arracher, déraciner", "candidat_source_a_valider"],
-    "buugu": ["Fermenter, enfler, gonfler", "candidat_source_a_valider"],
-    "bukku": ["Sortir, partir", "candidat_source_a_valider"],
-    "buxutinde": ["Arrachage, déracinement (rattachement à confirmer)", "candidat_source_a_valider"],
-    "buyi": ["Brûler, griller", "candidat_source_a_valider"],
+    "buxuti": ["Arracher, déraciner", "valide_par_referent_linguistique"],
+    "buugu": ["Fermenter, enfler, gonfler", "valide_par_referent_linguistique"],
+    "bukku": ["Sortir, partir", "valide_par_referent_linguistique"],
+    "buxutinde": ["Arrachage, déracinement", "valide_par_referent_linguistique"],
+    "buyi": ["Brûler, griller", "valide_par_referent_linguistique"],
     "bulunŋe": ["Petite rue, ruelle ; vestibule", "valide_par_referent_linguistique"],
-    "bugundi": ["Enlever (sens exact à confirmer)", "candidat_source_a_valider"],
+    "bugundi": ["Enlever", "valide_par_referent_linguistique"],
   };
   for (const [form, [french, status]] of Object.entries(expectedAudioTranslations)) {
     const audio = evaluate("findAudioInfo(" + JSON.stringify(form) + ")");
@@ -144,6 +144,8 @@ assert.equal(evaluate("soninkeForms('**Titre inconnu**').length"), 0);
     assert.equal(audio.francais || "", french, "Wrong French translation for " + form);
   }
   assert.equal(Object.keys(expectedAudioTranslations).length, 17);
+  assert.equal(evaluate("lookupTerm('buxutin').exact.some(e => e.francais === 'Arraché' && e.statut === 'valide_par_referent_linguistique')"), true,
+    "La définition validée buxutin → arraché doit être accessible dans le lexique");
   // Les deux traductions déjà validées restent rattachées aux lemmes existants, sans doublons.
   assert.equal(evaluate("lookupTerm('biyaade').exact.filter(e => normalizeWord(e.soninke) === 'biyaade').length"), 1,
     "La forme canonique biyaade doit rester une seule entrée");
