@@ -695,11 +695,33 @@ function buildSoninkePhraseSegments(phrase) {
       const info = findAudioInfo(text);
       if (info) { match = { type: "audio", text, url: info.url, end }; break; }
     }
-    if (!match) return []; // Ne jamais prononcer une phrase tronquée comme complète.
+    if (!match) return []; // Ne jamais étiqueter une phrase incomplète comme audio intégral.
     segments.push(match);
     i = match.end;
   }
   return segments;
+}
+
+// Segments de référence disponibles, même si certains mots de la phrase n'ont
+// pas encore d'enregistrement. Leur ordre et leurs répétitions sont conservés.
+function buildAvailableAudioSegments(phrase) {
+  const words = String(phrase || "").replace(/[«»"“”.,!?;:()[\]]/g, " ").trim().split(/\s+/).filter(Boolean);
+  const found = [];
+  for (let i = 0; i < words.length;) {
+    let match = null;
+    for (let end = Math.min(words.length, i + 4); end > i; end--) {
+      const text = words.slice(i, end).join(" ");
+      const info = findAudioInfo(text);
+      if (info) { match = { type: "audio", text, url: info.url, end }; break; }
+    }
+    if (match) {
+      found.push(match);
+      i = match.end;
+    } else {
+      i++;
+    }
+  }
+  return found;
 }
 
 function audioNotice(text) {
@@ -729,8 +751,14 @@ async function playWordAudio(word, btn = null) {
     activeAudioBtn = btn;
   }
 
-  const segments = buildSoninkePhraseSegments(word);
+  let segments = buildSoninkePhraseSegments(word);
+  const isMultiword = String(word || "").trim().split(/\s+/).length > 1;
+  const isPartial = !segments.length && isMultiword;
+  if (isPartial) segments = buildAvailableAudioSegments(word);
   let playedAny = false;
+  if (isPartial && segments.length) {
+    audioNotice(`Lecture partielle de « ${word} » : seuls les segments déjà enregistrés sont lus, dans l'ordre de la phrase. Les mots sans audio restent silencieux.`);
+  }
   for (const seg of segments) {
     if (token !== state.speechToken) break;
     if (seg.type === "audio") {
@@ -739,7 +767,7 @@ async function playWordAudio(word, btn = null) {
     }
   }
 
-  if (!segments.length) audioNotice(`Aucun enregistrement de référence pour « ${word} ». Aucune voix de substitution n'est utilisée : l'audio doit être enregistré puis validé.`);
+  if (!segments.length) audioNotice(`Aucun enregistrement de référence disponible pour « ${word} ». Aucune voix de substitution n'est utilisée : l'audio doit être enregistré puis validé.`);
   if (btn && token === state.speechToken && activeAudioBtn === btn) {
     btn.classList.remove("playing");
     activeAudioBtn = null;
@@ -749,28 +777,14 @@ async function playWordAudio(word, btn = null) {
 
 // Extrait les segments disposant déjà d'un audio de référence dans une phrase composée
 function extractAvailableAudioSegments(phrase) {
-  const words = String(phrase || "").replace(/[«»"“”.,!?;:()[\]]/g, " ").trim().split(/\s+/).filter(Boolean);
-  const found = [];
+  const found = buildAvailableAudioSegments(phrase);
   const seen = new Set();
-  for (let i = 0; i < words.length;) {
-    let match = null;
-    for (let end = Math.min(words.length, i + 4); end > i; end--) {
-      const text = words.slice(i, end).join(" ");
-      const info = findAudioInfo(text);
-      if (info) { match = { text, url: info.url, end }; break; }
-    }
-    if (match) {
-      const k = normalizeWord(match.text);
-      if (!seen.has(k)) {
-        seen.add(k);
-        found.push(match);
-      }
-      i = match.end;
-    } else {
-      i++;
-    }
-  }
-  return found;
+  return found.filter((segment) => {
+    const key = normalizeWord(segment.text);
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
 }
 
 function soninkeForms(markdownText) {
@@ -2870,15 +2884,18 @@ function renderSoninkePair(rawSnk, rawFr, rawType) {
   const partialSegments = !hasFullAudio && snk.split(/\s+/).length > 1
     ? extractAvailableAudioSegments(snk)
     : [];
+  const hasPartialAudio = !hasFullAudio && partialSegments.length > 0;
   const type = ["mot", "phrase", "expression"].includes(rawType)
     ? rawType
     : snk.split(/\s+/).length > 1 ? "phrase" : "mot";
   const fav = isFavorite(snk, fr);
-  const audioLabel = hasFullAudio ? "Écouter" : "Audio à venir";
-  const audioCls = hasFullAudio ? "audio-play-btn" : "audio-play-btn audio-unavailable";
+  const audioLabel = hasFullAudio ? "Écouter" : hasPartialAudio ? "Écouter les segments" : "Audio à venir";
+  const audioCls = hasFullAudio || hasPartialAudio ? "audio-play-btn" : "audio-play-btn audio-unavailable";
   const audioTitle = hasFullAudio
     ? `Écouter « ${snk} » avec la voix de référence`
-    : `Aucun enregistrement complet pour « ${snk} » : aucun substitut synthétique n'est utilisé`;
+    : hasPartialAudio
+      ? `Lire dans l'ordre les segments audio disponibles de « ${snk} » ; certains mots n'ont pas encore d'enregistrement`
+      : `Aucun enregistrement complet pour « ${snk} » : aucun substitut synthétique n'est utilisé`;
   const partialHtml = partialSegments.map((seg) => {
     const w = esc(seg.text);
     const t = `Écouter « ${w} » avec la voix de référence`;
