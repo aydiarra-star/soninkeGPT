@@ -13,6 +13,7 @@
 const DATA_URL = "data/source/lexique-soninke-fr-base.csv";
 const HOMONYMS_URL = "data/source/lexique-homonymes-valides-2026-10-25.csv";
 const PRONOUNS_URL = "data/source/pronoms-personnels-valides-2026-10-25.csv";
+const VALIDATED_LIST_URL = "data/source/liste-lexicale-validee-2026-10-25.csv";
 const MANIFEST_URL = "data/source/manifest-577-review.csv";
 const AUDIO_AUDIT_URL = "reports/audio-transfer-audit.csv";
 const CANDIDATES_URL = "data/candidates/external-lexicon-candidates.csv";
@@ -3802,6 +3803,7 @@ async function loadAllData() {
     renvoisCsv,
     homonymsCsv,
     pronounsCsv,
+    validatedListCsv,
   ] = await Promise.all([
     fetchTextSafe(DATA_URL),
     fetchTextSafe(MANIFEST_URL),
@@ -3815,6 +3817,7 @@ async function loadAllData() {
     fetchTextSafe(RENVOIS_URL),
     fetchTextSafe(HOMONYMS_URL),
     fetchTextSafe(PRONOUNS_URL),
+    fetchTextSafe(VALIDATED_LIST_URL),
   ]);
 
   const seenHeadwords = new Set();
@@ -3987,6 +3990,36 @@ async function loadAllData() {
         definition: row.definition || "",
         definitionStatut: row.definition_statut || "",
       }, { checkVariants: false });
+    }
+  }
+
+  // 8. Liste lexicale validée par le référent, après contrôle des doublons du lexique de base.
+  // Met à jour les candidats de même forme; conserve les homonymes déjà validés en ajoutant le sens distinct.
+  for (const row of parseCSV(validatedListCsv, ";")) {
+    const key = normalizeLexicalKey(row.soninke || "");
+    const soninke = String(row.soninke || "").trim();
+    const francais = String(row.francais || "").trim();
+    if (!key || !soninke || !francais) continue;
+    const existing = entries.find((entry) => normalizeLexicalKey(entry.soninke) === key);
+    const validated = {
+      categorie: row.categorie || (existing ? existing.categorie : "") || "",
+      source: row.source || "Liste lexicale validée par le référent linguistique",
+      statut: "valide_par_referent_linguistique",
+      isCandidate: false,
+    };
+    const entry = {
+      id: row.id || uid(), soninke, francais, ...validated,
+      variantes: row.variantes || "",
+      exemple_original: row.exemple_original || "",
+      definition: row.definition || "",
+      definitionStatut: row.definition_statut || "",
+    };
+    if (existing && existing.isCandidate) {
+      Object.assign(existing, entry, { id: existing.id || entry.id });
+    } else if (existing) {
+      pushEntry(entry, { checkVariants: false, allowHomonyms: true });
+    } else {
+      pushEntry(entry, { checkVariants: false });
     }
   }
 
