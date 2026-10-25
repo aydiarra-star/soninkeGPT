@@ -40,7 +40,7 @@ assert.equal(evaluate("soninkeForms('**Titre inconnu**').length"), 0);
     assert(e.soninke && e.francais, `Incomplete entry: ${JSON.stringify(e)}`);
     assert(!seenIds.has(e.id), `Duplicate lexicon ID: ${e.id}`);
     seenIds.add(e.id);
-    const key = evaluate(`normalizeWord(${JSON.stringify(e.soninke)})`);
+    const key = evaluate(`normalizeLexicalKey(${JSON.stringify(e.soninke)})`);
     assert(!seenWords.has(key), `Duplicate Soninke headword in soninkeGPT: ${e.soninke} (${key})`);
     seenWords.add(key);
   }
