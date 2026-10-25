@@ -110,7 +110,8 @@ assert.equal(evaluate("soninkeForms('**Titre inconnu**').length"), 0);
     assert(matches.length >= 1, `Missing validated lexical entry: ${form} → ${french}`);
     assert(matches.some(e => e.statut === "valide_par_referent_linguistique" || /valide_par_referent_linguistique/.test(e.statut || "")),
       `Entry not marked as validated: ${form}`);
-  }  assert.equal(evaluate("lookupTerm('baano-ye').exact[0].soninke"), 'baano-ye');
+  }
+  assert.equal(evaluate("lookupTerm('baano-ye').exact[0].soninke"), 'baano-ye');
   assert.equal(evaluate("lookupTerm('segeñe').exact[0].francais"), 'ongle');
   assert(evaluate("lookupTerm('segene').exact[0].francais").includes('monter'));
 
