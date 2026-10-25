@@ -10873,7 +10873,7 @@
     {
       "text": "buxutindaana",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
+      "francais": "Enleveur ; personne qui arrache (rattachement à confirmer)",
       "url": "audio/generated/d84176df77b63e2f1c17a332.wav",
       "kind": "voice_clone_validated",
       "validation_prononciation": "validee_par_referent_linguistique",
@@ -10883,10 +10883,10 @@
       "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_date": "2026-10-24",
       "validated_by": "référent linguistique du projet (confirmation explicite de l’utilisateur)",
-      "traduction_statut": "a_identifier",
-      "lemme_canonique": "",
-      "note_traduction": "La source ne fournit aucune glose ni entrée principale exploitable.",
-      "source_traduction": "Dictionnaire soninké.docx; rapports de revue et de validation du lexique SoninkeGPT"
+      "traduction_statut": "candidat_source_a_valider",
+      "lemme_canonique": "boxotindaana",
+      "note_traduction": "Le dictionnaire soninké fourni laisse le renvoi vide; une autre version du lexique donne boxotindaana = enleveur. Vérifier si buxutindaana est bien une variante.",
+      "source_traduction": "Dictionnaire soninké.docx et autre version du Lexique Soninké du Mali"
     },
     {
       "text": "buude",
@@ -10977,7 +10977,7 @@
     {
       "text": "buxutinde",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
+      "francais": "Arrachage, déracinement (rattachement à confirmer)",
       "url": "audio/generated/e7533c3cf91b0b9274b7dcd5.wav",
       "kind": "voice_clone_validated",
       "validation_prononciation": "validee_par_referent_linguistique",
@@ -10987,10 +10987,10 @@
       "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_date": "2026-10-24",
       "validated_by": "référent linguistique du projet (confirmation explicite de l’utilisateur)",
-      "traduction_statut": "a_identifier",
-      "lemme_canonique": "",
-      "note_traduction": "La source ne fournit aucune glose ni entrée principale exploitable.",
-      "source_traduction": "Dictionnaire soninké.docx; rapports de revue et de validation du lexique SoninkeGPT"
+      "traduction_statut": "candidat_source_a_valider",
+      "lemme_canonique": "boxotinde",
+      "note_traduction": "Le dictionnaire soninké fourni laisse le renvoi vide; une autre version du lexique donne boxotinde = arrachage, déracinement. Vérifier si buxutinde est bien une variante.",
+      "source_traduction": "Dictionnaire soninké.docx et autre version du Lexique Soninké du Mali"
     },
     {
       "text": "buyi",
