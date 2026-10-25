@@ -90,6 +90,20 @@ assert.equal(evaluate("soninkeForms('**Titre inconnu**').length"), 0);
     assert(!/[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}]/u.test(reply), `Emoji décoratif dans la réponse : ${prompt}`);
   }
 
+  // ── Composition lexicale de secours : garder l'ordre, les répétitions et signaler les mots absents ──
+  const lexicalFallback = evaluate("composeLexicalPhraseFallback('je mange le riz chaque jour')");
+  assert(lexicalFallback && lexicalFallback.sentence, 'Une phrase multi-mots doit être composée avec les mots disponibles');
+  assert(/n|maro|yige|koota/i.test(lexicalFallback.sentence), `Les mots disponibles doivent être réutilisés : ${lexicalFallback.sentence}`);
+  const repeatedFallback = evaluate("composeLexicalPhraseFallback('je mange le riz et je mange')");
+  assert(repeatedFallback && repeatedFallback.mapped.filter(x => x.token === 'je').length >= 2,
+    'La composition ne doit pas supprimer les répétitions de mots');
+  const partialFallback = evaluate("composeLexicalPhraseFallback('je mange un zorbax')");
+  assert(partialFallback && partialFallback.missingFrench.includes('zorbax'),
+    'Les mots sans correspondance doivent être signalés sans bloquer toute la composition');
+  const fallbackReply = evaluate("fallbackComposedPhrase('je mange le riz chaque jour')");
+  assert(/phrase composée automatiquement/i.test(fallbackReply) && /\\{\\{pair:/i.test(fallbackReply),
+    'La réponse doit afficher une phrase composée et non seulement une liste de mots');
+
   // ── Composition grammaticale : Sujet + Auxiliaire + Objet + Verbe (corpus attesté) ──
   // Inaccompli transitif : S + wa + O + V(-na/-ne/-ni)
   const pres = evaluate("generateResponse('Traduis « je mange le riz chaque jour » en soninké')");
