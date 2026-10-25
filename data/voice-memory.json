@@ -8907,20 +8907,20 @@
       "url": "audio/generated/5ced6037483472b2e1e04b7a.wav",
       "kind": "voice_clone_validated",
       "pronunciation_validation": "validated_by_linguistic_referent",
-      "translation_validation": "unresolved_no_reliable_translation",
+      "translation_validation": "validated_by_linguistic_referent",
       "validation_batch": "dictionary-9-2026-10",
-      "linguistic_validation": "reviewed_translation_pending",
+      "linguistic_validation": "translation_validated_by_referent",
       "validation_date": "2026-10-24",
       "validated_by": "référent linguistique du projet (confirmation explicite de l’utilisateur)",
-      "translation_text_missing": true,
+      "translation_text_missing": false,
       "validation_prononciation": "validee_par_referent_linguistique",
       "date_validation_prononciation": "2026-10-24",
       "validation_prononciation_source": "Confirmation explicite de l’utilisateur : prononciation validée",
       "publication_status": "imported_to_main",
-      "traduction_statut": "candidat_source_a_valider",
+      "traduction_statut": "valide_par_referent_linguistique",
       "lemme_canonique": "Beniyaamina",
-      "note_traduction": "Nom propre relevé dans le Dictionnaire soninké.docx; à confirmer par le référent.",
-      "source_traduction": "Dictionnaire soninké.docx; rapports de revue et de validation du lexique SoninkeGPT"
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : Beniyaamina.",
+      "source_traduction": "Dictionnaire soninké.docx; rapports de revue et de validation du lexique SoninkeGPT; Validation explicite du référent linguistique, 2026-10-25"
     },
     {
       "text": "biyaade",
@@ -9791,10 +9791,13 @@
       "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_date": "2026-10-24",
       "validated_by": "référent linguistique du projet (confirmation explicite de l’utilisateur)",
-      "traduction_statut": "candidat_source_a_valider",
+      "traduction_statut": "valide_par_referent_linguistique",
       "lemme_canonique": "burubutu",
-      "note_traduction": "Renvoi source vers burubutu; graphie et sens exact à confirmer.",
-      "source_traduction": "Dictionnaire soninké.docx; rapports de revue et de validation du lexique SoninkeGPT"
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : burubutu.",
+      "source_traduction": "Dictionnaire soninké.docx; rapports de revue et de validation du lexique SoninkeGPT; Validation explicite du référent linguistique, 2026-10-25",
+      "translation_validation": "validated_by_linguistic_referent",
+      "linguistic_validation": "translation_validated_by_referent",
+      "translation_text_missing": false
     },
     {
       "text": "butte",
@@ -9879,10 +9882,13 @@
       "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_date": "2026-10-24",
       "validated_by": "référent linguistique du projet (confirmation explicite de l’utilisateur)",
-      "traduction_statut": "candidat_source_a_valider",
+      "traduction_statut": "valide_par_referent_linguistique",
       "lemme_canonique": "buruxa",
-      "note_traduction": "Variante signalée de buruxa; catégorie et sens à confirmer.",
-      "source_traduction": "Dictionnaire soninké.docx; rapports de revue et de validation du lexique SoninkeGPT"
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : buruxa.",
+      "source_traduction": "Dictionnaire soninké.docx; rapports de revue et de validation du lexique SoninkeGPT; Validation explicite du référent linguistique, 2026-10-25",
+      "translation_validation": "validated_by_linguistic_referent",
+      "linguistic_validation": "translation_validated_by_referent",
+      "translation_text_missing": false
     },
     {
       "text": "buqi",
@@ -10009,10 +10015,13 @@
       "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_date": "2026-10-24",
       "validated_by": "référent linguistique du projet (confirmation explicite de l’utilisateur)",
-      "traduction_statut": "candidat_source_a_valider",
+      "traduction_statut": "valide_par_referent_linguistique",
       "lemme_canonique": "biyi",
-      "note_traduction": "Variante de biyi; ne pas créer de nouvelle entrée avant contrôle.",
-      "source_traduction": "Dictionnaire soninké.docx; rapports de revue et de validation du lexique SoninkeGPT"
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : biyi.",
+      "source_traduction": "Dictionnaire soninké.docx; rapports de revue et de validation du lexique SoninkeGPT; Validation explicite du référent linguistique, 2026-10-25",
+      "translation_validation": "validated_by_linguistic_referent",
+      "linguistic_validation": "translation_validated_by_referent",
+      "translation_text_missing": false
     },
     {
       "text": "businka",
@@ -10447,10 +10456,13 @@
       "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_date": "2026-10-24",
       "validated_by": "référent linguistique du projet (confirmation explicite de l’utilisateur)",
-      "traduction_statut": "candidat_source_a_valider",
+      "traduction_statut": "valide_par_referent_linguistique",
       "lemme_canonique": "bununbuna",
-      "note_traduction": "Variante de bununbuna; traduction issue du dictionnaire, validation lexicale requise.",
-      "source_traduction": "Dictionnaire soninké.docx; rapports de revue et de validation du lexique SoninkeGPT"
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : bununbuna.",
+      "source_traduction": "Dictionnaire soninké.docx; rapports de revue et de validation du lexique SoninkeGPT; Validation explicite du référent linguistique, 2026-10-25",
+      "translation_validation": "validated_by_linguistic_referent",
+      "linguistic_validation": "translation_validated_by_referent",
+      "translation_text_missing": false
     },
     {
       "text": "bunbu",
@@ -10567,7 +10579,7 @@
     {
       "text": "buruxu",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "Destruction, effacement (sens à confirmer)",
+      "francais": "Destruction, effacement",
       "url": "audio/generated/9197dd96a1c98ef898cfefde.wav",
       "kind": "voice_clone_validated",
       "validation_prononciation": "validee_par_referent_linguistique",
@@ -10577,10 +10589,13 @@
       "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_date": "2026-10-24",
       "validated_by": "référent linguistique du projet (confirmation explicite de l’utilisateur)",
-      "traduction_statut": "candidat_source_a_valider",
+      "traduction_statut": "valide_par_referent_linguistique",
       "lemme_canonique": "buruxa",
-      "note_traduction": "Variante signalée de buruxa; le dictionnaire présente un renvoi verbal ambigu.",
-      "source_traduction": "Dictionnaire soninké.docx; rapports de revue et de validation du lexique SoninkeGPT"
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : buruxa.",
+      "source_traduction": "Dictionnaire soninké.docx; rapports de revue et de validation du lexique SoninkeGPT; Validation explicite du référent linguistique, 2026-10-25",
+      "translation_validation": "validated_by_linguistic_referent",
+      "linguistic_validation": "translation_validated_by_referent",
+      "translation_text_missing": false
     },
     {
       "text": "bulu",
@@ -10609,10 +10624,13 @@
       "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_date": "2026-10-24",
       "validated_by": "référent linguistique du projet (confirmation explicite de l’utilisateur)",
-      "traduction_statut": "candidat_source_a_valider",
+      "traduction_statut": "valide_par_referent_linguistique",
       "lemme_canonique": "bagande",
-      "note_traduction": "Variante de bagande; catégorie nominale selon la source.",
-      "source_traduction": "Dictionnaire soninké.docx; rapports de revue et de validation du lexique SoninkeGPT"
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : bagande.",
+      "source_traduction": "Dictionnaire soninké.docx; rapports de revue et de validation du lexique SoninkeGPT; Validation explicite du référent linguistique, 2026-10-25",
+      "translation_validation": "validated_by_linguistic_referent",
+      "linguistic_validation": "translation_validated_by_referent",
+      "translation_text_missing": false
     },
     {
       "text": "bulla",
@@ -10865,15 +10883,18 @@
       "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_date": "2026-10-24",
       "validated_by": "référent linguistique du projet (confirmation explicite de l’utilisateur)",
-      "traduction_statut": "candidat_source_a_valider",
+      "traduction_statut": "valide_par_referent_linguistique",
       "lemme_canonique": "buyinbuye",
-      "note_traduction": "Variante de buyinbuye; sens source à confirmer.",
-      "source_traduction": "Dictionnaire soninké.docx; rapports de revue et de validation du lexique SoninkeGPT"
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : buyinbuye.",
+      "source_traduction": "Dictionnaire soninké.docx; rapports de revue et de validation du lexique SoninkeGPT; Validation explicite du référent linguistique, 2026-10-25",
+      "translation_validation": "validated_by_linguistic_referent",
+      "linguistic_validation": "translation_validated_by_referent",
+      "translation_text_missing": false
     },
     {
       "text": "buxutindaana",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "Enleveur ; personne qui arrache (rattachement à confirmer)",
+      "francais": "Arracheur",
       "url": "audio/generated/d84176df77b63e2f1c17a332.wav",
       "kind": "voice_clone_validated",
       "validation_prononciation": "validee_par_referent_linguistique",
@@ -10883,10 +10904,13 @@
       "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_date": "2026-10-24",
       "validated_by": "référent linguistique du projet (confirmation explicite de l’utilisateur)",
-      "traduction_statut": "candidat_source_a_valider",
+      "traduction_statut": "valide_par_referent_linguistique",
       "lemme_canonique": "boxotindaana",
-      "note_traduction": "Le dictionnaire soninké fourni laisse le renvoi vide; une autre version du lexique donne boxotindaana = enleveur. Vérifier si buxutindaana est bien une variante.",
-      "source_traduction": "Dictionnaire soninké.docx; Lexique Soninké du Mali, https://livreur2soleil.com/yms/Ebooks/Mauritanie/hassanya/Soninke/Lexique%20Sonink%C3%A9%20%28Mali%29-Fran%C3%A7ais-Anglais.pdf"
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : boxotindaana.",
+      "source_traduction": "Dictionnaire soninké.docx; Lexique Soninké du Mali, https://livreur2soleil.com/yms/Ebooks/Mauritanie/hassanya/Soninke/Lexique%20Sonink%C3%A9%20%28Mali%29-Fran%C3%A7ais-Anglais.pdf; Validation explicite du référent linguistique, 2026-10-25",
+      "translation_validation": "validated_by_linguistic_referent",
+      "linguistic_validation": "translation_validated_by_referent",
+      "translation_text_missing": false
     },
     {
       "text": "buude",
@@ -10917,8 +10941,11 @@
       "validated_by": "référent linguistique du projet (confirmation explicite de l’utilisateur)",
       "traduction_statut": "valide_par_referent_linguistique",
       "lemme_canonique": "biyaade",
-      "note_traduction": "Traduction confirmée dans la fiche de validation du référent; variante de biyaade.",
-      "source_traduction": "Dictionnaire soninké.docx; rapports de revue et de validation du lexique SoninkeGPT"
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : biyaade.",
+      "source_traduction": "Dictionnaire soninké.docx; rapports de revue et de validation du lexique SoninkeGPT; Validation explicite du référent linguistique, 2026-10-25",
+      "translation_validation": "validated_by_linguistic_referent",
+      "linguistic_validation": "translation_validated_by_referent",
+      "translation_text_missing": false
     },
     {
       "text": "buxuti",
@@ -10933,10 +10960,13 @@
       "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_date": "2026-10-24",
       "validated_by": "référent linguistique du projet (confirmation explicite de l’utilisateur)",
-      "traduction_statut": "candidat_source_a_valider",
+      "traduction_statut": "valide_par_referent_linguistique",
       "lemme_canonique": "boxoti",
-      "note_traduction": "Variante de boxoti; traduction issue du dictionnaire, validation lexicale requise.",
-      "source_traduction": "Dictionnaire soninké.docx; rapports de revue et de validation du lexique SoninkeGPT"
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : boxoti.",
+      "source_traduction": "Dictionnaire soninké.docx; rapports de revue et de validation du lexique SoninkeGPT; Validation explicite du référent linguistique, 2026-10-25",
+      "translation_validation": "validated_by_linguistic_referent",
+      "linguistic_validation": "translation_validated_by_referent",
+      "translation_text_missing": false
     },
     {
       "text": "buugu",
@@ -10951,10 +10981,13 @@
       "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_date": "2026-10-24",
       "validated_by": "référent linguistique du projet (confirmation explicite de l’utilisateur)",
-      "traduction_statut": "candidat_source_a_valider",
+      "traduction_statut": "valide_par_referent_linguistique",
       "lemme_canonique": "buuku",
-      "note_traduction": "Variante de buuku; traduction issue du dictionnaire, validation lexicale requise.",
-      "source_traduction": "Dictionnaire soninké.docx; rapports de revue et de validation du lexique SoninkeGPT"
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : buuku.",
+      "source_traduction": "Dictionnaire soninké.docx; rapports de revue et de validation du lexique SoninkeGPT; Validation explicite du référent linguistique, 2026-10-25",
+      "translation_validation": "validated_by_linguistic_referent",
+      "linguistic_validation": "translation_validated_by_referent",
+      "translation_text_missing": false
     },
     {
       "text": "bukku",
@@ -10969,15 +11002,18 @@
       "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_date": "2026-10-24",
       "validated_by": "référent linguistique du projet (confirmation explicite de l’utilisateur)",
-      "traduction_statut": "candidat_source_a_valider",
+      "traduction_statut": "valide_par_referent_linguistique",
       "lemme_canonique": "bogu",
-      "note_traduction": "Variante de bogu; traduction issue du dictionnaire, validation lexicale requise.",
-      "source_traduction": "Dictionnaire soninké.docx; rapports de revue et de validation du lexique SoninkeGPT"
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : bogu.",
+      "source_traduction": "Dictionnaire soninké.docx; rapports de revue et de validation du lexique SoninkeGPT; Validation explicite du référent linguistique, 2026-10-25",
+      "translation_validation": "validated_by_linguistic_referent",
+      "linguistic_validation": "translation_validated_by_referent",
+      "translation_text_missing": false
     },
     {
       "text": "buxutinde",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "Arrachage, déracinement (rattachement à confirmer)",
+      "francais": "Arrachage, déracinement",
       "url": "audio/generated/e7533c3cf91b0b9274b7dcd5.wav",
       "kind": "voice_clone_validated",
       "validation_prononciation": "validee_par_referent_linguistique",
@@ -10987,10 +11023,13 @@
       "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_date": "2026-10-24",
       "validated_by": "référent linguistique du projet (confirmation explicite de l’utilisateur)",
-      "traduction_statut": "candidat_source_a_valider",
+      "traduction_statut": "valide_par_referent_linguistique",
       "lemme_canonique": "boxotinde",
-      "note_traduction": "Le dictionnaire soninké fourni laisse le renvoi vide; une autre version du lexique donne boxotinde = arrachage, déracinement. Vérifier si buxutinde est bien une variante.",
-      "source_traduction": "Dictionnaire soninké.docx; Lexique Soninké du Mali, https://livreur2soleil.com/yms/Ebooks/Mauritanie/hassanya/Soninke/Lexique%20Sonink%C3%A9%20%28Mali%29-Fran%C3%A7ais-Anglais.pdf"
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : boxotinde.",
+      "source_traduction": "Dictionnaire soninké.docx; Lexique Soninké du Mali, https://livreur2soleil.com/yms/Ebooks/Mauritanie/hassanya/Soninke/Lexique%20Sonink%C3%A9%20%28Mali%29-Fran%C3%A7ais-Anglais.pdf; Validation explicite du référent linguistique, 2026-10-25",
+      "translation_validation": "validated_by_linguistic_referent",
+      "linguistic_validation": "translation_validated_by_referent",
+      "translation_text_missing": false
     },
     {
       "text": "buyi",
@@ -11005,10 +11044,13 @@
       "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_date": "2026-10-24",
       "validated_by": "référent linguistique du projet (confirmation explicite de l’utilisateur)",
-      "traduction_statut": "candidat_source_a_valider",
+      "traduction_statut": "valide_par_referent_linguistique",
       "lemme_canonique": "biyi",
-      "note_traduction": "Renvoi vers biyi; ne pas créer de doublon.",
-      "source_traduction": "Dictionnaire soninké.docx; rapports de revue et de validation du lexique SoninkeGPT"
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : biyi.",
+      "source_traduction": "Dictionnaire soninké.docx; rapports de revue et de validation du lexique SoninkeGPT; Validation explicite du référent linguistique, 2026-10-25",
+      "translation_validation": "validated_by_linguistic_referent",
+      "linguistic_validation": "translation_validated_by_referent",
+      "translation_text_missing": false
     },
     {
       "text": "buruju",
@@ -11081,13 +11123,16 @@
       "validated_by": "référent linguistique du projet (confirmation explicite de l’utilisateur)",
       "traduction_statut": "valide_par_referent_linguistique",
       "lemme_canonique": "bolonŋe",
-      "note_traduction": "Traduction confirmée dans la fiche de validation du référent; variante de bolonŋe.",
-      "source_traduction": "Dictionnaire soninké.docx; rapports de revue et de validation du lexique SoninkeGPT"
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : bolonŋe.",
+      "source_traduction": "Dictionnaire soninké.docx; rapports de revue et de validation du lexique SoninkeGPT; Validation explicite du référent linguistique, 2026-10-25",
+      "translation_validation": "validated_by_linguistic_referent",
+      "linguistic_validation": "translation_validated_by_referent",
+      "translation_text_missing": false
     },
     {
       "text": "bugundi",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "Enlever (sens exact à confirmer)",
+      "francais": "Enlever",
       "url": "audio/generated/f21d3623e3a23441728a5cbc.wav",
       "kind": "voice_clone_validated",
       "validation_prononciation": "validee_par_referent_linguistique",
@@ -11097,10 +11142,13 @@
       "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_date": "2026-10-24",
       "validated_by": "référent linguistique du projet (confirmation explicite de l’utilisateur)",
-      "traduction_statut": "candidat_source_a_valider",
+      "traduction_statut": "valide_par_referent_linguistique",
       "lemme_canonique": "bagandi",
-      "note_traduction": "Variante renvoyée à bagandi; la glose source est partiellement corrompue.",
-      "source_traduction": "Dictionnaire soninké.docx; rapports de revue et de validation du lexique SoninkeGPT"
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : bagandi.",
+      "source_traduction": "Dictionnaire soninké.docx; rapports de revue et de validation du lexique SoninkeGPT; Validation explicite du référent linguistique, 2026-10-25",
+      "translation_validation": "validated_by_linguistic_referent",
+      "linguistic_validation": "translation_validated_by_referent",
+      "translation_text_missing": false
     },
     {
       "text": "bunne",
@@ -11777,20 +11825,41 @@
     {
       "text": "bugunde",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/92be7a2efb5c4fdd39dbab4c.wav"
+      "francais": "Soustraction",
+      "url": "audio/generated/92be7a2efb5c4fdd39dbab4c.wav",
+      "lemme_canonique": "bagande",
+      "traduction_statut": "valide_par_referent_linguistique",
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : bagande.",
+      "source_traduction": "Validation explicite du référent linguistique, 2026-10-25",
+      "translation_validation": "validated_by_linguistic_referent",
+      "linguistic_validation": "translation_validated_by_referent",
+      "translation_text_missing": false
     },
     {
       "text": "bugundi",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/f21d3623e3a23441728a5cbc.wav"
+      "francais": "Enlever",
+      "url": "audio/generated/f21d3623e3a23441728a5cbc.wav",
+      "lemme_canonique": "bagandi",
+      "traduction_statut": "valide_par_referent_linguistique",
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : bagandi.",
+      "source_traduction": "Validation explicite du référent linguistique, 2026-10-25",
+      "translation_validation": "validated_by_linguistic_referent",
+      "linguistic_validation": "translation_validated_by_referent",
+      "translation_text_missing": false
     },
     {
       "text": "bukku",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/e74eb3b4de1e582ee8e5a42d.wav"
+      "francais": "Sortir, partir",
+      "url": "audio/generated/e74eb3b4de1e582ee8e5a42d.wav",
+      "lemme_canonique": "bogu",
+      "traduction_statut": "valide_par_referent_linguistique",
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : bogu.",
+      "source_traduction": "Validation explicite du référent linguistique, 2026-10-25",
+      "translation_validation": "validated_by_linguistic_referent",
+      "linguistic_validation": "translation_validated_by_referent",
+      "translation_text_missing": false
     },
     {
       "text": "bula",
@@ -11849,8 +11918,15 @@
     {
       "text": "bulunŋe",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/ee72eb7db8310b03161fc36d.wav"
+      "francais": "Petite rue, ruelle ; vestibule",
+      "url": "audio/generated/ee72eb7db8310b03161fc36d.wav",
+      "lemme_canonique": "bolonŋe",
+      "traduction_statut": "valide_par_referent_linguistique",
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : bolonŋe.",
+      "source_traduction": "Validation explicite du référent linguistique, 2026-10-25",
+      "translation_validation": "validated_by_linguistic_referent",
+      "linguistic_validation": "translation_validated_by_referent",
+      "translation_text_missing": false
     },
     {
       "text": "buna",
@@ -11867,8 +11943,15 @@
     {
       "text": "bunanbuna",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/7a22e591504b7762bf4d349e.wav"
+      "francais": "Guêpe qui fait des nids en banco aux murs",
+      "url": "audio/generated/7a22e591504b7762bf4d349e.wav",
+      "lemme_canonique": "bununbuna",
+      "traduction_statut": "valide_par_referent_linguistique",
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : bununbuna.",
+      "source_traduction": "Validation explicite du référent linguistique, 2026-10-25",
+      "translation_validation": "validated_by_linguistic_referent",
+      "linguistic_validation": "translation_validated_by_referent",
+      "translation_text_missing": false
     },
     {
       "text": "bunbu",
@@ -11993,8 +12076,15 @@
     {
       "text": "burubule",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/d4fb827f4c9036f9b720d8b4.wav"
+      "francais": "Brûlure, brûlis",
+      "url": "audio/generated/d4fb827f4c9036f9b720d8b4.wav",
+      "lemme_canonique": "buyinbuye",
+      "traduction_statut": "valide_par_referent_linguistique",
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : buyinbuye.",
+      "source_traduction": "Validation explicite du référent linguistique, 2026-10-25",
+      "translation_validation": "validated_by_linguistic_referent",
+      "linguistic_validation": "translation_validated_by_referent",
+      "translation_text_missing": false
     },
     {
       "text": "burubutu",
@@ -12029,8 +12119,15 @@
     {
       "text": "burugutu",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/18c628f0a0d9086c487285f6.wav"
+      "francais": "Passer à la flamme (une tête de mouton ou de poulet)",
+      "url": "audio/generated/18c628f0a0d9086c487285f6.wav",
+      "lemme_canonique": "burubutu",
+      "traduction_statut": "valide_par_referent_linguistique",
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : burubutu.",
+      "source_traduction": "Validation explicite du référent linguistique, 2026-10-25",
+      "translation_validation": "validated_by_linguistic_referent",
+      "linguistic_validation": "translation_validated_by_referent",
+      "translation_text_missing": false
     },
     {
       "text": "buruju",
@@ -12041,8 +12138,15 @@
     {
       "text": "burunqu",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/231be88ca58ef6c2d06f36d8.wav"
+      "francais": "Destruction, effacement",
+      "url": "audio/generated/231be88ca58ef6c2d06f36d8.wav",
+      "lemme_canonique": "buruxa",
+      "traduction_statut": "valide_par_referent_linguistique",
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : buruxa.",
+      "source_traduction": "Validation explicite du référent linguistique, 2026-10-25",
+      "translation_validation": "validated_by_linguistic_referent",
+      "linguistic_validation": "translation_validated_by_referent",
+      "translation_text_missing": false
     },
     {
       "text": "buruta",
@@ -12083,8 +12187,15 @@
     {
       "text": "buruxu",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/9197dd96a1c98ef898cfefde.wav"
+      "francais": "Destruction, effacement",
+      "url": "audio/generated/9197dd96a1c98ef898cfefde.wav",
+      "lemme_canonique": "buruxa",
+      "traduction_statut": "valide_par_referent_linguistique",
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : buruxa.",
+      "source_traduction": "Validation explicite du référent linguistique, 2026-10-25",
+      "translation_validation": "validated_by_linguistic_referent",
+      "linguistic_validation": "translation_validated_by_referent",
+      "translation_text_missing": false
     },
     {
       "text": "buruxunde",
@@ -12203,8 +12314,15 @@
     {
       "text": "buugu",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/e65261f2ba9be3d9a83ddc22.wav"
+      "francais": "Fermenter, enfler, gonfler",
+      "url": "audio/generated/e65261f2ba9be3d9a83ddc22.wav",
+      "lemme_canonique": "buuku",
+      "traduction_statut": "valide_par_referent_linguistique",
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : buuku.",
+      "source_traduction": "Validation explicite du référent linguistique, 2026-10-25",
+      "translation_validation": "validated_by_linguistic_referent",
+      "linguistic_validation": "translation_validated_by_referent",
+      "translation_text_missing": false
     },
     {
       "text": "buuku",
@@ -12263,32 +12381,67 @@
     {
       "text": "buxuti",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/dc907dc22833dd5959eec670.wav"
+      "francais": "Arracher, déraciner",
+      "url": "audio/generated/dc907dc22833dd5959eec670.wav",
+      "lemme_canonique": "boxoti",
+      "traduction_statut": "valide_par_referent_linguistique",
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : boxoti.",
+      "source_traduction": "Validation explicite du référent linguistique, 2026-10-25",
+      "translation_validation": "validated_by_linguistic_referent",
+      "linguistic_validation": "translation_validated_by_referent",
+      "translation_text_missing": false
     },
     {
       "text": "buxutindaana",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/d84176df77b63e2f1c17a332.wav"
+      "francais": "Arracheur",
+      "url": "audio/generated/d84176df77b63e2f1c17a332.wav",
+      "lemme_canonique": "boxotindaana",
+      "traduction_statut": "valide_par_referent_linguistique",
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : boxotindaana.",
+      "source_traduction": "Validation explicite du référent linguistique, 2026-10-25",
+      "translation_validation": "validated_by_linguistic_referent",
+      "linguistic_validation": "translation_validated_by_referent",
+      "translation_text_missing": false
     },
     {
       "text": "buxutinde",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/e7533c3cf91b0b9274b7dcd5.wav"
+      "francais": "Arrachage, déracinement",
+      "url": "audio/generated/e7533c3cf91b0b9274b7dcd5.wav",
+      "lemme_canonique": "boxotinde",
+      "traduction_statut": "valide_par_referent_linguistique",
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : boxotinde.",
+      "source_traduction": "Validation explicite du référent linguistique, 2026-10-25",
+      "translation_validation": "validated_by_linguistic_referent",
+      "linguistic_validation": "translation_validated_by_referent",
+      "translation_text_missing": false
     },
     {
       "text": "buya",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/39bf03440f6e60cd6eb1111a.wav"
+      "francais": "Brûler, griller",
+      "url": "audio/generated/39bf03440f6e60cd6eb1111a.wav",
+      "lemme_canonique": "biyi",
+      "traduction_statut": "valide_par_referent_linguistique",
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : biyi.",
+      "source_traduction": "Validation explicite du référent linguistique, 2026-10-25",
+      "translation_validation": "validated_by_linguistic_referent",
+      "linguistic_validation": "translation_validated_by_referent",
+      "translation_text_missing": false
     },
     {
       "text": "buyaade",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/da354fff6b48737c3c2b6d67.wav"
+      "francais": "Fer à marquer ; moule métallique pour marquer le bétail ou imprimer le cuir ; grillage à griller",
+      "url": "audio/generated/da354fff6b48737c3c2b6d67.wav",
+      "lemme_canonique": "biyaade",
+      "traduction_statut": "valide_par_referent_linguistique",
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : biyaade.",
+      "source_traduction": "Validation explicite du référent linguistique, 2026-10-25",
+      "translation_validation": "validated_by_linguistic_referent",
+      "linguistic_validation": "translation_validated_by_referent",
+      "translation_text_missing": false
     },
     {
       "text": "buyagi",
@@ -12299,8 +12452,15 @@
     {
       "text": "buyi",
       "source": "data/source/reports/controle-renvois-dictionnaire-soninke-2026-10-21.csv",
-      "francais": "",
-      "url": "audio/generated/e8a69e236d5102130e389a93.wav"
+      "francais": "Brûler, griller",
+      "url": "audio/generated/e8a69e236d5102130e389a93.wav",
+      "lemme_canonique": "biyi",
+      "traduction_statut": "valide_par_referent_linguistique",
+      "note_traduction": "Traduction validée explicitement par le référent linguistique; lemme canonique : biyi.",
+      "source_traduction": "Validation explicite du référent linguistique, 2026-10-25",
+      "translation_validation": "validated_by_linguistic_referent",
+      "linguistic_validation": "translation_validated_by_referent",
+      "translation_text_missing": false
     },
     {
       "text": "buyinbuye",
