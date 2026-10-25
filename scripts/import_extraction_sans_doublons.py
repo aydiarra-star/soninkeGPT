@@ -51,7 +51,7 @@ def sans_accents_vocaliques(mot: str) -> str:
     de n : *segeñe* « ongle » et *segene* « monter » ne sont pas des doublons.
     """
     texte = unicodedata.normalize("NFD", mot)
-    marques_tonales = {"\\u0300", "\\u0301", "\\u0302", "\\u0304", "\\u030c"}
+    marques_tonales = {"\u0300", "\u0301", "\u0302", "\u0304", "\u030c"}
     sortie = []
     for c in texte:
         if unicodedata.combining(c):
