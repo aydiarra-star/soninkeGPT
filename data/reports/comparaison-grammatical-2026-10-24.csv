@@ -1,0 +1,488 @@
+id_provisoire;forme_soninke;correspondance;existing_id;existing_gloss;action_proposee;statut_validation;niveau_de_confiance
+GRM2-0001;nke;deja_dans_base;SNK-GRM-0001;je;Ne pas créer de doublon : compléter l'entrée existante SNK-GRM-0001 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0002;anke;deja_dans_base;SNK-GRM-0002;tu;Ne pas créer de doublon : compléter l'entrée existante SNK-GRM-0002 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0003;ake;deja_dans_base;SNK-GRM-0003;il / elle;Ne pas créer de doublon : compléter l'entrée existante SNK-GRM-0003 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0004;oku;deja_dans_base;SNK-GRM-0004;nous;Ne pas créer de doublon : compléter l'entrée existante SNK-GRM-0004 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0005;xaku;deja_dans_base;SNK-GRM-0005;vous;Ne pas créer de doublon : compléter l'entrée existante SNK-GRM-0005 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0006;iku;deja_dans_base;SNK-GRM-0006;ils / elles;Ne pas créer de doublon : compléter l'entrée existante SNK-GRM-0006 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0007;n;deja_dans_base;SNK-GRM-0007;je;Ne pas créer de doublon : compléter l'entrée existante SNK-GRM-0007 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0008;in;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : VARIANTE_DOCUMENTEE).;VARIANTE_DOCUMENTEE;moyen
+GRM2-0009;an;deja_dans_base;SNK-GRM-0008;tu;Ne pas créer de doublon : compléter l'entrée existante SNK-GRM-0008 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0010;a;deja_dans_base;SNK-GRM-0009;il / elle;Ne pas créer de doublon : compléter l'entrée existante SNK-GRM-0009 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0011;o;deja_dans_base;SNK-GRM-0010;nous;Ne pas créer de doublon : compléter l'entrée existante SNK-GRM-0010 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0012;xa;deja_dans_base;SNK-GRM-0011;vous;Ne pas créer de doublon : compléter l'entrée existante SNK-GRM-0011 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0013;i;deja_dans_base;SNK-GRM-0012;ils / elles;Ne pas créer de doublon : compléter l'entrée existante SNK-GRM-0012 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0014;inke, anken, aken, oku, xakun, ikun;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;VARIANTE_DOCUMENTEE;moyen
+GRM2-0015;inke;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : VARIANTE_DOCUMENTEE).;VARIANTE_DOCUMENTEE;moyen
+GRM2-0016;du;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0017;í;deja_dans_base;SNK-GRM-0012;ils / elles;Ne pas créer de doublon : compléter l'entrée existante SNK-GRM-0012 (variantes, exemples, références grammaticales) sans rien supprimer.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0018;me;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0019;pronom complément = pronom sujet;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;SOURCE_VERIFIEE;élevé
+GRM2-0020;n / an / a / o / xa / i + nom;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;SOURCE_VERIFIEE;élevé
+GRM2-0021;nke + nom;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;SOURCE_VERIFIEE;moyen
+GRM2-0022;nom possesseur + nom possédé;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;SOURCE_VERIFIEE;élevé
+GRM2-0023;ni;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : SOURCE_VERIFIEE).;SOURCE_VERIFIEE;élevé
+GRM2-0024;ni ya;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0025;feti;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : SOURCE_VERIFIEE).;SOURCE_VERIFIEE;élevé
+GRM2-0026;he ~ heti;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;VARIANTE_DOCUMENTEE;moyen
+GRM2-0027;wa;deja_dans_base;SNK-GRM-0019;action en cours;Ne pas créer de doublon : compléter l'entrée existante SNK-GRM-0019 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0028;nta;deja_dans_base;SNK-GRM-0032;ne... pas (négation de l'inaccompli et de l'état);Ne pas créer de doublon : compléter l'entrée existante SNK-GRM-0032 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0029;na;deja_dans_base;SNK-GRM-0017;demande / qu'il;Ne pas créer de doublon : compléter l'entrée existante SNK-GRM-0017 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0030;yi;deja_dans_base;SNK-GRM-0021;action en cours;Ne pas créer de doublon : compléter l'entrée existante SNK-GRM-0021 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0031;n'ti;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : SOURCE_VERIFIEE).;SOURCE_VERIFIEE;élevé
+GRM2-0032;nàn ~ ǹ;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0033;ntá;deja_dans_base;SNK-GRM-0032;ne... pas (négation de l'inaccompli et de l'état);Ne pas créer de doublon : compléter l'entrée existante SNK-GRM-0032 (variantes, exemples, références grammaticales) sans rien supprimer.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0034;ñí;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0035;má ñì;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0036;we ñaana / ye ñaana;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0037;An ni;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0038;A ni;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0039;O ni;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0040;Xa ni;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0041;I ni;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0042;An ñi;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0043;A ñi;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0044;O ñi;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0045;Xa ñi;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0046;I ñi;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0047;An we ñaana;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0048;O ye ñaana;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0049;Xa ye ñaana;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0050;I ye ñaana;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0051;existant + wa / yi + lieu;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;SOURCE_VERIFIEE;élevé
+GRM2-0052;sere su + n'ti / nta + lieu;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0053;ni a ni;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0054;attribut (sans copule) après le nom;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0055;attribut-n + ni;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;SOURCE_VERIFIEE;élevé
+GRM2-0056;ni, feti, fe, yi, la, yaa;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0057;possédé + wa / nta + possesseur + yi / ŋa;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;SOURCE_VERIFIEE;élevé
+GRM2-0058;possédé + (y)ani + maxa;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0059;maxa;deja_dans_base;SNK-GRM-0024;ne... pas (impératif négatif / négation du passé);Ne pas fusionner ni supprimer : ajouter ce sens grammatical comme acception distincte de l'entrée existante SNK-GRM-0024, avec sa source et le signalement du désaccord entre sources.;CONTRADICTOIRE_ENTRE_SOURCES;moyen
+GRM2-0060;xale;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0061;sujet + wa + nombre + siine;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0062;sujet + nta + siine + yi;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0063;sujet + verbe d'état (tampi, mama, konu…);ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0064;xawa;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0065;qawa;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0066;qáwà;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0067;sìrì;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0068;ra;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0069;kita;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0070;xaso;deja_dans_base;SNK-LEX-0122;vieillir;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0122 (variantes, exemples, références grammaticales) sans rien supprimer.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0071;« avoir » des temps composés français;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;SOURCE_VERIFIEE;élevé
+GRM2-0072;daga;deja_dans_base;SNK-LEX-0001;partir;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0001 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0073;ri;deja_dans_base;SNK-LEX-0002;venir;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0002 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0074;dioofe;deja_dans_base;SNK-LEX-0025;arriver;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0025 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0075;ko;deja_dans_base;SNK-LEX-0164;dire;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0164 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0076;wori;deja_dans_base;SNK-LEX-0007;voir;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0007 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0077;mugu;deja_dans_base;SNK-LEX-0722;entendre, sentir;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0722 (variantes, exemples, références grammaticales) sans rien supprimer.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0078;tu;deja_dans_base;SNK-LEX-0159;connaître;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0159 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0079;mula;deja_dans_base;SNK-LEX-0876;vouloir;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0876 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0080;kitta;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0081;kati;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : CONTRADICTOIRE_ENTRE_SOURCES).;CONTRADICTOIRE_ENTRE_SOURCES;faible
+GRM2-0082;kini;deja_dans_base;SNK-LEX-0724;donner;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0724 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0083;wutu;deja_dans_base;SNK-LEX-0009;prendre;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0009 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0084;yige;deja_dans_base;SNK-LEX-0005;manger;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0005 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0085;mini;deja_dans_base;SNK-LEX-0006;boire;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0006 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0086;xenxe;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : VARIANTE_DOCUMENTEE).;VARIANTE_DOCUMENTEE;élevé
+GRM2-0087;qenqe;deja_dans_base;SNK-LEX-0782;dormir;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0782 (variantes, exemples, références grammaticales) sans rien supprimer.;VARIANTE_DOCUMENTEE;moyen
+GRM2-0088;soxu;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : SOURCE_VERIFIEE).;SOURCE_VERIFIEE;moyen
+GRM2-0089;giri;deja_dans_base;SNK-LEX-0790;se lever;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0790 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0090;goli;deja_dans_base;SNK-LEX-0010;travailler;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0010 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0091;xara;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : SOURCE_VERIFIEE).;SOURCE_VERIFIEE;moyen
+GRM2-0092;xaranŋundi;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0093;terinke;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : SOURCE_VERIFIEE).;SOURCE_VERIFIEE;moyen
+GRM2-0094;xobo;deja_dans_base;SNK-LEX-0875;acheter;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0875 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0095;gage;deja_dans_base;SNK-LEX-0179;vendre;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0179 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0096;xanu;deja_dans_base;SNK-LEX-0018;aimer;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0018 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0097;bire;deja_dans_base;SNK-LEX-0180;vivre / instant, moment / quand;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0180 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0098;kara;deja_dans_base;SNK-LEX-0036;casser;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0036 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0099;kara;deja_dans_base;SNK-LEX-0036;casser;Ne pas fusionner ni supprimer : ajouter ce sens grammatical comme acception distincte de l'entrée existante SNK-LEX-0036, avec sa source et le signalement du désaccord entre sources.;CONTRADICTOIRE_ENTRE_SOURCES;moyen
+GRM2-0100;faye;deja_dans_base;SNK-LEX-0003;regarder;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0003 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0101;sefe;deja_dans_base;SNK-LEX-0004;parler;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0004 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0102;safa;deja_dans_base;SNK-LEX-0008;écrire;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0008 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0103;wuru;deja_dans_base;SNK-LEX-0011;courir;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0011 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0104;tuga;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0105;taxalema;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0106;tirindi;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : SOURCE_VERIFIEE).;SOURCE_VERIFIEE;moyen
+GRM2-0107;waxi;deja_dans_base;SNK-LEX-0873;frère, sœur;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0873 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;moyen
+GRM2-0108;guida;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : CONTRADICTOIRE_ENTRE_SOURCES).;CONTRADICTOIRE_ENTRE_SOURCES;faible
+GRM2-0109;be;deja_dans_base;SNK-LEX-0430;particule relateur;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0430 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0110;ga;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : SOURCE_VERIFIEE).;SOURCE_VERIFIEE;moyen
+GRM2-0111;construction relative : nom + be + ga + verbe;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;HYPOTHESE_NON_VALIDEE;faible
+GRM2-0112;sere be ga sefene;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;HYPOTHESE_NON_VALIDEE;faible
+GRM2-0113;sere be ga yigene;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;HYPOTHESE_NON_VALIDEE;faible
+GRM2-0114;fo … ga;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0115;ke;deja_dans_base;SNK-LEX-0847;ceci, celui-ci;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0847 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0116;ke;deja_dans_base;SNK-LEX-0847;ceci, celui-ci;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0847 (variantes, exemples, références grammaticales) sans rien supprimer.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0117;ku;deja_dans_base;SNK-LEX-0171;offrir;Ne pas fusionner ni supprimer : ajouter ce sens grammatical comme acception distincte de l'entrée existante SNK-LEX-0171, avec sa source et le signalement du désaccord entre sources.;CONTRADICTOIRE_ENTRE_SOURCES;moyen
+GRM2-0118;kuyi;deja_dans_base;SNK-LEX-0103;rêver;Ne pas fusionner ni supprimer : ajouter ce sens grammatical comme acception distincte de l'entrée existante SNK-LEX-0103, avec sa source et le signalement du désaccord entre sources.;CONTRADICTOIRE_ENTRE_SOURCES;faible
+GRM2-0119;ken;deja_dans_base;SNK-LEX-0846;cela, celui-là;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0846 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;moyen
+GRM2-0120;kun;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0121;kere;deja_dans_base;SNK-LEX-0844;ici;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0844 (variantes, exemples, références grammaticales) sans rien supprimer.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0122;no;deja_dans_base;SNK-LEX-0845;là;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0845 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;moyen
+GRM2-0123;doke;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0124;kundu;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0125;ke kundu / ke doke;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0126;minna;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : SOURCE_VERIFIEE).;SOURCE_VERIFIEE;élevé
+GRM2-0127;mane;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : SOURCE_VERIFIEE).;SOURCE_VERIFIEE;moyen
+GRM2-0128;mane-ni;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : SOURCE_VERIFIEE).;SOURCE_VERIFIEE;moyen
+GRM2-0129;ko;deja_dans_base;SNK-LEX-0164;dire;Ne pas fusionner ni supprimer : ajouter ce sens grammatical comme acception distincte de l'entrée existante SNK-LEX-0164, avec sa source et le signalement du désaccord entre sources.;CONTRADICTOIRE_ENTRE_SOURCES;moyen
+GRM2-0130;kan;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0131;mani-me;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0132;moxo;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : SOURCE_VERIFIEE).;SOURCE_VERIFIEE;élevé
+GRM2-0133;ba;deja_dans_base;SNK-LEX-0232;"""Est-ce que ; appelation honorifique donné à un homme, appelation donnée à un inconnu, monsieur ; diminutif de ""faaba"" ; en ce qui concerne (X),Alla ɲaamarindun ba, axa da kun";Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0232 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0134;keti;deja_dans_base;SNK-LEX-0115;toucher;Ne pas fusionner ni supprimer : ajouter ce sens grammatical comme acception distincte de l'entrée existante SNK-LEX-0115, avec sa source et le signalement du désaccord entre sources.;CONTRADICTOIRE_ENTRE_SOURCES;faible
+GRM2-0135;xori;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0136;ayi;deja_dans_base;SNK-LEX-0839;non;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0839 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;moyen
+GRM2-0137;yo;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0138;su;deja_dans_base;SNK-LEX-0916;tout, tous;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0916 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0139;yogo;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : SOURCE_VERIFIEE).;SOURCE_VERIFIEE;moyen
+GRM2-0140;gabe;deja_dans_base;SNK-LEX-0917;beaucoup;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0917 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0141;honne;deja_dans_base;SNK-LEX-0809;peu;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0809 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;moyen
+GRM2-0142;tana;deja_dans_base;SNK-LEX-0811;autre;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0811 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;moyen
+GRM2-0143;baabe;deja_dans_base;SNK-LEX-1345;chacun;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-1345 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0144;fo;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0145;sere su;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0146;ma;deja_dans_base;SNK-GRM-0033;ne... pas (négation de l'accompli / passé);Ne pas créer de doublon : compléter l'entrée existante SNK-GRM-0033 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0147;maxa;deja_dans_base;SNK-GRM-0024;ne... pas (impératif négatif / négation du passé);Ne pas créer de doublon : compléter l'entrée existante SNK-GRM-0024 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0148;nta;deja_dans_base;SNK-GRM-0032;ne... pas (négation de l'inaccompli et de l'état);Ne pas créer de doublon : compléter l'entrée existante SNK-GRM-0032 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0149;n'ti / ti;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;SOURCE_VERIFIEE;élevé
+GRM2-0150;bara;deja_dans_base;SNK-LEX-0093;"refuser / fonctionne comme marque de la modalité ""refuser à faire / aire, surface, cour / ficelle, fil";Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0093 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;moyen
+GRM2-0151;nàn máxà;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0152;do … ni ya me;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;SOURCE_VERIFIEE;élevé
+GRM2-0153;wa + verbe-ene;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;SOURCE_VERIFIEE;élevé
+GRM2-0154;yi + verbe-ni;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;SOURCE_VERIFIEE;élevé
+GRM2-0155;fayi + verbe-ene;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;CONTRADICTOIRE_ENTRE_SOURCES;moyen
+GRM2-0156;háyí;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : VARIANTE_DOCUMENTEE).;VARIANTE_DOCUMENTEE;moyen
+GRM2-0157;haxa;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0158;na;deja_dans_base;SNK-GRM-0017;demande / qu'il;Ne pas créer de doublon : compléter l'entrée existante SNK-GRM-0017 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0159;di / da;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;SOURCE_VERIFIEE;élevé
+GRM2-0160;gérondif en -na / -ne / -ni / -nu / -no;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;SOURCE_VERIFIEE;élevé
+GRM2-0161;accompli Ø (zéro);ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;SOURCE_VERIFIEE;élevé
+GRM2-0162;m' + verbe-ni;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0163;we / ye (+ riini);ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0164;yi / ya / ŋa;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;SOURCE_VERIFIEE;élevé
+GRM2-0165;di;deja_dans_base;SNK-GRM-0018;passé avec objet;Ne pas créer de doublon : compléter l'entrée existante SNK-GRM-0018 (variantes, exemples, références grammaticales) sans rien supprimer.;VARIANTE_DOCUMENTEE;moyen
+GRM2-0166;noxo;deja_dans_base;SNK-LEX-0757;ventre;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0757 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0167;kanma;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0168;konpen;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0169;ado;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : SOURCE_VERIFIEE).;SOURCE_VERIFIEE;élevé
+GRM2-0170;do;deja_dans_base;SNK-GRM-0022;action en cours;Ne pas créer de doublon : compléter l'entrée existante SNK-GRM-0022 (variantes, exemples, références grammaticales) sans rien supprimer.;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0171;ma;deja_dans_base;SNK-GRM-0033;ne... pas (négation de l'accompli / passé);Ne pas créer de doublon : compléter l'entrée existante SNK-GRM-0033 (variantes, exemples, références grammaticales) sans rien supprimer.;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0172;walla;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : SOURCE_VERIFIEE).;SOURCE_VERIFIEE;moyen
+GRM2-0173;bawoni;deja_dans_base;SNK-LEX-1372;"parce que ; car";Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-1372 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0174;sababu;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0175;saado;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0176;wo;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0177;n'ga;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : SOURCE_VERIFIEE).;SOURCE_VERIFIEE;moyen
+GRM2-0178;n'gana;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0179;nanti;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : SOURCE_VERIFIEE).;SOURCE_VERIFIEE;moyen
+GRM2-0180;xa;deja_dans_base;SNK-GRM-0011;vous;Ne pas créer de doublon : compléter l'entrée existante SNK-GRM-0011 (variantes, exemples, références grammaticales) sans rien supprimer.;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0181;kempale;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : SOURCE_VERIFIEE).;SOURCE_VERIFIEE;moyen
+GRM2-0182;ti … da;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;SOURCE_VERIFIEE;moyen
+GRM2-0183;watia;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : SOURCE_VERIFIEE).;SOURCE_VERIFIEE;élevé
+GRM2-0184;lenki;deja_dans_base;SNK-LEX-0693;aujourd’hui;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0693 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0185;kumbene;deja_dans_base;SNK-LEX-1116;demain;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-1116 (variantes, exemples, références grammaticales) sans rien supprimer.;VARIANTE_DOCUMENTEE;moyen
+GRM2-0186;xumbene;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : VARIANTE_DOCUMENTEE).;VARIANTE_DOCUMENTEE;moyen
+GRM2-0187;xunbane;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : VARIANTE_DOCUMENTEE).;VARIANTE_DOCUMENTEE;faible
+GRM2-0188;saasa;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0189;xoyi;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0190;fene;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : SOURCE_VERIFIEE).;SOURCE_VERIFIEE;moyen
+GRM2-0191;lele;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : SOURCE_VERIFIEE).;SOURCE_VERIFIEE;moyen
+GRM2-0192;xadi;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0193;kudu;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : SOURCE_VERIFIEE).;SOURCE_VERIFIEE;moyen
+GRM2-0194;yampimaxa;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : SOURCE_VERIFIEE).;SOURCE_VERIFIEE;moyen
+GRM2-0195;koota;deja_dans_base;SNK-LEX-0871;jour;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0871 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;moyen
+GRM2-0196;suxuba;deja_dans_base;SNK-LEX-0872;matin;Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0872 (variantes, exemples, références grammaticales) sans rien supprimer.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0197;siri;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : CONTRADICTOIRE_ENTRE_SOURCES).;CONTRADICTOIRE_ENTRE_SOURCES;faible
+GRM2-0198;terene;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0199;ya / ŋa;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0200;dinan-ti;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0201;filli;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : SOURCE_VERIFIEE).;SOURCE_VERIFIEE;moyen
+GRM2-0202;siki;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : VARIANTE_DOCUMENTEE).;VARIANTE_DOCUMENTEE;moyen
+GRM2-0203;nieru;variante_deja_documentee;SNK-LEX-0804;sept;"Rattacher comme variante de l'entrée existante SNK-LEX-0804 ; pas de nouvelle entrée.";A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0204;numéraux : naxato 4, karago 5, tumu 6, seegu 8, kabu 9, tamu/tanmu 10;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;SOURCE_VERIFIEE;élevé
+GRM2-0205;pluriel : chute de la voyelle finale + -u;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0206;pluriel des monosyllabes : géminée + -ni / -nu;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;CONTRADICTOIRE_ENTRE_SOURCES;faible
+GRM2-0207;déterminant défini : nasale finale (-n);ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;VARIANTE_DOCUMENTEE;moyen
+GRM2-0208;suffixe causatif -ndi / -andi;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0209;nom d'action : -ye / -ŋe / -nde / -ne;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;SOURCE_VERIFIEE;élevé
+GRM2-0210;n' / m' / ŋ' / l';ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;SOURCE_VERIFIEE;élevé
+GRM2-0211;pas de genre grammatical;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;SOURCE_VERIFIEE;élevé
+GRM2-0212;ordre des mots : S O V;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;SOURCE_VERIFIEE;élevé
+GRM2-0213;an wujomu;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0214;kira jomu;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0215;lella;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0216;sunka;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0217;anbaa;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0218;yaawurii;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0219;an moxo ?;deja_dans_base;SNK-LEX-0840;bonjour, comment ça va ? (singulier);Ne pas créer de doublon : compléter l'entrée existante SNK-LEX-0840 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;moyen
+GRM2-0220;an xibaare ?;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0221;xori baasi me na ?;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0222;kaadunkon moxo ?;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0223;kuuñi;nouvelle_entree;;;Créer une nouvelle entrée après validation référent (statut proposé : A_CONFIRMER_PAR_LOCUTEUR).;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0224;sibiti, alhaadi, tineeŋe, taraata, araaba, alxamisa, juma;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0225;radical nu (sans pronom ni marqueur);ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;SOURCE_VERIFIEE;élevé
+GRM2-0226;xa + radical;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;SOURCE_VERIFIEE;élevé
+GRM2-0227;maxa + radical;ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;SOURCE_VERIFIEE;élevé
+GRM2-0228;da (après l'objet, impératif transitif du Kingi);ligne_documentaire;;;Documentation grammaticale (construction, groupe de formes ou hypothèse) : à exploiter dans les guides, pas comme entrée de lexique.;A_CONFIRMER_PAR_LOCUTEUR;faible
+GRM2-0229;yeli / yere;deja_dans_base;SNK-GRM-0027;viens ici (impératif de venir);Ne pas créer de doublon : compléter l'entrée existante SNK-GRM-0027 (variantes, exemples, références grammaticales) sans rien supprimer.;SOURCE_VERIFIEE;élevé
+GRM2-0230;N xooren ni.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0231;An xooren ni.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0232;A xooren ni.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0233;O xooren ni.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0234;Xa xooren ni.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0235;I xooren ni.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0236;N xoore feti.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0237;An xoore feti.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0238;A xoore feti.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0239;O xoore feti.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0240;Xa xoore feti.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0241;I xoore feti.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0242;Ken ni baasi xoore yi.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";SOURCE_VERIFIEE;élevé
+GRM2-0243;Ké yugo ni tagén ña yi.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0244;Tagén ña ni.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0245;Niima feti bugante yi.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";SOURCE_VERIFIEE;élevé
+GRM2-0246;A yaqe feti.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0247;N wa deben di.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0248;An wa deben di.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0249;A wa deben di.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0250;O wa deben di.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0251;Xa wa deben di.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0252;I wa deben di.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0253;N nta deben di.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0254;An nta deben di.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0255;A nta deben di.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0256;O nta deben di.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0257;Xa nta deben di.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0258;I nta deben di.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0259;Baabon wa xatin kanma.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";SOURCE_VERIFIEE;élevé
+GRM2-0260;Baasi nt'a di.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";SOURCE_VERIFIEE;élevé
+GRM2-0261;Sokke gabe nta Tooka makkante.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0262;Gidimekaanun bologaaɲi na ti minna yi ?;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";SOURCE_VERIFIEE;élevé
+GRM2-0263;Haatu na minna ?;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0264;An nàn dinká in ŋa.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0265;Kiyen nàn tawó.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0266;Kànjàanén tàrún nàn gìilá guwàanén qàllún ŋà.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0267;In ni.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0268;In ñi.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0269;In we ñaana.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0270;A ye ñaana.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0271;Ka wa in yi.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0272;Ka wa an yi.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0273;Ka wa a yi.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0274;Ka wa o yi.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0275;Ka wa xa yi.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0276;Ka wa i yi.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0277;Ka wa Faatu yi.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0278;Yintin xullu baananbaanon wa a yi.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";SOURCE_VERIFIEE;élevé
+GRM2-0279;Bannaaxun taagumansen wa dudoxotonten ŋa.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";SOURCE_VERIFIEE;élevé
+GRM2-0280;Ka nta in yi.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0281;Ka nta an yi.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0282;Ka nta a yi.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0283;Ka nta o yi.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0284;Ka nta xa yi.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0285;Ka nta i yi.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";HYPOTHESE_NON_VALIDEE;faible
+GRM2-0286;Anke n'di maro n'yiga.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";SOURCE_VERIFIEE;élevé
+GRM2-0287;In yige.;deja_dans_paradigmes_ea;;;"Ligne déjà suivie dans data/source/paradigmes-etre-avoir.csv : ne pas dupliquer ; la comparaison au lexique de base se fait dans ce fichier d'origine.";A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0288;o na daga lenki;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0289;xaku n'yi dagana waxati su;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0290;n do dagaye ni ya me;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0291;a fayi dagana;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0292;xa wa dagana saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0293;iku n'yi rini daga;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0294;i rini daga;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0295;a daga;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0296;a maxa daga;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0297;nke fayi dagana watia;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0298;nke na faye saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0299;o yi fayeni;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0300;ake n'do fayinde ni ya me;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0301;o fayi fayeni;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0302;nke wa fayeni;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0303;o yi rini faye;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0304;xaku l'rini faye;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0305;n faye;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0306;oku maxa faye;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0307;anke m'fayi fayeni watia;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0308;o na goli;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0309;n yi golini koota su;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0310;xaku n'do goliye ni ya me;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0311;an fayi golini koota su;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0312;a wa golini saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0313;an yi rini goli kumbene;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0314;n rini goli saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0315;nke n'ti rini goli;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0316;an goli saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0317;iku maxa goli;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0318;nke fayi golini watia;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0319;o na mini;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0320;o na xati ke m'mini lenki;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0321;anke n'yi minini saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0322;xa do mine ni ya me;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0323;anke m'fayi minini waxati su;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0324;anke n'do xati ke mine ni ya me;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0325;xa wa minini;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0326;oku yi rini mini;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0327;ake l'rini mini;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0328;nke n'ti rini mini;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0329;xati mini;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0330;iku m'mini daru;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0331;a maxa mini;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0332;oku di xati ke m'mini;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0333;ake n'da xati m'mini saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0334;oku fayi minini watia;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0335;a na ri saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0336;anke n'yi rini lenki;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0337;xaku n'do riye ni ya me saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0338;anke m'fayi rini koota su;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0339;n wa rini saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0340;oku yi rini saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0341;n rini riya;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0342;iku n'ti rini;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0343;a ri lenki;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0344;o maxa ri;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0345;anke m'fayi rini watia;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0346;i na safa saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0347;a na lettra n'safa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0348;a yi safana;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0349;iku n'do safande ni ya me saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0350;ake m'fayi safana waxati su;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0351;i yi lettra safana saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0352;iku n'do lettra safande ni ya me;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0353;o fayi lettra safana;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0354;n wa lettra safana;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0355;ake ŋ'wa safana saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0356;iku n'yi rini safa saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0357;xa rini safa saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0358;anke n'ti rini safa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0359;lettra safa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0360;i safa saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0361;o maxa safa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0362;a di lettra ke n'safa lenki;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0363;ake n'da lettra ke n'safa saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0364;ake m'fayi safana watia;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0365;n na sefe lenki;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0366;n yi sefene waxati su;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0367;a do sefeye ni ya me saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0368;nke fayi sefene waxati su;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0369;ake ŋ'wa sefene saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0370;n yi rini sefe saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0371;an rini sefe saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0372;anke n'ti rini sefe;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0373;n sefe saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0374;n maxa sefe;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0375;anke m'fayi sefene watia;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0376;i na wori lenki;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0377;a na maro ke ŋ'wori;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0378;n yi worini;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0379;oku do woriye ni ya me saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0380;xa fayi worini;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0381;n do maro ke woriye ni ya me saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0382;i wa worini saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0383;oku yi rini wori kumbene;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0384;o rini wori;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0385;nke n'ti rini wori;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0386;lemine ke wori;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0387;ake ŋ'wori saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0388;oku maxa wori;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0389;ake n'di lettra ke ŋ'wori daru;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0390;xa da lettra ŋ'wori saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0391;ake m'fayi worini watia;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0392;oku na wuru lenki;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0393;xaku n'yi wurunu;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0394;xaku n'do wuruye ni ya me saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0395;xa fayi wurunu;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0396;xa wa wurunu saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0397;xa yi rini wuru saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0398;an rini wuru saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0399;nke n'ti rini wuru;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0400;ake ŋ'wuru daru;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0401;n maxa wuru;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0402;anke m'fayi wurunu watia;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0403;oku na wutu lenki;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0404;oku do wutunde ni ya me;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0405;iku n'yi rini wutu saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0406;xa rini wutu;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0407;nke n'ti rini wutu;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0408;o wutu lenki;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0409;oku maxa wutu;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0410;i na yige lenki;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0411;oku na maro n'yiga lenki;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0412;iku n'yi yigene koota su;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0413;xa do yigaye ni ya me;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0414;xa fayi yigene waxati su;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0415;ake n'yi maro yigane saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0416;ake n'do maro yigaye ni ya me;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0417;an fayi maro ke yigane;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0418;iku ŋ'wa maro ke yigane;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0419;nke wa yigene saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0420;an yi rini yige kumbene;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0421;xaku l'rini yige saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0422;nke n'ti rini yige;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0423;maro ke yiga;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0424;a yige;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0425;i maxa yige;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0426;an di maro n'yiga lenki;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0427;a da maro ke n'yiga;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0428;anke m'fayi yigene watia;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0429;a na daga saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0430;a yi dagana lenki;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0431;anke n'do dagaye ni ya me saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0432;xa fayi dagana koota su;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0433;nke wa dagana;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0434;an yi rini daga;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0435;nke rini daga saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0436;xaku n'daga lenki;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0437;xa maxa daga;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0438;anke m'fayi dagana watia;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0439;oku na faye;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0440;n yi fayeni saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0441;a do fayinde ni ya me;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0442;a fayi fayeni waxati su;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0443;iku ŋ'wa fayeni;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0444;nke yi rini faye;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0445;nke rini faye saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0446;i faye lenki;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0447;n maxa faye;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0448;oku fayi fayeni watia;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0449;oku na goli lenki;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0450;anke n'yi golini lenki;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0451;nke do goliye ni ya me;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0452;xaku m'fayi golini koota su;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0453;oku wa golini saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0454;an yi rini goli;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0455;a rini goli;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0456;a goli saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0457;i maxa goli;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0458;ake m'fayi golini watia;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0459;an na mini lenki;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0460;n na xati ke m'mini saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0461;nke yi minini waxati su;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0462;a do mine ni ya me saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0463;iku m'fayi minini saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0464;nke do xati ke mine ni ya me saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0465;n wa minini;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0466;n yi rini mini saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0467;anke l'rini mini;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0468;xaku m'mini;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0469;nke maxa mini;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0470;xa di xati ke m'mini lenki;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0471;a da xati m'mini;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0472;ake m'fayi minini watia;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0473;o na ri saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0474;o yi rini waxati su;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0475;xa do riye ni ya me saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0476;xa fayi rini koota su;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0477;anke ŋ'wa rini;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0478;xaku n'yi rini;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;A_CONFIRMER_PAR_LOCUTEUR;moyen
+GRM2-0479;ake l'rini riya saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0480;i ri;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0481;xa maxa ri;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0482;oku fayi rini watia;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0483;n na safa lenki;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0484;oku na lettra ke n'safa lenki;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0485;anke n'yi safana koota su;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0486;an do safande ni ya me;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;SOURCE_VERIFIEE;élevé
+GRM2-0487;oku fayi safana saxa;forme_conjuguee;;;Ne pas intégrer comme entrée lexicale : forme reliée à son verbe de référence dans la table de conjugaison.;A_CONFIRMER_PAR_LOCUTEUR;moyen
