@@ -2093,7 +2093,7 @@ function fallbackComposedPhrase(sourceText, extraNote = "") {
   out += "*" + result.note + "*\n\n";
   if (extraNote) out += "*Réserve : " + extraNote + "*\n\n";
   if (result.missingFrench.length) {
-    out += "**Éléments français sans correspondance lexicale** : " + result.missingFrench.join(", ") + ". Ils ne sont pas inventés ni insérés dans la phrase.\n\n";
+    out += "**Éléments français sans correspondance lexicale** : " + result.missingFrench.join(", ") + ". Ils ne sont pas inventés ni insérés dans la phrase. Pour compléter la traduction, ajouter ces mots au lexique puis les faire valider par le référent.\n\n";
   }
   const audioSegments = extractAvailableAudioSegments(result.sentence);
   if (audioSegments.length) out += "*Audio de référence disponible pour les segments : " + audioSegments.map((x) => x.text).join(" · ") + ".*\n\n";
