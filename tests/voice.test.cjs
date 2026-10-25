@@ -59,6 +59,20 @@ assert.equal(evaluate("soninkeForms('**Titre inconnu**').length"), 0);
     seenWords.set(key, previous);
   }
   assert.equal(validatedHomonymEntries, 380, `Expected all 380 entries from the 169 validated homonym groups, got ${validatedHomonymEntries}`);
+  // Pronoms personnels validés explicitement par le référent linguistique.
+  const expectedPronouns = { In: "je", An: "tu", A: "il / elle", O: "nous", I: "vous", Iku: "ils / elles" };
+  for (const [form, french] of Object.entries(expectedPronouns)) {
+    const key = evaluate(`normalizeLexicalKey(${JSON.stringify(form)})`);
+    const entry = entries.find(e => evaluate(`normalizeLexicalKey(${JSON.stringify(e.soninke)})`) === key);
+    assert(entry, `Missing validated personal pronoun: ${form}`);
+    assert.equal(entry.francais, french, `Wrong validated French gloss for ${form}`);
+    assert.equal(entry.categorie, "pronom_personnel");
+    assert.equal(entry.statut, "valide_par_referent_linguistique");
+  }
+  assert.equal(evaluate("findAudioInfo('i').francais"), "vous",
+    "La glose audio de I doit suivre la validation du référent");
+  assert.equal(evaluate("findAudioInfo('iku').francais"), "ils / elles",
+    "La glose audio de Iku doit rester ils / elles");
   assert.equal(evaluate("lookupTerm('baano-ye').exact[0].soninke"), 'baano-ye');
   assert.equal(evaluate("lookupTerm('segeñe').exact[0].francais"), 'ongle');
   assert(evaluate("lookupTerm('segene').exact[0].francais").includes('monter'));
