@@ -138,6 +138,8 @@ assert.equal(evaluate("soninkeForms('**Titre inconnu**').length"), 0);
   for (const [form, [french, status]] of Object.entries(expectedAudioTranslations)) {
     const audio = evaluate("findAudioInfo(" + JSON.stringify(form) + ")");
     assert(audio && audio.url, "Missing audio mapping for " + form);
+    assert.equal(evaluate("state.audioList.some(a => normalizeWord(a.text) === normalizeWord(" + JSON.stringify(form) + "))"), true,
+      "Audio not visible in Lexique Audio for " + form);
     assert.equal(audio.traduction_statut, status, "Wrong translation status for " + form);
     assert.equal(audio.francais || "", french, "Wrong French translation for " + form);
   }
