@@ -176,6 +176,28 @@ def build(generate=False, limit=20, device="auto"):
     if priority_words:
         priority_rank = {word: index for index, word in enumerate(priority_words)}
         pending.sort(key=lambda item: (0, priority_rank[key(item["text"])]) if key(item["text"]) in priority_rank else (1, key(item["text"])))
+
+    # Retenter d'abord les mots explicitement placés dans la file de régénération audio.
+    retry_path = ROOT / "data/source/audio-retry-queue-next-100.csv"
+    retry_words = []
+    if retry_path.exists():
+        for row in rows(retry_path):
+            status = row.get("statut", "").strip().casefold()
+            word = row.get("soninke", "").strip()
+            if word and status in {
+                "a_regenerer_priorite_confirmee",
+                "a_regenerer_lot_suivant",
+                "a_regenerer",
+                "retry",
+            }:
+                retry_words.append(key(word))
+    if retry_words:
+        retry_rank = {word: index for index, word in enumerate(retry_words)}
+        pending.sort(
+            key=lambda item: (
+                0, retry_rank[key(item["text"])]
+            ) if key(item["text"]) in retry_rank else (1, key(item["text"]))
+        )
     if generate and pending:
         import numpy as np
         import soundfile as sf
