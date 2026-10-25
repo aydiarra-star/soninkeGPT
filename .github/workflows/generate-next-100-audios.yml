@@ -12,6 +12,7 @@ on:
     branches: [main]
     paths:
       - ".github/workflows/generate-next-100-audios.yml"
+      - "data/source/audio-retry-queue-next-100.csv"
 
 concurrency:
   group: soninkegpt-next-100-audios
