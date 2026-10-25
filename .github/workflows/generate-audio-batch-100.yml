@@ -41,7 +41,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.cache/huggingface/hub
-          key: omnivoice-hf-\${{ runner.os }}-k2-fsa-OmniVoice-v1
+          key: omnivoice-hf-${{ runner.os }}-k2-fsa-OmniVoice-v1
       - name: Generate exactly the committed 100-word batch
         run: python scripts/generate_audio_batch.py --batch data/source/audio-batch-100-2026-10-25.csv --limit 100 --device auto
       - name: Rebuild voice memory without overwriting original audio
@@ -86,8 +86,8 @@ jobs:
         if: success()
         uses: peter-evans/create-pull-request@v7
         with:
-          token: \${{ secrets.GITHUB_TOKEN }}
-          branch: audio-review/batch-100-\${{ github.run_number }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: audio-review/batch-100-${{ github.run_number }}
           base: main
           delete-branch: false
           title: "Audios Soninké — lot de 100 à valider"
