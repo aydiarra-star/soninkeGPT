@@ -12,6 +12,7 @@
 // ── Constants ──
 const DATA_URL = "data/source/lexique-soninke-fr-base.csv";
 const HOMONYMS_URL = "data/source/lexique-homonymes-valides-2026-10-25.csv";
+const PRONOUNS_URL = "data/source/pronoms-personnels-valides-2026-10-25.csv";
 const MANIFEST_URL = "data/source/manifest-577-review.csv";
 const AUDIO_AUDIT_URL = "reports/audio-transfer-audit.csv";
 const CANDIDATES_URL = "data/candidates/external-lexicon-candidates.csv";
@@ -3800,6 +3801,7 @@ async function loadAllData() {
     revueCsv,
     renvoisCsv,
     homonymsCsv,
+    pronounsCsv,
   ] = await Promise.all([
     fetchTextSafe(DATA_URL),
     fetchTextSafe(MANIFEST_URL),
@@ -3812,6 +3814,7 @@ async function loadAllData() {
     fetchTextSafe(REVUE_DICT_URL),
     fetchTextSafe(RENVOIS_URL),
     fetchTextSafe(HOMONYMS_URL),
+    fetchTextSafe(PRONOUNS_URL),
   ]);
 
   const seenHeadwords = new Set();
@@ -3960,6 +3963,33 @@ async function loadAllData() {
     }, { checkVariants: false, allowHomonyms: true });
   }
 
+  // 7. Pronoms personnels explicitement validés par le référent linguistique.
+  // Mettre à jour la glose du lemme existant sans créer de doublon; ajouter les formes absentes.
+  for (const row of parseCSV(pronounsCsv, ";")) {
+    const key = normalizeLexicalKey(row.soninke || "");
+    const soninke = String(row.soninke || "").trim();
+    const francais = String(row.francais || "").trim();
+    if (!key || !soninke || !francais) continue;
+    const existing = entries.find((entry) => normalizeLexicalKey(entry.soninke) === key);
+    const validated = {
+      categorie: "pronom_personnel",
+      source: row.source || "Validation explicite du référent linguistique",
+      statut: "valide_par_referent_linguistique",
+      isCandidate: false,
+    };
+    if (existing) {
+      Object.assign(existing, validated, { francais });
+    } else {
+      pushEntry({
+        id: row.id || uid(), soninke, francais, ...validated,
+        variantes: row.variantes || "",
+        exemple_original: row.exemple_original || "",
+        definition: row.definition || "",
+        definitionStatut: row.definition_statut || "",
+      }, { checkVariants: false });
+    }
+  }
+
   state.entries = entries;
 
   // 6. Phrases parallèles soninké–français (soninke-samples.jsonl)
@@ -4027,9 +4057,12 @@ async function loadAllData() {
         const ortho = normalizeSoninkeOrtho(item.text);
         if (!key || state.audioByWord.has(key)) continue; // conserve toujours l'audio déjà présent
         const matchedEntry = state.entries.find((entry) => normalizeWord(entry.soninke) === key);
+        const validatedPronoun = matchedEntry &&
+          matchedEntry.categorie === "pronom_personnel" &&
+          /valide_par_referent_linguistique/.test(matchedEntry.statut || "");
         const info = {
           ...item,
-          francais: item.francais || (matchedEntry ? matchedEntry.francais : ""),
+          francais: validatedPronoun ? matchedEntry.francais : (item.francais || (matchedEntry ? matchedEntry.francais : "")),
           generated: String(item.url).startsWith("audio/generated/"),
         };
         state.audioByWord.set(key, info);
