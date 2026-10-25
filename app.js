@@ -3670,9 +3670,11 @@ function renderDictResults() {
             <button type="button" class="audio-play-btn" data-audio-word="${esc(a.text)}" title="Écouter avec la voix de référence" aria-label="Écouter ${esc(a.text)}">${ICONS.speaker}<span>Écouter</span></button>
             <button type="button" class="fav-toggle${fav ? " is-favorite" : ""}" data-fav-snk="${esc(a.text)}" data-fav-fr="${esc(a.francais || "")}" data-fav-type="${a.text.split(/\s+/).length > 1 ? "phrase" : "mot"}" aria-pressed="${fav ? "true" : "false"}" aria-label="Ajouter ${esc(a.text)} aux favoris">${fav ? ICONS.starFilled : ICONS.star}</button>
           </div>
-          <div class="dict-translation">${a.unmapped ? "Correspondance lexicale à identifier — fichier conservé sans attribution de mot." : a.francais ? esc(a.francais) : "Traduction non renseignée"}</div>
+          <div class="dict-translation">${a.unmapped ? "Correspondance lexicale à identifier — fichier conservé sans attribution de mot." : a.francais ? esc(a.francais) : a.traduction_statut === "a_identifier" ? "Traduction à établir : la source lexicale ne fournit pas de glose exploitable." : "Traduction non renseignée"}</div>
           <div class="dict-meta">
             <span class="pair-badge ${a.unmapped ? "is-review" : (a.linguistic_validation || a.validation_prononciation === "validee_par_referent" || a.validation_prononciation === "validee_par_referent_linguistique") ? "is-attested" : a.generated ? "is-review" : "is-attested"}">${a.unmapped ? "WAV conservé · mot à identifier" : (a.linguistic_validation || a.validation_prononciation === "validee_par_referent" || a.validation_prononciation === "validee_par_referent_linguistique") ? "Prononciation validée par le référent" : a.generated ? "Audio généré · prononciation à valider" : "Enregistrement de référence"}</span>
+            ${a.traduction_statut ? '<span class="pair-badge ' + (a.traduction_statut === "valide_par_referent_linguistique" ? "is-attested" : "is-review") + '">' + (a.traduction_statut === "valide_par_referent_linguistique" ? "Traduction validée par le référent" : a.traduction_statut === "candidat_source_a_valider" ? "Traduction du dictionnaire · à confirmer" : a.traduction_statut === "a_identifier" ? "Traduction à identifier" : "Traduction à vérifier") + '</span>' : ""}
+            ${a.lemme_canonique ? '<span>Entrée de référence : ' + esc(a.lemme_canonique) + '</span>' : ""}
             <span>${esc(String(a.url || "").split("/").pop() || "")}</span>
           </div>
         </div>`;
