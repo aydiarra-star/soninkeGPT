@@ -64,12 +64,12 @@ def sans_accents_vocaliques(mot: str) -> str:
 
 
 def cle(mot: str) -> str:
-    """Clé de comparaison : ni casse, ni accents vocaliques, ni tirets, ni homonymes."""
-    mot = sans_accents_vocaliques(mot.strip().lower())
+    """Clé d'entrée : conserve les tons, normalise Unicode, casse, tirets et homonymes."""
+    mot = unicodedata.normalize("NFC", mot.strip().lower())
     mot = re.sub(r"-", " ", mot)
     mot = re.sub(r"[’`]", "'", mot)      # l'apostrophe reste distinctive : n ≠ n'
     mot = re.sub(r"\s*\d+$", "", mot)          # baabo1 -> baabo
-    mot = re.sub(r"[^a-z0-9ñɓɗƴŋɲɛɔ ']", "", mot)
+    mot = "".join(c for c in mot if c.isalnum() or unicodedata.combining(c) or c in "' ")
     return re.sub(r"\s+", " ", mot).strip()
 
 
