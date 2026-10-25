@@ -115,6 +115,34 @@ assert.equal(evaluate("soninkeForms('**Titre inconnu**').length"), 0);
     assert(matches.some(e => e.statut === "valide_par_referent_linguistique" || /valide_par_referent_linguistique/.test(e.statut || "")),
       `Entry not marked as validated: ${form}`);
   }
+  // Traductions des 17 formes audio : variantes reliées au lemme canonique, sans doublon.
+  const expectedAudioTranslations = {
+    "Beniyaamina": ["Benjamin", "candidat_source_a_valider"],
+    "burugutu": ["Passer à la flamme (une tête de mouton ou de poulet)", "candidat_source_a_valider"],
+    "burunqu": ["Destruction, effacement", "candidat_source_a_valider"],
+    "buya": ["Brûler, griller", "candidat_source_a_valider"],
+    "bunanbuna": ["Guêpe qui fait des nids en banco aux murs", "candidat_source_a_valider"],
+    "buruxu": ["Destruction, effacement (sens à confirmer)", "candidat_source_a_valider"],
+    "bugunde": ["Soustraction", "candidat_source_a_valider"],
+    "burubule": ["Brûlure, brûlis", "candidat_source_a_valider"],
+    "buxutindaana": ["", "a_identifier"],
+    "buyaade": ["Fer à marquer ; moule métallique pour marquer le bétail ou imprimer le cuir ; grillage à griller", "valide_par_referent_linguistique"],
+    "buxuti": ["Arracher, déraciner", "candidat_source_a_valider"],
+    "buugu": ["Fermenter, enfler, gonfler", "candidat_source_a_valider"],
+    "bukku": ["Sortir, partir", "candidat_source_a_valider"],
+    "buxutinde": ["", "a_identifier"],
+    "buyi": ["Brûler, griller", "candidat_source_a_valider"],
+    "bulunŋe": ["Petite rue, ruelle ; vestibule", "valide_par_referent_linguistique"],
+    "bugundi": ["Enlever (sens exact à confirmer)", "candidat_source_a_valider"],
+  };
+  for (const [form, [french, status]] of Object.entries(expectedAudioTranslations)) {
+    const audio = evaluate("findAudioInfo(" + JSON.stringify(form) + ")");
+    assert(audio && audio.url, "Missing audio mapping for " + form);
+    assert.equal(audio.traduction_statut, status, "Wrong translation status for " + form);
+    assert.equal(audio.francais || "", french, "Wrong French translation for " + form);
+  }
+  assert.equal(Object.keys(expectedAudioTranslations).length, 17);
+
   assert.equal(evaluate("lookupTerm('baano-ye').exact[0].soninke"), 'baano-ye');
   assert.equal(evaluate("lookupTerm('segeñe').exact[0].francais"), 'ongle');
   assert(evaluate("lookupTerm('segene').exact[0].francais").includes('monter'));
