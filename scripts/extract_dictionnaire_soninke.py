@@ -56,7 +56,9 @@ def read_any(path: Path) -> str:
 # ------------------------------------------------------------- découpage ---
 
 # « baabo1   Nom . foam; mousse, écume. Baabon wa xatin kanma… »
-ENTRY_RE = re.compile(r"^(?P<mot>[-A-Za-zÀ-ÿɓɗƴŋɲɓɛɔ'’\- ]{1,40}?)\s{2,}(?P<corps>\S.*)$")
+# Le mot d'entrée peut contenir des chiffres d'homonyme (da1, faaba2), une
+# virgule (Dagare, daagaare) ou un point d'exclamation (e!).
+ENTRY_RE = re.compile(r"^(?P<mot>[-A-Za-zÀ-ÿ0-9ɓɗƴŋɲɓɛɔ'’,! ]{1,40}?)\s{2,}(?P<corps>\S.*)$")
 
 CATEGORIES = {
     "nom": "nom", "verbe": "verbe", "adjectif": "adjectif", "adverbe": "adverbe",
@@ -100,8 +102,26 @@ def score(seg: str) -> int:
 
 META = re.compile(r"\b(?:Gram|Note|Plural suffix|Underlying form|Category|synonyme|"
                   r"similaire|comp|compare|tone|See main entry|Anth|Disc|"
-                  r"Verbal suffix form|Variant)\b")
-EXEMPLE = re.compile(r"\.\s+(?=[A-ZÀ-Ý«\"])")
+                  r"Verbal suffix form|Variant|Source)\b")
+
+# Marqueurs reconnus en tête d'une entrée (« compare: daba1. Nom . natte. »).
+# Chaque marqueur n'avale que SON chargement : le chargement s'arrête au début
+# du marqueur suivant, au point final ou à la fin de ligne — jamais au-delà.
+_META_MOTS = (r"compare|See\s+main\s+entry|Variant|Note|synonyme|Gram|Category|"
+              r"Source|comp|similaire|tone|Anth|Disc|Verbal\s+suffix\s+form|"
+              r"Plural\s+suffix|Underlying\s+form")
+LEADING_META = re.compile(
+    r"^\s*(?:" + _META_MOTS + r")\s*:\s*(?P<chargement>.*?)"
+    r"(?:(?=\s*(?:" + _META_MOTS + r"|summary[- ]definition)\s*:)|\.\s*|$)"
+)
+# « summary-definition: » est un étiquetage à DÉPLIER : le chargement est la
+# glose elle-même (« Note: E summary-definition: terrain irrigué. »).
+LEADING_SUMMARY = re.compile(r"^\s*summary[- ]definition\s*:\s*", re.I)
+# Une phrase d'exemple commence par une majuscule après un point, parfois
+# collée sans espace dans l'export (« expliquer un bout.N ga giri… »), et
+# peut débuter par une capitale soninkée (« terre de décrue. Ŋaamen… »,
+# « possédé (territoire). Ɲiiɲe gabe… »).
+EXEMPLE = re.compile(r"\.\s*(?=[A-ZÀ-Ý«\"ŊƝƁƊƳ])")
 
 
 def _sans_exemple(txt: str) -> str:
@@ -117,10 +137,21 @@ def clean_gloss(corps: str) -> tuple[str, bool]:
     sens = re.split(r"(?:^|\s)\d+\s*[•·]\s*", " " + txt)
     gloses, complet = [], True
     for sens_txt in sens:
-        # 2. retirer les métadonnées de fin d'entrée
+        # 2a. retirer les métadonnées de tête (compare:, Variant:, Note:…) ;
+        #     summary-definition: est déplié, son chargement EST la glose.
+        while True:
+            etiq = LEADING_SUMMARY.match(sens_txt)
+            if etiq:
+                sens_txt = sens_txt[etiq.end():]
+                continue
+            tete = LEADING_META.match(sens_txt)
+            if not tete:
+                break
+            sens_txt = sens_txt[tete.end():]
+        # 2b. retirer les métadonnées de fin d'entrée
         sens_txt = META.split(sens_txt, maxsplit=1)[0]
         # 3. retirer la catégorie grammaticale de tête
-        sens_txt = re.sub(r"^\s*[A-Za-zÀ-ÿ\-]+(?:\s+(?:transitif|intransitif|"
+        sens_txt = re.sub(r"^\s*[A-Za-zÀ-ÿ\-]+(?:\s+(?:Propre|propre|transitif|intransitif|"
                           r"causatif|causitif|passif|qualificatif|d'état|nominal|"
                           r"verbal|comparatif|cardinal))*\s*\.\s*", "",
                           sens_txt.strip(), count=1)
