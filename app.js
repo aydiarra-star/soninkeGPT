@@ -2005,9 +2005,9 @@ function composeLexicalPhraseFallback(sourceText) {
 
   const normalized = normalizeWord(original).replace(/[’‘]/g, "'");
   const tokens = normalized
-    .replace(/\\b([ldjnmtsquc])'/gi, "$1 ")
-    .replace(/[^\\p{L}\\p{M}' -]/gu, " ")
-    .split(/\\s+/)
+    .replace(/\b([ldjnmtsquc])'/gi, "$1 ")
+    .replace(/[^\p{L}\p{M}' -]/gu, " ")
+    .split(/\s+/)
     .filter(Boolean);
   if (tokens.length < 2) return null;
 
@@ -2021,7 +2021,7 @@ function composeLexicalPhraseFallback(sourceText) {
   ]);
   const mapped = [];
   const missingFrench = [];
-  const lexicalKey = (value) => normalizeWord(value).replace(/['-]/g, " ").replace(/\\s+/g, " ").trim();
+  const lexicalKey = (value) => normalizeWord(value).replace(/['-]/g, " ").replace(/\s+/g, " ").trim();
 
   for (let i = 0; i < tokens.length;) {
     let match = null;
@@ -2087,7 +2087,7 @@ function composeLexicalPhraseFallback(sourceText) {
 
   // Garder l'ordre d'origine et les répétitions. Une déduplication ou un tri
   // sujet/nom/verbe détruirait la structure de la phrase source.
-  const sentence = capitalizeFirst(mapped.map((x) => x.snk).filter(Boolean).join(" ").replace(/\\s+/g, " "));
+  const sentence = capitalizeFirst(mapped.map((x) => x.snk).filter(Boolean).join(" ").replace(/\s+/g, " "));
   if (!sentence) return null;
 
   return {
