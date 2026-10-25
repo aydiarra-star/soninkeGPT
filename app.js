@@ -185,7 +185,7 @@ const ATTESTATION = {
   referent: { rank: 4, label: "Attesté · référent", cls: "is-attested" },
   corpus: { rank: 3, label: "Attesté · corpus", cls: "is-attested" },
   composed: { rank: 3, label: "Composé · lexique attesté", cls: "is-attested" },
-  review: { rank: 2, label: "À vérifier · source externe", cls: "is-review" },
+  review: { rank: 2, label: "À vérifier", cls: "is-review" },
   reference: { rank: 3, label: "Voix de référence", cls: "is-attested" },
   unknown: { rank: 0, label: "Non attesté dans le corpus", cls: "is-unknown" },
   excluded: { rank: -1, label: "Forme écartée · non soninké", cls: "is-unknown" },
@@ -2270,7 +2270,7 @@ function formatPhrasebookBullet(p) {
   if (p.alt.length) details.push(`variantes : ${p.alt.join(", ")}`);
   const fr = p.fr + (details.length ? ` · ${details.join(" · ")}` : "");
   let out = soninkeBlock(p.snk, fr, "expression");
-  if (p.note) out += `*${p.note}*\n\n`;
+  // Les notes de provenance restent dans les données internes, pas dans les réponses publiques.
   return out;
 }
 
@@ -2531,14 +2531,14 @@ function generateResponse(message) {
     }
     for (const entry of state.entries) {
       if (normalizeWord(entry.francais || "").replace(/[.!?;:,]+$/g, "") === exactFrenchQuery) {
-        addExactExpression(entry.soninke, entry.francais, entry.statut || entry.source || "");
+        addExactExpression(entry.soninke, entry.francais, "");
       }
     }
     if (exactExpressions.length) {
       let out = "**Expression correspondante dans le corpus SoninkeGPT**\n";
       for (const item of exactExpressions.slice(0, 5)) {
         out += soninkeBlock(item.snk, item.fr, "expression");
-        if (item.note) out += `*Source/statut : ${item.note}*\n\n`;
+        // Aucune provenance ni statut de source n’est affiché dans les réponses publiques.
       }
       out += `La correspondance complète est prioritaire sur les mots isolés.\n\n${levelNote()}`;
       return out;
