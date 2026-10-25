@@ -41,16 +41,23 @@ VOYELLES = set("aeiou")
 
 
 def sans_accents_vocaliques(mot: str) -> str:
-    """Retire les accents des voyelles, mais garde ñ / ŋ / ɲ / ɓ / ɗ distincts.
+    """Retire les marques de ton combinantes sans confondre les lettres soninkées.
 
-    Sans cette précaution, *segeñe* « ongle » et *segene* « monter » se
-    confondraient : la comparaison anti-doublon écarterait un mot réel.
+    Le lexique contient des tons écrits avec des caractères précomposés (é) et
+    des séquences lettre + diacritique (e + accent combinant). On normalise
+    toute la chaîne avant de traiter les marques. L'accent aigu, grave,
+    circonflexe, macron et caron sont des marques tonales ici, y compris après
+    une consonne (ńké → nke). Le tilde est conservé pour que ñ reste distinct
+    de n : *segeñe* « ongle » et *segene* « monter » ne sont pas des doublons.
     """
+    texte = unicodedata.normalize("NFD", mot)
+    marques_tonales = {"\\u0300", "\\u0301", "\\u0302", "\\u0304", "\\u030c"}
     sortie = []
-    for c in mot:
-        base = unicodedata.normalize("NFD", c)
-        if len(base) > 1 and base[0] in VOYELLES:
-            sortie.append(base[0])
+    for c in texte:
+        if unicodedata.combining(c):
+            if sortie and c in marques_tonales and sortie[-1].isascii() and sortie[-1].isalpha():
+                continue
+            sortie.append(c)
         else:
             sortie.append(c)
     return unicodedata.normalize("NFC", "".join(sortie))
