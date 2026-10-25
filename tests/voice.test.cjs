@@ -41,15 +41,24 @@ assert.equal(evaluate("soninkeForms('**Titre inconnu**').length"), 0);
   const entries = evaluate('state.entries');
   assert(entries.length > 1300, `Expected >1300 lexicon entries, got ${entries.length}`);
   const seenIds = new Set();
-  const seenWords = new Set();
+  const seenWords = new Map();
+  let validatedHomonymEntries = 0;
+  const isValidatedHomonym = e => /Arbitrage d’homonymes validé par le référent linguistique/.test(e.source || "");
   for (const e of entries) {
     assert(e.soninke && e.francais, `Incomplete entry: ${JSON.stringify(e)}`);
     assert(!seenIds.has(e.id), `Duplicate lexicon ID: ${e.id}`);
     seenIds.add(e.id);
+    if (isValidatedHomonym(e)) validatedHomonymEntries++;
     const key = evaluate(`normalizeLexicalKey(${JSON.stringify(e.soninke)})`);
-    assert(!seenWords.has(key), `Duplicate Soninke headword in soninkeGPT: ${e.soninke} (${key})`);
-    seenWords.add(key);
+    const previous = seenWords.get(key) || [];
+    if (previous.length) {
+      assert(isValidatedHomonym(e) || previous.every(isValidatedHomonym),
+        `Unexpected duplicate Soninke headword outside approved homonym groups: ${e.soninke} (${key})`);
+    }
+    previous.push(e);
+    seenWords.set(key, previous);
   }
+  assert.equal(validatedHomonymEntries, 380, `Expected all 380 entries from the 169 validated homonym groups, got ${validatedHomonymEntries}`);
   assert.equal(evaluate("lookupTerm('baano-ye').exact[0].soninke"), 'baano-ye');
   assert.equal(evaluate("lookupTerm('segeñe').exact[0].francais"), 'ongle');
   assert(evaluate("lookupTerm('segene').exact[0].francais").includes('monter'));
