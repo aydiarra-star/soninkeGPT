@@ -1,0 +1,103 @@
+name: Generate Soninke audio — batch 100
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Maximum de mots à traiter dans le lot fixe de 100"
+        required: true
+        type: choice
+        options: ["100"]
+        default: "100"
+  push:
+    branches: [main]
+    paths:
+      - "data/source/audio-batch-100-2026-10-25.csv"
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: soninkegpt-audio-batch-100
+  cancel-in-progress: false
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install audio dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy soundfile
+          python -m pip install omnivoice || python -m pip install git+https://github.com/k2-fsa/OmniVoice.git
+      - name: Cache OmniVoice model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface/hub
+          key: omnivoice-hf-\${{ runner.os }}-k2-fsa-OmniVoice-v1
+      - name: Generate exactly the committed 100-word batch
+        run: python scripts/generate_audio_batch.py --batch data/source/audio-batch-100-2026-10-25.csv --limit 100 --device auto
+      - name: Rebuild voice memory without overwriting original audio
+        if: always()
+        run: |
+          rm -f audio/generated/reference.wav
+          python scripts/generate_voice.py
+      - name: Check produced WAV files
+        if: always()
+        run: |
+          python - <<'PY'
+          import glob, wave, sys
+          bad=[]
+          files=glob.glob("audio/generated/*.wav")
+          for path in files:
+              try:
+                  with wave.open(path,"rb") as w:
+                      if w.getnframes()<1 or w.getframerate()<1 or w.getnchannels()<1: raise ValueError("WAV vide/invalide")
+              except Exception as e: bad.append(f"{path}: {e}")
+          print(f"WAV vérifiés : {len(files)-len(bad)} valides ; {len(bad)} invalides")
+          for item in bad: print("ERREUR:",item)
+          if bad: sys.exit(1)
+          PY
+      - name: Package batch, translations and errors for review
+        if: always()
+        run: |
+          mkdir -p review-bundle/audio/generated
+          cp data/source/audio-batch-100-2026-10-25.csv review-bundle/
+          [ ! -f data/source/audio-batch-100-progress.csv ] || cp data/source/audio-batch-100-progress.csv review-bundle/
+          [ ! -f data/voice-memory.json ] || cp data/voice-memory.json review-bundle/
+          [ ! -f data/voice-generation-errors.csv ] || cp data/voice-generation-errors.csv review-bundle/
+          find audio/generated -maxdepth 1 -type f -name '*.wav' ! -name 'reference.wav' -exec cp {} review-bundle/audio/generated/ \;
+      - name: Upload generated audio as review artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: soninkegpt-audio-batch-100
+          path: review-bundle/
+          if-no-files-found: error
+          retention-days: 30
+      - name: Propose generated audio for human review
+        if: success()
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: \${{ secrets.GITHUB_TOKEN }}
+          branch: audio-review/batch-100-\${{ github.run_number }}
+          base: main
+          delete-branch: false
+          title: "Audios Soninké — lot de 100 à valider"
+          body: |
+            Lot généré par GitHub Actions à partir du manifeste CSV versionné.
+            Les traductions source sont conservées. Les WAV sont des candidats techniques à écouter.
+            Aucune prononciation n'est considérée comme validée sans contrôle humain.
+          commit-message: "Ajouter les candidats audio du lot Soninké 100"
+          add-paths: |
+            audio/generated/*.wav
+            data/voice-memory.json
+            data/source/audio-batch-100-progress.csv
+            data/voice-generation-errors.csv
