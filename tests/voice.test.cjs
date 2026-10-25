@@ -144,6 +144,11 @@ assert.equal(evaluate("soninkeForms('**Titre inconnu**').length"), 0);
     assert.equal(audio.francais || "", french, "Wrong French translation for " + form);
   }
   assert.equal(Object.keys(expectedAudioTranslations).length, 17);
+  // Les deux traductions déjà validées restent rattachées aux lemmes existants, sans doublons.
+  assert.equal(evaluate("lookupTerm('biyaade').exact.filter(e => normalizeWord(e.soninke) === 'biyaade').length"), 1,
+    "La forme canonique biyaade doit rester une seule entrée");
+  assert.equal(evaluate("lookupTerm('bolonŋe').exact.filter(e => normalizeWord(e.soninke) === 'bolonŋe').length"), 1,
+    "La forme canonique bolonŋe doit rester une seule entrée");
 
   assert.equal(evaluate("lookupTerm('baano-ye').exact[0].soninke"), 'baano-ye');
   assert.equal(evaluate("lookupTerm('segeñe').exact[0].francais"), 'ongle');
