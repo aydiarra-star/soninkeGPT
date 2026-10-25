@@ -73,7 +73,44 @@ assert.equal(evaluate("soninkeForms('**Titre inconnu**').length"), 0);
     "La glose audio de I doit suivre la validation du référent");
   assert.equal(evaluate("findAudioInfo('iku').francais"), "ils / elles",
     "La glose audio de Iku doit rester ils / elles");
-  assert.equal(evaluate("lookupTerm('baano-ye').exact[0].soninke"), 'baano-ye');
+
+  // Liste lexicale validée après comparaison des 113 formes fournies avec le lexique de base.
+  const expectedValidatedList = {
+    "Ala": "Allah, Dieu",
+    "Anmiina": "Amen",
+    "Annebi": "Le prophète Mahomet",
+    "Araba": "Mercredi",
+    "Arijanna": "Paradis",
+    "Ayiwa !": "D'accord !",
+    "Buki": "Livre, bouquin",
+    "Daqqu": "Soif",
+    "Due": "Accepter",
+    "Faccari": "Traduire",
+    "Haqqile": "Intelligence, conscience",
+    "Hattaye": "Thé vert",
+    "Kaaduuro": "Zéro",
+    "Menjanne": "Ami",
+    "Ñaaye": "Prince",
+    "Ñiine": "Terre, sol",
+    "Orege": "Thé",
+    "Sare": "Être humain",
+    "Talaata": "Mardi",
+    "Tenenne": "Lundi",
+    "Tonnu": "Vérité",
+    "Wallahi": "Au nom de Dieu",
+    "Welo": "Bicyclette",
+    "Woto": "Automobile",
+    "Xaranmoxo": "Professeur",
+    "Xatti": "Lait",
+    "Xoso": "Mois, lune",
+  };
+  for (const [form, french] of Object.entries(expectedValidatedList)) {
+    const key = evaluate(`normalizeLexicalKey(${JSON.stringify(form)})`);
+    const matches = entries.filter(e => evaluate(`normalizeLexicalKey(${JSON.stringify(e.soninke)})`) === key && e.francais === french);
+    assert(matches.length >= 1, `Missing validated lexical entry: ${form} → ${french}`);
+    assert(matches.some(e => e.statut === "valide_par_referent_linguistique" || /valide_par_referent_linguistique/.test(e.statut || "")),
+      `Entry not marked as validated: ${form}`);
+  }  assert.equal(evaluate("lookupTerm('baano-ye').exact[0].soninke"), 'baano-ye');
   assert.equal(evaluate("lookupTerm('segeñe').exact[0].francais"), 'ongle');
   assert(evaluate("lookupTerm('segene').exact[0].francais").includes('monter'));
 
