@@ -1,0 +1,198 @@
+action;entite;champ;avant;apres;commentaire
+chiffres_retires;daari1;soninke;daari1;daari;marqueur d'homonyme retiré de la forme affichée
+chiffres_retires;daaxa1;soninke;daaxa1;daaxa;marqueur d'homonyme retiré de la forme affichée
+surcharge;daaxa;francais;campement, lieu habituel de séjour / to camp;campement, lieu habituel de séjour;segment anglais « to camp » retiré (glose française conservée)
+chiffres_retires;daba1;soninke;daba1;daba;marqueur d'homonyme retiré de la forme affichée
+surcharge;dagandi;francais;"légaliser, permettre, admettre (dans la religion). verbe causitif. legalize, permit, justify; légaliser, permettre, admettre (dans la religion)";légaliser, permettre, admettre (dans la religion);anglais et doublon retirés, catégorie « verbe causitif » retirée du champ glose
+categorie_deduite;dagandi;categorie;;verbe;libellé déduit de la source brute
+surcharge;dakka;francais;"provoquer à la lutte; défier. ???? / tumulte, vacarme, brouhaha";"provoquer à la lutte; défier / tumulte, vacarme, brouhaha";marqueur d'incertitude ???? retiré
+categorie_deduite;dan;categorie;;pronom;libellé déduit de la source brute
+chiffres_retires;danbe1;soninke;danbe1;danbe;marqueur d'homonyme retiré de la forme affichée
+chiffres_retires;danda1;soninke;danda1;danda;marqueur d'homonyme retiré de la forme affichée
+chiffres_retires;dango1;soninke;dango1;dango;marqueur d'homonyme retiré de la forme affichée
+variante_ecartee_collision;danŋa;variantes;da;;forme déjà utilisée comme tête de lexique
+variante_repositionnee;danŋa;variantes;;daŋa;liste Variant: de la source
+chiffres_retires;danpi1;soninke;danpi1;danpi;marqueur d'homonyme retiré de la forme affichée
+categorie_deduite;dara;categorie;;attributif;libellé déduit de la source brute
+surcharge;daro;francais;respect (someone) pleased, to be / être gros / être fier / respecter, bien accueillir;être gros / être fier / respecter, bien accueillir;résumé anglais retiré, sens français conservés
+categorie_deduite;deele;categorie;;verbe;libellé déduit de la source brute
+chiffres_retires;denbele1;soninke;denbele1;denbele;marqueur d'homonyme retiré de la forme affichée
+variante_ecartee_collision;deni;variantes;denne;;forme déjà utilisée comme tête de lexique
+variante_repositionnee;deni;variantes;;denŋe;liste Variant: de la source
+chiffres_retires;denne1;soninke;denne1;denne;marqueur d'homonyme retiré de la forme affichée
+chiffres_retires;denqu1;soninke;denqu1;denqu;marqueur d'homonyme retiré de la forme affichée
+categorie_deduite;digindi;categorie;;verbe;libellé déduit de la source brute
+chiffres_retires;dikke2;soninke;dikke2;dikke;marqueur d'homonyme retiré de la forme affichée
+chiffres_retires;diina1;soninke;diina1;diina;marqueur d'homonyme retiré de la forme affichée
+chiffres_retires;dinda1;soninke;dinda1;dinda;marqueur d'homonyme retiré de la forme affichée
+chiffres_retires;dire1;soninke;dire1;dire;marqueur d'homonyme retiré de la forme affichée
+chiffres_retires;disa1;soninke;disa1;disa;marqueur d'homonyme retiré de la forme affichée
+chiffres_retires;donbi1;soninke;donbi1;donbi;marqueur d'homonyme retiré de la forme affichée
+chiffres_retires;donqo1;soninke;donqo1;donqo;marqueur d'homonyme retiré de la forme affichée
+sens_couvert_retire;doŋa;francais;équilibre;;sens déjà présent dans un sens plus complet de l'entrée
+glose_nettoyee;doŋa;francais;équilibre, côte / équilibre / côte (de la mer);équilibre, côte / côte (de la mer);
+variante_ecartee_collision;dooke;variantes;doore;;forme déjà utilisée comme tête de lexique
+variante_repositionnee;dooke;variantes;;doono, dooru;liste Variant: de la source
+chiffres_retires;doore1;soninke;doore1;doore;marqueur d'homonyme retiré de la forme affichée
+chiffres_retires;doosa1;soninke;doosa1;doosa;marqueur d'homonyme retiré de la forme affichée
+chiffres_retires;dopa1;soninke;dopa1;dopa;marqueur d'homonyme retiré de la forme affichée
+chiffres_retires;du1;soninke;du1;du;marqueur d'homonyme retiré de la forme affichée
+sens_couvert_retire;duntenŋaaxu;francais;honnêteté;;sens déjà présent dans un sens plus complet de l'entrée
+sens_couvert_retire;duntenŋaaxu;francais;confiance;;sens déjà présent dans un sens plus complet de l'entrée
+glose_nettoyee;duntenŋaaxu;francais;honnêteté, confiance / honnêteté / confiance;honnêteté, confiance;
+variante_repositionnee;dudoxoto;variantes;;duroxoto, duruxoto, duudoxoto;liste Variant: de la source
+chiffres_retires;duga1;soninke;duga1;duga;marqueur d'homonyme retiré de la forme affichée
+categorie_deduite;dugundi;categorie;;verbe;libellé déduit de la source brute
+sens_duplique_retire;dugutandi;francais;libérer, échapper (faire);;répétition strictement identique
+glose_nettoyee;dugutandi;francais;libérer, échapper (faire) / libérer, échapper (faire) / délivrer, sauver;libérer, échapper (faire) / délivrer, sauver;
+chiffres_retires;dukku1;soninke;dukku1;dukku;marqueur d'homonyme retiré de la forme affichée
+surcharge;-dun;francais;"""à l'intérieur de"" (affixe connectif des noms composés). gundunfare (gunne.dun.fare) warthog (lit: bush-occupant-donkey). phacochère (lit: brousse-occupant-âne). debidunke (debe.dun.nke) villager (lit: village-occupant-person). villageois (lit: village occupant-personne). dunadunke (duna.dun.nke) earthling (lit: earth-occupant-person). habitant de la terre (lit: terre-occupant-personne)";"""à l'intérieur de"" (affixe connectif des noms composés)";glose française de source conservée, exemples illustratifs (EN+FR) retirés
+sens_duplique_retire;dundere;francais;orgueilleux;;répétition strictement identique
+glose_nettoyee;dundere;francais;orgueilleux / orgueilleux;orgueilleux;
+sens_couvert_retire;dunŋe;francais;morceau;;sens déjà présent dans un sens plus complet de l'entrée
+glose_nettoyee;dunŋe;francais;morceau, reste / morceau;morceau, reste;
+surcharge;Enoosi;francais;Enosh;Enos;forme française bibliographique « Enos »
+chiffres_retires;faaba1;soninke;faaba1;faaba;marqueur d'homonyme retiré de la forme affichée
+categorie_deduite;faama;categorie;;prédicatif_verbal;libellé déduit de la source brute
+chiffres_retires;faara1;soninke;faara1;faara;marqueur d'homonyme retiré de la forme affichée
+sens_couvert_retire;faasidaaxu;francais;égoïsme;;sens déjà présent dans un sens plus complet de l'entrée
+glose_nettoyee;faasidaaxu;francais;égoïsme, manifester envers qqn égoïsme / égoïsme, manifester envers qqn / égoïsme;égoïsme, manifester envers qqn égoïsme / égoïsme, manifester envers qqn;
+chiffres_retires;faayi1;soninke;faayi1;faayi;marqueur d'homonyme retiré de la forme affichée
+categorie_deduite;fadumanta;categorie;;attributif;libellé déduit de la source brute
+categorie_deduite;fagu;categorie;;verbe;libellé déduit de la source brute
+surcharge;fallamaxankure;francais;ambusher;embusqué;« ambusher » → « embusqué »
+chiffres_retires;falle1;soninke;falle1;falle;marqueur d'homonyme retiré de la forme affichée
+chiffres_retires;fana1;soninke;fana1;fana;marqueur d'homonyme retiré de la forme affichée
+surcharge;fana;francais;entourer, enrouler / Nombre ordinal. first / Nombre ordinal. premier;entourer, enrouler / premier;sens anglais « first » retiré (« premier » présent), marqueur « Nombre ordinal. » retiré
+chiffres_retires;fanka1;soninke;fanka1;fanka;marqueur d'homonyme retiré de la forme affichée
+surcharge;Fanka Senne;francais;Holy Spirit;Saint-Esprit;« Holy Spirit » → équivalent exact « Saint-Esprit »
+surcharge;fanke;francais;vent, air. to take his word as the wind / épidémie / enflure / méningite;vent, air / épidémie / enflure / méningite;exemple anglais retiré, sens français conservés
+sens_duplique_retire;fanpe;francais;rencontrer;;répétition strictement identique
+glose_nettoyee;fanpe;francais;rencontrer / rencontrer / poursuivre;rencontrer / poursuivre;
+surcharge;fanqa;francais;terrasser, vaincre / wrestle;terrasser, vaincre / lutter;« wrestle » → « lutter » (confirmé par fanqaana « lutteur »)
+variante_repositionnee;fanqalelle;variantes;;fankalalle, fankaleele, fanqalaane;liste Variant: de la source
+chiffres_retires;fanso1;soninke;fanso1;fanso;marqueur d'homonyme retiré de la forme affichée
+variante_repositionnee;fanti;variantes;;pande, pandi, panti;liste Variant: de la source
+glose_nettoyee;faqile;francais;intelligence / conscience. idiom: sondonme;intelligence / conscience;
+surcharge;fari xoore;francais;mullet;mule / mulet;"« mule; mullet » → « mule / mulet » (mullet = mulet, mule déjà français)"
+surcharge;fariganka;francais;warm blooded;à sang chaud;« warm blooded » → « à sang chaud »
+categorie_deduite;fatandi;categorie;;verbe;libellé déduit de la source brute
+chiffres_retires;fatama1;soninke;fatama1;fatama;marqueur d'homonyme retiré de la forme affichée
+surcharge;fatemulle;francais;innocent, un;un innocent;glose française de la source « un innocent » (anglais « innocent person » retiré)
+surcharge;faxa;francais;"functions as an embarkative aspect marker: ""to have just done something";"fonctionne comme marque de l'aspect embarquatif: ""venir de faire...""";définition anglaise remplacée par la glose française de la source
+categorie_deduite;faxa;categorie;;prédicatif_verbal;libellé déduit de la source brute
+chiffres_retires;fayifo1;soninke;fayifo1;fayifo;marqueur d'homonyme retiré de la forme affichée
+categorie_deduite;fe;categorie;;auxiliaire_existentiel;libellé déduit de la source brute
+categorie_deduite;feedandi;categorie;;verbe;libellé déduit de la source brute
+chiffres_retires;fere1;soninke;fere1;fere;marqueur d'homonyme retiré de la forme affichée
+surcharge;feriganka;francais;warm-blooded;à sang chaud;« warm-blooded » → « à sang chaud »
+chiffres_retires;fese1;soninke;fese1;fese;marqueur d'homonyme retiré de la forme affichée
+categorie_deduite;feti;categorie;;copule;libellé déduit de la source brute
+categorie_deduite;fillandi;categorie;;nombre;libellé déduit de la source brute
+chiffres_retires;fina1;soninke;fina1;fina;marqueur d'homonyme retiré de la forme affichée
+chiffres_retires;firindi1;soninke;firindi1;firindi;marqueur d'homonyme retiré de la forme affichée
+glose_nettoyee;fodume;francais;dépendre (de qqn) (péj.), dépendre (de Dieu) (pas péj.) Sere nan xawa fodumene Alla yi;dépendre (de qqn) (péj.), dépendre (de Dieu) (pas péj.);
+variante_repositionnee;folo;variantes;;falo, folonŋe;liste Variant: de la source
+chiffres_retires;fu1;soninke;fu1;fu;marqueur d'homonyme retiré de la forme affichée
+chiffres_retires;fulaane1;soninke;fulaane1;fulaane;marqueur d'homonyme retiré de la forme affichée
+chiffres_retires;funu1;soninke;funu1;funu;marqueur d'homonyme retiré de la forme affichée
+surcharge;Furaata;francais;Euphrates;Euphrate;forme française standard « Euphrate »
+chiffres_retires;futte1;soninke;futte1;futte;marqueur d'homonyme retiré de la forme affichée
+chiffres_retires;fuula1;soninke;fuula1;fuula;marqueur d'homonyme retiré de la forme affichée
+chiffres_retires;fuura1;soninke;fuura1;fuura;marqueur d'homonyme retiré de la forme affichée
+chiffres_retires;fuuse1;soninke;fuuse1;fuuse;marqueur d'homonyme retiré de la forme affichée
+variante_repositionnee;fuxu-fuqu;variantes;dirzzle;;variante documentée de fuxu-fuxu (voir fuxu-fuxu)
+surcharge;fuxu-fuxu;francais;drizzle (rain);bruiner;« drizzle (rain) » → « bruiner » (verbe intransitif, source)
+variante_repositionnee;fuxu-fuxu;variantes;;fuxu-fuqu;liste Variant: de la source
+sens_fusionne;da1;francais;;auxiliaire de l'aspect perfectif des verbes transitifs;sens complémentaire ajouté à l'entrée existante
+doublon_fusionne_fusionne;da1;francais;passé avec objet (variante de di);passé avec objet (variante de di) / auxiliaire de l'aspect perfectif des verbes transitifs;SNK-GRM-0020 — sens du document fusionnés
+sens_fusionne;da2;francais;;pour;sens complémentaire ajouté à l'entrée existante
+sens_fusionne;da2;francais;;à;sens complémentaire ajouté à l'entrée existante
+doublon_fusionne_fusionne;da2;francais;passé avec objet (variante de di) / auxiliaire de l'aspect perfectif des verbes transitifs;passé avec objet (variante de di) / auxiliaire de l'aspect perfectif des verbes transitifs / pour / à;SNK-GRM-0020 — sens du document fusionnés
+sens_fusionne;da3;francais;;auxiliaire qui code la modalité impérative pour les sujets de la deuxième personne pluriel;sens complémentaire ajouté à l'entrée existante
+doublon_fusionne_fusionne;da3;francais;passé avec objet (variante de di) / auxiliaire de l'aspect perfectif des verbes transitifs / pour / à;passé avec objet (variante de di) / auxiliaire de l'aspect perfectif des verbes transitifs / pour / à / auxiliaire qui code la modalité impérative pour les sujets de la deuxième personne pluriel;SNK-GRM-0020 — sens du document fusionnés
+glose_nettoyee;daaba;francais;animal domestique (vache, cheval, etc.)Sanba wa daaba marayen mulla;animal domestique (vache, cheval, etc.);
+sens_enrichi;daaba;francais;animal;animal domestique (vache, cheval, etc.);sens existant conservé dans une forme plus complète
+doublon_fusionne_enrichi;daaba;francais;animal;animal domestique (vache, cheval, etc.);SNK-LEX-0725 — sens du document fusionnés
+anglais_retire;daga;francais;went;;segment sans équivalent retenu
+sens_duplique_retire;daga;francais;aller, partir;;répétition strictement identique
+sens_couvert_retire;daga;francais;aller;;sens déjà présent dans un sens plus complet de l'entrée
+glose_nettoyee;daga;francais;aller, partir / aller, partir / avoir raison, être permis, avoir le droit / dans une séquence de deux verbes dont le second est daga, il indique l'éloignement du procès exprimé par le premier verbe / went / aller;aller, partir / avoir raison, être permis, avoir le droit / dans une séquence de deux verbes dont le second est daga, il indique l'éloignement du procès exprimé par le premier verbe;
+sens_enrichi;daga;francais;partir;aller, partir;sens existant conservé dans une forme plus complète
+sens_fusionne;daga;francais;;avoir raison, être permis, avoir le droit;sens complémentaire ajouté à l'entrée existante
+sens_fusionne;daga;francais;;dans une séquence de deux verbes dont le second est daga, il indique l'éloignement du procès exprimé par le premier verbe;sens complémentaire ajouté à l'entrée existante
+doublon_fusionne_enrichi+fusionne;daga;francais;partir;aller, partir / avoir raison, être permis, avoir le droit / dans une séquence de deux verbes dont le second est daga, il indique l'éloignement du procès exprimé par le premier verbe;SNK-LEX-0001 — sens du document fusionnés
+sens_fusionne;dala;francais;;mare, marigot;sens complémentaire ajouté à l'entrée existante
+doublon_fusionne_fusionne;dala;francais;lac;lac / mare, marigot;SNK-LEX-0769 — sens du document fusionnés
+sens_fusionne;dantaxi;francais;;commenter, s'expliquer, expliquer un bout;sens complémentaire ajouté à l'entrée existante
+doublon_fusionne_fusionne;dantaxi;francais;annoncer;annoncer / commenter, s'expliquer, expliquer un bout;SNK-LEX-0020 — sens du document fusionnés
+sens_enrichi;dare1;francais;feuille;feuille, papier;sens existant conservé dans une forme plus complète
+doublon_fusionne_enrichi;dare1;francais;feuille;feuille, papier;SNK-LEX-0737 — sens du document fusionnés
+sens_fusionne;dare2;francais;;être content, être satisfait;sens complémentaire ajouté à l'entrée existante
+sens_fusionne;dare2;francais;;être bien accueilli, être honoré;sens complémentaire ajouté à l'entrée existante
+sens_fusionne;dare2;francais;;gros, costaud;sens complémentaire ajouté à l'entrée existante
+sens_fusionne;dare2;francais;;orgueilleux, fier;sens complémentaire ajouté à l'entrée existante
+doublon_fusionne_fusionne;dare2;francais;feuille, papier;feuille, papier / être content, être satisfait / être bien accueilli, être honoré / gros, costaud / orgueilleux, fier;SNK-LEX-0737 — sens du document fusionnés
+sens_fusionne;debe1;francais;;natte qu'on peut enrouler;sens complémentaire ajouté à l'entrée existante
+doublon_fusionne_fusionne;debe1;francais;village;village / natte qu'on peut enrouler;SNK-LEX-0906 — sens du document fusionnés
+sens_enrichi;debe2;francais;village;ville, village;sens existant conservé dans une forme plus complète
+doublon_fusionne_enrichi;debe2;francais;village / natte qu'on peut enrouler;ville, village / natte qu'on peut enrouler;SNK-LEX-0906 — sens du document fusionnés
+sens_fusionne;di;francais;;dans, à, de, en;sens complémentaire ajouté à l'entrée existante
+doublon_fusionne_fusionne;di;francais;passé avec objet;passé avec objet / dans, à, de, en;SNK-GRM-0018 — sens du document fusionnés
+sens_enrichi;diga1;francais;forêt;forêt, bosquet, endroit touffu, touffe;sens existant conservé dans une forme plus complète
+doublon_fusionne_enrichi;diga1;francais;forêt;forêt, bosquet, endroit touffu, touffe;SNK-LEX-0732 — sens du document fusionnés
+sens_fusionne;diga2;francais;;aller;sens complémentaire ajouté à l'entrée existante
+doublon_fusionne_fusionne;diga2;francais;forêt, bosquet, endroit touffu, touffe;forêt, bosquet, endroit touffu, touffe / aller;SNK-LEX-0732 — sens du document fusionnés
+surcharge;do;francais;et, avec, par, pour / dans, à / about / with;et, avec, par, pour / dans, à / à propos de;sens anglais « with » couvert par « avec », « about » → « à propos de »
+sens_fusionne;do;francais;;et, avec, par, pour;sens complémentaire ajouté à l'entrée existante
+sens_fusionne;do;francais;;dans, à;sens complémentaire ajouté à l'entrée existante
+sens_fusionne;do;francais;;à propos de;sens complémentaire ajouté à l'entrée existante
+doublon_fusionne_fusionne;do;francais;action en cours;action en cours / et, avec, par, pour / dans, à / à propos de;SNK-GRM-0022 — sens du document fusionnés
+doublon_ecarte_glose_identique;baxandoroke;francais;robe indigo;;identique à SNK-LEX-0416
+sens_enrichi;doronme;francais;doigt;doigt, orteil;sens existant conservé dans une forme plus complète
+sens_fusionne;doronme;francais;;panaris;sens complémentaire ajouté à l'entrée existante
+doublon_fusionne_enrichi+fusionne;doronme;francais;doigt;doigt, orteil / panaris;SNK-LEX-1413 — sens du document fusionnés
+doublon_ecarte_glose_identique;tandoronme;francais;orteil;;identique à SNK-LEX-1419
+sens_enrichi;dugu;francais;attendre;attendre, espérer;sens existant conservé dans une forme plus complète
+doublon_fusionne_enrichi;dugu;francais;attendre;attendre, espérer;SNK-LEX-0155 — sens du document fusionnés
+sens_enrichi;duguta;francais;terminer;finir, terminer, s'échapper;sens existant conservé dans une forme plus complète
+sens_fusionne;duguta;francais;;échapper;sens complémentaire ajouté à l'entrée existante
+doublon_fusionne_enrichi+fusionne;duguta;francais;terminer;finir, terminer, s'échapper / échapper;SNK-LEX-0111 — sens du document fusionnés
+doublon_ecarte_glose_identique;nuxudunbure;francais;désagréable, hypocrite, mauvais;;identique à SNK-LEX-0617
+doublon_ecarte_glose_identique;dunbe;francais;rouge;;identique à SNK-LEX-0820
+sens_enrichi;duŋe;francais;accepter;accepter, être d'accord, obéir;sens existant conservé dans une forme plus complète
+sens_fusionne;duŋe;francais;;accepter de faire une action;sens complémentaire ajouté à l'entrée existante
+doublon_fusionne_enrichi+fusionne;duŋe;francais;accepter;accepter, être d'accord, obéir / accepter de faire une action;SNK-LEX-0013 — sens du document fusionnés
+sens_fusionne;ee;francais;;interjection qui montre l'étonnement;sens complémentaire ajouté à l'entrée existante
+doublon_fusionne_fusionne;ee;francais;oui;oui / interjection qui montre l'étonnement;SNK-LEX-0838 — sens du document fusionnés
+doublon_ecarte_glose_identique;faabanbaanaaxu;francais;rivalité, opposition;;identique à SNK-LEX-0307
+sens_enrichi;faamu;francais;comprendre;comprendre, apercevoir;sens existant conservé dans une forme plus complète
+doublon_fusionne_enrichi;faamu;francais;comprendre;comprendre, apercevoir;SNK-LEX-0158 — sens du document fusionnés
+surcharge;fanqe;francais;lutter lutte / lutter / lutte;lutter / lutte;sens « lutter / lutte » séparés (listes source sans séparateur)
+sens_fusionne;fanqe;francais;;lutte;sens complémentaire ajouté à l'entrée existante
+doublon_fusionne_fusionne;fanqe;francais;lutter;lutter / lutte;SNK-LEX-0070 — sens du document fusionnés
+doublon_ecarte_glose_identique;faqilanbali;francais;impatient;;identique à SNK-LEX-0333
+doublon_ecarte_glose_identique;faradinlenme;francais;reins;;identique à SNK-LEX-1425
+sens_fusionne;faraxu;francais;;échanger, remplacer, substituer, troquer;sens complémentaire ajouté à l'entrée existante
+doublon_fusionne_fusionne;faraxu;francais;changer;changer / échanger, remplacer, substituer, troquer;SNK-LEX-0037 — sens du document fusionnés
+sens_fusionne;fare1;francais;;âne;sens complémentaire ajouté à l'entrée existante
+doublon_fusionne_fusionne;fare1;francais;sang;sang / âne;SNK-LEX-1422 — sens du document fusionnés
+doublon_ecarte_glose_identique;fare2;francais;sang;;identique à SNK-LEX-1422
+surcharge;fate2;francais;cueillir séparer divorce sevrer / cueillir / séparer / divorce / sevrer;cueillir, séparer, divorce, sevrer;liste source sans séparateur : ponctuation rétablie, sens uniques conservés
+sens_fusionne;fate2;francais;;cueillir, séparer, divorce, sevrer;sens complémentaire ajouté à l'entrée existante
+doublon_fusionne_fusionne;fate2;francais;corps;corps / cueillir, séparer, divorce, sevrer;SNK-LEX-1420 — sens du document fusionnés
+doublon_ecarte_glose_identique;fatanbinne;francais;africain, peau noire;;identique à SNK-LEX-0508
+sens_enrichi;fate1;francais;corps;peau, chair, corps;sens existant conservé dans une forme plus complète
+doublon_fusionne_enrichi;fate1;francais;corps / cueillir, séparer, divorce, sevrer;peau, chair, corps / cueillir, séparer, divorce, sevrer;SNK-LEX-1420 — sens du document fusionnés
+sens_fusionne;fayi;francais;;voler, dérober;sens complémentaire ajouté à l'entrée existante
+doublon_fusionne_fusionne;fayi;francais;en train de;en train de / voler, dérober;SNK-GRM-0014 — sens du document fusionnés
+sens_enrichi;fillo;francais;deux;deux (numéro cardinal);sens existant conservé dans une forme plus complète
+doublon_fusionne_enrichi;fillo;francais;deux;deux (numéro cardinal);SNK-LEX-0800 — sens du document fusionnés
+sens_enrichi;fitta;francais;lancer;jeter, lancer;sens existant conservé dans une forme plus complète
+doublon_fusionne_enrichi;fitta;francais;lancer;jeter, lancer;SNK-LEX-0069 — sens du document fusionnés
+doublon_ecarte_glose_identique;fufe;francais;respirer;;identique à SNK-LEX-0098
+doublon_ecarte_glose_identique;furutu;francais;poumon;;identique à SNK-LEX-1423
+sens_enrichi;fuutu;francais;tirer;tirer, tendre, étendre, étirer;sens existant conservé dans une forme plus complète
+doublon_fusionne_enrichi;fuutu;francais;tirer;tirer, tendre, étendre, étirer;SNK-LEX-0112 — sens du document fusionnés
+correction_lexique;bula;francais;bleu / poudre bleue pour maintenir la couleur indigo / title of honor attached to some family names, (<Emphasized>Sisoxobula, Kamisoxobula) </Emphasized>;bleu / poudre bleue pour maintenir la couleur indigo / titre honorifique accolé à certains patronymes;anglais/balises remplacés par l'équivalent français de la colonne definition
+correction_lexique;billati;francais;A ma daga golli billati in ke;surtout, à plus forte raison, encore moins;anglais/balises remplacés par l'équivalent français de la colonne definition
