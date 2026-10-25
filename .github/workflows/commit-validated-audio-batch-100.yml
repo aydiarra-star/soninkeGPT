@@ -1,0 +1,86 @@
+name: Commit validated audio batch 100
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "data/source/audio-retry-queue-next-100.csv"
+permissions:
+  actions: read
+  contents: write
+  pull-requests: write
+jobs:
+  commit-validated-audio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Download the completed audio artifact
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          curl --fail --silent --show-error --location \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            "https://api.github.com/repos/$GITHUB_REPOSITORY/actions/artifacts/12610779780/zip" \
+            -o /tmp/audio-batch-100.zip
+          mkdir -p /tmp/audio-batch-100
+          unzip -q /tmp/audio-batch-100.zip -d /tmp/audio-batch-100
+      - name: Add only missing, validated batch WAV files
+        run: |
+          python - <<'PY'
+          import csv, shutil, wave
+          from pathlib import Path
+          root = Path.cwd()
+          artifact = Path("/tmp/audio-batch-100")
+          manifest = root / "data/source/audio-batch-100-2026-10-25.csv"
+          copied = 0
+          already_present = 0
+          failed_retry = []
+          with manifest.open(encoding="utf-8-sig", newline="") as f:
+              rows = list(csv.DictReader(f))
+          if len(rows) != 100:
+              raise SystemExit(f"Manifest attendu: 100 lignes, trouvé {len(rows)}")
+          for row in rows:
+              rel = Path(row["audio_path"])
+              dst = root / rel
+              src = artifact / rel
+              if row["soninke"] == "borokaaxu":
+                  failed_retry.append(row["soninke"])
+                  continue
+              if dst.exists():
+                  already_present += 1
+                  continue
+              if not src.is_file():
+                  raise SystemExit(f"Audio attendu absent de l'artefact: {rel}")
+              try:
+                  with wave.open(str(src), "rb") as w:
+                      if w.getnframes() < 1 or w.getframerate() < 1 or w.getnchannels() < 1:
+                          raise ValueError("WAV vide/invalide")
+              except Exception as e:
+                  raise SystemExit(f"WAV invalide {rel}: {e}")
+              dst.parent.mkdir(parents=True, exist_ok=True)
+              shutil.copy2(src, dst)
+              copied += 1
+          if copied < 1:
+              raise SystemExit("Aucun nouveau WAV à intégrer; arrêt de sécurité.")
+          print(f"Nouveaux WAV ajoutés: {copied}; déjà présents et préservés: {already_present}; à régénérer: {failed_retry}")
+          PY
+      - name: Propose validated audio files for merge
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: audio-review/validated-batch-100-${{ github.run_number }}
+          base: main
+          delete-branch: false
+          title: "Fusionner les audios validés — lot de 100"
+          body: |
+            Les prononciations du lot ont été écoutées et validées par le référent linguistique.
+            Cette PR ajoute uniquement les fichiers WAV manquants du lot et ne remplace aucun audio déjà présent.
+            `borokaaxu` (« stérilité ») a échoué à la génération et reste dans la file prioritaire du prochain lot de 100.
+          commit-message: "Ajouter les audios validés du lot Soninké 100"
+          add-paths: |
+            audio/generated/*.wav
