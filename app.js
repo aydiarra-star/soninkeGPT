@@ -416,6 +416,20 @@ function normalizeWord(value) {
     .toLocaleLowerCase("fr");
 }
 
+// Clé lexicale stricte : conserve les marques de ton pour distinguer les formes
+// soninkées, tout en normalisant Unicode, casse, apostrophes et tirets.
+function normalizeLexicalKey(value) {
+  return String(value || "")
+    .replace(/ñ/g, "ɲ")
+    .replace(/Ñ/g, "ɲ")
+    .normalize("NFC")
+    .replace(/[’‘]/g, "'")
+    .replace(/-/g, " ")
+    .trim()
+    .replace(/\s+/g, " ")
+    .toLocaleLowerCase("fr");
+}
+
 // Normalisation orthographique & phonétique du soninké (relie kh↔x, ou↔u, ñ/gn/ny↔ɲ, dj↔j, tch↔c)
 function normalizeSoninkeOrtho(value) {
   return normalizeWord(value)
@@ -1400,6 +1414,8 @@ function splitSenses(francais) {
 
 function lookupTerm(term) {
   const directKey = normalizeWord(term);
+  const directLexicalKey = normalizeLexicalKey(term);
+  const exactToneDirect = [];
   const forms = candidateWordForms(term);
   const ortho = normalizeSoninkeOrtho(term);
   const exactDirect = [], exactStemmed = [], starts = [], contains = [];
@@ -1407,11 +1423,17 @@ function lookupTerm(term) {
   for (const e of state.entries) {
     if (isExcludedForm(e.soninke)) continue;
     const snk = normalizeWord(e.soninke);
+    const snkLexicalKey = normalizeLexicalKey(e.soninke);
     const snkOrtho = normalizeSoninkeOrtho(e.soninke);
     const frFull = normalizeWord(e.francais);
     const frBare = frFull.replace(/^(?:le\s|la\s|les\s|un\s|une\s|l'|d'|du\s|des\s|de la\s|de\s)/, "");
     const senses = splitSenses(e.francais);
     const variants = String(e.variantes || "").split(/[;,|]/).map(normalizeWord).filter(Boolean);
+    const lexicalVariants = String(e.variantes || "").split(/[;,|]/).map(normalizeLexicalKey).filter(Boolean);
+
+    if (snkLexicalKey === directLexicalKey || lexicalVariants.includes(directLexicalKey)) {
+      exactToneDirect.push(e);
+    }
 
     if (snk === directKey || frFull === directKey || variants.includes(directKey)) {
       exactDirect.push(e);
@@ -1446,7 +1468,7 @@ function lookupTerm(term) {
   starts.sort((a, b) => scoreCorpusEntry(b, directKey) - scoreCorpusEntry(a, directKey));
   contains.sort((a, b) => scoreCorpusEntry(b, directKey) - scoreCorpusEntry(a, directKey));
 
-  const exact = [...exactDirect, ...exactStemmed];
+  const exact = exactToneDirect.length ? exactToneDirect : [...exactDirect, ...exactStemmed];
   return {
     exact: exact.slice(0, 10),
     starts: starts.slice(0, 8),
@@ -3734,7 +3756,7 @@ async function loadAllData() {
     const snk = String(entry.soninke || "").trim();
     const fr = String(entry.francais || "").trim();
     if (!snk || !fr) return;
-    const snkKey = normalizeWord(snk);
+    const snkKey = normalizeLexicalKey(snk);
     if (!snkKey || seenHeadwords.has(snkKey)) return;
     if (checkVariants && seenVariants.has(snkKey)) return;
     seenHeadwords.add(snkKey);
@@ -3762,7 +3784,7 @@ async function loadAllData() {
   }
   for (const e of entries) {
     for (const v of String(e.variantes || "").split(/[;,|]/)) {
-      const vk = normalizeWord(v);
+      const vk = normalizeLexicalKey(v);
       if (vk) seenVariants.add(vk);
     }
   }
