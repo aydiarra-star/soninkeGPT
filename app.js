@@ -1988,12 +1988,17 @@ function sentencePresenceNote(sentence) {
 function composeLexicalPhraseFallback(sourceText) {
   const original = String(sourceText || "").trim().replace(/[?!.…]+$/, "");
   if (!original) return null;
+
   const normalized = normalizeWord(original).replace(/[’‘]/g, "'");
   const tokens = normalized
-    .replace(/\b([ldjnmtsquc])'/gi, "$1 ")
-    .replace(/[^\p{L}\p{M}' -]/gu, " ")
-    .split(/\s+/).filter(Boolean);
+    .replace(/\\b([ldjnmtsquc])'/gi, "$1 ")
+    .replace(/[^\\p{L}\\p{M}' -]/gu, " ")
+    .split(/\\s+/)
+    .filter(Boolean);
   if (tokens.length < 2) return null;
+
+  // Ces mots français sont des déterminants/liaisons sans équivalent lexical
+  // confirmé. On les omet seulement si aucune expression multi-mots ne les absorbe.
   const ignored = new Set([
     "le","la","les","un","une","des","du","de","d","l","au","aux","a","dans","sur","chez",
     "et","ou","mais","que","qui","quoi","est-ce","ce","cette","ces","mon","ma","mes","ton","ta",
@@ -2001,41 +2006,81 @@ function composeLexicalPhraseFallback(sourceText) {
     "me","te","se","nous","vous","il","elle","ils","elles","on","je","j","tu"
   ]);
   const mapped = [];
-  const seen = new Set();
-  for (const token of tokens) {
-    const pronoun = SONINKE_PRONOUNS.find((p) => p.fr.includes(token));
-    if (pronoun) {
-      const key = "pronoun:" + pronoun.person;
-      if (!seen.has(key)) { mapped.push({ snk: pronoun.short, fr: token, role: "subject", token }); seen.add(key); }
+  const missingFrench = [];
+  const lexicalKey = (value) => normalizeWord(value).replace(/['-]/g, " ").replace(/\\s+/g, " ").trim();
+
+  for (let i = 0; i < tokens.length;) {
+    let match = null;
+
+    // Chercher d'abord les expressions françaises complètes du livret, du plus
+    // long au plus court, pour conserver le sens avant de traiter les mots isolés.
+    for (let end = Math.min(tokens.length, i + 6); end > i; end--) {
+      const span = tokens.slice(i, end).join(" ");
+      const spanKey = lexicalKey(span);
+      const phrase = PHRASEBOOK.find((p) => lexicalKey(p.fr) === spanKey && !isExcludedForm(p.snk));
+      if (phrase) {
+        match = { snk: phrase.snk, fr: span, role: "expression", token: span, phrase };
+        i = end;
+        break;
+      }
+      const lk = lookupTerm(span);
+      const entry = (lk.exact || []).find((e) => e && !isExcludedForm(e.soninke));
+      if (entry) {
+        match = { snk: String(entry.soninke).trim(), fr: span, role: /verbe/i.test(entry.categorie || "") ? "verb" : "noun", token: span, entry };
+        i = end;
+        break;
+      }
+    }
+    if (match) {
+      mapped.push(match);
       continue;
     }
-    if (ignored.has(token)) continue;
+
+    const token = tokens[i];
+    const pronoun = SONINKE_PRONOUNS.find((p) => p.fr.some((f) => normalizeWord(f).replace(/'/g, "") === token.replace(/'/g, "")));
+    if (pronoun) {
+      mapped.push({ snk: pronoun.short, fr: token, role: "subject", token });
+      i++;
+      continue;
+    }
+
+    if (ignored.has(token)) {
+      i++;
+      continue;
+    }
+
     const lk = lookupTerm(token);
-    const pool = [...(lk.exact || []), ...(lk.starts || [])].filter((e) => e && !isExcludedForm(e.soninke));
-    const entry = pool.sort((a,b) => scoreCorpusEntry(b, token)-scoreCorpusEntry(a, token))[0];
-    if (!entry) continue;
-    const key = normalizeWord(entry.soninke);
-    if (seen.has(key)) continue;
-    const cat = String(entry.categorie || "");
-    const role = /verbe/i.test(cat) ? "verb"
-      : /nom|syntagme|personne|pronom/i.test(cat) ? "noun"
-      : /adjectif|adverbe|deictique|expression/i.test(cat) ? "complement" : "other";
-    mapped.push({ snk: String(entry.soninke).trim(), fr: token, role, entry, token });
-    seen.add(key);
+    const pool = [...(lk.exact || []), ...(lk.starts || [])]
+      .filter((e) => e && !isExcludedForm(e.soninke));
+    pool.sort((a, b) => scoreCorpusEntry(b, token) - scoreCorpusEntry(a, token));
+    const entry = pool[0];
+    if (entry) {
+      mapped.push({
+        snk: String(entry.soninke).trim(),
+        fr: token,
+        role: /verbe/i.test(entry.categorie || "") ? "verb"
+          : /nom|syntagme|personne|pronom/i.test(entry.categorie || "") ? "noun"
+            : /adjectif|adverbe|deictique|expression/i.test(entry.categorie || "") ? "complement" : "other",
+        entry, token
+      });
+    } else {
+      missingFrench.push(token);
+    }
+    i++;
   }
+
   if (!mapped.length) return null;
-  const subject = mapped.filter((x) => x.role === "subject");
-  const nouns = mapped.filter((x) => x.role === "noun");
-  const verbs = mapped.filter((x) => x.role === "verb");
-  const complements = mapped.filter((x) => x.role === "complement" || x.role === "other");
-  const ordered = verbs.length ? [...subject, ...nouns, ...verbs, ...complements] : mapped;
-  const sentence = capitalizeFirst(ordered.map((x) => x.snk).filter(Boolean).join(" ").replace(/\s+/g, " "));
+
+  // Garder l'ordre d'origine et les répétitions. Une déduplication ou un tri
+  // sujet/nom/verbe détruirait la structure de la phrase source.
+  const sentence = capitalizeFirst(mapped.map((x) => x.snk).filter(Boolean).join(" ").replace(/\\s+/g, " "));
   if (!sentence) return null;
-  const mappedFrench = mapped.map((x) => x.token);
-  const missingFrench = tokens.filter((t) => !ignored.has(t) && !mappedFrench.includes(t));
+
   return {
-    sentence, mapped, missingFrench,
-    note: "Phrase composée automatiquement à partir des formes lexicales disponibles. La phrase entière n'est pas attestée; l'ordre, les particules et la grammaire doivent être confirmés par le référent."
+    sentence,
+    mapped,
+    missingFrench: [...new Set(missingFrench)],
+    note: "Phrase composée automatiquement en conservant l'ordre des éléments français reconnus et en réutilisant les formes du lexique. La phrase complète peut ne pas être attestée; la grammaire et les particules doivent être confirmées par le référent."
   };
 }
 
@@ -2044,7 +2089,7 @@ function fallbackComposedPhrase(sourceText, extraNote = "") {
   if (!result) return null;
   let out = "**Phrase soninké composée à partir du lexique disponible**\n";
   out += soninkeBlock(result.sentence, String(sourceText || "").trim(), "phrase");
-  out += "*Statut : assemblage automatique indicatif — la phrase complète n'est pas attestée ni validée.*\n\n";
+  out += "*Statut : phrase composée automatiquement à partir des mots disponibles. La phrase complète peut ne pas être attestée ni validée.*\n\n";
   out += "*" + result.note + "*\n\n";
   if (extraNote) out += "*Réserve : " + extraNote + "*\n\n";
   if (result.missingFrench.length) {
