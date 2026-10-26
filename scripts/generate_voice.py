@@ -147,6 +147,23 @@ def build(generate=False, limit=20, device="auto"):
         "validated_by",
         "translation_text_missing",
     )
+    # La file de régénération a priorité sur toute ancienne validation : un mot
+    # explicitement à refaire ne doit jamais être revalidé par son ancien chemin audio.
+    retry_path = ROOT / "data/source/audio-retry-queue-next-100.csv"
+    retry_words = []
+    if retry_path.exists():
+        for row in rows(retry_path):
+            status = row.get("statut", "").strip().casefold()
+            word = row.get("soninke", "").strip()
+            if word and status in {
+                "a_regenerer_priorite_confirmee",
+                "a_regenerer_lot_suivant",
+                "a_regenerer",
+                "retry",
+            }:
+                retry_words.append(key(word))
+    retry_word_set = set(retry_words)
+
     # Le manifeste de validation humaine est la source durable des validations de lots.
     validation_manifest = ROOT / "data/source/audio-batch-100-validation-2026-10-26.csv"
     if validation_manifest.exists():
@@ -156,7 +173,7 @@ def build(generate=False, limit=20, device="auto"):
             if row.get("url", "").strip()
         }
         for item in audio.values():
-            if item.get("url") not in validated_urls:
+            if item.get("url") not in validated_urls or key(item.get("text", "")) in retry_word_set:
                 continue
             item["kind"] = "voice_clone_validated"
             item["linguistic_validation"] = "validated_by_referent"
@@ -196,21 +213,7 @@ def build(generate=False, limit=20, device="auto"):
         priority_rank = {word: index for index, word in enumerate(priority_words)}
         pending.sort(key=lambda item: (0, priority_rank[key(item["text"])]) if key(item["text"]) in priority_rank else (1, key(item["text"])))
 
-    # Retenter d'abord les mots explicitement placés dans la file de régénération audio.
-    retry_path = ROOT / "data/source/audio-retry-queue-next-100.csv"
-    retry_words = []
-    if retry_path.exists():
-        for row in rows(retry_path):
-            status = row.get("statut", "").strip().casefold()
-            word = row.get("soninke", "").strip()
-            if word and status in {
-                "a_regenerer_priorite_confirmee",
-                "a_regenerer_lot_suivant",
-                "a_regenerer",
-                "retry",
-            }:
-                retry_words.append(key(word))
-    retry_word_set = set(retry_words)
+    # Retenter d’abord les mots explicitement placés dans la file de régénération audio.
     if retry_word_set:
         # Une entrée explicitement placée en régénération doit repasser dans pending
         # même si un ancien WAV existe et paraît techniquement valide.
