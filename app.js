@@ -1777,7 +1777,7 @@ function parseFrenchStructure(text) {
   } else if (pastEtre) {
     g.copuleMissing = true;
   } else if (futPeriph &&
-      !/^(?:a|à|au|aux|dans|chez|en|sur|vers|pour|contre|avec|de|du|des|la|le|les|l')\b?/i.test(futPeriph[1].trim()) &&
+      !/^(?:a|à|au|aux|dans|chez|en|sur|vers|pour|contre|avec|de|du|des|la|le|les|l')(?:\s|$)/i.test(futPeriph[1].trim()) &&
       hasFrenchVerb(futPeriph[1])) {
     // « Je vais manger » est un futur périphrastique, mais « je vais à la prière »
     // emploie « aller » comme verbe principal avec un complément de lieu.
