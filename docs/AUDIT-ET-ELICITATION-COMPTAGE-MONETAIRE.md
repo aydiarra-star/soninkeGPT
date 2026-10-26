@@ -8,6 +8,8 @@ Cette vérification porte sur les cinq fichiers candidats de la branche `researc
 
 - Les cinq fichiers candidats ont des en-têtes CSV et des colonnes attendues.
 - Aucun identifiant de ligne dupliqué n'a été détecté dans les contrôles effectués.
+- Une anomalie a été corrigée dans `monetary-counting-review.csv` : les lignes de très grands montants avaient une colonne manquante. Les 49 lignes ont maintenant le même nombre de colonnes que l'en-tête.
+- Le fichier CFA conserve trois marqueurs historiques EUR sans forme soninkée (100, 500 et 1 000 EUR) pour rappeler de ne pas transposer le comptage CFA. Ils ne sont pas des expressions validées et le script les contrôle comme marqueurs vides.
 - Les grands montants sont conservés en chiffres entiers complets (pas en notation scientifique).
 - Les champs destinés au TTS sont laissés vides dans les listes de candidats. Les champs non vides du fichier CFA sont des enregistrements antérieurs et ne constituent pas une autorisation de créer de nouveaux audios.
 - Les nouveaux grands montants sont explicitement marqués comme hypothèses ou comme éléments à éliciter. Les combinaisons cardinal + unité monétaire ne sont pas réputées attestées.
@@ -36,6 +38,10 @@ Pour chaque montant du questionnaire :
 5. Enregistrer l'audio avec consentement, conserver l'identifiant de l'enregistrement et la provenance.
 6. Faire valider séparément : (a) la traduction/le sens, (b) la forme écrite, (c) la prononciation, (d) le droit de réutiliser l'audio.
 7. N'autoriser le TTS qu'après validation explicite du référent linguistique; une sortie TTS réussie ne vaut pas validation de prononciation.
+
+## Contrôle reproductible
+
+Un script de vérification structurelle est disponible dans `scripts/audit_monetary_candidates.py`. Depuis la racine du dépôt, lancer `python3 scripts/audit_monetary_candidates.py`. Il vérifie les largeurs CSV, les identifiants, les montants numériques, les codes monétaires et l'absence de texte audio prérempli dans les listes candidates. Ce contrôle ne valide pas la langue.
 
 ## Fichiers concernés
 
