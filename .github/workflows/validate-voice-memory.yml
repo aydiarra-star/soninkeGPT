@@ -12,7 +12,7 @@ on:
       - ".github/workflows/validate-voice-memory.yml"
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   validate:
@@ -22,6 +22,19 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+      - name: Reconstruire les métadonnées canoniques des validations existantes
+        if: github.event_name == 'push'
+        run: python scripts/generate_voice.py
+      - name: Enregistrer la normalisation du manifeste
+        if: github.event_name == 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/voice-memory.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Normalize validated Soninke voice metadata"
+            git push origin HEAD:main
+          fi
       - name: Vérifier la mémoire vocale et les statuts de validation
         run: |
           python - <<'PY'
