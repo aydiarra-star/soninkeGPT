@@ -113,3 +113,27 @@ Le CSV fournit donc deux champs dédiés :
 Exemple de donnée de référence : `godi baane` pour le texte soninké à prononcer, et `cinq francs CFA` pour la traduction française à prononcer. La glose de travail peut indiquer `godi ou gode = cinq francs CFA`, mais cette équivalence reste à confirmer par un locuteur. Ne pas prononcer les colonnes d'identifiant, de montant numérique, de statut ou de notes. Les lignes sans forme documentée, notamment les candidats en euros, gardent les champs audio vides : ne rien inventer.
 
 Cette règle prépare les données; elle ne prouve pas qu'un moteur ou le code de production respecte déjà ce format. Les changements restent sur la branche de recherche et ne sont pas fusionnés dans `main`.
+
+
+## Compréhension des montants saisis par l'utilisateur
+
+SoninkeGPT doit reconnaître les montants exprimés en chiffres ou en lettres, avec des variantes de formulation usuelles, puis les résoudre vers une entrée du référentiel monétaire. Exemple : « 5 francs CFA », « cinq francs CFA » et « 5 FCFA » doivent être normalisés vers le même montant numérique et la même monnaie; si l'entrée correspondante est validée, la sortie soninkée attendue est sa forme lexicale enregistrée, par exemple `godi baane` (variante `gode baane` à confirmer). Ne pas transformer la saisie française en lecture littérale des chiffres.
+
+### Pipeline recommandé
+
+1. **Normalisation de la saisie** : interpréter chiffres et nombres écrits en lettres; normaliser les variantes de monnaie comme « FCFA » et « francs CFA » sans perdre la monnaie.
+2. **Résolution du montant** : extraire une paire structurée `montant_numérique + monnaie`, par exemple `5 + FCFA`.
+3. **Recherche monétaire** : consulter le référentiel des expressions monétaires, pas uniquement le dictionnaire des nombres cardinaux. Ne pas supposer que les règles de FCFA s'appliquent à l'euro.
+4. **Récupération de la forme** : retourner l'expression soninkée exacte associée à ce montant et à cette monnaie, avec le statut de validation.
+5. **Audio** : envoyer uniquement le champ `texte_soninke_audio` au moteur vocal; ne jamais envoyer les chiffres, codes de monnaie, identifiants ou notes techniques.
+6. **Absence de correspondance validée** : ne pas inventer de forme. Retourner une candidate explicitement marquée à vérifier, ou demander une précision si la monnaie/le contexte est ambigu.
+
+### Tests d'acceptation
+
+- « 5 francs CFA » et « cinq francs CFA » résolvent au même montant et à la même entrée monétaire.
+- « 5 FCFA » ne doit pas être lu comme une suite de chiffres ni traduit mot à mot; il doit déclencher la recherche monétaire.
+- Le texte envoyé à la synthèse vocale est uniquement une expression soninkée en lettres, sans chiffres ni symbole monétaire.
+- Une somme en euros ne doit pas être convertie automatiquement en une expression fondée sur `gode`.
+- Une entrée non validée ne doit pas être présentée comme une traduction certaine.
+
+**Limite actuelle :** cette spécification décrit le comportement requis; elle ne signifie pas que le code applicatif de production implémente déjà cette résolution. Les formes monétaires de ce dossier restent candidates tant qu'elles ne sont pas validées par un référent linguistique.
