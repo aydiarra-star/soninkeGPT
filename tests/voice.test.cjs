@@ -251,8 +251,9 @@ assert.equal(evaluate("soninkeForms('**Titre inconnu**').length"), 0);
   const missing = evaluate("generateResponse('Traduis « je mange du poisson avec le chat » en soninké')");
   assert(/sans correspondance lexicale|éléments sans correspondance|poisson/i.test(missing),
     `Le mot manquant doit être signalé sans l’inventer, obtenu : ${missing.slice(0, 240)}`);
-  assert(!/\\{\\{pair:[^|]*poisson[^|]*\\|/i.test(missing),
-    'Un mot absent ne doit pas être inséré dans une pseudo-phrase soninkée');
+  const missingLexical = evaluate("composeLexicalPhraseFallback('je mange du poisson avec le chat')");
+  assert(missingLexical && !missing.includes("{{pair:" + missingLexical.sentence + "|"),
+    'Le fallback ne doit pas afficher l’assemblage lexical complet comme phrase soninkée');
   assert(!/phrase composée automatiquement/i.test(missing),
     'Un fallback lexical incertain ne doit pas être présenté comme une phrase composée');
   // Une phrase composée est reconnue comme « Composé · lexique attesté »
