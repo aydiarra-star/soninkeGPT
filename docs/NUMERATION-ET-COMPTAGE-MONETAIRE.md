@@ -99,3 +99,17 @@ Pour `komohillin dere`, `komonaxatin dere`, `wujinin dere` et les expressions de
 La numération générale donne séparément les sens cardinaux tels que `tanmu` = dix, `tanpille/tanfille` = vingt, `tannaxate` = quarante, `tandume` = soixante, `kame` = cent et `wujune` = mille. Ces gloses cardinales aident à examiner les candidats monétaires, mais ne prouvent pas à elles seules leur sens dans l'expression d'argent.
 
 **État actuel :** montants et expressions sont consignés comme attestés dans des ressources pédagogiques; les traductions littérales et l'usage oral restent à valider. Aucun audio et aucune règle de production ne sont validés par ce document.
+
+
+## Règle obligatoire pour les textes destinés à la synthèse vocale
+
+Les champs numériques et les métadonnées peuvent conserver les chiffres pour les calculs, les filtres et les contrôles. En revanche, **aucun chiffre ni symbole monétaire ne doit être inclus dans le texte envoyé au moteur de synthèse vocale**.
+
+Le CSV fournit donc deux champs dédiés :
+
+- `texte_soninke_audio` : uniquement l'expression soninkée en lettres, sans montant chiffré ni annotation;
+- `texte_fr_audio` : uniquement la traduction française en toutes lettres, par exemple `cinq francs CFA`, jamais `5 FCFA`.
+
+Exemple de donnée de référence : `godi baane` pour le texte soninké à prononcer, et `cinq francs CFA` pour la traduction française à prononcer. La glose de travail peut indiquer `godi ou gode = cinq francs CFA`, mais cette équivalence reste à confirmer par un locuteur. Ne pas prononcer les colonnes d'identifiant, de montant numérique, de statut ou de notes. Les lignes sans forme documentée, notamment les candidats en euros, gardent les champs audio vides : ne rien inventer.
+
+Cette règle prépare les données; elle ne prouve pas qu'un moteur ou le code de production respecte déjà ce format. Les changements restent sur la branche de recherche et ne sont pas fusionnés dans `main`.
