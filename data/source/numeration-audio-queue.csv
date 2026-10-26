@@ -1,0 +1,20 @@
+audio_id,valeur,soninke,francais,variantes,audio_path,audio_status,pronunciation_review,source,notes
+NUM-AUD-0001,1,baane,un / une,,audio/numeration/NUM-AUD-0001.wav,pending_reference_recording,not_yet_recorded,"Recherche numération Soninké, PR #57: https://github.com/aydiarra-star/soninkeGPT/pull/57",non enregistré
+NUM-AUD-0002,2,Filli,deux,Fillo,audio/numeration/NUM-AUD-0002.wav,pending_reference_recording,not_yet_recorded,"Correction du référent linguistique dans ChatGPT, 2026-10-26",non enregistré
+NUM-AUD-0003,2,Fillo,deux,Filli,audio/numeration/NUM-AUD-0003.wav,pending_reference_recording,not_yet_recorded,"Correction du référent linguistique dans ChatGPT, 2026-10-26",non enregistré
+NUM-AUD-0004,3,Sikki,trois,Sikko,audio/numeration/NUM-AUD-0004.wav,pending_reference_recording,not_yet_recorded,"Correction du référent linguistique dans ChatGPT, 2026-10-26",non enregistré
+NUM-AUD-0005,3,Sikko,trois,Sikki,audio/numeration/NUM-AUD-0005.wav,pending_reference_recording,not_yet_recorded,"Correction du référent linguistique dans ChatGPT, 2026-10-26",non enregistré
+NUM-AUD-0006,4,Naxati,quatre,Naxato,audio/numeration/NUM-AUD-0006.wav,pending_reference_recording,not_yet_recorded,"Correction du référent linguistique dans ChatGPT, 2026-10-26",non enregistré
+NUM-AUD-0007,4,Naxato,quatre,Naxati,audio/numeration/NUM-AUD-0007.wav,pending_reference_recording,not_yet_recorded,"Correction du référent linguistique dans ChatGPT, 2026-10-26",non enregistré
+NUM-AUD-0008,5,Karagi,cinq,Karago,audio/numeration/NUM-AUD-0008.wav,pending_reference_recording,not_yet_recorded,"Correction du référent linguistique dans ChatGPT, 2026-10-26",non enregistré
+NUM-AUD-0009,5,Karago,cinq,Karagi,audio/numeration/NUM-AUD-0009.wav,pending_reference_recording,not_yet_recorded,"Correction du référent linguistique dans ChatGPT, 2026-10-26",non enregistré
+NUM-AUD-0010,10,tanmi,dix,tanmu,audio/numeration/NUM-AUD-0010.wav,pending_reference_recording,not_yet_recorded,"Recherche numération Soninké, PR #57: https://github.com/aydiarra-star/soninkeGPT/pull/57",non enregistré
+NUM-AUD-0011,10,tanmu,dix,tanmi,audio/numeration/NUM-AUD-0011.wav,pending_reference_recording,not_yet_recorded,"Recherche numération Soninké, PR #57: https://github.com/aydiarra-star/soninkeGPT/pull/57",non enregistré
+NUM-AUD-0012,20,tanpille,vingt,tanfille,audio/numeration/NUM-AUD-0012.wav,pending_reference_recording,not_yet_recorded,"Recherche numération Soninké, PR #57: https://github.com/aydiarra-star/soninkeGPT/pull/57",non enregistré
+NUM-AUD-0013,20,tanfille,vingt,tanpille,audio/numeration/NUM-AUD-0013.wav,pending_reference_recording,not_yet_recorded,"Recherche numération Soninké, PR #57: https://github.com/aydiarra-star/soninkeGPT/pull/57",non enregistré
+NUM-AUD-0014,40,tannaxate,quarante,,audio/numeration/NUM-AUD-0014.wav,pending_reference_recording,not_yet_recorded,"Recherche numération Soninké, PR #57: https://github.com/aydiarra-star/soninkeGPT/pull/57",non enregistré
+NUM-AUD-0015,60,tandume,soixante,,audio/numeration/NUM-AUD-0015.wav,pending_reference_recording,not_yet_recorded,"Recherche numération Soninké, PR #57: https://github.com/aydiarra-star/soninkeGPT/pull/57",non enregistré
+NUM-AUD-0016,100,kame,cent,keme,audio/numeration/NUM-AUD-0016.wav,pending_reference_recording,not_yet_recorded,"Recherche numération Soninké, PR #57: https://github.com/aydiarra-star/soninkeGPT/pull/57",non enregistré
+NUM-AUD-0017,100,keme,cent,kame,audio/numeration/NUM-AUD-0017.wav,pending_reference_recording,not_yet_recorded,"Recherche numération Soninké, PR #57: https://github.com/aydiarra-star/soninkeGPT/pull/57",non enregistré
+NUM-AUD-0018,200,kamo filli,deux cents,,audio/numeration/NUM-AUD-0018.wav,pending_reference_recording,not_yet_recorded,"Recherche numération Soninké, PR #57: https://github.com/aydiarra-star/soninkeGPT/pull/57",non enregistré
+NUM-AUD-0019,1000,wujune,mille,,audio/numeration/NUM-AUD-0019.wav,pending_reference_recording,not_yet_recorded,"Recherche numération Soninké, PR #57: https://github.com/aydiarra-star/soninkeGPT/pull/57",non enregistré
