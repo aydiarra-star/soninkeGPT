@@ -52,3 +52,36 @@ Les deux référentiels auront des identifiants et des règles séparés. Une en
 ## Fichier de suivi
 
 Le fichier `data/source/monetary-counting-review.csv` contient les premières pistes de comptage monétaire. Toutes les lignes commencent au statut « candidat à vérifier »; elles ne sont pas des traductions validées.
+
+## Résultats complémentaires de recherche (pistes, toujours non validées)
+
+Les ressources consultées renforcent l'hypothèse d'une unité monétaire traditionnelle `gode` correspondant à 5 FCFA dans les usages décrits. Elles rapportent notamment les correspondances suivantes, qui doivent rester des candidats tant que le référent ne les a pas vérifiées :
+
+- `godo baane` : 5 FCFA ;
+- `godo hilli/filli` : 10 FCFA ;
+- `godo sikki` : 15 FCFA ;
+- `godo naxati` : 20 FCFA ;
+- `godo karagi` : 25 FCFA ;
+- `godo tanmi` : 50 FCFA ;
+- `tanfille gode` : 100 FCFA ;
+- `kame/keme gode` : 500 FCFA ;
+- `kamo filli gode` : 1 000 FCFA ;
+- `wujune gode` : 5 000 FCFA, selon la ressource consultée.
+
+Le calcul par cinq est cohérent avec cette série : la valeur monétaire exprimée en unités de `gode` peut être cinq fois le cardinal correspondant. Cela ne permet pas d'étendre automatiquement la règle à toute forme ou à toute monnaie, et ne signifie pas que le mot cardinal seul change de sens.
+
+Des formes telles que `komohillin dere`, `komonaxatin dere` et `wujinin dere` sont également rapportées pour des montants ou des billets; elles sont consignées comme formes à examiner, sans les ramener prématurément à une règle générale.
+
+Une publication comparative sur les systèmes numériques mandé décrit le comptage de l'argent par multiplication par cinq dans plusieurs langues de la famille. Cette observation comparative peut orienter les questions, mais elle ne remplace jamais une attestation spécifique au soninké. Les formes d'autres langues mandé ne doivent pas être importées dans le lexique soninké.
+
+## Questions prioritaires au référent linguistique
+
+1. Est-ce que `gode` désigne historiquement ou actuellement une pièce/unité de 5 FCFA dans votre variété ?
+2. Pour 10, 15, 20 et 25 FCFA, quelles sont les formes exactes, prononcées naturellement, et quelles variantes existent ?
+3. Pour 100 FCFA, dit-on `tanfille gode`, `tanpille gode`, les deux, ou autre chose ?
+4. Pour 500 FCFA, quelle est la forme exacte : `kame gode`, `keme gode`, ou une autre variante ? `kame` seul peut-il désigner 100 dans un contexte et 500 dans un contexte monétaire, ou faut-il obligatoirement une expression complète ?
+5. Pour 1 000, 2 000, 5 000 et les sommes élevées, quelles expressions sont naturelles, et lesquelles s'emploient seulement pour des billets ?
+6. Les expressions monétaires en euros suivent-elles les expressions traditionnelles en `gode`, les nombres cardinaux ordinaires, ou une stratégie mixte ?
+7. Les réponses changent-elles selon la région, la génération, le commerce ou la variété de soninké ?
+
+Aucune réponse à ces questions ne doit être préremplie comme si elle avait été donnée par un locuteur.
