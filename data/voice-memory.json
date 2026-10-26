@@ -18923,6 +18923,12 @@
       "url": "audio/generated/23588f83275a3bd8cac1d733.wav"
     },
     {
+      "text": "Filli",
+      "source": "data/source/numeration-audio-queue.csv",
+      "francais": "deux",
+      "url": "audio/generated/e945410c49ac19ef066cc968.wav"
+    },
+    {
       "text": "fillo",
       "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
       "francais": "deux (numéro cardinal)",
@@ -25037,6 +25043,12 @@
       "url": "audio/generated/189542fb7795f2238c2badee.wav"
     },
     {
+      "text": "kamo filli",
+      "source": "data/source/numeration-audio-queue.csv",
+      "francais": "deux cents",
+      "url": "audio/generated/c14790debc00338b4aa5ec7c.wav"
+    },
+    {
       "text": "kan",
       "source": "data/candidates/dictionnaire-g-k-importable-verifie-2026-10-25.csv",
       "francais": "quel, déterminant interrogatif / Pronom interrogatif, quand l'occurrence que détermine kan est sous-entendu.",
@@ -25439,6 +25451,12 @@
       "url": "audio/generated/2dfe396ea0ba7e809bdc9938.wav"
     },
     {
+      "text": "Karagi",
+      "source": "data/source/numeration-audio-queue.csv",
+      "francais": "cinq",
+      "url": "audio/generated/fced3c2c0b235b41664abc56.wav"
+    },
+    {
       "text": "karago",
       "source": "data/source/definitions-redigees.csv",
       "francais": "cinq",
@@ -25785,6 +25803,12 @@
       "source": "data/candidates/dictionnaire-l-y-expressions-importables-2026-10-25.csv",
       "francais": "À partir de maintenant, vous êtes maudits",
       "url": "audio/generated/d1825eeb8e1e38eed875db20.wav"
+    },
+    {
+      "text": "keme",
+      "source": "data/source/numeration-audio-queue.csv",
+      "francais": "cent",
+      "url": "audio/generated/9ddc25163bf5ca5802bc26e3.wav"
     },
     {
       "text": "kên",
@@ -32357,6 +32381,12 @@
       "url": "audio/generated/af41d5735448e9e42ce2dc92.wav"
     },
     {
+      "text": "Naxati",
+      "source": "data/source/numeration-audio-queue.csv",
+      "francais": "quatre",
+      "url": "audio/generated/932c9b06e30c3b207c492608.wav"
+    },
+    {
       "text": "naxato",
       "source": "data/reports/comparaison-dictionnaire-l-y-2026-10-25.csv",
       "francais": "quatre (numéro cardinal)",
@@ -36337,7 +36367,7 @@
     {
       "text": "sikki",
       "source": "data/reports/comparaison-dictionnaire-l-y-2026-10-25.csv",
-      "francais": "",
+      "francais": "trois",
       "url": "audio/generated/69bfea735f491c4bcdd76ca2.wav"
     },
     {
@@ -38537,6 +38567,12 @@
       "url": "audio/generated/4fed00386359e93ea76bfa19.wav"
     },
     {
+      "text": "tanfille",
+      "source": "data/source/numeration-audio-queue.csv",
+      "francais": "vingt",
+      "url": "audio/generated/39132c8e1ae89cfa87b307d7.wav"
+    },
+    {
       "text": "tanga",
       "source": "data/candidates/dictionnaire-l-y-mots-importables-2026-10-25.csv",
       "francais": "garder, surveiller, protéger / apprendre par coeur, mémoriser",
@@ -38673,6 +38709,12 @@
       "source": "data/candidates/dictionnaire-l-y-mots-importables-2026-10-25.csv",
       "francais": "lance, sagaie",
       "url": "audio/generated/b6c38c234f96220b7f5150d0.wav"
+    },
+    {
+      "text": "tanmi",
+      "source": "data/source/numeration-audio-queue.csv",
+      "francais": "dix",
+      "url": "audio/generated/25af5e704162db43141ff1d4.wav"
     },
     {
       "text": "tanmise",
