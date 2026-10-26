@@ -2140,11 +2140,26 @@ function grammarAnswer(sourceText) {
   if (sampleHit && !isExcludedForm(sampleHit.soninke)) {
     let out = `**Phrase attestée dans le corpus**\n`;
     out += soninkeBlock(sampleHit.soninke, sampleHit.french, "phrase");
-    out += `*Cette phrase complète est enregistrée dans le corpus validé par le référent : elle prime sur toute recomposition.*\n\n`;
+    out += "*Cette phrase complète est enregistrée dans le corpus. Statut source : " +
+      String(sampleHit.project_status || "non renseigné") +
+      ". Ce statut doit être distingué de la validation de prononciation des audios.*\n\n";
     const alt = state.samples.filter((s) => s !== sampleHit &&
       normalizeWord(s.french).split(/[\s'.,!?()]+/).some((w) => normSrc.split(/\s+/).includes(w)));
     for (const s of alt.slice(0, 2)) out += soninkeBlock(s.soninke, s.french, "phrase");
     out += levelNote();
+    return out;
+  }
+
+  const normPhrase = (value) => normalizeWord(value || "").replace(/[?.!…]+$/, "").trim();
+  const phraseHit = PHRASEBOOK.find((phrase) =>
+    normPhrase(phrase.fr) === normSrc && !isExcludedForm(phrase.snk)
+  );
+  if (phraseHit) {
+    let out = "**Phrase répertoriée dans le répertoire local**\n";
+    out += soninkeBlock(phraseHit.snk, phraseHit.fr, "phrase");
+    out += "*Statut : entrée du répertoire de phrases local; ne pas confondre avec une validation grammaticale indépendante.*\n";
+    if (phraseHit.note) out += "*Note : " + phraseHit.note + "*\n";
+    out += "\n" + levelNote();
     return out;
   }
 
