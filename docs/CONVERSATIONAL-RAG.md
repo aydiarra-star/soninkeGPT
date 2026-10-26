@@ -11,7 +11,9 @@ Dans cette branche `feature/conversational-rag-foundation` :
 - Les clés restent côté serveur.
 - Des tests de contrat sont ajoutés dans `voice_api/tests/test_chat.py`.
 
-**Limite essentielle :** l'interface n'appelle pas encore `/api/chat`. Le endpoint ne recherche pas lui-même le lexique du navigateur : le client doit lui transmettre le contexte récupéré et les références réelles. Il ne s'agit donc pas encore d'un RAG complet ni d'une fonctionnalité activée dans l'application publique.
+**État actuel :** le frontend de cette branche appelle maintenant `/api/chat` pour les demandes explicatives, grammaticales et culturelles reconnues par des règles simples. Il construit un contexte borné à partir des entrées déjà chargées en mémoire, du livret d'expressions et des exemples locaux, en conservant le statut et la provenance lorsqu'ils existent. Les demandes ordinaires de traduction/vocabulaire restent sur le moteur local existant. Si l'API distante échoue, l'application revient au moteur local et l'indique. Le service Render public ne sert pas ce code tant que la branche n'est pas fusionnée puis déployée.
+
+**Limites restantes :** la sélection du mode est heuristique, il n'y a pas encore de sélecteur de mode dans l'interface, et les références retournées par le backend ne sont pas encore affichées comme fiches de sources. Ce n'est pas un index sémantique complet : la récupération locale repose sur le recouvrement des mots de la demande avec les champs lexicaux chargés.
 
 ## Modes
 
@@ -34,16 +36,16 @@ Exemple de requête :
 }
 ```
 
-Le champ `corpus_context` doit provenir d'une recherche réelle côté client ou d'un service de récupération ajouté ultérieurement. Les champs `sources` doivent désigner des sources effectivement consultées. Les transmettre arbitrairement ne rend pas la recherche réelle.
+Le frontend de cette branche remplit `corpus_context` depuis les résultats locaux calculés à partir des entrées, expressions et exemples réellement chargés. Le contexte est tronqué à une taille bornée. Les champs `sources` sont des métadonnées des résultats récupérés ; l'interface n'affiche pas encore une liste de références consultables. Les transmettre ne remplace pas une évaluation de la qualité de récupération.
 
 Réponse : `answer`, `mode`, `sources`, `corpus_context_used`, `degraded` et `warning`.
 
 ## Pipeline à terminer
 
-1. Ajouter dans l'interface un sélecteur de mode accessible.
-2. Rechercher dans le lexique et les phrases attestées du corpus déjà chargé.
-3. Transmettre au backend les résultats pertinents, leur statut, leur provenance et les références réelles.
-4. Afficher les sources et statuts dans les réponses, sans modifier les fonctions vocales ni les favoris.
+1. Ajouter un sélecteur de mode accessible et explicite, si souhaité, en complément de la détection heuristique.
+2. Améliorer la récupération locale au-delà du recouvrement lexical et mesurer la pertinence sur des questions de test.
+3. Afficher les sources et statuts retournés par le backend, sans modifier les fonctions vocales ni les favoris.
+4. Tester l'intégration frontend avec une API déployée, y compris le repli local lorsque le service est indisponible.
 5. N'ajouter Supabase/pgvector ou une recherche externe qu'après configuration explicite, vérification des licences et tests de repli.
 6. Tester les trois modes, les champs invalides, les erreurs du fournisseur et l'absence de clé API.
 7. Vérifier l'expérience mobile, la confidentialité, les quotas et les contrôles d'accès avant l'ouverture publique.
