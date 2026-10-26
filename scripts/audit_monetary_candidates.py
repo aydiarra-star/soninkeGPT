@@ -101,6 +101,16 @@ for required in ("id", "montant_numérique", "monnaie", "audio_status", "texte_s
 check_unique_ids(CFA_FILE, rows)
 check_amounts(CFA_FILE, rows, "montant_numérique")
 for line_number, row in enumerate(rows, start=2):
+    currency = (row.get("monnaie") or "").strip()
+    if currency not in {"FCFA", "EUR"}:
+        ERRORS.append(f"{CFA_FILE}:{line_number}: monnaie inattendue {currency!r}")
+    if currency == "EUR" and (
+        (row.get("expression_soninke") or "").strip()
+        or (row.get("source_status") or "").strip() not in {"aucune forme consignée", "non documenté"}
+    ):
+        ERRORS.append(
+            f"{CFA_FILE}:{line_number}: ligne EUR historique doit rester un marqueur sans forme candidate"
+        )
     if (row.get("id") or "").startswith("money-big-") and (
         (row.get("texte_soninke_audio") or "").strip()
         or (row.get("texte_fr_audio") or "").strip()
