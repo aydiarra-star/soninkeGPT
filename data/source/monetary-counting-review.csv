@@ -1,9 +1,17 @@
 id,montant_numérique,monnaie,expression_soninke,segmentation_proposée,équivalent_calculé,contexte,source_status,linguistic_status,audio_status,region,notes
-money-0001,5,FCFA,godi baane,"godi + baane",5,candidat expression pour argent,rapporté dans ressource pédagogique,à vérifier auprès de locuteurs,non enregistré,,Vérifier l'orthographe exacte gode/godi et la segmentation; ne pas extrapoler
-money-0002,50,FCFA,godo tanmi,"godo + tanmi",50,candidat expression pour argent,rapporté dans ressource pédagogique,à vérifier auprès de locuteurs,non enregistré,,Vérifier forme et construction exacte
-money-0003,100,FCFA,tanfille gode,"tanfille + gode",100,candidat expression pour argent,rapporté dans ressource pédagogique,à vérifier auprès de locuteurs,non enregistré,,Ne pas confondre avec tanfille comme forme cardinale rapportée pour 20
-money-0004,200,FCFA,tannaxate,,200,candidat expression pour argent,rapporté dans notes préliminaires,à vérifier auprès de locuteurs,non enregistré,,Hypothèse particulièrement à confirmer; ne pas considérer comme règle établie
-money-0005,500,FCFA,keme gode,"keme + gode",500,candidat expression pour argent,rapporté dans ressource pédagogique,à vérifier auprès de locuteurs,non enregistré,,Ne pas attribuer ce sens à kame isolé; vérifier voyelle et contexte
-money-0006,1000,FCFA,,,,montant à documenter,aucune forme consignée,non documenté,non enregistré,,Ne pas fabriquer de forme par analogie
-money-0007,100,EUR,,,,montant à documenter,aucune forme consignée,non documenté,non enregistré,,Ne pas transposer automatiquement les expressions FCFA à l'euro
-money-0008,500,EUR,,,,montant à documenter,aucune forme consignée,non documenté,non enregistré,,Ne pas transposer automatiquement les expressions FCFA à l'euro
+money-0001,5,FCFA,godi baane,"godi + baane",5,compter une somme,rapporté dans plusieurs ressources pédagogiques,à vérifier auprès de locuteurs,non enregistré,,Comparer gode/godi et baane/fana; ne pas extrapoler
+money-0002,10,FCFA,godo hilli,"godo + hilli",10,compter une somme,rapporté dans une ressource pédagogique,à vérifier auprès de locuteurs,non enregistré,,Vérifier la variante hilli/filli et la réalisation orale
+money-0003,15,FCFA,godo sikki,"godo + sikki",15,compter une somme,rapporté dans une ressource pédagogique,à vérifier auprès de locuteurs,non enregistré,,Vérifier forme exacte
+money-0004,20,FCFA,godo naxati,"godo + naxati",20,compter une somme,rapporté dans une ressource pédagogique,à vérifier auprès de locuteurs,non enregistré,,Vérifier forme exacte et cohérence avec unité gode
+money-0005,25,FCFA,godo karagi,"godo + karagi",25,compter une somme,rapporté dans plusieurs ressources,à vérifier auprès de locuteurs,non enregistré,,Exemple également discuté dans un cours; conserver la forme exacte par source
+money-0006,50,FCFA,godo tanmi,"godo + tanmi",50,compter une somme,rapporté dans plusieurs ressources pédagogiques,à vérifier auprès de locuteurs,non enregistré,,Hypothèse de calcul : 10 unités de 5 FCFA; confirmer l'usage
+money-0007,100,FCFA,tanfille gode,"tanfille + gode",100,compter une somme,rapporté dans plusieurs ressources pédagogiques,à vérifier auprès de locuteurs,non enregistré,,Le cardinal tanfille/tanpille est également rapporté pour 20; ici l'expression est monétaire
+money-0008,200,FCFA,tannaxate,,200,compilation pédagogique,rapporté dans une ressource pédagogique,à vérifier auprès de locuteurs,non enregistré,,Vérifier si l'expression monétaire est bien employée seule dans ce sens
+money-0009,500,FCFA,kame gode,"kame + gode",500,compter une somme,rapporté dans plusieurs ressources pédagogiques,à vérifier auprès de locuteurs,non enregistré,,Ne pas attribuer ce sens à kame isolé; confirmer kame/keme et segmentation
+money-0010,1000,FCFA,komohillin dere,"komohillin + dere",1000,compter une somme,rapporté dans une ressource pédagogique,à vérifier auprès de locuteurs,non enregistré,,Vérifier les limites et le sens de dere
+money-0011,2000,FCFA,komonaxatin dere,"komonaxatin + dere",2000,compter une somme,rapporté dans une ressource pédagogique,à vérifier auprès de locuteurs,non enregistré,,Vérifier segmentation et variante
+money-0012,5000,FCFA,wujinin dere,"wujinin + dere",5000,un billet de 5000,rapporté dans une ressource pédagogique,à vérifier auprès de locuteurs,non enregistré,,Le contexte billet est spécifique; vérifier si utilisable pour toute somme de 5000
+money-0013,100000,FCFA,tanpillle wujunne,"forme composée rapportée",100000,compter une somme,rapporté dans une ressource pédagogique,à vérifier auprès de locuteurs,non enregistré,,Graphie à vérifier; ne pas corriger silencieusement
+money-0014,100,EUR,,,,prix en euros,aucune forme consignée,non documenté,non enregistré,,Ne pas transposer automatiquement les expressions FCFA à l'euro
+money-0015,500,EUR,,,,prix en euros,aucune forme consignée,non documenté,non enregistré,,Ne pas transposer automatiquement les expressions FCFA à l'euro
+money-0016,1000,EUR,,,,prix en euros,aucune forme consignée,non documenté,non enregistré,,Ne pas transposer automatiquement les expressions FCFA à l'euro
