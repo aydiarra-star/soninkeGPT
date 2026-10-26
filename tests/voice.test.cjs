@@ -263,6 +263,8 @@ assert.equal(evaluate("soninkeForms('**Titre inconnu**').length"), 0);
     `Les mots disponibles doivent être transformés en phrase indicative, obtenu : ${prayer.slice(0, 360)}`);
   assert(!/Correspondances lexicales trouvées — phrase non composée/.test(prayer),
     'Une entrée lexicale disponible ne doit pas provoquer un arrêt au stade des correspondances');
+  assert(/daga/i.test(prayer) && /ɲaagaye|naagaye/i.test(prayer),
+    `La phrase doit réutiliser le verbe « daga » et le complément lexical de prière, obtenu : ${prayer.slice(0, 360)}`);
 
   // Une phrase composée est reconnue comme « Composé · lexique attesté »
   assert.equal(evaluate("attestationOf('N wa maro ke yigene').level"), 'composed');
