@@ -105,7 +105,8 @@ def restore(source: Path, destination: Path, artifact_root: Path | None = None) 
     counts: dict[str, int] = {
         "retained": len(retained),
         "missing": missing,
-        "invalid": invalid,\n        "files_restored": files_restored,
+        "invalid": invalid,
+        "files_restored": files_restored,
     }
     for item in retained:
         kind = str(item.get("kind", "kind_missing"))
@@ -117,7 +118,9 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--memory-file", required=True, type=Path,
                         help="Chemin du voice-memory.json extrait de l'artefact de revue")
-    parser.add_argument("--output", type=Path, default=ROOT / "data/voice-memory.json")\n    parser.add_argument("--artifact-root", type=Path, default=None,\n                        help="Répertoire extrait de l’artefact, utilisé pour restaurer les WAV référencés absents du dépôt")
+    parser.add_argument("--output", type=Path, default=ROOT / "data/voice-memory.json")
+    parser.add_argument("--artifact-root", type=Path, default=None,
+                        help="Répertoire extrait de l’artefact, utilisé pour restaurer les WAV référencés absents du dépôt")
     args = parser.parse_args()
     counts = restore(args.memory_file, args.output, args.artifact_root)
     print(json.dumps(counts, ensure_ascii=False, indent=2))
