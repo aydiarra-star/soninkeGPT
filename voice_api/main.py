@@ -124,7 +124,7 @@ def chat(request: ChatRequest):
     provider_used = None
     def post_json(url: str, payload: dict, headers: dict[str, str], timeout: int = 25) -> dict:
         data = json.dumps(payload).encode("utf-8")
-        req = urllib.request.Request(url, data=data, headers={**headers, "Content-Type": "application/json"}, method="POST")
+        req = urllib.request.Request(url, data=data, headers={**headers, "Content-Type": "application/json", "User-Agent": "SoninkeGPT/1.0 (+https://aydiarra-star.github.io/soninkeGPT/)"}, method="POST")
         with urllib.request.urlopen(req, timeout=timeout) as response:
             return json.loads(response.read().decode("utf-8"))
 
