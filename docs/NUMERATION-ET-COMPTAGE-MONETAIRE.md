@@ -181,3 +181,19 @@ La recherche complémentaire ajoute des formes qui ne doivent pas être fusionn�
 - Les euros restent sans expression candidate validée. Aucune forme FCFA ne doit être transposée automatiquement à l'euro.
 - Les nouvelles lignes du CSV sont des candidats documentaires, pas des traductions validées ni des enregistrements audio prêts pour la production.
 
+
+
+## Référentiel de candidats en euros et centimes — première génération
+
+Le fichier `data/source/euro-counting-candidates.csv` a été ajouté comme **inventaire de recherche**, séparé du CSV des expressions monétaires CFA. Il contient 221 lignes candidates :
+- les valeurs de 1 à 99 centimes ;
+- les valeurs de 1 à 99 euros ;
+- des sommes élevées représentatives, de 100 euros à un million d'euros.
+
+Les formes de nombres sont reprises du système cardinal soninké documenté, puis associées provisoirement à l'unité française `centime` ou `euro`. Pour les nombres inférieurs à 20, le fichier utilise provisoirement une structure nom d'unité + nombre; à partir de 20, il utilise nombre + unité, conformément à la description générale de l'ordre des cardinaux et des noms dans le guide d'écriture. **Cette règle grammaticale n'est pas encore une validation de l'usage monétaire en soninké de France.**
+
+Les expressions de ce fichier sont donc toutes au statut `hypothèse composée — ordre à valider`. Le champ `audio_text_candidate` est volontairement vide : aucune expression ne doit être envoyée au TTS avant vérification orale. La graphie et la prononciation de `euro` et `centime`, le singulier/pluriel, les variantes de diaspora et les formulations des montants mixtes (par exemple euros + centimes) restent à établir.
+
+Pour les montants mixtes, conserver d'abord une décomposition numérique exacte en euros et centimes; ne pas assembler les deux segments en une phrase soninkée ni produire un audio tant que la conjonction, l'ordre et la réalisation naturelle n'ont pas été recueillis auprès de locuteurs.
+
+Les nombres au-delà des valeurs présentes dans le fichier ne doivent pas être extrapolés silencieusement. Il faudra compléter la couverture avec des tests d'élicitation, et vérifier les formes des grands nombres avec les sources et les locuteurs. Ce référentiel n'est pas intégré au code de production et n'est pas fusionné dans `main`.
