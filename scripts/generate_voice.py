@@ -191,6 +191,8 @@ def build(generate=False, limit=20, device="auto"):
                 item[field] = previous[field]
         if previous.get("kind") == "voice_clone_validated":
             item["kind"] = "voice_clone_validated"
+            item["pronunciation_validation"] = "validated_by_linguistic_referent"
+            item["validation_prononciation"] = "validee_par_referent_linguistique"
 
     # Add known French translations to audio entries without overwriting existing translations.
     for normalized, item in vocabulary.items():
