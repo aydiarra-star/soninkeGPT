@@ -197,3 +197,31 @@ Les expressions de ce fichier sont donc toutes au statut `hypothèse composée �
 Pour les montants mixtes, conserver d'abord une décomposition numérique exacte en euros et centimes; ne pas assembler les deux segments en une phrase soninkée ni produire un audio tant que la conjonction, l'ordre et la réalisation naturelle n'ont pas été recueillis auprès de locuteurs.
 
 Les nombres au-delà des valeurs présentes dans le fichier ne doivent pas être extrapolés silencieusement. Il faudra compléter la couverture avec des tests d'élicitation, et vérifier les formes des grands nombres avec les sources et les locuteurs. Ce référentiel n'est pas intégré au code de production et n'est pas fusionné dans `main`.
+
+
+## Extension des candidats composés — cardinal + unité monétaire
+
+Le référentiel `data/source/euro-counting-candidates.csv` a été étendu à 1 112 lignes candidates :
+- 1 à 99 centimes ;
+- 1 à 999 euros ;
+- montants repères de 1 000 à 1 000 000 euros, avec des valeurs intermédiaires utiles.
+
+Cette extension s'appuie sur des sources de numération cardinale : notamment `tanpille do karago` = 25, `tanjikke` = 30, `kame do tankarage` = 150, `kamo karagi` = 500 et `wujune` = 1 000. Les formes cardinales ne prouvent pas automatiquement la construction monétaire : chaque expression avec `euro` ou `centime` reste candidate.
+
+Les guides de grammaire décrivent une différence d'ordre : les cardinaux jusqu'à 19 suivent le nom et ont une forme comptée; à partir de 20, le cardinal précède le nom. Pour cette raison, les lignes de 1 à 19 ne préjugent pas de la morphologie de l'emprunt français et affichent explicitement que l'ordre et la forme comptée doivent être vérifiés. Les formes de 20 et plus utilisent provisoirement « cardinal + unité », conformément à cette règle générale, mais restent à valider oralement dans la diaspora en France.
+
+### Points à ne pas confondre
+
+- `tanpille do karago` = 25, pas 150.
+- `tanjikke` = 30, pas 150.
+- `kame do tankarage` = 150 dans la numération cardinale générale.
+- `kamo karagi` = 500 dans la numération cardinale générale.
+- Dans le comptage CFA, une expression telle que `tanjikke gode` est rapportée pour 150 FCFA dans une source communautaire; cela doit rester séparé de la forme cardinale `kame do tankarage`. Le contexte monétaire peut suivre une convention distincte.
+
+Aucune des expressions de ce référentiel n'a un texte audio prêt à générer : le champ audio reste vide jusqu'à la validation par locuteur. Le fichier est une liste de travail destinée à l'élicitation et aux tests, non une liste de traductions confirmées. Les montants mixtes (euros et centimes dans une même somme) nécessitent encore une règle de composition séparée et des validations orales.
+
+Sources de numération à comparer :
+- Omniglot, « Numbers in Soninke » : https://omniglot.com/language/numbers/soninke.htm
+- Guide d'écriture soninké, section 2.5 « Les numéraux » : https://fr.scribd.com/document/690364522/Guide-d-Ecriture-Soninke
+- Soninkara.com, « Compte-rendu du 4ème cours de Soninké en ligne » : https://www.soninkara.com/langue/apprendre-le-soninke/compte-rendu-du-4eme-cours-de-soninke-en-ligne.html
+- CNRS, « Soninké : lexique (quantitatifs et numéraux) » : https://lgidf.cnrs.fr/node/679
