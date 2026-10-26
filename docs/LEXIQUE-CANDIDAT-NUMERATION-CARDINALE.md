@@ -5,7 +5,7 @@ Le fichier `data/source/numeration-cardinale-candidates.csv` rassemble les forme
 ## Statut
 
 - Ces lignes sont des **candidates de travail**, pas des validations linguistiques.
-- Les variantes (`hilli/f illi`, `tanmi/tanmu`, `tanpille/tanfille`, `kame/keme`) sont conservées séparément; elles ne sont pas normalisées automatiquement.
+- Les variantes (`hilli/filli`, `tanmi/tanmu`, `tanpille/tanfille`, `kame/keme`) sont conservées séparément; elles ne sont pas normalisées automatiquement.
 - Les expressions composées, notamment `kamo filli`, doivent être confirmées dans leur forme exacte.
 - Le référent linguistique doit confirmer la forme, la variété, la traduction et les variantes avant leur transfert dans le lexique de production comme entrées validées.
 - La numération cardinale est séparée du comptage monétaire. Une forme cardinale ne prouve pas la traduction ou la formation d'une somme d'argent.
