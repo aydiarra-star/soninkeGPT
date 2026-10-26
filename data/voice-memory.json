@@ -15184,6 +15184,699 @@
       "validation_date": "2026-10-26",
       "validated_by": "référent linguistique SoninkeGPT",
       "validation_prononciation": "validee_par_referent_linguistique"
+    },
+    {
+      "text": "daŋa",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "",
+      "url": "audio/generated/9443d7f5accfe3f134814a3b.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dawulante",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "aimé, écouté, respecté, préféré",
+      "url": "audio/generated/99aa241a5b2356867ac65389.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "daxamunte",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "doux, agréable",
+      "url": "audio/generated/bfb7aa64186bc30de8bcd15c.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "daxanme",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "goût bon, agréable",
+      "url": "audio/generated/6987377242256f7bc9479e69.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "daxi",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "s'asseoir brusquement, reste ici (dit aux enfants)",
+      "url": "audio/generated/1f15ae784b524b49db6719ec.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "daxunme",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "instrument de musique fait à partir d'une calebasse étroite",
+      "url": "audio/generated/cb3482cebfd6bcc947547e61.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "daye",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "arbre à gomme, Gommier mbep, Platane de Sénégal",
+      "url": "audio/generated/e7d3517ee8dbe1f6033a13b1.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "de",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "exclamation, emphatique",
+      "url": "audio/generated/959a45d44e6fcf58361ed004.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "debe",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "natte qu'on peut enrouler",
+      "url": "audio/generated/6ab03c93de35ebf147214c90.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "deberi",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "",
+      "url": "audio/generated/24d2ba0dce0f79683eb5016b.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "debidunke",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "villageois",
+      "url": "audio/generated/e2938ef86fba8309ead29a80.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "debigume",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "chef de village",
+      "url": "audio/generated/c267716e2be564a24598d942.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "debillenma",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "autochtone, résident du village",
+      "url": "audio/generated/76fbb985fad44e9ec2d695c3.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "Debuɲeri",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "Région traditionnelle du pays Soninké (parler h-phones)",
+      "url": "audio/generated/db3f82aac89628a6c3b292ab.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "deebi",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "immerger, noyer",
+      "url": "audio/generated/3450524f0f40febb291755f3.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "deebune",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "fourmi volante",
+      "url": "audio/generated/e2adec0e2daf8b05300b3862.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "deefe",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "plante rampante",
+      "url": "audio/generated/e1762281825885ae95304c09.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "deejandi",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "calmer",
+      "url": "audio/generated/b9240822b3c322a9eb679a05.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "deejante",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "calme, pausé",
+      "url": "audio/generated/78a050714a8f69c551e7f56d.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "deeje",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "calmer (se)",
+      "url": "audio/generated/4cebc68a74b079b76ed23c52.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "deela",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "verser",
+      "url": "audio/generated/cb378eeb810a8e00dd9d7949.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "deele",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "déverser",
+      "url": "audio/generated/e66cde2d5c63209bf1bf3ffb.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "deema",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "aider, secourir",
+      "url": "audio/generated/7dd5db9365b4a9752748413d.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "deemandaana",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "défenseur, secouriste",
+      "url": "audio/generated/9c57f8d2881aabe3f3747862.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "deemande",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "aide, secours",
+      "url": "audio/generated/2565e5a46a2558f5f872a652.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "deena",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "gamin, galopin, bébé, nouveau-né",
+      "url": "audio/generated/3f49b3672edbd61d908b3aff.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "deenandunbe",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "nouveau-né, bébé",
+      "url": "audio/generated/4d04f31038635dda67b93480.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "deeni",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "glisser / pêcher les jambes écartées",
+      "url": "audio/generated/b8bdfaecc20ef0d72afad3a6.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "deeniye",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "glissade",
+      "url": "audio/generated/46c2de3c04ed358732e3b9a0.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "deere",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "planer",
+      "url": "audio/generated/f36e9f2d32d713d8c07d7284.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "defo",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "se raccourcir, se rapetisser, être court",
+      "url": "audio/generated/bc257af262d4a3a2f4a9b567.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "defondi",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "raccourcir",
+      "url": "audio/generated/8aa62ad6dc6a99a71c25ca35.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "defoye",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "raccourci, petite taille",
+      "url": "audio/generated/db876bae2887b800f5064681.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "degeme",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "",
+      "url": "audio/generated/37e975c5ed28d4fe1c603e33.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "degena",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "perle décorant les tresses",
+      "url": "audio/generated/fc96d77d5b9420f5a3c9f91c.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "degera",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "carpe",
+      "url": "audio/generated/fb94c51862f044de50de6871.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "degere",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "paume de la main, plante du pied / mésure traditionnelle - 7,5 cm",
+      "url": "audio/generated/e4da9dfef2126ebcbbb62537.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dehe",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "son de mil",
+      "url": "audio/generated/21d63a09388f3cd653d250c2.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "deje",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "groupement d'amis / grand rassemblement de réjouissance",
+      "url": "audio/generated/ae4a81cb624426cc2cbbc474.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "deliile",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "raison",
+      "url": "audio/generated/49111c72f7a4d783218b491d.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "deliiluganxaaxu",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "confirmer",
+      "url": "audio/generated/a486c2a50a3312768c022e2e.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "delle",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "tête",
+      "url": "audio/generated/8dbd65caaafd8508380ff327.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "demu",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "s'habituer, être habitué / fonctionne comme marque de l'aspect habituel",
+      "url": "audio/generated/0839bc15147ae5e12afd7fc5.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "demuye",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "habitude",
+      "url": "audio/generated/70cc660052f0c358391175cf.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "denbele",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "bâton, gros",
+      "url": "audio/generated/5d1cded56cfc2e5b6ca61d68.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dende",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "remplir à ras-bord",
+      "url": "audio/generated/d816a1014a8bc394330633ed.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "deni",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "emmener, emporter",
+      "url": "audio/generated/1831a378efa8272418d2c512.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "denme",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "habitude",
+      "url": "audio/generated/fcadf1e702946cfc4d1b5b1d.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "denne",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "victoire, gloire",
+      "url": "audio/generated/df6e669729e3b5a24a8502b1.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "denŋe",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "",
+      "url": "audio/generated/aacb47b868454f0c65f9b977.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "denŋeɲaane",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "fretin",
+      "url": "audio/generated/27c766c2e828ffaa305f1cee.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "denŋeɲe",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "fourmi rouge",
+      "url": "audio/generated/615e4a2a028fd02c503dc235.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "denqu",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "remplir, boucher, bourrer",
+      "url": "audio/generated/03d699df83483a398fa533b5.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "depe",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "court, petit",
+      "url": "audio/generated/b911dfaa75da54665bdb90c1.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "depite",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "député",
+      "url": "audio/generated/78c5e8c16589d3a51dda7bd7.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "depu",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "plein (un tonneau ou une personne après le repas)",
+      "url": "audio/generated/de8b9a63d7f0fafa0bd4f94a.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dere",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "",
+      "url": "audio/generated/63f86c0bc4fdac62d92bae99.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "derinjuxa",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "milieu de l'hivernage",
+      "url": "audio/generated/5124c1369befcae436fbf392.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dewu",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "récupérer ce qui surnage",
+      "url": "audio/generated/6e2e47cd9884670b37d63c65.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "di",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "dans, à, de, en",
+      "url": "audio/generated/225ed6562f6887b1074b9d09.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "diba",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "grande louche en calebasse",
+      "url": "audio/generated/8d5fac4ce55e0d962744e885.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dibakke",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "descendant",
+      "url": "audio/generated/af487580eeef95be0ab365d9.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dibe",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "gommier, acacia du Sénégal",
+      "url": "audio/generated/6b159e4635b1a7d5b1fc6be8.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "diga",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "forêt, bosquet, endroit touffu, touffe",
+      "url": "audio/generated/a854d878233957c1910a8f56.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "digaame",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "parole, propos, discours",
+      "url": "audio/generated/576179ed869bb5a33b3c862f.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "diganburu",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "blasphémer",
+      "url": "audio/generated/3007d90ca5c6fa8b717f7ada.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "digangabagume",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "",
+      "url": "audio/generated/a5b129eda18d7760500b7d34.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "digaamu",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "parler, s'exprimer",
+      "url": "audio/generated/86c43e618185559c2ce3703e.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "diganta",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "phrase",
+      "url": "audio/generated/b0d847e29697d804086f804c.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dige",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "mâle (chèvre, mouton)",
+      "url": "audio/generated/539834984cc15bf8f4c0ee94.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "digi",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "faire mal",
+      "url": "audio/generated/b3c60e46e2433217e8925606.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "digindi",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "mal, faire, souffrir, faire, dominer",
+      "url": "audio/generated/035df127f18902ec41329176.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "digiye",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "mal, douleur, dégât",
+      "url": "audio/generated/67ed1fb5ec845d5e1ff25867.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dikke",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "mal, douleur",
+      "url": "audio/generated/c80bb43200ac4f1772382510.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "digice",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "l'élément de base de l'encens, racine d'une plante utilisée en pharmacopée",
+      "url": "audio/generated/83aedfac1317240e23905acd.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "digiɲa",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "gencive",
+      "url": "audio/generated/65666887c2cb539532148bbb.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "diina",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "foi, religion",
+      "url": "audio/generated/b21aed1b8d36c6eb3836421d.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "diinanta",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "au lieu de, plus que, mieux que",
+      "url": "audio/generated/7a40b0ff46f07c40d0381c9d.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dikidiki",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "marcher comme un coq",
+      "url": "audio/generated/41227bbdc8d1e3804cbe859e.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dikki",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "",
+      "url": "audio/generated/bc67eb54215a7258194e5417.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dilla",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "déplacer, remuer",
+      "url": "audio/generated/115ab7db958b5a46e96afa9d.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dille",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "bouger, remuer (se)",
+      "url": "audio/generated/6756445adf26fd22ee241c45.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dimi",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "noir foncé, boubou indigo",
+      "url": "audio/generated/870051a4cdc4cda1e2286259.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "diminna",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "causer de la rancoeur, fâcher / amertume, rancoeur",
+      "url": "audio/generated/e105694a6818904fad2397a0.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dinda",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "fumier",
+      "url": "audio/generated/0eba448ab71e1ef3aac8da84.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dinde",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "ficus, figuier",
+      "url": "audio/generated/1a9449bb4c964088fe16a79a.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dindinŋa",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "dune de sable, monticule",
+      "url": "audio/generated/731a95a5cd5d1444b5b555f7.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dingira",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "endroit, domicile",
+      "url": "audio/generated/465041eb7ba5645c219fd95b.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "Debixoorinfeedeyen wa liixiye yogo kiɲandini a taaxaanun ŋa",
+      "source": "data/candidates/dictionnaire-l-y-expressions-importables-2026-10-25.csv",
+      "francais": "Le fait de résider dans la grande ville entraîne une certaine gêne à ses habitants",
+      "url": "audio/generated/ce55b476f830bac26fe96fba.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "Digandepe a ga bogu o jamaanen Minisitiri yinmanken laqen ŋa",
+      "source": "data/candidates/dictionnaire-l-y-expressions-importables-2026-10-25.csv",
+      "francais": "Une courte parole qui a été dite par notre premier ministre",
+      "url": "audio/generated/abecca2e843475b012bd6e98.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "Deenan dunben ra nta dullen muɲini",
+      "source": "data/candidates/dictionnaire-l-y-expressions-importables-2026-10-25.csv",
+      "francais": "Un bébé ne peut pas supporter la famine",
+      "url": "audio/generated/523c548f7511da330cd524e1.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "Debe xooren yaxaru nta ɲoŋono",
+      "source": "data/candidates/dictionnaire-l-y-expressions-importables-2026-10-25.csv",
+      "francais": "Les femmes des grandes villes ne transportent pas d'eau",
+      "url": "audio/generated/cd92ae795bee1161b9676032.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "Debe yogo wa Ɲooro, a toxon ni Kamatinge",
+      "source": "data/candidates/dictionnaire-l-y-expressions-importables-2026-10-25.csv",
+      "francais": "Il y a un certain village dans le cercle de Nioro nommé Kamatinge",
+      "url": "audio/generated/b21b16353e3b49bb2945d0b1.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "debinkonpe",
+      "source": "data/candidates/dictionnaire-l-y-mots-importables-2026-10-25.csv",
+      "francais": "maison natale",
+      "url": "audio/generated/941f4120a0c36a5e5b5a9ace.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "diinanxanne",
+      "source": "data/candidates/dictionnaire-l-y-mots-importables-2026-10-25.csv",
+      "francais": "langue religieuse",
+      "url": "audio/generated/3b7d4a09052a8a054e87a936.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "Diagana :An na ɲaŋana riini yere",
+      "source": "data/reports/audit-l-y-expressions-2026-10-25.csv",
+      "francais": "Tu viendras ici de temps à temps",
+      "url": "audio/generated/65b408fe33b28cf0070a3704.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "Diagana :A ma ɲi xawana seedene batu ke yi xa i da a xiri",
+      "source": "data/reports/audit-l-y-expressions-2026-10-25.csv",
+      "francais": "Il ne devait pas assister à la réunion mais ils l'ont convié",
+      "url": "audio/generated/a6bf8214e0f180458d86e221.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "denbaya",
+      "source": "data/source/definitions-redigees.csv",
+      "francais": "famille",
+      "url": "audio/generated/2fd0e97cdfb9b31b7c96ff58.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "deppe",
+      "source": "data/source/definitions-redigees.csv",
+      "francais": "court",
+      "url": "audio/generated/13c4adf8fd66dc1cffc2f556.wav",
+      "kind": "voice_clone_unreviewed"
     }
   ],
   "pending": [
@@ -15192,600 +15885,6 @@
       "source": "data/source/audio-batch-100-2026-10-25.csv",
       "francais": "stérilité",
       "url": "audio/generated/19db0af431fbfa6fab7b4f6c.wav"
-    },
-    {
-      "text": "dawulante",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "aimé, écouté, respecté, préféré",
-      "url": "audio/generated/99aa241a5b2356867ac65389.wav"
-    },
-    {
-      "text": "daxamunte",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "doux, agréable",
-      "url": "audio/generated/bfb7aa64186bc30de8bcd15c.wav"
-    },
-    {
-      "text": "daxanme",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "goût bon, agréable",
-      "url": "audio/generated/6987377242256f7bc9479e69.wav"
-    },
-    {
-      "text": "daxi",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "s'asseoir brusquement, reste ici (dit aux enfants)",
-      "url": "audio/generated/1f15ae784b524b49db6719ec.wav"
-    },
-    {
-      "text": "daxunme",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "instrument de musique fait à partir d'une calebasse étroite",
-      "url": "audio/generated/cb3482cebfd6bcc947547e61.wav"
-    },
-    {
-      "text": "daye",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "arbre à gomme, Gommier mbep, Platane de Sénégal",
-      "url": "audio/generated/e7d3517ee8dbe1f6033a13b1.wav"
-    },
-    {
-      "text": "daŋa",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "",
-      "url": "audio/generated/9443d7f5accfe3f134814a3b.wav"
-    },
-    {
-      "text": "de",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "exclamation, emphatique",
-      "url": "audio/generated/959a45d44e6fcf58361ed004.wav"
-    },
-    {
-      "text": "debe",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "natte qu'on peut enrouler",
-      "url": "audio/generated/6ab03c93de35ebf147214c90.wav"
-    },
-    {
-      "text": "Debe xooren yaxaru nta ɲoŋono",
-      "source": "data/candidates/dictionnaire-l-y-expressions-importables-2026-10-25.csv",
-      "francais": "Les femmes des grandes villes ne transportent pas d'eau",
-      "url": "audio/generated/cd92ae795bee1161b9676032.wav"
-    },
-    {
-      "text": "Debe yogo wa Ɲooro, a toxon ni Kamatinge",
-      "source": "data/candidates/dictionnaire-l-y-expressions-importables-2026-10-25.csv",
-      "francais": "Il y a un certain village dans le cercle de Nioro nommé Kamatinge",
-      "url": "audio/generated/b21b16353e3b49bb2945d0b1.wav"
-    },
-    {
-      "text": "deberi",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "",
-      "url": "audio/generated/24d2ba0dce0f79683eb5016b.wav"
-    },
-    {
-      "text": "debidunke",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "villageois",
-      "url": "audio/generated/e2938ef86fba8309ead29a80.wav"
-    },
-    {
-      "text": "debigume",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "chef de village",
-      "url": "audio/generated/c267716e2be564a24598d942.wav"
-    },
-    {
-      "text": "debillenma",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "autochtone, résident du village",
-      "url": "audio/generated/76fbb985fad44e9ec2d695c3.wav"
-    },
-    {
-      "text": "debinkonpe",
-      "source": "data/candidates/dictionnaire-l-y-mots-importables-2026-10-25.csv",
-      "francais": "maison natale",
-      "url": "audio/generated/941f4120a0c36a5e5b5a9ace.wav"
-    },
-    {
-      "text": "Debixoorinfeedeyen wa liixiye yogo kiɲandini a taaxaanun ŋa",
-      "source": "data/candidates/dictionnaire-l-y-expressions-importables-2026-10-25.csv",
-      "francais": "Le fait de résider dans la grande ville entraîne une certaine gêne à ses habitants",
-      "url": "audio/generated/ce55b476f830bac26fe96fba.wav"
-    },
-    {
-      "text": "Debuɲeri",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "Région traditionnelle du pays Soninké (parler h-phones)",
-      "url": "audio/generated/db3f82aac89628a6c3b292ab.wav"
-    },
-    {
-      "text": "deebi",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "immerger, noyer",
-      "url": "audio/generated/3450524f0f40febb291755f3.wav"
-    },
-    {
-      "text": "deebune",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "fourmi volante",
-      "url": "audio/generated/e2adec0e2daf8b05300b3862.wav"
-    },
-    {
-      "text": "deefe",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "plante rampante",
-      "url": "audio/generated/e1762281825885ae95304c09.wav"
-    },
-    {
-      "text": "deejandi",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "calmer",
-      "url": "audio/generated/b9240822b3c322a9eb679a05.wav"
-    },
-    {
-      "text": "deejante",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "calme, pausé",
-      "url": "audio/generated/78a050714a8f69c551e7f56d.wav"
-    },
-    {
-      "text": "deeje",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "calmer (se)",
-      "url": "audio/generated/4cebc68a74b079b76ed23c52.wav"
-    },
-    {
-      "text": "deela",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "verser",
-      "url": "audio/generated/cb378eeb810a8e00dd9d7949.wav"
-    },
-    {
-      "text": "deele",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "déverser",
-      "url": "audio/generated/e66cde2d5c63209bf1bf3ffb.wav"
-    },
-    {
-      "text": "deema",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "aider, secourir",
-      "url": "audio/generated/7dd5db9365b4a9752748413d.wav"
-    },
-    {
-      "text": "deemandaana",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "défenseur, secouriste",
-      "url": "audio/generated/9c57f8d2881aabe3f3747862.wav"
-    },
-    {
-      "text": "deemande",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "aide, secours",
-      "url": "audio/generated/2565e5a46a2558f5f872a652.wav"
-    },
-    {
-      "text": "deena",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "gamin, galopin, bébé, nouveau-né",
-      "url": "audio/generated/3f49b3672edbd61d908b3aff.wav"
-    },
-    {
-      "text": "Deenan dunben ra nta dullen muɲini",
-      "source": "data/candidates/dictionnaire-l-y-expressions-importables-2026-10-25.csv",
-      "francais": "Un bébé ne peut pas supporter la famine",
-      "url": "audio/generated/523c548f7511da330cd524e1.wav"
-    },
-    {
-      "text": "deenandunbe",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "nouveau-né, bébé",
-      "url": "audio/generated/4d04f31038635dda67b93480.wav"
-    },
-    {
-      "text": "deeni",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "glisser / pêcher les jambes écartées",
-      "url": "audio/generated/b8bdfaecc20ef0d72afad3a6.wav"
-    },
-    {
-      "text": "deeniye",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "glissade",
-      "url": "audio/generated/46c2de3c04ed358732e3b9a0.wav"
-    },
-    {
-      "text": "deere",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "planer",
-      "url": "audio/generated/f36e9f2d32d713d8c07d7284.wav"
-    },
-    {
-      "text": "defo",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "se raccourcir, se rapetisser, être court",
-      "url": "audio/generated/bc257af262d4a3a2f4a9b567.wav"
-    },
-    {
-      "text": "defondi",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "raccourcir",
-      "url": "audio/generated/8aa62ad6dc6a99a71c25ca35.wav"
-    },
-    {
-      "text": "defoye",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "raccourci, petite taille",
-      "url": "audio/generated/db876bae2887b800f5064681.wav"
-    },
-    {
-      "text": "degeme",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "",
-      "url": "audio/generated/37e975c5ed28d4fe1c603e33.wav"
-    },
-    {
-      "text": "degena",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "perle décorant les tresses",
-      "url": "audio/generated/fc96d77d5b9420f5a3c9f91c.wav"
-    },
-    {
-      "text": "degera",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "carpe",
-      "url": "audio/generated/fb94c51862f044de50de6871.wav"
-    },
-    {
-      "text": "degere",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "paume de la main, plante du pied / mésure traditionnelle - 7,5 cm",
-      "url": "audio/generated/e4da9dfef2126ebcbbb62537.wav"
-    },
-    {
-      "text": "dehe",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "son de mil",
-      "url": "audio/generated/21d63a09388f3cd653d250c2.wav"
-    },
-    {
-      "text": "deje",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "groupement d'amis / grand rassemblement de réjouissance",
-      "url": "audio/generated/ae4a81cb624426cc2cbbc474.wav"
-    },
-    {
-      "text": "deliile",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "raison",
-      "url": "audio/generated/49111c72f7a4d783218b491d.wav"
-    },
-    {
-      "text": "deliiluganxaaxu",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "confirmer",
-      "url": "audio/generated/a486c2a50a3312768c022e2e.wav"
-    },
-    {
-      "text": "delle",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "tête",
-      "url": "audio/generated/8dbd65caaafd8508380ff327.wav"
-    },
-    {
-      "text": "demu",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "s'habituer, être habitué / fonctionne comme marque de l'aspect habituel",
-      "url": "audio/generated/0839bc15147ae5e12afd7fc5.wav"
-    },
-    {
-      "text": "demuye",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "habitude",
-      "url": "audio/generated/70cc660052f0c358391175cf.wav"
-    },
-    {
-      "text": "denbaya",
-      "source": "data/source/definitions-redigees.csv",
-      "francais": "famille",
-      "url": "audio/generated/2fd0e97cdfb9b31b7c96ff58.wav"
-    },
-    {
-      "text": "denbele",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "bâton, gros",
-      "url": "audio/generated/5d1cded56cfc2e5b6ca61d68.wav"
-    },
-    {
-      "text": "dende",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "remplir à ras-bord",
-      "url": "audio/generated/d816a1014a8bc394330633ed.wav"
-    },
-    {
-      "text": "deni",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "emmener, emporter",
-      "url": "audio/generated/1831a378efa8272418d2c512.wav"
-    },
-    {
-      "text": "denme",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "habitude",
-      "url": "audio/generated/fcadf1e702946cfc4d1b5b1d.wav"
-    },
-    {
-      "text": "denne",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "victoire, gloire",
-      "url": "audio/generated/df6e669729e3b5a24a8502b1.wav"
-    },
-    {
-      "text": "denqu",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "remplir, boucher, bourrer",
-      "url": "audio/generated/03d699df83483a398fa533b5.wav"
-    },
-    {
-      "text": "denŋe",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "",
-      "url": "audio/generated/aacb47b868454f0c65f9b977.wav"
-    },
-    {
-      "text": "denŋeɲaane",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "fretin",
-      "url": "audio/generated/27c766c2e828ffaa305f1cee.wav"
-    },
-    {
-      "text": "denŋeɲe",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "fourmi rouge",
-      "url": "audio/generated/615e4a2a028fd02c503dc235.wav"
-    },
-    {
-      "text": "depe",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "court, petit",
-      "url": "audio/generated/b911dfaa75da54665bdb90c1.wav"
-    },
-    {
-      "text": "depite",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "député",
-      "url": "audio/generated/78c5e8c16589d3a51dda7bd7.wav"
-    },
-    {
-      "text": "deppe",
-      "source": "data/source/definitions-redigees.csv",
-      "francais": "court",
-      "url": "audio/generated/13c4adf8fd66dc1cffc2f556.wav"
-    },
-    {
-      "text": "depu",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "plein (un tonneau ou une personne après le repas)",
-      "url": "audio/generated/de8b9a63d7f0fafa0bd4f94a.wav"
-    },
-    {
-      "text": "dere",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "",
-      "url": "audio/generated/63f86c0bc4fdac62d92bae99.wav"
-    },
-    {
-      "text": "derinjuxa",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "milieu de l'hivernage",
-      "url": "audio/generated/5124c1369befcae436fbf392.wav"
-    },
-    {
-      "text": "dewu",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "récupérer ce qui surnage",
-      "url": "audio/generated/6e2e47cd9884670b37d63c65.wav"
-    },
-    {
-      "text": "di",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "dans, à, de, en",
-      "url": "audio/generated/225ed6562f6887b1074b9d09.wav"
-    },
-    {
-      "text": "Diagana :A ma ɲi xawana seedene batu ke yi xa i da a xiri",
-      "source": "data/reports/audit-l-y-expressions-2026-10-25.csv",
-      "francais": "Il ne devait pas assister à la réunion mais ils l'ont convié",
-      "url": "audio/generated/a6bf8214e0f180458d86e221.wav"
-    },
-    {
-      "text": "Diagana :An na ɲaŋana riini yere",
-      "source": "data/reports/audit-l-y-expressions-2026-10-25.csv",
-      "francais": "Tu viendras ici de temps à temps",
-      "url": "audio/generated/65b408fe33b28cf0070a3704.wav"
-    },
-    {
-      "text": "diba",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "grande louche en calebasse",
-      "url": "audio/generated/8d5fac4ce55e0d962744e885.wav"
-    },
-    {
-      "text": "dibakke",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "descendant",
-      "url": "audio/generated/af487580eeef95be0ab365d9.wav"
-    },
-    {
-      "text": "dibe",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "gommier, acacia du Sénégal",
-      "url": "audio/generated/6b159e4635b1a7d5b1fc6be8.wav"
-    },
-    {
-      "text": "diga",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "forêt, bosquet, endroit touffu, touffe",
-      "url": "audio/generated/a854d878233957c1910a8f56.wav"
-    },
-    {
-      "text": "digaame",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "parole, propos, discours",
-      "url": "audio/generated/576179ed869bb5a33b3c862f.wav"
-    },
-    {
-      "text": "digaamu",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "parler, s'exprimer",
-      "url": "audio/generated/86c43e618185559c2ce3703e.wav"
-    },
-    {
-      "text": "diganburu",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "blasphémer",
-      "url": "audio/generated/3007d90ca5c6fa8b717f7ada.wav"
-    },
-    {
-      "text": "Digandepe a ga bogu o jamaanen Minisitiri yinmanken laqen ŋa",
-      "source": "data/candidates/dictionnaire-l-y-expressions-importables-2026-10-25.csv",
-      "francais": "Une courte parole qui a été dite par notre premier ministre",
-      "url": "audio/generated/abecca2e843475b012bd6e98.wav"
-    },
-    {
-      "text": "digangabagume",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "",
-      "url": "audio/generated/a5b129eda18d7760500b7d34.wav"
-    },
-    {
-      "text": "diganta",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "phrase",
-      "url": "audio/generated/b0d847e29697d804086f804c.wav"
-    },
-    {
-      "text": "dige",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "mâle (chèvre, mouton)",
-      "url": "audio/generated/539834984cc15bf8f4c0ee94.wav"
-    },
-    {
-      "text": "digi",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "faire mal",
-      "url": "audio/generated/b3c60e46e2433217e8925606.wav"
-    },
-    {
-      "text": "digice",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "l'élément de base de l'encens, racine d'une plante utilisée en pharmacopée",
-      "url": "audio/generated/83aedfac1317240e23905acd.wav"
-    },
-    {
-      "text": "digindi",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "mal, faire, souffrir, faire, dominer",
-      "url": "audio/generated/035df127f18902ec41329176.wav"
-    },
-    {
-      "text": "digiye",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "mal, douleur, dégât",
-      "url": "audio/generated/67ed1fb5ec845d5e1ff25867.wav"
-    },
-    {
-      "text": "digiɲa",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "gencive",
-      "url": "audio/generated/65666887c2cb539532148bbb.wav"
-    },
-    {
-      "text": "diina",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "foi, religion",
-      "url": "audio/generated/b21aed1b8d36c6eb3836421d.wav"
-    },
-    {
-      "text": "diinanta",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "au lieu de, plus que, mieux que",
-      "url": "audio/generated/7a40b0ff46f07c40d0381c9d.wav"
-    },
-    {
-      "text": "diinanxanne",
-      "source": "data/candidates/dictionnaire-l-y-mots-importables-2026-10-25.csv",
-      "francais": "langue religieuse",
-      "url": "audio/generated/3b7d4a09052a8a054e87a936.wav"
-    },
-    {
-      "text": "dikidiki",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "marcher comme un coq",
-      "url": "audio/generated/41227bbdc8d1e3804cbe859e.wav"
-    },
-    {
-      "text": "dikke",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "mal, douleur",
-      "url": "audio/generated/c80bb43200ac4f1772382510.wav"
-    },
-    {
-      "text": "dikki",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "",
-      "url": "audio/generated/bc67eb54215a7258194e5417.wav"
-    },
-    {
-      "text": "dilla",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "déplacer, remuer",
-      "url": "audio/generated/115ab7db958b5a46e96afa9d.wav"
-    },
-    {
-      "text": "dille",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "bouger, remuer (se)",
-      "url": "audio/generated/6756445adf26fd22ee241c45.wav"
-    },
-    {
-      "text": "dimi",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "noir foncé, boubou indigo",
-      "url": "audio/generated/870051a4cdc4cda1e2286259.wav"
-    },
-    {
-      "text": "diminna",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "causer de la rancoeur, fâcher / amertume, rancoeur",
-      "url": "audio/generated/e105694a6818904fad2397a0.wav"
-    },
-    {
-      "text": "dinda",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "fumier",
-      "url": "audio/generated/0eba448ab71e1ef3aac8da84.wav"
-    },
-    {
-      "text": "dinde",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "ficus, figuier",
-      "url": "audio/generated/1a9449bb4c964088fe16a79a.wav"
-    },
-    {
-      "text": "dindinŋa",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "dune de sable, monticule",
-      "url": "audio/generated/731a95a5cd5d1444b5b555f7.wav"
-    },
-    {
-      "text": "dingira",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "endroit, domicile",
-      "url": "audio/generated/465041eb7ba5645c219fd95b.wav"
     },
     {
       "text": "dinka",
@@ -18822,6 +18921,12 @@
       "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
       "francais": "doubler",
       "url": "audio/generated/23588f83275a3bd8cac1d733.wav"
+    },
+    {
+      "text": "Filli",
+      "source": "data/source/numeration-audio-queue.csv",
+      "francais": "deux",
+      "url": "audio/generated/e945410c49ac19ef066cc968.wav"
     },
     {
       "text": "fillo",
@@ -24938,6 +25043,12 @@
       "url": "audio/generated/189542fb7795f2238c2badee.wav"
     },
     {
+      "text": "kamo filli",
+      "source": "data/source/numeration-audio-queue.csv",
+      "francais": "deux cents",
+      "url": "audio/generated/c14790debc00338b4aa5ec7c.wav"
+    },
+    {
       "text": "kan",
       "source": "data/candidates/dictionnaire-g-k-importable-verifie-2026-10-25.csv",
       "francais": "quel, déterminant interrogatif / Pronom interrogatif, quand l'occurrence que détermine kan est sous-entendu.",
@@ -25340,6 +25451,12 @@
       "url": "audio/generated/2dfe396ea0ba7e809bdc9938.wav"
     },
     {
+      "text": "Karagi",
+      "source": "data/source/numeration-audio-queue.csv",
+      "francais": "cinq",
+      "url": "audio/generated/fced3c2c0b235b41664abc56.wav"
+    },
+    {
       "text": "karago",
       "source": "data/source/definitions-redigees.csv",
       "francais": "cinq",
@@ -25686,6 +25803,12 @@
       "source": "data/candidates/dictionnaire-l-y-expressions-importables-2026-10-25.csv",
       "francais": "À partir de maintenant, vous êtes maudits",
       "url": "audio/generated/d1825eeb8e1e38eed875db20.wav"
+    },
+    {
+      "text": "keme",
+      "source": "data/source/numeration-audio-queue.csv",
+      "francais": "cent",
+      "url": "audio/generated/9ddc25163bf5ca5802bc26e3.wav"
     },
     {
       "text": "kên",
@@ -32258,6 +32381,12 @@
       "url": "audio/generated/af41d5735448e9e42ce2dc92.wav"
     },
     {
+      "text": "Naxati",
+      "source": "data/source/numeration-audio-queue.csv",
+      "francais": "quatre",
+      "url": "audio/generated/932c9b06e30c3b207c492608.wav"
+    },
+    {
       "text": "naxato",
       "source": "data/reports/comparaison-dictionnaire-l-y-2026-10-25.csv",
       "francais": "quatre (numéro cardinal)",
@@ -36238,7 +36367,7 @@
     {
       "text": "sikki",
       "source": "data/reports/comparaison-dictionnaire-l-y-2026-10-25.csv",
-      "francais": "",
+      "francais": "trois",
       "url": "audio/generated/69bfea735f491c4bcdd76ca2.wav"
     },
     {
@@ -38438,6 +38567,12 @@
       "url": "audio/generated/4fed00386359e93ea76bfa19.wav"
     },
     {
+      "text": "tanfille",
+      "source": "data/source/numeration-audio-queue.csv",
+      "francais": "vingt",
+      "url": "audio/generated/39132c8e1ae89cfa87b307d7.wav"
+    },
+    {
       "text": "tanga",
       "source": "data/candidates/dictionnaire-l-y-mots-importables-2026-10-25.csv",
       "francais": "garder, surveiller, protéger / apprendre par coeur, mémoriser",
@@ -38574,6 +38709,12 @@
       "source": "data/candidates/dictionnaire-l-y-mots-importables-2026-10-25.csv",
       "francais": "lance, sagaie",
       "url": "audio/generated/b6c38c234f96220b7f5150d0.wav"
+    },
+    {
+      "text": "tanmi",
+      "source": "data/source/numeration-audio-queue.csv",
+      "francais": "dix",
+      "url": "audio/generated/25af5e704162db43141ff1d4.wav"
     },
     {
       "text": "tanmise",
