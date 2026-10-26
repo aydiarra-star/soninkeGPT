@@ -137,3 +137,47 @@ SoninkeGPT doit reconnaître les montants exprimés en chiffres ou en lettres, a
 - Une entrée non validée ne doit pas être présentée comme une traduction certaine.
 
 **Limite actuelle :** cette spécification décrit le comportement requis; elle ne signifie pas que le code applicatif de production implémente déjà cette résolution. Les formes monétaires de ce dossier restent candidates tant qu'elles ne sont pas validées par un référent linguistique.
+
+## Inventaire élargi des candidats monétaires — variantes conservées
+
+La recherche complémentaire ajoute des formes qui ne doivent pas être fusionnées silencieusement. Les traductions ci-dessous donnent le **sens monétaire rapporté de l'expression entière** en français écrit en toutes lettres; elles ne prétendent pas établir un mot-à-mot certain quand la segmentation reste incertaine.
+
+| Montant | Expression soninkée candidate, en lettres | Traduction française, en lettres | Point à vérifier |
+|---|---|---|---|
+| cinq francs CFA | godi baane | cinq francs CFA | Comparer godi, gode et godo; forme exacte et variété |
+| cinq francs CFA | gode baane | cinq francs CFA | Forme du manuel SIL Mali |
+| cinq francs CFA | godo baane | cinq francs CFA | Forme du manuel SIL Mali |
+| dix francs CFA | godo hilli | dix francs CFA | Comparer hilli et filli |
+| dix francs CFA | godo filli | dix francs CFA | Variante du manuel SIL Mali |
+| quinze francs CFA | godo sikki | quinze francs CFA | Prononciation et graphie |
+| vingt francs CFA | godo naxati | vingt francs CFA | Prononciation et graphie |
+| vingt-cinq francs CFA | godo karagi | vingt-cinq francs CFA | Prononciation et graphie |
+| cinquante francs CFA | godo tanmi | cinquante francs CFA | Ne pas confondre avec dix francs CFA |
+| cent francs CFA | tanpille gode | cent francs CFA | Comparer avec tanfille gode |
+| cent francs CFA | tanfille gode | cent francs CFA | Variante du manuel SIL Mali |
+| cent cinquante francs CFA | tanjikke gode | cent cinquante francs CFA | Attestation communautaire à corroborer |
+| cent soixante-quinze francs CFA | tanjikke do karago gode | cent soixante-quinze francs CFA | Exemple pédagogique; valider la segmentation |
+| deux cents francs CFA | tannaxate | deux cents francs CFA | Sens monétaire rapporté; analyse interne non confirmée |
+| trois cents francs CFA | tandume | trois cents francs CFA | Sens monétaire rapporté; analyse interne non confirmée |
+| cinq cents francs CFA | keme gode | cinq cents francs CFA | Comparer keme et kame |
+| mille francs CFA | komohillin dere | mille francs CFA | Sens de dere non établi |
+| mille francs CFA | kamo filli gode | mille francs CFA | Variante du manuel SIL Mali; ne pas fusionner avec komohillin dere |
+| deux mille francs CFA | komonaxatin dere | deux mille francs CFA | Sens de dere non établi |
+| un billet de cinq mille francs CFA | wujinin dere | un billet de cinq mille francs CFA | Contexte de billet rapporté |
+| cinq mille francs CFA | wujune gode | cinq mille francs CFA | Forme rapportée en unités de gode; comparer au contexte de billet |
+| un billet de dix mille francs CFA | wujunnin pillin dere | un billet de dix mille francs CFA | Segmentation non établie |
+| cent mille francs CFA | tanpillle wujunne | cent mille francs CFA | Graphie et construction à vérifier |
+| deux cent mille francs CFA | tannaxate wujinne | deux cent mille francs CFA | Construction à vérifier |
+| trois cent mille francs CFA | tandume wujinne | trois cent mille francs CFA | Construction à vérifier |
+| cinq cent mille francs CFA | keme wujinne | cinq cent mille francs CFA | Construction à vérifier |
+
+### Règles de lecture de cet inventaire
+
+- Les formes en soninké et les traductions françaises sont écrites en toutes lettres dans les champs destinés à la prononciation. Les montants numériques restent dans des champs séparés pour les calculs.
+- « Sens de l'expression » signifie ici la valeur monétaire rapportée dans la source, pas nécessairement une traduction littérale mot à mot de chaque morphème.
+- Le calcul par unités de cinq est explicitement soutenu pour certaines expressions avec `gode`; il ne justifie pas d'extrapoler toutes les autres expressions.
+- Les entrées `tannaxate` et `tandume` sont rapportées pour deux cents et trois cents francs CFA dans une ressource, mais leur segmentation et leur analyse comme nombre d'unités de `gode` restent des hypothèses.
+- `komohillin dere` et `kamo filli gode` sont deux expressions distinctes rapportées pour mille francs CFA. Il faut conserver les deux avec leur provenance jusqu'à l'enquête orale.
+- Les euros restent sans expression candidate validée. Aucune forme FCFA ne doit être transposée automatiquement à l'euro.
+- Les nouvelles lignes du CSV sont des candidats documentaires, pas des traductions validées ni des enregistrements audio prêts pour la production.
+
