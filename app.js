@@ -4046,6 +4046,9 @@ async function loadAllData() {
     if (!key) continue;
     const existing = entries.find((entry) => normalizeLexicalKey(entry.soninke) === key);
     const variants = String(row.variantes || "").split(/[;,|]/).map((v) => v.trim()).filter(Boolean);
+    const source = row.source || "Validation du référent linguistique";
+    const category = /compos/i.test(row.categorie || "") ? "numeration_cardinale_composee" : "numeration_cardinale";
+    const validationStatus = "valide_par_referent_linguistique";
     if (existing) {
       const merged = [
         ...String(existing.variantes || "").split(/[;,|]/),
@@ -4054,20 +4057,21 @@ async function loadAllData() {
       const unique = [...new Map(merged.map((v) => [normalizeLexicalKey(v), v])).values()];
       Object.assign(existing, {
         francais,
-        categorie: "numeration_cardinale",
-        source: row.source || "Validation du référent linguistique",
-        statut: "valide_par_referent_linguistique",
+        categorie: category,
+        source,
+        statut: validationStatus,
         isCandidate: false,
         variantes: unique.join("; "),
+        exemple_original: [existing.exemple_original, row.notes].filter(Boolean).join(" · "),
       });
     } else {
       pushEntry({
         id: row.id || uid(),
         soninke,
         francais,
-        categorie: "numeration_cardinale",
-        source: row.source || "Validation du référent linguistique",
-        statut: "valide_par_referent_linguistique",
+        categorie: category,
+        source,
+        statut: validationStatus,
         variantes: variants.join("; "),
         exemple_original: row.notes || "",
         isCandidate: false,
