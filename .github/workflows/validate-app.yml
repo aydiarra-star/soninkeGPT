@@ -8,12 +8,16 @@ on:
       - "app.js"
       - "index.html"
       - "voice-config.js"
+      - "tests/voice.test.cjs"
+      - "tests/ui.test.cjs"
       - ".github/workflows/validate-app.yml"
   pull_request:
     paths:
       - "app.js"
       - "index.html"
       - "voice-config.js"
+      - "tests/voice.test.cjs"
+      - "tests/ui.test.cjs"
       - ".github/workflows/validate-app.yml"
 
 permissions:
@@ -33,6 +37,10 @@ jobs:
         run: |
           node --check app.js
           node --check voice-config.js
+      - name: Run linguistic and audio regression tests
+        run: |
+          node tests/voice.test.cjs
+          node tests/ui.test.cjs
       - name: Check HTML references and whitespace
         run: |
           test -s index.html

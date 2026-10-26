@@ -1,0 +1,101 @@
+name: Restore filtered voice memory for SoninkeGPT correction
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "scripts/restore_voice_memory.py"
+      - ".github/workflows/restore-voice-memory.yml"
+      - "data/voice-memory.json"
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  restore:
+    if: >-
+      github.event.pull_request.head.repo.full_name == github.repository &&
+      github.event.pull_request.head.ref == 'fix/corpus-first-phrase-generation'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout the correction branch
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.ref }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Download the existing human-review audio artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: soninkegpt-next-100-audios-review
+          repository: ${{ github.repository }}
+          run-id: 40320774671
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: /tmp/soninkegpt-audio-review
+
+      - name: Restore only memory entries with existing readable WAV files
+        run: >-
+          python scripts/restore_voice_memory.py
+          --memory-file /tmp/soninkegpt-audio-review/voice-memory.json
+
+      - name: Validate preserved human-validation metadata
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          memory = json.loads(Path("data/voice-memory.json").read_text(encoding="utf-8"))
+          audio = memory.get("audio")
+          if not isinstance(audio, list) or not audio:
+              raise SystemExit("ÉCHEC: mémoire audio vide ou mal formée")
+          seen = set()
+          errors = []
+          for index, item in enumerate(audio, 1):
+              text = str(item.get("text", "")).strip()
+              url = str(item.get("url", "")).strip()
+              if not text or not url:
+                  errors.append(f"entrée {index}: texte ou URL vide")
+              key = (text.casefold(), url)
+              if key in seen:
+                  errors.append(f"entrée {index}: doublon texte/URL ({text}, {url})")
+              seen.add(key)
+              if item.get("kind") == "voice_clone_validated":
+                  required = {
+                      "pronunciation_validation": "validated_by_linguistic_referent",
+                      "validation_prononciation": "validee_par_referent_linguistique",
+                  }
+                  for field, expected in required.items():
+                      if item.get(field) != expected:
+                          errors.append(f"{text}: {field} absent ou incorrect")
+                  for field in ("validation_date", "validated_by"):
+                      if not item.get(field):
+                          errors.append(f"{text}: {field} absent")
+          if errors:
+              print("\n".join(errors))
+              raise SystemExit(f"ÉCHEC : {len(errors)} problème(s) de mémoire")
+          print(f"OK : {len(audio)} entrées; " +
+                f"{sum(x.get('kind') == 'voice_clone_validated' for x in audio)} prononciations validées; " +
+                f"{sum(x.get('kind') == 'voice_clone_unreviewed' for x in audio)} non revues conservées séparément.")
+          PY
+
+      - name: Commit restored memory to the correction branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH_NAME: ${{ github.event.pull_request.head.ref }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/voice-memory.json
+          if git diff --cached --quiet; then
+            echo "La mémoire est déjà à jour."
+            exit 0
+          fi
+          git commit -m "Restore filtered Soninke audio memory"
+          git push origin "HEAD:$BRANCH_NAME"
