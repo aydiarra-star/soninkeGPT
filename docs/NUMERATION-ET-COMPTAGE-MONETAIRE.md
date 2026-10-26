@@ -225,3 +225,19 @@ Sources de numération à comparer :
 - Guide d'écriture soninké, section 2.5 « Les numéraux » : https://fr.scribd.com/document/690364522/Guide-d-Ecriture-Soninke
 - Soninkara.com, « Compte-rendu du 4ème cours de Soninké en ligne » : https://www.soninkara.com/langue/apprendre-le-soninke/compte-rendu-du-4eme-cours-de-soninke-en-ligne.html
 - CNRS, « Soninké : lexique (quantitatifs et numéraux) » : https://lgidf.cnrs.fr/node/679
+
+
+## Extension aux très grands montants et aux monnaies de Mauritanie et de Gambie
+
+Le chantier couvre désormais quatre référentiels distincts :
+
+- **FCFA (XOF)** : `data/source/monetary-counting-review.csv` conserve les formes monétaires spécifiques rapportées (notamment les formes en `gode`) et ajoute des montants repères jusqu'à `10^24` FCFA comme candidats à l'élicitation.
+- **Euro (EUR)** : `data/source/euro-counting-candidates.csv` couvre les euros et centimes déjà recensés et ajoute des montants repères jusqu'à `10^24` euros.
+- **Ouguiya mauritanienne (MRU)** : `data/source/mauritanian-ouguiya-counting-candidates.csv` contient les montants 1–999 ouguiyas, des valeurs fractionnaires en khoums (sous-unité d'un cinquième d'ouguiya) et des montants repères jusqu'à `10^24`.
+- **Dalasi gambien (GMD)** : `data/source/gambian-dalasi-counting-candidates.csv` contient les montants 1–999 dalasis, des valeurs en bututs et des montants repères jusqu'à `10^24`.
+
+Les montants au-delà du milliard ne doivent pas être accompagnés de formes soninkées inventées : quand aucune forme cardinale n'est attestée dans les sources utilisées, le champ indique explicitement qu'une élicitation auprès de locuteurs est nécessaire. Même lorsqu'un cardinal est documenté (par exemple `miliyo` ou `miliyaari`), sa combinaison avec une unité monétaire demeure non attestée et doit être validée séparément. Les candidats sont destinés à organiser les entretiens et tests; ils ne sont ni des traductions confirmées ni des données TTS autorisées.
+
+La monnaie mauritanienne actuelle est l'ouguiya **MRU** (et non l'ancien code MRO); sa sous-unité est le khoums, égal à un cinquième d'ouguiya. La monnaie gambienne est le dalasi **GMD**, subdivisé en 100 bututs. Codes et subdivisions à contrôler à partir des sources monétaires officielles avant une intégration applicative.
+
+Références monétaires de travail : ISO 4217 (https://www.iso.org/fr/iso-4217-currency-codes.html), CLDR — monnaies par territoire (https://unicode.org/cldr/charts/47/supplemental/detailed_territory_currency_information.html), et informations sur l'ouguiya MRU (https://www.iotafinance.com/en/Info-currency-MRU-Mauritanian-ouguiya.html). Pour les grands cardinaux soninkés, voir Omniglot (https://omniglot.com/language/numbers/soninke.htm), qui répertorie notamment `miliyo` = un million et `miliyaari` = un milliard.
