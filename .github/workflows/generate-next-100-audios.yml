@@ -79,6 +79,26 @@ jobs:
                   with wave.open(str(p), "rb") as w:
                       if w.getnframes() < 1 or w.getframerate() < 1:
                           raise ValueError("WAV vide")
+                      if w.getcomptype() != "NONE":
+                          raise ValueError("WAV compressé non pris en charge pour le contrôle")
+                      raw = w.readframes(w.getnframes())
+                      if not raw:
+                          raise ValueError("WAV sans données audio")
+                      width = w.getsampwidth()
+                      if width == 2:
+                          from array import array
+                          import sys
+                          samples = array("h")
+                          samples.frombytes(raw)
+                          if sys.byteorder != "little":
+                              samples.byteswap()
+                          if not any(samples):
+                              raise ValueError("WAV silencieux : échantillons PCM tous nuls")
+                      elif width == 1:
+                          if not any(sample != 128 for sample in raw):
+                              raise ValueError("WAV silencieux : échantillons PCM tous nuls")
+                      elif not any(raw):
+                          raise ValueError("WAV silencieux : échantillons PCM tous nuls")
                   generated.append((item.get("text", ""), str(p)))
               except Exception as e:
                   bad.append(f"{p}: {e}")
