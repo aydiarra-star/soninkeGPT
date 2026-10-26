@@ -2105,16 +2105,28 @@ function composeLexicalPhraseFallback(sourceText) {
 function fallbackComposedPhrase(sourceText, extraNote = "") {
   const result = composeLexicalPhraseFallback(sourceText);
   if (!result) return null;
-  let out = "**Phrase soninké composée à partir du lexique disponible**\n";
-  out += soninkeBlock(result.sentence, String(sourceText || "").trim(), "phrase");
-  out += "*Statut : phrase composée automatiquement à partir des mots disponibles. La phrase complète peut ne pas être attestée ni validée.*\n\n";
-  out += "*" + result.note + "*\n\n";
-  if (extraNote) out += "*Réserve : " + extraNote + "*\n\n";
-  if (result.missingFrench.length) {
-    out += "**Éléments français sans correspondance lexicale** : " + result.missingFrench.join(", ") + ". Ils ne sont pas inventés ni insérés dans la phrase. Pour compléter la traduction, ajouter ces mots au lexique puis les faire valider par le référent.\n\n";
+
+  // Sécurité linguistique : ne pas transformer une liste de correspondances
+  // françaises en phrase soninkée en conservant l'ordre du français.
+  let out = "**Correspondances lexicales trouvées — phrase non composée**\n";
+  out += "*Je n'ai pas trouvé de phrase complète attestée ni de règle grammaticale suffisante pour composer cette structure sans risque d'erreur.*\n\n";
+  if (result.mapped && result.mapped.length) {
+    out += "**Mots/expression retrouvés dans le lexique**\n";
+    for (const item of result.mapped.slice(0, currentLevel().maxEntries)) {
+      const status = item.entry && item.entry.statut ? " · statut : " + item.entry.statut : "";
+      out += "- Français : « " + (item.fr || item.token || "") + " » → Soninké : « " + item.snk + " »" + status + "\n";
+    }
+    out += "\n";
   }
-  const audioSegments = extractAvailableAudioSegments(result.sentence);
-  if (audioSegments.length) out += "*Audio de référence disponible pour les segments : " + audioSegments.map((x) => x.text).join(" · ") + ".*\n\n";
+  if (result.missingFrench.length) {
+    out += "**Éléments sans correspondance lexicale** : " + result.missingFrench.join(", ") +
+      ". Je ne les invente pas.\n\n";
+  }
+  if (extraNote) out += "*Motif : " + extraNote + "*\n\n";
+  const audioSegments = extractAvailableAudioSegments(result.mapped.map((x) => x.snk).join(" "));
+  if (audioSegments.length) out += "*Audios de référence disponibles pour écouter les formes individuelles : " +
+    audioSegments.map((x) => x.text).join(" · ") + ". L'audio ne valide pas la traduction de la phrase entière.*\n\n";
+  out += "Pour fournir une phrase fiable, il faut retrouver une phrase complète attestée ou ajouter la règle grammaticale manquante et la faire vérifier par le référent linguistique.\n\n";
   out += levelNote();
   return out;
 }
@@ -3231,67 +3243,94 @@ function inferConversationalMode(message) {
 }
 
 function buildLocalCorpusContext(query) {
-  const tokens = [...new Set(chatTokens(query))];
+  const rawQuery = String(query || "").trim();
+  const normalizedQuery = normalizeWord(rawQuery).replace(/[?.!…]+$/, "").trim();
+  const tokens = [...new Set(chatTokens(rawQuery).map((t) => normalizeWord(t)).filter((t) => t.length > 1))];
   if (!tokens.length) return { context: "", sources: [] };
+
+  // Recherche corpus-first : la phrase entière prime, puis la couverture des mots,
+  // et non une simple sous-chaîne qui survalorise les faux rapprochements.
+  const wordSet = (value) => new Set(normalizeWord(value || "").split(/[^\p{L}\p{M}\d]+/u).filter(Boolean));
   const scoreText = (value) => {
-    const haystack = normalizeWord(value || "");
+    const text = normalizeWord(value || "");
+    const words = wordSet(text);
     let score = 0;
     for (const token of tokens) {
-      if (haystack.includes(token)) score += haystack === token ? 4 : 1;
+      if (words.has(token)) score += 3;
+      else if ([...words].some((word) => word.startsWith(token) || token.startsWith(word))) score += 1;
     }
     return score;
   };
-  const entryMatches = state.entries.map((entry) => ({
-    entry,
-    score: scoreText([
-      entry.soninke, entry.francais, entry.variantes, entry.categorie,
-      entry.definition, entry.exemple_original
-    ].join(" "))
+  const exactFrench = (value) => normalizeWord(value || "").replace(/[?.!…]+$/, "").trim() === normalizedQuery;
+  const phraseMatches = PHRASEBOOK.map((phrase) => ({
+    phrase,
+    score: (exactFrench(phrase.fr) || (phrase.alt || []).some(exactFrench) ? 1000 : 0) +
+      scoreText([phrase.fr, phrase.snk, ...(phrase.alt || []), phrase.note].join(" "))
   })).filter((item) => item.score > 0)
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 18);
+    .sort((a, b) => b.score - a.score).slice(0, 8);
 
   const sampleMatches = state.samples.map((sample) => ({
     sample,
-    score: scoreText([sample.soninke, sample.french, sample.source, sample.project_status].join(" "))
+    score: (exactFrench(sample.french) ? 1200 : 0) +
+      scoreText([sample.soninke, sample.french, sample.source, sample.project_status].join(" "))
   })).filter((item) => item.score > 0)
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 6);
+    .sort((a, b) => b.score - a.score).slice(0, 10);
 
-  const phraseMatches = PHRASEBOOK.map((phrase) => ({
-    phrase,
-    score: scoreText([phrase.fr, phrase.snk, ...(phrase.alt || []), phrase.note].join(" "))
+  const entryMatches = state.entries.map((entry) => ({
+    entry,
+    score: scoreText([
+      entry.francais, entry.soninke, entry.variantes, entry.categorie,
+      entry.definition, entry.exemple_original
+    ].join(" "))
   })).filter((item) => item.score > 0)
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 6);
+    .sort((a, b) => b.score - a.score).slice(0, 24);
 
   const lines = [];
   const sources = [];
-  for (const { entry } of entryMatches) {
+  for (const { sample, score } of sampleMatches) {
+    lines.push("PHRASE/EXEMPLE ATTESTÉ | Soninké: " + (sample.soninke || "") +
+      " | Français: " + (sample.french || "") + " | Score de recherche: " + score +
+      " | Statut source: " + (sample.project_status || "non renseigné") +
+      " | Provenance: " + (sample.source || "non renseignée"));
+    sources.push({ type: "exemple", id: String(sample.id || ""), label: (sample.soninke || "") + " — " + (sample.french || ""), status: sample.project_status || "non renseigné" });
+  }
+  for (const { phrase, score } of phraseMatches) {
+    lines.push("PHRASEBOOK | Soninké: " + phrase.snk + " | Français: " + phrase.fr +
+      " | Score de recherche: " + score + " | Variantes: " + ((phrase.alt || []).join(", ") || "aucune indiquée") +
+      " | Note/provenance: " + (phrase.note || "non renseignée"));
+    sources.push({ type: "phrasebook", label: phrase.snk + " — " + phrase.fr, status: "source locale; statut selon note" });
+  }
+  for (const { entry, score } of entryMatches) {
     const status = String(entry.statut || "statut non renseigné");
-    const line = "LEXIQUE | Soninké: " + entry.soninke + " | Français: " + entry.francais +
-      " | Statut: " + status + " | Catégorie: " + (entry.categorie || "non renseignée") +
+    lines.push("LEXIQUE | Soninké: " + entry.soninke + " | Français: " + entry.francais +
+      " | Score de recherche: " + score + " | Statut: " + status +
+      " | Catégorie: " + (entry.categorie || "non renseignée") +
       " | Provenance: " + (entry.source || "non renseignée") +
       (entry.variantes ? " | Variantes: " + entry.variantes : "") +
       (entry.definition ? " | Définition: " + entry.definition : "") +
-      (entry.exemple_original ? " | Exemple/source: " + entry.exemple_original : "");
-    lines.push(line);
+      (entry.exemple_original ? " | Exemple/source: " + entry.exemple_original : ""));
     sources.push({ type: "lexique", id: String(entry.id || ""), label: entry.soninke + " — " + entry.francais, status });
   }
-  for (const { sample } of sampleMatches) {
-    lines.push("EXEMPLE | Soninké: " + (sample.soninke || "") + " | Français: " +
-      (sample.french || "") + " | Statut source: " + (sample.project_status || "non renseigné") +
-      " | Source: " + (sample.source || "non renseignée"));
-    sources.push({ type: "exemple", id: String(sample.id || ""), label: (sample.soninke || "") + " — " + (sample.french || ""), status: sample.project_status || "non renseigné" });
-  }
-  for (const { phrase } of phraseMatches) {
-    lines.push("PHRASEBOOK | Soninké: " + phrase.snk + " | Français: " + phrase.fr +
-      " | Variantes: " + ((phrase.alt || []).join(", ") || "aucune indiquée") +
-      " | Note: " + (phrase.note || "aucune"));
-    sources.push({ type: "phrasebook", label: phrase.snk + " — " + phrase.fr, status: "source locale; statut selon note" });
+
+  // L'audio sert à vérifier la prononciation d'une forme retrouvée, jamais à
+  // déduire sa traduction ni à valider automatiquement la phrase entière.
+  const audioMatches = (state.audioList || []).map((audio) => ({
+    audio,
+    score: scoreText([audio.text, audio.francais].join(" "))
+  })).filter((item) => item.score > 0)
+    .sort((a, b) => b.score - a.score).slice(0, 8);
+  for (const { audio, score } of audioMatches) {
+    lines.push("AUDIO LIÉ À UNE FORME | Soninké: " + audio.text +
+      " | Français associé (à vérifier selon le statut): " + (audio.francais || "non renseigné") +
+      " | URL: " + audio.url + " | Type: " + (audio.kind || (audio.generated ? "généré" : "non renseigné")) +
+      " | Statut de prononciation: " + (audio.pronunciation_status || audio.validation_status || audio.status || "non renseigné") +
+      " | Score de recherche: " + score +
+      " | Règle: l'audio atteste seulement la prononciation, pas la traduction.");
+    sources.push({ type: "audio", id: String(audio.id || ""), label: audio.text + (audio.francais ? " — " + audio.francais : ""), status: audio.pronunciation_status || audio.validation_status || audio.status || "non renseigné" });
   }
   return { context: lines.join("\n").slice(0, 11500), sources: sources.slice(0, 10) };
 }
+
 
 function getConversationalApiBase() {
   // GitHub Pages does not inject server environment variables into browser JS.
