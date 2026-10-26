@@ -7,6 +7,9 @@ local files, and Soninke forms must retain their supplied validation status.
 from __future__ import annotations
 
 import os
+import json
+import urllib.parse
+import urllib.request
 from io import BytesIO
 from typing import Literal, Optional
 
@@ -123,42 +126,74 @@ def chat(request: ChatRequest):
     messages.append({"role": "user", "content": user_message})
 
     web_sources: list[dict[str, str]] = []
-    try:
-        client = OpenAI(api_key=api_key)
-        if request.web_search:
-            result = client.responses.create(
-                model=os.getenv("OPENAI_WEB_SEARCH_MODEL", os.getenv("OPENAI_CHAT_MODEL", "gpt-4o-mini")),
-                tools=[{"type": "web_search_preview"}],
-                input=[
-                    {"role": "system", "content": system_prompt + "\n\nEffectue une recherche Web réelle. Appuie les faits historiques sur les pages trouvées, distingue les incertitudes et ne présente jamais les résultats Web comme validation linguistique du soninké."},
-                    *[{"role": item["role"], "content": item["content"]} for item in messages[1:]],
-                    {"role": "user", "content": user_message},
-                ],
-                max_output_tokens=1200,
-            )
-            answer = (getattr(result, "output_text", "") or "").strip()
-            for output_item in (getattr(result, "output", None) or []):
-                for content_item in (getattr(output_item, "content", None) or []):
-                    for annotation in (getattr(content_item, "annotations", None) or []):
-                        url = getattr(annotation, "url", None)
-                        title = getattr(annotation, "title", None)
-                        if url and str(url).startswith(("https://", "http://")) and not any(item["url"] == url for item in web_sources):
-                            web_sources.append({"url": str(url), "title": str(title or url)})
-        else:
-            result = client.chat.completions.create(
-                model=os.getenv("OPENAI_CHAT_MODEL", "gpt-4o-mini"),
-                messages=messages,
-                temperature=0.2 if request.mode == "translation_vocabulary" else 0.4,
-                max_tokens=900,
-            )
+    search_warning = None
+    provider_used = None
+    def post_json(url: str, payload: dict, headers: dict[str, str], timeout: int = 25) -> dict:
+        data = json.dumps(payload).encode("utf-8")
+        req = urllib.request.Request(url, data=data, headers={**headers, "Content-Type": "application/json"}, method="POST")
+        with urllib.request.urlopen(req, timeout=timeout) as response:
+            return json.loads(response.read().decode("utf-8"))
+    if request.web_search:
+        try:
+            tavily_key = os.getenv("TAVILY_API_KEY")
+            brave_key = os.getenv("BRAVE_SEARCH_API_KEY")
+            if tavily_key:
+                search_result = post_json("https://api.tavily.com/search", {"api_key": tavily_key, "query": user_message, "search_depth": "basic", "max_results": 5, "include_answer": False}, {}, timeout=15)
+                for item in search_result.get("results", []):
+                    url = str(item.get("url", ""))
+                    if url.startswith(("https://", "http://")): web_sources.append({"url": url, "title": str(item.get("title") or url), "snippet": str(item.get("content") or "")[:1200]})
+            elif brave_key:
+                query = urllib.parse.urlencode({"q": user_message, "count": 5})
+                req = urllib.request.Request("https://api.search.brave.com/res/v1/web/search?" + query, headers={"Accept": "application/json", "X-Subscription-Token": brave_key})
+                with urllib.request.urlopen(req, timeout=15) as response: search_result = json.loads(response.read().decode("utf-8"))
+                for item in search_result.get("web", {}).get("results", []):
+                    url = str(item.get("url", ""))
+                    if url.startswith(("https://", "http://")): web_sources.append({"url": url, "title": str(item.get("title") or url), "snippet": str(item.get("description") or "")[:1200]})
+            else: search_warning = "Recherche Web non configurée : ajoutez TAVILY_API_KEY ou BRAVE_SEARCH_API_KEY dans Render."
+        except Exception as exc:
+            print(f"Web search provider error: {type(exc).__name__}")
+            search_warning = "La recherche Web a échoué ; les faits ne sont pas vérifiés par des sources Web."
+    augmented_system_prompt = system_prompt
+    if web_sources:
+        augmented_system_prompt += "\n\nRésultats Web externes (ne validant pas la langue soninkée) :\n"
+        for idx, source in enumerate(web_sources, start=1):
+            augmented_system_prompt += "[" + str(idx) + "] " + source["title"] + " — " + source["url"] + "\n" + source.get("snippet", "") + "\n"
+        augmented_system_prompt += "\nCite les URL exactes. Distingue faits, interprétations et incertitudes. Une source Web ne valide jamais une forme soninkée."
+    messages = [{"role": "system", "content": augmented_system_prompt}]
+    messages.extend({"role": item.role, "content": item.content.strip()} for item in history)
+    messages.append({"role": "user", "content": user_message})
+    failures = []
+    provider_used = None
+    answer = ""
+    openai_key = os.getenv("OPENAI_API_KEY")
+    groq_key = os.getenv("GROQ_API_KEY")
+    openrouter_key = os.getenv("OPENROUTER_API_KEY")
+    if openai_key:
+        try:
+            client = OpenAI(api_key=openai_key)
+            result = client.chat.completions.create(model=os.getenv("OPENAI_CHAT_MODEL", "gpt-4o-mini"), messages=messages, temperature=0.2 if request.mode == "translation_vocabulary" else 0.4, max_tokens=900)
             answer = (result.choices[0].message.content or "").strip()
-    except Exception as exc:
-        # Do not leak provider details, prompts, or secrets to the client.
-        print(f"Chat provider error: {type(exc).__name__}")
-        raise HTTPException(
-            status_code=502,
-            detail="Le service conversationnel est temporairement indisponible. Réessayez plus tard.",
-        ) from None
+            if answer: provider_used = "openai"
+        except Exception as exc:
+            failures.append(type(exc).__name__); print(f"Primary chat provider error: {type(exc).__name__}")
+    if not answer and groq_key:
+        try:
+            result = post_json("https://api.groq.com/openai/v1/chat/completions", {"model": os.getenv("GROQ_CHAT_MODEL", "llama-3.3-70b-versatile"), "messages": messages, "temperature": 0.2 if request.mode == "translation_vocabulary" else 0.4, "max_tokens": 900}, {"Authorization": "Bearer " + groq_key})
+            answer = str(result["choices"][0]["message"].get("content") or "").strip()
+            if answer: provider_used = "groq"
+        except Exception as exc:
+            failures.append(type(exc).__name__); print(f"Groq fallback error: {type(exc).__name__}")
+    if not answer and openrouter_key:
+        try:
+            result = post_json("https://openrouter.ai/api/v1/chat/completions", {"model": os.getenv("OPENROUTER_CHAT_MODEL", "meta-llama/llama-3.3-70b-instruct:free"), "messages": messages, "temperature": 0.2 if request.mode == "translation_vocabulary" else 0.4, "max_tokens": 900}, {"Authorization": "Bearer " + openrouter_key, "HTTP-Referer": "https://aydiarra-star.github.io/soninkeGPT/", "X-Title": "SoninkeGPT"})
+            answer = str(result["choices"][0]["message"].get("content") or "").strip()
+            if answer: provider_used = "openrouter"
+        except Exception as exc:
+            failures.append(type(exc).__name__); print(f"OpenRouter fallback error: {type(exc).__name__}")
+    if not answer:
+        if not (openai_key or groq_key or openrouter_key): raise HTTPException(status_code=503, detail="Aucune clé API configurée. Ajoutez OPENAI_API_KEY, GROQ_API_KEY ou OPENROUTER_API_KEY dans Render.")
+        raise HTTPException(status_code=503, detail="Aucun fournisseur n’a pu répondre. Vérifiez les clés API et quotas dans Render.")
+    if request.web_search and not web_sources and not search_warning: search_warning = "Aucune source Web récupérée ; les faits doivent être vérifiés."
 
     return {
         "answer": answer,
@@ -166,12 +201,10 @@ def chat(request: ChatRequest):
         "sources": request.sources,
         "web_sources": web_sources,
         "web_search_requested": request.web_search,
+        "provider_used": provider_used,
         "corpus_context_used": bool(context_block),
-        "degraded": False,
-        "warning": (
-            None if context_block else
-            "Aucun contexte lexical local fourni : les formes soninkées ne sont pas considérées comme validées."
-        ),
+        "degraded": bool(failures or search_warning),
+        "warning": " ".join(part for part in [None if context_block else "Aucun contexte lexical local fourni : les formes soninkées ne sont pas considérées comme validées.", search_warning, "Un fournisseur de secours a été utilisé après une erreur du fournisseur principal." if failures else None] if part),
     }
 
 
