@@ -64,8 +64,8 @@ def health():
         "service": APP_NAME,
         "status": "ok",
         "transcription_configured": bool(os.getenv("OPENAI_API_KEY")),
-        "chat_configured": bool(os.getenv("OPENAI_API_KEY")),
-        "note": "Le chat utilise uniquement le contexte de corpus explicitement transmis par le client.",
+        "chat_configured": any(bool(os.getenv(key)) for key in ("OPENAI_API_KEY", "GROQ_API_KEY", "OPENROUTER_API_KEY")),
+        "note": "Le chat accepte OpenAI, Groq ou OpenRouter ; le contexte lexical doit être transmis explicitement par le client.",
     }
 
 
