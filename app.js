@@ -1599,7 +1599,18 @@ function isComposedTokenAttested(token) {
   return false;
 }
 
-// Vérifie que chaque segment d'une phrase composée est attesté dans le corpus
+// Un mot présent dans le lexique peut être utilisé même si sa traduction reste
+// candidate/externe à vérifier. Sa présence ne le transforme pas en forme validée.
+function isKnownLexicalSpan(token) {
+  const key = normalizeWord(token);
+  if (!key) return false;
+  if (state.entries.some((e) => !isExcludedForm(e.soninke) && normalizeWord(e.soninke) === key)) return true;
+  if (PHRASEBOOK.some((p) => [p.snk, ...(p.alt || [])].some((form) => normalizeWord(form) === key))) return true;
+  return false;
+}
+
+// Vérifie chaque segment : une entrée lexicale candidate reste utilisable,
+// avec son statut conservé, au lieu de bloquer toute la phrase.
 function unattestedTokensOf(sentence) {
   const segs = String(sentence || "").replace(/[«»"“”.,!?;:()[\]]/g, " ").trim().split(/\s+/).filter(Boolean);
   const missing = [];
@@ -1607,7 +1618,8 @@ function unattestedTokensOf(sentence) {
   while (i < segs.length) {
     let matched = false;
     for (let end = Math.min(segs.length, i + 4); end > i; end--) {
-      if (isComposedTokenAttested(segs.slice(i, end).join(" "))) { i = end; matched = true; break; }
+      const span = segs.slice(i, end).join(" ");
+      if (isComposedTokenAttested(span) || isKnownLexicalSpan(span)) { i = end; matched = true; break; }
     }
     if (!matched) { missing.push(segs[i]); i++; }
   }
@@ -1661,7 +1673,12 @@ function hasFrenchVerb(text) {
 // Un complément de lieu n'est accepté que si la partie nommée existe dans le lexique
 function hasFrenchNounGuess(text) {
   const tokens = String(text || "").split(/\s+/).filter(Boolean);
-  return tokens.some((tok) => FR_DET_TOKEN_RE.test(tok) || /^(l'|d')/.test(tok) || !!lookupFrenchNounPhrase([tok.replace(/^(l'|d')/, "")], 1));
+  return tokens.some((tok) => {
+    const bare = tok.replace(/^(l'|d')/, "");
+    return FR_DET_TOKEN_RE.test(tok) || /^(l'|d')/.test(tok) ||
+      !!lookupFrenchNounPhrase([bare], 1) ||
+      (lookupTerm(bare).exact || []).some((e) => e && !isExcludedForm(e.soninke));
+  });
 }
 
 // Reconstitue l'infinitif à partir d'une forme fléchie (mangera → manger, parlait → parler)
@@ -1759,7 +1776,11 @@ function parseFrenchStructure(text) {
     rest = pastEtre[1].trim();
   } else if (pastEtre) {
     g.copuleMissing = true;
-  } else if (futPeriph && hasFrenchVerb(futPeriph[1])) {
+  } else if (futPeriph &&
+      !/^(?:a|à|au|aux|dans|chez|en|sur|vers|pour|contre|avec|de|du|des|la|le|les|l')(?:\s|$)/i.test(futPeriph[1].trim()) &&
+      hasFrenchVerb(futPeriph[1])) {
+    // « Je vais manger » est un futur périphrastique, mais « je vais à la prière »
+    // emploie « aller » comme verbe principal avec un complément de lieu.
     g.tense = "future";
     rest = futPeriph[1].trim();
   }
@@ -1795,7 +1816,14 @@ function parseFrenchStructure(text) {
     if (placeM && placeM[1] && hasFrenchNounGuess(placeM[1])) {
       g.placeWord = stripLeadingArticle(placeM[1]);
       const found = lookupFrenchNounPhrase(g.placeWord.split(/\s+/), 2, { definite: /(?:au|aux|a\s+la|a\s+l')/i.test(placeM[0]) });
-      if (found) g.placeEntry = found.entry;
+      if (found) {
+        g.placeEntry = found.entry;
+      } else {
+        // Les noms présents dans le lexique restent utilisables comme compléments,
+        // même si leur catégorie n'est pas encore normalisée.
+        const lexicalPlace = bestSoninkeEntry(lookupTerm(g.placeWord), "", { directKey: g.placeWord, strictContent: true });
+        if (lexicalPlace && !/verbe_gerondif|nom_d_action/i.test(lexicalPlace.categorie || "")) g.placeEntry = lexicalPlace;
+      }
       const beforePlace = placeM.index === 0 ? "" : flat.slice(0, placeM.index).trim();
       restTokens.splice(0, restTokens.length, ...beforePlace.split(/\s+/).filter(Boolean));
     }
@@ -1967,6 +1995,14 @@ function composeSoninkeTranslation(g) {
 
   const sentence = capitalizeFirst(parts.filter(Boolean).join(" ").replace(/\s+/g, " "));
   const missing = unattestedTokensOf(sentence);
+  const reviewForms = [...new Set(parts.flatMap((part) => state.entries
+    .filter((e) => normalizeWord(e.soninke) === normalizeWord(part) &&
+      /a_verifier|externe|candidat|unreviewed/i.test(String(e.statut || "")))
+    .map((e) => String(e.soninke).trim() + "||" + String(e.statut || "à vérifier"))))];
+  for (const item of reviewForms) {
+    const [form, status] = item.split("||");
+    notes.push(`La forme « ${form} » est présente dans le lexique (statut : ${status}) ; la phrase est indicative et cette forme doit encore être vérifiée.`);
+  }
   if (missing.length) {
     return { sentence: null, notes: [...notes, ...missing.map((m) => `Forme à faire valider par le référent : « ${m} ».`)] };
   }

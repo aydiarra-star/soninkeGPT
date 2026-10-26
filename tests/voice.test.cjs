@@ -256,6 +256,16 @@ assert.equal(evaluate("soninkeForms('**Titre inconnu**').length"), 0);
     'Le fallback ne doit pas afficher l’assemblage lexical complet comme phrase soninkée');
   assert(!/phrase composée automatiquement/i.test(missing),
     'Un fallback lexical incertain ne doit pas être présenté comme une phrase composée');
+  // Si les mots existent, la composition doit aboutir même quand un complément
+  // lexical est encore candidat/externe à vérifier (ex. « prière »).
+  const prayer = evaluate("generateResponse('Traduis « je vais à la prière » en soninké')");
+  assert(/Phrase soninké composée à partir du lexique/.test(prayer) && /\{\{pair:/.test(prayer),
+    `Les mots disponibles doivent être transformés en phrase indicative, obtenu : ${prayer.slice(0, 360)}`);
+  assert(!/Correspondances lexicales trouvées — phrase non composée/.test(prayer),
+    'Une entrée lexicale disponible ne doit pas provoquer un arrêt au stade des correspondances');
+  assert(/daga/i.test(prayer) && /ɲaagaye|naagaye/i.test(prayer),
+    `La phrase doit réutiliser le verbe « daga » et le complément lexical de prière, obtenu : ${prayer.slice(0, 360)}`);
+
   // Une phrase composée est reconnue comme « Composé · lexique attesté »
   assert.equal(evaluate("attestationOf('N wa maro ke yigene').level"), 'composed');
   assert.equal(evaluate("attestationOf('N daga saxa').level"), 'composed');
