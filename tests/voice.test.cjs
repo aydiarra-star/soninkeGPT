@@ -220,8 +220,8 @@ assert.equal(evaluate("soninkeForms('**Titre inconnu**').length"), 0);
     'Quand la grammaire est incertaine, la réponse doit présenter les correspondances lexicales');
   assert(!fallbackReply.includes(lexicalFallback.sentence),
     'Le fallback ne doit pas présenter l’assemblage dans l’ordre français comme une phrase soninkée');
-  assert(/phrase complète n'est pas confirmée/i.test(fallbackReply),
-    'Le fallback doit expliciter que la phrase complète n’est pas confirmée');
+  assert(/Je n'ai pas trouvé de phrase complète attestée/i.test(fallbackReply),
+    'Le fallback doit expliciter que la phrase complète n’est pas attestée');
 
   // ── Composition grammaticale : Sujet + Auxiliaire + Objet + Verbe (corpus attesté) ──
   // Inaccompli transitif : S + wa + O + V(-na/-ne/-ni)
