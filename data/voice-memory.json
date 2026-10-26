@@ -15877,609 +15877,716 @@
       "francais": "court",
       "url": "audio/generated/13c4adf8fd66dc1cffc2f556.wav",
       "kind": "voice_clone_unreviewed"
-    }
-  ],
-  "pending": [
+    },
     {
       "text": "borokaaxu",
       "source": "data/source/audio-batch-100-2026-10-25.csv",
       "francais": "stérilité",
-      "url": "audio/generated/19db0af431fbfa6fab7b4f6c.wav"
-    },
-    {
-      "text": "dinka",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "épais, gros, grand",
-      "url": "audio/generated/a1c3fb7d9ea1698a9daec793.wav"
-    },
-    {
-      "text": "dinko",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "grossir, grandir",
-      "url": "audio/generated/9f69a4beeb1fcb63d74cb640.wav"
-    },
-    {
-      "text": "dinma",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "instant, moment, temps",
-      "url": "audio/generated/43218b79af2c23d59cd844f4.wav"
-    },
-    {
-      "text": "dinme",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "tambour, tam-tam / spectacle, danse",
-      "url": "audio/generated/7f15fdd56e56b752449bdc64.wav"
-    },
-    {
-      "text": "dinpe",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "être essoufflé",
-      "url": "audio/generated/68729a16bd147593d95b436f.wav"
-    },
-    {
-      "text": "dintinmaana",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "",
-      "url": "audio/generated/44716f62f08464a4d29e5991.wav"
-    },
-    {
-      "text": "dira",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "secouer, agiter / publier",
-      "url": "audio/generated/62cb1667f22358f00ab128dd.wav"
-    },
-    {
-      "text": "dire",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "gronder, tonner",
-      "url": "audio/generated/49025f2f8f541495242ffac6.wav"
-    },
-    {
-      "text": "direxanne",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "bruit",
-      "url": "audio/generated/0640d5ef3c3475ce45747c12.wav"
-    },
-    {
-      "text": "direye",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "tonnerre, grondement noce / tonnerre, grondement / noce",
-      "url": "audio/generated/e74132d36331d791dabf2282.wav"
-    },
-    {
-      "text": "dirixisaane",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "glissade",
-      "url": "audio/generated/5fc03171687edc6781f63641.wav"
-    },
-    {
-      "text": "dirixisaani",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "glisser",
-      "url": "audio/generated/e73d090e93f09649a40a60fd.wav"
-    },
-    {
-      "text": "diriɲaɲa",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "lutter dans une mêlée",
-      "url": "audio/generated/6d1b1fb1a10063410a0751ce.wav"
-    },
-    {
-      "text": "disa",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "foulard à franges",
-      "url": "audio/generated/d3e14c83c615d87331f695af.wav"
-    },
-    {
-      "text": "diya",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "amende, alliance, prix du sang",
-      "url": "audio/generated/da9660c38bcd7f409ec94a6c.wav"
-    },
-    {
-      "text": "diyo",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "femme divorcée",
-      "url": "audio/generated/662552707b73afd79b575124.wav"
-    },
-    {
-      "text": "do",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "et, avec, par, pour / dans, à / about / with",
-      "url": "audio/generated/ac0b52a2ae6ef99999bc08fb.wav"
-    },
-    {
-      "text": "dobbe",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "boucle d'oreille",
-      "url": "audio/generated/75adfe890b13e77128e81608.wav"
-    },
-    {
-      "text": "dogo",
-      "source": "data/reviews/questions-referent-2026-10-24.csv",
-      "francais": "cadet, cadette",
-      "url": "audio/generated/44dcd472ff272334601bbe9e.wav"
-    },
-    {
-      "text": "dogonyinme",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "gerbe d'épi réservé pour les semences",
-      "url": "audio/generated/0b9e38da37838ba50bf3bcf5.wav"
-    },
-    {
-      "text": "dokko",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "bâton, canne",
-      "url": "audio/generated/afa13bdc706df4d6d4bee615.wav"
-    },
-    {
-      "text": "dokotoro",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "médecin",
-      "url": "audio/generated/ed1f745e9b9c45fbc0b2fa0a.wav"
-    },
-    {
-      "text": "dokotoronka",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "hôpital, clinique, dispensaire",
-      "url": "audio/generated/49f7af3b486f9cff79bce606.wav"
-    },
-    {
-      "text": "dolla",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "poisson de 20 cm, peu de valeur commerciale, blanc ou noir",
-      "url": "audio/generated/2fb53f7650dddb10d2be8911.wav"
-    },
-    {
-      "text": "dolle",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "beurre de vache sous forme de pâte visqueuse",
-      "url": "audio/generated/978a75420707eb06c52f081c.wav"
-    },
-    {
-      "text": "dolo",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "alcool, vin, bière",
-      "url": "audio/generated/38b61022561578cfcd1592b0.wav"
-    },
-    {
-      "text": "domane",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "dartre",
-      "url": "audio/generated/96a394d2c3680a7efb62a20d.wav"
-    },
-    {
-      "text": "domanne",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "Proforme interrogatif",
-      "url": "audio/generated/100dffba56db9bff7c51aa19.wav"
-    },
-    {
-      "text": "dome",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "canari, vase, jarre",
-      "url": "audio/generated/23b6ac8d08a9c29887fadd91.wav"
-    },
-    {
-      "text": "domi",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "s'habituer",
-      "url": "audio/generated/815233317af818e0f067aefb.wav"
-    },
-    {
-      "text": "domiye",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "habitude",
-      "url": "audio/generated/48ecfab9a4d20610199c4d03.wav"
-    },
-    {
-      "text": "donbi",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "poney / cheval têtu",
-      "url": "audio/generated/c8febe3f5b19ae9186750319.wav"
-    },
-    {
-      "text": "donde",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "case ronde",
-      "url": "audio/generated/3d9ac7a050e12bdf2d1c5d0c.wav"
-    },
-    {
-      "text": "dondo",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "sexe masculin",
-      "url": "audio/generated/35a673f1e6eee6fc21e0b097.wav"
-    },
-    {
-      "text": "dondonŋe",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "petit tambour",
-      "url": "audio/generated/8487571b8fb43dd1ed85e851.wav"
-    },
-    {
-      "text": "donga",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "gésier (poulet)",
-      "url": "audio/generated/e08f3222574852684732b8e6.wav"
-    },
-    {
-      "text": "dongodongo",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "marcher fièrement",
-      "url": "audio/generated/5ffb928e9635138f374cab0f.wav"
-    },
-    {
-      "text": "dongomaane",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "",
-      "url": "audio/generated/ca6ee9e161089cfb6bfc13c2.wav"
-    },
-    {
-      "text": "donmante",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "triste, mélancolique",
-      "url": "audio/generated/d4c2b09a1e0fb5d9eaa7f068.wav"
-    },
-    {
-      "text": "donme",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "mulet, cheval hybride",
-      "url": "audio/generated/d4921f2075b846e3bc42d965.wav"
-    },
-    {
-      "text": "donmi",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "",
-      "url": "audio/generated/bff6a956e08d710eb7c1f927.wav"
-    },
-    {
-      "text": "donqo",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "tumulte",
-      "url": "audio/generated/07ce7b39619ab104b7ef51e5.wav"
-    },
-    {
-      "text": "doofa",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "déraciner, arracher",
-      "url": "audio/generated/1e99f9396e6cd6d565271ad7.wav"
-    },
-    {
-      "text": "dooga",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "se moquer de quelqu'un",
-      "url": "audio/generated/5da274dd8779478f951d0862.wav"
-    },
-    {
-      "text": "doogande",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "moquerie",
-      "url": "audio/generated/8bb795754d9dd4e285dd5e98.wav"
-    },
-    {
-      "text": "dooke",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "là-bas",
-      "url": "audio/generated/9ef3ccf2c8e74f9e41d1a75b.wav"
-    },
-    {
-      "text": "doole",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "force, puissance",
-      "url": "audio/generated/8dbdaa17bafa04e32d7d78b9.wav"
-    },
-    {
-      "text": "doolinŋe",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "canne à pêche, ligne avec beaucoup d'hameçons",
-      "url": "audio/generated/f779c058d6741084cd9a2028.wav"
-    },
-    {
-      "text": "dooma",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "animiste",
-      "url": "audio/generated/52eb3c0f4447e4170da3ab6c.wav"
-    },
-    {
-      "text": "doome",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "ensemble",
-      "url": "audio/generated/a86cb8914b8eb7177d63540f.wav"
-    },
-    {
-      "text": "dooono",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "",
-      "url": "audio/generated/cd816ae792aa766d7c0b2087.wav"
-    },
-    {
-      "text": "doora",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "bobiner / rouleau, axe, fuseau, canon",
-      "url": "audio/generated/9fdb07f2d7d16d12f5975315.wav"
-    },
-    {
-      "text": "doore",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "là-bas, vers là",
-      "url": "audio/generated/13d46b8d4ba9fea486b6446a.wav"
-    },
-    {
-      "text": "Dooro da xaalisin kini yaxaren ŋa muqen di",
-      "source": "data/candidates/dictionnaire-l-y-expressions-importables-2026-10-25.csv",
-      "francais": "Dooro a donné de l'argent à la femme en cachette",
-      "url": "audio/generated/ffc3df6f35ec77111aa5b215.wav"
-    },
-    {
-      "text": "dooru",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "",
-      "url": "audio/generated/941034e6bdb20dcc66345cad.wav"
-    },
-    {
-      "text": "doosa",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "frotter, nettoyer, essuyer",
-      "url": "audio/generated/39f2527fe77bcb6eb6ce8d48.wav"
-    },
-    {
-      "text": "doosaade",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "chiffon, éponge métallique",
-      "url": "audio/generated/86eb987ed450299cc92724ca.wav"
-    },
-    {
-      "text": "doosi",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "laver, frotter, essuyer",
-      "url": "audio/generated/81024cf6ba64bb881edf047a.wav"
-    },
-    {
-      "text": "dooɲe",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "odeur",
-      "url": "audio/generated/d7ac3cb67604482c64b38536.wav"
-    },
-    {
-      "text": "dopa",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "enfoncer, renverser sur la tête avec force",
-      "url": "audio/generated/2b1004b07f3cd04301139a25.wav"
-    },
-    {
-      "text": "dopi",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "sauter",
-      "url": "audio/generated/2917bef09c9dca407b410823.wav"
-    },
-    {
-      "text": "doquta",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "",
-      "url": "audio/generated/1e5611b4d99d85da3f78041e.wav"
-    },
-    {
-      "text": "doro",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "",
-      "url": "audio/generated/aaf68ada0efca2fabd36514f.wav"
-    },
-    {
-      "text": "dorogu",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "drogue",
-      "url": "audio/generated/100e6a4727611c129c0fd9f5.wav"
-    },
-    {
-      "text": "doroke",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "vêtement, boubou",
-      "url": "audio/generated/d6e8f350e534342913ccc09d.wav"
-    },
-    {
-      "text": "Doroki-xooren wa saŋan ŋa saasa",
-      "source": "data/candidates/dictionnaire-l-y-expressions-importables-2026-10-25.csv",
-      "francais": "Le grand boubou est à la mode en ce moment",
-      "url": "audio/generated/7b4de18d0f3cca31a6db1bdb.wav"
-    },
-    {
-      "text": "doronbaraxate",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "pouce",
-      "url": "audio/generated/5978cc7716b15eb35da7a0e3.wav"
-    },
-    {
-      "text": "doronbattamaxe",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "annulaire",
-      "url": "audio/generated/111f6e4ea805434e4e784139.wav"
-    },
-    {
-      "text": "doronfaranfare",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "annulaire",
-      "url": "audio/generated/433a9e40272792f109ac6961.wav"
-    },
-    {
-      "text": "dorongille",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "majeur",
-      "url": "audio/generated/f4981e81c59456a24adf7bfd.wav"
-    },
-    {
-      "text": "doronlagare",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "auriculaire",
-      "url": "audio/generated/9d85b03934e49a60b397eed9.wav"
-    },
-    {
-      "text": "doronlenme",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "auriculaire",
-      "url": "audio/generated/f40103542374f138a60a1ebb.wav"
-    },
-    {
-      "text": "doronma",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "bague",
-      "url": "audio/generated/8d2b50d1f3e5ea80d0bad89a.wav"
-    },
-    {
-      "text": "doronme",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "doigt, orteil / panaris",
-      "url": "audio/generated/c2a01d8bb4ecdcc92530cb63.wav"
-    },
-    {
-      "text": "doronnaxadunke",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "majeur",
-      "url": "audio/generated/56db9a5d3149201b39fee73d.wav"
-    },
-    {
-      "text": "doronnooraade",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "index",
-      "url": "audio/generated/5fce50e73227aa95f88f8254.wav"
-    },
-    {
-      "text": "doronsaage",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "index",
-      "url": "audio/generated/a745a7887a02ab3776622277.wav"
-    },
-    {
-      "text": "dorontaaxu",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "respect",
-      "url": "audio/generated/275d5bc1ea1156e570ecb4b3.wav"
-    },
-    {
-      "text": "doronxoore",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "pouce",
-      "url": "audio/generated/6d1c57ce983a5fc592fc8044.wav"
-    },
-    {
-      "text": "doronyugo",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "pouce",
-      "url": "audio/generated/002f53def8b7b7546139278b.wav"
+      "url": "audio/generated/19db0af431fbfa6fab7b4f6c.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "doroye",
       "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
       "francais": "respect",
-      "url": "audio/generated/bd6801ba1948d1a97be8e880.wav"
+      "url": "audio/generated/bd6801ba1948d1a97be8e880.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
-      "text": "dotti",
+      "text": "dinka",
       "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "tomber, chuter / s'effriter",
-      "url": "audio/generated/46e76296285b2018c7ad59da.wav"
+      "francais": "épais, gros, grand",
+      "url": "audio/generated/a1c3fb7d9ea1698a9daec793.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
-      "text": "doxo",
+      "text": "dinko",
       "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "se disputer, discuter, réprimander, gronder, blâmer / querelle, discussion, réprimande, blâme",
-      "url": "audio/generated/6bae3c85f189a748e362feba.wav"
+      "francais": "grossir, grandir",
+      "url": "audio/generated/9f69a4beeb1fcb63d74cb640.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
-      "text": "doxomi",
+      "text": "dinma",
       "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "tremper, plonger",
-      "url": "audio/generated/a9951d73dbb6b4fdc5e51d6a.wav"
+      "francais": "instant, moment, temps",
+      "url": "audio/generated/43218b79af2c23d59cd844f4.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
-      "text": "Doxotoron da a ko watunten da ti a na sefen mulli",
-      "source": "data/candidates/dictionnaire-l-y-expressions-importables-2026-10-25.csv",
-      "francais": "Le docteur a dit au malade de parler doucement",
-      "url": "audio/generated/a0c7514e7456b6890244bb1f.wav"
+      "text": "dinme",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "tambour, tam-tam / spectacle, danse",
+      "url": "audio/generated/7f15fdd56e56b752449bdc64.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dinpe",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "être essoufflé",
+      "url": "audio/generated/68729a16bd147593d95b436f.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dintinmaana",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "",
+      "url": "audio/generated/44716f62f08464a4d29e5991.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dira",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "secouer, agiter / publier",
+      "url": "audio/generated/62cb1667f22358f00ab128dd.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dire",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "gronder, tonner",
+      "url": "audio/generated/49025f2f8f541495242ffac6.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "direxanne",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "bruit",
+      "url": "audio/generated/0640d5ef3c3475ce45747c12.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "direye",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "tonnerre, grondement noce / tonnerre, grondement / noce",
+      "url": "audio/generated/e74132d36331d791dabf2282.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "diriɲaɲa",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "lutter dans une mêlée",
+      "url": "audio/generated/6d1b1fb1a10063410a0751ce.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dirixisaane",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "glissade",
+      "url": "audio/generated/5fc03171687edc6781f63641.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dirixisaani",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "glisser",
+      "url": "audio/generated/e73d090e93f09649a40a60fd.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "disa",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "foulard à franges",
+      "url": "audio/generated/d3e14c83c615d87331f695af.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "diya",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "amende, alliance, prix du sang",
+      "url": "audio/generated/da9660c38bcd7f409ec94a6c.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "diyo",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "femme divorcée",
+      "url": "audio/generated/662552707b73afd79b575124.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "do",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "et, avec, par, pour / dans, à / about / with",
+      "url": "audio/generated/ac0b52a2ae6ef99999bc08fb.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dobbe",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "boucle d'oreille",
+      "url": "audio/generated/75adfe890b13e77128e81608.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dogonyinme",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "gerbe d'épi réservé pour les semences",
+      "url": "audio/generated/0b9e38da37838ba50bf3bcf5.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dokko",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "bâton, canne",
+      "url": "audio/generated/afa13bdc706df4d6d4bee615.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dokotoro",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "médecin",
+      "url": "audio/generated/ed1f745e9b9c45fbc0b2fa0a.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dokotoronka",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "hôpital, clinique, dispensaire",
+      "url": "audio/generated/49f7af3b486f9cff79bce606.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dolla",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "poisson de 20 cm, peu de valeur commerciale, blanc ou noir",
+      "url": "audio/generated/2fb53f7650dddb10d2be8911.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dolle",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "beurre de vache sous forme de pâte visqueuse",
+      "url": "audio/generated/978a75420707eb06c52f081c.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dolo",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "alcool, vin, bière",
+      "url": "audio/generated/38b61022561578cfcd1592b0.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "domane",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "dartre",
+      "url": "audio/generated/96a394d2c3680a7efb62a20d.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "domanne",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "Proforme interrogatif",
+      "url": "audio/generated/100dffba56db9bff7c51aa19.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dome",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "canari, vase, jarre",
+      "url": "audio/generated/23b6ac8d08a9c29887fadd91.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "domi",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "s'habituer",
+      "url": "audio/generated/815233317af818e0f067aefb.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "domiye",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "habitude",
+      "url": "audio/generated/48ecfab9a4d20610199c4d03.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "donbi",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "poney / cheval têtu",
+      "url": "audio/generated/c8febe3f5b19ae9186750319.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "donde",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "case ronde",
+      "url": "audio/generated/3d9ac7a050e12bdf2d1c5d0c.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dondo",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "sexe masculin",
+      "url": "audio/generated/35a673f1e6eee6fc21e0b097.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dondonŋe",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "petit tambour",
+      "url": "audio/generated/8487571b8fb43dd1ed85e851.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "donga",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "gésier (poulet)",
+      "url": "audio/generated/e08f3222574852684732b8e6.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dongodongo",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "marcher fièrement",
+      "url": "audio/generated/5ffb928e9635138f374cab0f.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dongomaane",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "",
+      "url": "audio/generated/ca6ee9e161089cfb6bfc13c2.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "donmante",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "triste, mélancolique",
+      "url": "audio/generated/d4c2b09a1e0fb5d9eaa7f068.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "donme",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "mulet, cheval hybride",
+      "url": "audio/generated/d4921f2075b846e3bc42d965.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "donmi",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "",
+      "url": "audio/generated/bff6a956e08d710eb7c1f927.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "donqo",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "tumulte",
+      "url": "audio/generated/07ce7b39619ab104b7ef51e5.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "doŋa",
       "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
       "francais": "équilibre, côte / équilibre / côte (de la mer)",
-      "url": "audio/generated/44a3b4f00a242408a80f15a1.wav"
+      "url": "audio/generated/44a3b4f00a242408a80f15a1.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "doofa",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "déraciner, arracher",
+      "url": "audio/generated/1e99f9396e6cd6d565271ad7.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dooga",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "se moquer de quelqu'un",
+      "url": "audio/generated/5da274dd8779478f951d0862.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "doogande",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "moquerie",
+      "url": "audio/generated/8bb795754d9dd4e285dd5e98.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dooke",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "là-bas",
+      "url": "audio/generated/9ef3ccf2c8e74f9e41d1a75b.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "doole",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "force, puissance",
+      "url": "audio/generated/8dbdaa17bafa04e32d7d78b9.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "doolinŋe",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "canne à pêche, ligne avec beaucoup d'hameçons",
+      "url": "audio/generated/f779c058d6741084cd9a2028.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dooma",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "animiste",
+      "url": "audio/generated/52eb3c0f4447e4170da3ab6c.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "doome",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "ensemble",
+      "url": "audio/generated/a86cb8914b8eb7177d63540f.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dooono",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "",
+      "url": "audio/generated/cd816ae792aa766d7c0b2087.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dooɲe",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "odeur",
+      "url": "audio/generated/d7ac3cb67604482c64b38536.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "doora",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "bobiner / rouleau, axe, fuseau, canon",
+      "url": "audio/generated/9fdb07f2d7d16d12f5975315.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "doore",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "là-bas, vers là",
+      "url": "audio/generated/13d46b8d4ba9fea486b6446a.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dooru",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "",
+      "url": "audio/generated/941034e6bdb20dcc66345cad.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "doosa",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "frotter, nettoyer, essuyer",
+      "url": "audio/generated/39f2527fe77bcb6eb6ce8d48.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "doosaade",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "chiffon, éponge métallique",
+      "url": "audio/generated/86eb987ed450299cc92724ca.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "doosi",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "laver, frotter, essuyer",
+      "url": "audio/generated/81024cf6ba64bb881edf047a.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dopa",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "enfoncer, renverser sur la tête avec force",
+      "url": "audio/generated/2b1004b07f3cd04301139a25.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dopi",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "sauter",
+      "url": "audio/generated/2917bef09c9dca407b410823.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "doquta",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "",
+      "url": "audio/generated/1e5611b4d99d85da3f78041e.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "doro",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "",
+      "url": "audio/generated/aaf68ada0efca2fabd36514f.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dorogu",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "drogue",
+      "url": "audio/generated/100e6a4727611c129c0fd9f5.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "doroke",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "vêtement, boubou",
+      "url": "audio/generated/d6e8f350e534342913ccc09d.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "doronbaraxate",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "pouce",
+      "url": "audio/generated/5978cc7716b15eb35da7a0e3.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "doronbattamaxe",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "annulaire",
+      "url": "audio/generated/111f6e4ea805434e4e784139.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "doronfaranfare",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "annulaire",
+      "url": "audio/generated/433a9e40272792f109ac6961.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dorongille",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "majeur",
+      "url": "audio/generated/f4981e81c59456a24adf7bfd.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "doronlagare",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "auriculaire",
+      "url": "audio/generated/9d85b03934e49a60b397eed9.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "doronlenme",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "auriculaire",
+      "url": "audio/generated/f40103542374f138a60a1ebb.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "doronma",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "bague",
+      "url": "audio/generated/8d2b50d1f3e5ea80d0bad89a.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "doronme",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "doigt, orteil / panaris",
+      "url": "audio/generated/c2a01d8bb4ecdcc92530cb63.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "doronnaxadunke",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "majeur",
+      "url": "audio/generated/56db9a5d3149201b39fee73d.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "doronnooraade",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "index",
+      "url": "audio/generated/5fce50e73227aa95f88f8254.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "doronsaage",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "index",
+      "url": "audio/generated/a745a7887a02ab3776622277.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dorontaaxu",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "respect",
+      "url": "audio/generated/275d5bc1ea1156e570ecb4b3.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "doronxoore",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "pouce",
+      "url": "audio/generated/6d1c57ce983a5fc592fc8044.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "doronyugo",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "pouce",
+      "url": "audio/generated/002f53def8b7b7546139278b.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dotti",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "tomber, chuter / s'effriter",
+      "url": "audio/generated/46e76296285b2018c7ad59da.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "doxo",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "se disputer, discuter, réprimander, gronder, blâmer / querelle, discussion, réprimande, blâme",
+      "url": "audio/generated/6bae3c85f189a748e362feba.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "doxomi",
+      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
+      "francais": "tremper, plonger",
+      "url": "audio/generated/a9951d73dbb6b4fdc5e51d6a.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "du",
       "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
       "francais": "pronom réfléchi complément: me, te, se, nous, vous / pronom emphatique",
-      "url": "audio/generated/601b2c2473811afea7864a21.wav"
+      "url": "audio/generated/601b2c2473811afea7864a21.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "du rasaaga",
       "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
       "francais": "se repentir",
-      "url": "audio/generated/627c857ddd36bd5bd7787caa.wav"
+      "url": "audio/generated/627c857ddd36bd5bd7787caa.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "dubaane",
       "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
       "francais": "tout suite, une bonne fois, une fois pour toute",
-      "url": "audio/generated/351e024029362bca48c1bb45.wav"
+      "url": "audio/generated/351e024029362bca48c1bb45.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "dubali",
       "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
       "francais": "vieille pièce en argent",
-      "url": "audio/generated/ac272c4139669469ebef6648.wav"
+      "url": "audio/generated/ac272c4139669469ebef6648.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "dubuga",
       "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
       "francais": "se vanter",
-      "url": "audio/generated/311ecac8067a330324f70988.wav"
+      "url": "audio/generated/311ecac8067a330324f70988.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "dudo",
       "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
       "francais": "",
-      "url": "audio/generated/0c2a410c543c2f0983cdd70f.wav"
+      "url": "audio/generated/0c2a410c543c2f0983cdd70f.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "dudoxotaana",
       "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
       "francais": "personne encouragée",
-      "url": "audio/generated/2f979be4ac4a619c05dc9805.wav"
+      "url": "audio/generated/2f979be4ac4a619c05dc9805.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "dudoxoto",
       "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
       "francais": "prendre courage, persévérer, \"s'il vous plaît\"",
-      "url": "audio/generated/6e978586bf165a0bcec21f31.wav"
+      "url": "audio/generated/6e978586bf165a0bcec21f31.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "dudoxotontaaxu",
       "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
       "francais": "courage",
-      "url": "audio/generated/a17cec24a715c2f2f29b0b13.wav"
+      "url": "audio/generated/a17cec24a715c2f2f29b0b13.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "dudoxotonte",
       "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
       "francais": "courageux",
-      "url": "audio/generated/860a015173564f0f5e7c2540.wav"
+      "url": "audio/generated/860a015173564f0f5e7c2540.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "dudoxotoye",
       "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
       "francais": "courage",
-      "url": "audio/generated/88800706931e1fcdba7b9e03.wav"
+      "url": "audio/generated/88800706931e1fcdba7b9e03.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "duduune",
       "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
       "francais": "poisson qui peut se gonfler d'air",
-      "url": "audio/generated/fd7860a19c397237193f7726.wav"
+      "url": "audio/generated/fd7860a19c397237193f7726.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "Doxotoron da a ko watunten da ti a na sefen mulli",
+      "source": "data/candidates/dictionnaire-l-y-expressions-importables-2026-10-25.csv",
+      "francais": "Le docteur a dit au malade de parler doucement",
+      "url": "audio/generated/a0c7514e7456b6890244bb1f.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "Dooro da xaalisin kini yaxaren ŋa muqen di",
+      "source": "data/candidates/dictionnaire-l-y-expressions-importables-2026-10-25.csv",
+      "francais": "Dooro a donné de l'argent à la femme en cachette",
+      "url": "audio/generated/ffc3df6f35ec77111aa5b215.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "Doroki-xooren wa saŋan ŋa saasa",
+      "source": "data/candidates/dictionnaire-l-y-expressions-importables-2026-10-25.csv",
+      "francais": "Le grand boubou est à la mode en ce moment",
+      "url": "audio/generated/7b4de18d0f3cca31a6db1bdb.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "dogo",
+      "source": "data/reviews/questions-referent-2026-10-24.csv",
+      "francais": "cadet, cadette",
+      "url": "audio/generated/44dcd472ff272334601bbe9e.wav",
+      "kind": "voice_clone_unreviewed"
+    },
+    {
+      "text": "In",
+      "source": "data/source/lexique-soninke-fr-base.csv",
+      "francais": "je",
+      "url": "audio/generated/8bc1d53cc57c24b79bf7c260.wav",
+      "kind": "voice_clone_unreviewed"
     },
     {
       "text": "Due",
       "source": "data/source/liste-lexicale-validee-2026-10-25.csv",
       "francais": "Accepter",
-      "url": "audio/generated/9071738f145962a67ca1f1db.wav"
-    },
+      "url": "audio/generated/9071738f145962a67ca1f1db.wav",
+      "kind": "voice_clone_unreviewed"
+    }
+  ],
+  "pending": [
     {
       "text": "duga",
       "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
@@ -22479,12 +22586,6 @@
       "source": "data/candidates/dictionnaire-g-k-importable-verifie-2026-10-25.csv",
       "francais": "emphatique: il, elle",
       "url": "audio/generated/b2c3996f564f4a49e5ab57ed.wav"
-    },
-    {
-      "text": "In",
-      "source": "data/source/lexique-soninke-fr-base.csv",
-      "francais": "je",
-      "url": "audio/generated/8bc1d53cc57c24b79bf7c260.wav"
     },
     {
       "text": "inke",
