@@ -44,7 +44,8 @@ jobs:
       - name: Restore only memory entries with existing readable WAV files
         run: >-
           python scripts/restore_voice_memory.py
-          --memory-file /tmp/soninkegpt-audio-review/voice-memory.json\n          --artifact-root /tmp/soninkegpt-audio-review
+          --memory-file /tmp/soninkegpt-audio-review/voice-memory.json
+          --artifact-root /tmp/soninkegpt-audio-review
 
       - name: Validate preserved human-validation metadata
         run: |
