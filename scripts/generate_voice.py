@@ -149,15 +149,13 @@ def build(generate=False, limit=20, device="auto"):
     # Le manifeste de validation humaine est la source durable des validations de lots.
     validation_manifest = ROOT / "data/source/audio-batch-100-validation-2026-10-26.csv"
     if validation_manifest.exists():
-        for row in rows(validation_manifest):
-            word = row.get("text", "").strip()
-            if not word:
-                continue
-            normalized = key(word)
-            if normalized not in audio:
-                continue
-            item = audio[normalized]
-            if row.get("url") and row["url"].strip() != item.get("url"):
+        validated_urls = {
+            row.get("url", "").strip()
+            for row in rows(validation_manifest)
+            if row.get("url", "").strip()
+        }
+        for item in audio.values():
+            if item.get("url") not in validated_urls:
                 continue
             item["kind"] = "voice_clone_validated"
             item["linguistic_validation"] = "validated_by_referent"
