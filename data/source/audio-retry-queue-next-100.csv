@@ -1,2 +1,2 @@
-id,soninke,francais,source,audio_path,priorite,statut,batch_cible
-SNK-AUDIO-20261025-0053,borokaaxu,stérilité,data/source/lexique-soninke-fr-base.csv,audio/generated/19db0af431fbfa6fab7b4f6c.wav,haute,a_regenerer_lot_suivant,LOT-100-2026-10-27
+id,soninke,francais,source,audio_path,priorite,statut,batch_cible,notes
+SNK-AUDIO-20261025-0053,borokaaxu,stérilité,data/source/lexique-soninke-fr-base.csv,audio/generated/19db0af431fbfa6fab7b4f6c.wav,haute,valide_par_referent_linguistique,LOT-100-2026-10-26,"Le référent a validé le mot, la traduction, la prononciation et la qualité sonore; voix confirmée comme étant la sienne, 2026-10-26"
