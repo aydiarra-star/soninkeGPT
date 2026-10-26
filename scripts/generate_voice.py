@@ -140,6 +140,7 @@ def build(generate=False, limit=20, device="auto"):
     validation_fields = (
         "linguistic_validation",
         "pronunciation_validation",
+        "validation_prononciation",
         "translation_validation",
         "validation_batch",
         "validation_date",
@@ -159,7 +160,8 @@ def build(generate=False, limit=20, device="auto"):
                 continue
             item["kind"] = "voice_clone_validated"
             item["linguistic_validation"] = "validated_by_referent"
-            item["pronunciation_validation"] = "correct"
+            item["pronunciation_validation"] = "validated_by_linguistic_referent"
+            item["validation_prononciation"] = "validee_par_referent_linguistique"
             item["validation_batch"] = "audio-batch-100-2026-10-26"
             item["validation_date"] = "2026-10-26"
             item["validated_by"] = "référent linguistique SoninkeGPT"
