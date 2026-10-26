@@ -1092,7 +1092,7 @@ async function deliverVoiceTurn(transcript, voiceNoteUrl) {
 
   // Si la reconnaissance du navigateur n'a rien transcrit, tenter l'ASR serveur
   // configuré dans voice-config.js. Aucun secret API n'est stocké dans le frontend.
-  const apiBase = String(window.SONINKEGPT_API_BASE || "").trim().replace(/\/$/, "");
+  const apiBase = getConversationalApiBase();
   if (voiceNoteUrl && apiBase) {
     try {
       showVoiceStatus("Transcription vocale en cours…", 0, false);
@@ -3288,8 +3288,12 @@ function buildLocalCorpusContext(query) {
   return { context: lines.join("\n").slice(0, 11500), sources: sources.slice(0, 10) };
 }
 
+function getConversationalApiBase() {
+  // GitHub Pages does not inject server environment variables into browser JS.
+  return String(window.SONINKEGPT_API_BASE || "https://soninkegpt-voice-api.onrender.com").trim().replace(/\/$/, "");
+}
+
 function shouldUseConversationalApi(message) {
-  if (!String(window.SONINKEGPT_API_BASE || "").trim()) return false;
   return inferConversationalMode(message) !== null;
 }
 
@@ -3315,7 +3319,8 @@ async function generateConversationResponse(message, conversation) {
         mode,
         history,
         corpus_context: retrieved.context,
-        sources: retrieved.sources
+        sources: retrieved.sources,
+        web_search: mode === "culture_history"
       })
     });
     const payload = await response.json().catch(() => ({}));
