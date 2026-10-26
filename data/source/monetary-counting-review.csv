@@ -1,0 +1,9 @@
+id,montant_numérique,monnaie,expression_soninke,segmentation_proposée,équivalent_calculé,contexte,source_status,linguistic_status,audio_status,region,notes
+money-0001,5,FCFA,godi baane,"godi + baane",5,candidat expression pour argent,rapporté dans ressource pédagogique,à vérifier auprès de locuteurs,non enregistré,,Vérifier l'orthographe exacte gode/godi et la segmentation; ne pas extrapoler
+money-0002,50,FCFA,godo tanmi,"godo + tanmi",50,candidat expression pour argent,rapporté dans ressource pédagogique,à vérifier auprès de locuteurs,non enregistré,,Vérifier forme et construction exacte
+money-0003,100,FCFA,tanfille gode,"tanfille + gode",100,candidat expression pour argent,rapporté dans ressource pédagogique,à vérifier auprès de locuteurs,non enregistré,,Ne pas confondre avec tanfille comme forme cardinale rapportée pour 20
+money-0004,200,FCFA,tannaxate,,200,candidat expression pour argent,rapporté dans notes préliminaires,à vérifier auprès de locuteurs,non enregistré,,Hypothèse particulièrement à confirmer; ne pas considérer comme règle établie
+money-0005,500,FCFA,keme gode,"keme + gode",500,candidat expression pour argent,rapporté dans ressource pédagogique,à vérifier auprès de locuteurs,non enregistré,,Ne pas attribuer ce sens à kame isolé; vérifier voyelle et contexte
+money-0006,1000,FCFA,,,,montant à documenter,aucune forme consignée,non documenté,non enregistré,,Ne pas fabriquer de forme par analogie
+money-0007,100,EUR,,,,montant à documenter,aucune forme consignée,non documenté,non enregistré,,Ne pas transposer automatiquement les expressions FCFA à l'euro
+money-0008,500,EUR,,,,montant à documenter,aucune forme consignée,non documenté,non enregistré,,Ne pas transposer automatiquement les expressions FCFA à l'euro
