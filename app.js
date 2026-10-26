@@ -3320,18 +3320,6 @@ function buildLocalCorpusContext(query) {
       " | Note/provenance: " + (phrase.note || "non renseignée"));
     sources.push({ type: "phrasebook", label: phrase.snk + " — " + phrase.fr, status: "source locale; statut selon note" });
   }
-  for (const { entry, score } of entryMatches) {
-    const status = String(entry.statut || "statut non renseigné");
-    lines.push("LEXIQUE | Soninké: " + entry.soninke + " | Français: " + entry.francais +
-      " | Score de recherche: " + score + " | Statut: " + status +
-      " | Catégorie: " + (entry.categorie || "non renseignée") +
-      " | Provenance: " + (entry.source || "non renseignée") +
-      (entry.variantes ? " | Variantes: " + entry.variantes : "") +
-      (entry.definition ? " | Définition: " + entry.definition : "") +
-      (entry.exemple_original ? " | Exemple/source: " + entry.exemple_original : ""));
-    sources.push({ type: "lexique", id: String(entry.id || ""), label: entry.soninke + " — " + entry.francais, status });
-  }
-
   // L'audio sert à vérifier la prononciation d'une forme retrouvée, jamais à
   // déduire sa traduction ni à valider automatiquement la phrase entière.
   const audioMatches = (state.audioList || []).map((audio) => ({
@@ -3348,7 +3336,19 @@ function buildLocalCorpusContext(query) {
       " | Règle: l'audio atteste seulement la prononciation, pas la traduction.");
     sources.push({ type: "audio", id: String(audio.id || ""), label: audio.text + (audio.francais ? " — " + audio.francais : ""), status: audio.pronunciation_status || audio.validation_status || audio.status || "non renseigné" });
   }
-  return { context: lines.join("\n").slice(0, 11500), sources: sources.slice(0, 10) };
+  for (const { entry, score } of entryMatches) {
+    const status = String(entry.statut || "statut non renseigné");
+    lines.push("LEXIQUE | Soninké: " + entry.soninke + " | Français: " + entry.francais +
+      " | Score de recherche: " + score + " | Statut: " + status +
+      " | Catégorie: " + (entry.categorie || "non renseignée") +
+      " | Provenance: " + (entry.source || "non renseignée") +
+      (entry.variantes ? " | Variantes: " + entry.variantes : "") +
+      (entry.definition ? " | Définition: " + entry.definition : "") +
+      (entry.exemple_original ? " | Exemple/source: " + entry.exemple_original : ""));
+    sources.push({ type: "lexique", id: String(entry.id || ""), label: entry.soninke + " — " + entry.francais, status });
+  }
+
+  return { context: lines.join("\n").slice(0, 11500), sources: sources.slice(0, 16) };
 }
 
 
