@@ -14,6 +14,7 @@ const DATA_URL = "data/source/lexique-soninke-fr-base.csv";
 const HOMONYMS_URL = "data/source/lexique-homonymes-valides-2026-10-25.csv";
 const PRONOUNS_URL = "data/source/pronoms-personnels-valides-2026-10-25.csv";
 const VALIDATED_LIST_URL = "data/source/liste-lexicale-validee-2026-10-25.csv";
+const NUMERATION_URL = "data/source/numeration-cardinale-candidates.csv";
 const MANIFEST_URL = "data/source/manifest-577-review.csv";
 const AUDIO_AUDIT_URL = "reports/audio-transfer-audit.csv";
 const CANDIDATES_URL = "data/candidates/external-lexicon-candidates.csv";
@@ -3806,6 +3807,7 @@ async function loadAllData() {
     homonymsCsv,
     pronounsCsv,
     validatedListCsv,
+    numerationCsv,
   ] = await Promise.all([
     fetchTextSafe(DATA_URL),
     fetchTextSafe(MANIFEST_URL),
@@ -3820,6 +3822,7 @@ async function loadAllData() {
     fetchTextSafe(HOMONYMS_URL),
     fetchTextSafe(PRONOUNS_URL),
     fetchTextSafe(VALIDATED_LIST_URL),
+    fetchTextSafe(NUMERATION_URL),
   ]);
 
   const seenHeadwords = new Set();
@@ -4030,6 +4033,45 @@ async function loadAllData() {
       pushEntry(entry, { checkVariants: false, allowHomonyms: true });
     } else {
       pushEntry(entry, { checkVariants: false });
+    }
+  }
+
+  // 9. Numération cardinale confirmée par le référent (variantes conservées).
+  // Le comptage monétaire reste distinct et n'est pas importé dans cette table.
+  for (const row of parseCSV(numerationCsv, ";")) {
+    const soninke = String(row.soninke || "").trim();
+    const francais = String(row.francais || "").trim();
+    if (!soninke || !francais) continue;
+    const key = normalizeLexicalKey(soninke);
+    if (!key) continue;
+    const existing = entries.find((entry) => normalizeLexicalKey(entry.soninke) === key);
+    const variants = String(row.variantes || "").split(/[;,|]/).map((v) => v.trim()).filter(Boolean);
+    if (existing) {
+      const merged = [
+        ...String(existing.variantes || "").split(/[;,|]/),
+        ...variants,
+      ].map((v) => String(v || "").trim()).filter(Boolean);
+      const unique = [...new Map(merged.map((v) => [normalizeLexicalKey(v), v])).values()];
+      Object.assign(existing, {
+        francais,
+        categorie: "numeration_cardinale",
+        source: row.source || "Validation du référent linguistique",
+        statut: "valide_par_referent_linguistique",
+        isCandidate: false,
+        variantes: unique.join("; "),
+      });
+    } else {
+      pushEntry({
+        id: row.id || uid(),
+        soninke,
+        francais,
+        categorie: "numeration_cardinale",
+        source: row.source || "Validation du référent linguistique",
+        statut: "valide_par_referent_linguistique",
+        variantes: variants.join("; "),
+        exemple_original: row.notes || "",
+        isCandidate: false,
+      }, { checkVariants: false });
     }
   }
 
