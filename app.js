@@ -3301,7 +3301,7 @@ async function generateConversationResponse(message, conversation) {
   const localResponse = generateResponse(message);
   if (!shouldUseConversationalApi(message)) return localResponse;
 
-  const apiBase = String(window.SONINKEGPT_API_BASE || "").trim().replace(/\/$/, "");
+  const apiBase = String(window.SONINKEGPT_API_BASE || "https://soninkegpt-voice-api.onrender.com").trim().replace(/\/$/, "");
   const mode = inferConversationalMode(message) || "general";
   const retrieved = buildLocalCorpusContext(message);
   const history = (conversation?.messages || [])
@@ -3326,6 +3326,13 @@ async function generateConversationResponse(message, conversation) {
     const payload = await response.json().catch(() => ({}));
     if (!response.ok || !String(payload.answer || "").trim()) throw new Error("chat_unavailable");
     let answer = String(payload.answer).trim();
+    if (Array.isArray(payload.web_sources) && payload.web_sources.length) {
+      const links = payload.web_sources
+        .filter((source) => source && /^https?:\/\//i.test(String(source.url || "")))
+        .slice(0, 5)
+        .map((source) => "- [" + String(source.title || source.url).replace(/[\[\]]/g, "") + "](" + String(source.url) + ")");
+      if (links.length) answer += "\n\n**Sources Web :**\n" + links.join("\n");
+    }
     if (payload.warning) answer += "\n\n*Précaution : " + String(payload.warning) + "*";
     return answer;
   } catch {
