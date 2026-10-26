@@ -1,0 +1,46 @@
+# Audit de cohérence et questionnaire d'élicitation — comptage monétaire soninké
+
+## Objet et périmètre
+
+Cette vérification porte sur les quatre fichiers candidats de la branche `research/soninke-numeration-money`. Elle est un contrôle structurel des fichiers, pas une certification linguistique, pas une validation des monnaies par des locuteurs, et pas un test du code de production.
+
+## Résultats de contrôle structurel
+
+- Les quatre fichiers ont des en-têtes CSV et des colonnes attendues.
+- Aucun identifiant de ligne dupliqué n'a été détecté dans les contrôles effectués.
+- Les grands montants sont conservés en chiffres entiers complets (pas en notation scientifique).
+- Les champs destinés au TTS sont laissés vides dans les listes de candidats. Les champs non vides du fichier CFA sont des enregistrements antérieurs et ne constituent pas une autorisation de créer de nouveaux audios.
+- Les nouveaux grands montants sont explicitement marqués comme hypothèses ou comme éléments à éliciter. Les combinaisons cardinal + unité monétaire ne sont pas réputées attestées.
+
+## Points de vigilance linguistique
+
+1. **Ne pas confondre cardinal et expression monétaire.** Une forme générale pour 1 000 ou 1 million ne prouve pas qu'un locuteur dise naturellement « nombre + euro/ouguiya/dalasi/FCFA ».
+2. **Les très grands nombres restent ouverts.** Au-delà des formes effectivement sourcées, demander au référent de les prononcer ou de dire qu'il n'a pas de forme usuelle. Ne pas fabriquer les formes pour remplir les cases.
+3. **Le CFA est un système à part.** Conserver les variantes rapportées en `gode/godo/godi`, leurs contextes et leurs sources. Ne pas remplacer automatiquement le comptage en gode par le cardinal général.
+4. **Les unités fractionnaires diffèrent.** Le khoums correspond à un cinquième d'ouguiya; le butut est une subdivision du dalasi. L'usage oral effectif de ces unités et leur formulation en soninké doivent être recueillis.
+5. **Les montants mixtes doivent être élicités séparément.** Ne pas juxtaposer automatiquement deux expressions ni déduire l'ordre des unités.
+6. **Variante régionale et registre.** Enregistrer la variété du locuteur, le contexte (marché, conversation, annonce de prix), la forme spontanée, les variantes, la répétition audio et l'accord du référent.
+
+## Protocole d'entretien recommandé
+
+Pour chaque montant du questionnaire :
+
+1. Lire seulement le montant et le contexte en français; ne pas proposer une forme soninkée candidate.
+2. Demander une formulation spontanée en soninké, puis faire répéter une seconde fois à vitesse normale.
+3. Demander si cette formulation est réellement utilisée, dans quelle région/communauté et dans quel contexte.
+4. Demander s'il existe une variante, un emprunt au français ou une convention particulière de comptage.
+5. Enregistrer l'audio avec consentement, conserver l'identifiant de l'enregistrement et la provenance.
+6. Faire valider séparément : (a) la traduction/le sens, (b) la forme écrite, (c) la prononciation, (d) le droit de réutiliser l'audio.
+7. N'autoriser le TTS qu'après validation explicite du référent linguistique; une sortie TTS réussie ne vaut pas validation de prononciation.
+
+## Fichiers concernés
+
+- `data/source/monetary-counting-review.csv` — CFA et grands montants.
+- `data/source/euro-counting-candidates.csv` — euro et centime.
+- `data/source/mauritanian-ouguiya-counting-candidates.csv` — ouguiya et khoums.
+- `data/source/gambian-dalasi-counting-candidates.csv` — dalasi et butut.
+- `data/source/monetary-elicitation-questionnaire.csv` — grille vierge à remplir pendant l'entretien.
+
+## Statut
+
+`STRUCTURE_VERIFIEE / VALIDATION_LINGUISTIQUE_EN_ATTENTE`. Aucun changement de code de production, aucune fusion dans `main`, et aucune génération d'audio dans le cadre de cet audit.
