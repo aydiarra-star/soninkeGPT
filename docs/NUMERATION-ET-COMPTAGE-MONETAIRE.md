@@ -85,3 +85,17 @@ Une publication comparative sur les systèmes numériques mandé décrit le comp
 7. Les réponses changent-elles selon la région, la génération, le commerce ou la variété de soninké ?
 
 Aucune réponse à ces questions ne doit être préremplie comme si elle avait été donnée par un locuteur.
+
+## Traduction française des candidats — sens des mots et sens monétaire
+
+Le tableau CSV a été enrichi avec deux champs distincts : `sens_des_éléments_fr` et `sens_de_l_expression_fr`. Cette séparation est obligatoire.
+
+Les ressources comparées décrivent un système où `gode` est une unité monétaire de 5 FCFA. Ainsi, `gode baane` est rapporté comme une unité, soit 5 FCFA; `godo filli/hilli` comme deux unités, soit 10 FCFA; `godo sikki` comme trois unités, soit 15 FCFA; `godo naxati` comme quatre unités, soit 20 FCFA; `godo karagi` comme cinq unités, soit 25 FCFA; `godo tanmi` comme dix unités, soit 50 FCFA. `tanpille gode` est rapporté pour 100 FCFA, et `kame/keme gode` pour 500 FCFA. L'analyse par unités de cinq est cohérente avec ces exemples, mais les formes exactes et leurs usages restent à confirmer auprès de locuteurs.
+
+Pour `tannaxate` (200 FCFA) et `tandume` (300 FCFA), les formes sont rapportées dans la leçon monétaire, mais leur analyse comme 40 et 60 unités de `gode` est une hypothèse arithmétique, pas encore une traduction littérale confirmée.
+
+Pour `komohillin dere`, `komonaxatin dere`, `wujinin dere` et les expressions de montants élevés, le sens des éléments et la segmentation restent non établis. Le tableau ne doit pas inventer une traduction mot à mot. La traduction de l'expression entière rapporte uniquement le montant documenté dans le contexte.
+
+La numération générale donne séparément les sens cardinaux tels que `tanmu` = dix, `tanpille/tanfille` = vingt, `tannaxate` = quarante, `tandume` = soixante, `kame` = cent et `wujune` = mille. Ces gloses cardinales aident à examiner les candidats monétaires, mais ne prouvent pas à elles seules leur sens dans l'expression d'argent.
+
+**État actuel :** montants et expressions sont consignés comme attestés dans des ressources pédagogiques; les traductions littérales et l'usage oral restent à valider. Aucun audio et aucune règle de production ne sont validés par ce document.
