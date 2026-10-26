@@ -8,6 +8,8 @@ on:
       - "app.js"
       - "index.html"
       - "voice-config.js"
+      - "tests/voice.test.cjs"
+      - "tests/ui.test.cjs"
       - ".github/workflows/validate-app.yml"
   pull_request:
     paths:
