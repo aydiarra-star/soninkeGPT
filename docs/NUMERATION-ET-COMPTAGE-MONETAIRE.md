@@ -37,7 +37,7 @@ Les deux référentiels auront des identifiants et des règles séparés. Une en
 - Les formes cardinales rapportées incluent notamment `tanpille` pour 20, `kame` pour 100, `kamo filli` pour 200 et `wujune` pour 1 000.
 - Des ressources pédagogiques sur l'argent rapportent une unité `gode/godi` associée à cinq francs CFA dans certains exemples.
 - Les expressions rapportées pour certains montants doivent être confrontées à la forme exacte, à la segmentation et au contexte d'usage. En particulier, ne pas conclure que `kame` isolé signifie 500 : les données préliminaires distinguent `kame` (100 dans le système cardinal) et une expression du type `keme gode` (rapportée pour 500 FCFA).
-- L'usage en euros, les variantes régionales, la valeur de `gode/godi` et la formation des montants non documentés restent à établir.
+- L'usage en euros et en dollars américains, les variantes régionales, la valeur de `gode/godi` et la formation des montants non documentés restent à établir. Le dollar est ajouté comme monnaie distincte (`USD`), avec des candidats séparés pour les dollars et les cents; aucune composition dollar + cardinal n'est réputée validée.
 
 ## Protocole de validation
 
