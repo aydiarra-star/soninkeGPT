@@ -3196,6 +3196,138 @@ function streamMessage(conv, fullText, shouldSpeak = false) {
   typeNext();
 }
 
+// ── Couche conversationnelle : API distante + contexte lexical local ──
+const CHAT_STOP_WORDS = new Set([
+  "alors","avec","avoir","avez","bien","bonjour","comment","dans","depuis","des","donc",
+  "elle","elles","est","faire","fait","français","francaise","ici","il","ils","je","la","le",
+  "les","leur","leurs","lui","mais","me","mes","moi","mon","ne","nos","notre","nous","on",
+  "ou","où","par","pas","peut","plus","pour","pourquoi","quand","que","quel","quelle",
+  "quelles","quels","qui","quoi","sa","sans","se","ses","son","sont","sur","ta","te","tes",
+  "toi","ton","tous","tout","tu","un","une","vos","votre","vous","y","a","au","aux","ce",
+  "ces","cet","cette","de","du","en","et","eux"
+]);
+
+function chatTokens(value) {
+  return normalizeWord(String(value || ""))
+    .split(/[^a-z0-9àâçéèêëîïôûùüÿñæœ'-]+/i)
+    .map((token) => token.trim())
+    .filter((token) => token.length > 2 && !CHAT_STOP_WORDS.has(token));
+}
+
+function inferConversationalMode(message) {
+  const text = normalizeWord(message);
+  if (/\b(histoire|culture|tradition|traditions|empire|royaume|peuple soninke|origine des soninke|origine du peuple|heritage|patrimoine|genealogie|chronologie)\b/.test(text)) {
+    return "culture_history";
+  }
+  if (/\b(explique|expliquer|explique-moi|pourquoi|comment fonctionne|difference entre|grammaire|conjugaison|definition|definis|signifie|signification|analyse|resume|compare|comparer|apprends-moi|apprendre)\b/.test(text)) {
+    return "general";
+  }
+  return null;
+}
+
+function buildLocalCorpusContext(query) {
+  const tokens = [...new Set(chatTokens(query))];
+  if (!tokens.length) return { context: "", sources: [] };
+  const scoreText = (value) => {
+    const haystack = normalizeWord(value || "");
+    let score = 0;
+    for (const token of tokens) {
+      if (haystack.includes(token)) score += haystack === token ? 4 : 1;
+    }
+    return score;
+  };
+  const entryMatches = state.entries.map((entry) => ({
+    entry,
+    score: scoreText([
+      entry.soninke, entry.francais, entry.variantes, entry.categorie,
+      entry.definition, entry.exemple_original
+    ].join(" "))
+  })).filter((item) => item.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 18);
+
+  const sampleMatches = state.samples.map((sample) => ({
+    sample,
+    score: scoreText([sample.soninke, sample.french, sample.source, sample.project_status].join(" "))
+  })).filter((item) => item.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 6);
+
+  const phraseMatches = PHRASEBOOK.map((phrase) => ({
+    phrase,
+    score: scoreText([phrase.fr, phrase.snk, ...(phrase.alt || []), phrase.note].join(" "))
+  })).filter((item) => item.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 6);
+
+  const lines = [];
+  const sources = [];
+  for (const { entry } of entryMatches) {
+    const status = String(entry.statut || "statut non renseigné");
+    const line = "LEXIQUE | Soninké: " + entry.soninke + " | Français: " + entry.francais +
+      " | Statut: " + status + " | Catégorie: " + (entry.categorie || "non renseignée") +
+      " | Provenance: " + (entry.source || "non renseignée") +
+      (entry.variantes ? " | Variantes: " + entry.variantes : "") +
+      (entry.definition ? " | Définition: " + entry.definition : "") +
+      (entry.exemple_original ? " | Exemple/source: " + entry.exemple_original : "");
+    lines.push(line);
+    sources.push({ type: "lexique", id: String(entry.id || ""), label: entry.soninke + " — " + entry.francais, status });
+  }
+  for (const { sample } of sampleMatches) {
+    lines.push("EXEMPLE | Soninké: " + (sample.soninke || "") + " | Français: " +
+      (sample.french || "") + " | Statut source: " + (sample.project_status || "non renseigné") +
+      " | Source: " + (sample.source || "non renseignée"));
+    sources.push({ type: "exemple", id: String(sample.id || ""), label: (sample.soninke || "") + " — " + (sample.french || ""), status: sample.project_status || "non renseigné" });
+  }
+  for (const { phrase } of phraseMatches) {
+    lines.push("PHRASEBOOK | Soninké: " + phrase.snk + " | Français: " + phrase.fr +
+      " | Variantes: " + ((phrase.alt || []).join(", ") || "aucune indiquée") +
+      " | Note: " + (phrase.note || "aucune"));
+    sources.push({ type: "phrasebook", label: phrase.snk + " — " + phrase.fr, status: "source locale; statut selon note" });
+  }
+  return { context: lines.join("\n").slice(0, 11500), sources: sources.slice(0, 10) };
+}
+
+function shouldUseConversationalApi(message) {
+  if (!String(window.SONINKEGPT_API_BASE || "").trim()) return false;
+  return inferConversationalMode(message) !== null;
+}
+
+async function generateConversationResponse(message, conversation) {
+  const localResponse = generateResponse(message);
+  if (!shouldUseConversationalApi(message)) return localResponse;
+
+  const apiBase = String(window.SONINKEGPT_API_BASE || "").trim().replace(/\/$/, "");
+  const mode = inferConversationalMode(message) || "general";
+  const retrieved = buildLocalCorpusContext(message);
+  const history = (conversation?.messages || [])
+    .slice(0, -1)
+    .filter((item) => (item.role === "user" || item.role === "assistant") && String(item.content || "").trim())
+    .slice(-10)
+    .map((item) => ({ role: item.role, content: String(item.content).slice(0, 4000) }));
+
+  try {
+    const response = await fetch(apiBase + "/api/chat", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        message: String(message).slice(0, 4000),
+        mode,
+        history,
+        corpus_context: retrieved.context,
+        sources: retrieved.sources
+      })
+    });
+    const payload = await response.json().catch(() => ({}));
+    if (!response.ok || !String(payload.answer || "").trim()) throw new Error("chat_unavailable");
+    let answer = String(payload.answer).trim();
+    if (payload.warning) answer += "\n\n*Précaution : " + String(payload.warning) + "*";
+    return answer;
+  } catch {
+    return localResponse + "\n\n*Le mode conversationnel distant est temporairement indisponible ; réponse locale affichée.*";
+  }
+}
+
 // ── Envoi universel : fonctionne À TOUT MOMENT (zéro blocage) ──
 // Lecture vocale : prioriser les phrases attestées et les enregistrements validés.
 function submitMessage(text, opts = {}) {
@@ -3251,7 +3383,7 @@ async function sendMessage(text, opts = {}) {
     try { await state.dataReady; } catch {}
   }
 
-  const response = generateResponse(cleanText);
+  const response = await generateConversationResponse(cleanText, conv);
   const pendingSession = { conv, fullText: response, messageCreated: false, timer: null };
   state.activeStream = pendingSession;
 
