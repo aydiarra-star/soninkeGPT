@@ -146,6 +146,25 @@ def build(generate=False, limit=20, device="auto"):
         "validated_by",
         "translation_text_missing",
     )
+    # Le manifeste de validation humaine est la source durable des validations de lots.
+    validation_manifest = ROOT / "data/source/audio-batch-100-validation-2026-10-26.csv"
+    if validation_manifest.exists():
+        for row in rows(validation_manifest):
+            word = row.get("text", "").strip()
+            if not word:
+                continue
+            normalized = key(word)
+            if normalized not in audio:
+                continue
+            item = audio[normalized]
+            if row.get("url") and row["url"].strip() != item.get("url"):
+                continue
+            item["kind"] = "voice_clone_validated"
+            item["linguistic_validation"] = "validated_by_referent"
+            item["pronunciation_validation"] = "correct"
+            item["validation_batch"] = "audio-batch-100-2026-10-26"
+            item["validation_date"] = "2026-10-26"
+            item["validated_by"] = "référent linguistique SoninkeGPT"
     for normalized, item in audio.items():
         previous = previous_audio.get(normalized)
         if not previous:
@@ -191,7 +210,13 @@ def build(generate=False, limit=20, device="auto"):
                 "retry",
             }:
                 retry_words.append(key(word))
-    if retry_words:
+    retry_word_set = set(retry_words)
+    if retry_word_set:
+        # Une entrée explicitement placée en régénération doit repasser dans pending
+        # même si un ancien WAV existe et paraît techniquement valide.
+        for word in retry_word_set:
+            audio.pop(word, None)
+        pending = [item for normalized, item in sorted(vocabulary.items()) if normalized not in audio]
         retry_rank = {word: index for index, word in enumerate(retry_words)}
         pending.sort(
             key=lambda item: (
@@ -264,7 +289,7 @@ def build(generate=False, limit=20, device="auto"):
         failures = []
         for index, item in enumerate(batch, 1):
             output_path = ROOT / item["url"]
-            if output_path.exists() and valid_wav(output_path):
+            if output_path.exists() and valid_wav(output_path) and key(item["text"]) not in retry_word_set:
                 continue
             if output_path.exists():
                 output_path.unlink()
