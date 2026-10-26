@@ -184,7 +184,7 @@ def build(generate=False, limit=20, device="auto"):
             item["validated_by"] = "référent linguistique SoninkeGPT"
     for normalized, item in audio.items():
         previous = previous_audio.get(normalized)
-        if not previous:
+        if not previous or key(item.get("text", "")) in retry_word_set:
             continue
         for field in validation_fields:
             if field in previous:
