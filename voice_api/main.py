@@ -77,13 +77,6 @@ def health_check():
 @app.post("/api/chat")
 def chat(request: ChatRequest):
     """Generate a response using bounded conversation history and caller-provided corpus context."""
-    api_key = os.getenv("OPENAI_API_KEY")
-    if not api_key:
-        raise HTTPException(
-            status_code=503,
-            detail="Le service conversationnel n'est pas configuré : clé API serveur absente.",
-        )
-
     user_message = request.message.strip()
     if not user_message:
         raise HTTPException(status_code=400, detail="Le message est vide.")
