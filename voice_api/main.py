@@ -10,6 +10,7 @@ import os
 import json
 import urllib.parse
 import urllib.request
+import urllib.error
 from io import BytesIO
 from typing import Literal, Optional
 
@@ -126,6 +127,17 @@ def chat(request: ChatRequest):
         req = urllib.request.Request(url, data=data, headers={**headers, "Content-Type": "application/json"}, method="POST")
         with urllib.request.urlopen(req, timeout=timeout) as response:
             return json.loads(response.read().decode("utf-8"))
+
+    def provider_error_summary(exc: Exception) -> str:
+        # Log provider HTTP status and a short, non-secret response body for diagnosis.
+        if isinstance(exc, urllib.error.HTTPError):
+            try:
+                body = exc.read(1200).decode("utf-8", errors="replace")
+            except Exception:
+                body = ""
+            safe_body = " ".join(body.split())[:600]
+            return f"{type(exc).__name__} status={exc.code} body={safe_body}"
+        return type(exc).__name__
     if request.web_search:
         try:
             tavily_key = os.getenv("TAVILY_API_KEY")
@@ -168,21 +180,21 @@ def chat(request: ChatRequest):
             answer = (result.choices[0].message.content or "").strip()
             if answer: provider_used = "openai"
         except Exception as exc:
-            failures.append(type(exc).__name__); print(f"Primary chat provider error: {type(exc).__name__}")
+            failures.append(type(exc).__name__); print(f"Primary chat provider error: {provider_error_summary(exc)}")
     if not answer and groq_key:
         try:
             result = post_json("https://api.groq.com/openai/v1/chat/completions", {"model": os.getenv("GROQ_CHAT_MODEL", "llama-3.3-70b-versatile"), "messages": messages, "temperature": 0.2 if request.mode == "translation_vocabulary" else 0.4, "max_tokens": 900}, {"Authorization": "Bearer " + groq_key})
             answer = str(result["choices"][0]["message"].get("content") or "").strip()
             if answer: provider_used = "groq"
         except Exception as exc:
-            failures.append(type(exc).__name__); print(f"Groq fallback error: {type(exc).__name__}")
+            failures.append(type(exc).__name__); print(f"Groq fallback error: {provider_error_summary(exc)}")
     if not answer and openrouter_key:
         try:
             result = post_json("https://openrouter.ai/api/v1/chat/completions", {"model": os.getenv("OPENROUTER_CHAT_MODEL", "meta-llama/llama-3.3-70b-instruct:free"), "messages": messages, "temperature": 0.2 if request.mode == "translation_vocabulary" else 0.4, "max_tokens": 900}, {"Authorization": "Bearer " + openrouter_key, "HTTP-Referer": "https://aydiarra-star.github.io/soninkeGPT/", "X-Title": "SoninkeGPT"})
             answer = str(result["choices"][0]["message"].get("content") or "").strip()
             if answer: provider_used = "openrouter"
         except Exception as exc:
-            failures.append(type(exc).__name__); print(f"OpenRouter fallback error: {type(exc).__name__}")
+            failures.append(type(exc).__name__); print(f"OpenRouter fallback error: {provider_error_summary(exc)}")
     if not answer:
         if not (openai_key or groq_key or openrouter_key): raise HTTPException(status_code=503, detail="Aucune clé API configurée. Ajoutez OPENAI_API_KEY, GROQ_API_KEY ou OPENROUTER_API_KEY dans Render.")
         raise HTTPException(status_code=503, detail="Aucun fournisseur n’a pu répondre. Vérifiez les clés API et quotas dans Render.")
