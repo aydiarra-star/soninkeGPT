@@ -31,10 +31,32 @@ def key(text):
 
 
 def valid_wav(path):
+    """Reject missing, malformed, and fully silent PCM WAVs."""
     try:
         with wave.open(str(path), "rb") as handle:
-            return handle.getnframes() > 0 and handle.getframerate() > 0
-    except (wave.Error, EOFError, OSError):
+            frame_count = handle.getnframes()
+            if frame_count < 1 or handle.getframerate() < 1:
+                return False
+            if handle.getcomptype() != "NONE":
+                return False
+            raw = handle.readframes(frame_count)
+            if not raw:
+                return False
+            width = handle.getsampwidth()
+            if width == 2:
+                from array import array
+                import sys
+                samples = array("h")
+                samples.frombytes(raw)
+                if sys.byteorder != "little":
+                    samples.byteswap()
+                return any(samples)
+            if width == 1:
+                # 8-bit PCM silence is encoded as 128, not 0.
+                return any(sample != 128 for sample in raw)
+            # For 24-/32-bit integer PCM, fully silent samples are all zero bytes.
+            return any(raw)
+    except (wave.Error, EOFError, OSError, ValueError):
         return False
 
 
