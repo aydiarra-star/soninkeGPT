@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import shutil
 import wave
 from pathlib import Path
 from typing import Any
@@ -45,7 +46,7 @@ def safe_local_path(value: Any) -> Path | None:
     return candidate
 
 
-def restore(source: Path, destination: Path) -> dict[str, int]:
+def restore(source: Path, destination: Path, artifact_root: Path | None = None) -> dict[str, int]:
     memory = json.loads(source.read_text(encoding="utf-8"))
     if not isinstance(memory, dict) or not isinstance(memory.get("audio"), list):
         raise ValueError("La mémoire source doit être un objet JSON contenant une liste 'audio'.")
@@ -53,12 +54,33 @@ def restore(source: Path, destination: Path) -> dict[str, int]:
     retained = []
     missing = 0
     invalid = 0
+    files_restored = 0
     for item in memory["audio"]:
         if not isinstance(item, dict):
             missing += 1
             continue
         path = safe_local_path(item.get("url"))
-        if path is None or not path.is_file():
+        if path is None:
+            missing += 1
+            continue
+        # Si un WAV référencé manque dans main mais existe dans l'artefact de revue,
+        # le restaurer sans écraser un fichier déjà présent et sans changer son statut.
+        if not path.is_file() and artifact_root is not None:
+            relative = Path(str(item.get("url", "")))
+            if relative.is_absolute() or ".." in relative.parts:
+                missing += 1
+                continue
+            artifact_path = (artifact_root / relative).resolve()
+            try:
+                artifact_path.relative_to(artifact_root.resolve())
+            except ValueError:
+                missing += 1
+                continue
+            if artifact_path.is_file() and artifact_path.suffix.lower() == ".wav" and valid_wav(artifact_path):
+                path.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(artifact_path, path)
+                files_restored += 1
+        if not path.is_file():
             missing += 1
             continue
         if path.suffix.lower() != ".wav" or not valid_wav(path):
@@ -84,6 +106,7 @@ def restore(source: Path, destination: Path) -> dict[str, int]:
         "retained": len(retained),
         "missing": missing,
         "invalid": invalid,
+        "files_restored": files_restored,
     }
     for item in retained:
         kind = str(item.get("kind", "kind_missing"))
@@ -96,8 +119,10 @@ def main() -> None:
     parser.add_argument("--memory-file", required=True, type=Path,
                         help="Chemin du voice-memory.json extrait de l'artefact de revue")
     parser.add_argument("--output", type=Path, default=ROOT / "data/voice-memory.json")
+    parser.add_argument("--artifact-root", type=Path, default=None,
+                        help="Répertoire extrait de l’artefact, utilisé pour restaurer les WAV référencés absents du dépôt")
     args = parser.parse_args()
-    counts = restore(args.memory_file, args.output)
+    counts = restore(args.memory_file, args.output, args.artifact_root)
     print(json.dumps(counts, ensure_ascii=False, indent=2))
     if counts["retained"] == 0:
         raise SystemExit("ÉCHEC : aucune entrée audio ne pointe vers un WAV existant et lisible.")

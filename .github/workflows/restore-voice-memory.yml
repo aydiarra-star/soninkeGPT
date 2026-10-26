@@ -16,7 +16,7 @@ jobs:
   restore:
     if: >-
       github.event.pull_request.head.repo.full_name == github.repository &&
-      github.event.pull_request.head.ref == 'fix/corpus-first-phrase-generation'
+      github.event.pull_request.head.ref == 'fix/restore-missing-review-audios'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -45,6 +45,7 @@ jobs:
         run: >-
           python scripts/restore_voice_memory.py
           --memory-file /tmp/soninkegpt-audio-review/voice-memory.json
+          --artifact-root /tmp/soninkegpt-audio-review
 
       - name: Validate preserved human-validation metadata
         run: |
@@ -92,7 +93,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/voice-memory.json
+          git add data/voice-memory.json audio/generated/*.wav
           if git diff --cached --quiet; then
             echo "La mémoire est déjà à jour."
             exit 0
