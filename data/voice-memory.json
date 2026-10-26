@@ -13905,10 +13905,11 @@
       "url": "audio/generated/cc68d749c5165ebfee30f2f2.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "daarume",
@@ -13917,10 +13918,11 @@
       "url": "audio/generated/ed162962bcd2722748a838ed.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "daawa",
@@ -13929,10 +13931,11 @@
       "url": "audio/generated/200c0292cc8f6ff8388db7cb.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "daaxa",
@@ -13941,10 +13944,11 @@
       "url": "audio/generated/64ff933e23caefc1ce04f176.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "daaxante",
@@ -13953,10 +13957,11 @@
       "url": "audio/generated/0936ae9a24036dc8f62ccf14.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "daaxaraxari",
@@ -13965,10 +13970,11 @@
       "url": "audio/generated/ccbed5b9fc312abcb95da67c.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "daaxe",
@@ -13977,10 +13983,11 @@
       "url": "audio/generated/b39033440a02bd2c418bb393.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "daba",
@@ -13989,10 +13996,11 @@
       "url": "audio/generated/3f8e71b218885a849cdb0951.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dabadanka",
@@ -14001,10 +14009,11 @@
       "url": "audio/generated/9eca35b9c1ee68c3d1c46a00.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dabare",
@@ -14013,10 +14022,11 @@
       "url": "audio/generated/c7ccbd06e70575487551b8e5.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dabari",
@@ -14025,10 +14035,11 @@
       "url": "audio/generated/c222b3327effc0b6a4d73c52.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "daca",
@@ -14037,10 +14048,11 @@
       "url": "audio/generated/34ec1b3c93cf306ddd022c10.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dacande",
@@ -14049,10 +14061,11 @@
       "url": "audio/generated/dc15e8d46bf6991d41917050.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dafe",
@@ -14061,10 +14074,11 @@
       "url": "audio/generated/2f09e789907b5b3144691035.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dagaana",
@@ -14073,10 +14087,11 @@
       "url": "audio/generated/40647e07ae97324fa4d60f03.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dagante",
@@ -14085,10 +14100,11 @@
       "url": "audio/generated/e4590d2c7a02d56828a2a745.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dagara",
@@ -14097,10 +14113,11 @@
       "url": "audio/generated/4b1221beee64bb4d3bd0b803.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "daga noqu",
@@ -14109,10 +14126,11 @@
       "url": "audio/generated/66a4bade12812f0dd1b88ff4.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dagame",
@@ -14121,10 +14139,11 @@
       "url": "audio/generated/d354f2103b955f43e9c689e1.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dagandi",
@@ -14133,10 +14152,11 @@
       "url": "audio/generated/e5d78a828126f1e0e0eec604.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dagane",
@@ -14145,10 +14165,11 @@
       "url": "audio/generated/09910a807e819fe4b63975ce.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "Dagare, daagaare",
@@ -14157,10 +14178,11 @@
       "url": "audio/generated/cbec18746f150173a9accd68.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dakka",
@@ -14169,10 +14191,11 @@
       "url": "audio/generated/cdf861a10e21480f673e1fdc.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dakkabana",
@@ -14181,10 +14204,11 @@
       "url": "audio/generated/578b20924baa177055e5d898.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "Dakkaru",
@@ -14193,10 +14217,11 @@
       "url": "audio/generated/9c46a9ce02e507243598aaff.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dala",
@@ -14205,10 +14230,11 @@
       "url": "audio/generated/4b60fa0667da3251a780451e.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "daliile",
@@ -14217,10 +14243,11 @@
       "url": "audio/generated/b622bfe2f786e804adc3e1b3.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "daliilu",
@@ -14229,10 +14256,11 @@
       "url": "audio/generated/ba5d8286bd2eec119cb61ed3.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dalla",
@@ -14241,10 +14269,11 @@
       "url": "audio/generated/41d054eac422ca82cfc6801b.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dallaye",
@@ -14253,10 +14282,11 @@
       "url": "audio/generated/94e5aed25d87c61e953d971e.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dalle",
@@ -14265,10 +14295,11 @@
       "url": "audio/generated/194cbf5c4433b278166f7eca.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dan",
@@ -14277,10 +14308,11 @@
       "url": "audio/generated/ec4f2dbb3b140095550c9afb.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dan kundu",
@@ -14289,10 +14321,11 @@
       "url": "audio/generated/57ebcfd5be5eeb85d3cda63b.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "danbe",
@@ -14301,10 +14334,11 @@
       "url": "audio/generated/aea3de5f18290a920f163b21.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "danbere",
@@ -14313,10 +14347,11 @@
       "url": "audio/generated/c2fd70de43dbb55aa964357a.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "danbi",
@@ -14325,10 +14360,11 @@
       "url": "audio/generated/fbda502542e37fc5b3349f8a.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "danbu",
@@ -14337,10 +14373,11 @@
       "url": "audio/generated/bfd63a99ddd5891731b6584c.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "danda",
@@ -14349,10 +14386,11 @@
       "url": "audio/generated/54d67c2ed3f89987a1f60a0d.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "danga",
@@ -14361,10 +14399,11 @@
       "url": "audio/generated/da2d2a9a503bae6c5b7cd23e.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dangaana",
@@ -14373,10 +14412,11 @@
       "url": "audio/generated/d0815266f35db25ffa49e529.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dange",
@@ -14385,10 +14425,11 @@
       "url": "audio/generated/04104c1be729eef3cca9f804.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dangi",
@@ -14397,10 +14438,11 @@
       "url": "audio/generated/58a27b51cb14a87a15cd2950.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "danginte",
@@ -14409,10 +14451,11 @@
       "url": "audio/generated/778d1846ceaba42ab88af569.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dangira",
@@ -14421,10 +14464,11 @@
       "url": "audio/generated/8bf3f9dbfbb45f8a047466d7.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dangiwaaxa",
@@ -14433,10 +14477,11 @@
       "url": "audio/generated/bf39366365abdbc3653ce666.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dango",
@@ -14445,10 +14490,11 @@
       "url": "audio/generated/e6898d6c1182c930a22fcf76.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "danguma",
@@ -14457,10 +14503,11 @@
       "url": "audio/generated/a84079e38ca850bcdaccc11e.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dangumaane",
@@ -14469,10 +14516,11 @@
       "url": "audio/generated/fe2f7109afca9ac925e75ba4.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dangumanŋe",
@@ -14481,10 +14529,11 @@
       "url": "audio/generated/45d0631a96c49dc981fe9a0f.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "danka",
@@ -14493,10 +14542,11 @@
       "url": "audio/generated/0ec80c40cab72543743baa9f.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "danma",
@@ -14505,10 +14555,11 @@
       "url": "audio/generated/4e8821c70aaee731a74ac3c1.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "danmaɲeme",
@@ -14517,10 +14568,11 @@
       "url": "audio/generated/2f40c43f40363184a23d08fe.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "danme",
@@ -14529,10 +14581,11 @@
       "url": "audio/generated/11050a46540cc9dab5cc077c.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "danŋa",
@@ -14541,10 +14594,11 @@
       "url": "audio/generated/ccc3874f778b03f8f5b43adf.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "danŋe",
@@ -14553,10 +14607,11 @@
       "url": "audio/generated/4e04edb8a140893d86586fea.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "danpaade",
@@ -14565,10 +14620,11 @@
       "url": "audio/generated/ca6f81555c0f2f1fe2841bd5.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "danpe",
@@ -14577,10 +14633,11 @@
       "url": "audio/generated/872048aeb9cd8a055d92dbd8.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "danpi",
@@ -14589,10 +14646,11 @@
       "url": "audio/generated/6a8b995af1a9cb909c554e5d.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "danpilla",
@@ -14601,10 +14659,11 @@
       "url": "audio/generated/ad72a9c8dd47f8bc650cea16.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "danpinŋe",
@@ -14613,10 +14672,11 @@
       "url": "audio/generated/aea83d66fbc82cfe9d2fb1bb.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "danpu",
@@ -14625,10 +14685,11 @@
       "url": "audio/generated/817e59374225da34a19e8dc4.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "danpunde",
@@ -14637,10 +14698,11 @@
       "url": "audio/generated/a74d3f15fda0ef27c21370d3.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "danpundi",
@@ -14649,10 +14711,11 @@
       "url": "audio/generated/99ce841f5d05f58bb1113fae.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "danpuye",
@@ -14661,10 +14724,11 @@
       "url": "audio/generated/6bab1d3e424e3ba7a3749989.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "danpulanŋe",
@@ -14673,10 +14737,11 @@
       "url": "audio/generated/88f86fe18135cb4b63d39d3a.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "danqanaaxu",
@@ -14685,10 +14750,11 @@
       "url": "audio/generated/ff7ada7e9459b43cf443e3e8.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "danqantaaxu",
@@ -14697,10 +14763,11 @@
       "url": "audio/generated/573f4b9221c90d9a8111517f.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "danqante",
@@ -14709,10 +14776,11 @@
       "url": "audio/generated/14b9f3e8cde4fd2f038ae92f.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "danqenesere",
@@ -14721,10 +14789,11 @@
       "url": "audio/generated/da8702d7f87f4450b7687315.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dansa",
@@ -14733,10 +14802,11 @@
       "url": "audio/generated/56d3e64716fa6522c8077de3.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dansandaana",
@@ -14745,10 +14815,11 @@
       "url": "audio/generated/7b7d38b51b7b369b688226ee.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dantante",
@@ -14757,10 +14828,11 @@
       "url": "audio/generated/392ea0c57d30662df650fc98.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dantaxindaana",
@@ -14769,10 +14841,11 @@
       "url": "audio/generated/b54ab464cfd0f10d5c9a48be.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dantaxinde",
@@ -14781,10 +14854,11 @@
       "url": "audio/generated/94bfa191768e7d76cfcc7d6a.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dape",
@@ -14793,10 +14867,11 @@
       "url": "audio/generated/7fbfbd4ef240a2a7933f4aab.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "daqi",
@@ -14805,10 +14880,11 @@
       "url": "audio/generated/0c7f5450e3e90da0a101c152.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "daqu",
@@ -14817,10 +14893,11 @@
       "url": "audio/generated/c8ec0ee0124576347c43f3b7.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "daqunte",
@@ -14829,10 +14906,11 @@
       "url": "audio/generated/7a75e6f307696e60fdfde8b9.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dara",
@@ -14841,10 +14919,11 @@
       "url": "audio/generated/cc86af11989d76959b2d6e03.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "Daraame",
@@ -14853,10 +14932,11 @@
       "url": "audio/generated/0a53612605d28f7009654e3e.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "darace",
@@ -14865,10 +14945,11 @@
       "url": "audio/generated/8f918687d37fbe2aef5a0493.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "daradanŋe",
@@ -14877,10 +14958,11 @@
       "url": "audio/generated/d55b73c16141da3e03658275.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "daraja",
@@ -14889,10 +14971,11 @@
       "url": "audio/generated/224e62382d49fd05ab914289.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "darajante",
@@ -14901,10 +14984,11 @@
       "url": "audio/generated/122768b84ca6acc4d6344280.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "darama",
@@ -14913,10 +14997,11 @@
       "url": "audio/generated/bfcb1cb0d9c45e4565705f35.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "daramanyitte",
@@ -14925,10 +15010,11 @@
       "url": "audio/generated/c635dd1500ecadcafd163421.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "daramanyille",
@@ -14937,10 +15023,11 @@
       "url": "audio/generated/7659829e181a50ea7809cd24.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "darase",
@@ -14949,10 +15036,11 @@
       "url": "audio/generated/1d1e3b07794edc25e8e2f5e9.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "darasi",
@@ -14961,10 +15049,11 @@
       "url": "audio/generated/868fa98971019a51bbef152e.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dare",
@@ -14973,10 +15062,11 @@
       "url": "audio/generated/827a02fd76a37fa49c71806e.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "daro",
@@ -14985,10 +15075,11 @@
       "url": "audio/generated/1435d05d204688210b243e34.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "daronde",
@@ -14997,10 +15088,11 @@
       "url": "audio/generated/93b5cdf9e9f3466e535b6381.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "darontaaxu",
@@ -15009,10 +15101,11 @@
       "url": "audio/generated/08b58b1860f3f90220760369.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dawa",
@@ -15021,10 +15114,11 @@
       "url": "audio/generated/83d98be5e664ec6d13bdeaba.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dawangubo",
@@ -15033,10 +15127,11 @@
       "url": "audio/generated/560740d4892fe2c7ccde8a70.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "dawula",
@@ -15045,10 +15140,11 @@
       "url": "audio/generated/4b0b19a7709f759d41063018.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "Daga laale soli jin ŋa !",
@@ -15057,10 +15153,11 @@
       "url": "audio/generated/583a18f93a0226d71de8097c.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "Daga mullan xaaxu bakka an xoren di",
@@ -15069,10 +15166,11 @@
       "url": "audio/generated/dc5c0b40396c520fc1d35e2f.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     },
     {
       "text": "Daqqu",
@@ -15081,10 +15179,11 @@
       "url": "audio/generated/c16ab5335e67c2e98aec7486.wav",
       "kind": "voice_clone_validated",
       "linguistic_validation": "validated_by_referent",
-      "pronunciation_validation": "correct",
+      "pronunciation_validation": "validated_by_linguistic_referent",
       "validation_batch": "audio-batch-100-2026-10-26",
       "validation_date": "2026-10-26",
-      "validated_by": "référent linguistique SoninkeGPT"
+      "validated_by": "référent linguistique SoninkeGPT",
+      "validation_prononciation": "validee_par_referent_linguistique"
     }
   ],
   "pending": [
@@ -15093,600 +15192,6 @@
       "source": "data/source/audio-batch-100-2026-10-25.csv",
       "francais": "stérilité",
       "url": "audio/generated/19db0af431fbfa6fab7b4f6c.wav"
-    },
-    {
-      "text": "daaru",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "hier",
-      "url": "audio/generated/cc68d749c5165ebfee30f2f2.wav"
-    },
-    {
-      "text": "daarume",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "avant hier",
-      "url": "audio/generated/ed162962bcd2722748a838ed.wav"
-    },
-    {
-      "text": "daawa",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "variété de gros silure",
-      "url": "audio/generated/200c0292cc8f6ff8388db7cb.wav"
-    },
-    {
-      "text": "daaxa",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "campement, lieu habituel de séjour / to camp",
-      "url": "audio/generated/64ff933e23caefc1ce04f176.wav"
-    },
-    {
-      "text": "daaxante",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "dictateur",
-      "url": "audio/generated/0936ae9a24036dc8f62ccf14.wav"
-    },
-    {
-      "text": "daaxaraxari",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "exagérer",
-      "url": "audio/generated/ccbed5b9fc312abcb95da67c.wav"
-    },
-    {
-      "text": "daaxe",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "installer, faire demeurer",
-      "url": "audio/generated/b39033440a02bd2c418bb393.wav"
-    },
-    {
-      "text": "daba",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "natte",
-      "url": "audio/generated/3f8e71b218885a849cdb0951.wav"
-    },
-    {
-      "text": "dabadanka",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "ouvrier agricole / femme dont le mari est absent",
-      "url": "audio/generated/9eca35b9c1ee68c3d1c46a00.wav"
-    },
-    {
-      "text": "dabare",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "sort, envoûtement, maléfice / poison",
-      "url": "audio/generated/c7ccbd06e70575487551b8e5.wav"
-    },
-    {
-      "text": "dabari",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "faire, fabriquer, préparer / envoûter, ensorceler, empoisonner, jeter un sort à",
-      "url": "audio/generated/c222b3327effc0b6a4d73c52.wav"
-    },
-    {
-      "text": "daca",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "couper les hautes herbes",
-      "url": "audio/generated/34ec1b3c93cf306ddd022c10.wav"
-    },
-    {
-      "text": "dacande",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "coupe",
-      "url": "audio/generated/dc15e8d46bf6991d41917050.wav"
-    },
-    {
-      "text": "dafe",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "cheval à robe blanche",
-      "url": "audio/generated/2f09e789907b5b3144691035.wav"
-    },
-    {
-      "text": "Daga laale soli jin ŋa !",
-      "source": "data/candidates/dictionnaire-l-y-expressions-importables-2026-10-25.csv",
-      "francais": "Vas remplir le canari avec de l'eau !",
-      "url": "audio/generated/583a18f93a0226d71de8097c.wav"
-    },
-    {
-      "text": "Daga mullan xaaxu bakka an xoren di",
-      "source": "data/candidates/dictionnaire-l-y-expressions-importables-2026-10-25.csv",
-      "francais": "Vas racler la glaire de ta gorge",
-      "url": "audio/generated/dc5c0b40396c520fc1d35e2f.wav"
-    },
-    {
-      "text": "daga noqu",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "destination",
-      "url": "audio/generated/66a4bade12812f0dd1b88ff4.wav"
-    },
-    {
-      "text": "dagaana",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "partant",
-      "url": "audio/generated/40647e07ae97324fa4d60f03.wav"
-    },
-    {
-      "text": "dagame",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "petit lynx, civette / bijou de corail",
-      "url": "audio/generated/d354f2103b955f43e9c689e1.wav"
-    },
-    {
-      "text": "dagandi",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "légaliser, permettre, admettre (dans la religion). verbe causitif. legalize, permit, justify; légaliser, permettre, admettre (dans la religion)",
-      "url": "audio/generated/e5d78a828126f1e0e0eec604.wav"
-    },
-    {
-      "text": "dagane",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "",
-      "url": "audio/generated/09910a807e819fe4b63975ce.wav"
-    },
-    {
-      "text": "dagante",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "partant(e) autorisé, permis légal, autorisé par la religion / partant(e) / autorisé, permis / légal, autorisé par la religion",
-      "url": "audio/generated/e4590d2c7a02d56828a2a745.wav"
-    },
-    {
-      "text": "dagara",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "destination",
-      "url": "audio/generated/4b1221beee64bb4d3bd0b803.wav"
-    },
-    {
-      "text": "Dagare, daagaare",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "Petite herbe épineuse en forme de boule",
-      "url": "audio/generated/cbec18746f150173a9accd68.wav"
-    },
-    {
-      "text": "dakka",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "provoquer à la lutte; défier. ???? / tumulte, vacarme, brouhaha",
-      "url": "audio/generated/cdf861a10e21480f673e1fdc.wav"
-    },
-    {
-      "text": "dakkabana",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "merveille, miracle / merveilleux",
-      "url": "audio/generated/578b20924baa177055e5d898.wav"
-    },
-    {
-      "text": "Dakkaru",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "Dakar",
-      "url": "audio/generated/9c46a9ce02e507243598aaff.wav"
-    },
-    {
-      "text": "dala",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "mare, marigot",
-      "url": "audio/generated/4b60fa0667da3251a780451e.wav"
-    },
-    {
-      "text": "daliile",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "preuve",
-      "url": "audio/generated/b622bfe2f786e804adc3e1b3.wav"
-    },
-    {
-      "text": "daliilu",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "précision",
-      "url": "audio/generated/ba5d8286bd2eec119cb61ed3.wav"
-    },
-    {
-      "text": "dalla",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "durer, demeurer longtemps / fonctionne comme marque de l'aspect duratif",
-      "url": "audio/generated/41d054eac422ca82cfc6801b.wav"
-    },
-    {
-      "text": "dallaye",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "durée",
-      "url": "audio/generated/94e5aed25d87c61e953d971e.wav"
-    },
-    {
-      "text": "dalle",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "pouvoir",
-      "url": "audio/generated/194cbf5c4433b278166f7eca.wav"
-    },
-    {
-      "text": "dan",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "ce, ceci, cette, particule emphatique en liaison avec ke",
-      "url": "audio/generated/ec4f2dbb3b140095550c9afb.wav"
-    },
-    {
-      "text": "dan kundu",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "même temps, même heure",
-      "url": "audio/generated/57ebcfd5be5eeb85d3cda63b.wav"
-    },
-    {
-      "text": "danbe",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "fourche",
-      "url": "audio/generated/aea3de5f18290a920f163b21.wav"
-    },
-    {
-      "text": "danbere",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "osier",
-      "url": "audio/generated/c2fd70de43dbb55aa964357a.wav"
-    },
-    {
-      "text": "danbi",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "rester sur place (pour les mariés)",
-      "url": "audio/generated/fbda502542e37fc5b3349f8a.wav"
-    },
-    {
-      "text": "danbu",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "",
-      "url": "audio/generated/bfd63a99ddd5891731b6584c.wav"
-    },
-    {
-      "text": "danda",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "gros tamis",
-      "url": "audio/generated/54d67c2ed3f89987a1f60a0d.wav"
-    },
-    {
-      "text": "danga",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "portefeuille, bourse en cuir",
-      "url": "audio/generated/da2d2a9a503bae6c5b7cd23e.wav"
-    },
-    {
-      "text": "dangaana",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "passant",
-      "url": "audio/generated/d0815266f35db25ffa49e529.wav"
-    },
-    {
-      "text": "dange",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "natte",
-      "url": "audio/generated/04104c1be729eef3cca9f804.wav"
-    },
-    {
-      "text": "dangi",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "passer, traverser, dépasser, continuer",
-      "url": "audio/generated/58a27b51cb14a87a15cd2950.wav"
-    },
-    {
-      "text": "danginte",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "choses de passage, personne de passage",
-      "url": "audio/generated/778d1846ceaba42ab88af569.wav"
-    },
-    {
-      "text": "dangira",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "passage, couloir",
-      "url": "audio/generated/8bf3f9dbfbb45f8a047466d7.wav"
-    },
-    {
-      "text": "dangiwaaxa",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "passeport",
-      "url": "audio/generated/bf39366365abdbc3653ce666.wav"
-    },
-    {
-      "text": "dango",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "frontière / respect mutuel entre deux personnes",
-      "url": "audio/generated/e6898d6c1182c930a22fcf76.wav"
-    },
-    {
-      "text": "danguma",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "",
-      "url": "audio/generated/a84079e38ca850bcdaccc11e.wav"
-    },
-    {
-      "text": "dangumaane",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "",
-      "url": "audio/generated/fe2f7109afca9ac925e75ba4.wav"
-    },
-    {
-      "text": "dangumanŋe",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "",
-      "url": "audio/generated/45d0631a96c49dc981fe9a0f.wav"
-    },
-    {
-      "text": "danka",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "donner le droit de respect",
-      "url": "audio/generated/0ec80c40cab72543743baa9f.wav"
-    },
-    {
-      "text": "danma",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "ensemble, tout / entier",
-      "url": "audio/generated/4e8821c70aaee731a74ac3c1.wav"
-    },
-    {
-      "text": "danmaɲeme",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "être extrèmement étonné",
-      "url": "audio/generated/2f40c43f40363184a23d08fe.wav"
-    },
-    {
-      "text": "danme",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "puce",
-      "url": "audio/generated/11050a46540cc9dab5cc077c.wav"
-    },
-    {
-      "text": "danpaade",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "seuil (devant la porte)",
-      "url": "audio/generated/ca6f81555c0f2f1fe2841bd5.wav"
-    },
-    {
-      "text": "danpe",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "les vêtements de la nouvelle mariée / vêtement des femmes maures",
-      "url": "audio/generated/872048aeb9cd8a055d92dbd8.wav"
-    },
-    {
-      "text": "danpi",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "multiplier, doubler",
-      "url": "audio/generated/6a8b995af1a9cb909c554e5d.wav"
-    },
-    {
-      "text": "danpilla",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "doubler, multiplier",
-      "url": "audio/generated/ad72a9c8dd47f8bc650cea16.wav"
-    },
-    {
-      "text": "danpinŋe",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "variété de chien",
-      "url": "audio/generated/aea83d66fbc82cfe9d2fb1bb.wav"
-    },
-    {
-      "text": "danpu",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "piétiner, marcher sur, coup de pied (donner), pétrir avec les pieds",
-      "url": "audio/generated/817e59374225da34a19e8dc4.wav"
-    },
-    {
-      "text": "danpulanŋe",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "fronde, lance-pierre",
-      "url": "audio/generated/88f86fe18135cb4b63d39d3a.wav"
-    },
-    {
-      "text": "danpunde",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "coup de pied",
-      "url": "audio/generated/a74d3f15fda0ef27c21370d3.wav"
-    },
-    {
-      "text": "danpundi",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "coup de pied, (donner un)",
-      "url": "audio/generated/99ce841f5d05f58bb1113fae.wav"
-    },
-    {
-      "text": "danpuye",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "marcher sur (le fait de)",
-      "url": "audio/generated/6bab1d3e424e3ba7a3749989.wav"
-    },
-    {
-      "text": "danqanaaxu",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "croire raison, certitude, précision, foi / croire / raison, certitude, précision, foi",
-      "url": "audio/generated/ff7ada7e9459b43cf443e3e8.wav"
-    },
-    {
-      "text": "danqantaaxu",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "malpropreté",
-      "url": "audio/generated/573f4b9221c90d9a8111517f.wav"
-    },
-    {
-      "text": "danqante",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "impur, malpropre",
-      "url": "audio/generated/14b9f3e8cde4fd2f038ae92f.wav"
-    },
-    {
-      "text": "danqenesere",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "personne de confiance",
-      "url": "audio/generated/da8702d7f87f4450b7687315.wav"
-    },
-    {
-      "text": "dansa",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "secourir, aider financièrement",
-      "url": "audio/generated/56d3e64716fa6522c8077de3.wav"
-    },
-    {
-      "text": "dansandaana",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "bailleur, soutien",
-      "url": "audio/generated/7b7d38b51b7b369b688226ee.wav"
-    },
-    {
-      "text": "dantante",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "quelques, certains",
-      "url": "audio/generated/392ea0c57d30662df650fc98.wav"
-    },
-    {
-      "text": "dantaxindaana",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "porte-parole",
-      "url": "audio/generated/b54ab464cfd0f10d5c9a48be.wav"
-    },
-    {
-      "text": "dantaxinde",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "commentaire, explication",
-      "url": "audio/generated/94bfa191768e7d76cfcc7d6a.wav"
-    },
-    {
-      "text": "danŋa",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "pour / à / (ne pas être/être d'accord) avec",
-      "url": "audio/generated/ccc3874f778b03f8f5b43adf.wav"
-    },
-    {
-      "text": "danŋe",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "grand tambour",
-      "url": "audio/generated/4e04edb8a140893d86586fea.wav"
-    },
-    {
-      "text": "dape",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "endroit, environnement",
-      "url": "audio/generated/7fbfbd4ef240a2a7933f4aab.wav"
-    },
-    {
-      "text": "daqi",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "mettre à l'excès / très (sale)",
-      "url": "audio/generated/0c7f5450e3e90da0a101c152.wav"
-    },
-    {
-      "text": "Daqqu",
-      "source": "data/source/liste-lexicale-validee-2026-10-25.csv",
-      "francais": "Soif",
-      "url": "audio/generated/c16ab5335e67c2e98aec7486.wav"
-    },
-    {
-      "text": "daqu",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "avoir soif / soif",
-      "url": "audio/generated/c8ec0ee0124576347c43f3b7.wav"
-    },
-    {
-      "text": "daqunte",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "assoiffé",
-      "url": "audio/generated/7a75e6f307696e60fdfde8b9.wav"
-    },
-    {
-      "text": "dara",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "respecté",
-      "url": "audio/generated/cc86af11989d76959b2d6e03.wav"
-    },
-    {
-      "text": "Daraame",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "patronyme soninké / patronyme soninké dont la plupart d’entre eux sont des marabouts",
-      "url": "audio/generated/0a53612605d28f7009654e3e.wav"
-    },
-    {
-      "text": "darace",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "",
-      "url": "audio/generated/8f918687d37fbe2aef5a0493.wav"
-    },
-    {
-      "text": "daradanŋe",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "",
-      "url": "audio/generated/d55b73c16141da3e03658275.wav"
-    },
-    {
-      "text": "daraja",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "rendre populaire / prestige, popularité",
-      "url": "audio/generated/224e62382d49fd05ab914289.wav"
-    },
-    {
-      "text": "darajante",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "charmant, apprécié",
-      "url": "audio/generated/122768b84ca6acc4d6344280.wav"
-    },
-    {
-      "text": "darama",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "rayé, tigré",
-      "url": "audio/generated/bfcb1cb0d9c45e4565705f35.wav"
-    },
-    {
-      "text": "daramanyille",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "blé, mil de l'Adrar",
-      "url": "audio/generated/7659829e181a50ea7809cd24.wav"
-    },
-    {
-      "text": "daramanyitte",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "sébestier, bois savon",
-      "url": "audio/generated/c635dd1500ecadcafd163421.wav"
-    },
-    {
-      "text": "darase",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "arbre à charbon",
-      "url": "audio/generated/1d1e3b07794edc25e8e2f5e9.wav"
-    },
-    {
-      "text": "darasi",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "",
-      "url": "audio/generated/868fa98971019a51bbef152e.wav"
-    },
-    {
-      "text": "dare",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "feuille, papier",
-      "url": "audio/generated/827a02fd76a37fa49c71806e.wav"
-    },
-    {
-      "text": "daro",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "respect (someone) pleased, to be / être gros / être fier / respecter, bien accueillir",
-      "url": "audio/generated/1435d05d204688210b243e34.wav"
-    },
-    {
-      "text": "daronde",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "honneur, respect",
-      "url": "audio/generated/93b5cdf9e9f3466e535b6381.wav"
-    },
-    {
-      "text": "darontaaxu",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "honneur, respect, dignité, fierté, humilité",
-      "url": "audio/generated/08b58b1860f3f90220760369.wav"
-    },
-    {
-      "text": "dawa",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "encre",
-      "url": "audio/generated/83d98be5e664ec6d13bdeaba.wav"
-    },
-    {
-      "text": "dawangubo",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "encrier",
-      "url": "audio/generated/560740d4892fe2c7ccde8a70.wav"
-    },
-    {
-      "text": "dawula",
-      "source": "data/candidates/dictionnaire-d-f-extraction-2026-10-25.csv",
-      "francais": "importance, charme, pouvoir, charisme",
-      "url": "audio/generated/4b0b19a7709f759d41063018.wav"
     },
     {
       "text": "dawulante",
