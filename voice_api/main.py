@@ -52,6 +52,7 @@ class ChatRequest(BaseModel):
     corpus_context: str = Field(default="", max_length=MAX_CORPUS_CONTEXT_CHARS)
     # References must be real records returned by the caller's retrieval layer.
     sources: list[dict[str, str]] = Field(default_factory=list, max_length=10)
+    web_search: bool = False
 
 
 @app.get("/")
@@ -121,15 +122,36 @@ def chat(request: ChatRequest):
     messages.extend({"role": item.role, "content": item.content.strip()} for item in history)
     messages.append({"role": "user", "content": user_message})
 
+    web_sources: list[dict[str, str]] = []
     try:
         client = OpenAI(api_key=api_key)
-        result = client.chat.completions.create(
-            model=os.getenv("OPENAI_CHAT_MODEL", "gpt-4o-mini"),
-            messages=messages,
-            temperature=0.2 if request.mode == "translation_vocabulary" else 0.4,
-            max_tokens=900,
-        )
-        answer = (result.choices[0].message.content or "").strip()
+        if request.web_search:
+            result = client.responses.create(
+                model=os.getenv("OPENAI_WEB_SEARCH_MODEL", os.getenv("OPENAI_CHAT_MODEL", "gpt-4o-mini")),
+                tools=[{"type": "web_search_preview"}],
+                input=[
+                    {"role": "system", "content": system_prompt + "\n\nEffectue une recherche Web réelle. Appuie les faits historiques sur les pages trouvées, distingue les incertitudes et ne présente jamais les résultats Web comme validation linguistique du soninké."},
+                    *[{"role": item["role"], "content": item["content"]} for item in messages[1:]],
+                    {"role": "user", "content": user_message},
+                ],
+                max_output_tokens=1200,
+            )
+            answer = (getattr(result, "output_text", "") or "").strip()
+            for output_item in (getattr(result, "output", None) or []):
+                for content_item in (getattr(output_item, "content", None) or []):
+                    for annotation in (getattr(content_item, "annotations", None) or []):
+                        url = getattr(annotation, "url", None)
+                        title = getattr(annotation, "title", None)
+                        if url and str(url).startswith(("https://", "http://")) and not any(item["url"] == url for item in web_sources):
+                            web_sources.append({"url": str(url), "title": str(title or url)})
+        else:
+            result = client.chat.completions.create(
+                model=os.getenv("OPENAI_CHAT_MODEL", "gpt-4o-mini"),
+                messages=messages,
+                temperature=0.2 if request.mode == "translation_vocabulary" else 0.4,
+                max_tokens=900,
+            )
+            answer = (result.choices[0].message.content or "").strip()
     except Exception as exc:
         # Do not leak provider details, prompts, or secrets to the client.
         print(f"Chat provider error: {type(exc).__name__}")
@@ -142,6 +164,8 @@ def chat(request: ChatRequest):
         "answer": answer,
         "mode": request.mode,
         "sources": request.sources,
+        "web_sources": web_sources,
+        "web_search_requested": request.web_search,
         "corpus_context_used": bool(context_block),
         "degraded": False,
         "warning": (
