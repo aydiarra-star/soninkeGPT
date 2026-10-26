@@ -33,6 +33,10 @@ jobs:
         run: |
           node --check app.js
           node --check voice-config.js
+      - name: Run linguistic and audio regression tests
+        run: |
+          node tests/voice.test.cjs
+          node tests/ui.test.cjs
       - name: Check HTML references and whitespace
         run: |
           test -s index.html
