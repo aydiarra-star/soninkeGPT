@@ -42,7 +42,7 @@ assert.equal(evaluate("soninkeForms('**Titre inconnu**').length"), 0);
   assert(evaluate('state.audioList.length') > 1000,
     `La mémoire audio restaurée doit être indexée, obtenu : ${evaluate('state.audioList.length')} audios`);
   const corpusContext = evaluate("buildLocalCorpusContext('Traduis « tu as mangé le riz » en soninké')");
-  assert(/PHRASE\\/EXEMPLE ATTESTÉ|PHRASEBOOK/.test(corpusContext.context),
+  assert(/PHRASE\/EXEMPLE ATTESTÉ|PHRASEBOOK/.test(corpusContext.context),
     'La recherche corpus-first doit inclure les phrases ou exemples pertinents');
   assert(/AUDIO LIÉ À UNE FORME/.test(corpusContext.context),
     'La recherche corpus-first doit inclure les audios associés aux formes retrouvées');
