@@ -47,7 +47,7 @@ class ChatMessage(BaseModel):
 class ChatRequest(BaseModel):
     message: str = Field(min_length=1, max_length=MAX_CHAT_MESSAGE_CHARS)
     mode: Literal["translation_vocabulary", "culture_history", "general"] = "translation_vocabulary"
-    history: list[ChatMessage] = Field(default_factory=list)
+    history: list[ChatMessage] = Field(default_factory=list, max_length=MAX_CHAT_HISTORY_MESSAGES)
     # Caller supplies context retrieved from the validated local corpus.
     corpus_context: str = Field(default="", max_length=MAX_CORPUS_CONTEXT_CHARS)
     # References must be real records returned by the caller's retrieval layer.
