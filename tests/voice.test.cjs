@@ -39,6 +39,13 @@ assert.equal(evaluate("soninkeForms('**Titre inconnu**').length"), 0);
 (async () => {
   await evaluate('loadAllData()');
   const entries = evaluate('state.entries');
+  assert(evaluate('state.audioList.length') > 1000,
+    `La mémoire audio restaurée doit être indexée, obtenu : ${evaluate('state.audioList.length')} audios`);
+  const corpusContext = evaluate("buildLocalCorpusContext('Traduis « tu as mangé le riz » en soninké')");
+  assert(/PHRASE\\/EXEMPLE ATTESTÉ|PHRASEBOOK/.test(corpusContext.context),
+    'La recherche corpus-first doit inclure les phrases ou exemples pertinents');
+  assert(/AUDIO LIÉ À UNE FORME/.test(corpusContext.context),
+    'La recherche corpus-first doit inclure les audios associés aux formes retrouvées');
   assert(entries.length > 1300, `Expected >1300 lexicon entries, got ${entries.length}`);
   const seenIds = new Set();
   const seenWords = new Map();
@@ -209,8 +216,12 @@ assert.equal(evaluate("soninkeForms('**Titre inconnu**').length"), 0);
   assert(partialFallback && partialFallback.missingFrench.includes('zorbax'),
     'Les mots sans correspondance doivent être signalés sans bloquer toute la composition');
   const fallbackReply = evaluate("fallbackComposedPhrase('je mange le riz chaque jour')");
-  assert(/phrase composée automatiquement/i.test(fallbackReply) && /\{\{pair:/i.test(fallbackReply),
-    'La réponse doit afficher une phrase composée et non seulement une liste de mots');
+  assert(/Correspondances lexicales trouvées/i.test(fallbackReply),
+    'Quand la grammaire est incertaine, la réponse doit présenter les correspondances lexicales');
+  assert(!fallbackReply.includes(lexicalFallback.sentence),
+    'Le fallback ne doit pas présenter l’assemblage dans l’ordre français comme une phrase soninkée');
+  assert(/phrase complète n'est pas confirmée/i.test(fallbackReply),
+    'Le fallback doit expliciter que la phrase complète n’est pas confirmée');
 
   // ── Composition grammaticale : Sujet + Auxiliaire + Objet + Verbe (corpus attesté) ──
   // Inaccompli transitif : S + wa + O + V(-na/-ne/-ni)
@@ -238,8 +249,12 @@ assert.equal(evaluate("soninkeForms('**Titre inconnu**').length"), 0);
   assert(/\{\{pair:A ma xati ke mini\|/.test(negPast), `Négation du passé attendue, obtenu : ${negPast.slice(0, 200)}`);
   // Mot manquant signalé, jamais inventé
   const missing = evaluate("generateResponse('Traduis « je mange du poisson avec le chat » en soninké')");
-  assert(/ajouter le mot/.test(missing), `Le mot manquant doit être signalé, obtenu : ${missing.slice(0, 200)}`);
-  assert(!/\{\{pair:Aucun|invent/i.test(missing), 'Aucune phrase inventée ne doit être rendue comme attestée');
+  assert(/sans correspondance lexicale|éléments sans correspondance|poisson/i.test(missing),
+    `Le mot manquant doit être signalé sans l’inventer, obtenu : ${missing.slice(0, 240)}`);
+  assert(!/\\{\\{pair:[^|]*poisson[^|]*\\|/i.test(missing),
+    'Un mot absent ne doit pas être inséré dans une pseudo-phrase soninkée');
+  assert(!/phrase composée automatiquement/i.test(missing),
+    'Un fallback lexical incertain ne doit pas être présenté comme une phrase composée');
   // Une phrase composée est reconnue comme « Composé · lexique attesté »
   assert.equal(evaluate("attestationOf('N wa maro ke yigene').level"), 'composed');
   assert.equal(evaluate("attestationOf('N daga saxa').level"), 'composed');
