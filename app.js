@@ -3234,6 +3234,11 @@ function inferConversationalMode(message) {
   if (/\b(explique|expliquer|explique-moi|pourquoi|comment fonctionne|difference entre|grammaire|conjugaison|definition|definis|signifie|signification|analyse|resume|compare|comparer|apprends-moi|apprendre)\b/.test(text)) {
     return "general";
   }
+  // Les demandes explicites de traduction/phrase doivent passer par la recherche
+  // corpus-first (phrases, exemples, lexique et audios liés) avant toute génération.
+  if (/\b(traduis|traduire|traduction|traduisez|comment dit-on|comment on dit|comment dire|en soninke|phrase en soninke|phrase soninke|fais une phrase|former une phrase|conjugue|conjuguer|mets en soninke)\b/.test(text)) {
+    return "translation_vocabulary";
+  }
   // Route ordinary conversational requests to the remote assistant, not the local
   // vocabulary composer. Keep single-word lookup requests on the local lexicon.
   if (/\b(bonjour|bonsoir|salut|coucou|merci|s'il vous plait|s'il te plait|qui es-tu|qui es tu|comment vas-tu|comment vas tu|quel fournisseur|fournisseur conversationnel|reponds en francais|repond en francais|parle-moi|parle moi|peux-tu|peux tu|est-ce que|est ce que|aide-moi|aide moi)\b/.test(text)) {
